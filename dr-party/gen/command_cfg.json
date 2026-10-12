@@ -1,0 +1,121 @@
+{
+ "actor": "200801",
+ "bullet": 20080101,
+ "row": "kris_cmd",
+ "recharge": {
+  "susie": 3.0,
+  "ralsei": 3.0
+ },
+ "who": {
+  "susie": {
+   "actions": {
+    "stand": "fol_susie_stand",
+    "run": "fol_susie_run",
+    "jump": "fol_susie_jump",
+    "fall": "fol_susie_fall",
+    "land": "fol_susie_land",
+    "turn": "fol_susie_turn",
+    "cast": "fol_susie_cast",
+    "spin": "fol_susie_spin",
+    "pose": "fol_susie_pose",
+    "dash": "fol_susie_dash",
+    "sprint": "fol_susie_sprint",
+    "ready": "fol_susie_ready",
+    "shock": "fol_susie_shock",
+    "fidget": "fol_susie_fidget",
+    "dance": "fol_susie_dance",
+    "halt": "fol_susie_halt",
+    "stand_low": "fol_susie_stand_low",
+    "run_low": "fol_susie_run_low",
+    "leave": "fol_susie_leave",
+    "gone": "fol_susie_gone"
+   },
+   "bolt": "rb_bolt_home",
+   "swing": 0.1333,
+   "muzzle": [
+    0.688,
+    0.895
+   ],
+   "back": 0.551,
+   "lengths": {
+    "land": 0.2667,
+    "turn": 0.2667,
+    "cast": 0.9333,
+    "pose": 2.0,
+    "shock": 0.4667,
+    "fidget": 1.6,
+    "dance": 1.6,
+    "halt": 0.45,
+    "spin": 0.45
+   },
+   "boltRed": "rb_bolt_home_red"
+  },
+  "ralsei": {
+   "actions": {
+    "stand": "fol_ralsei_stand",
+    "run": "fol_ralsei_run",
+    "jump": "fol_ralsei_jump",
+    "fall": "fol_ralsei_fall",
+    "land": "fol_ralsei_land",
+    "turn": "fol_ralsei_turn",
+    "cast": "fol_ralsei_cast",
+    "spin": "fol_ralsei_spin",
+    "pose": "fol_ralsei_pose",
+    "dash": "fol_ralsei_dash",
+    "sprint": "fol_ralsei_sprint",
+    "ready": "fol_ralsei_ready",
+    "shock": "fol_ralsei_shock",
+    "fidget": "fol_ralsei_fidget",
+    "dance": "fol_ralsei_dance",
+    "halt": "fol_ralsei_halt",
+    "stand_low": "fol_ralsei_stand_low",
+    "run_low": "fol_ralsei_run_low",
+    "leave": "fol_ralsei_leave",
+    "gone": "fol_ralsei_gone"
+   },
+   "bolt": "fs_ball_home",
+   "swing": 0.4,
+   "muzzle": [
+    0.512,
+    0.751
+   ],
+   "back": 1.101,
+   "lengths": {
+    "land": 0.2667,
+    "turn": 0.2,
+    "cast": 0.8,
+    "pose": 2.0,
+    "shock": 0.4667,
+    "fidget": 1.0667,
+    "dance": 1.6,
+    "halt": 0.3333,
+    "spin": 0.45
+   }
+  }
+ },
+ "pose": {
+  "ground": "kris_pose",
+  "air": "kris_pose_air",
+  "len": 0.8
+ },
+ "dance": {
+  "action": "kris_dance",
+  "len": 1.6
+ },
+ "fx": {
+  "smack": "fx_smack",
+  "ripple": "fx_ripple"
+ },
+ "labels": {
+  "none": "No ACT",
+  "susie": "S-Action",
+  "ralsei": "R-Action",
+  "all": "ACT"
+ },
+ "labels_ja": {
+  "none": "\u3053\u3046\u3069\u3046\u306a\u3057",
+  "susie": "\uff33\u30a2\u30af\u30b7\u30e7\u30f3",
+  "ralsei": "\uff32\u30a2\u30af\u30b7\u30e7\u30f3",
+  "all": "\u3053\u3046\u3069\u3046"
+ }
+}

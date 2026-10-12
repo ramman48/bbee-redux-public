@@ -1,0 +1,4192 @@
+{
+ "effect/prefab/role/kris/kris_slash_1": [
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_2": [
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_3": [
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c77c0b560d7f7976e50c7657997f5ef2/CAB-c77c0b560d7f7976e50c7657997f5ef2",
+   "bundle": "effect/common/material/kris/streak_613_g__kris300",
+   "objects": {
+    "-1313915588454100581": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_air": [
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f6130cd690588f44ae3654e110e5d0fb/CAB-f6130cd690588f44ae3654e110e5d0fb",
+   "bundle": "effect/common/material/kris/streak_613_g__kris220",
+   "objects": {
+    "-4707860600764861100": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_susie_axe": [
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-088a160c8ad078bf061c1310b8192882/CAB-088a160c8ad078bf061c1310b8192882",
+   "bundle": "effect/common/material/kris/glow_205_b__krish22",
+   "objects": {
+    "3737796334186217725": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6118cef34ec1b7be9b582471431c7280/CAB-6118cef34ec1b7be9b582471431c7280",
+   "bundle": "effect/common/material/kris/particles_022_d__krish32",
+   "objects": {
+    "-834912232668831237": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c77c0b560d7f7976e50c7657997f5ef2/CAB-c77c0b560d7f7976e50c7657997f5ef2",
+   "bundle": "effect/common/material/kris/streak_613_g__kris300",
+   "objects": {
+    "-1313915588454100581": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_hit": [
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-16bf733ad83b8ebf09a58415986352d3/CAB-16bf733ad83b8ebf09a58415986352d3",
+   "bundle": "effect/common/material/kris/particles_019_d__krish26",
+   "objects": {
+    "-3611961488269384274": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6118cef34ec1b7be9b582471431c7280/CAB-6118cef34ec1b7be9b582471431c7280",
+   "bundle": "effect/common/material/kris/particles_022_d__krish32",
+   "objects": {
+    "-834912232668831237": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_hit_heavy": [
+  {
+   "path": "archive:/CAB-16bf733ad83b8ebf09a58415986352d3/CAB-16bf733ad83b8ebf09a58415986352d3",
+   "bundle": "effect/common/material/kris/particles_019_d__krish26",
+   "objects": {
+    "-3611961488269384274": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-66743ee327227e14d9c5f121a5eb0c42/CAB-66743ee327227e14d9c5f121a5eb0c42",
+   "bundle": "effect/common/material/kris/particles_022_d__krish36",
+   "objects": {
+    "8899495556363074802": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5489c4cf964ecf19c60729dc19cb243b/CAB-5489c4cf964ecf19c60729dc19cb243b",
+   "bundle": "effect/common/material/kris/sharp_641_a__krishit",
+   "objects": {
+    "-857716758804164870": [
+     "Material",
+     "sharp_641_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ca78fdb0352611db6782bd407bbca94b/CAB-ca78fdb0352611db6782bd407bbca94b",
+   "bundle": "effect/common/material/kris/ring_002_a__krish22",
+   "objects": {
+    "-5377148780743412223": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_bolt": [
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a2763c4554c593fd20599d20377cd13e/CAB-a2763c4554c593fd20599d20377cd13e",
+   "bundle": "effect/common/material/kris/glow_205_b__krish18",
+   "objects": {
+    "8214558115874377573": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8",
+   "bundle": "effect/common/material/kris/glow_002_b__krish19",
+   "objects": {
+    "-1436631874636312038": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_bolt_red": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-66743ee327227e14d9c5f121a5eb0c42/CAB-66743ee327227e14d9c5f121a5eb0c42",
+   "bundle": "effect/common/material/kris/particles_022_d__krish36",
+   "objects": {
+    "8899495556363074802": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-316c8fbd138c9a9cc232453bd843f288/CAB-316c8fbd138c9a9cc232453bd843f288",
+   "bundle": "effect/common/material/kris/glow_205_b__krish16",
+   "objects": {
+    "-7487443860884086353": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-b10e7f82ed9cbc65bdb0cee5f4a228ae/CAB-b10e7f82ed9cbc65bdb0cee5f4a228ae",
+   "bundle": "effect/common/material/06_normal/normal_009_a",
+   "objects": {
+    "3279035826044115568": [
+     "Material",
+     "normal_009_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a2763c4554c593fd20599d20377cd13e/CAB-a2763c4554c593fd20599d20377cd13e",
+   "bundle": "effect/common/material/kris/glow_205_b__krish18",
+   "objects": {
+    "8214558115874377573": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a55bf3fab1003f8793b15fd1b5e537a6/CAB-a55bf3fab1003f8793b15fd1b5e537a6",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish28",
+   "objects": {
+    "1016595141661896783": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d37b74329ac8117e50879570481528cc/CAB-d37b74329ac8117e50879570481528cc",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish26",
+   "objects": {
+    "-2861096956230193266": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8",
+   "bundle": "effect/common/material/kris/glow_002_b__krish19",
+   "objects": {
+    "-1436631874636312038": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_burst": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-000596504cda3c2c3e6936b7f6acd476/CAB-000596504cda3c2c3e6936b7f6acd476",
+   "bundle": "effect/common/material/kris/glow_205_b__krish19",
+   "objects": {
+    "3067928982698514269": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d60fc72c3c0f2c68fb9949f154492102/CAB-d60fc72c3c0f2c68fb9949f154492102",
+   "bundle": "effect/common/material/kris/particles_022_d__krish28",
+   "objects": {
+    "9082895377664755344": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_burst_red": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-000596504cda3c2c3e6936b7f6acd476/CAB-000596504cda3c2c3e6936b7f6acd476",
+   "bundle": "effect/common/material/kris/glow_205_b__krish19",
+   "objects": {
+    "3067928982698514269": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d60fc72c3c0f2c68fb9949f154492102/CAB-d60fc72c3c0f2c68fb9949f154492102",
+   "bundle": "effect/common/material/kris/particles_022_d__krish28",
+   "objects": {
+    "9082895377664755344": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_ball": [
+  {
+   "path": "archive:/CAB-488dd0207b44891995cc3a3b170fb020/CAB-488dd0207b44891995cc3a3b170fb020",
+   "bundle": "effect/common/material/kris/glow_002_b__krish15",
+   "objects": {
+    "1366663202615637509": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_burst": [
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0b786bdf33af4ed7df2b6f46eae88dc7/CAB-0b786bdf33af4ed7df2b6f46eae88dc7",
+   "bundle": "effect/common/material/kris/turbulence_008_m5__krisfs",
+   "objects": {
+    "-3007197988918643671": [
+     "Material",
+     "turbulence_008_m5"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-66743ee327227e14d9c5f121a5eb0c42/CAB-66743ee327227e14d9c5f121a5eb0c42",
+   "bundle": "effect/common/material/kris/particles_022_d__krish36",
+   "objects": {
+    "8899495556363074802": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f43a6298ee8b0e1e1852d97b28825987/CAB-f43a6298ee8b0e1e1852d97b28825987",
+   "bundle": "effect/common/material/01_fire/fire_002_a",
+   "objects": {
+    "4132488706027380127": [
+     "Material",
+     "fire_002_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_ralsei_handfire": [
+  {
+   "path": "archive:/CAB-49b0723bc0f7c27d96faf2605ec44f75/CAB-49b0723bc0f7c27d96faf2605ec44f75",
+   "bundle": "effect/common/material/kris/particles_022_d__krish30",
+   "objects": {
+    "3507897284205841979": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ccc8861392ca3e481056d4b242a2b4e1/CAB-ccc8861392ca3e481056d4b242a2b4e1",
+   "bundle": "effect/common/material/kris/glow_002_b__krish14",
+   "objects": {
+    "5121367916598752713": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_1_w": [
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a3abb444d553f3774552ddae62acf497/CAB-a3abb444d553f3774552ddae62acf497",
+   "bundle": "effect/common/material/kris/streak_613_g__kris160",
+   "objects": {
+    "6761374404305619898": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_2_w": [
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a3abb444d553f3774552ddae62acf497/CAB-a3abb444d553f3774552ddae62acf497",
+   "bundle": "effect/common/material/kris/streak_613_g__kris160",
+   "objects": {
+    "6761374404305619898": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_3_w": [
+  {
+   "path": "archive:/CAB-c77c0b560d7f7976e50c7657997f5ef2/CAB-c77c0b560d7f7976e50c7657997f5ef2",
+   "bundle": "effect/common/material/kris/streak_613_g__kris300",
+   "objects": {
+    "-1313915588454100581": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a3abb444d553f3774552ddae62acf497/CAB-a3abb444d553f3774552ddae62acf497",
+   "bundle": "effect/common/material/kris/streak_613_g__kris160",
+   "objects": {
+    "6761374404305619898": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_slash_air_w": [
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f6130cd690588f44ae3654e110e5d0fb/CAB-f6130cd690588f44ae3654e110e5d0fb",
+   "bundle": "effect/common/material/kris/streak_613_g__kris220",
+   "objects": {
+    "-4707860600764861100": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a3abb444d553f3774552ddae62acf497/CAB-a3abb444d553f3774552ddae62acf497",
+   "bundle": "effect/common/material/kris/streak_613_g__kris160",
+   "objects": {
+    "6761374404305619898": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_shatter": [
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-316c8fbd138c9a9cc232453bd843f288/CAB-316c8fbd138c9a9cc232453bd843f288",
+   "bundle": "effect/common/material/kris/glow_205_b__krish16",
+   "objects": {
+    "-7487443860884086353": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-08764570cb20e60be0c309f4afec4d73/CAB-08764570cb20e60be0c309f4afec4d73",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish18",
+   "objects": {
+    "-7091060638764111089": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-14a483e2b1eea924872f43a2f78d2bdd/CAB-14a483e2b1eea924872f43a2f78d2bdd",
+   "bundle": "effect/common/material/kris/streak_613_g__kris240",
+   "objects": {
+    "-3487191648485563681": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5489c4cf964ecf19c60729dc19cb243b/CAB-5489c4cf964ecf19c60729dc19cb243b",
+   "bundle": "effect/common/material/kris/sharp_641_a__krishit",
+   "objects": {
+    "-857716758804164870": [
+     "Material",
+     "sharp_641_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c981619ecded03184689071c915fcf39/CAB-c981619ecded03184689071c915fcf39",
+   "bundle": "effect/common/material/kris/glow_205_b__krish14",
+   "objects": {
+    "-1185263301894151914": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-cc4234c848979cc8c4a43cb474114433/CAB-cc4234c848979cc8c4a43cb474114433",
+   "bundle": "effect/common/material/kris/glow_002_b__krish18",
+   "objects": {
+    "-4998239865839100009": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d60fc72c3c0f2c68fb9949f154492102/CAB-d60fc72c3c0f2c68fb9949f154492102",
+   "bundle": "effect/common/material/kris/particles_022_d__krish28",
+   "objects": {
+    "9082895377664755344": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ec05152dce459237c949385b117abf75/CAB-ec05152dce459237c949385b117abf75",
+   "bundle": "effect/common/material/kris/particles_019_d__krish20",
+   "objects": {
+    "-133823094185741496": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f180e1dc711c7c7394161fe1e155cebe/CAB-f180e1dc711c7c7394161fe1e155cebe",
+   "bundle": "effect/common/material/kris/particles_018_m__krish32",
+   "objects": {
+    "-2832537777258933317": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_break": [
+  {
+   "path": "archive:/CAB-316c8fbd138c9a9cc232453bd843f288/CAB-316c8fbd138c9a9cc232453bd843f288",
+   "bundle": "effect/common/material/kris/glow_205_b__krish16",
+   "objects": {
+    "-7487443860884086353": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c981619ecded03184689071c915fcf39/CAB-c981619ecded03184689071c915fcf39",
+   "bundle": "effect/common/material/kris/glow_205_b__krish14",
+   "objects": {
+    "-1185263301894151914": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d60fc72c3c0f2c68fb9949f154492102/CAB-d60fc72c3c0f2c68fb9949f154492102",
+   "bundle": "effect/common/material/kris/particles_022_d__krish28",
+   "objects": {
+    "9082895377664755344": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-08764570cb20e60be0c309f4afec4d73/CAB-08764570cb20e60be0c309f4afec4d73",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish18",
+   "objects": {
+    "-7091060638764111089": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5489c4cf964ecf19c60729dc19cb243b/CAB-5489c4cf964ecf19c60729dc19cb243b",
+   "bundle": "effect/common/material/kris/sharp_641_a__krishit",
+   "objects": {
+    "-857716758804164870": [
+     "Material",
+     "sharp_641_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ec05152dce459237c949385b117abf75/CAB-ec05152dce459237c949385b117abf75",
+   "bundle": "effect/common/material/kris/particles_019_d__krish20",
+   "objects": {
+    "-133823094185741496": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f180e1dc711c7c7394161fe1e155cebe/CAB-f180e1dc711c7c7394161fe1e155cebe",
+   "bundle": "effect/common/material/kris/particles_018_m__krish32",
+   "objects": {
+    "-2832537777258933317": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_bolt_big": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-316c8fbd138c9a9cc232453bd843f288/CAB-316c8fbd138c9a9cc232453bd843f288",
+   "bundle": "effect/common/material/kris/glow_205_b__krish16",
+   "objects": {
+    "-7487443860884086353": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a55bf3fab1003f8793b15fd1b5e537a6/CAB-a55bf3fab1003f8793b15fd1b5e537a6",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish28",
+   "objects": {
+    "1016595141661896783": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a2763c4554c593fd20599d20377cd13e/CAB-a2763c4554c593fd20599d20377cd13e",
+   "bundle": "effect/common/material/kris/glow_205_b__krish18",
+   "objects": {
+    "8214558115874377573": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d37b74329ac8117e50879570481528cc/CAB-d37b74329ac8117e50879570481528cc",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish26",
+   "objects": {
+    "-2861096956230193266": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8",
+   "bundle": "effect/common/material/kris/glow_002_b__krish19",
+   "objects": {
+    "-1436631874636312038": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_burst_big": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d60fc72c3c0f2c68fb9949f154492102/CAB-d60fc72c3c0f2c68fb9949f154492102",
+   "bundle": "effect/common/material/kris/particles_022_d__krish28",
+   "objects": {
+    "9082895377664755344": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-000596504cda3c2c3e6936b7f6acd476/CAB-000596504cda3c2c3e6936b7f6acd476",
+   "bundle": "effect/common/material/kris/glow_205_b__krish19",
+   "objects": {
+    "3067928982698514269": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_chain": [
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8",
+   "bundle": "effect/common/material/kris/glow_002_b__krish19",
+   "objects": {
+    "-1436631874636312038": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a2763c4554c593fd20599d20377cd13e/CAB-a2763c4554c593fd20599d20377cd13e",
+   "bundle": "effect/common/material/kris/glow_205_b__krish18",
+   "objects": {
+    "8214558115874377573": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_chain_link": [
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-49b0723bc0f7c27d96faf2605ec44f75/CAB-49b0723bc0f7c27d96faf2605ec44f75",
+   "bundle": "effect/common/material/kris/particles_022_d__krish30",
+   "objects": {
+    "3507897284205841979": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_push": [
+  {
+   "path": "archive:/CAB-cc4234c848979cc8c4a43cb474114433/CAB-cc4234c848979cc8c4a43cb474114433",
+   "bundle": "effect/common/material/kris/glow_002_b__krish18",
+   "objects": {
+    "-4998239865839100009": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-088a160c8ad078bf061c1310b8192882/CAB-088a160c8ad078bf061c1310b8192882",
+   "bundle": "effect/common/material/kris/glow_205_b__krish22",
+   "objects": {
+    "3737796334186217725": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-440f708c9f4262e7deb513e0cc50767a/CAB-440f708c9f4262e7deb513e0cc50767a",
+   "bundle": "effect/common/material/kris/particles_019_d__krish30",
+   "objects": {
+    "-437918705324325024": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_bolt_red_big": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8/CAB-fe71c0f2c9e44a87b24f8cfb2e6c04e8",
+   "bundle": "effect/common/material/kris/glow_002_b__krish19",
+   "objects": {
+    "-1436631874636312038": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a2763c4554c593fd20599d20377cd13e/CAB-a2763c4554c593fd20599d20377cd13e",
+   "bundle": "effect/common/material/kris/glow_205_b__krish18",
+   "objects": {
+    "8214558115874377573": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d37b74329ac8117e50879570481528cc/CAB-d37b74329ac8117e50879570481528cc",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish26",
+   "objects": {
+    "-2861096956230193266": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-66743ee327227e14d9c5f121a5eb0c42/CAB-66743ee327227e14d9c5f121a5eb0c42",
+   "bundle": "effect/common/material/kris/particles_022_d__krish36",
+   "objects": {
+    "8899495556363074802": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-316c8fbd138c9a9cc232453bd843f288/CAB-316c8fbd138c9a9cc232453bd843f288",
+   "bundle": "effect/common/material/kris/glow_205_b__krish16",
+   "objects": {
+    "-7487443860884086353": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-06a9497117de5d95863167a81950bcba/CAB-06a9497117de5d95863167a81950bcba",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbody",
+   "objects": {
+    "2732841536590916164": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a55bf3fab1003f8793b15fd1b5e537a6/CAB-a55bf3fab1003f8793b15fd1b5e537a6",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish28",
+   "objects": {
+    "1016595141661896783": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-b10e7f82ed9cbc65bdb0cee5f4a228ae/CAB-b10e7f82ed9cbc65bdb0cee5f4a228ae",
+   "bundle": "effect/common/material/06_normal/normal_009_a",
+   "objects": {
+    "3279035826044115568": [
+     "Material",
+     "normal_009_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_red_shock": [
+  {
+   "path": "archive:/CAB-f180e1dc711c7c7394161fe1e155cebe/CAB-f180e1dc711c7c7394161fe1e155cebe",
+   "bundle": "effect/common/material/kris/particles_018_m__krish32",
+   "objects": {
+    "-2832537777258933317": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6118cef34ec1b7be9b582471431c7280/CAB-6118cef34ec1b7be9b582471431c7280",
+   "bundle": "effect/common/material/kris/particles_022_d__krish32",
+   "objects": {
+    "-834912232668831237": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ce03e28b8d3a400e3ff2cfb429a6b581/CAB-ce03e28b8d3a400e3ff2cfb429a6b581",
+   "bundle": "effect/common/material/kris/ring_002_a__krish26",
+   "objects": {
+    "1716336282745227893": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-b10e7f82ed9cbc65bdb0cee5f4a228ae/CAB-b10e7f82ed9cbc65bdb0cee5f4a228ae",
+   "bundle": "effect/common/material/06_normal/normal_009_a",
+   "objects": {
+    "3279035826044115568": [
+     "Material",
+     "normal_009_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5489c4cf964ecf19c60729dc19cb243b/CAB-5489c4cf964ecf19c60729dc19cb243b",
+   "bundle": "effect/common/material/kris/sharp_641_a__krishit",
+   "objects": {
+    "-857716758804164870": [
+     "Material",
+     "sharp_641_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_rb_pierce": [
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-49b0723bc0f7c27d96faf2605ec44f75/CAB-49b0723bc0f7c27d96faf2605ec44f75",
+   "bundle": "effect/common/material/kris/particles_022_d__krish30",
+   "objects": {
+    "3507897284205841979": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d1b55789431889edd171e533764b017a/CAB-d1b55789431889edd171e533764b017a",
+   "bundle": "effect/common/material/kris/particles_018_j__krisd20",
+   "objects": {
+    "-2691009250654256432": [
+     "Material",
+     "particles_018_j"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_ball_big": [
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-488dd0207b44891995cc3a3b170fb020/CAB-488dd0207b44891995cc3a3b170fb020",
+   "bundle": "effect/common/material/kris/glow_002_b__krish15",
+   "objects": {
+    "1366663202615637509": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_burst_big": [
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0b786bdf33af4ed7df2b6f46eae88dc7/CAB-0b786bdf33af4ed7df2b6f46eae88dc7",
+   "bundle": "effect/common/material/kris/turbulence_008_m5__krisfs",
+   "objects": {
+    "-3007197988918643671": [
+     "Material",
+     "turbulence_008_m5"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-66743ee327227e14d9c5f121a5eb0c42/CAB-66743ee327227e14d9c5f121a5eb0c42",
+   "bundle": "effect/common/material/kris/particles_022_d__krish36",
+   "objects": {
+    "8899495556363074802": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f43a6298ee8b0e1e1852d97b28825987/CAB-f43a6298ee8b0e1e1852d97b28825987",
+   "bundle": "effect/common/material/01_fire/fire_002_a",
+   "objects": {
+    "4132488706027380127": [
+     "Material",
+     "fire_002_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_chain": [
+  {
+   "path": "archive:/CAB-488dd0207b44891995cc3a3b170fb020/CAB-488dd0207b44891995cc3a3b170fb020",
+   "bundle": "effect/common/material/kris/glow_002_b__krish15",
+   "objects": {
+    "1366663202615637509": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-015cceac002c9018b3ca40a9bf3f55b2/CAB-015cceac002c9018b3ca40a9bf3f55b2",
+   "bundle": "effect/common/material/kris/glow_205_b__krish20",
+   "objects": {
+    "-5565890324214308575": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_burst_c": [
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0b786bdf33af4ed7df2b6f46eae88dc7/CAB-0b786bdf33af4ed7df2b6f46eae88dc7",
+   "bundle": "effect/common/material/kris/turbulence_008_m5__krisfs",
+   "objects": {
+    "-3007197988918643671": [
+     "Material",
+     "turbulence_008_m5"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-66743ee327227e14d9c5f121a5eb0c42/CAB-66743ee327227e14d9c5f121a5eb0c42",
+   "bundle": "effect/common/material/kris/particles_022_d__krish36",
+   "objects": {
+    "8899495556363074802": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f43a6298ee8b0e1e1852d97b28825987/CAB-f43a6298ee8b0e1e1852d97b28825987",
+   "bundle": "effect/common/material/01_fire/fire_002_a",
+   "objects": {
+    "4132488706027380127": [
+     "Material",
+     "fire_002_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_spread": [
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a3abb444d553f3774552ddae62acf497/CAB-a3abb444d553f3774552ddae62acf497",
+   "bundle": "effect/common/material/kris/streak_613_g__kris160",
+   "objects": {
+    "6761374404305619898": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-14a483e2b1eea924872f43a2f78d2bdd/CAB-14a483e2b1eea924872f43a2f78d2bdd",
+   "bundle": "effect/common/material/kris/streak_613_g__kris240",
+   "objects": {
+    "-3487191648485563681": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6118cef34ec1b7be9b582471431c7280/CAB-6118cef34ec1b7be9b582471431c7280",
+   "bundle": "effect/common/material/kris/particles_022_d__krish32",
+   "objects": {
+    "-834912232668831237": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_field": [
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6ad08d9266ab320d070ad6480f444552/CAB-6ad08d9266ab320d070ad6480f444552",
+   "bundle": "effect/common/material/kris/glow_205_b__krish15",
+   "objects": {
+    "3644403234384300954": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f43a6298ee8b0e1e1852d97b28825987/CAB-f43a6298ee8b0e1e1852d97b28825987",
+   "bundle": "effect/common/material/01_fire/fire_002_a",
+   "objects": {
+    "4132488706027380127": [
+     "Material",
+     "fire_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ca78fdb0352611db6782bd407bbca94b/CAB-ca78fdb0352611db6782bd407bbca94b",
+   "bundle": "effect/common/material/kris/ring_002_a__krish22",
+   "objects": {
+    "-5377148780743412223": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-088a160c8ad078bf061c1310b8192882/CAB-088a160c8ad078bf061c1310b8192882",
+   "bundle": "effect/common/material/kris/glow_205_b__krish22",
+   "objects": {
+    "3737796334186217725": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_burn": [
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-33e007cad02e30f1a5b55089ed2c25fd/CAB-33e007cad02e30f1a5b55089ed2c25fd",
+   "bundle": "effect/common/material/kris/particles_018_m__krish24",
+   "objects": {
+    "-1275852848859359003": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d60fc72c3c0f2c68fb9949f154492102/CAB-d60fc72c3c0f2c68fb9949f154492102",
+   "bundle": "effect/common/material/kris/particles_022_d__krish28",
+   "objects": {
+    "9082895377664755344": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_fs_pillar": [
+  {
+   "path": "archive:/CAB-ca78fdb0352611db6782bd407bbca94b/CAB-ca78fdb0352611db6782bd407bbca94b",
+   "bundle": "effect/common/material/kris/ring_002_a__krish22",
+   "objects": {
+    "-5377148780743412223": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c792e7274078e506f92f467126b96ef0/CAB-c792e7274078e506f92f467126b96ef0",
+   "bundle": "effect/common/material/kris/streak_613_g__kris200",
+   "objects": {
+    "2979046587414729397": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-8bcd470fe555648d3c0dd00b8d7fa785/CAB-8bcd470fe555648d3c0dd00b8d7fa785",
+   "bundle": "effect/common/material/01_fire/fire_005_b",
+   "objects": {
+    "-3770097293378251232": [
+     "Material",
+     "fire_005_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f43a6298ee8b0e1e1852d97b28825987/CAB-f43a6298ee8b0e1e1852d97b28825987",
+   "bundle": "effect/common/material/01_fire/fire_002_a",
+   "objects": {
+    "4132488706027380127": [
+     "Material",
+     "fire_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-5f6995fd99ce68f44d21e5895d91555a/CAB-5f6995fd99ce68f44d21e5895d91555a",
+   "bundle": "effect/common/material/kris/ring_002_a__krish24",
+   "objects": {
+    "7279636174291935577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-cc4234c848979cc8c4a43cb474114433/CAB-cc4234c848979cc8c4a43cb474114433",
+   "bundle": "effect/common/material/kris/glow_002_b__krish18",
+   "objects": {
+    "-4998239865839100009": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_charge": [
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-d37b74329ac8117e50879570481528cc/CAB-d37b74329ac8117e50879570481528cc",
+   "bundle": "effect/common/material/kris/lightning_002_a__krish26",
+   "objects": {
+    "-2861096956230193266": [
+     "Material",
+     "lightning_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1badaaf60713945497cbdd769d3959e5/CAB-1badaaf60713945497cbdd769d3959e5",
+   "bundle": "effect/common/material/kris/glow_205_b__krish24",
+   "objects": {
+    "4600347607147986304": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc/CAB-0bebdbace1b2cb9ab52bb4e411d1e2dc",
+   "bundle": "effect/common/material/kris/ring_002_a__krish20",
+   "objects": {
+    "4996291658138980577": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-2c472547a93308be812881e03f7e0291/CAB-2c472547a93308be812881e03f7e0291",
+   "bundle": "effect/common/material/kris/particles_019_d__krish28",
+   "objects": {
+    "-7152022854599822446": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6118cef34ec1b7be9b582471431c7280/CAB-6118cef34ec1b7be9b582471431c7280",
+   "bundle": "effect/common/material/kris/particles_022_d__krish32",
+   "objects": {
+    "-834912232668831237": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ce03e28b8d3a400e3ff2cfb429a6b581/CAB-ce03e28b8d3a400e3ff2cfb429a6b581",
+   "bundle": "effect/common/material/kris/ring_002_a__krish26",
+   "objects": {
+    "1716336282745227893": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_xslash": [
+  {
+   "path": "archive:/CAB-967f807722ce27772b283c86fd23ba24/CAB-967f807722ce27772b283c86fd23ba24",
+   "bundle": "effect/common/material/kris/particles_608_a__krish26",
+   "objects": {
+    "-1483735094078232264": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c77c0b560d7f7976e50c7657997f5ef2/CAB-c77c0b560d7f7976e50c7657997f5ef2",
+   "bundle": "effect/common/material/kris/streak_613_g__kris300",
+   "objects": {
+    "-1313915588454100581": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f5af608d7483294658b951f2ed7b0765/CAB-f5af608d7483294658b951f2ed7b0765",
+   "bundle": "effect/common/material/kris/particles_018_m__krish30",
+   "objects": {
+    "3721457200924535977": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-20ecc1e6cba5ac3b101b94b5818ea161/CAB-20ecc1e6cba5ac3b101b94b5818ea161",
+   "bundle": "effect/common/material/kris/particles_018_m__krish26",
+   "objects": {
+    "3295662396840442790": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-6118cef34ec1b7be9b582471431c7280/CAB-6118cef34ec1b7be9b582471431c7280",
+   "bundle": "effect/common/material/kris/particles_022_d__krish32",
+   "objects": {
+    "-834912232668831237": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-816f704eb08bcff0838cf22746532d40/CAB-816f704eb08bcff0838cf22746532d40",
+   "bundle": "effect/common/material/kris/glow_002_b__krish16",
+   "objects": {
+    "-1750700941875800334": [
+     "Material",
+     "glow_002_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a1d5b0f78130f75243a3aaef7c94f48b/CAB-a1d5b0f78130f75243a3aaef7c94f48b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris280",
+   "objects": {
+    "-7738424604519555546": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_crescent_1": [
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7",
+   "bundle": "effect/common/material/kris/streak_613_g__kris260",
+   "objects": {
+    "-9154340296128948819": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_crescent_2": [
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7",
+   "bundle": "effect/common/material/kris/streak_613_g__kris260",
+   "objects": {
+    "-9154340296128948819": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_crescent_3": [
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7",
+   "bundle": "effect/common/material/kris/streak_613_g__kris260",
+   "objects": {
+    "-9154340296128948819": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_crescent_air": [
+  {
+   "path": "archive:/CAB-75087704674aedbb9a7cbb9c79db15e1/CAB-75087704674aedbb9a7cbb9c79db15e1",
+   "bundle": "effect/common/material/kris/glow_205_b__krisbeam",
+   "objects": {
+    "-2784541632392821055": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-533fb1b251527f103a2fa42d219d667b/CAB-533fb1b251527f103a2fa42d219d667b",
+   "bundle": "effect/common/material/kris/streak_613_g__kris132",
+   "objects": {
+    "713638823728141669": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-a62b4d9d35799f49c53ad045f4172f4f/CAB-a62b4d9d35799f49c53ad045f4172f4f",
+   "bundle": "effect/common/material/kris/particles_608_a__krish24",
+   "objects": {
+    "-2817142527982678928": [
+     "Material",
+     "particles_608_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7/CAB-c610c23ed8e55b6dbcd2bffc16fc23e7",
+   "bundle": "effect/common/material/kris/streak_613_g__kris260",
+   "objects": {
+    "-9154340296128948819": [
+     "Material",
+     "streak_613_g"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_crescent_hit": [
+  {
+   "path": "archive:/CAB-4b4c5980b4db7f9901fb832ce80bce54/CAB-4b4c5980b4db7f9901fb832ce80bce54",
+   "bundle": "effect/common/material/kris/particles_018_m__krish28",
+   "objects": {
+    "-1784443778563705352": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-bf48efc2b466869fb77e04dae549cb5a/CAB-bf48efc2b466869fb77e04dae549cb5a",
+   "bundle": "effect/common/material/kris/glow_205_b__krish26",
+   "objects": {
+    "6919986145504473024": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-16bf733ad83b8ebf09a58415986352d3/CAB-16bf733ad83b8ebf09a58415986352d3",
+   "bundle": "effect/common/material/kris/particles_019_d__krish26",
+   "objects": {
+    "-3611961488269384274": [
+     "Material",
+     "particles_019_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c2a1d84fe60efbaea00f8c60a79412a5/CAB-c2a1d84fe60efbaea00f8c60a79412a5",
+   "bundle": "effect/common/material/kris/glow_002_n__krish21",
+   "objects": {
+    "-2965887073616165669": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-49b0723bc0f7c27d96faf2605ec44f75/CAB-49b0723bc0f7c27d96faf2605ec44f75",
+   "bundle": "effect/common/material/kris/particles_022_d__krish30",
+   "objects": {
+    "3507897284205841979": [
+     "Material",
+     "particles_022_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-7e53d532eee6bc4f033474853771b765/CAB-7e53d532eee6bc4f033474853771b765",
+   "bundle": "effect/common/texture/07_other/other_021",
+   "objects": {
+    "3339199270462487375": [
+     "Texture2D",
+     "other_021"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_dash": [
+  {
+   "path": "archive:/CAB-3f2ec498b161afdcb89bba7c8b28c5a6/CAB-3f2ec498b161afdcb89bba7c8b28c5a6",
+   "bundle": "effect/common/material/14_air/air_002_a",
+   "objects": {
+    "-4384621104483609099": [
+     "Material",
+     "air_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-68ffb488c14cdf485ddb57edea681ed5/CAB-68ffb488c14cdf485ddb57edea681ed5",
+   "bundle": "effect/common/material/14_air/air_007_a",
+   "objects": {
+    "-2353010694606174150": [
+     "Material",
+     "air_007_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/role/kris/kris_partydash": [
+  {
+   "path": "archive:/CAB-3f2ec498b161afdcb89bba7c8b28c5a6/CAB-3f2ec498b161afdcb89bba7c8b28c5a6",
+   "bundle": "effect/common/material/14_air/air_002_a",
+   "objects": {
+    "-4384621104483609099": [
+     "Material",
+     "air_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-3386405063059146654": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-e4e168be08ef17a84c3ae8f3c03d9a4c/CAB-e4e168be08ef17a84c3ae8f3c03d9a4c",
+   "bundle": "effect/common/material/kris/glow_205_b__krish13",
+   "objects": {
+    "-6806202297352258765": [
+     "Material",
+     "glow_205_b"
+    ]
+   }
+  }
+ ]
+}

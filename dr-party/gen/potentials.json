@@ -1,0 +1,3111 @@
+{
+ "version": "0.2.0",
+ "actor": 200801,
+ "note": "written by kris_potentials.content; read by check_potentials.py and tests/ingame_pots.py",
+ "cards": [
+  {
+   "key": "A1",
+   "id": 20801,
+   "label": "Wide Slash",
+   "name": "Slash",
+   "order": 1,
+   "trigger": 208011,
+   "row": 120801,
+   "root": 130801,
+   "icon": 20801,
+   "icon_final": 20801,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "variants kris_a1_w, kris_a2_w, kris_a3_w_f, kris_a3_w: hit boxes x1.5 about the swing's centre (forward reach 1.86 / 1.90 / 2.29 u, was 1.31 / 1.31 / 1.61), the dedicated wide strokes, damage x1.25 (1.375 / 1.625 / 2.50)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "A2",
+   "id": 20802,
+   "label": "Crescent",
+   "name": "Slash",
+   "order": 1,
+   "trigger": 208021,
+   "row": 120802,
+   "root": 130801,
+   "icon": 20801,
+   "icon_final": 20801,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "every kris_a1* / a2* / a3* and every spin spawn their crescent at the first hit (AddRoles gated on 208021): kris_crescent_1 0.6, kris_crescent_2 0.7, kris_crescent_3 1.4, kris_crescent_air 0.6, 22 u/s for 0.32 s, each enemy once, through enemies, the dedicated effects; hit effect kris_crescent_hit",
+   "trigger_fields": {}
+  },
+  {
+   "key": "A3",
+   "id": 20803,
+   "label": "Endless Slash",
+   "name": "Slash",
+   "order": 1,
+   "trigger": 208031,
+   "row": 120803,
+   "root": 130801,
+   "icon": 20801,
+   "icon_final": 20801,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV+ER",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "route 'switch' (the plan's: ActionSwitch to kris_a1, NewActionMode 1, SkillCheck 13, on Attack pressed; the fallback 'reset' is built with KP_A3_ROUTE=reset): every kris_a3* from its last hit + 0.05 s, gated on 208031; dr_pt_loop (clone of stock 1204tk): +15 % action speed a stack, 3 stacks, 1.2 s, one stack per third swing",
+   "trigger_fields": {}
+  },
+  {
+   "key": "A4",
+   "id": 20804,
+   "label": "Finisher",
+   "name": "Slash",
+   "order": 1,
+   "trigger": 208041,
+   "row": 120804,
+   "root": 130801,
+   "icon": 20801,
+   "icon_final": 20801,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV+D",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "variants kris_a3_w_f, kris_a3_f: the third swing knocks up at 13 u/s, hit-stop +0.06 s, damage x1.15 (2.30; 2.875 with A1); armour break: buff 2303 strength 7 over the hit window on every kris_a3* (gated on the card) and ArmorBreak tier 7 on the variants; hit effect kris_shatter",
+   "trigger_fields": {}
+  },
+  {
+   "key": "A5",
+   "id": 20805,
+   "label": "Clash",
+   "name": "Clash",
+   "order": 1,
+   "trigger": 208051,
+   "row": 120805,
+   "root": 130801,
+   "icon": 20801,
+   "icon_final": 20801,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D+ER",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "route 'convert' (the plan's; the fallback 'dodge' is built with KP_A5_ROUTE=dodge): ScanBulletConvert (tags Throw) every 0.05 s in the hit box + 0.2 u -> kris_clash (STAND-IN spark: kris_hit x1.2) on every swing, spin and the dive over each hit's window, gated on 208051. Enemy projectiles tagged Throw in this install: 60 rows of 39 logics",
+   "trigger_fields": {}
+  },
+  {
+   "key": "B1",
+   "id": 20806,
+   "label": "Wide Spin",
+   "name": "Spin Slash",
+   "order": 2,
+   "trigger": 208061,
+   "row": 120806,
+   "root": 130802,
+   "icon": 20806,
+   "icon_final": 20806,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "variant kris_ja_w: each of the spin's two shapes x1.5 about the spin's centre, the dedicated wide spin, 4 hits (3 every 0.05 s in the first shape, then the knock in the last), total 1.30 -> 1.70",
+   "trigger_fields": {}
+  },
+  {
+   "key": "B2",
+   "id": 20807,
+   "label": "Bounce",
+   "name": "Spin Slash",
+   "order": 2,
+   "trigger": 208071,
+   "row": 120807,
+   "root": 130802,
+   "icon": 20806,
+   "icon_final": 20806,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "every spin switches to kris_ja_pogo (a copy of jump2 that leaves the double jump alone: up 11 u/s for 0.15 s) once its last hit has begun and a hit landed (Hit condition), gated on 208071; it resets kris_ja's cooldown and the air chain; STAND-IN effect: the double jump's stock swirl",
+   "trigger_fields": {}
+  },
+  {
+   "key": "B3",
+   "id": 20808,
+   "label": "Diving Spin",
+   "name": "Diving Spin",
+   "order": 4,
+   "trigger": 208081,
+   "row": 120808,
+   "root": 130803,
+   "icon": 20808,
+   "icon_final": 20808,
+   "pre": [],
+   "new": true,
+   "ultra": false,
+   "route": "DV",
+   "batch": 3,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_slash",
+   "how": "Down held in a spin's first 0.05 s (InputDir, gated on 208081) -> kris_dive: (3, -24) u/s, a hit every 0.06 s at 0.35, Super Armor 5, looping until the ground; kris_dive_land (0.12 s) spawns kris_dive_wave: 2.6 x 1.0 u, 2.2, launch; STAND-IN effects: kris_slash_air for kris_dive, kris_hit_heavy for kris_dive_wave",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C1",
+   "id": 20809,
+   "label": "Big Buster",
+   "name": "Rude Buster",
+   "order": 7,
+   "trigger": 208091,
+   "row": 120809,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_rudebuster",
+   "how": "rb_bolt_home_b / _bk: box x1.5, damage 5.6, shake x1.25; chosen by js mods.rb.action. Its own effects kris_rb_bolt_big / kris_rb_burst_big (the longer trail)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C2",
+   "id": 20810,
+   "label": "Chain Buster",
+   "name": "Rude Buster",
+   "order": 7,
+   "trigger": 208101,
+   "row": 120810,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS+DV+ER",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_rudebuster",
+   "how": "js: a primary bolt's hit (trigger 208901; fallback: where the bolt ended) launches rb_chain then rb_chain2 at the nearest enemy within 30 u not hit yet, 0.06 s later, 0.8 u off the impact; 3.6 each; a Red Buster's chain leaves 0.12 s after the bolt is over",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C3",
+   "id": 20811,
+   "label": "Armor Buster",
+   "name": "Rude Buster",
+   "order": 7,
+   "trigger": 208111,
+   "row": 120811,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D+JS",
+   "batch": 1,
+   "offered": true,
+   "effect": "partial",
+   "built_by": "kp_rudebuster",
+   "how": "data side only: Super Armor break 9 and 'ignore block' on every Rude Buster bolt, guard.ignore for the command; the guard cut (dr_pt_guard) has no owner yet, so 'guarding enemies take full damage' has nothing to undo",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C4",
+   "id": 20812,
+   "label": "Push Buster",
+   "name": "Rude Buster",
+   "order": 7,
+   "trigger": 208121,
+   "row": 120812,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV+ER",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_rudebuster",
+   "how": "rb_bolt_home_k / _bk, rb_red_k / _bk: push_back at (14, 6) u/s by the bolt's facing (PushDirType 0), Super Armor break 7; bosses: js adds dr_pt_bossknock (+0.4) to an enemy carrying 3029 while the bolt flies, and slides it to 1.2 u if the knock moved it under 1.0 u (only in a hit reaction, once per 3 s, never an opted-out enemy)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C5",
+   "id": 20813,
+   "label": "Timed Buster",
+   "name": "Rude Buster",
+   "order": 7,
+   "trigger": 208131,
+   "row": 120813,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS+DV",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_rudebuster",
+   "how": "js: a Skill press 0.12 s before to 0.15 s after a command's own bolt hits (battle time; the press is never consumed) launches rb_shock where it hit: every enemy within 2.2 u, 2.5, launched; one per bolt and per press. Sound: a STAND-IN cue (sfx_dr_pt_explosion)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C6",
+   "id": 20814,
+   "label": "Red Buster",
+   "name": "Red Buster",
+   "order": 7,
+   "trigger": 208141,
+   "row": 120814,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [
+    20809
+   ],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_rudebuster",
+   "how": "rb_red (and _b with C1, _k with C4, _bk): box x2.5, drawn 1.6 (2.0 with C1) times the normal bolt, flat launch, homing for 3.0 s, 7.0 per enemy, no end on a hit. js: after each hit the nearest enemy within 30 u it has not hit becomes its target; on its 3rd enemy the bolt becomes rb_red_boom (route 'switch'); a wall or the floor does the same in data; nobody left: it flies on straight. rb_red_boom: every enemy within 3.0 u, 5.0, launched, shake x1.5. guardAction: the plain red variant",
+   "trigger_fields": {}
+  },
+  {
+   "key": "C7",
+   "id": 20815,
+   "label": "Quick Susie",
+   "name": "Rude Buster",
+   "order": 7,
+   "trigger": 208151,
+   "row": 120815,
+   "root": 130804,
+   "icon": 20809,
+   "icon_final": 20809,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_rudebuster",
+   "how": "js: mods.recharge.susie = 0.7 x the command's default (3.0 -> 2.10 s; the minimum cycle is 0.45 s). Set, not multiplied: the card counts once whoever else answers it",
+   "trigger_fields": {}
+  },
+  {
+   "key": "D1",
+   "id": 20816,
+   "label": "Big Fireshock",
+   "name": "Fireshock",
+   "order": 8,
+   "trigger": 208161,
+   "row": 120816,
+   "root": 130805,
+   "icon": 20816,
+   "icon_final": 20816,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "DV",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_fireshock",
+   "how": "fs_ball_home_b -> fs_burst_b (js mods.fs.action): box 1.6 -> 2.4 u, damage 4.22 (x1.25), shake x1.4; fireball kris_fs_ball_big, burst kris_fs_burst_big",
+   "trigger_fields": {}
+  },
+  {
+   "key": "D2",
+   "id": 20817,
+   "label": "Kindle",
+   "name": "Fireshock",
+   "order": 8,
+   "trigger": 208171,
+   "row": 120817,
+   "root": 130805,
+   "icon": 20816,
+   "icon_final": 20816,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D+ER",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_fireshock",
+   "how": "stock Burn 1116 (5 s, 150 a second) on the victims of the cast's fs_burst* and of fs_pillar, gated on 208171 (the chain burst and the ground burn with D3); js confirms each hit and burns from the script if the data did not",
+   "trigger_fields": {}
+  },
+  {
+   "key": "D3",
+   "id": 20818,
+   "label": "Wildfire",
+   "name": "Fireshock",
+   "order": 8,
+   "trigger": 208181,
+   "row": 120818,
+   "root": 130805,
+   "icon": 20816,
+   "icon_final": 20816,
+   "pre": [
+    20817
+   ],
+   "new": false,
+   "ultra": false,
+   "route": "DV+JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_fireshock",
+   "how": "js: from each enemy the cast's fire hits, a leap (fs_chain, 22 u/s, 1.8 s) to the nearest enemy within 30 u this cast has not hit, up to 3 a cast, each bursting as fs_burst_c (1.12 u, 1.69, Burn gated on 208181); fs_field on the floor under every burst of the cast (AddRoles gated on 208181): 3.0 x 0.8 u, 6 hits of 0.30 over 3 s, Burn; js: every 0.5 s an unburning enemy within 2.5 u of a burning one catches fire (5 s, 150 a second), each fire once per enemy. Effects: leap kris_fs_chain, chain burst kris_fs_burst_c, ground kris_fs_field, spread flash kris_fs_spread",
+   "trigger_fields": {}
+  },
+  {
+   "key": "D4",
+   "id": 20819,
+   "label": "Aftershock",
+   "name": "Fireshock",
+   "order": 8,
+   "trigger": 208191,
+   "row": 120819,
+   "root": 130805,
+   "icon": 20816,
+   "icon_final": 20816,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D",
+   "batch": 1,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_fireshock",
+   "how": "every hit of the cast's fs_burst* creates fs_pillar under the enemy (CreateBullet, gated on 208191): 0.35 s, then a 1.6 x 3.6 u hit, damage 1.88 (the base burst's x0.56), launch; one per enemy per cast; the pillar and its tell: kris_fs_pillar",
+   "trigger_fields": {}
+  },
+  {
+   "key": "D5",
+   "id": 20820,
+   "label": "Quick Ralsei",
+   "name": "Fireshock",
+   "order": 8,
+   "trigger": 208201,
+   "row": 120820,
+   "root": 130805,
+   "icon": 20816,
+   "icon_final": 20816,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_fireshock",
+   "how": "js: Ralsei's recharge x0.7 (mods.recharge.ralsei; the command keeps its 0.45 s minimum cycle)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "D6",
+   "id": 20821,
+   "label": "Detonate",
+   "name": "Fireshock",
+   "order": 8,
+   "trigger": 208211,
+   "row": 120821,
+   "root": 130805,
+   "icon": 20816,
+   "icon_final": 20816,
+   "pre": [
+    20817
+   ],
+   "new": false,
+   "ultra": false,
+   "route": "JS+DV+ER",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_fireshock",
+   "how": "js: a Rude Buster bolt or chain hop that hits a burning enemy (trigger 208901; while no projectile hit has been reported: a burning enemy within 1.6 u of where the bolt ended) launches rb_detonate on it (every enemy within 2.6 u, 3.0, shake x1.3) and takes its burn off; explosion STAND-IN the base burst x1.62",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E1",
+   "id": 20822,
+   "label": "Dual Command",
+   "name": "Dual Command",
+   "order": 10,
+   "trigger": 208221,
+   "row": 120822,
+   "root": 130806,
+   "icon": 20822,
+   "icon_final": 20822,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_party",
+   "how": "js mods.dual: a command while both are ready sends Susie, then Ralsei 0.25 s later, on the same target (js/command.js)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E2",
+   "id": 20823,
+   "label": "Rally",
+   "name": "Party",
+   "order": 10,
+   "trigger": 208231,
+   "row": 120823,
+   "root": 130806,
+   "icon": 20822,
+   "icon_final": 20822,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS+ER",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_party",
+   "how": "js: each hit of Kris's own swings (trigger 208901, source set rally) cuts both recharges by 0.15 s (never under the command's minimum cycle). Fallback for R1: dr_pt_rally on Kris at the end of the hit window of kris_a1, kris_a1_w, kris_a2, kris_a2_w, kris_a3, kris_a3_w_f, kris_a3_w, kris_a3_f, kris_ja, kris_ja_w, kris_dive when the swing hit; counted only while the trigger has reported no hit of Kris's",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E3",
+   "id": 20824,
+   "label": "Heal Prayer",
+   "name": "Heal Prayer",
+   "order": 10,
+   "trigger": 208241,
+   "row": 120824,
+   "root": 130806,
+   "icon": 20822,
+   "icon_final": 20822,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_party",
+   "how": "js: when Ralsei's projectile leaves, Kris is healed 4 % of max HP (Attr.SetHP, the number shown), at most once in 8 s, not spent at full HP; sparkle: the stock heal sparkle Common/buff_004",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E4",
+   "id": 20825,
+   "label": "X Slash",
+   "name": "X Slash",
+   "order": 9,
+   "trigger": 208251,
+   "row": 120825,
+   "root": 130807,
+   "icon": 20825,
+   "icon_final": 20825,
+   "pre": [],
+   "new": true,
+   "ultra": false,
+   "route": "DV+JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_party",
+   "how": "Kris's charged attack: js reads the raw Attack hold; held 0.25 s through kris_a1* -> kris_charge at the swing's hit end -> full at 0.5 s -> release: kris_xslash -> kris_xslash_2; lines xslash_a / xslash_b at 0.05 / 0.23 s (14 x 1.6 u at +-35 degrees, 2.0 s, 8 hits of 0.9 each), booked to the Attack row; 5 s cooldown; no SP. IN PART: the charged attack is built (charge, release at full, the X's two lines, 5 s cooldown); its charge pose is the crouch strip and its effects are stand-ins until kris_charge and kris_xslash are in fx/",
+   "trigger_fields": {}
+  },
+  {
+   "key": "F1",
+   "id": 20826,
+   "label": "Triple Jump",
+   "name": "Jump",
+   "order": 13,
+   "trigger": 208261,
+   "row": 120826,
+   "root": 130808,
+   "icon": 20826,
+   "icon_final": 20826,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D",
+   "batch": 3,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_move",
+   "how": "trigger 208261: StartStage AddTrigger Id:11741,RefreshSkill:1 (stock 53211); the copied jump3 route and row read it. Air recovery: the stock switch to 'reactive' restored on push_back, push_back_2, push_down_2 (gated on 11741); the card shows the stock line",
+   "trigger_fields": {
+    "TrigType": "StartStage",
+    "OPFunc": "AddTrigger",
+    "OPParams": "Id:11741,RefreshSkill:1"
+   }
+  },
+  {
+   "key": "F2",
+   "id": 20827,
+   "label": "Air Reset",
+   "name": "Jump",
+   "order": 13,
+   "trigger": 208271,
+   "row": 120827,
+   "root": 130808,
+   "icon": 20826,
+   "icon_final": 20826,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D",
+   "batch": 3,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_move",
+   "how": "SetActionCD 'action: \"kris_ja\", cd: 0' on jump2, jump3, dashAir, dashAir2, dashAir3 while 20827 is held (on the air dashes also SkillChainReset chain 4): Ragna's 5322 data",
+   "trigger_fields": {}
+  },
+  {
+   "key": "G1",
+   "id": 20828,
+   "label": "Triple Dash",
+   "name": "Dash",
+   "order": 19,
+   "trigger": 208281,
+   "row": 120828,
+   "root": 130809,
+   "icon": 20828,
+   "icon_final": 20828,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D",
+   "batch": 3,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_move",
+   "how": "trigger 208281: StartStage AddTrigger Id:11801,RefreshSkill:1 (stock 53251); the copied dash2 / dash3 / dashAir2 / dashAir3 routes and rows read it",
+   "trigger_fields": {
+    "TrigType": "StartStage",
+    "OPFunc": "AddTrigger",
+    "OPParams": "Id:11801,RefreshSkill:1"
+   }
+  },
+  {
+   "key": "G2",
+   "id": 20829,
+   "label": "Party Dash",
+   "name": "Party Dash",
+   "order": 20,
+   "trigger": 208291,
+   "row": 120829,
+   "root": 130810,
+   "icon": 20829,
+   "icon_final": 20829,
+   "pre": [],
+   "new": true,
+   "ultra": false,
+   "route": "DV+JS+ER",
+   "batch": 3,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_move",
+   "how": "kris_pdash_loop (+ kris_pdash_jump, kris_pdash_fall, kris_pdash_land, kris_pdash_end, kris_pdash_bonk): 14 u/s, 2.5 s, 1.2 per enemy per pass, knock (8, 5), armour 9, ScanBulletConvert 'Throw'; entry long+tail from 0.15 s of any dash (36 switches); wall: data+js; js: mods.follow, the stall fallback, the log",
+   "trigger_fields": {}
+  },
+  {
+   "key": "G3",
+   "id": 20830,
+   "label": "Full Speed",
+   "name": "Party Dash",
+   "order": 20,
+   "trigger": 208301,
+   "row": 120830,
+   "root": 130810,
+   "icon": 20829,
+   "icon_final": 20829,
+   "pre": [
+    20829
+   ],
+   "new": false,
+   "ultra": false,
+   "route": "DV+JS",
+   "batch": 3,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_move",
+   "how": "kris_pdash_loop_g3: 18 u/s, 3.5 s, 1.8 per pass, class heavy; the bonk spawns kris_pdash_wave (2.4 u, 3.0, launch) while 20830 is held; js: a boss in the way is a crash (once per 3 s per boss), Push Buster's knock-back offset on it for the wave",
+   "trigger_fields": {}
+  },
+  {
+   "key": "H1",
+   "id": 20831,
+   "label": "Party of Three",
+   "name": "Universal Enhancement",
+   "order": 23,
+   "trigger": 208311,
+   "row": 120831,
+   "root": 130811,
+   "icon": 20831,
+   "icon_final": 20831,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "partial",
+   "built_by": "kp_party",
+   "how": "js: dr_pt_trio (stock 12571, strength 0.2) on Kris while Susie and Ralsei are both ready. IN PART: final damage +20 % while Susie and Ralsei are both ready is built; the glow on both followers waits for the kit effect kris_trio",
+   "trigger_fields": {}
+  },
+  {
+   "key": "H2",
+   "id": 20832,
+   "label": "Marked",
+   "name": "Universal Enhancement",
+   "order": 23,
+   "trigger": 208321,
+   "row": 120832,
+   "root": 130811,
+   "icon": 20831,
+   "icon_final": 20831,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "D",
+   "batch": 2,
+   "offered": true,
+   "effect": "partial",
+   "built_by": "kp_party",
+   "how": "dr_pt_mark (stock 1303, strength 0.2, 5 s) on the victims of fs_burst, fs_burst_b, fs_burst_c, rb_bolt_home, rb_bolt_home_b, rb_bolt_home_bk, rb_bolt_home_k, rb_red, rb_red_b, rb_red_bk, rb_red_boom, rb_red_k, gated on the card. IN PART: damage taken +20 % for 5 s on every enemy a command hits is built; a Marked enemy shows no sign until the kit effect kris_mark is in fx/",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E5",
+   "id": 20833,
+   "label": "Pen of Hope",
+   "name": "Pen of Hope",
+   "order": 10,
+   "trigger": 208331,
+   "row": 120833,
+   "root": 130806,
+   "icon": 20822,
+   "icon_final": 20822,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_pen",
+   "how": "js/pots_pen.js: Summon toggles Auto (not again for 2 s) and the party poses (command.js P.pose); each ready companion fires through the command (__bbDR.party.fire) at the nearest boss on screen, else the enemy Kris last hit, else the nearest on screen; an auto shot recharges x1.33333 (4 s); 0.35 s between auto shots; while Auto is on (marker dr_pt_auto on Kris) the command's projectiles deal 40% less (dr_pt_autocut, value 0.5, on the victim before damage; measured in game)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E6",
+   "id": 20834,
+   "label": "Quick Thinking",
+   "name": "Pen of Hope",
+   "order": 10,
+   "trigger": 208341,
+   "row": 120834,
+   "root": 130806,
+   "icon": 20822,
+   "icon_final": 20822,
+   "pre": [
+    20833
+   ],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_pen",
+   "how": "js/pots_pen.js: an auto shot recharges x1.16667 (3.5 s; needs E5)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "E7",
+   "id": 20835,
+   "label": "In Sync",
+   "name": "Pen of Hope",
+   "order": 10,
+   "trigger": 208351,
+   "row": 120835,
+   "root": 130806,
+   "icon": 20822,
+   "icon_final": 20822,
+   "pre": [
+    20834
+   ],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_pen",
+   "how": "js/pots_pen.js: an auto shot recharges x1 (3 s; needs E6)",
+   "trigger_fields": {}
+  },
+  {
+   "key": "H3",
+   "id": 20836,
+   "label": "Graze",
+   "name": "Universal Enhancement",
+   "order": 23,
+   "trigger": 208361,
+   "row": 120836,
+   "root": 130811,
+   "icon": 20831,
+   "icon_final": 20831,
+   "pre": [],
+   "new": false,
+   "ultra": false,
+   "route": "JS",
+   "batch": 2,
+   "offered": true,
+   "effect": "built",
+   "built_by": "kp_tension",
+   "how": "js/pots_tension.js: a perfect dodge gives 10 Tension instead of 5",
+   "trigger_fields": {}
+  }
+ ],
+ "unleashed": {
+  "id": 20899,
+  "row": 120899,
+  "icon": 5000,
+  "effect": "built",
+  "built_by": "kp_fireshock",
+  "how": "the stock card (Attack and Skill damage +20 %): its row has the shape of Ragna's 5340 (ActorId, AddDamageAttack, AddDamageSkill, IconId, Id, IsDamageSkill, Label, OrderId, Rank, RelationId, Score) and a Type-3 move-list row"
+ },
+ "roots": {
+  "slash": 130801,
+  "spin": 130802,
+  "dive": 130803,
+  "rb": 130804,
+  "fs": 130805,
+  "party": 130806,
+  "xslash": 130807,
+  "jump": 130808,
+  "dash": 130809,
+  "pdash": 130810,
+  "univ": 130811
+ },
+ "roots_written": [
+  130801,
+  130802,
+  130803,
+  130804,
+  130805,
+  130806,
+  130807,
+  130808,
+  130809,
+  130810,
+  130811
+ ],
+ "offer_pending": false,
+ "hitlog": true,
+ "pairs": [
+  {
+   "key": "HP1",
+   "id": 208501,
+   "row": 140801,
+   "needs": [
+    20810,
+    20814
+   ],
+   "needs_keys": [
+    "C2",
+    "C6"
+   ],
+   "root": 130804,
+   "text": "The chain goes on to every enemy on screen, up to 8 hops.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_party"
+  },
+  {
+   "key": "HP2",
+   "id": 208502,
+   "row": 140802,
+   "needs": [
+    20810,
+    20817
+   ],
+   "needs_keys": [
+    "C2",
+    "D2"
+   ],
+   "root": 130804,
+   "text": "The chain carries fire to each enemy it reaches.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_party"
+  },
+  {
+   "key": "HP3",
+   "id": 208503,
+   "row": 140803,
+   "needs": [
+    20813,
+    20819
+   ],
+   "needs_keys": [
+    "C5",
+    "D4"
+   ],
+   "root": 130805,
+   "text": "The timed press also works on Fireshock's second burst.",
+   "written": false,
+   "effect": "effect pending",
+   "built_by": null
+  },
+  {
+   "key": "HP4",
+   "id": 208504,
+   "row": 140804,
+   "needs": [
+    20802,
+    20817
+   ],
+   "needs_keys": [
+    "A2",
+    "D2"
+   ],
+   "root": 130801,
+   "text": "The crescent ignites when it passes through a burning enemy.",
+   "written": false,
+   "effect": "effect pending",
+   "built_by": null
+  },
+  {
+   "key": "HP5",
+   "id": 208505,
+   "row": 140805,
+   "needs": [
+    20822,
+    20814
+   ],
+   "needs_keys": [
+    "E1",
+    "C6"
+   ],
+   "root": 130806,
+   "text": "Fireshock erupts along Red Buster's whole path.",
+   "written": false,
+   "effect": "effect pending",
+   "built_by": null
+  },
+  {
+   "key": "HP6",
+   "id": 208506,
+   "row": 140806,
+   "needs": [
+    20829,
+    20801
+   ],
+   "needs_keys": [
+    "G2",
+    "A1"
+   ],
+   "root": 130810,
+   "text": "The dash cuts in a wider range.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_move"
+  },
+  {
+   "key": "HP7",
+   "id": 208507,
+   "row": 140807,
+   "needs": [
+    20829,
+    20823
+   ],
+   "needs_keys": [
+    "G2",
+    "E2"
+   ],
+   "root": 130810,
+   "text": "Enemies knocked aside shorten the recharge.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_move"
+  },
+  {
+   "key": "HP8",
+   "id": 208508,
+   "row": 140808,
+   "needs": [
+    20807,
+    20808
+   ],
+   "needs_keys": [
+    "B2",
+    "B3"
+   ],
+   "root": 130803,
+   "text": "The dive bounces back up from the first enemy it hits.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_move"
+  },
+  {
+   "key": "HP9",
+   "id": 208509,
+   "row": 140809,
+   "needs": [
+    20803,
+    20823
+   ],
+   "needs_keys": [
+    "A3",
+    "E2"
+   ],
+   "root": 130801,
+   "text": "Each loop of the combo shortens the recharge further.",
+   "written": false,
+   "effect": "effect pending",
+   "built_by": null
+  },
+  {
+   "key": "HP10",
+   "id": 208510,
+   "row": 140810,
+   "needs": [
+    20810,
+    20832
+   ],
+   "needs_keys": [
+    "C2",
+    "H2"
+   ],
+   "root": 130804,
+   "text": "Every enemy the chain reaches is Marked.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_party"
+  },
+  {
+   "key": "HP11",
+   "id": 208511,
+   "row": 140811,
+   "needs": [
+    20826,
+    20807
+   ],
+   "needs_keys": [
+    "F1",
+    "B2"
+   ],
+   "root": 130802,
+   "text": "Bouncing off an enemy also restores a jump.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_move"
+  },
+  {
+   "key": "HP12",
+   "id": 208512,
+   "row": 140812,
+   "needs": [
+    20836,
+    20828
+   ],
+   "needs_keys": [
+    "H3",
+    "G1"
+   ],
+   "root": 130811,
+   "text": "Perfect dodges build 15 Tension.",
+   "written": true,
+   "effect": "built",
+   "built_by": "kp_tension"
+  }
+ ],
+ "self_triggers": [
+  {
+   "idx": 208901,
+   "type": "SkHit_3",
+   "cond": "1,2,3,4,5,6,7,8",
+   "cd": null,
+   "func": "trDR_pot_hit"
+  },
+  {
+   "idx": 208902,
+   "type": "SuccessDodge",
+   "cond": null,
+   "cd": "0.5",
+   "func": "trDR_pot_dodge"
+  },
+  {
+   "idx": 208903,
+   "type": "StartStage",
+   "cond": null,
+   "cd": null,
+   "func": "trDR_pot_stage"
+  }
+ ],
+ "icons": {
+  "standin": true,
+  "by_order": {
+   "1": 20801,
+   "2": 20806,
+   "4": 20808,
+   "7": 20809,
+   "8": 20816,
+   "9": 20825,
+   "10": 20822,
+   "13": 20826,
+   "19": 20828,
+   "20": 20829,
+   "23": 20831
+  },
+  "final": [
+   20801,
+   20806,
+   20808,
+   20809,
+   20816,
+   20825,
+   20822,
+   20826,
+   20828,
+   20829,
+   20831
+  ],
+  "atlas": "ui/atlas/iconpotential200801/iconpotential200801",
+  "atlas_from": "ui/atlas/iconpotential100101/iconpotential100101"
+ },
+ "variants": {
+  "kris": {
+   "kris_a1": [
+    {
+     "name": "kris_a1_w",
+     "keys": [
+      "w"
+     ],
+     "cards": [
+      "A1"
+     ],
+     "mul": 1.25,
+     "ratio": 1.375,
+     "hits": 1
+    }
+   ],
+   "kris_a2": [
+    {
+     "name": "kris_a2_w",
+     "keys": [
+      "w"
+     ],
+     "cards": [
+      "A1"
+     ],
+     "mul": 1.25,
+     "ratio": 1.625,
+     "hits": 1
+    }
+   ],
+   "kris_a3": [
+    {
+     "name": "kris_a3_w_f",
+     "keys": [
+      "w",
+      "f"
+     ],
+     "cards": [
+      "A1",
+      "A4"
+     ],
+     "mul": 1.4375,
+     "ratio": 2.875,
+     "hits": 1
+    },
+    {
+     "name": "kris_a3_w",
+     "keys": [
+      "w"
+     ],
+     "cards": [
+      "A1"
+     ],
+     "mul": 1.25,
+     "ratio": 2.5,
+     "hits": 1
+    },
+    {
+     "name": "kris_a3_f",
+     "keys": [
+      "f"
+     ],
+     "cards": [
+      "A4"
+     ],
+     "mul": 1.15,
+     "ratio": 2.3,
+     "hits": 1
+    }
+   ],
+   "kris_ja": [
+    {
+     "name": "kris_ja_w",
+     "keys": [
+      "w"
+     ],
+     "cards": [
+      "B1"
+     ],
+     "mul": 1.3077,
+     "ratio": 1.7,
+     "hits": 4
+    }
+   ]
+  },
+  "krisbullet": {
+   "fs_ball_home": [
+    {
+     "name": "fs_ball_home_b",
+     "keys": [
+      "b"
+     ],
+     "cards": [
+      "D1"
+     ],
+     "mul": 1.0,
+     "ratio": null,
+     "hits": 0
+    }
+   ],
+   "fs_burst": [
+    {
+     "name": "fs_burst_b",
+     "keys": [
+      "b"
+     ],
+     "cards": [
+      "D1"
+     ],
+     "mul": 1.25,
+     "ratio": 5.625,
+     "hits": 1
+    }
+   ],
+   "rb_bolt_home": [
+    {
+     "name": "rb_bolt_home_bk",
+     "keys": [
+      "b",
+      "k"
+     ],
+     "cards": [
+      "C1",
+      "C4"
+     ],
+     "mul": 1.2444,
+     "ratio": 5.6,
+     "hits": 1
+    },
+    {
+     "name": "rb_bolt_home_b",
+     "keys": [
+      "b"
+     ],
+     "cards": [
+      "C1"
+     ],
+     "mul": 1.2444,
+     "ratio": 5.6,
+     "hits": 1
+    },
+    {
+     "name": "rb_bolt_home_k",
+     "keys": [
+      "k"
+     ],
+     "cards": [
+      "C4"
+     ],
+     "mul": 1.0,
+     "ratio": 4.5,
+     "hits": 1
+    }
+   ],
+   "rb_red": [
+    {
+     "name": "rb_red_bk",
+     "keys": [
+      "b",
+      "k"
+     ],
+     "cards": [
+      "C1",
+      "C4"
+     ],
+     "mul": 1.0,
+     "ratio": 7.0,
+     "hits": 1
+    },
+    {
+     "name": "rb_red_b",
+     "keys": [
+      "b"
+     ],
+     "cards": [
+      "C1"
+     ],
+     "mul": 1.0,
+     "ratio": 7.0,
+     "hits": 1
+    },
+    {
+     "name": "rb_red_k",
+     "keys": [
+      "k"
+     ],
+     "cards": [
+      "C4"
+     ],
+     "mul": 1.0,
+     "ratio": 7.0,
+     "hits": 1
+    }
+   ]
+  }
+ },
+ "actions": {
+  "kris": [
+   {
+    "name": "kris_pdash_loop_g3_w",
+    "hits": 1,
+    "weight": "heavy",
+    "damage": {
+     "ratio": 1.8,
+     "hits": 1,
+     "group": 6,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_move"
+    },
+    "kit": [
+     "Role/Kris/kris_hit_heavy",
+     "Role/Kris/kris_partydash",
+     "Role/Kris/kris_slash_1"
+    ]
+   },
+   {
+    "name": "kris_pdash_loop_g3",
+    "hits": 1,
+    "weight": "heavy",
+    "damage": {
+     "ratio": 1.8,
+     "hits": 1,
+     "group": 6,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_move"
+    },
+    "kit": [
+     "Role/Kris/kris_hit_heavy",
+     "Role/Kris/kris_partydash"
+    ]
+   },
+   {
+    "name": "kris_pdash_loop_w",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 1.2,
+     "hits": 1,
+     "group": 6,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_move"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_partydash",
+     "Role/Kris/kris_slash_1"
+    ]
+   },
+   {
+    "name": "kris_pdash_loop",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 1.2,
+     "hits": 1,
+     "group": 6,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_move"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_partydash"
+    ]
+   },
+   {
+    "name": "kris_pdash_jump",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_partydash"
+    ]
+   },
+   {
+    "name": "kris_pdash_fall",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_partydash"
+    ]
+   },
+   {
+    "name": "kris_pdash_land",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": []
+   },
+   {
+    "name": "kris_pdash_end",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": []
+   },
+   {
+    "name": "kris_pdash_bonk",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_hit_heavy"
+    ]
+   },
+   {
+    "name": "kris_charge",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_charge"
+    ]
+   },
+   {
+    "name": "kris_xslash",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_slash_1"
+    ]
+   },
+   {
+    "name": "kris_xslash_2",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_slash_3"
+    ]
+   },
+   {
+    "name": "kris_ja_pogo",
+    "hits": 0,
+    "weight": "light",
+    "damage": null,
+    "kit": []
+   },
+   {
+    "name": "kris_dive",
+    "hits": 5,
+    "weight": "light",
+    "damage": {
+     "ratio": 1.75,
+     "hits": 5,
+     "group": 4,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_slash_air"
+    ]
+   },
+   {
+    "name": "kris_dive_land",
+    "hits": 0,
+    "weight": "light",
+    "damage": null,
+    "kit": []
+   }
+  ],
+  "krisbullet": [
+   {
+    "name": "fs_guard_burst",
+    "hits": 1,
+    "weight": "burst",
+    "damage": {
+     "ratio": 3.375,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_fireshock"
+    },
+    "kit": [
+     "Role/Kris/kris_fs_burst"
+    ]
+   },
+   {
+    "name": "fs_guard_ball",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_fs_ball"
+    ]
+   },
+   {
+    "name": "fs_pillar",
+    "hits": 1,
+    "weight": "burst",
+    "damage": {
+     "ratio": 1.875,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_fireshock"
+    },
+    "kit": [
+     "Role/Kris/kris_fs_burst",
+     "Role/Kris/kris_fs_pillar"
+    ]
+   },
+   {
+    "name": "fs_chain",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_fs_chain"
+    ]
+   },
+   {
+    "name": "fs_burst_c",
+    "hits": 1,
+    "weight": "burst",
+    "damage": {
+     "ratio": 1.6875,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_fireshock"
+    },
+    "kit": [
+     "Role/Kris/kris_fs_burst_c"
+    ]
+   },
+   {
+    "name": "fs_field",
+    "hits": 6,
+    "weight": "burst",
+    "damage": {
+     "ratio": 1.35,
+     "hits": 6,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_fireshock"
+    },
+    "kit": [
+     "Role/Kris/kris_fs_burst",
+     "Role/Kris/kris_fs_field"
+    ]
+   },
+   {
+    "name": "fs_spread_n",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_fs_spread"
+    ]
+   },
+   {
+    "name": "fs_spread",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_fs_spread"
+    ]
+   },
+   {
+    "name": "rb_detonate",
+    "hits": 1,
+    "weight": "burst",
+    "damage": {
+     "ratio": 2.25,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_fireshock"
+    },
+    "kit": [
+     "Role/Kris/kris_fs_burst"
+    ]
+   },
+   {
+    "name": "kris_pdash_wave",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 3.0,
+     "hits": 1,
+     "group": 6,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_move"
+    },
+    "kit": [
+     "Role/Kris/kris_hit_heavy"
+    ]
+   },
+   {
+    "name": "xslash_a",
+    "hits": 8,
+    "weight": "light",
+    "damage": {
+     "ratio": 7.2,
+     "hits": 8,
+     "group": 1,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_party"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_xslash"
+    ]
+   },
+   {
+    "name": "xslash_b",
+    "hits": 8,
+    "weight": "light",
+    "damage": {
+     "ratio": 7.2,
+     "hits": 8,
+     "group": 1,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_party"
+    },
+    "kit": [
+     "Role/Kris/kris_hit"
+    ]
+   },
+   {
+    "name": "rb_chain_red",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 2.7,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_party"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_red",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst_red"
+    ]
+   },
+   {
+    "name": "rb_chain",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 2.7,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst",
+     "Role/Kris/kris_rb_chain",
+     "Role/Kris/kris_rb_chain_link"
+    ]
+   },
+   {
+    "name": "rb_chain2",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 2.7,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst",
+     "Role/Kris/kris_rb_chain",
+     "Role/Kris/kris_rb_chain_link"
+    ]
+   },
+   {
+    "name": "rb_red",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 5.25,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_red",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_pierce"
+    ]
+   },
+   {
+    "name": "rb_red_boom",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 3.75,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_hit_heavy",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_red_shock"
+    ]
+   },
+   {
+    "name": "rb_shock",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 1.875,
+     "hits": 1,
+     "group": 2,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst"
+    ]
+   },
+   {
+    "name": "kris_crescent_end",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": []
+   },
+   {
+    "name": "kris_crescent_1",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 0.6,
+     "hits": 1,
+     "group": 1,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_crescent_1",
+     "Role/Kris/kris_crescent_hit"
+    ]
+   },
+   {
+    "name": "kris_crescent_2",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 0.7,
+     "hits": 1,
+     "group": 1,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_crescent_2",
+     "Role/Kris/kris_crescent_hit"
+    ]
+   },
+   {
+    "name": "kris_crescent_3",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 1.4,
+     "hits": 1,
+     "group": 1,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_crescent_3",
+     "Role/Kris/kris_crescent_hit"
+    ]
+   },
+   {
+    "name": "kris_crescent_air",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 0.6,
+     "hits": 1,
+     "group": 4,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_crescent_air",
+     "Role/Kris/kris_crescent_hit"
+    ]
+   },
+   {
+    "name": "kris_clash",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_hit"
+    ]
+   },
+   {
+    "name": "kris_dive_wave",
+    "hits": 1,
+    "weight": "heavy",
+    "damage": {
+     "ratio": 2.2,
+     "hits": 1,
+     "group": 4,
+     "base": null,
+     "mul": 1.0,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_hit_heavy"
+    ]
+   }
+  ]
+ },
+ "variant_actions": {
+  "kris": [
+   {
+    "name": "kris_a1_w",
+    "hits": 1,
+    "weight": "light",
+    "damage": {
+     "ratio": 1.375,
+     "hits": 1,
+     "group": 1,
+     "base": "kris_a1",
+     "mul": 1.25,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_slash_1_w"
+    ]
+   },
+   {
+    "name": "kris_a2_w",
+    "hits": 1,
+    "weight": "medium",
+    "damage": {
+     "ratio": 1.625,
+     "hits": 1,
+     "group": 1,
+     "base": "kris_a2",
+     "mul": 1.25,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_slash_2_w"
+    ]
+   },
+   {
+    "name": "kris_a3_w_f",
+    "hits": 1,
+    "weight": "heavy",
+    "damage": {
+     "ratio": 2.875,
+     "hits": 1,
+     "group": 1,
+     "base": "kris_a3",
+     "mul": 1.4375,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_shatter",
+     "Role/Kris/kris_slash_3_w"
+    ]
+   },
+   {
+    "name": "kris_a3_w",
+    "hits": 1,
+    "weight": "heavy",
+    "damage": {
+     "ratio": 2.5,
+     "hits": 1,
+     "group": 1,
+     "base": "kris_a3",
+     "mul": 1.25,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_hit_heavy",
+     "Role/Kris/kris_slash_3_w"
+    ]
+   },
+   {
+    "name": "kris_a3_f",
+    "hits": 1,
+    "weight": "heavy",
+    "damage": {
+     "ratio": 2.3,
+     "hits": 1,
+     "group": 1,
+     "base": "kris_a3",
+     "mul": 1.15,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_shatter",
+     "Role/Kris/kris_slash_3"
+    ]
+   },
+   {
+    "name": "kris_ja_w",
+    "hits": 4,
+    "weight": "light",
+    "damage": {
+     "ratio": 1.7,
+     "hits": 4,
+     "group": 4,
+     "base": "kris_ja",
+     "mul": 1.3076923076923077,
+     "by": "kp_slash"
+    },
+    "kit": [
+     "Role/Kris/kris_hit",
+     "Role/Kris/kris_slash_air_w"
+    ]
+   }
+  ],
+  "krisbullet": [
+   {
+    "name": "fs_ball_home_b",
+    "hits": 0,
+    "weight": null,
+    "damage": null,
+    "kit": [
+     "Role/Kris/kris_fs_ball_big"
+    ]
+   },
+   {
+    "name": "fs_burst_b",
+    "hits": 1,
+    "weight": "burst",
+    "damage": {
+     "ratio": 4.2188,
+     "hits": 1,
+     "group": 2,
+     "base": "fs_burst",
+     "mul": 1.25,
+     "by": "kp_fireshock"
+    },
+    "kit": [
+     "Role/Kris/kris_fs_burst_big"
+    ]
+   },
+   {
+    "name": "rb_bolt_home_bk",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 4.2,
+     "hits": 1,
+     "group": 2,
+     "base": "rb_bolt_home",
+     "mul": 1.2444444444444445,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_big",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst_big",
+     "Role/Kris/kris_rb_push"
+    ]
+   },
+   {
+    "name": "rb_bolt_home_b",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 4.2,
+     "hits": 1,
+     "group": 2,
+     "base": "rb_bolt_home",
+     "mul": 1.2444444444444445,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_big",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst_big"
+    ]
+   },
+   {
+    "name": "rb_bolt_home_k",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 3.375,
+     "hits": 1,
+     "group": 2,
+     "base": "rb_bolt_home",
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_burst",
+     "Role/Kris/kris_rb_push"
+    ]
+   },
+   {
+    "name": "rb_red_bk",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 5.25,
+     "hits": 1,
+     "group": 2,
+     "base": "rb_red",
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_red_big",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_pierce",
+     "Role/Kris/kris_rb_push"
+    ]
+   },
+   {
+    "name": "rb_red_b",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 5.25,
+     "hits": 1,
+     "group": 2,
+     "base": "rb_red",
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_red_big",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_pierce"
+    ]
+   },
+   {
+    "name": "rb_red_k",
+    "hits": 1,
+    "weight": "shot",
+    "damage": {
+     "ratio": 5.25,
+     "hits": 1,
+     "group": 2,
+     "base": "rb_red",
+     "mul": 1.0,
+     "by": "kp_rudebuster"
+    },
+    "kit": [
+     "Role/Kris/kris_rb_bolt_red",
+     "Role/Kris/kris_rb_break",
+     "Role/Kris/kris_rb_pierce",
+     "Role/Kris/kris_rb_push"
+    ]
+   }
+  ]
+ },
+ "damage": {
+  "kris_pdash_loop_g3_w": {
+   "ratio": 1.8,
+   "hits": 1,
+   "group": 6,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_move"
+  },
+  "kris_pdash_loop_g3": {
+   "ratio": 1.8,
+   "hits": 1,
+   "group": 6,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_move"
+  },
+  "kris_pdash_loop_w": {
+   "ratio": 1.2,
+   "hits": 1,
+   "group": 6,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_move"
+  },
+  "kris_pdash_loop": {
+   "ratio": 1.2,
+   "hits": 1,
+   "group": 6,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_move"
+  },
+  "kris_dive": {
+   "ratio": 1.75,
+   "hits": 5,
+   "group": 4,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_slash"
+  },
+  "kris_a1_w": {
+   "ratio": 1.375,
+   "hits": 1,
+   "group": 1,
+   "base": "kris_a1",
+   "mul": 1.25,
+   "by": "kp_slash"
+  },
+  "kris_a2_w": {
+   "ratio": 1.625,
+   "hits": 1,
+   "group": 1,
+   "base": "kris_a2",
+   "mul": 1.25,
+   "by": "kp_slash"
+  },
+  "kris_a3_w_f": {
+   "ratio": 2.875,
+   "hits": 1,
+   "group": 1,
+   "base": "kris_a3",
+   "mul": 1.4375,
+   "by": "kp_slash"
+  },
+  "kris_a3_w": {
+   "ratio": 2.5,
+   "hits": 1,
+   "group": 1,
+   "base": "kris_a3",
+   "mul": 1.25,
+   "by": "kp_slash"
+  },
+  "kris_a3_f": {
+   "ratio": 2.3,
+   "hits": 1,
+   "group": 1,
+   "base": "kris_a3",
+   "mul": 1.15,
+   "by": "kp_slash"
+  },
+  "kris_ja_w": {
+   "ratio": 1.7,
+   "hits": 4,
+   "group": 4,
+   "base": "kris_ja",
+   "mul": 1.3076923076923077,
+   "by": "kp_slash"
+  },
+  "fs_guard_burst": {
+   "ratio": 3.375,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_fireshock"
+  },
+  "fs_pillar": {
+   "ratio": 1.875,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_fireshock"
+  },
+  "fs_burst_c": {
+   "ratio": 1.6875,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_fireshock"
+  },
+  "fs_field": {
+   "ratio": 1.35,
+   "hits": 6,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_fireshock"
+  },
+  "rb_detonate": {
+   "ratio": 2.25,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_fireshock"
+  },
+  "kris_pdash_wave": {
+   "ratio": 3.0,
+   "hits": 1,
+   "group": 6,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_move"
+  },
+  "xslash_a": {
+   "ratio": 7.2,
+   "hits": 8,
+   "group": 1,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_party"
+  },
+  "xslash_b": {
+   "ratio": 7.2,
+   "hits": 8,
+   "group": 1,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_party"
+  },
+  "rb_chain_red": {
+   "ratio": 2.7,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_party"
+  },
+  "rb_chain": {
+   "ratio": 2.7,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_chain2": {
+   "ratio": 2.7,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_red": {
+   "ratio": 5.25,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_red_boom": {
+   "ratio": 3.75,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_shock": {
+   "ratio": 1.875,
+   "hits": 1,
+   "group": 2,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "kris_crescent_1": {
+   "ratio": 0.6,
+   "hits": 1,
+   "group": 1,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_slash"
+  },
+  "kris_crescent_2": {
+   "ratio": 0.7,
+   "hits": 1,
+   "group": 1,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_slash"
+  },
+  "kris_crescent_3": {
+   "ratio": 1.4,
+   "hits": 1,
+   "group": 1,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_slash"
+  },
+  "kris_crescent_air": {
+   "ratio": 0.6,
+   "hits": 1,
+   "group": 4,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_slash"
+  },
+  "kris_dive_wave": {
+   "ratio": 2.2,
+   "hits": 1,
+   "group": 4,
+   "base": null,
+   "mul": 1.0,
+   "by": "kp_slash"
+  },
+  "fs_burst_b": {
+   "ratio": 4.2188,
+   "hits": 1,
+   "group": 2,
+   "base": "fs_burst",
+   "mul": 1.25,
+   "by": "kp_fireshock"
+  },
+  "rb_bolt_home_bk": {
+   "ratio": 4.2,
+   "hits": 1,
+   "group": 2,
+   "base": "rb_bolt_home",
+   "mul": 1.2444444444444445,
+   "by": "kp_rudebuster"
+  },
+  "rb_bolt_home_b": {
+   "ratio": 4.2,
+   "hits": 1,
+   "group": 2,
+   "base": "rb_bolt_home",
+   "mul": 1.2444444444444445,
+   "by": "kp_rudebuster"
+  },
+  "rb_bolt_home_k": {
+   "ratio": 3.375,
+   "hits": 1,
+   "group": 2,
+   "base": "rb_bolt_home",
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_red_bk": {
+   "ratio": 5.25,
+   "hits": 1,
+   "group": 2,
+   "base": "rb_red",
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_red_b": {
+   "ratio": 5.25,
+   "hits": 1,
+   "group": 2,
+   "base": "rb_red",
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  },
+  "rb_red_k": {
+   "ratio": 5.25,
+   "hits": 1,
+   "group": 2,
+   "base": "rb_red",
+   "mul": 1.0,
+   "by": "kp_rudebuster"
+  }
+ },
+ "buffs": [
+  "dr_pt_pdash",
+  "dr_pt_rally",
+  "dr_pt_heal",
+  "dr_pt_trio",
+  "dr_pt_mark",
+  "dr_pt_auto",
+  "dr_pt_autocut",
+  "dr_pt_bossknock",
+  "dr_pt_divecd",
+  "dr_pt_loop",
+  "dr_pt_tension"
+ ],
+ "effects": {
+  "kris_burn": {
+   "pack": true,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D2",
+   "standin": "the stock Burn aura (not wired even when the pack has it: KINDLE own_fx is off)",
+   "where": "a gated hit effect on every action that burns, once KINDLE own_fx is on",
+   "staged": true
+  },
+  "kris_charge": {
+   "pack": true,
+   "by": [
+    "kp_party"
+   ],
+   "card": "E4",
+   "standin": "kris_hit_heavy",
+   "where": "on Kris for the whole of kris_charge (0.7 s to full, then held)",
+   "staged": true
+  },
+  "kris_clash": {
+   "pack": false,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "A5",
+   "standin": "kris_hit",
+   "where": "",
+   "staged": false
+  },
+  "kris_crescent_1": {
+   "pack": true,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "A2",
+   "standin": "kris_slash_1",
+   "where": "",
+   "staged": true
+  },
+  "kris_crescent_2": {
+   "pack": true,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "A2",
+   "standin": "kris_slash_2",
+   "where": "",
+   "staged": true
+  },
+  "kris_crescent_3": {
+   "pack": true,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "A2",
+   "standin": "kris_slash_3",
+   "where": "",
+   "staged": true
+  },
+  "kris_crescent_air": {
+   "pack": true,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "A2",
+   "standin": "kris_slash_air",
+   "where": "",
+   "staged": true
+  },
+  "kris_crescent_hit": {
+   "pack": true,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "A2",
+   "standin": "kris_hit",
+   "where": "",
+   "staged": true
+  },
+  "kris_dive": {
+   "pack": false,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "B3",
+   "standin": "kris_slash_air",
+   "where": "",
+   "staged": false
+  },
+  "kris_dive_wave": {
+   "pack": false,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "B3",
+   "standin": "kris_hit_heavy",
+   "where": "",
+   "staged": false
+  },
+  "kris_fs_ball_big": {
+   "pack": true,
+   "by": [],
+   "card": "D1",
+   "standin": "kris_fs_ball x1.50",
+   "where": "the flight body of fs_ball_home_b",
+   "staged": true
+  },
+  "kris_fs_burst_big": {
+   "pack": true,
+   "by": [],
+   "card": "D1",
+   "standin": "kris_fs_burst x1.50",
+   "where": "the hit effect of fs_burst_b (on each enemy it hits)",
+   "staged": true
+  },
+  "kris_fs_burst_c": {
+   "pack": true,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D3",
+   "standin": "kris_fs_burst x0.70",
+   "where": "the hit effect of fs_burst_c (on each enemy it hits)",
+   "staged": true
+  },
+  "kris_fs_chain": {
+   "pack": true,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D3",
+   "standin": "kris_fs_ball x0.70",
+   "where": "the flight body of fs_chain (AddEffects, the whole flight)",
+   "staged": true
+  },
+  "kris_fs_field": {
+   "pack": true,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D3",
+   "standin": "kris_fs_burst x(0.95, 0.35)",
+   "where": "AddEffects on fs_field from 0 s, on the floor",
+   "staged": true
+  },
+  "kris_fs_pillar": {
+   "pack": true,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D4",
+   "standin": "nothing",
+   "where": "AddEffects on fs_pillar from 0 s, on the floor at its spot",
+   "staged": true
+  },
+  "kris_fs_spread": {
+   "pack": true,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D3",
+   "standin": "kris_fs_burst x0.45",
+   "where": "AddEffects on fs_spread / fs_spread_n (the script launches them)",
+   "staged": true
+  },
+  "kris_heal": {
+   "pack": false,
+   "by": [
+    "kp_party"
+   ],
+   "card": "E3",
+   "standin": "Common/buff_004",
+   "where": "on Kris when Heal Prayer or Second Wind heals (a buff's effect, 1 s)",
+   "staged": false
+  },
+  "kris_mark": {
+   "pack": false,
+   "by": [
+    "kp_party"
+   ],
+   "card": "H2",
+   "standin": "nothing",
+   "where": "on a Marked enemy for the mark's 5 s: a buff's effect, at the top of its body",
+   "staged": false
+  },
+  "kris_partydash": {
+   "pack": true,
+   "by": [
+    "kp_move"
+   ],
+   "card": "G2",
+   "standin": "kris_partydash",
+   "where": "",
+   "staged": true
+  },
+  "kris_partydash_crash": {
+   "pack": false,
+   "by": [
+    "kp_move"
+   ],
+   "card": "G2",
+   "standin": "kris_hit_heavy",
+   "where": "",
+   "staged": false
+  },
+  "kris_partydash_cut": {
+   "pack": false,
+   "by": [
+    "kp_move"
+   ],
+   "card": "HP6",
+   "standin": "kris_slash_1",
+   "where": "",
+   "staged": false
+  },
+  "kris_partydash_fast": {
+   "pack": false,
+   "by": [
+    "kp_move"
+   ],
+   "card": "G3",
+   "standin": "kris_partydash",
+   "where": "",
+   "staged": false
+  },
+  "kris_partydash_hit": {
+   "pack": false,
+   "by": [
+    "kp_move"
+   ],
+   "card": "G2",
+   "standin": "the hit class's own effect",
+   "where": "",
+   "staged": false
+  },
+  "kris_partydash_wave": {
+   "pack": false,
+   "by": [
+    "kp_move"
+   ],
+   "card": "G3",
+   "standin": "kris_hit_heavy",
+   "where": "",
+   "staged": false
+  },
+  "kris_pogo": {
+   "pack": false,
+   "by": [
+    "kp_slash"
+   ],
+   "card": "B2",
+   "standin": "the stock effect it replaces",
+   "where": "",
+   "staged": false
+  },
+  "kris_rb_bolt_big": {
+   "pack": true,
+   "by": [],
+   "card": "C1",
+   "standin": "kris_rb_bolt x1.50",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_bolt_red_big": {
+   "pack": true,
+   "by": [],
+   "card": "C6",
+   "standin": "kris_rb_bolt_red scaled to 2.0 normal bolts",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_break": {
+   "pack": true,
+   "by": [
+    "kp_rudebuster"
+   ],
+   "card": "C3",
+   "standin": "kris_hit_heavy x1.30",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_burst_big": {
+   "pack": true,
+   "by": [],
+   "card": "C1",
+   "standin": "kris_rb_burst x1.50",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_chain": {
+   "pack": true,
+   "by": [
+    "kp_rudebuster"
+   ],
+   "card": "C2",
+   "standin": "kris_rb_bolt x0.80",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_chain_link": {
+   "pack": true,
+   "by": [
+    "kp_rudebuster"
+   ],
+   "card": "C2",
+   "standin": "nothing (no link is drawn where a hop leaves)",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_detonate": {
+   "pack": false,
+   "by": [
+    "kp_fireshock"
+   ],
+   "card": "D6",
+   "standin": "kris_fs_burst x1.62",
+   "where": "AddEffects on rb_detonate from 0 s, at its centre",
+   "staged": false
+  },
+  "kris_rb_pierce": {
+   "pack": true,
+   "by": [
+    "kp_rudebuster"
+   ],
+   "card": "C6",
+   "standin": "kris_rb_burst_red x1.00",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_push": {
+   "pack": true,
+   "by": [],
+   "card": "C4",
+   "standin": "nothing (no push effect of its own)",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_red_shock": {
+   "pack": true,
+   "by": [
+    "kp_rudebuster"
+   ],
+   "card": "C6",
+   "standin": "kris_rb_burst_red x1.50",
+   "where": "",
+   "staged": true
+  },
+  "kris_rb_shock": {
+   "pack": false,
+   "by": [
+    "kp_rudebuster"
+   ],
+   "card": "C5",
+   "standin": "kris_rb_burst x1.40",
+   "where": "",
+   "staged": false
+  },
+  "kris_shatter": {
+   "pack": true,
+   "by": [],
+   "card": "A4",
+   "standin": "kris_hit_heavy",
+   "where": "",
+   "staged": true
+  },
+  "kris_slash_1_w": {
+   "pack": true,
+   "by": [],
+   "card": "A1",
+   "standin": "kris_slash_1",
+   "where": "",
+   "staged": true
+  },
+  "kris_slash_2_w": {
+   "pack": true,
+   "by": [],
+   "card": "A1",
+   "standin": "kris_slash_2",
+   "where": "",
+   "staged": true
+  },
+  "kris_slash_3_w": {
+   "pack": true,
+   "by": [],
+   "card": "A1",
+   "standin": "kris_slash_3",
+   "where": "",
+   "staged": true
+  },
+  "kris_slash_air_w": {
+   "pack": true,
+   "by": [],
+   "card": "B1",
+   "standin": "kris_slash_air",
+   "where": "",
+   "staged": true
+  },
+  "kris_trio": {
+   "pack": false,
+   "by": [
+    "kp_party"
+   ],
+   "card": "H1",
+   "standin": "nothing",
+   "where": "on Susie and Ralsei (and Kris) while both are ready: a buff's effect, as long as the buff",
+   "staged": false
+  },
+  "kris_xslash": {
+   "pack": true,
+   "by": [
+    "kp_party"
+   ],
+   "card": "E4",
+   "standin": "kris_rb_burst",
+   "where": "on xslash_a at the X's centre, from 0 s, upright (the second line's hits start one swing later); 2.0 s",
+   "staged": true
+  }
+ },
+ "talent": {
+  "id": 20896,
+  "effects": [
+   208961,
+   208962,
+   208963,
+   208964
+  ],
+  "trigger": 208961,
+  "trig_type": "HpChangeDown",
+  "func": "trDR_pot_talent",
+  "name": "Second Wind",
+  "desc": "Once per room, when HP falls to 30% or less, restores HP and Susie and Ralsei are ready at once.",
+  "values": [
+   0.15,
+   0.35
+  ],
+  "icon": "Talent_5049",
+  "hud_cell": true,
+  "text": [
+   "TriggerName_208961",
+   "TriggerDesc_208961"
+  ],
+  "by": "kp_party"
+ },
+ "hud_cells": [
+  "Talent_20896",
+  "Potential_20801",
+  "Potential_20806",
+  "Potential_20808",
+  "Potential_20809",
+  "Potential_20816",
+  "Potential_20825",
+  "Potential_20822",
+  "Potential_20826",
+  "Potential_20828",
+  "Potential_20829",
+  "Potential_20831"
+ ],
+ "text_todo_own": [
+  "TriggerName_208961",
+  "TriggerDesc_208961"
+ ],
+ "js": [
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/potentials.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_fireshock.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_move.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_party.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_pen.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_rudebuster.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_slash.js"
+  },
+  {
+   "module": "data/js/window/battle/BattleUI",
+   "file": "js/pots_tension.js"
+  },
+  {
+   "module": "data/js/gameplay/playertrigger/PlayerTriggerFuncs",
+   "file": "js/potentials_trig.js"
+  }
+ ],
+ "sources": {
+  "primary": [
+   "rb_bolt_home*",
+   "rb_red*",
+   "!rb_red_boom"
+  ],
+  "bolt": [
+   "rb_bolt_home*",
+   "rb_red*"
+  ],
+  "command": [
+   "rb_bolt_home*",
+   "rb_red*",
+   "fs_burst*"
+  ],
+  "chain": [
+   "rb_chain*"
+  ],
+  "detonate": [
+   "rb_bolt_home*",
+   "rb_red*",
+   "rb_chain*",
+   "!rb_red_boom"
+  ],
+  "sp": [
+   "rb_bolt_home*",
+   "rb_red*",
+   "fs_burst*",
+   "!fs_burst_c"
+  ],
+  "rally": [
+   "kris_a1*",
+   "kris_a2*",
+   "kris_a3*",
+   "kris_ja*",
+   "kris_dive*"
+  ],
+  "pdash": [
+   "kris_pdash*"
+  ],
+  "loop": [
+   "kris_a3*"
+  ],
+  "scripted": [
+   "rb_chain*",
+   "rb_detonate",
+   "rb_shock",
+   "rb_red_boom",
+   "fs_chain",
+   "fs_burst_c",
+   "fs_field",
+   "fs_spread*",
+   "fs_pillar",
+   "xslash_*"
+  ]
+ },
+ "modules": [
+  {
+   "name": "kp_fireshock",
+   "cards": [
+    "D1",
+    "D2",
+    "D3",
+    "D5",
+    "D6",
+    "U"
+   ],
+   "hooks": [
+    "logic_bullets",
+    "content"
+   ]
+  },
+  {
+   "name": "kp_move",
+   "cards": [
+    "F1",
+    "F2",
+    "G1",
+    "G2",
+    "G3",
+    "HP6",
+    "HP7"
+   ],
+   "hooks": [
+    "logic_kris",
+    "logic_bullets",
+    "content"
+   ]
+  },
+  {
+   "name": "kp_party",
+   "cards": [
+    "E1",
+    "E2",
+    "E3"
+   ],
+   "hooks": [
+    "logic_kris",
+    "logic_bullets",
+    "content"
+   ]
+  },
+  {
+   "name": "kp_pen",
+   "cards": [
+    "E5",
+    "E6",
+    "E7"
+   ],
+   "hooks": [
+    "logic_bullets",
+    "content"
+   ]
+  },
+  {
+   "name": "kp_rudebuster",
+   "cards": [
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "C7"
+   ],
+   "hooks": [
+    "logic_bullets",
+    "content"
+   ]
+  },
+  {
+   "name": "kp_slash",
+   "cards": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "B2",
+    "B3"
+   ],
+   "hooks": [
+    "logic_kris",
+    "logic_bullets",
+    "content"
+   ]
+  },
+  {
+   "name": "kp_tension",
+   "cards": [
+    "H3",
+    "HP12"
+   ],
+   "hooks": [
+    "content"
+   ]
+  }
+ ],
+ "stock_text": {
+  "source": "the player's install",
+  "keys": [
+   "ActorActionDesc_10021",
+   "ActorActionDesc_10041",
+   "ActorActionDesc_10101",
+   "ActorActionDesc_10231",
+   "ActorActionDesc_10241",
+   "ActorActionDesc_10331",
+   "ActorActionDesc_108",
+   "ActorActionDesc_11211",
+   "ActorActionInput_10011",
+   "ActorActionInput_10021",
+   "ActorActionInput_10031",
+   "ActorActionInput_10041",
+   "ActorActionName_10021",
+   "ActorActionName_10041",
+   "ActorActionName_108",
+   "ActorActionName_11211"
+  ],
+  "missing": []
+ }
+}

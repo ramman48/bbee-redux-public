@@ -1,0 +1,895 @@
+{
+ "character": "Ruby Rose (char-ruby)",
+ "actor": 200701,
+ "note": "Final art: each PNG is the Krita export of its .kra (made by kr_ruby.py from ruby_icons.py). RGB is white; alpha draws the icon (the OFF state is grey 140). Paths are relative to this folder.",
+ "icons": [
+  {
+   "name": "p20701",
+   "kind": "potential",
+   "title": "Attack",
+   "motif": "Crescent Rose swung down, a triple slash, the drag to the ground",
+   "figure": false,
+   "kra": "p20701.kra",
+   "png": "p20701.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20701,
+   "sprite": "Potential_20701",
+   "texture": "UI/Texture/IconPotential/Potential_20701"
+  },
+  {
+   "name": "p20702",
+   "kind": "potential",
+   "title": "Scythe Chain",
+   "motif": "two wide sweeps wrapping over the top, in front and behind",
+   "figure": false,
+   "kra": "p20702.kra",
+   "png": "p20702.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20702,
+   "sprite": "Potential_20702",
+   "texture": "UI/Texture/IconPotential/Potential_20702"
+  },
+  {
+   "name": "p20703",
+   "kind": "potential",
+   "title": "Attack",
+   "motif": "the final lunge through the target, then Gun Blast from the muzzle",
+   "figure": false,
+   "kra": "p20703.kra",
+   "png": "p20703.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20703,
+   "sprite": "Potential_20703",
+   "texture": "UI/Texture/IconPotential/Potential_20703"
+  },
+  {
+   "name": "p20744",
+   "kind": "potential",
+   "title": "Gunswing",
+   "motif": "a shot fired in the middle of a swing: the round out of the muzzle, through the slash",
+   "figure": false,
+   "kra": "p20744.kra",
+   "png": "p20744.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20744,
+   "sprite": "Potential_20744",
+   "texture": "UI/Texture/IconPotential/Potential_20744"
+  },
+  {
+   "name": "p20742",
+   "kind": "potential",
+   "title": "Rising Reap",
+   "motif": "the move itself: one rising arc off the ground, Crescent Rose carried up with it",
+   "figure": false,
+   "kra": "p20742.kra",
+   "png": "p20742.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20742,
+   "sprite": "Potential_20742",
+   "texture": "UI/Texture/IconPotential/Potential_20742"
+  },
+  {
+   "name": "p20704",
+   "kind": "potential",
+   "title": "Rising Reap",
+   "motif": "the rising arc, more hits, behind too, launching higher",
+   "figure": false,
+   "kra": "p20704.kra",
+   "png": "p20704.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20704,
+   "sprite": "Potential_20704",
+   "texture": "UI/Texture/IconPotential/Potential_20704"
+  },
+  {
+   "name": "p20705",
+   "kind": "potential",
+   "title": "Rising Reap",
+   "motif": "the rising arc used in mid-air: launched from a jump, open air under it",
+   "figure": false,
+   "kra": "p20705.kra",
+   "png": "p20705.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20705,
+   "sprite": "Potential_20705",
+   "texture": "UI/Texture/IconPotential/Potential_20705"
+  },
+  {
+   "name": "p20706",
+   "kind": "potential",
+   "title": "Rising Reap",
+   "motif": "the rising arc opening on an invincible flash",
+   "figure": false,
+   "kra": "p20706.kra",
+   "png": "p20706.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20706,
+   "sprite": "Potential_20706",
+   "texture": "UI/Texture/IconPotential/Potential_20706"
+  },
+  {
+   "name": "p20707",
+   "kind": "potential",
+   "title": "Low Sweep",
+   "motif": "a quick low slash, then the sweep along the ground",
+   "figure": false,
+   "kra": "p20707.kra",
+   "png": "p20707.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20707,
+   "sprite": "Potential_20707",
+   "texture": "UI/Texture/IconPotential/Potential_20707"
+  },
+  {
+   "name": "p20708",
+   "kind": "potential",
+   "title": "Rising Crescent",
+   "motif": "the low sweep turning into an upward slash that launches",
+   "figure": false,
+   "kra": "p20708.kra",
+   "png": "p20708.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20708,
+   "sprite": "Potential_20708",
+   "texture": "UI/Texture/IconPotential/Potential_20708"
+  },
+  {
+   "name": "p20709",
+   "kind": "potential",
+   "title": "Clash Assault",
+   "motif": "a charged overhead with Super Armor, the armour plate breaking",
+   "figure": false,
+   "kra": "p20709.kra",
+   "png": "p20709.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20709,
+   "sprite": "Potential_20709",
+   "texture": "UI/Texture/IconPotential/Potential_20709"
+  },
+  {
+   "name": "p20710",
+   "kind": "potential",
+   "title": "Rifle Shot",
+   "motif": "two rounds fired, one after the other",
+   "figure": false,
+   "kra": "p20710.kra",
+   "png": "p20710.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20710,
+   "sprite": "Potential_20710",
+   "texture": "UI/Texture/IconPotential/Potential_20710"
+  },
+  {
+   "name": "p20711",
+   "kind": "potential",
+   "title": "Sy-Pod Shot",
+   "motif": "the scythe's blade planted in the ground, three rounds from the muzzle, the plant's shockwave",
+   "figure": false,
+   "kra": "p20711.kra",
+   "png": "p20711.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20711,
+   "sprite": "Potential_20711",
+   "texture": "UI/Texture/IconPotential/Potential_20711"
+  },
+  {
+   "name": "p20712",
+   "kind": "potential",
+   "title": "Reaper's Hook",
+   "motif": "the blade hooking a target, then thrown back over",
+   "figure": false,
+   "kra": "p20712.kra",
+   "png": "p20712.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20712,
+   "sprite": "Potential_20712",
+   "texture": "UI/Texture/IconPotential/Potential_20712"
+  },
+  {
+   "name": "p20713",
+   "kind": "potential",
+   "title": "Guillotine",
+   "motif": "Crescent Rose spinning upright with Super Armor, the last strike launching",
+   "figure": false,
+   "kra": "p20713.kra",
+   "png": "p20713.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20713,
+   "sprite": "Potential_20713",
+   "texture": "UI/Texture/IconPotential/Potential_20713"
+  },
+  {
+   "name": "p20714",
+   "kind": "potential",
+   "title": "Guillotine",
+   "motif": "hold to keep spinning: the scythe turning over and over",
+   "figure": false,
+   "kra": "p20714.kra",
+   "png": "p20714.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20714,
+   "sprite": "Potential_20714",
+   "texture": "UI/Texture/IconPotential/Potential_20714"
+  },
+  {
+   "name": "p20715",
+   "kind": "potential",
+   "title": "Petal Burst",
+   "motif": "a dash in a storm of petals, rounds glancing off",
+   "figure": false,
+   "kra": "p20715.kra",
+   "png": "p20715.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20715,
+   "sprite": "Potential_20715",
+   "texture": "UI/Texture/IconPotential/Potential_20715"
+  },
+  {
+   "name": "p20716",
+   "kind": "potential",
+   "title": "Petal Dance",
+   "motif": "a spinning storm of petals round one enemy, ended by one strike",
+   "figure": false,
+   "kra": "p20716.kra",
+   "png": "p20716.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20716,
+   "sprite": "Potential_20716",
+   "texture": "UI/Texture/IconPotential/Potential_20716"
+  },
+  {
+   "name": "p20717",
+   "kind": "potential",
+   "title": "Red Reaper",
+   "motif": "Crescent Rose and her rose: the finishing Ultra",
+   "figure": false,
+   "kra": "p20717.kra",
+   "png": "p20717.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20717,
+   "sprite": "Potential_20717",
+   "texture": "UI/Texture/IconPotential/Potential_20717"
+  },
+  {
+   "name": "p20718",
+   "kind": "potential",
+   "title": "Jump",
+   "motif": "three rising jumps (Triple Jump)",
+   "figure": false,
+   "kra": "p20718.kra",
+   "png": "p20718.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20718,
+   "sprite": "Potential_20718",
+   "texture": "UI/Texture/IconPotential/Potential_20718"
+  },
+  {
+   "name": "p20719",
+   "kind": "potential",
+   "title": "Jump",
+   "motif": "a jump in the air turning the air attacks over again",
+   "figure": false,
+   "kra": "p20719.kra",
+   "png": "p20719.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20719,
+   "sprite": "Potential_20719",
+   "texture": "UI/Texture/IconPotential/Potential_20719"
+  },
+  {
+   "name": "p20743",
+   "kind": "potential",
+   "title": "Buzzsaw Blast",
+   "motif": "the move itself: Crescent Rose turned into a saw, diving, the shot where it lands",
+   "figure": false,
+   "kra": "p20743.kra",
+   "png": "p20743.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20743,
+   "sprite": "Potential_20743",
+   "texture": "UI/Texture/IconPotential/Potential_20743"
+  },
+  {
+   "name": "p20720",
+   "kind": "potential",
+   "title": "Buzzsaw Blast",
+   "motif": "the spinning dive, longer, landing in a bigger blast",
+   "figure": false,
+   "kra": "p20720.kra",
+   "png": "p20720.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20720,
+   "sprite": "Potential_20720",
+   "texture": "UI/Texture/IconPotential/Potential_20720"
+  },
+  {
+   "name": "p20721",
+   "kind": "potential",
+   "title": "Gun Blast",
+   "motif": "the muzzle firing behind her, carrying her forward, untouchable while travelling",
+   "figure": false,
+   "kra": "p20721.kra",
+   "png": "p20721.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20721,
+   "sprite": "Potential_20721",
+   "texture": "UI/Texture/IconPotential/Potential_20721"
+  },
+  {
+   "name": "p20722",
+   "kind": "potential",
+   "title": "Gun Blast",
+   "motif": "four blasts in a chain",
+   "figure": false,
+   "kra": "p20722.kra",
+   "png": "p20722.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20722,
+   "sprite": "Potential_20722",
+   "texture": "UI/Texture/IconPotential/Potential_20722"
+  },
+  {
+   "name": "p20723",
+   "kind": "potential",
+   "title": "Enhancer",
+   "motif": "a Gun Blast round charging her next attack",
+   "figure": false,
+   "kra": "p20723.kra",
+   "png": "p20723.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20723,
+   "sprite": "Potential_20723",
+   "texture": "UI/Texture/IconPotential/Potential_20723"
+  },
+  {
+   "name": "p20724",
+   "kind": "potential",
+   "title": "Corkscrew Slice",
+   "motif": "two spins in place, pulling enemies in",
+   "figure": false,
+   "kra": "p20724.kra",
+   "png": "p20724.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20724,
+   "sprite": "Potential_20724",
+   "texture": "UI/Texture/IconPotential/Potential_20724"
+  },
+  {
+   "name": "p20725",
+   "kind": "potential",
+   "title": "Corkscrew Slice",
+   "motif": "straight out of Gun Blast into an invincible spin",
+   "figure": false,
+   "kra": "p20725.kra",
+   "png": "p20725.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20725,
+   "sprite": "Potential_20725",
+   "texture": "UI/Texture/IconPotential/Potential_20725"
+  },
+  {
+   "name": "p20726",
+   "kind": "potential",
+   "title": "Crescent Mastery",
+   "motif": "Crescent Rose, its blade grown larger",
+   "figure": false,
+   "kra": "p20726.kra",
+   "png": "p20726.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20726,
+   "sprite": "Potential_20726",
+   "texture": "UI/Texture/IconPotential/Potential_20726"
+  },
+  {
+   "name": "p20727",
+   "kind": "potential",
+   "title": "High Caliber",
+   "motif": "one heavy round, larger, driving the target back",
+   "figure": false,
+   "kra": "p20727.kra",
+   "png": "p20727.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20727,
+   "sprite": "Potential_20727",
+   "texture": "UI/Texture/IconPotential/Potential_20727"
+  },
+  {
+   "name": "p20728",
+   "kind": "potential",
+   "title": "Semblance",
+   "motif": "a dash leaving rose petals in its wake",
+   "figure": false,
+   "kra": "p20728.kra",
+   "png": "p20728.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20728,
+   "sprite": "Potential_20728",
+   "texture": "UI/Texture/IconPotential/Potential_20728"
+  },
+  {
+   "name": "p20729",
+   "kind": "potential",
+   "title": "Silver Eyes",
+   "motif": "the silver eye, its light breaking out",
+   "figure": false,
+   "kra": "p20729.kra",
+   "png": "p20729.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20729,
+   "sprite": "Potential_20729",
+   "texture": "UI/Texture/IconPotential/Potential_20729"
+  },
+  {
+   "name": "p20730",
+   "kind": "potential",
+   "title": "Dust",
+   "motif": "a Dust crystal inside a turning timer ring: it lasts longer",
+   "figure": false,
+   "kra": "p20730.kra",
+   "png": "p20730.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20730,
+   "sprite": "Potential_20730",
+   "texture": "UI/Texture/IconPotential/Potential_20730"
+  },
+  {
+   "name": "p20731",
+   "kind": "potential",
+   "title": "Dust",
+   "motif": "three crystals bursting: stronger Dust",
+   "figure": false,
+   "kra": "p20731.kra",
+   "png": "p20731.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20731,
+   "sprite": "Potential_20731",
+   "texture": "UI/Texture/IconPotential/Potential_20731"
+  },
+  {
+   "name": "p20732",
+   "kind": "potential",
+   "title": "Dust Round",
+   "motif": "a Dust round fired as it loads",
+   "figure": false,
+   "kra": "p20732.kra",
+   "png": "p20732.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20732,
+   "sprite": "Potential_20732",
+   "texture": "UI/Texture/IconPotential/Potential_20732"
+  },
+  {
+   "name": "p20733",
+   "kind": "potential",
+   "title": "Dust",
+   "motif": "the spent cartridge falling and exploding where it lands",
+   "figure": false,
+   "kra": "p20733.kra",
+   "png": "p20733.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20733,
+   "sprite": "Potential_20733",
+   "texture": "UI/Texture/IconPotential/Potential_20733"
+  },
+  {
+   "name": "p20734",
+   "kind": "potential",
+   "title": "Dust",
+   "motif": "two Dust crystals crossed: the old one kept with the new",
+   "figure": false,
+   "kra": "p20734.kra",
+   "png": "p20734.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20734,
+   "sprite": "Potential_20734",
+   "texture": "UI/Texture/IconPotential/Potential_20734"
+  },
+  {
+   "name": "p20735",
+   "kind": "potential",
+   "title": "Fire Dust",
+   "motif": "a Dust crystal wreathed in fire",
+   "figure": false,
+   "kra": "p20735.kra",
+   "png": "p20735.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20735,
+   "sprite": "Potential_20735",
+   "texture": "UI/Texture/IconPotential/Potential_20735"
+  },
+  {
+   "name": "p20736",
+   "kind": "potential",
+   "title": "Ice Dust",
+   "motif": "a Dust crystal in a cluster of ice spikes",
+   "figure": false,
+   "kra": "p20736.kra",
+   "png": "p20736.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20736,
+   "sprite": "Potential_20736",
+   "texture": "UI/Texture/IconPotential/Potential_20736"
+  },
+  {
+   "name": "p20737",
+   "kind": "potential",
+   "title": "Lightning Dust",
+   "motif": "a Dust crystal split by lightning",
+   "figure": false,
+   "kra": "p20737.kra",
+   "png": "p20737.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20737,
+   "sprite": "Potential_20737",
+   "texture": "UI/Texture/IconPotential/Potential_20737"
+  },
+  {
+   "name": "p20738",
+   "kind": "potential",
+   "title": "Gravity Dust",
+   "motif": "a Dust crystal at the heart of a gravity well",
+   "figure": false,
+   "kra": "p20738.kra",
+   "png": "p20738.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20738,
+   "sprite": "Potential_20738",
+   "texture": "UI/Texture/IconPotential/Potential_20738"
+  },
+  {
+   "name": "p20739",
+   "kind": "potential",
+   "title": "Gun Blast",
+   "motif": "one blast carrying her farther: the blast far behind, a long wake to where she arrives, a long arrow under her",
+   "figure": false,
+   "kra": "p20739.kra",
+   "png": "p20739.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20739,
+   "sprite": "Potential_20739",
+   "texture": "UI/Texture/IconPotential/Potential_20739"
+  },
+  {
+   "name": "p20740",
+   "kind": "potential",
+   "title": "Gun Blast",
+   "motif": "the blast's own shot: a Sy-Pod round out of the muzzle flash, behind her, as she goes",
+   "figure": false,
+   "kra": "p20740.kra",
+   "png": "p20740.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20740,
+   "sprite": "Potential_20740",
+   "texture": "UI/Texture/IconPotential/Potential_20740"
+  },
+  {
+   "name": "p20741",
+   "kind": "potential",
+   "title": "Jump",
+   "motif": "the recoil jump: Crescent Rose stood on its muzzle, firing into the ground, the jump rising off the blast",
+   "figure": false,
+   "kra": "p20741.kra",
+   "png": "p20741.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20741,
+   "sprite": "Potential_20741",
+   "texture": "UI/Texture/IconPotential/Potential_20741"
+  },
+  {
+   "name": "p20799",
+   "kind": "potential",
+   "title": "Potential Unleashed",
+   "motif": "her rose inside the hexagon, three blades turning round it",
+   "figure": false,
+   "kra": "p20799.kra",
+   "png": "p20799.png",
+   "size": [
+    256,
+    256
+   ],
+   "potential_id": 20799,
+   "sprite": "Potential_20799",
+   "texture": "UI/Texture/IconPotential/Potential_20799"
+  },
+  {
+   "name": "skill_200701",
+   "kind": "skill",
+   "title": "Rifle Shot (Skill button)",
+   "motif": "Crescent Rose firing a fast round from its muzzle",
+   "figure": false,
+   "kra": "skill_200701.kra",
+   "png": "skill_200701.png",
+   "size": [
+    256,
+    256
+   ],
+   "sprite": "IconSkill_200701",
+   "off": {
+    "sprite": "IconSkill_200701OFF",
+    "kra": "skill_200701_off.kra",
+    "png": "skill_200701_off.png"
+   }
+  },
+  {
+   "name": "legacy_2007011",
+   "kind": "legacy",
+   "title": "Rifle Shot (Legacy)",
+   "motif": "the fast round through a scope reticle",
+   "figure": false,
+   "kra": "legacy_2007011.kra",
+   "png": "legacy_2007011.png",
+   "size": [
+    256,
+    256
+   ],
+   "legacy_id": 2007011,
+   "sprite": "IconSkill_2007011",
+   "texture": "UI/Texture/IconPotential/Potential_2007011"
+  },
+  {
+   "name": "legacy_2007012",
+   "kind": "legacy",
+   "title": "Rose Lunge (Legacy)",
+   "motif": "a lunging scythe that pops the enemy up, petals behind",
+   "figure": false,
+   "kra": "legacy_2007012.kra",
+   "png": "legacy_2007012.png",
+   "size": [
+    256,
+    256
+   ],
+   "legacy_id": 2007012,
+   "sprite": "IconSkill_2007012",
+   "texture": "UI/Texture/IconPotential/Potential_2007012"
+  },
+  {
+   "name": "talent_5098",
+   "kind": "talent",
+   "title": "Huntress Focus (talent)",
+   "motif": "her rose in a scope reticle, in the stock hexagon",
+   "figure": false,
+   "kra": "talent_5098.kra",
+   "png": "talent_5098.png",
+   "size": [
+    260,
+    300
+   ],
+   "talent_id": 5098,
+   "sprite": "Talent_5098",
+   "hud_png": "talent_5098_hud.png",
+   "hud_size": [
+    130,
+    150
+   ]
+  },
+  {
+   "name": "dust_fire",
+   "kind": "dust",
+   "title": "Fire Dust (HUD)",
+   "motif": "a Dust crystal in a flame",
+   "figure": false,
+   "kra": "dust_fire.kra",
+   "png": "dust_fire.png",
+   "size": [
+    260,
+    236
+   ],
+   "dust": "fire",
+   "hud_png": "dust_fire_hud.png",
+   "hud_size": [
+    65,
+    59
+   ],
+   "tint": "#ff6028"
+  },
+  {
+   "name": "dust_ice",
+   "kind": "dust",
+   "title": "Ice Dust (HUD)",
+   "motif": "a Dust crystal with ice spikes",
+   "figure": false,
+   "kra": "dust_ice.kra",
+   "png": "dust_ice.png",
+   "size": [
+    260,
+    236
+   ],
+   "dust": "ice",
+   "hud_png": "dust_ice_hud.png",
+   "hud_size": [
+    65,
+    59
+   ],
+   "tint": "#96e1ff"
+  },
+  {
+   "name": "dust_lightning",
+   "kind": "dust",
+   "title": "Lightning Dust (HUD)",
+   "motif": "a Dust crystal and a lightning bolt",
+   "figure": false,
+   "kra": "dust_lightning.kra",
+   "png": "dust_lightning.png",
+   "size": [
+    260,
+    236
+   ],
+   "dust": "lightning",
+   "hud_png": "dust_lightning_hud.png",
+   "hud_size": [
+    65,
+    59
+   ],
+   "tint": "#ffe446"
+  },
+  {
+   "name": "dust_gravity",
+   "kind": "dust",
+   "title": "Gravity Dust (HUD)",
+   "motif": "a Dust crystal in a gravity well",
+   "figure": false,
+   "kra": "dust_gravity.kra",
+   "png": "dust_gravity.png",
+   "size": [
+    260,
+    236
+   ],
+   "dust": "gravity",
+   "hud_png": "dust_gravity_hud.png",
+   "hud_size": [
+    65,
+    59
+   ],
+   "tint": "#b060ff"
+  }
+ ],
+ "dust_sprites": {
+  "cartridge": "../dust/rrb_dust_cartridge.png",
+  "cartridge_kra": "../dust/rrb_dust_cartridge.kra",
+  "cells": [
+   "empty",
+   "fire",
+   "ice",
+   "lightning",
+   "gravity"
+  ],
+  "cell_size": [
+   64,
+   64
+  ],
+  "crystal": "../dust/rrb_dust_crystal.png",
+  "crystal_kra": "../dust/rrb_dust_crystal.kra"
+ }
+}

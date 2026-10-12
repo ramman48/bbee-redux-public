@@ -1,0 +1,227 @@
+[
+ {
+  "from": "effect/common/material/15_streak/streak_621_a",
+  "to": "effect/common/material/ninearts/streak_621_a__ninev",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.08333349,
+     0,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.4103823,
+     0,
+     4.924578,
+     0
+    ],
+    "_RemapColor": [
+     0.08333349,
+     0,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/ninearts/particles_608_a__ninev",
+  "props": {
+   "colors": {
+    "_AddColor": [
+     0.06279423,
+     0,
+     0.75352937,
+     0
+    ],
+    "_ExplodeColorHigh": [
+     0.08333349,
+     0,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.4103823,
+     0,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_452_g",
+  "to": "effect/common/material/ninearts/sharp_452_g__ninev",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.08333349,
+     0,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.4103823,
+     0,
+     4.924578,
+     0
+    ],
+    "_RemapColor": [
+     0.08333349,
+     0,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/ninearts/glow_002_n__ninev",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.08333349,
+     0,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.4103823,
+     0,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_008_a",
+  "to": "effect/common/material/ninearts/air_008_a__ninev",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.08333349,
+     0,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.4103823,
+     0,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/ninearts/particles_608_a__ninew",
+  "props": {
+   "colors": {
+    "_AddColor": [
+     0.453911781,
+     0.825294137,
+     0.577706,
+     0
+    ],
+    "_ExplodeColorHigh": [
+     0.55,
+     1,
+     0.7000001,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.708518,
+     4.924578,
+     3.44720531,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_c",
+  "to": "effect/common/material/ninearts/particles_018_c__ninew",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.55,
+     1,
+     0.7000001,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.708518,
+     4.924578,
+     3.44720531,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/ninearts/particles_608_a__ninef",
+  "props": {
+   "colors": {
+    "_AddColor": [
+     0.86117655,
+     0.315764755,
+     0,
+     0
+    ],
+    "_ExplodeColorHigh": [
+     1,
+     0.366666675,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     4.924578,
+     1.80567873,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/ninearts/particles_608_a__ninefg",
+  "props": {
+   "colors": {
+    "_AddColor": [
+     0.6117941,
+     0.0789411962,
+     0.7894118,
+     0
+    ],
+    "_ExplodeColorHigh": [
+     0.775,
+     0.100000024,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.81654787,
+     0.492457926,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ }
+]

@@ -1,0 +1,259 @@
+[
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbwaveblade22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ],
+    "_DissolveColor": [
+     0.5,
+     0,
+     0.07,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8,
+    "_DissolveRange": 0.03
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_712_a",
+  "to": "effect/common/material/rrb/mask_712_a__rrbwv2f0",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "_InnerFlameColor": [
+     1.9,
+     0.1,
+     0.18,
+     1
+    ],
+    "_OutterFlameColor": [
+     0.1,
+     0,
+     0.02,
+     1
+    ],
+    "_SubTexTintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8,
+    "_Cull": 0
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_717_a",
+  "to": "effect/common/material/rrb/mask_717_a__rrbwv2m0",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "_InnerFlameColor": [
+     2,
+     0.1,
+     0.2,
+     1
+    ],
+    "_OutterFlameColor": [
+     0.2,
+     0,
+     0.04,
+     1
+    ],
+    "_SubTexTintColor": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "_ParamA": [
+     -1.8,
+     0,
+     0.3,
+     0.5
+    ],
+    "_ParamB": [
+     -1.8,
+     0,
+     0.3,
+     0.5
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbwaveflow24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ],
+    "_DissolveColor": [
+     0.5,
+     0,
+     0.07,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8,
+    "_DissolveRange": 0.03
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701d_a",
+  "to": "effect/common/material/rrb/streak_701d_a__rrbwave",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     5,
+     5,
+     5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbwaveblade19",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     1.9,
+     1.9,
+     1
+    ],
+    "_DissolveColor": [
+     0.5,
+     0,
+     0.07,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8,
+    "_DissolveRange": 0.03
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/rrb/glow_002_n__rrbh21",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.12,
+     2.12,
+     2.12,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/rrb/particles_004_a__rrbw",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_701_d",
+  "to": "effect/common/material/rrb/air_701_d__rrbwave",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.06,
+     1.06,
+     1.06,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_711_a",
+  "to": "effect/common/material/rrb/mask_711_a__rrbz",
+  "props": {
+   "colors": {},
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbwaveblade32",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.2,
+     3.2,
+     3.2,
+     1
+    ],
+    "_DissolveColor": [
+     0.5,
+     0,
+     0.07,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8,
+    "_DissolveRange": 0.03
+   }
+  }
+ }
+]

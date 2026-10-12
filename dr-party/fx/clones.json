@@ -1,0 +1,779 @@
+[
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/kris/particles_018_m__krish30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/kris/particles_608_a__krish26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris280",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.8,
+     2.8,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris132",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.32,
+     1.32,
+     1.32,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/kris/glow_002_b__krish16",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     1.6,
+     1.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris300",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris220",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_022_d",
+  "to": "effect/common/material/kris/particles_022_d__krish32",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.2,
+     3.2,
+     3.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/kris/glow_002_n__krish21",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.12,
+     2.12,
+     2.12,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_j",
+  "to": "effect/common/material/kris/particles_018_j__krisd20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_BlendDst": 10
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/kris/particles_018_m__krish28",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.8,
+     2.8,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_019_d",
+  "to": "effect/common/material/kris/particles_019_d__krish26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/kris/particles_018_m__krish26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/kris/ring_002_a__krish22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_022_d",
+  "to": "effect/common/material/kris/particles_022_d__krish36",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.6,
+     3.6,
+     3.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_641_a",
+  "to": "effect/common/material/kris/sharp_641_a__krishit",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/kris/particles_608_a__krish24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish18",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     1.8,
+     1.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krisbeam",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.55,
+     1.55,
+     1.55,
+     1
+    ]
+   },
+   "floats": {
+    "_BlendDst": 10
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krisbody",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.2,
+     1.2,
+     1.2,
+     1
+    ]
+   },
+   "floats": {
+    "_BlendDst": 10
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/kris/glow_002_b__krish19",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     1.9,
+     1.9,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_002_a",
+  "to": "effect/common/material/kris/lightning_002_a__krish28",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.8,
+     2.8,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_002_a",
+  "to": "effect/common/material/kris/lightning_002_a__krish26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish16",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     1.6,
+     1.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/kris/ring_002_a__krish24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_022_d",
+  "to": "effect/common/material/kris/particles_022_d__krish28",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.8,
+     2.8,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish19",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     1.9,
+     1.9,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/kris/particles_018_m__krish24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/kris/glow_002_b__krish15",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/kris/ring_002_a__krish20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_008_m5",
+  "to": "effect/common/material/kris/turbulence_008_m5__krisfs",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.43,
+     2.43,
+     2.43,
+     1
+    ],
+    "_DissolveColor": [
+     0.5,
+     0.12,
+     0.02,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/kris/glow_002_b__krish14",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     1.4,
+     1.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_022_d",
+  "to": "effect/common/material/kris/particles_022_d__krish30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris160",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     1.6,
+     1.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/kris/particles_018_m__krish32",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.2,
+     3.2,
+     3.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/kris/glow_002_b__krish18",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     1.8,
+     1.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish14",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     1.4,
+     1.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_019_d",
+  "to": "effect/common/material/kris/particles_019_d__krish20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_002_a",
+  "to": "effect/common/material/kris/lightning_002_a__krish18",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     1.8,
+     1.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris240",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_019_d",
+  "to": "effect/common/material/kris/particles_019_d__krish30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/kris/ring_002_a__krish26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish15",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris200",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_019_d",
+  "to": "effect/common/material/kris/particles_019_d__krish28",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.8,
+     2.8,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/kris/streak_613_g__kris260",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/kris/glow_205_b__krish13",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.3,
+     1.3,
+     1.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ }
+]

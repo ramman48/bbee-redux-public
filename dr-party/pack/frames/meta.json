@@ -1,0 +1,555 @@
+{
+"spr_attack_cut1": {
+"frames": 5,
+"ox": 21,
+"oy": 22,
+"w": 43,
+"h": 44
+},
+"spr_bnameralsei": {
+"frames": 1,
+"ox": 0,
+"oy": 0,
+"w": 61,
+"h": 15
+},
+"spr_bnamesusie": {
+"frames": 1,
+"ox": 0,
+"oy": 0,
+"w": 48,
+"h": 15
+},
+"spr_dash_ripple": {
+"frames": 8,
+"ox": 64,
+"oy": 8,
+"w": 70,
+"h": 20
+},
+"spr_dodgeheart": {
+"frames": 2,
+"ox": 0,
+"oy": 0,
+"w": 20,
+"h": 20
+},
+"spr_grazeappear": {
+"frames": 4,
+"ox": 25,
+"oy": 25,
+"w": 50,
+"h": 50
+},
+"spr_headkris": {
+"frames": 11,
+"ox": 0,
+"oy": 0,
+"w": 32,
+"h": 24
+},
+"spr_headralsei": {
+"frames": 11,
+"ox": 0,
+"oy": 0,
+"w": 36,
+"h": 28
+},
+"spr_headsusie": {
+"frames": 11,
+"ox": 0,
+"oy": 0,
+"w": 34,
+"h": 25
+},
+"spr_heart": {
+"frames": 2,
+"ox": 0,
+"oy": 0,
+"w": 16,
+"h": 16
+},
+"spr_heartbreak": {
+"frames": 1,
+"ox": 0,
+"oy": 0,
+"w": 20,
+"h": 16
+},
+"spr_heartoutline": {
+"frames": 1,
+"ox": 10,
+"oy": 10,
+"w": 20,
+"h": 20
+},
+"spr_heartshards": {
+"frames": 4,
+"ox": 0,
+"oy": 0,
+"w": 10,
+"h": 10
+},
+"spr_kris_dance": {
+"frames": 4,
+"ox": 0,
+"oy": -6,
+"w": 26,
+"h": 31
+},
+"spr_kris_jump_down": {
+"frames": 3,
+"ox": 23,
+"oy": 21,
+"w": 38,
+"h": 46
+},
+"spr_kris_jump_up": {
+"frames": 3,
+"ox": 32,
+"oy": 16,
+"w": 48,
+"h": 37
+},
+"spr_kris_plat_clash": {
+"frames": 2,
+"ox": 25,
+"oy": 20,
+"w": 50,
+"h": 40
+},
+"spr_kris_plat_crouch": {
+"frames": 3,
+"ox": 24,
+"oy": 18,
+"w": 34,
+"h": 36
+},
+"spr_kris_plat_hurt_air": {
+"frames": 1,
+"ox": 13,
+"oy": 30,
+"w": 40,
+"h": 50
+},
+"spr_kris_plat_hurt_ground": {
+"frames": 1,
+"ox": 16,
+"oy": 30,
+"w": 40,
+"h": 50
+},
+"spr_kris_plat_idle": {
+"frames": 3,
+"ox": 24,
+"oy": 18,
+"w": 34,
+"h": 36
+},
+"spr_kris_plat_land": {
+"frames": 2,
+"ox": 36,
+"oy": 14,
+"w": 54,
+"h": 33
+},
+"spr_kris_plat_pose": {
+"frames": 1,
+"ox": 14,
+"oy": 22,
+"w": 29,
+"h": 40
+},
+"spr_kris_plat_run": {
+"frames": 6,
+"ox": 25,
+"oy": 16,
+"w": 41,
+"h": 34
+},
+"spr_kris_plat_runstop": {
+"frames": 3,
+"ox": 24,
+"oy": 18,
+"w": 41,
+"h": 36
+},
+"spr_kris_plat_slash_air": {
+"frames": 17,
+"ox": 52,
+"oy": 41,
+"w": 99,
+"h": 90
+},
+"spr_kris_plat_slash_air_foreground": {
+"frames": 17,
+"ox": 52,
+"oy": 41,
+"w": 99,
+"h": 90
+},
+"spr_kris_plat_slash_airland": {
+"frames": 2,
+"ox": 43,
+"oy": 43,
+"w": 99,
+"h": 90
+},
+"spr_kris_plat_slash_ground": {
+"frames": 13,
+"ox": 43,
+"oy": 43,
+"w": 99,
+"h": 90
+},
+"spr_kris_plat_slash_ground_foreground": {
+"frames": 13,
+"ox": 43,
+"oy": 43,
+"w": 99,
+"h": 90
+},
+"spr_kris_plat_turn": {
+"frames": 1,
+"ox": 17,
+"oy": 16,
+"w": 41,
+"h": 34
+},
+"spr_plat_cloudplatform_fx": {
+"frames": 5,
+"ox": 30,
+"oy": 5,
+"w": 60,
+"h": 10
+},
+"spr_plat_kris_ball": {
+"frames": 4,
+"ox": 12,
+"oy": 11,
+"w": 24,
+"h": 22
+},
+"spr_plat_ralsei_fall": {
+"frames": 3,
+"ox": 15,
+"oy": 23,
+"w": 31,
+"h": 47
+},
+"spr_plat_ralsei_halt": {
+"frames": 3,
+"ox": 15,
+"oy": 23,
+"w": 31,
+"h": 47
+},
+"spr_plat_ralsei_idle": {
+"frames": 6,
+"ox": 10,
+"oy": 16,
+"w": 20,
+"h": 40
+},
+"spr_plat_ralsei_idle_unhappy": {
+"frames": 6,
+"ox": 10,
+"oy": 16,
+"w": 20,
+"h": 40
+},
+"spr_plat_ralsei_jump": {
+"frames": 3,
+"ox": 15,
+"oy": 23,
+"w": 31,
+"h": 47
+},
+"spr_plat_ralsei_jump_ball": {
+"frames": 4,
+"ox": 10,
+"oy": 20,
+"w": 20,
+"h": 20
+},
+"spr_plat_ralsei_land": {
+"frames": 2,
+"ox": 15,
+"oy": 23,
+"w": 31,
+"h": 47
+},
+"spr_plat_ralsei_pose": {
+"frames": 1,
+"ox": 16,
+"oy": 15,
+"w": 32,
+"h": 40
+},
+"spr_plat_ralsei_pre_pose": {
+"frames": 1,
+"ox": 15,
+"oy": 23,
+"w": 31,
+"h": 47
+},
+"spr_plat_ralsei_run": {
+"frames": 4,
+"ox": 15,
+"oy": 23,
+"w": 31,
+"h": 47
+},
+"spr_plat_ralsei_shocked_subtle": {
+"frames": 1,
+"ox": 10,
+"oy": 16,
+"w": 21,
+"h": 40
+},
+"spr_plat_ralsei_spell": {
+"frames": 11,
+"ox": 26,
+"oy": 22,
+"w": 78,
+"h": 47
+},
+"spr_plat_ralsei_spell_fireball_right": {
+"frames": 6,
+"ox": 0,
+"oy": 0,
+"w": 48,
+"h": 41
+},
+"spr_plat_ralsei_spellready": {
+"frames": 4,
+"ox": 26,
+"oy": 22,
+"w": 78,
+"h": 47
+},
+"spr_plat_ralsei_turn": {
+"frames": 3,
+"ox": 15,
+"oy": 9,
+"w": 31,
+"h": 34
+},
+"spr_plat_susie_fall": {
+"frames": 3,
+"ox": 19,
+"oy": 21,
+"w": 38,
+"h": 43
+},
+"spr_plat_susie_halt": {
+"frames": 4,
+"ox": 14,
+"oy": 21,
+"w": 32,
+"h": 44
+},
+"spr_plat_susie_idle": {
+"frames": 4,
+"ox": 13,
+"oy": 21,
+"w": 26,
+"h": 43
+},
+"spr_plat_susie_idle_unhappy": {
+"frames": 4,
+"ox": 13,
+"oy": 21,
+"w": 26,
+"h": 43
+},
+"spr_plat_susie_jump": {
+"frames": 3,
+"ox": 19,
+"oy": 21,
+"w": 38,
+"h": 43
+},
+"spr_plat_susie_jump_ball": {
+"frames": 4,
+"ox": 14,
+"oy": 30,
+"w": 29,
+"h": 30
+},
+"spr_plat_susie_land": {
+"frames": 2,
+"ox": 19,
+"oy": 21,
+"w": 38,
+"h": 43
+},
+"spr_plat_susie_pose": {
+"frames": 1,
+"ox": 13,
+"oy": 23,
+"w": 27,
+"h": 44
+},
+"spr_plat_susie_pre_pose": {
+"frames": 1,
+"ox": 14,
+"oy": 21,
+"w": 32,
+"h": 44
+},
+"spr_plat_susie_run": {
+"frames": 6,
+"ox": 19,
+"oy": 21,
+"w": 38,
+"h": 43
+},
+"spr_plat_susie_run_unhappy": {
+"frames": 6,
+"ox": 19,
+"oy": 21,
+"w": 38,
+"h": 43
+},
+"spr_plat_susie_shock_r": {
+"frames": 1,
+"ox": 15,
+"oy": 0,
+"w": 41,
+"h": 46
+},
+"spr_plat_susie_turn": {
+"frames": 4,
+"ox": 19,
+"oy": 21,
+"w": 38,
+"h": 43
+},
+"spr_plat_targetmode_arrow": {
+"frames": 4,
+"ox": 9,
+"oy": 9,
+"w": 18,
+"h": 18
+},
+"spr_plat_targetmode_circle": {
+"frames": 1,
+"ox": 3,
+"oy": 3,
+"w": 6,
+"h": 6
+},
+"spr_plat_targetmode_cross": {
+"frames": 1,
+"ox": 10,
+"oy": 10,
+"w": 20,
+"h": 20
+},
+"spr_plat_targetmode_reticle": {
+"frames": 8,
+"ox": 65,
+"oy": 65,
+"w": 130,
+"h": 130
+},
+"spr_plat_targetmode_reticle_red": {
+"frames": 1,
+"ox": 8,
+"oy": 8,
+"w": 17,
+"h": 17
+},
+"spr_ralsei_dance": {
+"frames": 8,
+"ox": 0,
+"oy": 0,
+"w": 28,
+"h": 42
+},
+"spr_ralsei_running_right": {
+"frames": 6,
+"ox": 6,
+"oy": -3,
+"w": 30,
+"h": 40
+},
+"spr_rudebuster_beam": {
+"frames": 7,
+"ox": 20,
+"oy": 30,
+"w": 43,
+"h": 62
+},
+"spr_smack_vfx": {
+"frames": 1,
+"ox": 40,
+"oy": 40,
+"w": 80,
+"h": 80
+},
+"spr_spell_fireball": {
+"frames": 3,
+"ox": 0,
+"oy": 0,
+"w": 34,
+"h": 20
+},
+"spr_susie_dance": {
+"frames": 6,
+"ox": 0,
+"oy": 0,
+"w": 30,
+"h": 43
+},
+"spr_susie_laugh_dw": {
+"frames": 2,
+"ox": 3,
+"oy": -3,
+"w": 28,
+"h": 41
+},
+"spr_susie_run_right": {
+"frames": 6,
+"ox": 3,
+"oy": 0,
+"w": 40,
+"h": 39
+},
+"spr_susiep_attack": {
+"frames": 6,
+"ox": 40,
+"oy": 47,
+"w": 103,
+"h": 71
+},
+"spr_susiep_attackready": {
+"frames": 1,
+"ox": 40,
+"oy": 20,
+"w": 63,
+"h": 41
+},
+"spr_tensionbar": {
+"frames": 2,
+"ox": 0,
+"oy": 0,
+"w": 25,
+"h": 196
+},
+"spr_tensionfilling": {
+"frames": 3,
+"ox": 0,
+"oy": 0,
+"w": 25,
+"h": 196
+},
+"spr_tplogo": {
+"frames": 1,
+"ox": 0,
+"oy": 0,
+"w": 22,
+"h": 44
+}
+}

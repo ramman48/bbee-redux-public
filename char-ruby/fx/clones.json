@@ -1,0 +1,986 @@
+[
+ {
+  "from": "effect/common/texture/08_particles/particles_018_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t2",
+  "image": "textures/rrb_arc_t2.png"
+ },
+ {
+  "from": "effect/common/texture/02_glow/glow_205_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t6",
+  "image": "textures/rrb_arc_t6.png"
+ },
+ {
+  "from": "effect/common/texture/08_particles/particles_018_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t0",
+  "image": "textures/rrb_arc_t0.png"
+ },
+ {
+  "from": "effect/common/texture/08_particles/particles_018_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t1",
+  "image": "textures/rrb_arc_t1.png"
+ },
+ {
+  "from": "effect/common/texture/02_glow/glow_205_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t4",
+  "image": "textures/rrb_arc_t4.png"
+ },
+ {
+  "from": "effect/common/texture/02_glow/glow_205_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t5",
+  "image": "textures/rrb_arc_t5.png"
+ },
+ {
+  "from": "effect/common/texture/08_particles/particles_018_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t3",
+  "image": "textures/rrb_arc_t3.png"
+ },
+ {
+  "from": "effect/common/texture/02_glow/glow_205_4c",
+  "to": "effect/common/texture/rrb/rrb_arc_t7",
+  "image": "textures/rrb_arc_t7.png"
+ },
+ {
+  "from": "effect/common/texture/08_particles/particles_018_4c",
+  "to": "effect/common/texture/rrb/rrb_dust_cartridge",
+  "image": "textures/rrb_dust_cartridge.png"
+ },
+ {
+  "from": "effect/common/texture/02_glow/glow_205_4c",
+  "to": "effect/common/texture/rrb/rrb_dust_crystal",
+  "image": "textures/rrb_dust_crystal.png"
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/rrb/particles_004_a__rrbw",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/rrb/glow_002_b__rrbh20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbh30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/rrb/glow_002_b__rrbh34",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.4,
+     3.4,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbh19",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     1.9,
+     1.9,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_b",
+  "to": "effect/common/material/rrb/glow_002_b__rrbh16",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     1.6,
+     1.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbh22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbh18",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     1.8,
+     1.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/06_normal/normal_010_b4",
+  "to": "effect/common/material/rrb/normal_010_b4__rrbarcrefr",
+  "props": {
+   "colors": {},
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/rrb/particles_018_m__rrbarc1",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/08_particles/particles_018_4c": "effect/common/texture/rrb/rrb_arc_t1"
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_613_g",
+  "to": "effect/common/material/rrb/streak_613_g__rrbarccore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbarc5",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.5,
+     2.5,
+     2.5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/02_glow/glow_205_4c": "effect/common/texture/rrb/rrb_arc_t5"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbarc7",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.5,
+     2.5,
+     2.5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/02_glow/glow_205_4c": "effect/common/texture/rrb/rrb_arc_t7"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbarc6",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.5,
+     2.5,
+     2.5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/02_glow/glow_205_4c": "effect/common/texture/rrb/rrb_arc_t6"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/rrb/particles_018_m__rrbarc0",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/08_particles/particles_018_4c": "effect/common/texture/rrb/rrb_arc_t0"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/rrb/particles_018_m__rrbarc3",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/08_particles/particles_018_4c": "effect/common/texture/rrb/rrb_arc_t3"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/rrb/particles_018_m__rrbarc2",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/08_particles/particles_018_4c": "effect/common/texture/rrb/rrb_arc_t2"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbarc4",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.5,
+     2.5,
+     2.5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/02_glow/glow_205_4c": "effect/common/texture/rrb/rrb_arc_t4"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_601_a",
+  "to": "effect/common/material/rrb/glow_601_a__rrbh22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/rrb/glow_002_n__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_651_a",
+  "to": "effect/common/material/rrb/sharp_651_a__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_004_a",
+  "to": "effect/common/material/rrb/glow_004_a__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_652_a",
+  "to": "effect/common/material/rrb/sharp_652_a__rrbh45",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4.5,
+     4.5,
+     4.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/rrb/glow_002_n__rrbh40",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4,
+     4,
+     4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_023_a1",
+  "to": "effect/common/material/rrb/turbulence_023_a1__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.43,
+     2.43,
+     2.43,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/rrb/particles_018_m__rrbh30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_006_a",
+  "to": "effect/common/material/rrb/ring_006_a__rrbh55",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     5.5,
+     5.5,
+     5.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_008_m5",
+  "to": "effect/common/material/rrb/turbulence_008_m5__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.43,
+     2.43,
+     2.43,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_641_a",
+  "to": "effect/common/material/rrb/sharp_641_a__rrbh40",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4,
+     4,
+     4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_019_d",
+  "to": "effect/common/material/rrb/particles_019_d__rrbh60",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     6,
+     6,
+     6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_618_a",
+  "to": "effect/common/material/rrb/air_618_a__rrbh32",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.2,
+     3.2,
+     3.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/rrb/particles_004_a__rrbh22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/07_other/other_028_a",
+  "to": "effect/common/material/rrb/other_028_a__rrbh22",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/rrb/particles_018_m__rrbcart",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/08_particles/particles_018_4c": "effect/common/texture/rrb/rrb_dust_cartridge"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_205_b",
+  "to": "effect/common/material/rrb/glow_205_b__rrbcrys",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/02_glow/glow_205_4c": "effect/common/texture/rrb/rrb_dust_crystal"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_022_a",
+  "to": "effect/common/material/rrb/particles_022_a__rrbh20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/rrb/particles_004_a__rrbh30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/rrb/particles_004_a__rrbh26",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_604_a",
+  "to": "effect/common/material/rrb/lightning_604_a__rrbh30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_726_b",
+  "to": "effect/common/material/rrb/streak_726_b__rrbsaw",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ],
+    "_SubTexTintColor": [
+     2.6,
+     1.3,
+     1.5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbh20",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_318_a",
+  "to": "effect/common/material/rrb/streak_318_a__rrbh18",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     1.8,
+     1.8,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/rrb/particles_004_a__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbh15",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/rrb/ring_002_a__rrbh5",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.5,
+     0.5,
+     0.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_d",
+  "to": "effect/common/material/rrb/glow_002_d__rrbh10",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/rrb/ring_002_a__rrbh24",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.4,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_726_b",
+  "to": "effect/common/material/rrb/streak_726_b__rrbwell",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.3,
+     1.3,
+     1.3,
+     1
+    ],
+    "_SubTexTintColor": [
+     1.25,
+     0.62,
+     2.7,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701a_a",
+  "to": "effect/common/material/rrb/streak_701a_a__rrbslash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ],
+    "_DissolveColor": [
+     0.35,
+     0,
+     0.05,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8,
+    "_DissolveRange": 0.03
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_701d_a",
+  "to": "effect/common/material/rrb/streak_701d_a__rrbslash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     5,
+     5,
+     5,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/rrb/glow_002_n__rrbh21",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.12,
+     2.12,
+     2.12,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_008_m5",
+  "to": "effect/common/material/rrb/turbulence_008_m5__rrbslash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.43,
+     2.43,
+     2.43,
+     1
+    ],
+    "_DissolveColor": [
+     0.45,
+     0,
+     0.05,
+     1
+    ]
+   },
+   "floats": {
+    "_ZTest": 8
+   }
+  }
+ },
+ {
+  "from": "effect/common/material/09_pattern/pattern_012_b",
+  "to": "effect/common/material/rrb/pattern_012_b__rrbh30",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_608_a",
+  "to": "effect/common/material/rrb/particles_608_a__rrbready",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ],
+    "_AddColor": [
+     0.72,
+     0.02,
+     0.12,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ }
+]
