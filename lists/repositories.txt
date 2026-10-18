@@ -5,4 +5,3 @@ dr-party: https://github.com/ramman48/bbee-redux-public/tree/main/dr-party
 ex-common: https://github.com/ramman48/bbee-redux-public/tree/main/ex-common
 ex-hakumen: https://github.com/ramman48/bbee-redux-public/tree/main/ex-hakumen
 ex-ragna: https://github.com/ramman48/bbee-redux-public/tree/main/ex-ragna
-four-player: https://github.com/ramman48/bbee-redux-public/tree/main/four-player
