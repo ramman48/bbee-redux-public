@@ -1,0 +1,562 @@
+{
+ "effect/prefab/benediction/exhakumen/exh_beam1": [
+  {
+   "path": "archive:/CAB-3ea89855ee758f6238028caa9cda80c7/CAB-3ea89855ee758f6238028caa9cda80c7",
+   "bundle": "effect/common/fbx/plane_680",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "8817367587971463846": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-742004286093b6f1956cceff2657efeb/CAB-742004286093b6f1956cceff2657efeb",
+   "bundle": "effect/common/material/13_sharp/sharp_621_d",
+   "objects": {
+    "5932684049854870313": [
+     "Material",
+     "sharp_621_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4ce6225c7c48ddfdb2c436d609ec62c7/CAB-4ce6225c7c48ddfdb2c436d609ec62c7",
+   "bundle": "effect/common/material/18_turbulence/turbulence_008_m6",
+   "objects": {
+    "8007951883477196533": [
+     "Material",
+     "turbulence_008_m6"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5949696908605763891": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c0f4bf62f33df6a18693f7083ff1ea19/CAB-c0f4bf62f33df6a18693f7083ff1ea19",
+   "bundle": "effect/common/material/13_sharp/sharp_621_c",
+   "objects": {
+    "2567991615737452076": [
+     "Material",
+     "sharp_621_c"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-e88a20ed7227b1b3ff0dbd01b2f8d6a3/CAB-e88a20ed7227b1b3ff0dbd01b2f8d6a3",
+   "bundle": "effect/common/material/15_streak/streak_603_b",
+   "objects": {
+    "3357578123794704341": [
+     "Material",
+     "streak_603_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0ec2250769d9702493d1a479d413905d/CAB-0ec2250769d9702493d1a479d413905d",
+   "bundle": "effect/common/fbx/ring_601",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5907099574723061415": [
+     "Mesh",
+     "Cylinder601_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-804ce930a52fe086647290dd6b08d032/CAB-804ce930a52fe086647290dd6b08d032",
+   "bundle": "effect/common/material/06_normal/normal_401_e",
+   "objects": {
+    "-1781998859901379006": [
+     "Material",
+     "normal_401_e"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-94ed5f8d00d0013b8fce977f903cedc7/CAB-94ed5f8d00d0013b8fce977f903cedc7",
+   "bundle": "gameplay/map/element/fbx/plane_001",
+   "objects": {
+    "-9049847519716745737": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-12cffac4a80a5b417546ed671eb209cf/CAB-12cffac4a80a5b417546ed671eb209cf",
+   "bundle": "effect/common/material/13_sharp/sharp_046_c",
+   "objects": {
+    "2458623703910215473": [
+     "Material",
+     "sharp_046_c"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-80712343055fddb21bcc234fd826af23/CAB-80712343055fddb21bcc234fd826af23",
+   "bundle": "effect/common/material/08_particles/particles_018_m",
+   "objects": {
+    "3613142958834212291": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ae91b1f2de7646aa40165b08e6779033/CAB-ae91b1f2de7646aa40165b08e6779033",
+   "bundle": "effect/common/material/22_scene/lightmap_001_a",
+   "objects": {
+    "-4910566658604490908": [
+     "Material",
+     "lightmap_001_a"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/benediction/exhakumen/exh_beam2": [
+  {
+   "path": "archive:/CAB-c0f4bf62f33df6a18693f7083ff1ea19/CAB-c0f4bf62f33df6a18693f7083ff1ea19",
+   "bundle": "effect/common/material/13_sharp/sharp_621_c",
+   "objects": {
+    "2567991615737452076": [
+     "Material",
+     "sharp_621_c"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fc93385ff3e9fb966c654106b1ae787a/CAB-fc93385ff3e9fb966c654106b1ae787a",
+   "bundle": "effect/common/material/boonsplus/lightning_604_a__bpr_exhcrackle",
+   "objects": {
+    "5726029145580670703": [
+     "Material",
+     "lightning_604_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5949696908605763891": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-3ea89855ee758f6238028caa9cda80c7/CAB-3ea89855ee758f6238028caa9cda80c7",
+   "bundle": "effect/common/fbx/plane_680",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "8817367587971463846": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-80712343055fddb21bcc234fd826af23/CAB-80712343055fddb21bcc234fd826af23",
+   "bundle": "effect/common/material/08_particles/particles_018_m",
+   "objects": {
+    "3613142958834212291": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-12cffac4a80a5b417546ed671eb209cf/CAB-12cffac4a80a5b417546ed671eb209cf",
+   "bundle": "effect/common/material/13_sharp/sharp_046_c",
+   "objects": {
+    "2458623703910215473": [
+     "Material",
+     "sharp_046_c"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-804ce930a52fe086647290dd6b08d032/CAB-804ce930a52fe086647290dd6b08d032",
+   "bundle": "effect/common/material/06_normal/normal_401_e",
+   "objects": {
+    "-1781998859901379006": [
+     "Material",
+     "normal_401_e"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-94ed5f8d00d0013b8fce977f903cedc7/CAB-94ed5f8d00d0013b8fce977f903cedc7",
+   "bundle": "gameplay/map/element/fbx/plane_001",
+   "objects": {
+    "-9049847519716745737": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-e88a20ed7227b1b3ff0dbd01b2f8d6a3/CAB-e88a20ed7227b1b3ff0dbd01b2f8d6a3",
+   "bundle": "effect/common/material/15_streak/streak_603_b",
+   "objects": {
+    "3357578123794704341": [
+     "Material",
+     "streak_603_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0ec2250769d9702493d1a479d413905d/CAB-0ec2250769d9702493d1a479d413905d",
+   "bundle": "effect/common/fbx/ring_601",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5907099574723061415": [
+     "Mesh",
+     "Cylinder601_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1c474e2970af524fda0545e80903edef/CAB-1c474e2970af524fda0545e80903edef",
+   "bundle": "effect/common/material/boonsplus/particles_018_m__bpr_exhstreak",
+   "objects": {
+    "-2699939285092131959": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4ce6225c7c48ddfdb2c436d609ec62c7/CAB-4ce6225c7c48ddfdb2c436d609ec62c7",
+   "bundle": "effect/common/material/18_turbulence/turbulence_008_m6",
+   "objects": {
+    "8007951883477196533": [
+     "Material",
+     "turbulence_008_m6"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4d49b7a17a7099b1dd89347237f837de/CAB-4d49b7a17a7099b1dd89347237f837de",
+   "bundle": "effect/common/material/boonsplus/particles_018_m__bpr_exhember",
+   "objects": {
+    "7191290130987703779": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-742004286093b6f1956cceff2657efeb/CAB-742004286093b6f1956cceff2657efeb",
+   "bundle": "effect/common/material/13_sharp/sharp_621_d",
+   "objects": {
+    "5932684049854870313": [
+     "Material",
+     "sharp_621_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ae91b1f2de7646aa40165b08e6779033/CAB-ae91b1f2de7646aa40165b08e6779033",
+   "bundle": "effect/common/material/22_scene/lightmap_001_a",
+   "objects": {
+    "-4910566658604490908": [
+     "Material",
+     "lightmap_001_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f6cb30e7b100fc85c16deccd2a1aaa55/CAB-f6cb30e7b100fc85c16deccd2a1aaa55",
+   "bundle": "effect/common/material/boonsplus/glow_002_n__bpr_exhheart",
+   "objects": {
+    "-5092922875521085406": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/benediction/exhakumen/exh_beam3": [
+  {
+   "path": "archive:/CAB-e88a20ed7227b1b3ff0dbd01b2f8d6a3/CAB-e88a20ed7227b1b3ff0dbd01b2f8d6a3",
+   "bundle": "effect/common/material/15_streak/streak_603_b",
+   "objects": {
+    "3357578123794704341": [
+     "Material",
+     "streak_603_b"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-0ec2250769d9702493d1a479d413905d/CAB-0ec2250769d9702493d1a479d413905d",
+   "bundle": "effect/common/fbx/ring_601",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5907099574723061415": [
+     "Mesh",
+     "Cylinder601_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-742004286093b6f1956cceff2657efeb/CAB-742004286093b6f1956cceff2657efeb",
+   "bundle": "effect/common/material/13_sharp/sharp_621_d",
+   "objects": {
+    "5932684049854870313": [
+     "Material",
+     "sharp_621_d"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1c474e2970af524fda0545e80903edef/CAB-1c474e2970af524fda0545e80903edef",
+   "bundle": "effect/common/material/boonsplus/particles_018_m__bpr_exhstreak",
+   "objects": {
+    "-2699939285092131959": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5949696908605763891": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-fc93385ff3e9fb966c654106b1ae787a/CAB-fc93385ff3e9fb966c654106b1ae787a",
+   "bundle": "effect/common/material/boonsplus/lightning_604_a__bpr_exhcrackle",
+   "objects": {
+    "5726029145580670703": [
+     "Material",
+     "lightning_604_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-ae91b1f2de7646aa40165b08e6779033/CAB-ae91b1f2de7646aa40165b08e6779033",
+   "bundle": "effect/common/material/22_scene/lightmap_001_a",
+   "objects": {
+    "-4910566658604490908": [
+     "Material",
+     "lightmap_001_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-f6cb30e7b100fc85c16deccd2a1aaa55/CAB-f6cb30e7b100fc85c16deccd2a1aaa55",
+   "bundle": "effect/common/material/boonsplus/glow_002_n__bpr_exhheart",
+   "objects": {
+    "-5092922875521085406": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4d49b7a17a7099b1dd89347237f837de/CAB-4d49b7a17a7099b1dd89347237f837de",
+   "bundle": "effect/common/material/boonsplus/particles_018_m__bpr_exhember",
+   "objects": {
+    "7191290130987703779": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4ce6225c7c48ddfdb2c436d609ec62c7/CAB-4ce6225c7c48ddfdb2c436d609ec62c7",
+   "bundle": "effect/common/material/18_turbulence/turbulence_008_m6",
+   "objects": {
+    "8007951883477196533": [
+     "Material",
+     "turbulence_008_m6"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-3ea89855ee758f6238028caa9cda80c7/CAB-3ea89855ee758f6238028caa9cda80c7",
+   "bundle": "effect/common/fbx/plane_680",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "8817367587971463846": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-80712343055fddb21bcc234fd826af23/CAB-80712343055fddb21bcc234fd826af23",
+   "bundle": "effect/common/material/08_particles/particles_018_m",
+   "objects": {
+    "3613142958834212291": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-39c58af4c6423e788d57eda2cf968aa4/CAB-39c58af4c6423e788d57eda2cf968aa4",
+   "bundle": "effect/common/material/boonsplus/ring_002_a__bpr_exhcollar",
+   "objects": {
+    "4306860214119511563": [
+     "Material",
+     "ring_002_a"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c0f4bf62f33df6a18693f7083ff1ea19/CAB-c0f4bf62f33df6a18693f7083ff1ea19",
+   "bundle": "effect/common/material/13_sharp/sharp_621_c",
+   "objects": {
+    "2567991615737452076": [
+     "Material",
+     "sharp_621_c"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-12cffac4a80a5b417546ed671eb209cf/CAB-12cffac4a80a5b417546ed671eb209cf",
+   "bundle": "effect/common/material/13_sharp/sharp_046_c",
+   "objects": {
+    "2458623703910215473": [
+     "Material",
+     "sharp_046_c"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-804ce930a52fe086647290dd6b08d032/CAB-804ce930a52fe086647290dd6b08d032",
+   "bundle": "effect/common/material/06_normal/normal_401_e",
+   "objects": {
+    "-1781998859901379006": [
+     "Material",
+     "normal_401_e"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-94ed5f8d00d0013b8fce977f903cedc7/CAB-94ed5f8d00d0013b8fce977f903cedc7",
+   "bundle": "gameplay/map/element/fbx/plane_001",
+   "objects": {
+    "-9049847519716745737": [
+     "Mesh",
+     "Plane001_0"
+    ],
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ]
+   }
+  }
+ ],
+ "effect/prefab/benediction/exhakumen/exh_beam_fade": [
+  {
+   "path": "archive:/CAB-62a2251072f2ec80764b8f6d412d5648/CAB-62a2251072f2ec80764b8f6d412d5648",
+   "bundle": "effect/common/material/boonsplus/glow_002_n__bpr_exhfadecore",
+   "objects": {
+    "-6338165270904554898": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-c194faecb88a9581009f1ac361165f6d/CAB-c194faecb88a9581009f1ac361165f6d",
+   "bundle": "effect/common/fbx/plane_001",
+   "objects": {
+    "-1682175822698124268": [
+     "Material",
+     "Default-Material"
+    ],
+    "5949696908605763891": [
+     "Mesh",
+     "Plane001_0"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-3611448f9d8b479877445167a64f0df0/CAB-3611448f9d8b479877445167a64f0df0",
+   "bundle": "effect/common/material/boonsplus/glow_002_n__bpr_exhfadeline",
+   "objects": {
+    "-5738606238758650238": [
+     "Material",
+     "glow_002_n"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-1c474e2970af524fda0545e80903edef/CAB-1c474e2970af524fda0545e80903edef",
+   "bundle": "effect/common/material/boonsplus/particles_018_m__bpr_exhstreak",
+   "objects": {
+    "-2699939285092131959": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  },
+  {
+   "path": "archive:/CAB-4d49b7a17a7099b1dd89347237f837de/CAB-4d49b7a17a7099b1dd89347237f837de",
+   "bundle": "effect/common/material/boonsplus/particles_018_m__bpr_exhember",
+   "objects": {
+    "7191290130987703779": [
+     "Material",
+     "particles_018_m"
+    ]
+   }
+  }
+ ]
+}

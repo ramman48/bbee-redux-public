@@ -1,0 +1,8 @@
+# the public channel, read by every public Terminal's updater (repo_export\sync_public.py)
+char-nine: https://github.com/ramman48/bbee-redux-public/tree/main/char-nine
+char-ruby: https://github.com/ramman48/bbee-redux-public/tree/main/char-ruby
+dr-party: https://github.com/ramman48/bbee-redux-public/tree/main/dr-party
+ex-common: https://github.com/ramman48/bbee-redux-public/tree/main/ex-common
+ex-hakumen: https://github.com/ramman48/bbee-redux-public/tree/main/ex-hakumen
+ex-ragna: https://github.com/ramman48/bbee-redux-public/tree/main/ex-ragna
+four-player: https://github.com/ramman48/bbee-redux-public/tree/main/four-player

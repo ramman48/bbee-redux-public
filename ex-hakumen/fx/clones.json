@@ -1,0 +1,107 @@
+[
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_exhheart",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.7,
+     1.3,
+     0.95,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_exhember",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.55,
+     2.3,
+     0.62,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_604_a",
+  "to": "effect/common/material/boonsplus/lightning_604_a__bpr_exhcrackle",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     5,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_exhstreak",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.55,
+     2.3,
+     0.62,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_exhcollar",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.55,
+     2.3,
+     0.62,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_exhfadecore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     2.6,
+     1.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_exhfadeline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.55,
+     2.3,
+     0.62,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ }
+]

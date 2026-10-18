@@ -1,0 +1,118 @@
+{
+ "id": "ex-common",
+ "name": "BlazBlue EX: shared presentation",
+ "version": "0.8.0",
+ "author": "BBEE Redux",
+ "description": "Shared BlazBlue EX presentation (actor ids 190000-199999): the EX page on character select (press Down), the purple EX card and name (solo and local co-op), the base character's voice where an EX cue is missing, and the intro-movie button disabled for EX. EX Ragna and EX Hakumen depend on it. Unofficial; not affiliated with 91Act or Arc System Works.",
+ "gameBuilds": [
+  "25598842",
+  "25621352",
+  "25627491"
+ ],
+ "dependencies": [
+  "bbee-sdk",
+  "bbee-actors"
+ ],
+ "content": {
+  "js": [
+   {
+    "file": "data/js/gameplay/battlebreedprepare/SceneUIHeroSelect",
+    "replace": [
+     [
+      "this.R.ImgBg.SetAlpha(a?0:1),",
+      "this.R.ImgBg.SetAlpha(a?0:1),(this.R.ImgBg.color=(this.hero.server.id>=190000&&this.hero.server.id<200000)?new csharp_1.UnityEngine.Color(0.62,0.35,1,this.R.ImgBg.color.a):new csharp_1.UnityEngine.Color(1,1,1,this.R.ImgBg.color.a)),"
+     ],
+     [
+      "this.R.TextName.TextAuto(Util_1.U.GetLocale(\"BaseActor_chs_\"+this.hero.server.id)),",
+      "this.R.TextName.TextAuto(((this.hero.server.id>=190000&&this.hero.server.id<200000)?\"<color=#B77BFF>\":\"\")+Util_1.U.GetLocale(\"BaseActor_chs_\"+this.hero.server.id)+((this.hero.server.id>=190000&&this.hero.server.id<200000)?\"</color>\":\"\")),"
+     ],
+     [
+      "this.R.inputGroup=Util_1.U.GetComponent(this.CsObj,csharp_1.GamePlay.InputGroup)}",
+      "this.R.inputGroup=Util_1.U.GetComponent(this.CsObj,csharp_1.GamePlay.InputGroup),this.__bbExSetup()}"
+     ],
+     [
+      "let t=DataBinding_1.DB.TeamData?.Value?.seed;var e;",
+      "let t=DataBinding_1.DB.TeamData?.Value?.seed;var e;[this.listHero,t]=this.__bbExPrepare(this.listHero,t);"
+     ],
+     [
+      "Update(e){if(this.playingOpenAnim&&this.UpdateOpenAnimation(e),",
+      "Update(e){this.__bbExUpdate(e);try{this.__bbExCells()}catch(x){}try{this.__bbExGateTick(e)}catch(x){}}__bbExUpdate(e){if(this.playingOpenAnim&&this.UpdateOpenAnimation(e),"
+     ],
+     [
+      "UIUtil_1.default.BindButtonHoldEvent(this.R.BtnBack,this.CloseHeroSelect.bind(this))",
+      "UIUtil_1.default.BindButtonHoldEvent(this.R.BtnBack,()=>{this.__bbEx&&this.__bbExAvailable()?this.__bbExSwitch(!1):this.CloseHeroSelect()})"
+     ],
+     [
+      "this.R.BtnEnterBaseActorMovie.Interactable=t,",
+      "this.R.BtnEnterBaseActorMovie.Interactable=t&&!(e.server.id>=190000&&e.server.id<200000),"
+     ]
+    ],
+    "append": ";(function(){\n/* ex-common: the EX page on character select (actor ids 190000-199999). docs/ex/research/MENUS.md section 2 */\nvar LO=190000,HI=200000;\nfunction isEx(id){return id>=LO&&id<HI}\nfunction log(m){try{csharp_1.System.IO.File.AppendAllText(\"@ROOT@/modlog.txt\",(new Date).toISOString()+\" EXSEL \"+m+\"\\n\")}catch(e){}}\nvar P=SceneUIHeroSelect.prototype;\nP.__bbExAvailable=function(all){\n  try{\n    if(null!=DataBinding_1.DB.CallBackToPvePrepareRoom.Value)return!1;   /* online team PvE: never */\n    if(csharp_1.NOAH.Criteria.UseArcPlot)return!1;                         /* console flow: not supported */\n    all=all||ActorUtil_1.default.GetListSeedHero();\n    return all.some(h=>isEx(h.server.id))&&all.some(h=>!isEx(h.server.id));\n  }catch(e){return!1}\n};\n/* Awake: a second axis cloned from the stock horizontal one (keeps its channel, player source and digital flag) */\nP.__bbExSetup=function(){\n  try{\n    this.__bbExLast={};\n    this.__bbExY0=this.R.ListHero.localPosition;\n    var src=this.R.NavigationAction.gameObject;\n    var go=csharp_1.UnityEngine.Object.Instantiate(src,src.transform.parent);\n    go.name=\"NavigationActionEX\";\n    var ax=Util_1.U.GetComponent(go,csharp_1.GamePlay.AxisAction);\n    ax.ActionId=1;            /* MoveY: the vertical partner of MoveX, which this screen already scrolls with */\n    ax.Visualize=!0;          /* the stock Instructions bar draws it as an axis prompt */\n    go.BindAxisEvent(this.__bbExAxis.bind(this));\n    this.R.BtnBack.gameObject.BindButtonEvent(()=>{this.__bbEx&&this.__bbExSwitch(!1)});   /* a tap of Back on the EX page */\n    this.__bbExAx=ax;\n    log(\"page ready\");\n  }catch(e){log(\"setup failed: \"+e)}\n};\n/* PrepareData: open on the page of the last character and never hand the stock code a seed that isn't listed */\nP.__bbExPrepare=function(all,seed){\n  var list=all;\n  try{\n    if(this.__bbExAvailable(all)){\n      this.__bbEx=!!(seed&&isEx(seed.server.id));\n      list=all.filter(h=>isEx(h.server.id)===this.__bbEx);\n    }else this.__bbEx=!1;\n    if(seed&&!list.some(h=>h.server.id==seed.server.id))seed=null;\n    for(var c of this.listHeroRef||[])c.canvasGroup&&(c.canvasGroup.blocksRaycasts=!0);\n    this.__bbExHint();\n  }catch(e){log(\"prepare failed: \"+e);list=all}\n  return[list,seed];\n};\nP.__bbExHint=function(){\n  var ax=this.__bbExAx;if(!ax)return;\n  try{\n    var on=this.__bbExAvailable();\n    ax.gameObject.SetActive(on);   /* OnDisable takes it out of the InputGroup and the prompt bar */\n    ax.InputTag=this.__bbEx?\"BBEX_HeroSelect_Standard\":\"BBEX_HeroSelect_EX\";\n    this.R.inputGroup.SetActionDirty();\n  }catch(e){log(\"hint failed: \"+e)}\n};\n/* digital axis: fires on change with -1/0/+1; act on the press only */\nP.__bbExAxis=function(v){\n  if(v<=-0.5)this.__bbExSwitch(!this.__bbEx);\n  else if(v>=0.5&&this.__bbEx)this.__bbExSwitch(!1);\n};\nP.__bbExSwitch=async function(toEx){\n  if(!!this.__bbEx===toEx||this.__bbExBusy||!this.__bbExAvailable())return;\n  if(0<this.nav.movRemainTime||this.retAnimLock||this.actorLoaded||this.playingOpenAnim||this.playingEndAnim||this.isPlayingUnlockAnim||this.m_isInUnlockProcess)return;\n  var list=ActorUtil_1.default.GetListSeedHero().filter(h=>isEx(h.server.id)===toEx);\n  if(!list.length)return;\n  this.__bbExBusy=!0;this.retAnimLock=!0;this.ResetNavData();   /* retAnimLock also blocks confirm and card clicks */\n  try{\n    var cur=this.listHero[HeroSelectRefHero.selectHeroIndex];\n    this.__bbExLast[!!this.__bbEx]=cur&&cur.server.id;\n    var lh=this.R.ListHero,y0=this.__bbExY0,H=1080;\n    try{var rt=this.CsObj.transform;rt&&rt.rect&&(H=Math.max(720,rt.rect.height))}catch(x){}\n    var d=toEx?1:-1;\n    AudioUtil_1.default.PlaySoundUI(\"sfx_ui_51\");\n    lh.DOLocalMove(new csharp_1.UnityEngine.Vector3(y0.x,y0.y+d*H,y0.z),0.15);   /* Down: this roster leaves upward */\n    await this.Delay(150);\n    this.__bbEx=toEx;this.listHero=list;\n    var keep=this.__bbExLast[toEx],i=list.findIndex(h=>h.server.id==keep);\n    if(i<0)i=Math.max(0,list.findIndex(h=>!h.fake));\n    HeroSelectRefHero.selectHeroIndex=i;\n    DataBinding_1.DB.TeamData.Value=new TeamData_1.TeamData;\n    var td=DataBinding_1.DB.TeamData.Value;td.seedList=list;td.selectedSeedIndex=i;td.seed=list[i];\n    for(var c of this.listHeroRef)c.canvasGroup&&(c.canvasGroup.blocksRaycasts=!0);\n    this.RefreshListUI(!1);            /* stock layout + OnBtnChange */\n    this.__bbExCells();\n    lh.localPosition=new csharp_1.UnityEngine.Vector3(y0.x,y0.y-d*H,y0.z);\n    lh.DOLocalMove(y0,0.2);            /* the other roster comes in from below */\n    this.__bbExHint();\n    await this.Delay(200);\n    lh.localPosition=y0;\n    this.PlayIntroSoundUi(list[i]);\n    log(\"page \"+(toEx?\"EX\":\"standard\")+\", \"+list.length+\" characters\");\n  }catch(e){log(\"switch failed: \"+e);try{this.R.ListHero.localPosition=this.__bbExY0}catch(x){}}\n  this.retAnimLock=!1;this.__bbExBusy=!1;\n};\n/* ---- the Void Gate (revision 2): the EX page's own animated screen (exkit bundle ui/prefab/ex/exselect) ----\n   Mounted once behind the stock card list. It plays while the EX page shows (not while the screen closes or the cards\n   have gone to Evotype select). Its slanted shard cards show the EX roster in place of the stock cards, which stay in\n   charge of selection, unlock and confirm but are hidden. The accent colour follows the selected character. */\nvar GATE=\"UI/Prefab/EX/EXSelect\",SLOTS=5,SPACING=520,ROWBOTTOM=-410,ACC_DEF=[0.52,0.36,0.86];\n/* the same numbers as EXSelectBuild: every card's bottom edge at ROWBOTTOM, clear of the stock stage floor the game\n   draws over the bottom 12.5 % of the screen; the badge letters' place in their texture (exmark_metrics.json) */\nvar BADGE_W=144,BADGE_LL=0.1745,BADGE_LW=0.8177-0.1745;\nfunction rowY(n){return ROWBOTTOM/rowScale(n)+450}\nfunction accent(id){var m=globalThis.BB_EX_ACCENT||{};return m[id]||({190101:[1,0.18,0.43],191101:[0.24,1,0.69]})[id]||ACC_DEF}\nfunction rowScale(n){return n<=2?1:n==3?0.96:n==4?0.86:0.72}\nfunction tint(g,rgb,w){var c=g.color;g.color=new csharp_1.UnityEngine.Color(rgb[0]*(1-w)+w,rgb[1]*(1-w)+w,rgb[2]*(1-w)+w,c.a)}\nP.__bbExGateMount=function(){\n  if(this.__bbExGate||this.__bbExGateBad)return this.__bbExGate;\n  var go=null;\n  try{go=csharp_1.NOAH.Asset.AssetManager.Instance.InstantiatePrefab(GATE)}catch(e){log(\"gate: InstantiatePrefab failed: \"+e)}\n  if(!go){try{var pf=this.CsObj.LoadAssetByType(puerts.$typeof(csharp_1.UnityEngine.GameObject),GATE);pf&&(go=csharp_1.UnityEngine.Object.Instantiate(pf))}catch(e){log(\"gate: LoadAssetByType failed: \"+e)}}\n  if(!go){this.__bbExGateBad=!0;log(\"gate: prefab unavailable, the EX page runs without it\");return null}\n  try{\n    go=go.gameObject||go;\n    var root=this.CsObj.transform,top=this.R.ListHero;\n    while(top.parent&&!top.parent.Equals(root))top=top.parent;          /* the root child that holds the card list */\n    var t=go.transform;t.SetParent(root,!1);t.SetSiblingIndex(top.GetSiblingIndex());\n    t.anchorMin=csharp_1.UnityEngine.Vector2.zero;t.anchorMax=csharp_1.UnityEngine.Vector2.one;\n    t.offsetMin=csharp_1.UnityEngine.Vector2.zero;t.offsetMax=csharp_1.UnityEngine.Vector2.zero;t.localScale=csharp_1.UnityEngine.Vector3.one;\n    this.__bbExGate=go;this.__bbExAnim=Util_1.U.GetComponent(go,csharp_1.UnityEngine.Animator);\n    var cards=t.Find(\"Stage/Cards\");this.__bbExCardsT=cards;this.__bbExSepsT=t.Find(\"Stage/Seps\");this.__bbExBound={};\n    /* the stage's accent parts (the cards take their own character's accent in __bbExFill) */\n    var gs=go.GetComponentsInChildren(puerts.$typeof(csharp_1.UnityEngine.UI.Graphic),!0);this.__bbExAcc=[];\n    for(var k=0;k<gs.Length;k++){var g=gs.get_Item(k);g.name.indexOf(\"Acc\")==0&&!g.transform.IsChildOf(cards)&&this.__bbExAcc.push(g)}\n    this.__bbExSealT=t.Find(\"Stage/Seal\");\n    go.SetActive(!1);this.__bbExGateOn=!1;log(\"gate mounted: \"+this.__bbExAcc.length+\" accent parts\");\n  }catch(e){log(\"gate: mount failed: \"+e);this.__bbExGateBad=!0;this.__bbExGate=null}\n  return this.__bbExGate;\n};\n/* the gate covers the whole screen. The game's root canvas is a fixed 2560x1440 box fitted inside the screen (on the\n   lead's 2580x1080 screen it reported 2560x1440), and the stock screen's art spills past it; so the gate takes the\n   canvas box widened (or heightened) to the screen's shape: 3440x1440 at 21.5:9. Tiled layers widen their UVs with it\n   so the hex grid and smoke keep their shape */\nP.__bbExGateFit=function(){\n  var g=this.__bbExGate,t=g.transform,cv=null,V2=csharp_1.UnityEngine.Vector2;\n  try{cv=g.GetComponentInParent(puerts.$typeof(csharp_1.UnityEngine.Canvas))}catch(e){}\n  if(!cv){log(\"gate: no canvas above the screen, left as stretched\");return}\n  var crt=cv.rootCanvas.transform,k=crt.lossyScale.x/Math.max(1e-6,t.parent.lossyScale.x),cw=crt.rect.width*k,ch=crt.rect.height*k;\n  var sw=1,sh=1;try{sw=csharp_1.UnityEngine.Screen.width;sh=csharp_1.UnityEngine.Screen.height}catch(e){}\n  var sa=sw/Math.max(1,sh),w=Math.max(cw,ch*sa),h=Math.max(ch,cw/sa);\n  t.anchorMin=new V2(0.5,0.5);t.anchorMax=new V2(0.5,0.5);t.sizeDelta=new V2(w,h);t.position=crt.position;\n  var ar=(w/Math.max(1,h))/(2560/1440);\n  if(!this.__bbExUV){this.__bbExUV=[];for(var nm of [\"HexGrid\",\"SmokeA\",\"SmokeB\",\"AccSmoke\"]){try{var ri=Util_1.U.GetComponent(t.Find(nm).gameObject,csharp_1.UnityEngine.UI.RawImage);ri&&this.__bbExUV.push([ri,ri.uvRect.width])}catch(e){}}}\n  for(var q of this.__bbExUV){var r=q[0].uvRect;q[0].uvRect=new csharp_1.UnityEngine.Rect(r.x,r.y,q[1]*ar,r.height)}\n  var key=Math.round(w)+\"x\"+Math.round(h);this.__bbExFitKey!==key&&(this.__bbExFitKey=key,log(\"gate fitted to the screen: \"+key+\" (canvas \"+Math.round(cw)+\"x\"+Math.round(ch)+\", screen \"+sw+\"x\"+sh+\", aspect \"+ar.toFixed(3)+\" of 16:9)\"));\n};\n/* the name clone keeps the stock text's look, minus the stock card's mask: TMP under a Mask renders with a stencil copy\n   of its material, and a clone moved out of that mask stays invisible (0.5.0 in game: the names were missing) */\nfunction nameMaterial(comp,first){\n  try{\n    var m=comp.fontSharedMaterial;if(m===void 0)return;\n    var b=null;try{b=csharp_1.TMPro.TMP_MaterialManager.GetBaseMaterial(m)}catch(e){}\n    if(!b&&comp.font)b=comp.font.material;\n    var sc=m&&m.HasProperty(\"_StencilComp\")?m.GetFloat(\"_StencilComp\"):-1;\n    b&&m&&!b.Equals(m)&&(comp.fontSharedMaterial=b);\n    first&&log(\"name text: \"+comp.GetType().FullName+\", material \"+(m?m.name:\"-\")+\" (stencil comp \"+sc+\") -> \"+(b?b.name:\"-\")+\", size \"+comp.fontSize);\n  }catch(e){log(\"gate: name material: \"+e)}\n}\n/* the EX roster into the shard cards: place, portrait, name (a clone of the stock name text: the game's font), accent */\nP.__bbExFill=function(){\n  var n=Math.min(this.listHero.length,SLOTS),s=rowScale(n),ry=rowY(n),V2=csharp_1.UnityEngine.Vector2,src=null;\n  this.__bbExCardsT.localScale=new csharp_1.UnityEngine.Vector3(s,s,1);this.__bbExSepsT.localScale=new csharp_1.UnityEngine.Vector3(s,s,1);\n  this.__bbExSealT&&(this.__bbExSealT.anchoredPosition=new V2(0,ry*s));\n  try{src=this.listHeroRef[0].R.TextName}catch(e){}\n  for(var i=0;i<SLOTS;i++){\n    var c=this.__bbExCardsT.Find(\"Card\"+i),on=i<n;c.gameObject.SetActive(on);if(!on)continue;\n    var id=this.listHero[i].server.id;c.anchoredPosition=new V2((i-(n-1)/2)*SPACING,ry);\n    try{var p=c.Find(\"Content/Mask/Portrait\");Util_1.U.GetComponent(p.gameObject,csharp_1.UnityEngine.UI.RawImage).texture=this.LoadTexture(\"UI/Texture/HeroPortraitFull/HeroPortraitFull_\"+id)}catch(e){log(\"gate: portrait \"+id+\": \"+e)}\n    try{\n      var nm=c.Find(\"Content/Plate/Name\");\n      if(nm&&src){\n        var tx=nm.childCount>0?nm.GetChild(0).gameObject:null;\n        var made=!tx;\n        if(!tx){tx=csharp_1.UnityEngine.Object.Instantiate(src.gameObject,nm);var r=tx.transform;r.anchorMin=V2.zero;r.anchorMax=V2.one;r.offsetMin=V2.zero;r.offsetMax=V2.zero;r.localScale=csharp_1.UnityEngine.Vector3.one;r.localRotation=csharp_1.UnityEngine.Quaternion.identity;r.pivot=new V2(0.5,0.5);tx.SetActive(!0)}   /* local 0 = the plate's name centre */\n        var comp=tx.GetComponent(src.GetType());\n        try{var cgc=tx.GetComponent(puerts.$typeof(csharp_1.UnityEngine.CanvasGroup));cgc&&(cgc.alpha=1)}catch(e){}\n        comp&&made&&nameMaterial(comp,i===0);\n        if(comp&&made){\n          /* the stock name is left-aligned in its box (in game: the badge sat a box-width's slack away); keep its vertical\n             alignment, centre it horizontally (TextAlignmentOptions: low byte horizontal, 0x2 = centre) */\n          try{var al=Number(comp.alignment);comp.alignment=(al&0xFF00)|0x2}catch(e){log(\"gate: name alignment: \"+e)}\n          try{comp.enableWordWrapping=!1}catch(e){}\n        }\n        if(comp){\n          /* the base name, then the burning EX badge right after it; the pair is centred on the plate (as the preview) */\n          comp.text=String(Util_1.U.GetLocale(\"BaseActor_chs_\"+id)).replace(/\\s*EX\\s*$/,\"\");comp.color=new csharp_1.UnityEngine.Color(1,1,1,1);\n          var tw=0;try{tw=comp.preferredWidth||0}catch(e){}\n          /* where the text really is: its rendered bounds (any alignment, italic overhang included); else centred */\n          var x0=-tw/2,x1=tw/2;\n          try{comp.ForceMeshUpdate&&comp.ForceMeshUpdate();var tb=comp.textBounds;tb&&tb.max.x>tb.min.x&&(x0=tb.min.x,x1=tb.max.x)}catch(e){}\n          var badge=c.Find(\"Content/Plate/Badge\"),BW=BADGE_W,lw=BW*BADGE_LW,ll=BW*BADGE_LL,gap=8;\n          var nx=10-x0-(x1-x0+gap+lw)/2;           /* the name and the badge's letters, centred together on the plate */\n          i===0&&log(\"name \"+comp.text+\": width \"+Math.round(tw)+\", drawn \"+Math.round(x0)+\"..\"+Math.round(x1)+\", shown \"+tx.activeInHierarchy);\n          nm.anchoredPosition=new V2(nx,4);badge&&(badge.anchoredPosition=new V2(nx+x1+gap-ll+BW/2,6));\n        }\n      }\n    }catch(e){log(\"gate: name \"+id+\": \"+e)}\n    var a=accent(id),gs=c.GetComponentsInChildren(puerts.$typeof(csharp_1.UnityEngine.UI.Graphic),!0);\n    for(var k=0;k<gs.Length;k++){var g=gs.get_Item(k);g.name.indexOf(\"Acc\")==0&&tint(g,a,g.name==\"AccFrame\"?0.55:0)}\n    if(!this.__bbExBound[i]){\n      try{\n        var btn=Util_1.U.GetComponent(c.Find(\"Hit\").gameObject,csharp_1.UnityEngine.UI.Button);\n        ((k)=>btn.onClick.AddListener(()=>this.__bbExPick(k)))(i);this.__bbExBound[i]=!0;   /* k per card (a var would be shared) */\n      }catch(e){log(\"gate: click binding failed: \"+e);this.__bbExBound[i]=!0}\n    }\n  }\n  for(var j=0;j<SLOTS-1;j++){var sp=this.__bbExSepsT.Find(\"Sep\"+j),on2=j<n-1;sp.gameObject.SetActive(on2);on2&&(sp.anchoredPosition=new V2((j+0.5-(n-1)/2)*SPACING,ry))}\n};\n/* a click on a shard card selects it, through the stock layout (so confirm, unlock and Training Details follow) */\nP.__bbExPick=function(i){\n  if(!this.__bbExGateOn||i===HeroSelectRefHero.selectHeroIndex||i>=this.listHero.length)return;\n  if(0<this.nav.movRemainTime||this.retAnimLock||this.actorLoaded||this.playingOpenAnim||this.isPlayingUnlockAnim||this.m_isInUnlockProcess)return;\n  HeroSelectRefHero.selectHeroIndex=i;this.RefreshListUI(!1);AudioUtil_1.default.PlaySoundUI(\"sfx_ui_51\");this.PlayIntroSoundUi(this.listHero[i]);\n};\nP.__bbExGateTick=function(dt){\n  var want=!!this.__bbEx&&!this.playingEndAnim&&!this.actorLoaded;     /* __bbEx is only ever set when the page is available */\n  if(want&&!this.__bbExGateOn){\n    var g=this.__bbExGateMount();if(!g)return;\n    g.SetActive(!0);try{this.__bbExGateFit()}catch(e){log(\"gate: fit failed: \"+e)}try{this.__bbExFill()}catch(e){log(\"gate: fill failed: \"+e)}\n    this.__bbExAnim&&this.__bbExAnim.Play(\"Intro\",0,0);this.__bbExGateOn=!0;this.__bbExHideIn=-1;this.__bbExSel=-1;\n  }else if(!want&&this.__bbExGateOn){\n    this.__bbExGateOn=!1;this.__bbExAnim&&this.__bbExAnim.SetTrigger(\"Outro\");this.__bbExHideIn=0.4;\n  }\n  if(!this.__bbExGateOn&&this.__bbExHideIn>0&&(this.__bbExHideIn-=dt)<=0){this.__bbExGate&&this.__bbExGate.SetActive(!1);this.__bbExHideIn=-1}\n  if(!this.__bbExGateOn)return;\n  /* the stock cards stay hidden (their RefreshUI resets alpha on every change); their clicks go to the shard cards */\n  for(var c of this.listHeroRef)c.canvasGroup&&(c.canvasGroup.alpha!=0&&(c.canvasGroup.alpha=0),c.canvasGroup.blocksRaycasts=!1);\n  var si=HeroSelectRefHero.selectHeroIndex,an=this.__bbExAnim;\n  if(an)for(var k=0;k<SLOTS;k++)an.SetBool(\"Sel\"+k,k===si);\n  if(this.__bbExSel!==si){if(this.__bbExSel>=0&&an)an.SetTrigger(\"Pulse\");this.__bbExSel=si}\n  var h=this.listHero[si],tg=accent(h?h.server.id:0),cur=this.__bbExCur||tg.slice(),u=1-Math.exp(-8*Math.min(0.1,dt));\n  for(var q=0;q<3;q++)cur[q]+=(tg[q]-cur[q])*u;this.__bbExCur=cur;\n  for(var g2 of this.__bbExAcc)tint(g2,cur,0);\n};\n/* every frame, EX page only, when the gate is unavailable (fallback): a roster smaller than the 11 stock cards is\n   shown once, centred on the selection */\nP.__bbExCells=function(){\n  if(this.__bbExGateOn)return;\n  var n=this.listHero?this.listHero.length:0,R=HeroSelectRefHero;\n  if(!this.__bbEx||n<=0||n>=R.cellCount)return;\n  var sel=this.listHeroRef[R.selectTransIndex];if(!sel)return;\n  var lo=-Math.floor((n-1)/2),hi=n-1+lo;\n  var cx=sel.rectTransform.anchoredPosition.x;\n  var adj=(R.cellSelectWidth+R.cellWidth)/2+R.cellSpace,step=R.cellWidth+R.cellSpace;\n  for(var c of this.listHeroRef){\n    if(c===sel)continue;\n    var dx=c.rectTransform.anchoredPosition.x-cx,ad=Math.abs(dx);\n    var slots=ad<=adj?ad/adj:1+(ad-adj)/step;\n    var a=Math.max(0,Math.min(1,(dx<0?-lo:hi)+1-slots));\n    if(c.canvasGroup.alpha!=a){c.canvasGroup.alpha=a;c.canvasGroup.blocksRaycasts=a>0.5}\n  }\n};\n})();\n"
+   },
+   {
+    "file": "data/js/gameplay/battlebreedprepare/SceneUICoopHeroSelectBaseActorCard",
+    "replace": [
+     [
+      "this.R.ImgBg.sprite=this.Window.LoadSprite(\"UI/Atlas/SelectBaseActorSteam/SelectBaseActorSteam\",o.locked?\"BgHeroUnselect\":\"BgHeroSelect\"),",
+      "this.R.ImgBg.sprite=this.Window.LoadSprite(\"UI/Atlas/SelectBaseActorSteam/SelectBaseActorSteam\",o.locked?\"BgHeroUnselect\":\"BgHeroSelect\"),(this.R.ImgBg.color=(this.hero.server.id>=190000&&this.hero.server.id<200000)?new csharp_1.UnityEngine.Color(0.62,0.35,1,1):new csharp_1.UnityEngine.Color(1,1,1,1)),"
+     ],
+     [
+      "this.R.TextName.TextAuto(Util_1.U.GetLocale(\"BaseActor_chs_\"+this.hero.server.id)),",
+      "this.R.TextName.TextAuto(((this.hero.server.id>=190000&&this.hero.server.id<200000)?\"<color=#B77BFF>\":\"\")+Util_1.U.GetLocale(\"BaseActor_chs_\"+this.hero.server.id)+((this.hero.server.id>=190000&&this.hero.server.id<200000)?\"</color>\":\"\")),"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/core/AudioUtil",
+    "append": ";(function(){\n/* ex-common: a missing vo_<EX id>_<line> cue plays the base character's line (BB_ACTOR_VOICE, else BB_ACTOR_DONOR) */\ntry{\n  var A=exports.default,get=A.TsGetParamId;\n  A.TsGetParamId=function(n){\n    var r=get.call(A,n);\n    if(r<0&&typeof n==\"string\"&&n.length>9&&n.slice(0,3)==\"vo_\"){\n      var id=+n.slice(3,9);\n      if(id>=190000&&id<200000){\n        var b=(globalThis.BB_ACTOR_VOICE||{})[id]||(globalThis.BB_ACTOR_DONOR||{})[id];\n        if(b)r=get.call(A,\"vo_\"+b+n.slice(9));\n      }\n    }\n    return r;\n  };\n}catch(e){}\n})();\n"
+   }
+  ],
+  "locale": {
+   "enu": {
+    "BBEX_HeroSelect_EX": "EX Prototypes",
+    "BBEX_HeroSelect_Standard": "Prototypes"
+   },
+   "chs": {
+    "BBEX_HeroSelect_EX": "EX原型体",
+    "BBEX_HeroSelect_Standard": "原型体"
+   },
+   "cht": {
+    "BBEX_HeroSelect_EX": "EX原型體",
+    "BBEX_HeroSelect_Standard": "原型體"
+   },
+   "jpn": {
+    "BBEX_HeroSelect_EX": "EXプロトタイプ",
+    "BBEX_HeroSelect_Standard": "プロトタイプ"
+   },
+   "kor": {
+    "BBEX_HeroSelect_EX": "EX 프로토타입",
+    "BBEX_HeroSelect_Standard": "프로토타입"
+   },
+   "deu": {
+    "BBEX_HeroSelect_EX": "EX-Prototypen",
+    "BBEX_HeroSelect_Standard": "Prototypen"
+   },
+   "esp": {
+    "BBEX_HeroSelect_EX": "Prototipos EX",
+    "BBEX_HeroSelect_Standard": "Prototipos"
+   },
+   "fac": {
+    "BBEX_HeroSelect_EX": "Prototypes EX",
+    "BBEX_HeroSelect_Standard": "Prototypes"
+   },
+   "ptb": {
+    "BBEX_HeroSelect_EX": "Protótipos EX",
+    "BBEX_HeroSelect_Standard": "Protótipos"
+   },
+   "rus": {
+    "BBEX_HeroSelect_EX": "EX-прототипы",
+    "BBEX_HeroSelect_Standard": "Прототипы"
+   }
+  },
+  "importers": [
+   {
+    "script": "ui/import_ui.py"
+   }
+  ]
+ }
+}

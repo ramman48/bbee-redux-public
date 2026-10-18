@@ -538,7 +538,11 @@ def build_rig(src, clips, out_dir, role, skin="01", log=print):
 
 
 def _deps(logical):
-    names, entries, _ = __import__("bbchar").read_manifest()
+    bbchar = __import__("bbchar")
+    if hasattr(bbchar, "manifest_lookup"):                # made once per build; read_manifest() copies it per call
+        names, ni, deps_of = bbchar.manifest_lookup()
+        return [names[int(d, 16)] for d in deps_of[ni[logical]]]
+    names, entries, _ = bbchar.read_manifest()
     ni = {n: i for i, n in enumerate(names)}
     return [names[int(d, 16)] for d in next(d for i, d in entries if int(i, 16) == ni[logical])]
 

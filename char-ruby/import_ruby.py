@@ -19,6 +19,7 @@ TOOLS = next(p for p in (os.path.join(HERE, "own"), ROOT) if os.path.isdir(os.pa
 sys.path.insert(0, os.path.join(TOOLS, "tools", "bbtag"))
 sys.path.insert(0, TOOLS)
 sys.path.insert(0, HERE)
+if ROOT not in sys.path: sys.path.append(ROOT)   # the loader's own modules (bbmod), after her copies: in a pack TOOLS is own/
 
 
 def _development_checkout():
@@ -78,9 +79,34 @@ def main():
     a = ap.parse_args()
     require_ownership(a.out)   # first: nothing below runs for a player who doesn't own Cross Tag Battle and its DLC
 
-    import bbtag_clips, bbtag_rig, bbtag_read, ruby_clips
+    import bbtag_read
     if not os.path.isdir(os.path.join(bbtag_read.INSTALL, "asset")):
         sys.exit("Cross Effect: BlazBlue Cross Tag Battle not found at %s (set BBTAG_DIR)." % bbtag_read.INSTALL)
+    # The work below is the same at every install while nothing it reads changes (about 100 s, 2026-10-11), so the
+    # loader's kept work (tools/kept.py) puts the last result back. The ownership check above still runs every time.
+    # reads: this folder, her tools, the loader's code, the Cross Tag Battle files, the workspace's own settings.
+    try:
+        sys.path.insert(0, os.path.join(ROOT, "tools")); import kept
+    except ImportError:
+        kept = None                                   # an older loader: made every time, as before
+    if kept is None:
+        adds = make(a)
+    else:
+        import bbmod
+        reads = [HERE, os.path.join(TOOLS, "tools", "bbtag"), os.path.join(TOOLS, "tools", "bbvfx.py"), os.path.join(TOOLS, "tools", "cri_acb.py"),
+                 os.path.join(ROOT, "bbmod.py"), os.path.join(ROOT, "bbchar.py"), os.path.join(ROOT, "make_patch.py"),
+                 os.path.join(bbtag_read.INSTALL, "asset"), os.path.join(bbtag_read.INSTALL, "data"),
+                 os.path.join(ROOT, "local_only", "cross_effect_dev.json")]
+        says = [a.what, bbmod.game_build(), bool(bbtag_read.BUNDLED), os.environ.get("RRB_PREVIEW") or ""]
+        # (her sounds' step writes gen/audio_map.json into this folder at every run: left out of the comparison)
+        adds = kept.work("char-ruby import_ruby " + a.what, a.out, lambda: make(a), reads=reads, says=says, skip=["gen/audio_map.json"])
+    json.dump(adds, open(a.adds, "w"), indent=1)
+    print("Ruby art: %d bundles" % len(adds["names"]))
+
+
+def make(a):
+    """everything the importer builds, written into a.out; -> the manifest additions"""
+    import bbtag_clips, bbtag_rig, bbtag_read, ruby_clips
     src = bbtag_rig.Source("rrb")
     src.scale_mul = ruby_clips.EFFECT_SCALE
     scr = bbtag_read.fpac_files(bbtag_read.read("data/char/char_rrb_scr.pac"))
@@ -168,8 +194,7 @@ def main():
         import ruby_audio
         r = ruby_audio.build(a.out)
         for k in adds: adds[k] += r[k]
-    json.dump(adds, open(a.adds, "w"), indent=1)
-    print("Ruby art: %d bundles" % len(adds["names"]))
+    return adds
 
 
 if __name__ == "__main__":

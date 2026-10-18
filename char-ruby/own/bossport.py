@@ -331,6 +331,14 @@ class Port:
             elif isinstance(o, list):
                 for v in o: walk(v)
         walk(acts)
+        # an entry can hold entries of its own (a JoystickVibrationParallel lists its two motors): take those too, or
+        # the game logs "missing entry for Refid" when the tree loads
+        pool = {r["rid"]: r for r in self.refs.items}
+        for src in (self.R, self.B): pool.update({r["rid"]: r for r in src["references"]["RefIds"] if r["type"]["class"]})
+        todo = list(used)
+        while todo:
+            r = pool.get(todo.pop()); before = set(used)
+            if r: walk(r.get("data")); todo += list(used - before)
         refs = [r for r in self.B["references"]["RefIds"] if r["rid"] in used and r["type"]["class"]] + \
                [r for r in self.R["references"]["RefIds"] if r["rid"] in used and r["type"]["class"]] + \
                [r for r in self.refs.items if r["rid"] in used]

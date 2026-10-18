@@ -1,0 +1,671 @@
+{
+ "images": [
+  {
+   "file": "herohead_191101.png",
+   "sprite": "ui/atlas/evocharacter/evocharacter#HeroHead_101101",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "herohead_191101_off.png",
+   "sprite": "ui/atlas/evocharacter/evocharacter#HeroHead_101101_Off"
+  },
+  {
+   "file": "iconherohead_191101.png",
+   "sprite": "ui/atlas/iconherohead/iconherohead#IconHeroHead_101101",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "herofinalbattle_191101.png",
+   "sprite": "ui/atlas/finalbattle/finalbattle#HeroPortraitFull_101101",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "heropvpfinish_191101.png",
+   "sprite": "ui/atlas/pvpfinish/pvpfinish#PvPFinish_HeroPortraitFull_101101",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "heropda_191101.png",
+   "sprite": "ui/atlas/pdaplayinformationportrait/pdaplayinformationportrait#PDA_HeroPortraitFull_101101",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "iconskillbase_191101.png",
+   "sprite": "ui/atlas/iconskill/iconskill#IconSkill_101101",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "herofesactor_191101.png",
+   "sprite": "ui/atlas/resource/resource#FesActor_1011014_S",
+   "recolor": {
+    "bands": [
+     {
+      "hue": 356,
+      "width": 16,
+      "smin": 0.45,
+      "vref": 0.8,
+      "stops": [
+       [
+        0,
+        "#021A12"
+       ],
+       [
+        0.4,
+        "#0B5A40"
+       ],
+       [
+        0.8,
+        "#1FA67A"
+       ],
+       [
+        1.1,
+        "#6FE0B8"
+       ]
+      ]
+     },
+     {
+      "smax": 0.16,
+      "vmin": 0.55,
+      "vref": 1.0,
+      "stops": [
+       [
+        0.55,
+        "#9E9A8C"
+       ],
+       [
+        0.8,
+        "#D8D2BE"
+       ],
+       [
+        1.0,
+        "#F2EEDF"
+       ]
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "file": "Potential_1190.png",
+   "texture": "ui/texture/iconpotential/potential_1190",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1192.png",
+   "texture": "ui/texture/iconpotential/potential_1192",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1249.png",
+   "texture": "ui/texture/iconpotential/potential_1249",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1263.png",
+   "texture": "ui/texture/iconpotential/potential_1263",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1284.png",
+   "texture": "ui/texture/iconpotential/potential_1284",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_5707.png",
+   "texture": "ui/texture/iconpotential/potential_5707",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_5918.png",
+   "texture": "ui/texture/iconpotential/potential_5918",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "IconSusanoo.png",
+   "texture": "ui/texture/iconboss/iconboss_5033",
+   "opaqueSquare": 256
+  }
+ ],
+ "clones": [
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/herohead_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "HeroHead_191101"
+    ]
+   ],
+   "image": "herohead_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/herohead_191101_off",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "HeroHead_191101_Off"
+    ]
+   ],
+   "image": "herohead_191101_off.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/iconherohead_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "IconHeroHead_191101"
+    ]
+   ],
+   "image": "iconherohead_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/herofinalbattle_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "HeroFinalBattle_191101"
+    ]
+   ],
+   "image": "herofinalbattle_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/heropvpfinish_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "HeroPvPFinish_191101"
+    ]
+   ],
+   "image": "heropvpfinish_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/heropda_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "HeroPDA_191101"
+    ]
+   ],
+   "image": "heropda_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/iconskillbase_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "IconSkillBase_191101"
+    ]
+   ],
+   "image": "iconskillbase_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/herofesactor_191101",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "HeroFesActor_191101"
+    ]
+   ],
+   "image": "herofesactor_191101.png"
+  },
+  {
+   "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+   "to": "ui/texture/heroheadicon/exh_meter_crest",
+   "rename": [
+    [
+     "HeroPortraitCoatArms",
+     "HeroHeadIcon"
+    ],
+    [
+     "HeroPortraitFull_103701",
+     "EXH_Meter_Crest"
+    ]
+   ],
+   "image": "IconSusanoo.png"
+  },
+  {
+   "from": "ui/atlas/iconpotential103801/iconpotential103801",
+   "to": "ui/atlas/iconpotential191101/iconpotential191101",
+   "rename": [
+    [
+     "IconPotential103801",
+     "IconPotential191101"
+    ]
+   ],
+   "atlasSprites": [
+    [
+     "Potential_5000",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_5000"
+    ],
+    [
+     "Potential_6001",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6001"
+    ],
+    [
+     "Potential_6002",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6002"
+    ],
+    [
+     "Potential_6003",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6003"
+    ],
+    [
+     "Potential_6006",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6006"
+    ],
+    [
+     "Potential_6007",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6007"
+    ],
+    [
+     "Potential_6010",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6010"
+    ],
+    [
+     "Potential_6016",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6016"
+    ],
+    [
+     "Potential_6018",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6018"
+    ],
+    [
+     "Potential_6019",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6019"
+    ],
+    [
+     "Potential_6020",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6020"
+    ],
+    [
+     "Potential_6023",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6023"
+    ],
+    [
+     "Potential_6028",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6028"
+    ],
+    [
+     "IconSkill_1911011",
+     "sprite:ui/atlas/iconskill/iconskill#IconSkill_1011011"
+    ],
+    [
+     "IconSkill_1911012",
+     "sprite:ui/atlas/iconskill/iconskill#IconSkill_1011012"
+    ],
+    [
+     "Potential_1190",
+     "Potential_1190.png"
+    ],
+    [
+     "Potential_1192",
+     "Potential_1192.png"
+    ],
+    [
+     "Potential_1249",
+     "Potential_1249.png"
+    ],
+    [
+     "Potential_1263",
+     "Potential_1263.png"
+    ],
+    [
+     "Potential_1284",
+     "Potential_1284.png"
+    ],
+    [
+     "Potential_5707",
+     "Potential_5707.png"
+    ],
+    [
+     "Potential_5918",
+     "Potential_5918.png"
+    ],
+    [
+     "Talent_5982",
+     "sprite:ui/atlas/icontalent/icontalent#Talent_5034"
+    ],
+    [
+     "IconSusanoo_191101",
+     "IconSusanoo.png"
+    ]
+   ]
+  }
+ ]
+}
