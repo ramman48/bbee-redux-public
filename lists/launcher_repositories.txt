@@ -1,2 +1,2 @@
 # the public channel, read by every public Terminal's updater (repo_export\sync_public.py)
-# not on this channel yet
+Launcher: https://github.com/ramman48/bbee-redux-public/tree/main/Launcher

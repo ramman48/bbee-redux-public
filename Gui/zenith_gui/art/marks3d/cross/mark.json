@@ -1,0 +1,129 @@
+{
+ "source": "cross_effect_icon.json",
+ "scale": 0.32551174995794263,
+ "centre": [
+  -3.9649505615234375,
+  0.08216094970703125
+ ],
+ "depth": 9.683974561248792,
+ "materials": {
+  "toon_orange": {
+   "toon": [
+    [
+     0.0,
+     "#d94a00"
+    ],
+    [
+     0.3,
+     "#ff8a1c"
+    ],
+    [
+     0.7,
+     "#ffc35a"
+    ],
+    [
+     1.0,
+     "#ffc35a"
+    ]
+   ],
+   "edge": "#fff1d6"
+  },
+  "toon_blue": {
+   "toon": [
+    [
+     0.0,
+     "#0a4fc4"
+    ],
+    [
+     0.3,
+     "#2e9bff"
+    ],
+    [
+     0.7,
+     "#9fd8ff"
+    ],
+    [
+     1.0,
+     "#9fd8ff"
+    ]
+   ],
+   "edge": "#e6f6ff"
+  },
+  "toon_yellow": {
+   "toon": [
+    [
+     0.0,
+     "#ffd000"
+    ],
+    [
+     1.0,
+     "#ffd000"
+    ]
+   ],
+   "edge": "#fff6b0"
+  },
+  "toon_white": {
+   "toon": [
+    [
+     0.0,
+     "#fff8e8"
+    ],
+    [
+     1.0,
+     "#fff8e8"
+    ]
+   ],
+   "edge": "#ffffff"
+  },
+  "toon_ink": {
+   "toon": [
+    [
+     0.0,
+     "#14081f"
+    ],
+    [
+     1.0,
+     "#14081f"
+    ]
+   ],
+   "edge": "#2a1640"
+  }
+ },
+ "parts": [
+  {
+   "material": "toon_yellow",
+   "file": "toon_yellow.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 188
+  },
+  {
+   "material": "toon_white",
+   "file": "toon_white.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 188
+  },
+  {
+   "material": "toon_ink",
+   "file": "toon_ink.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 176
+  },
+  {
+   "material": "toon_blue",
+   "file": "toon_blue.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 28
+  },
+  {
+   "material": "toon_orange",
+   "file": "toon_orange.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 28
+  }
+ ]
+}

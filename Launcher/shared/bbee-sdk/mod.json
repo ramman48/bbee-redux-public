@@ -1,0 +1,79 @@
+{
+ "id": "bbee-sdk",
+ "name": "BBEE SDK runtime hooks",
+ "version": "0.3.3",
+ "author": "BBEE modding project",
+ "description": "Runtime hooks other mods rely on: sprite aliasing (mods declare \"spriteAliases\" so a new tactic/potential id can reuse an existing icon), and the generated ModRegistry (require(\"Example\").ModRegistry: mods, spriteAlias, gameBuild). v0.2: textureAliases (LoadTexture + texture metrics lookup). 0.3.2: HUD sprite registry (globalThis.BB_HUD_SPRITES = {spriteName: atlasName}); the battle HUD's talent list preloads them from the named atlas before each Refresh, so a mod character's talent icon shows (the widget asks only the stock IconTalent atlas). 0.3.3: a late per-frame HUD hook: globalThis.BB_HUD_TICKS = {id: function(ui, dt)} runs from BattleUI.LateUpdateWindow (after every C# Update, so C# redraws never overwrite a mod's HUD change on screen); until LateUpdateWindow has been seen, BattleUI_Standalone.UpdateWindow runs them as a fallback. Each tick's first error is logged once.",
+ "gameBuilds": [
+  "24904166",
+  "25627491"
+ ],
+ "dependencies": [],
+ "content": {
+  "tables": {},
+  "locale": {},
+  "js": [
+   {
+    "file": "data/js/core/DelegatedBehaviourWrapper",
+    "replace": [
+     [
+      "LoadSprite(e,t){return Util_1.U.IsNullOrEmpty(t)&&e&&([e,t]=e.split(\".\")),this.CsObj.LoadAssetByType($typeof(csharp_1.UnityEngine.Sprite),e,t)}",
+      "LoadSprite(e,t){Util_1.U.IsNullOrEmpty(t)&&e&&([e,t]=e.split(\".\"));try{var A=require(\"Example\").ModRegistry.spriteAlias,a=A&&A[t];if(a&&a.indexOf(\"tex:\")===0){var p=a.slice(4),C=this.__bbSprCache=this.__bbSprCache||{};if(!C[p]||!C[p].texture){var tx=this.CsObj.LoadAssetByType($typeof(csharp_1.UnityEngine.Texture2D),p);if(tx)C[p]=csharp_1.UnityEngine.Sprite.Create(tx,new csharp_1.UnityEngine.Rect(0,0,tx.width,tx.height),new csharp_1.UnityEngine.Vector2(0.5,0.5))}if(C[p])return C[p]}a&&(a.indexOf(\"|\")>=0?([e,t]=a.split(\"|\")):t=a)}catch(x){}return this.CsObj.LoadAssetByType($typeof(csharp_1.UnityEngine.Sprite),e,t)}"
+     ],
+     [
+      "LoadTexture(e){return this.CsObj.LoadAssetByType($typeof(csharp_1.UnityEngine.Texture2D),e)}",
+      "LoadTexture(e){try{var A=require(\"Example\").ModRegistry.textureAlias;A&&A[e]&&(e=A[e])}catch(x){}return this.CsObj.LoadAssetByType($typeof(csharp_1.UnityEngine.Texture2D),e)}"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/core/UIUtil",
+    "replace": [
+     [
+      "static GetTextureOriginalSize(e){var t;",
+      "static GetTextureOriginalSize(e){var t;try{var A=require(\"Example\").ModRegistry.textureAlias;A&&A[e]&&(e=A[e])}catch(x){}"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/battle/BattleUI_Standalone",
+    "replace": [
+     [
+      "a=this.R.TalentIconsList;a&&(a.SetPlayer(l.Battle.PlayerSelf),t)&&a.Refresh()",
+      "a=this.R.TalentIconsList;a&&(function(L){try{var H=globalThis.BB_HUD_SPRITES||{};for(var k in H)L.GetSprite(H[k],k)}catch(e){}})(a);a&&(a.SetPlayer(l.Battle.PlayerSelf),t)&&a.Refresh()"
+     ],
+     [
+      "class BattleUI_Standalone extends BattleUI_1.default{",
+      "class BattleUI_Standalone extends BattleUI_1.default{UpdateWindow(t){super.UpdateWindow(t);globalThis.__bbLateSeen||(function(u,t){var H=globalThis.BB_HUD_TICKS;if(!H)return;for(var k in H){var f=H[k];if(typeof f==\"function\")try{f(u,t)}catch(e){f.__bbErr||(f.__bbErr=1,console.error(\"bbee-sdk BB_HUD_TICKS[\"+k+\"]: \"+(e&&e.stack||e)))}}})(this,t)}"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battle/BattleJsExternCall",
+    "replace": [
+     [
+      "(n=BattleJs_1.default.Instance.UIMain.R.TalentIconsList)&&n.Refresh()",
+      "(n=BattleJs_1.default.Instance.UIMain.R.TalentIconsList)&&((function(L){try{var H=globalThis.BB_HUD_SPRITES||{};for(var k in H)L.GetSprite(H[k],k)}catch(e){}})(n),n.Refresh())"
+     ],
+     [
+      "var n=BattleJs_1.default.Instance.UIMain.R.TalentIconsList;n&&n.Refresh()",
+      "var n=BattleJs_1.default.Instance.UIMain.R.TalentIconsList;n&&((function(L){try{var H=globalThis.BB_HUD_SPRITES||{};for(var k in H)L.GetSprite(H[k],k)}catch(e){}})(n),n.Refresh())"
+     ],
+     [
+      "var r=BattleJs_1.default.Instance.UIMain.R.TalentIconsList,s=(r&&r.Refresh(),",
+      "var r=BattleJs_1.default.Instance.UIMain.R.TalentIconsList,s=(r&&((function(L){try{var H=globalThis.BB_HUD_SPRITES||{};for(var k in H)L.GetSprite(H[k],k)}catch(e){}})(r),r.Refresh()),"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/battle/BattleUI",
+    "replace": [
+     [
+      "GMHideFullUI(t){}",
+      "LateUpdateWindow(t){globalThis.__bbLateSeen=1;(function(u,t){var H=globalThis.BB_HUD_TICKS;if(!H)return;for(var k in H){var f=H[k];if(typeof f==\"function\")try{f(u,t)}catch(e){f.__bbErr||(f.__bbErr=1,console.error(\"bbee-sdk BB_HUD_TICKS[\"+k+\"]: \"+(e&&e.stack||e)))}}})(this,t)}GMHideFullUI(t){}"
+     ]
+    ]
+   }
+  ]
+ }
+}

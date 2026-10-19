@@ -1,0 +1,4665 @@
+{
+ "lines": [
+  {
+   "en": "CONFIRM",
+   "in": [
+    "ConfirmPanel.qml"
+   ]
+  },
+  {
+   "en": "CANCEL",
+   "in": [
+    "ConfirmPanel.qml",
+    "Main.qml",
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": " MOD",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": " MODS",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "YOU ARE SET",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "CHANGES",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "WAITING",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": " READY",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "TO INSTALL",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "NOTHING",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "SWITCHED ON",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "ONE SETUP",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "STEP FIRST",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "THIS COPY",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "IS BEHIND",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "FIRST,",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "YOUR GAME",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "1 mod is in this copy. Press Play.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "%1 mods are in this copy. Press Play.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "1 mod is in your game. Press Play, or start it from Steam.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "%1 mods are in your game. Press Play, or start it from Steam.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "New characters are at the end of the Prototype list.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "The game was updated after this copy was made. Press Update copy: it takes the files that changed and puts its mods back in. Its saves stay.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "A newer version of a mod is in your Library. Press Apply changes and your game is rebuilt with it. Your save is backed up first.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "Newer versions of %1 mods are in your Library. Press Apply changes and your game is rebuilt with them. Your save is backed up first.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "You switched something. Press Apply changes and your game is rebuilt to match. Your save is backed up first.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "Press Install and they are built into your game. Your save is backed up first.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "Press Play to start the game as it is, or open the Library and switch a mod on.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "The game's data has to be read for this build of the game. Press Set up and install; it takes a few minutes.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "Press Set up and install. The Terminal finds Entropy Effect on this PC and reads its data once, which takes a few minutes.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "INSTALLED",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "NOT APPLIED YET",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "READY",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "TO DO",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "GAME BUILD ",
+   "in": [
+    "HomePage.qml",
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "GAME NOT FOUND YET",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "    /    LAST INSTALL ",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "GET ",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": " UPDATE",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": " UPDATES",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "JUST UPDATED",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "GOT IT",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "NEW  ",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "AND ",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": " MORE",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "NEWS",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "FEATURED   ",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "IN GAME",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "ON",
+   "in": [
+    "HomePage.qml",
+    "ModRow.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "OFF",
+   "in": [
+    "HomePage.qml",
+    "ModRow.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "IN YOUR LIBRARY",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "STATUS",
+   "in": [
+    "HomePage.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "No character is in your Library yet.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "No news in this version of the Terminal.",
+   "in": [
+    "HomePage.qml"
+   ]
+  },
+  {
+   "en": "   V",
+   "in": [
+    "HomePage.qml",
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "CHARACTERS",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "CORE FILES",
+   "in": [
+    "LibraryPage.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MODS",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "CHARACTER",
+   "in": [
+    "LibraryPage.qml",
+    "OptionsPage.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "CORE FILE",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "MOD",
+   "in": [
+    "LibraryPage.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "GOES IN WITH ANY MOD",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "UPDATES FROM ",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": " WHEN YOU APPLY",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "IN YOUR GAME",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "LEAVES WHEN YOU APPLY",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "GOES IN WHEN YOU INSTALL",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "NOT IN YOUR GAME",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "YOUR MODS",
+   "in": [
+    "LibraryPage.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": " ON",
+   "in": [
+    "LibraryPage.qml",
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": " OF ",
+   "in": [
+    "LibraryPage.qml",
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "ALL OFF",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "ALL ON",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "DELETED     UPDATES LEAVE THESE OUT",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "ADD BACK",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "+   DROP A MOD'S FOLDER OR ZIP HERE",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "VERSION",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "  NEW",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "UPDATES",
+   "in": [
+    "LibraryPage.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "HELD ON ",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "DEV CHANNEL",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "PUBLIC CHANNEL",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "NONE: ADDED BY HAND",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "GAME BUILD",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "CHECKED ON",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "  OK",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "  /  YOURS ",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "STATE",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "SETTINGS",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "CHANGED: GOES IN WHEN YOU APPLY",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": " CHOICE",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": " CHOICES",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "NEEDS",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "NEEDED BY",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "MISSING",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "WHAT CHANGED",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "BACK TO ",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "RESUME UPDATES",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "ADD A MOD",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "FROM A LINK",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "SWITCH OFF",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "SWITCH ON",
+   "in": [
+    "LibraryPage.qml"
+   ]
+  },
+  {
+   "en": "UNINSTALL",
+   "in": [
+    "LibraryPage.qml",
+    "Main.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "DELETE FILES",
+   "in": [
+    "LibraryPage.qml",
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "LAST INSTALL OR JOB",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "What the loader printed the last time this window ran it.",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "LAST GAME RUN",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "What the game wrote the last time it ran. It starts a new log every time.",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "LOG",
+   "in": [
+    "LogPage.qml",
+    "NavRail.qml"
+   ]
+  },
+  {
+   "en": "NOTHING YET",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": " PROBLEM",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": " PROBLEMS",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": " WARNING",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": " WARNINGS",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "NO PROBLEMS",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "ALL",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "PROBLEMS",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "COPY",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "OPEN THE FILE",
+   "in": [
+    "LogPage.qml"
+   ]
+  },
+  {
+   "en": "READ AGAIN",
+   "in": [
+    "LogPage.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The Zenith Terminal",
+   "in": [
+    "Main.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Still here beside the clock. It says when an update is ready.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "SWITCH OFF ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " is needed by ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": ". They stop working without it, so they are switched off with it.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "SWITCH THEM OFF",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": ": WHAT CHANGED",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "ROLL ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " BACK TO ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "The version you had before the last update goes back",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " and into your game (your save is backed up first)",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": ". It stays on ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " until you press RESUME UPDATES.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "ROLL BACK",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "UNINSTALL ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " is taken out of your game",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": ", and the character's Evotypes and records are taken out of your save",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": ". A full copy of your save is made first. The mod's files stay in the Library, so it can be installed again.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "DELETE ",
+   "in": [
+    "Main.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The mod's folder is moved to the Recycle Bin. It is not in your game, so nothing else changes.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "PRESS THE BUTTON AND THE GAME IS LOOKED FOR",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "MAKE A GAME WITHOUT MODS?",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "The Terminal makes a second copy of the game that never takes mods, and starts it. It has its own saves and begins as a new player, because a save with mod characters in it does not load in the game without them. It takes about 200 MB when the Terminal is on the game's disk. Your modded game and its saves stay as they are.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "MAKE IT",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "UNINSTALL EVERY MOD",
+   "in": [
+    "Main.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "THE ZENITH TERMINAL",
+   "in": [
+    "Main.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MOD LOADER FOR BLAZBLUE ENTROPY EFFECT   /   UNOFFICIAL",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "PREVIEW  /  TEST COPY",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "DEV EDITION  /  REDUX TEST BUILDS",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Add a mod",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Mods and packs (*.zip)",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Save my mod list",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Mod lists (*.zenith.json)",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Use a mod list",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Mod lists (*.zenith.json *.json)",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "The folder BlazblueEntropyEffect.exe is in",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "The folder that holds the game's Steam and Global folders",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "LET GO TO ADD IT",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "SEND THIS REPORT TO DISCORD?",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "The report zip goes to the Redux team's Discord channel: your mod versions, the game's and the mods' logs, and your notes. It holds no password and no save. Say in a few words what happened.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "SEND",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "What happened, in a few words",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "REPLACE THE ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " TERMINAL'S MODS?",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "The mods in your game were put there by The Zenith Terminal ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Dev",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " on ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " mod",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " mods",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "). Installing from this Terminal replaces them with what is switched on here. Your save is backed up first.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "REPLACE THEM",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "ADD ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " BACK?",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "You deleted ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": ". Version ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " is out now. Add it back? It is downloaded, switched on ",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "and put in your game. If you keep it deleted, the Terminal asks again when a newer version comes out.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "ADD IT BACK",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "KEEP IT DELETED",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "USE THIS LIST?",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "USE IT",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "ADD THIS MOD?",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "ADD IT",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " update ready",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " updates ready",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Open the Terminal",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Get updates now",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Wait with updates while I play",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Quit",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": " is taken out of your game, and the character's Evotypes and records are taken out of your save. A full copy of your save is made first. The mod's files stay in the Library, so it can be installed again.",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "INSTALLING",
+   "in": [
+    "Main.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Game folder link  ok -> D:\\SteamLibrary\\steamapps\\common\\BlazblueEntropyEffect",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Reading the game data (takes a few minutes, only needed once and after each game update)...",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "tables decoded: 188, failed: 1",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "Save backed up to: save_backups\\20261009_162554_before_install",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "game build 25627491; load order: ['bbee-sdk', 'bbee-actors', 'char-nine', 'char-ruby']",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "NEW bundle entry: ui/texture/iconpotential/potential_rubytalent.ab",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "installed 887 bundles into m_mod.m; merge.json updated (backup: merge.json.orig)",
+   "in": [
+    "Main.qml"
+   ]
+  },
+  {
+   "en": "   HELD",
+   "in": [
+    "ModRow.qml"
+   ]
+  },
+  {
+   "en": "NEW",
+   "in": [
+    "ModRow.qml"
+   ]
+  },
+  {
+   "en": "CORE",
+   "in": [
+    "ModRow.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "HOME",
+   "in": [
+    "NavRail.qml",
+    "OptionsPage.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "LIBRARY",
+   "in": [
+    "NavRail.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "REDUX",
+   "in": [
+    "NavRail.qml",
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "OPTIONS",
+   "in": [
+    "NavRail.qml",
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ROADMAP",
+   "in": [
+    "NavRail.qml",
+    "OptionsPage.qml",
+    "RoadmapPage.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "SUPPORT",
+   "in": [
+    "NavRail.qml",
+    "OptionsPage.qml",
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "DEV",
+   "in": [
+    "NavRail.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ALPHA",
+   "in": [
+    "NavRail.qml"
+   ]
+  },
+  {
+   "en": "Changed: it goes in when you apply.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A change takes effect with your next install.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "It goes in when you install ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "GENERAL",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MOD SETTINGS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "LISTS AND PRESETS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVES AND REPORTS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "GAME COPIES",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "HEALTH AND STATS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "TESTING",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "INTERFACE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "PICTURE AND SOUND",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ABOUT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "VERIFY IN STEAM",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CHECK NOW",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BRING YOUR SAVE INTO THE GAME WITHOUT MODS?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Close the game first. The saves of your Steam game are copied, and mod characters and what they earned are taken out of the copy. Saves the game without mods already has are replaced; they are kept in the Terminal's save_backups folder first. Your Steam game's own saves are not changed.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BRING MY SAVE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "DELETE THE GAME WITHOUT MODS?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The copy that PLAY WITHOUT MODS starts is removed from this PC. Its saves are kept, and it is made again the next time you ask for it. Your Steam game, its mods and its saves are not touched.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "DELETE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " and the mods installed in it are removed from this PC. Its saves are kept. Your Steam game, its mods and its saves are not touched.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "UNINSTALL EVERY MOD?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Every mod is taken out of your game, and the mod characters' Evotypes and records are taken out of your save so the normal game can load it. A full copy of your save is made first. Your mods stay in the Library, ready to install again.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "REPAIR YOUR SAVE?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Every mod character's data is taken out of your save: their Evotypes, their records, and a run in progress with one of them. Everything else stays as it is, and a full copy of your save is made first. Use this when the normal game will not load your save.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "REPAIR",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "UNDO THE LAST INSTALL?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Your game goes back to what it held before the install of ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "no mods",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ". Your save is backed up first. Mods you added since stay in the Library.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "UNDO",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ENTER YOUR PLAYTESTER KEY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The Redux team gives testers a key. With it the Terminal gets the test builds. Keep it to yourself: it is yours.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SIGN IN",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Paste the key here",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SIGN OUT?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The Terminal goes back to the public builds at its next check. The test builds you have stay until then.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SIGN OUT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVE AS A PRESET",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The mods you have switched on, and their choices, are kept under this name. USE switches back to them in one press.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A name, like Grim night",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "DELETE THE PRESET ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Only the preset goes. Your mods and what is switched on stay as they are.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "PUT THIS SAVE BACK?",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Your save goes back to the copy from ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ". The save you have now is copied first and shows in the timeline. Close the game first. ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "If that copy has a mod character in it, play it with that mod in your game.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "PUT IT BACK",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "START A RUN AT STAGE ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The game opens straight into ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ", stage ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ", with ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ". This replaces your saved run.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "START",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CHECK FOR UPDATES",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Get the newest Redux test builds now. The Terminal also checks each time it opens.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Get the newest versions of your mods and the Terminal now. It also checks each time it opens.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "UNDO LAST INSTALL",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Puts back what your game held before the install of ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "no mods.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MODS FOLDER",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Where your mods live. You can also drop a mod's folder or zip on the window.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "OPEN",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "STEAM LIBRARY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The Terminal is in your Steam library, so it opens from Steam, Big Picture and a Steam Deck.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Adds the Terminal to your Steam library as a non-Steam game, so it opens from Steam, Big Picture and a Steam Deck. Close Steam first.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ADD AGAIN",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ADD TO STEAM",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "PLAYTESTER KEY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "This is the Dev edition: it gets the Redux test builds with its own key.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Signed in: the Terminal gets the Redux test builds.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A key from the Redux team opens the test builds. Without one, the Terminal gets the public builds.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "DEV EDITION",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ENTER KEY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SECTOR ZENITH INTRO",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The short film before the title screen when a modded game starts. Esc or a click skips it. A change takes effect with your next install.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "GAME",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BlazBlue Entropy Effect",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ", build ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Not found yet. Press Set up and install and the Terminal looks for it.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "READ THE GAME'S DATA AGAIN",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Done once, and again after a game update. It takes a few minutes, and the game must be closed.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "FIND THE GAME BY HAND",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "For Linux with Proton or Bottles, when the Terminal does not find the game: choose the folder BlazblueEntropyEffect.exe is in.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CHOOSE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVE FOLDER",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Your saves are read from this folder.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The game's saves are in the usual place. With Proton or Bottles, choose the folder that holds the game's Steam and Global folders.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "USUAL",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Takes every mod out of the game and cleans your save so the normal game loads it. Your save is backed up first, and your mods stay in the Library.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVE MY LIST",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The mods you have switched on, with their versions and choices, as one small file to send to someone. It holds names only: no mod, no link, nothing that runs.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "USE A LIST",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Switches on the mods a list names and says which ones you still need. Nothing is downloaded. You can also drop a list on the window.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The mods you have switched on and their choices, kept here under a name, to switch back to in one press.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " mod: ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " mods: ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " and more.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "USE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BACK UP MY SAVE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A full copy of your save, kept in the Terminal's save_backups folder. The game must be closed.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BACK UP",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVE BACKUPS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " copy",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " copies",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " so far. The Terminal makes one before every install and uninstall.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "REPAIR MY SAVE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "For a save the normal game will not load because it still holds a mod character. A backup is made first.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "FEEDBACK REPORT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Zips your latest F9 reports and your mod versions into the feedback folder, to send with your notes. Nothing is uploaded.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MAKE REPORT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "LAST LOG",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "What the loader printed the last time it ran. Useful in a bug report.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SAVE TIMELINE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Every copy of your save, newest first. RESTORE puts one back; the save you have then is copied first.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " COPY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " COPIES",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A copy ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "RESTORE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "HEALTH CHECK",
+   "in": [
+    "OptionsPage.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Looks at the game's files, the space on your disks, what your mods need, each mod's files against what was downloaded, and your save.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CHECKING",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CHECK AGAIN",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "FIX",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "OK",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "PLAY TIME WITH MODS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " game",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " games",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " in the mods' logs on this PC, the last on ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "No games in the mods' logs on this PC yet.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " H",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BATTLES AND RUNS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Battles and runs the mods saw start.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Who the game starts with: ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "NEXT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "BACK",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "WHERE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "TEST ROOM: the flat room with the dev menu. Your saved run is kept.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ": a run that starts at the stage below.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "STAGE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Stage ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " of ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "With the game closed: it opens straight into this. Pick your save slot when the game asks.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": " Runs come with the next test room update; the room works now.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "START TEST",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "STEAM GAME",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The game as Steam installed it, with your normal saves.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "IN USE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "In use. Behind the game's update: update it before you install.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Its own mods and its own saves. Behind the game's update.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Its own mods and its own saves. Game build ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "UPDATE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MAKE A COPY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "This is the most copies for now. Delete one to make another.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A second game for a different set of mods, with its own saves. It starts as a new player and takes about 200 MB when the Terminal is on the game's disk.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Removes this copy and its mods. Its saves are kept.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "YOUR SAVE IN THE GAME WITHOUT MODS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Copies the saves of your Steam game into the game without mods and takes mod characters out of the copy. Your Steam game's saves are only read.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "GAME WITHOUT MODS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The copy that PLAY WITHOUT MODS starts. It never takes mods and has its own saves. Game build ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "MOTION",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Full: the backdrop and the pictures move. Calm: they hold still.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "FULL",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CALM",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "GRAPHICS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Full: glow, lightning, data rain and particles. Light: less for a slower computer to draw. Off: no effects, drawn without the graphics card, for a window that stays black or flickers; Off takes effect the next time the Terminal opens.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "LIGHT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SOUND",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The sounds the Terminal makes when you point at and press things.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "VOLUME",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "How loud those sounds are.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "OPEN ON",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The page the Terminal shows first.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Show the shared files the other mods run on in the Library. They go into the game by themselves.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "HIDE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "SHOW",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "When the Terminal opens with newer versions of your installed mods, put them in the game at once. Off: APPLY CHANGES waits for you.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "AT ONCE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "ASK ME",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "UPDATE CHECKS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "While the Terminal is open it asks for updates this often, and says so when one is ready.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "15 MIN",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "HOURLY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "WHILE YOU PLAY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "No update check or download while the game is open.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "WAIT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "CHECK",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "TRAY",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Closing the window keeps the Terminal beside the clock, where it says when an update is ready. Off: closing quits.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "KEEP",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "QUIT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "LANGUAGE",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "The Terminal's words: ",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "English",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": ". Translations are machine-drafted and are being checked by players who speak them.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "A mod loader for BlazBlue Entropy Effect. Unofficial: not made or endorsed by 91Act or Arc System Works.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "  DEV EDITION",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "  ALPHA",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "THE PEOPLE",
+   "in": [
+    "OptionsPage.qml",
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "Redux, its characters and this window: Soulve. The mod loader: KittySkin.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "What is being made for Redux, and what comes next.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "OPEN-SOURCE PARTS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "Qt for Python and FFmpeg (LGPL), and the typefaces Aldrich, Chakra Petch and Share Tech Mono (SIL Open Font License).",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "NOTICES",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "OPTION",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "INSTALL",
+   "in": [
+    "PrimaryButton.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "DONE",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "STOPPED",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "COMPLETE",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "HALTED",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "STEP ",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "NO NEW LINE FOR ",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": " MIN. IT MAY STILL BE WORKING; CANCEL STOPS IT.",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "PAUSED   ",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": " FILES   ",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": " MB   ",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": " MB/S   ABOUT ",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": " LEFT",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "STILL WORKING. A FIRST INSTALL CAN TAKE 15 MINUTES.",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "RESUME",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "PAUSE",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "CLOSE",
+   "in": [
+    "ProgressPanel.qml",
+    "TextPanel.qml"
+   ]
+  },
+  {
+   "en": "OPEN FOLDER",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "SEND TO DISCORD",
+   "in": [
+    "ProgressPanel.qml"
+   ]
+  },
+  {
+   "en": "PLAY",
+   "in": [
+    "ProgressPanel.qml",
+    "controller.py"
+   ]
+  },
+  {
+   "en": "NOT IN THIS TERMINAL",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "ONLINE",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "OFFLINE",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "REDUX ONLINE",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "  PARTS ONLINE",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "BUILD ",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": " PARTS ONLINE",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "Pick a part to switch every mod in it, or a chip for one mod.",
+   "in": [
+    "ReduxPage.qml"
+   ]
+  },
+  {
+   "en": "OUT NOW",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "IN TESTING",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "COMING UP",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "LATER",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "DRAFT",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "WHAT COMES NEXT",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "This window carries no roadmap.",
+   "in": [
+    "RoadmapPage.qml"
+   ]
+  },
+  {
+   "en": "BEHIND IT",
+   "in": [
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "The Terminal and every mod in it are free, and they stay free. If you want to say thanks, these are the people who make them. A tip buys nothing and unlocks nothing: it helps them keep going.",
+   "in": [
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "OPEN KO-FI",
+   "in": [
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "COPY LINK",
+   "in": [
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "Ko-fi is a separate site that opens in your browser. This is an unofficial fan project: BlazBlue Entropy Effect belongs to 91Act and Arc System Works, and the other characters to their owners.",
+   "in": [
+    "SupportPage.qml"
+   ]
+  },
+  {
+   "en": "This mod has no list of changes.",
+   "in": [
+    "TextPanel.qml"
+   ]
+  },
+  {
+   "en": "CHECKING FOR UPDATES",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Prepare your mods",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Add it only if you trust where it came from.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Start the game from Steam. New characters are at the end of the Prototype list.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Start this copy with PLAY. New characters are at the end of the Prototype list.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "No mods",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Find the game",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Read the game's data",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Back up your save",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Build your mods",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Take it out of your save",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Rebuild your game without it",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Check for updates",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Download what changed",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Put the updates in your game",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Back up and clean your save",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Remove the mods",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Copy your save",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Clean your save",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Collect the files",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PROBLEM:",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "REFUSING",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "BUILD ABORTED",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Unpack the files",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Download the zip",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Copy the game's files",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The report is a zip in the Terminal's feedback folder, with every mod log, the game's log and the updater's log in it. Send it with your notes.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Starting the game straight into the test. Pick your save slot when it asks.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PLAY AS INSTALLED",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PLAY WITHOUT MODS",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Link copied.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "APPLYING UPDATES",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "the game is open: close it, then press APPLY CHANGES",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UNINSTALLING EVERY MOD",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Your game and your save are back to normal. Your mods stay in the Library.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UNINSTALLING ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: nothing is deleted.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is in the Recycle Bin.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "READING THE GAME'S DATA",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game's data is read.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "BACKING UP YOUR SAVE",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "A full copy of your save is in the Terminal's save_backups folder.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "REPAIRING YOUR SAVE",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Your save is ready for the normal game. If Steam asks about a cloud save conflict, choose the local save.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "MAKING A REPORT",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Mod logs added: %d file%s (%s)",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "the game without mods",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "BRINGING YOUR SAVE",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Your save is in the game without mods, with mod characters taken out of that copy. The save of your Steam game was only read.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "DELETING THE GAME WITHOUT MODS",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game without mods is gone. Its saves stay on this PC.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "MAKING A COPY OF THE GAME",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Switch a mod on first: a list holds the mods that are switched on.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: nothing is saved.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s saved: %d mod%s, names and versions only. Send that file.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Wait for the current job to finish first.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That file is not a mod list.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "None of the list's mods are in your Library.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Choose a mod's zip, or drop its folder here.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: nothing is downloaded.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is in your Library and switched on. Press Install to put it in your game.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: nothing is added.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Stopped. What had downloaded is kept for the next check; nothing half done went into your mods.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Stopped during the install. Your save was backed up first. Press APPLY CHANGES to install again, or UNINSTALL ALL in Options to take every mod out.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%H:%M",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Give the preset a name.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Switch a mod on first: a preset holds the mods that are switched on.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preset %s saved: %d mod%s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That preset is gone.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preset %s switched on: %d mod%s.%s Press APPLY CHANGES to put it in your game.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PUTTING YOUR SAVE BACK",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: the game is not started from here.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The test room mod is not in your game.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Close the game first: the test is chosen when the game starts.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Signed out. CHECK NOW brings the public builds back.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: Steam is not changed.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Steam was not found on this PC.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ZenithTerminal.exe is not beside this window.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "FINDING THE GAME",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game has not been found yet",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game's data has to be read first",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game was updated after this copy was made",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s: %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "SET UP AND INSTALL",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UPDATE COPY",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "APPLY CHANGES",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: the link is not opened from a recording.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "USERPROFILE",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ZENITH_SAVE_ROOT",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "BBMOD_TARGET",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "This Terminal has no updater.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: nothing is checked.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "No connection: the check could not reach the update server. Nothing changed.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Updated and in your game: %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "press APPLY CHANGES to put them in your game",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "they are in the Library",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Downloaded: %s. %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Switch a mod on in the Library first.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "APPLYING CHANGES",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Uninstall %s first, then its files can go.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s could not be moved to the Recycle Bin.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The loader made no report zip to add the logs to.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: this installs into a test copy, so the game is not started from here.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game has not been found yet. Press Set up and install first.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: the game is not started from a recording.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "MAKING A GAME WITHOUT MODS",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game without mods is ready. It has its own saves and starts as a new player. Your modded game and its saves are as they were.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UPDATING THE GAME WITHOUT MODS",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game without mods is on the game's new build.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: this is a test copy, so the game is not started from here.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Copy and clean the saves",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Remove the copy",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preview: folders are not opened from a recording.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That folder does not exist yet.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "There is no log yet.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The Terminal now sets up %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is ready and in use. It starts with no mods and as a new player: switch its mods on in the Library, then install.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Bring the copy up to date",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UPDATING ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is on the game's new build%s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "DELETING ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is gone. Its saves stay on this PC. The Terminal is back on your Steam game.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "No problems in the last run.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "There is nothing to copy yet.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d lines copied.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d mod%s switched on from the list.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": " Not in your Library: %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That mod does not say which mod it is.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "This mod",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s changes your game's files, and a mod can bring scripts that run on your PC when you install it. %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Copy the link of a mod's zip on GitHub first, then press this.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That is not the link of a zip on GitHub (a release file or a repository's archive).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "GETTING ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%.1f MB downloaded",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That file is not a zip.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ADDING ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "LOCAL",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Put the earlier version back",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ROLLING BACK ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is back on %s%s. It stays there until you press RESUME UPDATES.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%Y-%m-%d %H:%M",
+   "in": [
+    "controller.py",
+    "extras.py"
+   ]
+  },
+  {
+   "en": "There is no install to undo.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Close the game first, then undo.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "LOCALAPPDATA",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Updates are ready",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UPDATE SERVER",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PLAYERS ON STEAM",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "THE GAME",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Switch the Terminal to your Steam game first: copies keep their own saves.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That save copy is gone.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Close the game first, then put the save back.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Save restored: %d folder%s from %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Copy your save as it is now",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Put the earlier save back",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Your save is the one from %s. The save you had a moment ago is in the timeline too (before a restore). If Steam asks about a cloud save conflict, choose the local save.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "TEST ROOM",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "run %d %d %d",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That is not a playtester key.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Signed in as a playtester. CHECK NOW brings the test builds.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Make a report first.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The report is over 10 MB: send it by hand from the feedback folder.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is in your Steam library. Start Steam: it is listed under your games, and works in Big Picture and on a Steam Deck.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s in your Steam library is up to date.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That folder does not exist.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Saves are read from the usual place.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Traceback (most recent call last)",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s, line %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ERROR",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "CONFLICT",
+   "in": [
+    "controller.py",
+    "extras.py"
+   ]
+  },
+  {
+   "en": "/FI",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "/NH",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Nothing switched on",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "A newer version is waiting",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Changes not applied yet",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "1 mod installed",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PROBLEM: ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "see above",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The updater stopped.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Everything is up to date.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is out of your game. Its files stay in the Library.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is out of your game, and your save is ready for the normal game.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The Terminal could not change its list of deleted mods.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Add every mod log",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Adding every mod log",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Starting %s. Steam has to be running.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "def bring_saves",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "left out",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "your Steam game",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d copies is the most for now. Delete one first.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Copy %d",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The list could not be saved (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That folder has no mod in it.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That mod could not be added (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That zip does not hold exactly one mod.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is one of the Terminal's own files.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s is in your game. Uninstall it first, then add the new copy.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "This downloads %s from %s/%s on GitHub and adds it to your Library. A mod can bring scripts that run on your PC when you install it. %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s brings its own scripts. They run on your PC when you install it. %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%.1f MB%s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "rolled back",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The Terminal could not change its list of held mods.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "UNDOING THE LAST INSTALL",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Your game holds what it held before the last install.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "No mods are in your game, as before the last install.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": " and more",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s. Open the Terminal and press GET UPDATES.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Not checked yet.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "ONLINE PLAY",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Not known.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Open. Installs wait until it is closed.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "GAME FILES",
+   "in": [
+    "controller.py",
+    "extras.py"
+   ]
+  },
+  {
+   "en": "The preset could not be saved (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The game was opened. Close it, then try again.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That copy holds no save folders.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Save backed up",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Save restored",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Putting the save back",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "aw[0] == \"run\"",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The test could not be set up (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The key was not accepted.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Report from the Zenith Terminal %s%s: %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Steam's library could not be changed (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That folder does not hold %s. Choose the folder the game's program is in.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Saves are read from %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "IMAGENAME eq ",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "CREATE_NO_WINDOW",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "1 mod ready to install",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d mods installed",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s did not finish.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Some updates could not be read:\n",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "the Terminal's window",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "the mod loader",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Mod logs added",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s could not be started (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": ", with its mods back in",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": " and in your game",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Up to date.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d playing Entropy Effect now (all players, not only modded).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": " %d of its mods are not in your Library.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The Terminal could not sign out (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "POST",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Sent to the team's Discord. Thank you.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Discord did not take the report.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "IMAGENAME eq steam.exe",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d mods ready to install",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s  %s  %s\n\n",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The loader could not be started (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Preparing %s...",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That mod could not be downloaded: %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "That mod could not be downloaded (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "PUBLIC",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "; APPLY CHANGES puts it in your game",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Reached at %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Not reached at %s. Check your connection.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%d update%s ready: %s.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Version %s. A newer one (%s) is out: players in a lobby need the same version, so update before you join.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The key was not accepted (%d). Ask the team for a new one.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The key could not be checked: no connection (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The key works, but it could not be kept (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "(no note)",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The report could not be sent (%s). It is in the feedback folder.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": " of %.1f",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Version %s is switched on but not in your game yet: APPLY CHANGES.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "Version %s, the newest on your channel. Everyone in a lobby needs this same version.",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "The check stopped (%s).",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "multipart/form-data; boundary=",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%Y-%m-%d %H:%M:%S",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "%s %s",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "a file path that is not allowed",
+   "in": [
+    "controller.py"
+   ]
+  },
+  {
+   "en": "No connection to the update server. Check your internet, then press CHECK NOW in Options.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "The game is open. Close it completely (check the taskbar), then press the button again.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "The disk is full. Free some space on it (a few GB), then press the button again.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Windows would not let the Terminal change a file. Close the game, and any folder or program that has the Terminal's files open, then press the button again.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "A download arrived damaged. Press CHECK NOW in Options to download it again.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Two of your mods change the same part of the game and cannot go in together. Switch one of them off in the Library, then press the button again.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "A file the Terminal needs is missing. Press CHECK NOW in Options to bring it back, or run the health check.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "WHAT YOUR MODS NEED",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "THE GAME IS",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "The game was not found. Press SET UP AND INSTALL and the Terminal looks for it.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "GAME DATA READ",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "SPACE ON THE TERMINAL'S DISK",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "SPACE ON THE GAME'S DISK",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Everything your mods need is here.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "MOD FILES",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "MADE FOR THIS GAME BUILD",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "YOUR SAVE",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Open. Close it before an install.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "The game's program is missing from its folder. Verify the game's files in Steam.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Read for this build of the game.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Not read for this build yet. Read it again (a few minutes).",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Missing: %s. CHECK NOW brings them.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Checked on an older build of the game: %s. They may still work.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "No save folder yet. Start the game once, then come back.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "a copy",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "battle start",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "run start",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Part of the game's data is missing. Verify the game's files in Steam.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "%.1f GB free.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": " An install needs about 2 GB; free some space.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "%s (%d file%s)",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "%d mod%s checked file by file: all as downloaded.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Changed or missing files: %s. CHECK NOW downloads them again.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "before an install",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "before an uninstall",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "before a repair",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "made by you",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "before a restore",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "%s-%s-%s %s:%s",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "ZENITH LIVE ready",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "Found, build %s.",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "ZENITH",
+   "in": [
+    "extras.py"
+   ]
+  },
+  {
+   "en": "unknown kind %d in shortcuts.vdf",
+   "in": [
+    "extras.py"
+   ]
+  }
+ ]
+}

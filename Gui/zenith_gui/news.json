@@ -1,0 +1,41 @@
+{
+ "approved": true,
+ "items": [
+  {
+   "date": "2026-10-18",
+   "title": "Swift Master playtest on November 26",
+   "back": "SWIFT",
+   "accent": "#9a7ae0",
+   "art": [{"file": "art/cast/swiftmaster.png", "focus": [0.42, 0.1]}],
+   "text": "Swift Master, from DNF Duel, comes to a playtest on November 26. Before that, on November 1: the Community Vote Character."
+  },
+  {
+   "date": "2026-10-18",
+   "title": "Arcueid joins the testing",
+   "back": "ARCUEID",
+   "accent": "#d8c27a",
+   "art": [{"file": "art/cast/arcueid.png", "focus": [0.5, 0.07], "dim": 0.72}],
+   "text": "Arcueid Brunestud, from MELTY BLOOD: TYPE LUMINA, is in testing with Izanami, Cross Effect and the next Terminal. The whole plan is on the Roadmap page."
+  },
+  {
+   "date": "2026-10-18",
+   "title": "The Terminal 0.5.0",
+   "text": "The window now speaks nine languages beside English. A tray icon holds updates while you play and tells you when new ones land. Downloads show their size, speed and time left, and can be paused. Any mod can go back to the version it had before its last update."
+  },
+  {
+   "date": "2026-10-18",
+   "title": "Presets, a save timeline, a controller",
+   "text": "Save the mods you have switched on as a preset and switch to it later. The save timeline lists every backup of your save, with RESTORE beside each one. A game controller or a Steam Deck works the whole window, and ADD TO STEAM puts the Terminal in your Steam library."
+  },
+  {
+   "date": "2026-10-18",
+   "title": "A report in one click",
+   "text": "MAKE REPORT on the Log page gathers every mod's log into one file. SEND TO DISCORD sends it to the Redux team with a note from you, and only after you say yes."
+  },
+  {
+   "date": "2026-10-17",
+   "title": "Updates come by themselves",
+   "text": "The Terminal checks for updates on its own, every 15 minutes and each time it opens. New mods arrive switched on, and the mods you deleted stay deleted unless a newer version comes out and you say yes."
+  }
+ ]
+}

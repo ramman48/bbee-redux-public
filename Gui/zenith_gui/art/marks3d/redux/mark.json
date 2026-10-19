@@ -1,0 +1,98 @@
+{
+ "source": "redux_icon.json",
+ "scale": 0.4098360655737705,
+ "centre": [
+  0.0,
+  0.24374008178710938
+ ],
+ "depth": 6.864754098360656,
+ "materials": {
+  "silver": {
+   "face": [
+    [
+     0.0,
+     "#9aa3b8"
+    ],
+    [
+     0.32999999999999996,
+     "#1d2232"
+    ],
+    [
+     0.45799999999999996,
+     "#1d2232"
+    ],
+    [
+     0.47,
+     "#ffffff"
+    ],
+    [
+     0.52,
+     "#c2cce2"
+    ],
+    [
+     1.0,
+     "#ffffff"
+    ]
+   ],
+   "bevel": "#eef2fa",
+   "rough": 0.3
+  },
+  "steel": {
+   "face": [
+    [
+     0.0,
+     "#4d5466"
+    ],
+    [
+     0.32999999999999996,
+     "#0e111a"
+    ],
+    [
+     0.45799999999999996,
+     "#0e111a"
+    ],
+    [
+     0.47,
+     "#eef2f9"
+    ],
+    [
+     0.52,
+     "#7b8496"
+    ],
+    [
+     1.0,
+     "#cfd5e1"
+    ]
+   ],
+   "bevel": "#c3cad8",
+   "rough": 0.34
+  },
+  "seamcore": {
+   "emit": "#ffe3e8",
+   "emit_strength": 1.2
+  }
+ },
+ "parts": [
+  {
+   "material": "steel",
+   "file": "steel.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 120
+  },
+  {
+   "material": "silver",
+   "file": "silver.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 1492
+  },
+  {
+   "material": "seamcore",
+   "file": "seamcore.mesh",
+   "glow": true,
+   "glow_only": false,
+   "tris": 20
+  }
+ ]
+}

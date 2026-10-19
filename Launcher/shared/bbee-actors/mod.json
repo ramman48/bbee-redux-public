@@ -1,0 +1,231 @@
+{
+ "id": "bbee-actors",
+ "name": "BBEE Actors (added-character plumbing)",
+ "version": "0.2.1",
+ "author": "BBEE modding project",
+ "description": "Shared plumbing for added playable characters (ActorId >= 190000): never locked, auto-granted on the prototype select screen, Potential pools via BaseActorConf.PotentialPoolId, economy-table fallbacks to a donor actor (globalThis.BB_ACTOR_DONOR), per-character persistent trigger rows (globalThis.BB_SELF_TRIGGERS). Lifted from ex-ragna 0.5.0 without its EX styling. 0.2.1: the hero-select intro-movie button is disabled for mod characters (ids >= 190000 have no HeroSelect/*_Introduction_<id>.usm).",
+ "gameBuilds": [
+  "25478197",
+  "25627491"
+ ],
+ "dependencies": [
+  "bbee-sdk"
+ ],
+ "content": {
+  "js": [
+   {
+    "file": "data/js/core/ActorUtil",
+    "replace": [
+     [
+      "BaseActorPotentialConf.All.filter(e=>e.actorId==t)",
+      "BaseActorPotentialConf.All.filter(e=>e.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(t)?.potentialPoolId||t))"
+     ],
+     [
+      "null==e?(r={id:t.actorId},(e=new ResourceData_1.BaseActor(r)).fake=!0):e.fake=!1,",
+      "null==e?(r={id:t.actorId},(e=new ResourceData_1.BaseActor(r)).fake=!(t.actorId>=190000)):e.fake=!1,"
+     ]
+    ],
+    "append": "/* bbee-actors: donor actor per added character (economy tables keyed by a stock actor); trigger rows that ride on one added character only (BB_SELF_TRIGGERS[actorId] = [trigger Idx, ...]) */\ntry{globalThis.BB_ACTOR_DONOR=globalThis.BB_ACTOR_DONOR||{};globalThis.BB_SELF_TRIGGERS=globalThis.BB_SELF_TRIGGERS||{}}catch(e){}"
+   },
+   {
+    "file": "data/js/core/PotentialUtil",
+    "replace": [
+     [
+      "PotentialComboConf.All.filter(t=>t.actorId==e)",
+      "PotentialComboConf.All.filter(t=>t.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(e)?.potentialPoolId||e))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battle/BattleExploreShopRoom",
+    "replace": [
+     [
+      "BaseActorPotentialConf.All.filter(e=>e.actorId==t.BaseID)",
+      "BaseActorPotentialConf.All.filter(e=>e.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(t.BaseID)?.potentialPoolId||t.BaseID))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/server/model/Player",
+    "replace": [
+     [
+      "PotentialComboConf.All.filter(e=>e.actorId==s)",
+      "PotentialComboConf.All.filter(e=>e.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(s)?.potentialPoolId||s))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/server/module/Actor",
+    "replace": [
+     [
+      "BaseActorPotentialConf.All.filter(t=>t.actorId==e.id)",
+      "BaseActorPotentialConf.All.filter(t=>t.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(e.id)?.potentialPoolId||e.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/sideloader/SLServer",
+    "replace": [
+     [
+      "BaseActorPotentialConf.All.filter(e=>e.actorId==t)",
+      "BaseActorPotentialConf.All.filter(e=>e.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(t)?.potentialPoolId||t))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/PromptSkillDetail",
+    "replace": [
+     [
+      "BaseActorPotentialConf.All.filter(t=>t.actorId==l.ActorId)",
+      "BaseActorPotentialConf.All.filter(t=>t.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(l.ActorId)?.potentialPoolId||l.ActorId))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/battle/BattleChoosePotential",
+    "replace": [
+     [
+      "PotentialComboConf.All.filter(e=>e.actorId==t)",
+      "PotentialComboConf.All.filter(e=>e.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(t)?.potentialPoolId||t))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/potential/DataActorAction",
+    "replace": [
+     [
+      "BaseActorPotentialConf.All.filter(t=>t.actorId==e.id)",
+      "BaseActorPotentialConf.All.filter(t=>t.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(e.id)?.potentialPoolId||e.id))"
+     ],
+     [
+      "PotentialComboConf.All.filter(t=>t.actorId==e.id)",
+      "PotentialComboConf.All.filter(t=>t.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(e.id)?.potentialPoolId||e.id))"
+     ],
+     [
+      "ActorActionConf.All.filter(t=>t.actorId==e.id)",
+      "ActorActionConf.All.filter(t=>t.actorId==(Xlsx_1.Xlsx.BaseActorConf.Get(e.id)?.potentialPoolId||e.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battlebreedprepare/SceneUIHeroSelect",
+    "replace": [
+     [
+      "PrepareData(){this.listHero=ActorUtil_1.default.GetListSeedHero()",
+      "PrepareData(){try{var P_=require(\"Server/Model/Player\").ModelPlayer.Instance,pb_=require(\"Gen/pbdef\");Xlsx_1.Xlsx.BaseActorConf.All.forEach(function(c){c.actorId>=190000&&P_.GetBaseActorCount(c.actorId)<=0&&P_.AddResource(pb_.EResourceChangeReason.Gm,0,pb_.STResource.create({type:pb_.EResourceType.BaseActor,id:c.actorId,count:1}))});try{ResourceChange_1.RC.UpdateChanges(P_.GetChangePack().list)}catch(y){}}catch(x){}this.listHero=ActorUtil_1.default.GetListSeedHero()"
+     ],
+     [
+      "RefreshUI(e=!1){",
+      "RefreshUI(e=!1){try{this.RefreshUI_(e)}catch(x){try{csharp_1.System.IO.File.AppendAllText(\"@ROOT@/modlog.txt\",\"[HeroSelect] RefreshUI EXC id=\"+(this.hero&&this.hero.server&&this.hero.server.id)+\" \"+x+\" \"+(x&&x.stack)+\"\\n\")}catch(y){}}}RefreshUI_(e=!1){"
+     ],
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(e.server.id)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((e.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[e.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(e.server.id)?.potentialPoolId||e.server.id):e.server.id))"
+     ],
+     [
+      "this.R.BtnEnterBaseActorDetail.Interactable=t,",
+      "(e.server.id>=190000&&(this.R.BtnEnterBaseActorMovie.Interactable=!1)),this.R.BtnEnterBaseActorDetail.Interactable=t,"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battlebreedprepare/BattlePrepareUtil",
+    "replace": [
+     [
+      "return DataBinding_1.DB.BaseActor.GetData(e)?l.locked=!1:",
+      "return(DataBinding_1.DB.BaseActor.GetData(e)||e>=190000)?l.locked=!1:"
+     ],
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(e)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((e>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[e]||Xlsx_1.Xlsx.BaseActorConf.Get(e)?.potentialPoolId||e):e))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/AvatarUtil",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(e.convertRelationId)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((e.convertRelationId>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[e.convertRelationId]||Xlsx_1.Xlsx.BaseActorConf.Get(e.convertRelationId)?.potentialPoolId||e.convertRelationId):e.convertRelationId))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battlebreedprepare/SceneUICoopHeroSelectBaseActorCard",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(this.hero.server.id)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((this.hero.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[this.hero.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(this.hero.server.id)?.potentialPoolId||this.hero.server.id):this.hero.server.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/bossrush/BossRushCoopSelectActor",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get(t.server.id)",
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/bossrush/BossRushSelectActor",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get(t.server.id)",
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/server/model/BattlelBossRush",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get(t.id)",
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get((t.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.id)?.potentialPoolId||t.id):t.id))"
+     ],
+     [
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get(o.id)",
+      "Xlsx_1.Xlsx.BossRushRewardConf.Get((o.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[o.id]||Xlsx_1.Xlsx.BaseActorConf.Get(o.id)?.potentialPoolId||o.id):o.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/server/views/ResConverter",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(e.targetId)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((e.targetId>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[e.targetId]||Xlsx_1.Xlsx.BaseActorConf.Get(e.targetId)?.potentialPoolId||e.targetId):e.targetId))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/HeroSelectMobile",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(t.server.id)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/window/payment/ExchangeProcess",
+    "replace": [
+     [
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get(this.requestId)",
+      "Xlsx_1.Xlsx.ResourceConvertConf.Get((this.requestId>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[this.requestId]||Xlsx_1.Xlsx.BaseActorConf.Get(this.requestId)?.potentialPoolId||this.requestId):this.requestId))"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battle/BattleJs",
+    "replace": [
+     [
+      "addPersistantSelfPlayerTriggers(e){this.addPersistantPlayerTriggers(this.Battle.PlayerSelf,e)}",
+      "addPersistantSelfPlayerTriggers(e){var _b=this.Battle.PlayerSelf&&this.Battle.PlayerSelf.BaseID,_t=globalThis.BB_SELF_TRIGGERS&&globalThis.BB_SELF_TRIGGERS[_b];this.addPersistantPlayerTriggers(this.Battle.PlayerSelf,_t?e.concat(_t):e)}"
+     ]
+    ]
+   }
+  ]
+ }
+}

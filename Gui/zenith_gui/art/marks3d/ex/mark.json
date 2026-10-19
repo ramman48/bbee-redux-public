@@ -1,0 +1,73 @@
+{
+ "source": "blazblue_ex_icon.json",
+ "scale": 0.22442019503695643,
+ "centre": [
+  -9.348678588867188,
+  -10.970527648925781
+ ],
+ "depth": 6.677398418066374,
+ "materials": {
+  "gold": {
+   "face": [
+    [
+     0.0,
+     "#c47a0a"
+    ],
+    [
+     0.32999999999999996,
+     "#3e2000"
+    ],
+    [
+     0.45799999999999996,
+     "#3e2000"
+    ],
+    [
+     0.47,
+     "#fffbe8"
+    ],
+    [
+     0.52,
+     "#ffc23a"
+    ],
+    [
+     1.0,
+     "#fff6d2"
+    ]
+   ],
+   "bevel": "#ffe08a",
+   "rough": 0.26
+  },
+  "enamel": {
+   "gloss": "#0b0a12",
+   "rough": 0.28,
+   "rim": "#ffd277"
+  },
+  "auracore": {
+   "emit": "#e8f8ff",
+   "emit_strength": 1.0
+  }
+ },
+ "parts": [
+  {
+   "material": "enamel",
+   "file": "enamel.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 5604
+  },
+  {
+   "material": "gold",
+   "file": "gold.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 11512
+  },
+  {
+   "material": "auracore",
+   "file": "auracore.mesh",
+   "glow": true,
+   "glow_only": true,
+   "tris": 1784
+  }
+ ]
+}

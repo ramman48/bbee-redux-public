@@ -1,0 +1,14 @@
+{
+ "id": "zenith-live",
+ "name": "Zenith Terminal: updates while the game is open",
+ "version": "0.1.0",
+ "author": "The Zenith Terminal",
+ "description": "Lets the Terminal add or update a mod while the game runs (for example a character an online lobby needs): it loads the bundles, tables, text and scripts the Terminal built into the open game. It reads only the list the Terminal writes in its own live folder for this game. Always installed; nothing to set.",
+ "gameBuilds": ["25627491"],
+ "dependencies": [],
+ "content": {
+  "js": [
+   { "file": "data/js/core/ActorUtil", "appendFile": "files/zenithlive.js" }
+  ]
+ }
+}

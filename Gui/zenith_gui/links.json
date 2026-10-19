@@ -1,0 +1,17 @@
+{
+ "support": [
+  {
+   "name": "Soulve",
+   "role": "Creator of Redux: its characters, its tools, and this window's design and direction.",
+   "site": "ko-fi.com/soulve",
+   "url": "https://ko-fi.com/soulve"
+  },
+  {
+   "name": "KittySkin",
+   "role": "Developer of the Terminal's mod loader.",
+   "site": "ko-fi.com/kittyskin",
+   "url": "https://ko-fi.com/kittyskin"
+  }
+ ],
+ "reportWebhook": "https://discord.com/api/webhooks/1561528548760625235/G7c9pAMZIP_Tulc1ZrqvQJopx_XydDLs3Z7SMnVliwIkOMa9K9fEeKYygkaAoFy9hfjX"
+}

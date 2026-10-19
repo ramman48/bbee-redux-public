@@ -1,0 +1,105 @@
+{
+ "char-nine": {
+  "title": "Nine the Phantom",
+  "note": "playable caster, alpha",
+  "set": "Redux",
+  "part": "Entropy Overhaul",
+  "about": "Nine the Phantom as a playable caster, built from her boss fight in Entropy Effect. Fast fire, wind and ice spells that commit on the press, her blink, element weaving with a spell for every combination, the Phantom's arm and leg, and her own Potentials.",
+  "credit": "Nine the Phantom and BlazBlue belong to Arc System Works. Unofficial fan work.",
+  "accent": "#b592ff",
+  "art": [
+   {
+    "file": "art/portrait_mb.png",
+    "focus": [
+     0.52,
+     0.29
+    ],
+    "tall": 1.2
+   }
+  ]
+ },
+ "char-ruby": {
+  "title": "Ruby Rose",
+  "note": "Cross Effect, alpha",
+  "set": "Redux",
+  "part": "Cross Effect",
+  "about": "Ruby Rose, as she appears in BlazBlue Cross Tag Battle, as a playable character: Crescent Rose's scythe strings and Gun Blast, her own voice and effects, and her own Potentials. Part of Cross Effect, one of the Redux mods.",
+  "credit": "Ruby Rose, RWBY and BlazBlue Cross Tag Battle belong to their owners. Unofficial fan work.",
+  "accent": "#ff5468",
+  "art": [
+   {
+    "file": "art/portrait_full.png",
+    "focus": [
+     0.31,
+     0.29
+    ],
+    "tall": 1.16
+   }
+  ]
+ },
+ "dr-party": {
+  "title": "DELTARUNE: Party",
+  "note": "party, alpha test",
+  "set": "Redux",
+  "part": "Cross Effect",
+  "about": "Kris from DELTARUNE as a playable character, with Susie and Ralsei following: the sword string, the air spin, the dash and the Summon Tactic. Hold Skill and pick an enemy for the party command: Susie's Rude Buster or Ralsei's Fireshock.",
+  "credit": "DELTARUNE and its characters belong to their owners. Unofficial fan work.",
+  "accent": "#6fb6ff",
+  "art": [
+   {
+    "file": "pack/art/Kris_artwork_Famitsu.png",
+    "focus": [
+     0.47,
+     0.27
+    ],
+    "card": 285,
+    "tall": 0.56,
+    "dx": -0.02,
+    "dy": 0.0,
+    "z": 3,
+    "dim": 1.0
+   },
+   {
+    "file": "pack/art/Ralsei_artwork_Famitsu.png",
+    "focus": [
+     0.6,
+     0.33
+    ],
+    "card": 360,
+    "tall": 0.44,
+    "dx": -0.13,
+    "dy": 0.3,
+    "z": 1,
+    "dim": 0.92
+   },
+   {
+    "file": "pack/art/Susie_artwork_Famitsu.png",
+    "focus": [
+     0.47,
+     0.17
+    ],
+    "card": 400,
+    "tall": 0.66,
+    "dx": 0.2,
+    "dy": 0.012,
+    "z": 2,
+    "dim": 0.96
+   }
+  ]
+ },
+ "bbee-sdk": {
+  "title": "Runtime hooks",
+  "note": "core file",
+  "about": "Shared code the other mods run on. It goes into the game with any mod."
+ },
+ "bbee-actors": {
+  "title": "Added characters",
+  "note": "core file",
+  "about": "What lets a new character appear on the Prototype select screen with its own Potentials. It goes in with any character mod."
+ },
+ "bbee-inspector": {
+  "title": "Inspector",
+  "note": "tool for testers",
+  "about": "A battle overlay for testers and mod makers: F8 shows it, and F9 saves a report you can send with your feedback."
+ }
+}

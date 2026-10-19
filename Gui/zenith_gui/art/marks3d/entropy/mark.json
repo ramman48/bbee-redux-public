@@ -1,0 +1,36 @@
+{
+ "source": "entropy_overhaul_icon.json",
+ "scale": 0.2631507199201553,
+ "centre": [
+  41.29053497314453,
+  0.002655029296875
+ ],
+ "depth": 3.881473118822291,
+ "materials": {
+  "obsidian": {
+   "gloss": "#06050b",
+   "rough": 0.22,
+   "rim": "#b48cff"
+  },
+  "neon": {
+   "emit": "#9ff6ff",
+   "emit_strength": 1.0
+  }
+ },
+ "parts": [
+  {
+   "material": "obsidian",
+   "file": "obsidian.mesh",
+   "glow": false,
+   "glow_only": false,
+   "tris": 9504
+  },
+  {
+   "material": "neon",
+   "file": "neon.mesh",
+   "glow": true,
+   "glow_only": false,
+   "tris": 748
+  }
+ ]
+}

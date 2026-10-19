@@ -1,0 +1,92 @@
+{
+ "approved": true,
+ "updated": "2026-10-18",
+ "columns": [
+  {
+   "name": "OUT NOW",
+   "items": [
+    {"title": "Nine the Phantom", "text": "Public alpha. Testers' notes go into every update.", "accent": "#d0405e",
+     "art": [{"file": "art/cast/nine.png", "focus": [0.55, 0.2], "tall": 1.15}]},
+    {"title": "Ruby Rose", "text": "Public alpha: RWBY's Ruby, from Cross Tag Battle.", "accent": "#d23040",
+     "art": [{"file": "art/cast/ruby.png", "focus": [0.33, 0.17]}]},
+    {"title": "The Fun Gang", "back": "FUN GANG", "text": "Public alpha: Kris, with Susie and Ralsei fighting beside you.", "accent": "#6fb0ff",
+     "art": [{"file": "art/cast/kris.png", "focus": [0.47, 0.27], "tall": 0.56, "dx": -0.02, "dy": 0, "z": 3, "dim": 1},
+             {"file": "art/cast/ralsei.png", "focus": [0.6, 0.33], "tall": 0.44, "dx": -0.13, "dy": 0.3, "z": 1, "dim": 0.92},
+             {"file": "art/cast/susie.png", "focus": [0.47, 0.17], "tall": 0.66, "dx": 0.2, "dy": 0.012, "z": 2, "dim": 0.96}]},
+    {"title": "BlazBlue EX", "text": "Public alpha: EX Ragna and EX Hakumen.", "accent": "#d03a2a",
+     "art": [{"file": "art/cast/ragna.png", "focus": [0.48, 0.09]}]}
+   ]
+  },
+  {
+   "name": "IN TESTING",
+   "items": [
+    {"title": "Arcueid Brunestud", "back": "ARCUEID", "text": "From MELTY BLOOD: TYPE LUMINA.", "accent": "#d8c27a",
+     "art": [{"file": "art/cast/arcueid.png", "focus": [0.5, 0.07], "dim": 0.72}]},
+    {"title": "Izanami", "text": "The next of the game's bosses to become playable.", "accent": "#b070e0",
+     "art": [{"file": "art/cast/izanami.png", "focus": [0.47, 0.18], "dim": 0.8}]},
+    {"title": "Susanoo", "text": "Hakumen's Susanoo as his own character, built to feel like playing a boss.", "accent": "#38e07a",
+     "art": [{"file": "art/cast/susanoo.png", "focus": [0.5, 0.14]}]},
+    {"title": "Grim of the Abyss", "text": "Past Entropy 175: modifiers, bigger rewards, Endless and Endless Boss Rush."},
+    {"title": "Four Player", "text": "Four players online, mods and all."},
+    {"title": "Tactics Plus Ultra", "text": "A new set of Tactics with two new elements, Water and Radiation."},
+    {"title": "Cross Effect", "text": "More heroes from other fighting games."},
+    {"title": "The Zenith Terminal", "back": "ZENITH", "text": "The next version of this window."}
+   ]
+  },
+  {
+   "name": "COMING UP",
+   "items": [
+    {"title": "Swift Master playtest", "back": "SWIFT", "text": "November 26. Swift Master, from DNF Duel.", "accent": "#9a7ae0",
+     "art": [{"file": "art/cast/swiftmaster.png", "focus": [0.42, 0.1]}]},
+    {"title": "Community Vote Character", "back": "VOTE", "text": "November 1."},
+    {"title": "Makoto", "back": "MAKOTO", "text": "From Street Fighter III.", "accent": "#e8b830",
+     "art": [{"file": "art/cast/makoto.png", "focus": [0.42, 0.12], "tall": 0.95}]},
+    {"title": "Yuzuriha", "accent": "#c0408a",
+     "art": [{"file": "art/cast/yuzuriha.png", "focus": [0.42, 0.13]}]},
+    {"title": "Dust", "text": "From Dust: An Elysian Tail.", "accent": "#4fd0c0",
+     "art": [{"file": "art/cast/dust.png", "focus": [0.55, 0.14]}]}
+   ]
+  },
+  {
+   "name": "2027",
+   "items": [
+    {"title": "Dante and Vergil", "back": "DMC", "text": "From Devil May Cry. Coming next year.", "accent": "#c8283a",
+     "art": [{"file": "art/cast/dante.png", "focus": [0.45, 0.08], "tall": 0.62, "dx": -0.14, "dy": 0, "z": 2, "dim": 1},
+             {"file": "art/cast/vergil.png", "focus": [0.5, 0.08], "tall": 0.6, "dx": 0.14, "dy": 0.01, "z": 1, "dim": 0.94}]},
+    {"title": "Bayonetta", "text": "Coming next year.", "accent": "#a060e0",
+     "art": [{"file": "art/cast/bayonetta.png", "focus": [0.5, 0.06], "tall": 1.15}]},
+    {"title": "Marie (from Skullgirls)", "back": "MARIE", "text": "Coming next year.", "accent": "#7ee8d0",
+     "art": [{"file": "art/cast/marie.png", "focus": [0.5, 0.15], "tall": 1.0}]},
+    {"title": "Hi-no Kagutsuchi", "back": "KAGUTSUCHI", "text": "A new boss, from Persona 4 Arena Ultimax. Coming next year.", "accent": "#ff7a1a",
+     "art": [{"file": "art/cast/kagutsuchi.png", "focus": [0.5, 0.45], "tall": 0.62, "dim": 0.58}]}
+   ]
+  },
+  {
+   "name": "LATER",
+   "items": [
+    {"title": "4v4 Race Mode", "back": "RACE"},
+    {"title": "Tag Mode", "text": "A partner you tag in and out in every single-player fight."},
+    {"title": "Season Pass 2", "back": "SEASON"},
+    {"title": "DELTARUNE Expansion", "back": "DELTARUNE"},
+    {"title": "Weiss Schnee (from RWBY)", "back": "WEISS", "accent": "#9fd4ff",
+     "art": [{"file": "art/cast/weiss.png", "focus": [0.45, 0.08], "dim": 0.68}]},
+    {"title": "NaN", "back": "NAN", "accent": "#62b8f0", "art": [{"file": "art/cast/nan.png", "focus": [0.5, 0.2], "tall": 0.95, "dim": 0.82}]},
+    {"title": "Reki", "accent": "#e8603a", "art": [{"file": "art/cast/reki.png", "focus": [0.45, 0.37], "tall": 0.75, "dim": 0.88}]},
+    {"title": "Oread", "accent": "#d8304a", "art": [{"file": "art/cast/oread.png", "focus": [0.62, 0.1], "tall": 0.8}]},
+    {"title": "Boss Reworks", "back": "BOSSES"},
+    {"title": "New Enemies", "back": "ENEMIES"},
+    {"title": "Nemesis System", "back": "NEMESIS"},
+    {"title": "Reworked Hub", "back": "HUB"},
+    {"title": "Mobile"},
+    {"title": "Mac"},
+    {"title": "PvP Mode", "back": "PVP"},
+    {"title": "New Player Customization", "back": "CUSTOM"},
+    {"title": "Character Creator", "back": "CREATOR"},
+    {"title": "Stage Maker and Sharing Network", "back": "STAGES"},
+    {"title": "Second Crossover Expansion", "back": "???", "text": "A legend wakes from a hundred-year sleep.", "accent": "#d0283a",
+     "art": [{"file": "art/cast/zero.png", "focus": [0.47, 0.12]}]},
+    {"title": "EX Pack 2", "back": "EX"}
+   ]
+  }
+ ]
+}
