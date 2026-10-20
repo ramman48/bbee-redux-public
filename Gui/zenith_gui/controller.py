@@ -31,7 +31,7 @@ from PySide6.QtGui import QDesktopServices, QGuiApplication, QImage
 
 from . import extras, fetch, logs, modlist
 
-VERSION = "0.5.1"
+VERSION = "0.5.2"
 HERE = os.path.dirname(os.path.abspath(__file__))
 APPID = "2273430"
 EXE = "BlazblueEntropyEffect.exe"
@@ -1274,8 +1274,23 @@ class Controller(QObject):
             self.said.emit("The game has not been found yet. Press Set up and install first.")
             return
         info = self._copy_info()
-        if not info: QDesktopServices.openUrl(QUrl("steam://rungameid/" + APPID)); return
-        self._start_copy(self._copy, self.copyName)
+        if info: self._start_copy(self._copy, self.copyName); return
+        exe = os.path.join(self._work("game"), EXE)
+        if _game_open() and os.path.isfile(exe):
+            # A window is already open (a test window, or one of yours): Steam counts the game as running and its
+            # Play does nothing. The game allows several windows, so this one is started by its own program, as
+            # Steam would start it. One start per 30 s: repeated presses never pile windows up.
+            if time.time() - getattr(self, "_side_start", 0) < 30:
+                self.said.emit("A game window is already starting. Give it a moment.")
+                return
+            self._side_start = time.time()
+            try:
+                subprocess.Popen([exe], cwd=os.path.dirname(exe), env=dict(os.environ, SteamAppId=APPID, SteamGameId=APPID))
+                self.said.emit("A game window is already open, so another one is starting beside it. Steam has to be running.")
+            except OSError as e:
+                self.said.emit("The game could not be started (%s)." % (e.strerror or e))
+            return
+        QDesktopServices.openUrl(QUrl("steam://rungameid/" + APPID))
 
     def _start_copy(self, copy_id, name):
         exe = os.path.join(self._copy_dir(copy_id), "game", self._copy_info(copy_id)["exe"])

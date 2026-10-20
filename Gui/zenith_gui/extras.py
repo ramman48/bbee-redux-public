@@ -73,7 +73,7 @@ def report_files(launcher, terminal, data_dir, game_data):
     if game_data and os.path.isdir(game_data):                   # the game's own folder: Player.log, mods' own logs
         for pattern in ("*.log", "modlog*.txt"):                 # logs only: mods' own state files stay out
             for path in sorted(glob.glob(os.path.join(game_data, pattern))):
-                if os.path.getsize(path) < 4 * MB: out.append((path, "extra/game/" + os.path.basename(path)))
+                out.append((path, "extra/game/" + os.path.basename(path)))     # a big Player.log goes in by its newest part (add_to_newest_zip)
     for rel in (("Updater", "log.txt"), ("Updater", "last_run.json"), ("Updater", "check_run.json"),
                 ("Updater", "version.txt"), ("Gui", "version.txt"), ("package", "EDITION.txt")):
         path = os.path.join(terminal, *rel)

@@ -57,6 +57,7 @@ class Pad(QObject):
     def __init__(self, parent=None, read=None):
         super().__init__(parent)
         self._lib = None if read else _xinput()
+        self._front_only = read is None      # a real pad; the test harness's pad (read) has no window in front
         self._read = read or self._read_xinput
         self._held, self._frames, self._which, self._quiet = 0, {}, 0, 0
         self._timer = QTimer(self)
@@ -91,6 +92,14 @@ class Pad(QObject):
         buttons = self._read()
         if buttons is None:
             self._held, self._quiet = 0, 60
+            return
+        # The pad is read whatever window is in front: while the game had it, Start and Y pressed the big button, and with
+        # a game open that starts one more game window (the lead, 2026-10-19: "something is opening a lot of entropy
+        # windows"). Only the window in front acts on the pad; what is held when it comes back to the front waits for a
+        # new press.
+        app = QGuiApplication.instance()
+        if self._front_only and isinstance(app, QGuiApplication) and app.applicationState() != Qt.ApplicationState.ApplicationActive:
+            self._held, self._frames = buttons, {}
             return
         pressed = buttons & ~self._held
         for bit in list(self.KEYS) + list(self.ACTIONS):
