@@ -60,7 +60,7 @@ Item {
             const inSet = m.set ? mods.filter(o => o.set === m.set && !o.locked) : []
             const row = { mid: m.id, title: m.title, version: m.version, note: m.note, kind: m.kind,
                           on: m.enabled, locked: m.locked, compatible: m.compatible,
-                          channel: m.channel || "", fresh: m.fresh === true, held: m.held === true,
+                          channel: m.channel || "", fresh: m.fresh === true, held: m.held === true, preview: m.preview === true,
                           group: group, setName: m.set || "", setCount: inSet.length,
                           setOn: inSet.filter(o => o.enabled).length,
                           opens: i === 0 || before !== group }
@@ -131,6 +131,7 @@ Item {
                         required property string channel
                         required property bool fresh
                         required property bool held
+                        required property bool preview
                         width: rows.width
                         readonly property real shows: page.ease(page.reveal * (1.6 + page.mods.length * 0.16) - 0.3 - index * 0.16)
                         Item {
@@ -185,6 +186,7 @@ Item {
                             channel: entry.channel
                             fresh: entry.fresh
                             held: entry.held
+                            preview: entry.preview
                             selected: entry.index === page.current
                             reveal: entry.shows
                             onChosen: page.chose(entry.index)
@@ -414,6 +416,16 @@ Item {
                 }
             }
         }
+    }
+    // where in the description the shown part is
+    Rectangle {
+        visible: page.shown !== null && detailContainer.visibleArea.heightRatio < 0.999
+        x: detailContainer.x + detailContainer.width + 12
+        y: detailContainer.y + detailContainer.visibleArea.yPosition * detailContainer.height
+        width: 2
+        height: Math.max(18, detailContainer.visibleArea.heightRatio * detailContainer.height)
+        color: Theme.line
+        opacity: 0.4 * page.swap * page.ease(page.reveal * 2.2 - 0.7)
     }
 
     // a mod or a pack from a zip (a folder can be dropped on the window)

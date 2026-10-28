@@ -8,6 +8,8 @@ Item {
     id: root
     default property alias content: scene.data
     readonly property bool on: Fx.full && width > 0 && height > 0
+    property real clear: 0          // 0..1 of the width from the left: no colour split there (Options: SIDE BAR HOLO EFFECT off;
+                                    // 1 or more: none anywhere, DISABLE HOLO EFFECTS on)
 
     Item {
         id: scene
@@ -62,6 +64,7 @@ Item {
         property real flash: Fx.flash
         property real grain: 0.018
         property real time: 0
+        property real clear: root.clear
         NumberAnimation on time { from: 0; to: 1000; duration: 1000000; loops: Animation.Infinite; running: root.on }
         fragmentShader: "shaders/composite.frag.qsb"
     }

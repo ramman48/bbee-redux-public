@@ -4,7 +4,7 @@ About 10 minutes the first time. Updating from an older version? Read [UPDATE.md
 
 ## What you need
 
-- **Windows 10 or 11** and **BlazBlue Entropy Effect on Steam**, up to date. This package was made for Steam build **25627491**.
+- **Windows 10 or 11** and **BlazBlue Entropy Effect on Steam**, up to date. This package was made for Steam build **26263712**.
 - **Python 3.10 or newer**, free from <https://www.python.org/downloads/>.
   - In the installer, tick **"Add python.exe to PATH"**.
   - To check it's installed, open Command Prompt and type `python --version` (or `py --version`).

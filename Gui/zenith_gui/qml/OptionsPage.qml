@@ -51,6 +51,8 @@ Item {
         .concat(controller.testAvailable ? [{ id: "testing", label: qsTr("TESTING") }] : [])
         .concat([{ id: "interface", label: qsTr("INTERFACE") }, { id: "looks", label: qsTr("PICTURE AND SOUND") }, { id: "about", label: qsTr("ABOUT") }])
     readonly property int at: Math.max(0, cats.findIndex(c => c.id === cat))
+    // where the glass ends; the table's rows stay above it
+    readonly property real panelBottom: page.height - 176
     // the kinds share the panel's height when there are many of them
     readonly property real kindStep: Math.min(52, (page.height - 90 - 176 - 64) / Math.max(1, cats.length))
     readonly property var fixLabels: ({ setup: qsTr("READ AGAIN"), steamverify: qsTr("VERIFY IN STEAM"), checkupdates: qsTr("CHECK NOW") })
@@ -249,7 +251,11 @@ Item {
             { name: qsTr("SOUND"), text: qsTr("The sounds the Terminal makes when you point at and press things."),
               kind: "choice", key: "sound", options: [{ value: "on", label: qsTr("ON") }, { value: "off", label: qsTr("OFF") }] },
             { name: qsTr("VOLUME"), text: qsTr("How loud those sounds are."),
-              kind: "choice", key: "volume", options: [5, 15, 30, 70, 100].map(v => ({ value: v, label: v + "%" })) }
+              kind: "choice", key: "volume", options: [5, 15, 30, 70, 100].map(v => ({ value: v, label: v + "%" })) },
+            { name: qsTr("SIDE BAR HOLO EFFECT"), text: qsTr("On: the words and signs in the column of pages on the left carry the window's holographic colour fringe. Off: they are drawn clean."),
+              kind: "choice", key: "railHolo", options: [{ value: "on", label: qsTr("ON") }, { value: "off", label: qsTr("OFF") }] },
+            { name: qsTr("DISABLE HOLO EFFECTS"), text: qsTr("On: no holographic colour fringe on any words or signs in the window, the side bar's included. Off: they carry it."),
+              kind: "choice", key: "noHolo", options: [{ value: "off", label: qsTr("OFF") }, { value: "on", label: qsTr("ON") }] }
         ]
         if (cat === "interface") return [
             { name: qsTr("OPEN ON"), text: qsTr("The page the Terminal shows first."),
@@ -280,8 +286,8 @@ Item {
     }
 
     // ---- the glass behind the kinds and the table -------------------------------------------------------------
-    GlassPanel { x: 108; y: 90; width: 282; height: page.height - 90 - 176; reveal: page.ease(page.reveal * 2.0) }
-    GlassPanel { x: 404; y: 90; width: Math.min(900, page.width - 420 - 40) + 32; height: page.height - 90 - 176; reveal: page.ease(page.reveal * 2.0 - 0.3) }
+    GlassPanel { x: 108; y: 90; width: 282; height: page.panelBottom - 90; reveal: page.ease(page.reveal * 2.0) }
+    GlassPanel { x: 404; y: 90; width: Math.min(900, page.width - 420 - 40) + 32; height: page.panelBottom - 90; reveal: page.ease(page.reveal * 2.0 - 0.3) }
 
     // ---- the kinds --------------------------------------------------------------------------------------------
     Item {
@@ -381,7 +387,7 @@ Item {
             objectName: "optionsRows"
             y: 34
             width: parent.width
-            height: page.height - 104 - 34 - 116
+            height: page.panelBottom - 14 - 104 - 34     // 14 from the glass's edge, as at its top
             contentHeight: tableRows.implicitHeight
             clip: true
             boundsBehavior: Flickable.StopAtBounds

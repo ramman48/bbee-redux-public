@@ -31,7 +31,7 @@ from PySide6.QtGui import QDesktopServices, QGuiApplication, QImage
 
 from . import extras, fetch, logs, modlist
 
-VERSION = "0.5.2"
+VERSION = "0.5.3"
 HERE = os.path.dirname(os.path.abspath(__file__))
 APPID = "2273430"
 EXE = "BlazblueEntropyEffect.exe"
@@ -45,6 +45,8 @@ SETTINGS = {"motion": ("full", "calm"), "startPage": ("home", "library"), "showC
             "tray": ("on", "off"),                 # closing the window keeps the Terminal in the tray
             "quietWhilePlaying": (True, False),    # no update check or download while the game is open
             "firstInstall": (True, False),         # a first open with mods switched on installs them at once
+            "railHolo": ("on", "off"),             # the holographic colour fringe on the column of pages
+            "noHolo": ("off", "on"),               # on: no holographic colour fringe anywhere in the window
             "language": ("en", "zh-Hans", "zh-Hant", "ja", "ko", "fr", "de", "es", "ru", "pt-BR")}
 LANGUAGES = [("en", "English"), ("zh-Hans", "简体中文"), ("zh-Hant", "繁體中文"), ("ja", "日本語"), ("ko", "한국어"),
              ("fr", "Français"), ("de", "Deutsch"), ("es", "Español"), ("ru", "Русский"), ("pt-BR", "Português (Brasil)")]
@@ -432,6 +434,8 @@ class Controller(QObject):
                     "prepare": [str(p) for p in card.get("prepare") or []], "built": built,
                     "settings": [] if core or chosen is None or not built else self._declared(meta, chosen.get(mod_id)),
                     "monogram": (str(known.get("title") or title).strip()[:1] or "?").upper(),
+                    # still being made: labelled PREVIEW in the Library (the channel's card, or the mod's own mod.json)
+                    "preview": not core and bool(card.get("preview") or meta.get("preview") or known.get("preview")),
                 })
                 folder_now = os.path.join(base, name)
                 out[-1].update(self._mod_extras(mod_id, folder_now, core))
@@ -2087,10 +2091,13 @@ class Controller(QObject):
 
     @Slot()
     def quietCheck(self):
-        """asks the channel what is newer, changes nothing; a newer mod is told in the window and the tray"""
+        """asks the channel what is newer, changes nothing; a newer mod is told in the window and the tray (after
+        openCheck: fetched at once instead)"""
+        get, self._get_found = getattr(self, "_get_found", False), False
         if self.demo or self._busy or not self.canUpdate or self._check_proc is not None: return
         if _version_newer("1.3.0", self._updater_version() or "0"): return      # an older updater has no --report
         if self._settings.get("quietWhilePlaying") is not False and _game_open(): return
+        self._get_found = get
         proc = QProcess(self)
         env = QProcessEnvironment.systemEnvironment()
         env.insert("PYTHONIOENCODING", "utf-8")
@@ -2103,6 +2110,17 @@ class Controller(QObject):
         proc.start(self._python(), ["-u", self._terminal("Updater", "main.py"), "--check", "--report",
                                     self._terminal("Updater", "check_run.json")])
 
+    @Slot()
+    def openCheck(self):
+        """The window opened, or came back from the tray: a quiet check, and what it finds is fetched and put in at
+        once (CHECK NOW's job), so nobody has to press anything (the lead, 2026-10-20: "auto updates anytime you close
+        and open it"). Options, UPDATES set to ASK ME: only the quiet check. At most once a minute."""
+        now = time.time()
+        if now - getattr(self, "_open_check_at", 0) < 60: return
+        self._open_check_at = now
+        self._get_found = self._settings.get("applyUpdates") is not False
+        self.refreshStatus()
+
     def _quiet_done(self, code):
         self._check_proc = None
         self._check_stamp = time.strftime("%H:%M")
@@ -2112,6 +2130,12 @@ class Controller(QObject):
         self._available = [{"id": n, "title": self._title_of(n), "from": str(e.get("local") or ""), "to": str(e.get("remote") or "")}
                            for n, e in (run.get("components") or {}).items()
                            if isinstance(e, dict) and e.get("status") == "available" and n not in held and n not in declined]
+        get, self._get_found = getattr(self, "_get_found", False), False
+        if get and self._available and not self._busy and not (self._settings.get("quietWhilePlaying") is not False and _game_open()):
+            self._told = ",".join("%s=%s" % (a["id"], a["to"]) for a in self._available)
+            self.statusChanged.emit()
+            self.checkUpdates()
+            return
         told = ",".join("%s=%s" % (a["id"], a["to"]) for a in self._available)
         if self._available and told != self._told:
             names = ", ".join(a["title"] for a in self._available[:3]) + (" and more" if len(self._available) > 3 else "")

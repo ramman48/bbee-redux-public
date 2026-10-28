@@ -14,6 +14,9 @@ Item {
     property string channel: ""      // DEV | PUBLIC | LOCAL: where its updates come from
     property bool fresh: false       // an update brought it in the last 24 hours
     property bool held: false        // rolled back: kept on this version
+    property bool preview: false     // in the game, still being made: an amber PREVIEW tag
+    // room the tags left of ON / OFF take from the title and version lines
+    readonly property real tagRoom: (fresh ? newMark.width + 6 : 0) + (preview ? previewMark.width + 6 : 0)
     signal chosen()
     signal switched(bool on)
     // by keyboard: Enter chooses the row, Space switches the mod as well
@@ -88,7 +91,7 @@ Item {
         spacing: 4
         Item {
             id: titleBox
-            width: root.width - 66 - (root.fresh ? 112 : 78)
+            width: root.width - 66 - 78 - root.tagRoom
             height: titleText.implicitHeight
             clip: true
             readonly property real overflow: Math.max(0, titleText.implicitWidth - width)
@@ -118,12 +121,13 @@ Item {
             font.letterSpacing: 0.8
             color: root.compatible ? Theme.dim : Theme.amber
             elide: Text.ElideRight
-            width: root.width - 66 - (root.fresh ? 112 : 78)
+            width: root.width - 66 - 78 - root.tagRoom
         }
     }
 
     // new in the last day: a small cyan tag left of ON / OFF
     Rectangle {
+        id: newMark
         objectName: "newMark"
         visible: root.fresh
         anchors.right: parent.right; anchors.rightMargin: 58
@@ -137,6 +141,24 @@ Item {
             text: qsTr("NEW")
             font.family: Theme.display; font.pixelSize: 9; font.letterSpacing: 1.6
             color: Theme.cyan
+        }
+    }
+    // still being made: an amber tag, left of NEW when both show
+    Rectangle {
+        id: previewMark
+        objectName: "previewMark"
+        visible: root.preview
+        anchors.right: parent.right; anchors.rightMargin: 58 + (root.fresh ? newMark.width + 6 : 0)
+        anchors.verticalCenter: parent.verticalCenter
+        width: previewWord.implicitWidth + 10; height: 16
+        color: Qt.rgba(Theme.amber.r, Theme.amber.g, Theme.amber.b, 0.16)
+        border.width: 1; border.color: Theme.amber
+        Text {
+            id: previewWord
+            anchors.centerIn: parent
+            text: qsTr("PREVIEW")
+            font.family: Theme.display; font.pixelSize: 9; font.letterSpacing: 1.6
+            color: Theme.amber
         }
     }
     Text {

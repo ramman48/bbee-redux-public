@@ -41,7 +41,11 @@ ApplicationWindow {
         }
         else if (!shell.capture) Qt.callLater(Qt.quit)      // the app stays open while the tray holds it; else closing ends it
     }
-    function showAgain() { win.show(); win.raise(); win.requestActivate() }
+    function showAgain() {
+        const hidden = !win.visible
+        win.show(); win.raise(); win.requestActivate()
+        if (hidden) controller.openCheck()          // back from the tray counts as opening: updates come in by themselves
+    }
     visible: true
     color: Theme.bg
     title: qsTr("The Zenith Terminal")
@@ -114,7 +118,7 @@ ApplicationWindow {
         if (afterLoadDone) return
         afterLoadDone = true
         if (!controller.applyArrivedUpdates() && !controller.firstOpen()) offerTimer.start()
-        Qt.callLater(controller.refreshStatus)
+        Qt.callLater(controller.openCheck)      // what is newer on the channel is fetched and put in by itself
     }
     Connections { target: controller; function onLoaded() { win.afterLoad() } }
 
@@ -183,6 +187,8 @@ ApplicationWindow {
     PostStack {
     id: post
     anchors.fill: parent
+    // no colour split: anywhere (2: past the whole width), or over the column of pages
+    clear: controller.settings.noHolo === "on" ? 2 : (controller.settings.railHolo === "off" ? rail.width / Math.max(1, win.lw) : 0)
     Backdrop { anchors.fill: parent; reveal: win.bgIn; heat: win.page === "redux" && win.reduxPowered ? 0.75 : 0; horizon: win.page === "redux" ? 0.31 : 0.62 }
 
     // ---- the pictures -----------------------------------------------------------------------------------------

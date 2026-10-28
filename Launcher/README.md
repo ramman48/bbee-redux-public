@@ -23,7 +23,7 @@ How she plays: **[docs/NINE_GUIDE.md](docs/NINE_GUIDE.md)**.
 ## What you need
 
 - **Windows 10 or 11.**
-- **BlazBlue Entropy Effect on Steam**, up to date. This package was made for Steam build **25627491**. `STATUS.bat` shows your build.
+- **BlazBlue Entropy Effect on Steam**, up to date. This package was made for Steam build **26263712**. `STATUS.bat` shows your build.
 - **Python 3.10 or newer**, free from <https://www.python.org/downloads/>. Tick **"Add python.exe to PATH"** in its installer.
 - About **300 MB** of free disk space where you unzip the package.
 - Optional: **BlazBlue Centralfiction** installed through Steam on the same account. If you have it, two of her moves use her Centralfiction animations, read from your own copy. Without it, nothing is missing: the same moves use her Entropy Effect animations.

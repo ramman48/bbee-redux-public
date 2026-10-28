@@ -14,7 +14,7 @@ Platform.SystemTrayIcon {
     onMessageClicked: tray.win.showAgain()
     menu: Platform.Menu {
         Platform.MenuItem { text: qsTr("Open the Terminal"); onTriggered: tray.win.showAgain() }
-        Platform.MenuItem { text: qsTr("Get updates now"); enabled: controller.canUpdate && !controller.busy; onTriggered: { tray.win.showAgain(); controller.checkUpdates() } }
+        Platform.MenuItem { text: qsTr("Get updates now"); enabled: controller.canUpdate && !controller.busy; onTriggered: { controller.checkUpdates(); tray.win.showAgain() } }
         Platform.MenuItem {
             text: qsTr("Wait with updates while I play")
             checkable: true

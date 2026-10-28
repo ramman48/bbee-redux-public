@@ -18,6 +18,7 @@ layout(std140, binding = 0) uniform buf {
     float flash;
     float grain;
     float time;
+    float clear;        // 0..1 of the width from the left that keeps no colour split (the column of pages)
 };
 layout(binding = 1) uniform sampler2D src;
 layout(binding = 2) uniform sampler2D near;
@@ -47,6 +48,7 @@ void main() {
     vec2 c = (suv - 0.5);
     float edge = dot(c, c);
     float k = (0.0018 + split * 0.010) * edge * 4.0 + length(off) * 0.6;
+    if (clear > 0.0) k *= smoothstep(clear, clear + 0.02, suv.x);
     vec3 col;
     col.r = texture(src, suv + c * k).r;
     col.g = texture(src, suv).g;

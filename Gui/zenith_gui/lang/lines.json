@@ -2309,6 +2309,30 @@
    ]
   },
   {
+   "en": "SIDE BAR HOLO EFFECT",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "On: the words and signs in the column of pages on the left carry the window's holographic colour fringe. Off: they are drawn clean.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "DISABLE HOLO EFFECTS",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
+   "en": "On: no holographic colour fringe on any words or signs in the window, the side bar's included. Off: they carry it.",
+   "in": [
+    "OptionsPage.qml"
+   ]
+  },
+  {
    "en": "SOUND",
    "in": [
     "OptionsPage.qml"
