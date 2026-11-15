@@ -38,8 +38,11 @@ def build():
         ld(1, vi(1, 2) + ld(2, trial_record([MOD], [], 1))) +
         ld(1, vi(1, 3) + ld(2, trial_record([STOCK, MOD], [MOD, STOCK2], 3))))
     rush = packed(11, [STOCK, MOD])
+    skin = lambda f, a: ld(f, vi(1, a) + ld(2, packed(1, [2])))   # Profile skin maps: {1 character, 2 SkinList}
+    player = ld(1, b"playerid") + ld(3, ld(1, b"name") + vi(3, 7) + skin(5, STOCK) + skin(5, MOD) + skin(7, MOD) + skin(9, MOD))
     return (ld(1, b"save") + message("ModelPlayerNewRecord", new_record) + message("ModelPlayerNewBossRushRecord", rush_record)
-            + message("ModelBattleChallenge", challenge) + message("ModelBattleBossRush", rush) + message("ModelTask", vi(1, 7)))
+            + message("ModelBattleChallenge", challenge) + message("ModelBattleBossRush", rush) + message("ModelPlayer", player)
+            + message("ModelTask", vi(1, 7)))
 
 
 data = build()
@@ -49,7 +52,7 @@ check("nothing of the mod character is left", S.scan_custom(new) + S.pattern_hit
 msgs = dict(S.messages(new)); old = dict(S.messages(data))
 check("an untouched message is the same bytes", msgs["ModelTask"] == old["ModelTask"])
 check("every message is still there", list(msgs) == list(old))
-for label in ("Trial record", "Boss Rush record", "Trial clear", "Trial perfect clear", "Boss Rush character"):
+for label in ("Trial record", "Boss Rush record", "Trial clear", "Trial perfect clear", "Boss Rush character", "skin choice"):
     check("the report names: " + label, any(label + " (" in line for line in report))
 
 rec = [v for f, w, v, _ in S.fields(msgs["ModelPlayerNewRecord"]) if f == 1][0]
@@ -68,6 +71,13 @@ check("Trial 3 keeps the stock characters and its count", trials[3] == {1: [STOC
 check("the player id of the Trial message is untouched",
       [v for f, w, v, _ in S.fields(msgs["ModelBattleChallenge"]) if f == 1] == [b"playerid"])
 check("Boss Rush list keeps the stock character", S.unpacked([v for f, w, v, _ in S.fields(msgs["ModelBattleBossRush"]) if f == 11][0]) == [STOCK])
+
+prof = [v for f, w, v, _ in S.fields(msgs["ModelPlayer"]) if f == 3][0]
+check("skin choices: the stock character's stays, the mod character's go from all three maps",
+      [(f, S.key_of(v)) for f, w, v, _ in S.fields(prof) if f in (5, 7, 9)] == [(5, STOCK)])
+check("skin choices: the profile's other fields are untouched",
+      [raw for f, w, v, raw in S.fields(prof) if f not in (5, 7, 9)] == [ld(1, b"name"), vi(3, 7)])
+check("the player id of the ModelPlayer message is untouched", [v for f, w, v, _ in S.fields(msgs["ModelPlayer"]) if f == 1] == [b"playerid"])
 
 again, report2 = S.clean(new)
 check("a clean save is left byte for byte as it is", again == new and report2 == [])

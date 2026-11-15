@@ -85,7 +85,10 @@ def _mod_actor_ids():
     """actor ids that mods add (from mods/* /mod.json and shared/* /mod.json next to this tool), plus every one this project has shipped.
     NOT a numeric range: a save also holds stock numbers in 190000+ (enemy ids 35xxxx / 90xxxx in the kill records)."""
     import re, glob
-    ids = {190101, 200101, 200201, 200301, 200401, 200701, 200801}   # 200701: Ruby Rose (Cross Effect); 200801: Kris (DELTARUNE: Party)
+    ids = {190101, 200101, 200201, 200301, 200401, 200701, 200801,   # 200701: Ruby Rose (Cross Effect); 200801: Kris (DELTARUNE: Party)
+           191101, 193301, 200901, 201001, 201101,                # EX Hakumen, Susanoo, Arcueid, Swift Master, Reki
+           201201, 201301, 201401, 201501, 201601, 201701, 201801}  # the template and its six placeholders
+    # known here as well, so a save still cleans after the player deleted that mod's folder (2026-10-23)
     launcher_root = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
     for d in ("shared", "mods"):
         for p in glob.glob(os.path.join(launcher_root, d, "*", "mod.json")):
@@ -225,6 +228,26 @@ def scan_custom(b, depth=0):
     return n
 
 
+def where_custom(data):
+    """where mod-character ids sit in a DataSave, as "<model> .f.f.f (id)" paths (field numbers), for a refusal to name:
+    a report then shows the place the cleaner does not know yet without anyone sending their save (2026-11-07)"""
+    out = []
+    def walk(b, path, depth):
+        try: fs = fields(b)
+        except Exception: return False
+        found = False
+        for f, w, v, _ in fs:
+            if w == 0 and custom(v): out.append("%s .%s (%d)" % (path[0], ".".join(map(str, path[1:] + [f])), v)); found = True
+            elif w == 2 and v and depth < 12 and walk(v, path + [f], depth + 1): found = True
+        return found
+    for t, d in messages(data):
+        if d and (scan_custom(d) or pattern_hits(d)):
+            if not walk(d, [t], 0): out.append("%s (as bytes)" % t)
+    for f, w, v, _ in fields(data):
+        if f != 2 and w == 2 and v and scan_custom(v): out.append("DataSave .%d" % f)
+    return out
+
+
 def clean(data):
     """-> (new decompressed DataSave, report lines). Raises if a custom id would remain."""
     removed, notes = [], []
@@ -254,6 +277,9 @@ def clean(data):
             prune_packed(prune_packed(r, 1, removed, "Trial clear"), 3, removed, "Trial perfect clear"))))
     rush = msgs.get("ModelBattleBossRush")           # 11: packed list of characters
     if rush and pattern_hits(rush): new["ModelBattleBossRush"] = prune_packed(rush, 11, removed, "Boss Rush character")
+    pl = msgs.get("ModelPlayer")                     # 3 Profile: 5 / 7 / 9 skin last picked, map<character id, SkinList>
+    if pl and pattern_hits(pl):
+        new["ModelPlayer"] = edit(pl, 3, lambda prof: prune(prof, {5, 7, 9}, lambda e: custom(key_of(e) or 0), removed, "skin choice"))
     bd = msgs.get("ModelBreedDungeon")
     if bd and scan_custom(bd): new["ModelBreedDungeon"] = b""; notes.append("the run in progress used a mod character or Evotype: it was ended")
 
@@ -288,7 +314,8 @@ def clean(data):
             out += wv((5 << 3) | 2) + wv(len(sm)) + bytes(sm); continue
         out += raw
     left = scan_custom(bytes(out)) + pattern_hits(bytes(out))
-    if left: raise RuntimeError("%d mod-character references would remain; save NOT changed" % left)
+    if left: raise RuntimeError("%d mod-character references would remain, in %s; save NOT changed"
+                                % (left, ", ".join(where_custom(bytes(out))[:6]) or "a place not found"))
     rep = ["removed %s (id %s)" % (lab, k) for lab, f, k in removed] + notes
     return bytes(out), rep
 
@@ -366,11 +393,16 @@ def compress(data):
                               content_checksum=False, store_size=True)
 
 
-def clean_file(path):
-    """clean one save file in place (caller backs up first). Returns report lines, or [] if it had nothing to clean."""
+def clean_file(path, grim=False):
+    """clean one save file in place (caller backs up first). Returns report lines, or [] if it had nothing to clean.
+    grim=True also removes Grim of the Abyss's ids (the unmodded game wipes an Entropy loadout that holds one)."""
     data = load(path)
-    if not (scan_custom(data) or pattern_hits(data)): return []
-    newdata, rep = clean(data)
+    newdata, rep = data, []
+    if scan_custom(data) or pattern_hits(data): newdata, rep = clean(data)
+    if grim:
+        g, grep_ = clean_grim(newdata)
+        if grep_: newdata, rep = g, rep + grep_
+    if not rep: return []
     blob = compress(newdata)
     assert lz4.frame.decompress(blob) == newdata
     tmp = path + ".tmp"; open(tmp, "wb").write(blob); os.replace(tmp, path)

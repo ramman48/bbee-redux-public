@@ -26,7 +26,9 @@ def make_image(rec):
     if ROOT not in sys.path: sys.path.insert(0, ROOT)
     import UnityPy, bbmod, bbchar
     from PIL import Image
-    if rec.get("sprite"):
+    if rec.get("png"):
+        im = Image.open(os.path.join(ROOT, rec["png"])).convert("RGBA")
+    elif rec.get("sprite"):
         im = bbchar.stock_sprite_image(rec["sprite"])
     else:
         env = UnityPy.load(bbmod.slice_bundle(bbmod.find_entry(rec["texture"] + ".ab")))

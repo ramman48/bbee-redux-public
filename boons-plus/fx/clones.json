@@ -1,0 +1,4703 @@
+[
+ {
+  "from": "effect/common/texture/07_other/other_662_4c",
+  "to": "effect/common/texture/boonsplus/bp_icon_water",
+  "image": "textures/bp_icon_water.png"
+ },
+ {
+  "from": "effect/common/texture/20_water/water_602_4c",
+  "to": "effect/common/texture/boonsplus/water_602_4c__bpwb",
+  "recolor": {
+   "hue": 208,
+   "minSat": 0.12,
+   "satScale": 1,
+   "valScale": 1.45,
+   "textures": true
+  }
+ },
+ {
+  "from": "effect/common/texture/08_particles/particles_014_4c",
+  "to": "effect/common/texture/boonsplus/particles_014_4c__bpwb",
+  "recolor": {
+   "hue": 208,
+   "minSat": 0.12,
+   "satScale": 1,
+   "valScale": 1.45,
+   "textures": true
+  }
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_splash_skill",
+  "image": "textures/bp_splash_skill.png"
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_wave_sheet",
+  "image": "textures/bp_wave_sheet.png"
+ },
+ {
+  "from": "effect/common/texture/20_water/water_606_4c",
+  "to": "effect/common/texture/boonsplus/water_606_4c__bpwp",
+  "recolor": {
+   "hue": 205,
+   "minSat": 0.12,
+   "satScale": 1,
+   "valScale": 1.2,
+   "textures": true
+  }
+ },
+ {
+  "from": "effect/common/texture/10_ramp/ramp_005_4c",
+  "to": "effect/common/texture/boonsplus/ramp_005_4c__bpwp",
+  "recolor": {
+   "hue": 205,
+   "minSat": 0.12,
+   "satScale": 1,
+   "valScale": 1.2,
+   "textures": true
+  }
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_splash_crash2",
+  "image": "textures/bp_splash_crash2.png"
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_splash_undertow",
+  "image": "textures/bp_splash_undertow.png"
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_splash_spread",
+  "image": "textures/bp_splash_spread.png"
+ },
+ {
+  "from": "effect/common/texture/11_ring/ring_002_4c",
+  "to": "effect/common/texture/boonsplus/bp_rad_orbit",
+  "image": "textures/bp_rad_orbit.png"
+ },
+ {
+  "from": "effect/common/texture/07_other/other_663_4c",
+  "to": "effect/common/texture/boonsplus/bp_icon_radiation",
+  "image": "textures/bp_icon_radiation.png"
+ },
+ {
+  "from": "effect/common/texture/11_ring/ring_002_4c",
+  "to": "effect/common/texture/boonsplus/bp_rad_tick",
+  "image": "textures/bp_rad_tick.png"
+ },
+ {
+  "from": "effect/common/texture/11_ring/ring_002_4c",
+  "to": "effect/common/texture/boonsplus/bp_rad_trefoil",
+  "image": "textures/bp_rad_trefoil.png"
+ },
+ {
+  "from": "effect/common/texture/11_ring/ring_002_4c",
+  "to": "effect/common/texture/boonsplus/bp_rad_hex",
+  "image": "textures/bp_rad_hex.png"
+ },
+ {
+  "from": "effect/common/texture/10_ramp/ramp_005_4c",
+  "to": "effect/common/texture/boonsplus/ramp_005_4c__bprb",
+  "recolor": {
+   "hue": 84,
+   "minSat": 0.12,
+   "satScale": 1,
+   "valScale": 0.8,
+   "textures": true
+  }
+ },
+ {
+  "from": "effect/common/texture/10_ramp/ramp_307_4c",
+  "to": "effect/common/texture/boonsplus/ramp_307_4c__bprp",
+  "recolor": {
+   "hue": 84,
+   "minSat": 0.12,
+   "satScale": 0.8,
+   "valScale": 0.9,
+   "textures": true
+  }
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_splash_jet",
+  "image": "textures/bp_splash_jet.png"
+ },
+ {
+  "from": "effect/common/texture/20_water/water_619_4c",
+  "to": "effect/common/texture/boonsplus/bp_splash_whirl",
+  "image": "textures/bp_splash_whirl.png"
+ },
+ {
+  "from": "effect/common/material/14_air/air_603_a",
+  "to": "effect/common/material/boonsplus/air_603_a__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpw_drips",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.5,
+     1.4,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/05_nature/nature_601_a",
+  "to": "effect/common/material/boonsplus/nature_601_a__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_008_a",
+  "to": "effect/common/material/boonsplus/air_008_a__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/07_other/other_661_a",
+  "to": "effect/common/material/boonsplus/other_661_a__bpwicon",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.11854744,
+     2.11854744,
+     2.11854744,
+     1
+    ],
+    "_SubTexTintColor": [
+     3.50503159,
+     6.155249,
+     8.47419,
+     1
+    ],
+    "_AddColor": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/07_other/other_662_4c": "effect/common/texture/boonsplus/bp_icon_water"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_603_a",
+  "to": "effect/common/material/boonsplus/water_603_a__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2.99607849,
+     2.99607849,
+     2.99607849,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_c",
+  "to": "effect/common/material/boonsplus/ring_002_c__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2.261359,
+     2.29739666,
+     2.29739666,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_604_a",
+  "to": "effect/common/material/boonsplus/air_604_a__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2.99607849,
+     2.99607849,
+     2.99607849,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_005_e",
+  "to": "effect/common/material/boonsplus/water_005_e__bpwb",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     0,
+     0.167798713,
+     0.3146226,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     1.14450252,
+     1.60076785,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_014_b",
+  "to": "effect/common/material/boonsplus/particles_014_b__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/08_particles/particles_014_4c": "effect/common/texture/boonsplus/particles_014_4c__bpwb"
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_605_a",
+  "to": "effect/common/material/boonsplus/water_605_a__bpwf",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.85,
+     0.95,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     4.18589163,
+     4.678349,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     4.19451,
+     4.19451,
+     4.19451,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_602_a",
+  "to": "effect/common/material/boonsplus/water_602_a__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2.99607849,
+     2.99607849,
+     2.99607849,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_602_4c": "effect/common/texture/boonsplus/water_602_4c__bpwb"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpw_hitglow",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     2.2,
+     4.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpwf",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.85,
+     0.95,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     4.18589163,
+     4.678349,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     1.3101728,
+     1.37005758,
+     1.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_604_a",
+  "to": "effect/common/material/boonsplus/water_604_a__bpwf",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.85,
+     0.95,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     4.18589163,
+     4.678349,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     1.4,
+     1.4,
+     1.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpsskill",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_skill"
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpwf",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.85,
+     0.95,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     4.18589163,
+     4.678349,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2.96596646,
+     2.96596646,
+     2.96596646,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpwave",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_wave_sheet"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_f",
+  "to": "effect/common/material/boonsplus/glow_002_f__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_605_a",
+  "to": "effect/common/material/boonsplus/water_605_a__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_a2",
+  "to": "effect/common/material/boonsplus/particles_018_a2__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_624_a",
+  "to": "effect/common/material/boonsplus/water_624_a__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2.60823774,
+     2.60823774,
+     2.60823774,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_605_a",
+  "to": "effect/common/material/boonsplus/water_605_a__bpwp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5833335,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.87267137,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     4.49411774,
+     4.49411774,
+     4.49411774,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_605_c",
+  "to": "effect/common/material/boonsplus/water_605_c__bpwp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5833335,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.87267137,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     6,
+     6,
+     6,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_606_4c": "effect/common/texture/boonsplus/water_606_4c__bpwp"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_f",
+  "to": "effect/common/material/boonsplus/glow_002_f__bpwp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5833335,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.87267137,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     12,
+     12,
+     12,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_702_c",
+  "to": "effect/common/material/boonsplus/water_702_c__bpwu",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     2.607547,
+     3.53584886,
+     4,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.399999976,
+     0.7999999,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     1.96983111,
+     3.939662,
+     4.924578,
+     0
+    ],
+    "_SubTexTintColor": [
+     2.34324455,
+     2.95132113,
+     3.25535941,
+     1
+    ],
+    "_TintColor": [
+     1.3,
+     1.3,
+     1.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_702_a",
+  "to": "effect/common/material/boonsplus/water_702_a__bpwu",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     2.607547,
+     3.53584886,
+     4,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.399999976,
+     0.7999999,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     1.96983111,
+     3.939662,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     1.3,
+     1.3,
+     1.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpwp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5833335,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.87267137,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     3.17782116,
+     3.17782116,
+     3.17782116,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_607_a",
+  "to": "effect/common/material/boonsplus/glow_607_a__bpwp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5833335,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.87267137,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     3.17782116,
+     3.17782116,
+     3.17782116,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/10_ramp/ramp_005_4c": "effect/common/texture/boonsplus/ramp_005_4c__bpwp"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpwp_bubbles",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.7,
+     1.9,
+     4.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_624_a",
+  "to": "effect/common/material/boonsplus/water_624_a__bpwd",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.149999976,
+     0.6599999,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.7386866,
+     3.25022125,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_f",
+  "to": "effect/common/material/boonsplus/glow_002_f__bpwd",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.149999976,
+     0.6599999,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0.7386866,
+     3.25022125,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_618_a",
+  "to": "effect/common/material/boonsplus/water_618_a__bpwp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5833335,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.87267137,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpscrash2",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_crash2"
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpsundertow",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_undertow"
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpsspread",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_spread"
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_032_a",
+  "to": "effect/common/material/boonsplus/sharp_032_a__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_607_c",
+  "to": "effect/common/material/boonsplus/water_607_c__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_001_c",
+  "to": "effect/common/material/boonsplus/water_001_c__bpw",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electron1",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.28000009,
+     3.36,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_008_a",
+  "to": "effect/common/material/boonsplus/air_008_a__bpr",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.6,
+     1,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.954747,
+     4.924578,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_603_a",
+  "to": "effect/common/material/boonsplus/air_603_a__bpr",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.6,
+     1,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.954747,
+     4.924578,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbit1",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.256,
+     0.84,
+     0.064,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_motes",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     3.6,
+     0.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/05_nature/nature_601_a",
+  "to": "effect/common/material/boonsplus/nature_601_a__bpr",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.6,
+     1,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.954747,
+     4.924578,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbit2",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.32,
+     1.05,
+     0.08,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_motes_b",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     4.2,
+     0.35,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electron2",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     4.2,
+     0.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electron3",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     5.25,
+     0.625,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_motes_c",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     5,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbit3",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.399999976,
+     1.3125,
+     0.099999994,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.6,
+     1,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.954747,
+     4.924578,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/07_other/other_663_a",
+  "to": "effect/common/material/boonsplus/other_663_a__bpricon",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.11854744,
+     2.11854744,
+     2.11854744,
+     1
+    ],
+    "_SubTexTintColor": [
+     6.48652649,
+     8.47419,
+     3.50503159,
+     1
+    ],
+    "_AddColor": [
+     0,
+     0,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/07_other/other_663_4c": "effect/common/texture/boonsplus/bp_icon_radiation"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_dialfloor",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.7,
+     1.9,
+     0.15,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_trefoil"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_tickfloor",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.8,
+     2.2,
+     0.18,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_tick"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_007_b",
+  "to": "effect/common/material/boonsplus/glow_007_b__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     1.69999981,
+     1.69999981,
+     1.69999981,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_023_a1",
+  "to": "effect/common/material/boonsplus/turbulence_023_a1__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_SubTexTintColor": [
+     2.07792163,
+     2.532885,
+     1.39547622,
+     1
+    ],
+    "_TintColor": [
+     2.06853628,
+     2.06853628,
+     2.06853628,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_609_a",
+  "to": "effect/common/material/boonsplus/glow_609_a__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     0.85,
+     0.85,
+     0.85,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_hexhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     2.5,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_hex"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     0.9610776,
+     0.9763936,
+     0.9763936,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_track",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.1,
+     2.8,
+     0.38,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_712_c",
+  "to": "effect/common/material/boonsplus/mask_712_c__bprp",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     0.336000025,
+     0.465882361,
+     0.141176477,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_InnerFlameColor": [
+     1.91021764,
+     2.59593678,
+     0.881638765,
+     1
+    ],
+    "_OutterFlameColor": [
+     0.10178823,
+     0.144705877,
+     0.03741176,
+     0.65882355
+    ],
+    "_RemapColor": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_SubTex2TintColor": [
+     0.33501175,
+     0.441176474,
+     0.17576468,
+     1
+    ],
+    "_TintColor": [
+     0.9003827,
+     0.9003827,
+     0.9003827,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bprh",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.684,
+     0.95,
+     0.285,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.36841154,
+     4.678349,
+     1.40350473,
+     0
+    ],
+    "_TintColor": [
+     2.6964705,
+     2.6964705,
+     2.6964705,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_307_b",
+  "to": "effect/common/material/boonsplus/particles_307_b__bpr_glint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.3,
+     2.5,
+     0.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/17_trail/trail_601_b",
+  "to": "effect/common/material/boonsplus/trail_601_b__bpr",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.6,
+     1,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.954747,
+     4.924578,
+     0,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_023_a4",
+  "to": "effect/common/material/boonsplus/turbulence_023_a4__bprp",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     2.56259656,
+     3.59999943,
+     1.0064919,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_InnerFlameColor": [
+     1.58766448,
+     2.040403,
+     0.9085567,
+     1
+    ],
+    "_OutterFlameColor": [
+     1.6565696,
+     2.25123549,
+     0.7645705,
+     1
+    ],
+    "_TintColor": [
+     2.06853628,
+     2.06853628,
+     2.06853628,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_004_a",
+  "to": "effect/common/material/boonsplus/glow_004_a__bpr_decaystar",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.2,
+     2.6,
+     0.45,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_hex",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.85,
+     2.3,
+     0.19,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_hex"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_hexdim",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.3,
+     1,
+     0.07,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_hex"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     1.8007654,
+     1.8007654,
+     1.8007654,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_h",
+  "to": "effect/common/material/boonsplus/particles_004_h__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     10.1866674,
+     10.1866674,
+     10.1866674,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.58891058,
+     1.58891058,
+     1.58891058,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_609_a",
+  "to": "effect/common/material/boonsplus/glow_609_a__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     0.75,
+     0.75,
+     0.75,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_604_a",
+  "to": "effect/common/material/boonsplus/lightning_604_a__bpr_crackle",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     4.4,
+     0.55,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_void",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0,
+     0.012,
+     0,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_007_b",
+  "to": "effect/common/material/boonsplus/glow_007_b__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.49999976,
+     1.49999976,
+     1.49999976,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_tick",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.85,
+     2.3,
+     0.19,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_tick"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_dial",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.85,
+     2.3,
+     0.19,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_trefoil"
+  }
+ },
+ {
+  "from": "effect/common/material/01_fire/fire_005_b",
+  "to": "effect/common/material/boonsplus/fire_005_b__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     6,
+     6,
+     6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_rim",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.85,
+     2.3,
+     0.19,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     0.8480096,
+     0.861523747,
+     0.861523747,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_dialhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     2.5,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_trefoil"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_607_a",
+  "to": "effect/common/material/boonsplus/glow_607_a__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.58891058,
+     1.58891058,
+     1.58891058,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/10_ramp/ramp_005_4c": "effect/common/texture/boonsplus/ramp_005_4c__bprb"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_floor",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.45,
+     1.5,
+     0.1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     2.24705887,
+     2.24705887,
+     2.24705887,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_317_d",
+  "to": "effect/common/material/boonsplus/sharp_317_d__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_RemapColor": [
+     0.612,
+     0.9,
+     0.179999977,
+     1
+    ],
+    "_TintColor": [
+     1.8007654,
+     1.8007654,
+     1.8007654,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/10_ramp/ramp_307_4c": "effect/common/texture/boonsplus/ramp_307_4c__bprp"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_h",
+  "to": "effect/common/material/boonsplus/particles_004_h__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     8.988235,
+     8.988235,
+     8.988235,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_712_c",
+  "to": "effect/common/material/boonsplus/mask_712_c__bprb",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     0.269803941,
+     0.414117664,
+     0.0533333346,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_InnerFlameColor": [
+     1.54558933,
+     2.30749941,
+     0.402723938,
+     1
+    ],
+    "_OutterFlameColor": [
+     0.0809411854,
+     0.128627464,
+     0.009411764,
+     0.65882355
+    ],
+    "_RemapColor": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_SubTex2TintColor": [
+     0.2741961,
+     0.392156869,
+     0.09725489,
+     1
+    ],
+    "_TintColor": [
+     0.7944553,
+     0.7944553,
+     0.7944553,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_arcbolt",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     4.2,
+     0.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_arcline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.2,
+     3,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_arcbolthot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.9,
+     1.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpsjet",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_jet"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_wline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.2,
+     0.75,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_wsheen",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     2.3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_wdrop",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     2.4,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_624_a",
+  "to": "effect/common/material/boonsplus/water_624_a__bpwf",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.85,
+     0.95,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     4.18589163,
+     4.678349,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     1.82576644,
+     1.82576644,
+     1.82576644,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_023_a1",
+  "to": "effect/common/material/boonsplus/turbulence_023_a1__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_SubTexTintColor": [
+     1.2345823,
+     2.07710719,
+     2.81431675,
+     1
+    ],
+    "_TintColor": [
+     4.867144,
+     4.867144,
+     4.867144,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_605_a",
+  "to": "effect/common/material/boonsplus/water_605_a__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     5.992157,
+     5.992157,
+     5.992157,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_025_c",
+  "to": "effect/common/material/boonsplus/air_025_c__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_004_b",
+  "to": "effect/common/material/boonsplus/sharp_004_b__bpwb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.5333333,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.62644148,
+     4.924578,
+     0
+    ],
+    "_TintColor": [
+     11.984314,
+     11.984314,
+     11.984314,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpswhirl",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2,
+     2,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_whirl"
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_716_c",
+  "to": "effect/common/material/boonsplus/sharp_716_c__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     1.99807429,
+     1.99807429,
+     1.99807429,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_rayhalo",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.5,
+     1.6,
+     0.12,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_006_a",
+  "to": "effect/common/material/boonsplus/particles_006_a__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     3.24141216,
+     3.595294,
+     2.71058846,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_610_a",
+  "to": "effect/common/material/boonsplus/lightning_610_a__bprb",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     0.5376148,
+     0.6490566,
+     0.3704521,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.08464277,
+     1.08464277,
+     1.08464277,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_732b_a",
+  "to": "effect/common/material/boonsplus/sharp_732b_a__bprb",
+  "props": {
+   "colors": {
+    "_AddColor": [
+     0.129882365,
+     0.2101961,
+     0.00941177,
+     0
+    ],
+    "_DissolveColor": [
+     0.1503311,
+     0.2037736,
+     0.07016733,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.1758348,
+     0.2716981,
+     0.0320398659,
+     0
+    ],
+    "_ExplodeColorLow": [
+     1.40444875,
+     2.09678245,
+     0.3659479,
+     0
+    ],
+    "_TintColor": [
+     0.386723578,
+     0.644539237,
+     0,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_732_b",
+  "to": "effect/common/material/boonsplus/sharp_732_b__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     1.27131116,
+     1.83595335,
+     0.424347758,
+     0
+    ],
+    "_TintColor": [
+     1.121864,
+     1.62013054,
+     0.374464244,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_733_a",
+  "to": "effect/common/material/boonsplus/sharp_733_a__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     2.54666686,
+     2.54666686,
+     2.54666686,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_rayline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.3,
+     3.2,
+     0.45,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_011_g",
+  "to": "effect/common/material/boonsplus/turbulence_011_g__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     4.49411774,
+     4.49411774,
+     4.49411774,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_063_c18b3",
+  "to": "effect/common/material/boonsplus/particles_063_c18b3__bprb",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     7.26368046,
+     12.1061335,
+     0,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.5,
+     1.5,
+     1.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_307_a",
+  "to": "effect/common/material/boonsplus/particles_307_a__bprb",
+  "props": {
+   "colors": {
+    "_AddColor": [
+     0.4437736,
+     0.739622653,
+     0,
+     0
+    ],
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.58891058,
+     1.58891058,
+     1.58891058,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_201_c",
+  "to": "effect/common/material/boonsplus/mask_201_c__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     0.389150918,
+     0.389150918,
+     0.389150918,
+     0.431372553
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_063_c2b",
+  "to": "effect/common/material/boonsplus/particles_063_c2b__bprb",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     7.852396,
+     11.5192595,
+     2.3521,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     0.854622364,
+     0.854622364,
+     0.854622364,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_063_c14",
+  "to": "effect/common/material/boonsplus/particles_063_c14__bprb",
+  "props": {
+   "colors": {
+    "_DissolveColor": [
+     7.54675341,
+     11.33082,
+     1.870654,
+     1
+    ],
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     0.822969556,
+     0.822969556,
+     0.822969556,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/04_mask/mask_026_z1",
+  "to": "effect/common/material/boonsplus/mask_026_z1__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     0.75,
+     0.75,
+     0.75,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_c",
+  "to": "effect/common/material/boonsplus/glow_002_c__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     8.988235,
+     8.988235,
+     8.988235,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_716_c",
+  "to": "effect/common/material/boonsplus/sharp_716_c__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.76300669,
+     1.76300669,
+     1.76300669,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_732_a",
+  "to": "effect/common/material/boonsplus/streak_732_a__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     2.54666686,
+     2.54666686,
+     2.54666686,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_raycore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.8,
+     1.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_732_a",
+  "to": "effect/common/material/boonsplus/streak_732_a__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     2.24705887,
+     2.24705887,
+     2.24705887,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_sweepline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2.8,
+     1.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbitcore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.3,
+     1,
+     0.08,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_coreheart",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     3.4,
+     0.7,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electroncore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     4.2,
+     0.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_trailedge",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.85,
+     2.3,
+     0.19,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_f",
+  "to": "effect/common/material/boonsplus/glow_002_f__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     6.8,
+     6.8,
+     6.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_trailglow",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.45,
+     1.5,
+     0.1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_trailmote",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     3.6,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_hexfloor",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.75,
+     2.1,
+     0.17,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_hex"
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_046_c",
+  "to": "effect/common/material/boonsplus/sharp_046_c__bprp",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.612,
+     0.9,
+     0.179999977,
+     0
+    ],
+    "_ExplodeColorLow": [
+     3.01384187,
+     4.43212032,
+     0.886423945,
+     0
+    ],
+    "_TintColor": [
+     0.85,
+     0.85,
+     0.85,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_wispheart",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.7,
+     3.4,
+     0.9,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_wisptail",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     3.6,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electronwisp",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     4.6,
+     0.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbitwisp",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.4,
+     1.3,
+     0.1,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_wfleck",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.5,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_wtrack",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.3,
+     2.3,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_elecline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.7,
+     1.6,
+     3.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_elecbolt",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     1.9,
+     4.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_wtrack",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.3,
+     2.3,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_elecbolthot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     3,
+     4.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_ember",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4,
+     1.6,
+     0.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_004_a",
+  "to": "effect/common/material/boonsplus/glow_004_a__bpr_icestar",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.3,
+     2.8,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_iceflash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     2.5,
+     3.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_frosthot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.3,
+     2.8,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/17_trail/trail_601_b",
+  "to": "effect/common/material/boonsplus/trail_601_b__bpe",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     0.4666667,
+     1,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     2.29813671,
+     4.924578,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_307_b",
+  "to": "effect/common/material/boonsplus/particles_307_b__bpr_iceglint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     2.4,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_frostring",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     2,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_icetrack",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     2.7,
+     3.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_steamringhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.2,
+     2.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/14_air/air_008_d",
+  "to": "effect/common/material/boonsplus/air_008_d__bpr_steam",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.05,
+     1.08,
+     1.12,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_steamwisp",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.7,
+     1.72,
+     1.78,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_steamheat",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.2,
+     1.3,
+     0.35,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_steamring",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     1.6,
+     1.7,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_steamjet",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2,
+     2.05,
+     2.1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_taintmote",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     0.7,
+     3.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_taint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     0.3,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_619_a",
+  "to": "effect/common/material/boonsplus/water_619_a__bpswhirltaint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3,
+     0.55,
+     2.6,
+     1
+    ]
+   },
+   "floats": {
+    "_TintActorAmbient": 0
+   }
+  },
+  "remapDeps": {
+   "effect/common/texture/20_water/water_619_4c": "effect/common/texture/boonsplus/bp_splash_whirl"
+  }
+ },
+ {
+  "from": "effect/common/material/20_water/water_618_a",
+  "to": "effect/common/material/boonsplus/water_618_a__bpr_taintbubble",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     0.8,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_tealring",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.45,
+     2.6,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_tealrimhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     3.3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_abyssring2",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.5,
+     1.4,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_307_b",
+  "to": "effect/common/material/boonsplus/particles_307_b__bpr_tealglint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.8,
+     2.6,
+     2.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_abyssring",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.7,
+     2.3,
+     2.9,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_abyssrimdim",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.2,
+     1.2,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/17_trail/trail_601_b",
+  "to": "effect/common/material/boonsplus/trail_601_b__bpu",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0,
+     1,
+     0.8666668,
+     0
+    ],
+    "_ExplodeColorLow": [
+     0,
+     4.924578,
+     4.267968,
+     0
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_wspray",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.2,
+     2.5,
+     2.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismvioleth",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.420000017,
+     0.315,
+     1.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_prismwarms",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.0400002,
+     1.9000001,
+     1.24,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_prismgreens",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.36,
+     2.92,
+     1.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismflare",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismgreen",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.6,
+     3.2,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismwarmh",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.19,
+     0.525,
+     0.14,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismwarm",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     3.4,
+     1.5,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_prismviolets",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.72,
+     1.54,
+     3.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismcore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     2.6,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismviolet",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.2,
+     0.9,
+     4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_prismgreenh",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.210000008,
+     1.12,
+     0.35,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_rendtrack",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4.2,
+     0.9,
+     0.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_634_a",
+  "to": "effect/common/material/boonsplus/streak_634_a__bpr_rendslash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4,
+     0.5,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_634_a",
+  "to": "effect/common/material/boonsplus/streak_634_a__bpr_rendhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     4.6,
+     2.8,
+     2.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_tritvein",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     2.9,
+     0.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_mutring",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.7,
+     0.5,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/13_sharp/sharp_032_b",
+  "to": "effect/common/material/boonsplus/sharp_032_b__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_TintColor": [
+     1.383227,
+     1.383227,
+     1.383227,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_ionbolt",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     4.2,
+     1.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbithot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     2.5,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/18_turbulence/turbulence_023_a1",
+  "to": "effect/common/material/boonsplus/turbulence_023_a1__bprb",
+  "props": {
+   "colors": {
+    "_ExplodeColorHigh": [
+     0.480000019,
+     0.8,
+     0,
+     0
+    ],
+    "_ExplodeColorLow": [
+     2.36379766,
+     3.93966269,
+     0,
+     0
+    ],
+    "_SubTexTintColor": [
+     1.74593842,
+     2.2514534,
+     0.987665832,
+     1
+    ],
+    "_TintColor": [
+     1.8251791,
+     1.8251791,
+     1.8251791,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_ionline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     3.2,
+     1.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_ionbolthot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     3,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_hexice",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.8,
+     1.8,
+     3.2,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_hex"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_coldmote",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     2.2,
+     3.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_hexicedim",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.35,
+     0.8,
+     1.5,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_hex"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_frostfloor",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.5,
+     1.1,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_705_a",
+  "to": "effect/common/material/boonsplus/lightning_705_a__bpr_tealbolt",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.45,
+     2.6,
+     2.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_tealline",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.2,
+     1.2,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_tealcore",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     3.3,
+     3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_trackmote",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.1,
+     2.8,
+     0.38,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_tealtrack",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.7,
+     3,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_cherenkov",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.25,
+     0.8,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_bluemote",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     2,
+     4.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_tickblue",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.4,
+     1.3,
+     3.6,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_tick"
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_cherenkovrim2",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.3,
+     0.9,
+     2.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_cherenkovrim",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     1.9,
+     4.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_307_b",
+  "to": "effect/common/material/boonsplus/particles_307_b__bpr_blueglint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.2,
+     2.2,
+     4.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_634_a",
+  "to": "effect/common/material/boonsplus/streak_634_a__bpr_isoslashhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.6,
+     3.2,
+     1.8,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/15_streak/streak_634_a",
+  "to": "effect/common/material/boonsplus/streak_634_a__bpr_isoslash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.5,
+     4,
+     0.5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbitgain",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.85,
+     2.3,
+     0.19,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_tealmote",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.8,
+     2.6,
+     2.3,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_tealglow",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.2,
+     1.3,
+     1.1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electroncharge",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     2.6,
+     5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_307_b",
+  "to": "effect/common/material/boonsplus/particles_307_b__bpr_elecglint",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     2.4,
+     4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_chargering",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     1.9,
+     4.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/03_lightning/lightning_604_a",
+  "to": "effect/common/material/boonsplus/lightning_604_a__bpr_eleccrackle",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.4,
+     2.6,
+     5,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_elecringhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     3,
+     4.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_018_m",
+  "to": "effect/common/material/boonsplus/particles_018_m__bpr_electrack",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     3,
+     4.2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_elecring",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.9,
+     1.9,
+     4.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_elecflash",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.6,
+     2.3,
+     3.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_wispheadhot",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     2.4,
+     2.9,
+     2,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_wisphead",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.9,
+     3.6,
+     1,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/02_glow/glow_002_n",
+  "to": "effect/common/material/boonsplus/glow_002_n__bpr_wispstreak",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.2,
+     3,
+     0.4,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/08_particles/particles_004_a",
+  "to": "effect/common/material/boonsplus/particles_004_a__bpr_electronwisporbit",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     1.8,
+     4.6,
+     0.6,
+     1
+    ]
+   },
+   "floats": {}
+  }
+ },
+ {
+  "from": "effect/common/material/11_ring/ring_002_a",
+  "to": "effect/common/material/boonsplus/ring_002_a__bpr_orbitwisporbit",
+  "props": {
+   "colors": {
+    "_TintColor": [
+     0.3,
+     1,
+     0.08,
+     1
+    ]
+   },
+   "floats": {}
+  },
+  "remapDeps": {
+   "effect/common/texture/11_ring/ring_002_4c": "effect/common/texture/boonsplus/bp_rad_orbit"
+  }
+ }
+]

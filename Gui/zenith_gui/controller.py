@@ -31,7 +31,7 @@ from PySide6.QtGui import QDesktopServices, QGuiApplication, QImage
 
 from . import extras, fetch, logs, modlist
 
-VERSION = "0.5.5"
+VERSION = "0.5.8"
 HERE = os.path.dirname(os.path.abspath(__file__))
 APPID = "2273430"
 EXE = "BlazblueEntropyEffect.exe"
@@ -47,6 +47,7 @@ SETTINGS = {"motion": ("full", "calm"), "startPage": ("home", "library"), "showC
             "firstInstall": (True, False),         # a first open with mods switched on installs them at once
             "railHolo": ("on", "off"),             # the holographic colour fringe on the column of pages
             "noHolo": ("off", "on"),               # on: no holographic colour fringe anywhere in the window
+            "downloads": (16, 32, 64),          # files the updater fetches at once (Updater/channel.txt 'download-workers:')
             "language": ("en", "zh-Hans", "zh-Hant", "ja", "ko", "fr", "de", "es", "ru", "pt-BR")}
 LANGUAGES = [("en", "English"), ("zh-Hans", "简体中文"), ("zh-Hant", "繁體中文"), ("ja", "日本語"), ("ko", "한국어"),
              ("fr", "Français"), ("de", "Deutsch"), ("es", "Español"), ("ru", "Русский"), ("pt-BR", "Português (Brasil)")]
@@ -663,7 +664,21 @@ class Controller(QObject):
         self._settings[key] = value
         self._save_settings()
         if key == "checkEvery": self._set_check_timer()
+        if key == "downloads": self._write_download_workers(value)
         self.settingsChanged.emit()
+
+    def _write_download_workers(self, count):
+        """the updater reads its own channel.txt, also when it runs before this window opens: the choice is one line there"""
+        path = self._terminal("Updater", "channel.txt")
+        if self.demo or not os.path.isdir(os.path.dirname(path)): return
+        try:
+            lines = []
+            if os.path.isfile(path):
+                with open(path, encoding="utf-8") as f: lines = f.read().splitlines()
+            lines = [l for l in lines if not l.strip().lower().startswith("download-workers:")] + ["download-workers: %d" % int(count)]
+            with open(path, "w", encoding="utf-8", newline="") as f: f.write("\n".join(lines) + "\n")
+        except OSError:
+            pass    # a folder that cannot be written: the updater keeps its own number
 
     @Property(bool, constant=True)
     def settingsAvailable(self):
@@ -2273,16 +2288,25 @@ class Controller(QObject):
     def stats(self): return dict(self._stats)
 
     # ---- mod presets (addition) --------------------------------------------------------------------------------
+    def _channel_presets(self):
+        """presets the dev channel ships in redux.json ("presets": {name: {"enabled": [...], "note": ...}}): listed with
+        the player's own, switched on the same way, never deleted (the next update brings them back)."""
+        redux = _read_json(self._redux_file, {}) if os.path.isfile(self._redux_file) else {}
+        found = redux.get("presets") if isinstance(redux, dict) else None
+        return {n: dict(p, builtin=True) for n, p in (found or {}).items() if isinstance(p, dict)}
+
     def _presets(self):
         found = _read_json(self._data("presets.json"), {}) if self.data_dir else {}
-        return found if isinstance(found, dict) else {}
+        own = found if isinstance(found, dict) else {}
+        return dict(self._channel_presets(), **own)
 
     @Property("QVariantList", notify=changed)
     def presets(self):
         titles = {m["id"]: m["title"] for m in self._mods}
-        return [{"name": name, "count": len(p.get("enabled") or []),
-                 "titles": [titles.get(i, i) for i in p.get("enabled") or []][:6]}
-                for name, p in sorted(self._presets().items()) if isinstance(p, dict)]
+        return [{"name": name, "count": len(p.get("enabled") or []), "builtin": bool(p.get("builtin")),
+                 "note": str(p.get("note") or ""), "titles": [titles.get(i, i) for i in p.get("enabled") or []][:6]}
+                for name, p in sorted(self._presets().items(), key=lambda kv: (not kv[1].get("builtin"), kv[0]))
+                if isinstance(p, dict)]
 
     @Slot(str, result=str)
     def savePreset(self, name):
@@ -2291,7 +2315,9 @@ class Controller(QObject):
         on = [m["id"] for m in self._wanted()]
         if not on: return "Switch a mod on first: a preset holds the mods that are switched on."
         if self.demo: return "Preview: nothing is saved."
-        presets = self._presets()
+        if name in self._channel_presets(): return "%s is the update's own preset: give yours another name." % name
+        presets = _read_json(self._data("presets.json"), {}) if self.data_dir else {}
+        presets = presets if isinstance(presets, dict) else {}
         presets[name] = {"enabled": on, "settings": {i: v for i, v in self._chosen().items() if i in on}}
         try: extras.write_json(self._data("presets.json"), presets)
         except OSError as error: return "The preset could not be saved (%s)." % (error.strerror or error)
@@ -2317,8 +2343,9 @@ class Controller(QObject):
 
     @Slot(str)
     def deletePreset(self, name):
-        presets = self._presets()
-        if name in presets and not self.demo:
+        presets = _read_json(self._data("presets.json"), {}) if self.data_dir else {}
+        presets = presets if isinstance(presets, dict) else {}
+        if name in presets and not self.demo:   # (the channel's presets are not in this file: they cannot be deleted)
             presets.pop(name)
             try: extras.write_json(self._data("presets.json"), presets)
             except OSError: pass
@@ -2622,6 +2649,10 @@ class Controller(QObject):
     @Property("QVariantMap", constant=True)
     def roadmap(self):
         data = _read_json(os.path.join(HERE, "roadmap.json"), {})
+        if isinstance(data, dict) and data.get("sheets"):       # since 2026-11-14: the trailer's roadmap sheets, in layers
+            sheets = [dict(s, **{k: QUrl.fromLocalFile(os.path.join(HERE, str(s.get(k) or ""))).toString() for k in ("bg", "fg", "fr")})
+                      for s in data["sheets"] if isinstance(s, dict) and all(os.path.isfile(os.path.join(HERE, str(s.get(k) or ""))) for k in ("bg", "fg", "fr"))]
+            return dict(data, sheets=sheets, columns=[])
         if not (isinstance(data, dict) and data.get("columns")): return {}
         columns = [dict(c, items=[self._staged(i, "road:%d:%d" % (n, m)) for m, i in enumerate(c.get("items") or []) if isinstance(i, dict)])
                    for n, c in enumerate(data["columns"]) if isinstance(c, dict)]

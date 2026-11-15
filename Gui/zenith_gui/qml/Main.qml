@@ -37,7 +37,7 @@ ApplicationWindow {
         if (win.trayShown && !win.quitting) {
             close.accepted = false
             win.hide()
-            if (!win.toldTray) { win.trayMessage(qsTr("The Zenith Terminal"), qsTr("Still here beside the clock. It says when an update is ready.")); win.toldTray = true }
+            if (!win.toldTray) { win.trayMessage(qsTr("The Zenith Terminal"), qsTr("The Terminal is still running beside the clock. It says when an update is ready.")); win.toldTray = true }
         }
         else if (!shell.capture) Qt.callLater(Qt.quit)      // the app stays open while the tray holds it; else closing ends it
     }
@@ -254,7 +254,7 @@ ApplicationWindow {
         across: win.lw
         readonly property bool home: win.page === "home"
         readonly property bool road: win.page === "roadmap"     // the roadmap's list reaches a little further right
-        property real on: win.page === "home" || win.page === "library" || win.page === "roadmap" ? 1 : 0
+        property real on: win.page === "home" || win.page === "library" ? 1 : 0      // the Roadmap page fills the window with its sheet
         Behavior on on { NumberAnimation { duration: 260; easing.type: Easing.OutCubic } }
         arts: win.shown ? win.shown.arts : []
         tone: aura.tone

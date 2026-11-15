@@ -1,0 +1,36 @@
+{
+ "note": "The 14 clips the hero cinematics (Evotype, appear, co-op) play by name on a Spine hero's rig, copied from Reki's own animations. ICEY's and the Prisoner's rigs ship them; the leiji rig does not. Byte ranges read with research/characters/reki/skel_offsets.mjs; the importer refuses a rig whose sha1 differs (a game update) until they are read again.",
+ "bundle": "actor/spine/leiji_caogao/leiji_caogao.skel.ab",
+ "asset": "leiji_caogao.skel",
+ "size": 15199442,
+ "sha1": "1204f20786a1ae4688d7853b93127a5e2fc3c057",
+ "count_at": 193666,
+ "count": 134,
+ "sources": {
+  "zuizhong/stand_1": [13738402, 13763801],
+  "zuizhong/stand_2": [13763801, 13844794],
+  "zuizhong/born": [11884155, 12021226],
+  "zuizhong/standup": [13672739, 13711002],
+  "zuizhong/dash_front_start": [13197878, 13274417],
+  "zuizhong/dash_back_drop": [12234957, 12252895],
+  "zuizhong/dash_backattack_drop": [12189162, 12206740],
+  "zuizhong/dash_backattack_dropend": [12206740, 12234957],
+  "zuizhong/defence": [13320523, 13340521]
+ },
+ "add": {
+  "stand_inherit": "zuizhong/stand_1",
+  "standby_inherit": "zuizhong/stand_2",
+  "Stand_timeline": "zuizhong/stand_1",
+  "Stand2_timeline": "zuizhong/stand_2",
+  "squat_loop_inherit": "zuizhong/dash_backattack_dropend",
+  "drop_inherit": "zuizhong/dash_backattack_drop",
+  "Dash_timeline": "zuizhong/dash_front_start",
+  "burst_x_inherit": "zuizhong/defence",
+  "Born_timeline": "zuizhong/born",
+  "Born2_timeline": "zuizhong/born",
+  "knockdown_stand_inherit": "zuizhong/standup",
+  "UPjump_1": "zuizhong/dash_back_drop",
+  "UPjump_2": "zuizhong/dash_backattack_drop",
+  "UPjump_3": "zuizhong/dash_backattack_drop"
+ }
+}

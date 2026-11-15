@@ -1,0 +1,232 @@
+{
+ "source": "mods/ex-hakumen 0.5.11",
+ "images": [
+  {
+   "file": "Potential_1190.png",
+   "texture": "ui/texture/iconpotential/potential_1190",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1192.png",
+   "texture": "ui/texture/iconpotential/potential_1192",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1249.png",
+   "texture": "ui/texture/iconpotential/potential_1249",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1263.png",
+   "texture": "ui/texture/iconpotential/potential_1263",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_1284.png",
+   "texture": "ui/texture/iconpotential/potential_1284",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_5707.png",
+   "texture": "ui/texture/iconpotential/potential_5707",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_5918.png",
+   "texture": "ui/texture/iconpotential/potential_5918",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_19203.png",
+   "png": "mods/char-susanoo/donor/art/icons/p19203.png",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_19210.png",
+   "png": "mods/char-susanoo/donor/art/icons/p19210.png",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_19213.png",
+   "png": "mods/char-susanoo/donor/art/icons/p19213.png",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_19218.png",
+   "png": "mods/char-susanoo/donor/art/icons/p19218.png",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "Potential_19219.png",
+   "png": "mods/char-susanoo/donor/art/icons/p19219.png",
+   "resize": [
+    120,
+    120
+   ]
+  },
+  {
+   "file": "IconSusanoo.png",
+   "texture": "ui/texture/iconboss/iconboss_5033",
+   "opaqueSquare": 256
+  }
+ ],
+ "clones": [
+  {
+   "from": "ui/atlas/iconpotential103801/iconpotential103801",
+   "to": "ui/atlas/iconpotential191101/iconpotential191101",
+   "rename": [
+    [
+     "IconPotential103801",
+     "IconPotential191101"
+    ]
+   ],
+   "atlasSprites": [
+    [
+     "Potential_5000",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_5000"
+    ],
+    [
+     "Potential_6001",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6001"
+    ],
+    [
+     "Potential_6002",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6002"
+    ],
+    [
+     "Potential_6003",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6003"
+    ],
+    [
+     "Potential_6006",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6006"
+    ],
+    [
+     "Potential_6007",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6007"
+    ],
+    [
+     "Potential_6010",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6010"
+    ],
+    [
+     "Potential_6016",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6016"
+    ],
+    [
+     "Potential_6018",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6018"
+    ],
+    [
+     "Potential_6020",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6020"
+    ],
+    [
+     "Potential_6023",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6023"
+    ],
+    [
+     "Potential_6028",
+     "sprite:ui/atlas/iconpotential101101/iconpotential101101#Potential_6028"
+    ],
+    [
+     "IconSkill_1933011",
+     "sprite:ui/atlas/iconskill/iconskill#IconSkill_1011011"
+    ],
+    [
+     "IconSkill_1933012",
+     "sprite:ui/atlas/iconskill/iconskill#IconSkill_1011012"
+    ],
+    [
+     "Potential_1190",
+     "Potential_1190.png"
+    ],
+    [
+     "Potential_1192",
+     "Potential_1192.png"
+    ],
+    [
+     "Potential_1249",
+     "Potential_1249.png"
+    ],
+    [
+     "Potential_1263",
+     "Potential_1263.png"
+    ],
+    [
+     "Potential_1284",
+     "Potential_1284.png"
+    ],
+    [
+     "Potential_5707",
+     "Potential_5707.png"
+    ],
+    [
+     "Potential_5918",
+     "Potential_5918.png"
+    ],
+    [
+     "Potential_19203",
+     "Potential_19203.png"
+    ],
+    [
+     "Potential_19210",
+     "Potential_19210.png"
+    ],
+    [
+     "Potential_19213",
+     "Potential_19213.png"
+    ],
+    [
+     "Potential_19218",
+     "Potential_19218.png"
+    ],
+    [
+     "Potential_19219",
+     "Potential_19219.png"
+    ],
+    [
+     "Talent_5983",
+     "sprite:ui/atlas/icontalent/icontalent#Talent_5034"
+    ],
+    [
+     "IconSusanoo_191101",
+     "IconSusanoo.png"
+    ]
+   ]
+  }
+ ]
+}

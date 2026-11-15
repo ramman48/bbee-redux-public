@@ -1,0 +1,72 @@
+{
+ "skeleton": {
+  "size": 15199442,
+  "sha1": "1204f20786a1ae4688d7853b93127a5e2fc3c057",
+  "version": "4.2.33"
+ },
+ "anims": {
+  "rki_crouch_in": {
+   "file": "rki_crouch_in.anim",
+   "duration": 0.1167,
+   "keys": 8,
+   "bytes": 12487,
+   "sha1": "77d5898445263935d3c588ee07e2b484e4bc07ab"
+  },
+  "rki_crouch_loop": {
+   "file": "rki_crouch_loop.anim",
+   "duration": 1.3333,
+   "keys": 81,
+   "bytes": 121585,
+   "sha1": "364d86b2138efe9e970d557e54a8f8316a1425e5"
+  },
+  "rki_crouch_out": {
+   "file": "rki_crouch_out.anim",
+   "duration": 0.1167,
+   "keys": 8,
+   "bytes": 12487,
+   "sha1": "3ad09a49da6fb718c33dafe760bddf390bd35b43"
+  },
+  "rki_jump": {
+   "file": "rki_jump.anim",
+   "duration": 0.783,
+   "keys": 48,
+   "bytes": 86556,
+   "sha1": "7a6d7d4247a02c3bcb7f9d3093a0899133e4737f"
+  },
+  "rki_jump2": {
+   "file": "rki_jump2.anim",
+   "duration": 0.55,
+   "keys": 34,
+   "bytes": 39059,
+   "sha1": "7abb72fd6c95b7a0595274dd84186d454dc65dbe"
+  },
+  "rki_dash": {
+   "file": "rki_dash.anim",
+   "duration": 0.367,
+   "keys": 23,
+   "bytes": 67118,
+   "sha1": "bab25a2c762b5e11c85f3cea7f45bf8b09190053"
+  },
+  "rki_dash_end": {
+   "file": "rki_dash_end.anim",
+   "duration": 0.35,
+   "keys": 22,
+   "bytes": 48055,
+   "sha1": "f4e41c4a765226921836f9d07134a25c32de328f"
+  },
+  "rki_dash_air": {
+   "file": "rki_dash_air.anim",
+   "duration": 0.267,
+   "keys": 17,
+   "bytes": 49033,
+   "sha1": "997043d71276462256fe91bc46221d19a8f4e29e"
+  },
+  "rki_dash_air_end": {
+   "file": "rki_dash_air_end.anim",
+   "duration": 0.6,
+   "keys": 37,
+   "bytes": 56527,
+   "sha1": "b14db35d551a055e0dad832ea3cd3809a9979281"
+  }
+ }
+}

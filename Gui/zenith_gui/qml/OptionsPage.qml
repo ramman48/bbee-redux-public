@@ -128,7 +128,9 @@ Item {
             { name: qsTr("CHECK FOR UPDATES"), text: controller.edition === "dev"
                   ? qsTr("Get the newest Redux test builds now. The Terminal also checks each time it opens.")
                   : qsTr("Get the newest versions of your mods and the Terminal now. It also checks each time it opens."),
-              kind: "button", label: qsTr("CHECK NOW"), act: "checkupdates" }] : []).concat(controller.lastInstall.when ? [
+              kind: "button", label: qsTr("CHECK NOW"), act: "checkupdates" },
+            { name: qsTr("DOWNLOADS AT ONCE"), text: qsTr("How many files the Terminal downloads at the same time. More is faster on a fast connection."),
+              kind: "choice", key: "downloads", options: [{ value: 16, label: "16" }, { value: 32, label: "32" }, { value: 64, label: "64" }] }] : []).concat(controller.lastInstall.when ? [
             { name: qsTr("UNDO LAST INSTALL"), text: qsTr("Puts back what your game held before the install of ") + controller.lastInstall.when + ": "
                   + (controller.lastInstall.empty ? qsTr("no mods.") : controller.lastInstall.titles.join(", ") + "."),
               kind: "button", label: qsTr("UNDO"), act: "undo" }] : []).concat([
@@ -163,13 +165,16 @@ Item {
         ])
         if (cat === "modsettings") return modChoices
         if (cat === "lists") return [
-            { name: qsTr("SAVE MY LIST"), text: qsTr("The mods you have switched on, with their versions and choices, as one small file to send to someone. It holds names only: no mod, no link, nothing that runs."),
+            { name: qsTr("SAVE MY LIST"), text: qsTr("The mods you have switched on, with their versions and choices, as one small file to send to someone. It holds only their names and versions. It has no mod files and no links in it, and nothing in it can run."),
               kind: "button", label: qsTr("SAVE"), usable: controller.mods.filter(m => m.enabled && !m.locked).length > 0, act: "savelist" },
             { name: qsTr("USE A LIST"), text: qsTr("Switches on the mods a list names and says which ones you still need. Nothing is downloaded. You can also drop a list on the window."),
               kind: "button", label: qsTr("OPEN"), act: "openlist" },
             { name: qsTr("SAVE AS A PRESET"), text: qsTr("The mods you have switched on and their choices, kept here under a name, to switch back to in one press."),
               kind: "button", label: qsTr("SAVE"), usable: controller.mods.filter(m => m.enabled && !m.locked).length > 0, act: "savepreset" }
-        ].concat(controller.presets.map(p => ({
+        ].concat(controller.presets.map(p => p.builtin ? ({
+            // a preset the update ships: its note first, no DELETE (the next update brings it back)
+            name: p.name.toUpperCase(), text: (p.note ? p.note + " " : "") + p.count + (p.count === 1 ? qsTr(" mod: ") : qsTr(" mods: ")) + p.titles.join(", ") + (p.count > p.titles.length ? qsTr(" and more.") : "."),
+            kind: "button", label: qsTr("USE"), act: "preset:" + p.name }) : ({
             name: p.name.toUpperCase(), text: p.count + (p.count === 1 ? qsTr(" mod: ") : qsTr(" mods: ")) + p.titles.join(", ") + (p.count > p.titles.length ? qsTr(" and more.") : "."),
             kind: "button", label: qsTr("USE"), act: "preset:" + p.name, label2: qsTr("DELETE"), danger2: true, act2: "delpreset:" + p.name })))
         if (cat === "saves") return [

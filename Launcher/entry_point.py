@@ -215,7 +215,7 @@ def repair_save(args, backup=True):
     if backup and not backup_save("before_repair"): fail("Couldn't back up the save; nothing was changed.")
     changed = 0
     for f in files:
-        try: rep_ = savefile.clean_file(f)
+        try: rep_ = savefile.clean_file(f, grim=True)   # every mod goes: Grim of the Abyss's Entropy ids too
         except Exception as e: fail("Couldn't clean %s (%s). Your save is unchanged; the backup is in the save_backups folder." % (f, e))
         if rep_:
             changed += 1; say(""); say("Cleaned " + f + ":")
@@ -225,15 +225,20 @@ def repair_save(args, backup=True):
     say("If Steam asks about a cloud save conflict on the next launch, choose the LOCAL save (the repaired one).")
 
 
-def enabled_actor_ids():
-    """ids of the characters the enabled mods add (the same rule tools/savefile.py uses for mods/*/mod.json)"""
-    ids = set()
+def enabled_mods():
+    """ids of the mods switched on (shared/profile.json, mods/profile.json)"""
     enabled = set()
     for p in (os.path.join(ROOT, "shared", "profile.json"), os.path.join(ROOT, "mods", "profile.json")):
         if os.path.exists(p):
             try: enabled |= set(json.load(open(p, encoding="utf-8")).get("enabled", []))
             except Exception: pass
-    for mid in enabled:
+    return enabled
+
+
+def enabled_actor_ids():
+    """ids of the characters the enabled mods add (the same rule tools/savefile.py uses for mods/*/mod.json)"""
+    ids = set()
+    for mid in enabled_mods():
         for folder in (os.path.join(ROOT, "shared", mid), os.path.join(ROOT, "mods", mid)):
             try: txt = open(os.path.join(folder, "mod.json"), encoding="utf-8").read()
             except OSError: continue
@@ -257,6 +262,24 @@ def clean_missing(savefile, data, gone):
         savefile.MOD_ACTORS = keep
 
 
+def drop_grim(savefile):
+    """Grim of the Abyss is off in this install: its Abyss ranks, perks and Mutations come out of the Entropy loadout
+    (the normal game wipes a loadout that holds one), and a run in progress that uses its rules is ended. The save has
+    just been backed up; everything else in it stays as it was."""
+    for f in save_files():
+        try:
+            new, rep_ = savefile.clean_grim(savefile.load(f))
+            if not rep_: continue
+            blob = savefile.compress(new)
+            tmp = f + ".tmp"; open(tmp, "wb").write(blob); os.replace(tmp, f)
+        except Exception as e:
+            fail("Your save has Grim of the Abyss data, and it couldn't be removed (%s: %s).\n"
+                 "Nothing in the game was changed, and your save is backed up in the save_backups folder." % (f, e))
+        say(""); say("Grim of the Abyss is off, so its Entropy settings were taken out of your save.")
+        say("Removed from " + f + ":")
+        for line in rep_: say("  - " + line)
+
+
 def drop_missing_characters():
     """A save can hold a character that an earlier package installed and this one doesn't, for example (Izanami, the
     unfinished preview in 0.7.x). The game can't load a save that names a character it doesn't have, so before
@@ -264,6 +287,7 @@ def drop_missing_characters():
     stays as it was."""
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import savefile
+    if "entropy-grim" not in enabled_mods(): drop_grim(savefile)
     gone = set(savefile.MOD_ACTORS) - enabled_actor_ids()
     if not gone: return
     for f in save_files():
@@ -298,8 +322,8 @@ def install(args):
     else:
         say("BlazBlue Centralfiction not found: her moves use her Entropy Effect animations (nothing is missing).")
     full = "--full" in args
-    say("== building and installing (%s) ==" % ("everything again: 1-5 minutes" if full else
-                                                "only the mods that changed; the first time 1-5 minutes"))
+    say("== building and installing (%s) ==" % ("everything made again here: a few minutes" if full else
+                                                "the channel's ready-made build where it fits, only what changed otherwise"))
     t0 = time.time(); done = os.path.join(ROOT, "mods", "installed.json")
     if bbmod("install", *(["--full"] if full else [])) != 0: fail("The install stopped with an error (see above).")
     if not os.path.exists(done) or os.path.getmtime(done) < t0 - 2:

@@ -1,92 +1,461 @@
 {
  "approved": true,
- "updated": "2026-10-18",
- "columns": [
+ "updated": "2026-11-14",
+ "sheets": [
   {
-   "name": "OUT NOW",
-   "items": [
-    {"title": "Nine the Phantom", "text": "Public alpha. Testers' notes go into every update.", "accent": "#d0405e",
-     "art": [{"file": "art/cast/nine.png", "focus": [0.55, 0.2], "tall": 1.15}]},
-    {"title": "Ruby Rose", "text": "Public alpha: RWBY's Ruby, from Cross Tag Battle.", "accent": "#d23040",
-     "art": [{"file": "art/cast/ruby.png", "focus": [0.33, 0.17]}]},
-    {"title": "The Fun Gang", "back": "FUN GANG", "text": "Public alpha: Kris, with Susie and Ralsei fighting beside you.", "accent": "#6fb0ff",
-     "art": [{"file": "art/cast/kris.png", "focus": [0.47, 0.27], "tall": 0.56, "dx": -0.02, "dy": 0, "z": 3, "dim": 1},
-             {"file": "art/cast/ralsei.png", "focus": [0.6, 0.33], "tall": 0.44, "dx": -0.13, "dy": 0.3, "z": 1, "dim": 0.92},
-             {"file": "art/cast/susie.png", "focus": [0.47, 0.17], "tall": 0.66, "dx": 0.2, "dy": 0.012, "z": 2, "dim": 0.96}]},
-    {"title": "BlazBlue EX", "text": "Public alpha: EX Ragna and EX Hakumen.", "accent": "#d03a2a",
-     "art": [{"file": "art/cast/ragna.png", "focus": [0.48, 0.09]}]}
-   ]
+   "key": "2026",
+   "label": "2026",
+   "bg": "art/roadmap/2026_bg.jpg",
+   "fg": "art/roadmap/2026_fg.png",
+   "fr": "art/roadmap/2026_fr.png",
+   "boxes": {
+    "pw": [
+     [
+      92,
+      362,
+      952,
+      860
+     ],
+     [
+      974,
+      362,
+      1314,
+      860
+     ],
+     [
+      1336,
+      362,
+      1828,
+      860
+     ]
+    ],
+    "stem": [
+     [
+      291,
+      232,
+      293,
+      262
+     ],
+     [
+      1143,
+      232,
+      1145,
+      262
+     ],
+     [
+      1585,
+      232,
+      1587,
+      262
+     ]
+    ],
+    "card": [
+     [
+      104,
+      374,
+      940,
+      586
+     ],
+     [
+      986,
+      374,
+      1140,
+      836
+     ],
+     [
+      1148,
+      374,
+      1302,
+      836
+     ],
+     [
+      1348,
+      374,
+      1435,
+      686
+     ],
+     [
+      1443,
+      374,
+      1530,
+      686
+     ],
+     [
+      1538,
+      374,
+      1626,
+      686
+     ],
+     [
+      1634,
+      374,
+      1721,
+      686
+     ],
+     [
+      1729,
+      374,
+      1816,
+      686
+     ]
+    ],
+    "mod": [
+     [
+      104,
+      594,
+      265,
+      836
+     ],
+     [
+      273,
+      594,
+      434,
+      836
+     ],
+     [
+      442,
+      594,
+      602,
+      836
+     ],
+     [
+      610,
+      594,
+      771,
+      836
+     ],
+     [
+      779,
+      594,
+      940,
+      836
+     ]
+    ],
+    "li": [
+     [
+      1350,
+      690,
+      1814,
+      728
+     ],
+     [
+      1350,
+      735,
+      1814,
+      773
+     ],
+     [
+      1350,
+      780,
+      1814,
+      818
+     ]
+    ]
+   }
   },
   {
-   "name": "IN TESTING",
-   "items": [
-    {"title": "Arcueid Brunestud", "back": "ARCUEID", "text": "From MELTY BLOOD: TYPE LUMINA.", "accent": "#d8c27a",
-     "art": [{"file": "art/cast/arcueid.png", "focus": [0.5, 0.07], "dim": 0.72}]},
-    {"title": "Izanami", "text": "The next of the game's bosses to become playable.", "accent": "#b070e0",
-     "art": [{"file": "art/cast/izanami.png", "focus": [0.47, 0.18], "dim": 0.8}]},
-    {"title": "Susanoo", "text": "Hakumen's Susanoo as his own character, built to feel like playing a boss.", "accent": "#38e07a",
-     "art": [{"file": "art/cast/susanoo.png", "focus": [0.5, 0.14]}]},
-    {"title": "Grim of the Abyss", "text": "Past Entropy 175: modifiers, bigger rewards, Endless and Endless Boss Rush."},
-    {"title": "Four Player", "text": "Four players online, mods and all."},
-    {"title": "Tactics Plus Ultra", "text": "A new set of Tactics with two new elements, Water and Radiation."},
-    {"title": "Cross Effect", "text": "More heroes from other fighting games."},
-    {"title": "The Zenith Terminal", "back": "ZENITH", "text": "The next version of this window."}
-   ]
+   "key": "2027",
+   "label": "2027",
+   "bg": "art/roadmap/2027_bg.jpg",
+   "fg": "art/roadmap/2027_fg.png",
+   "fr": "art/roadmap/2027_fr.png",
+   "boxes": {
+    "pw": [
+     [
+      92,
+      362,
+      732,
+      860
+     ],
+     [
+      754,
+      362,
+      1206,
+      860
+     ],
+     [
+      1228,
+      362,
+      1828,
+      860
+     ]
+    ],
+    "stem": [
+     [
+      251,
+      232,
+      253,
+      262
+     ],
+     [
+      903,
+      232,
+      905,
+      262
+     ],
+     [
+      1527,
+      232,
+      1529,
+      262
+     ]
+    ],
+    "card": [
+     [
+      104,
+      410,
+      221,
+      644
+     ],
+     [
+      229,
+      410,
+      346,
+      644
+     ],
+     [
+      354,
+      410,
+      470,
+      644
+     ],
+     [
+      478,
+      410,
+      595,
+      644
+     ],
+     [
+      603,
+      410,
+      720,
+      644
+     ],
+     [
+      104,
+      670,
+      720,
+      836
+     ],
+     [
+      1240,
+      596,
+      1649,
+      836
+     ],
+     [
+      1657,
+      596,
+      1816,
+      836
+     ]
+    ],
+    "li": [
+     [
+      768,
+      436,
+      1192,
+      492
+     ],
+     [
+      768,
+      499,
+      1192,
+      555
+     ],
+     [
+      768,
+      648,
+      1192,
+      704
+     ],
+     [
+      768,
+      711,
+      1192,
+      767
+     ],
+     [
+      1242,
+      410,
+      1814,
+      448
+     ],
+     [
+      1242,
+      455,
+      1814,
+      493
+     ],
+     [
+      1242,
+      500,
+      1814,
+      538
+     ],
+     [
+      1242,
+      545,
+      1814,
+      583
+     ]
+    ]
+   }
   },
   {
-   "name": "COMING UP",
-   "items": [
-    {"title": "Swift Master playtest", "back": "SWIFT", "text": "November 26. Swift Master, from DNF Duel.", "accent": "#9a7ae0",
-     "art": [{"file": "art/cast/swiftmaster.png", "focus": [0.42, 0.1]}]},
-    {"title": "Community Vote Character", "back": "VOTE", "text": "November 1."},
-    {"title": "Makoto", "back": "MAKOTO", "text": "From Street Fighter III.", "accent": "#e8b830",
-     "art": [{"file": "art/cast/makoto.png", "focus": [0.42, 0.12], "tall": 0.95}]},
-    {"title": "Yuzuriha", "accent": "#c0408a",
-     "art": [{"file": "art/cast/yuzuriha.png", "focus": [0.42, 0.13]}]},
-    {"title": "Dust", "text": "From Dust: An Elysian Tail.", "accent": "#4fd0c0",
-     "art": [{"file": "art/cast/dust.png", "focus": [0.55, 0.14]}]}
-   ]
-  },
-  {
-   "name": "2027",
-   "items": [
-    {"title": "Dante and Vergil", "back": "DMC", "text": "From Devil May Cry. Coming next year.", "accent": "#c8283a",
-     "art": [{"file": "art/cast/dante.png", "focus": [0.45, 0.08], "tall": 0.62, "dx": -0.14, "dy": 0, "z": 2, "dim": 1},
-             {"file": "art/cast/vergil.png", "focus": [0.5, 0.08], "tall": 0.6, "dx": 0.14, "dy": 0.01, "z": 1, "dim": 0.94}]},
-    {"title": "Bayonetta", "text": "Coming next year.", "accent": "#a060e0",
-     "art": [{"file": "art/cast/bayonetta.png", "focus": [0.5, 0.06], "tall": 1.15}]},
-    {"title": "Marie (from Skullgirls)", "back": "MARIE", "text": "Coming next year.", "accent": "#7ee8d0",
-     "art": [{"file": "art/cast/marie.png", "focus": [0.5, 0.15], "tall": 1.0}]},
-    {"title": "Hi-no Kagutsuchi", "back": "KAGUTSUCHI", "text": "A new boss, from Persona 4 Arena Ultimax. Coming next year.", "accent": "#ff7a1a",
-     "art": [{"file": "art/cast/kagutsuchi.png", "focus": [0.5, 0.45], "tall": 0.62, "dim": 0.58}]}
-   ]
-  },
-  {
-   "name": "LATER",
-   "items": [
-    {"title": "4v4 Race Mode", "back": "RACE"},
-    {"title": "Tag Mode", "text": "A partner you tag in and out in every single-player fight."},
-    {"title": "Season Pass 2", "back": "SEASON"},
-    {"title": "DELTARUNE Expansion", "back": "DELTARUNE"},
-    {"title": "Weiss Schnee (from RWBY)", "back": "WEISS", "accent": "#9fd4ff",
-     "art": [{"file": "art/cast/weiss.png", "focus": [0.45, 0.08], "dim": 0.68}]},
-    {"title": "NaN", "back": "NAN", "accent": "#62b8f0", "art": [{"file": "art/cast/nan.png", "focus": [0.5, 0.2], "tall": 0.95, "dim": 0.82}]},
-    {"title": "Reki", "accent": "#e8603a", "art": [{"file": "art/cast/reki.png", "focus": [0.45, 0.37], "tall": 0.75, "dim": 0.88}]},
-    {"title": "Oread", "accent": "#d8304a", "art": [{"file": "art/cast/oread.png", "focus": [0.62, 0.1], "tall": 0.8}]},
-    {"title": "Boss Reworks", "back": "BOSSES"},
-    {"title": "New Enemies", "back": "ENEMIES"},
-    {"title": "Nemesis System", "back": "NEMESIS"},
-    {"title": "Reworked Hub", "back": "HUB"},
-    {"title": "Mobile"},
-    {"title": "Mac"},
-    {"title": "PvP Mode", "back": "PVP"},
-    {"title": "New Player Customization", "back": "CUSTOM"},
-    {"title": "Character Creator", "back": "CREATOR"},
-    {"title": "Stage Maker and Sharing Network", "back": "STAGES"},
-    {"title": "Second Crossover Expansion", "back": "???", "text": "A legend wakes from a hundred-year sleep.", "accent": "#d0283a",
-     "art": [{"file": "art/cast/zero.png", "focus": [0.47, 0.12]}]},
-    {"title": "EX Pack 2", "back": "EX"}
-   ]
+   "key": "fighters",
+   "label": "FIGHTERS OF 2027",
+   "bg": "art/roadmap/fighters_bg.jpg",
+   "fg": "art/roadmap/fighters_fg.png",
+   "fr": "art/roadmap/fighters_fr.png",
+   "boxes": {
+    "gcard": [
+     [
+      92,
+      300,
+      298,
+      496
+     ],
+     [
+      310,
+      300,
+      516,
+      496
+     ],
+     [
+      528,
+      300,
+      734,
+      496
+     ],
+     [
+      746,
+      300,
+      952,
+      496
+     ],
+     [
+      964,
+      300,
+      1170,
+      496
+     ],
+     [
+      1182,
+      300,
+      1388,
+      496
+     ],
+     [
+      1400,
+      300,
+      1606,
+      496
+     ],
+     [
+      1618,
+      300,
+      1824,
+      496
+     ],
+     [
+      92,
+      512,
+      298,
+      708
+     ],
+     [
+      310,
+      512,
+      516,
+      708
+     ],
+     [
+      528,
+      512,
+      734,
+      708
+     ],
+     [
+      746,
+      512,
+      952,
+      708
+     ],
+     [
+      964,
+      512,
+      1170,
+      708
+     ],
+     [
+      1182,
+      512,
+      1388,
+      708
+     ],
+     [
+      1400,
+      512,
+      1606,
+      708
+     ],
+     [
+      1618,
+      512,
+      1824,
+      708
+     ],
+     [
+      92,
+      724,
+      298,
+      920
+     ],
+     [
+      310,
+      724,
+      516,
+      920
+     ],
+     [
+      528,
+      724,
+      734,
+      920
+     ],
+     [
+      746,
+      724,
+      952,
+      920
+     ],
+     [
+      964,
+      724,
+      1170,
+      920
+     ],
+     [
+      1182,
+      724,
+      1388,
+      920
+     ],
+     [
+      1400,
+      724,
+      1606,
+      920
+     ],
+     [
+      1618,
+      724,
+      1824,
+      920
+     ]
+    ]
+   }
   }
  ]
 }

@@ -1,7 +1,15 @@
 # the public channel, read by every public Terminal's updater (repo_export\sync_public.py)
+boons-plus: https://github.com/ramman48/bbee-redux-public/tree/main/boons-plus
+char-izanami: https://github.com/ramman48/bbee-redux-public/tree/main/char-izanami
 char-nine: https://github.com/ramman48/bbee-redux-public/tree/main/char-nine
+char-reki: https://github.com/ramman48/bbee-redux-public/tree/main/char-reki
 char-ruby: https://github.com/ramman48/bbee-redux-public/tree/main/char-ruby
-dr-party: https://github.com/ramman48/bbee-redux-public/tree/main/dr-party
+char-susanoo: https://github.com/ramman48/bbee-redux-public/tree/main/char-susanoo
+char-swiftmaster: https://github.com/ramman48/bbee-redux-public/tree/main/char-swiftmaster
+char-weiss: https://github.com/ramman48/bbee-redux-public/tree/main/char-weiss
+entropy-grim: https://github.com/ramman48/bbee-redux-public/tree/main/entropy-grim
 ex-common: https://github.com/ramman48/bbee-redux-public/tree/main/ex-common
-ex-hakumen: https://github.com/ramman48/bbee-redux-public/tree/main/ex-hakumen
 ex-ragna: https://github.com/ramman48/bbee-redux-public/tree/main/ex-ragna
+palette-maker: https://github.com/ramman48/bbee-redux-public/tree/main/palette-maker
+redux-menus: https://github.com/ramman48/bbee-redux-public/tree/main/redux-menus
+redux-prebuilt: https://github.com/ramman48/bbee-redux-public/tree/main/redux-prebuilt

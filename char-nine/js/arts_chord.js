@@ -31,6 +31,9 @@
   function tick() {
     var b = BattleJs_1.default.Instance, p = b && b.Battle && b.Battle.PlayerSelf;
     if (!p || !isNine(p)) return;
+    // Online (co-op lockstep) every game runs every player and this tick runs on her own game only: a refund here
+    // would give her MP back on one game and not the others, and the games split. Online the toggle keeps the cost.
+    try { if (csharp_1.PvpDefine.IsOnlineMode()) { S.last = null; return } } catch (e) {}
     var am = p.ActionMgr, id = am.ActionChangeAutoId, now = gauges(p);
     if (S.last === null) { S.id = id; S.name = String(am.CurrentActionName); S.last = now; return }
     if (id !== S.id) {                                     // her action changed since the last frame

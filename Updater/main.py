@@ -34,6 +34,7 @@ import argparse
 import concurrent.futures
 import datetime
 import hashlib
+import http.client
 import io
 import json
 import os
@@ -73,8 +74,48 @@ USER_AGENT = "BBEEML-Updater/1.0"
 REQUEST_TIMEOUT = 30
 DEFAULT_CHANNEL = "stable"
 CHANNEL_FILENAME = "channel.txt"
-DOWNLOAD_WORKERS = 8
-GITHUB_HOSTS = ("github.com", "api.github.com", "raw.githubusercontent.com", "codeload.github.com")
+DOWNLOAD_WORKERS = 16       # files fetched side by side; ZENITH_DOWNLOAD_WORKERS or channel.txt 'download-workers:' changes it
+DOWNLOAD_SLOTS = 32         # files in flight at once over every mod being updated (mods are updated side by side)
+DOWNLOAD_TRIES = 3          # a file whose connection drops or stalls is asked for again on a new connection
+KEEP_ALIVE_HOSTS = ("raw.githubusercontent.com",)   # where the files come from: one kept connection per worker
+CHECK_WORKERS = 8           # mods checked and updated side by side (update_repositories_group)
+
+
+class _BufferedPrints:
+    """While active, what a worker thread prints is kept in its own buffer and written out whole when its task ends
+    (_buffered), so the log reads one mod at a time even though they are checked side by side."""
+    _local = threading.local()
+    _lock = threading.Lock()
+
+    class _Out(io.TextIOBase):
+        def __init__(self, real): self.real = real
+        def write(self, s):
+            buf = getattr(_BufferedPrints._local, "buf", None)
+            if buf is not None: buf.append(s); return len(s)
+            with _BufferedPrints._lock: return self.real.write(s)
+        def flush(self): self.real.flush()
+        @property
+        def encoding(self): return getattr(self.real, "encoding", "utf-8")
+
+    def __enter__(self):
+        self.real = sys.stdout; sys.stdout = _BufferedPrints._Out(self.real); return self
+
+    def __exit__(self, *exc):
+        sys.stdout = self.real; return False
+
+
+def _buffered(fn, arg):
+    _BufferedPrints._local.buf = []
+    try:
+        return fn(arg)
+    finally:
+        text = "".join(_BufferedPrints._local.buf); _BufferedPrints._local.buf = None
+        out = sys.stdout.real if isinstance(sys.stdout, _BufferedPrints._Out) else sys.stdout
+        with _BufferedPrints._lock:
+            out.write(text); out.flush()
+
+
+GITHUB_HOSTS =("github.com", "api.github.com", "raw.githubusercontent.com", "codeload.github.com")
 TOKEN_ENV = "ZENITH_UPDATER_TOKEN"  # a token from the environment, when no token file is given
 
 
@@ -98,6 +139,7 @@ class RunSettings:
         self.state_dir: Optional[Path] = None  # the manifest each component was last updated to
         self.check_only = False     # report what would change, change nothing
         self.lists: Optional[str] = None  # where the channel's three lists are (channel.txt 'lists:')
+        self.download_workers: Optional[str] = None  # channel.txt 'download-workers:' (download_workers())
         self.report: Dict[str, dict] = {}
 
 
@@ -429,14 +471,59 @@ def http_get(url: str, timeout: int = REQUEST_TIMEOUT, headers: Optional[Dict[st
         all_headers["Authorization"] = f"token {SETTINGS.token}"
     if headers:
         all_headers.update(headers)
-    req = urllib.request.Request(url, headers=all_headers)
     try:
+        if host in KEEP_ALIVE_HOSTS:
+            content = _kept_get(url, all_headers, timeout)
+            if content is not None:
+                return content
+        req = urllib.request.Request(url, headers=all_headers)
         with urllib.request.urlopen(req, timeout=timeout) as response:
             return response.read()
     except urllib.error.HTTPError as e:
         if e.code == 404:
             _NOT_FOUND.add(url)
         raise
+
+
+# A new connection for every file was most of a download's time: 8 MB/s on a 2 GB build of
+# 5,400 files, against 35 to 50 MB/s over connections that stay open (measured 2026-11-14).
+# Each worker thread keeps one connection per host and asks for its files over it.
+_KEPT = threading.local()
+_SLOTS = threading.BoundedSemaphore(DOWNLOAD_SLOTS)
+_REAL_URLOPEN = urllib.request.urlopen
+
+
+def _kept_get(url: str, headers: Dict[str, str], timeout: int) -> Optional[bytes]:
+    """GET over this thread's kept connection. None when the address is not one for it (not
+    https, a proxy is set, urlopen is replaced as the tests do, a redirect): the caller then
+    asks the ordinary way. A dropped or stalled connection is opened again, DOWNLOAD_TRIES in all."""
+    parts = urllib.parse.urlsplit(url)
+    if parts.scheme != "https" or not parts.hostname or parts.port or parts.username:
+        return None
+    if urllib.request.urlopen is not _REAL_URLOPEN or urllib.request.getproxies():
+        return None
+    conns = _KEPT.__dict__.setdefault("conns", {})
+    target = (parts.path or "/") + ("?" + parts.query if parts.query else "")
+    for attempt in range(DOWNLOAD_TRIES):
+        conn = conns.get(parts.hostname)
+        if conn is None:
+            conn = conns[parts.hostname] = http.client.HTTPSConnection(parts.hostname, timeout=timeout)
+        try:
+            conn.request("GET", target, headers=headers)
+            response = conn.getresponse()
+            content = response.read()
+        except (http.client.HTTPException, OSError):
+            conn.close()
+            conns.pop(parts.hostname, None)
+            if attempt == DOWNLOAD_TRIES - 1:
+                raise
+            continue
+        if response.status == 200:
+            return content
+        if response.status in (301, 302, 303, 307, 308):
+            return None
+        raise urllib.error.HTTPError(url, response.status, response.reason, response.headers, None)
+    return None
 
 
 # Addresses the server answered 404 for in this run: the channel does not carry that file
@@ -770,6 +857,18 @@ class DownloadProgress:
                 print("[*] Resumed", flush=True)
 
 
+def download_workers() -> int:
+    """How many files are fetched side by side: DOWNLOAD_WORKERS, or the number in the
+    environment's ZENITH_DOWNLOAD_WORKERS, or channel.txt's 'download-workers:' (1 to 64)."""
+    for text in (os.environ.get("ZENITH_DOWNLOAD_WORKERS"), SETTINGS.download_workers):
+        try:
+            if text and int(text) > 0:
+                return min(int(text), 64)
+        except ValueError:
+            pass
+    return DOWNLOAD_WORKERS
+
+
 def download_many(items: List[Tuple[str, str, str]], staging_dir: Path) -> str:
     """Downloads (rel_path, url, sha256) items into staging_dir, DOWNLOAD_WORKERS at a time.
 
@@ -791,7 +890,8 @@ def download_many(items: List[Tuple[str, str, str]], staging_dir: Path) -> str:
         if bad.is_set() or failed.is_set():
             return
         try:
-            content = http_get(url)
+            with _SLOTS:
+                content = http_get(url)
         except Exception as e:
             print(f"[-] Download failed for '{rel_path}' from {url}: {e}")
             failed.set()
@@ -808,7 +908,7 @@ def download_many(items: List[Tuple[str, str, str]], staging_dir: Path) -> str:
         progress.file_done(len(content))
 
     print(f"[*] Downloading {len(items)} file(s)...")
-    with concurrent.futures.ThreadPoolExecutor(max_workers=DOWNLOAD_WORKERS) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=download_workers()) as pool:
         list(pool.map(one, items))
     progress.finish()
     if bad.is_set():
@@ -1739,29 +1839,27 @@ def update_repositories_group(
         return {}
 
     results = {}
+    tasks = []
     for name, repo_location in repositories.items():
-        if stop_requested():
-            effective_name = (component_name or name) if is_single_component_dir else name
-            print(f"[-] Stopped before {effective_name}: asked to stop.")
-            report(effective_name, "stopped")
-            results[effective_name] = False
-            continue
         if is_single_component_dir:
-            effective_target_dir = target_base_dir
-            effective_target_name = component_name or name
+            tasks.append((component_name or name, target_base_dir, repo_location))
+        elif not SAFE_NAME.match(name):
+            print(f"[!] Skipping '{name}' in {repositories_file.name}: not a plain mod folder name.")
+            report(name, "failed", reason="unsafe name")
+            results[name] = False
         else:
-            if not SAFE_NAME.match(name):
-                print(f"[!] Skipping '{name}' in {repositories_file.name}: not a plain mod folder name.")
-                report(name, "failed", reason="unsafe name")
-                results[name] = False
-                continue
-            effective_target_dir = target_base_dir / name
-            effective_target_name = name
+            tasks.append((name, target_base_dir / name, repo_location))
 
+    def one(task):
+        effective_target_name, effective_target_dir, repo_location = task
+        if stop_requested():
+            print(f"[-] Stopped before {effective_target_name}: asked to stop.")
+            report(effective_target_name, "stopped")
+            return effective_target_name, False
         print(f"\n--- Checking: {effective_target_name} ---")
         try:
             # mods (not Launcher, Gui or the Updater) are adopted from a zip and kept for a rollback
-            updated = update_directory_target(
+            return effective_target_name, update_directory_target(
                 target_name=effective_target_name,
                 target_dir=effective_target_dir,
                 repo_location=repo_location,
@@ -1769,11 +1867,23 @@ def update_repositories_group(
                 adopt=not is_single_component_dir,
                 keep_rollback=not is_single_component_dir,
             )
-            results[effective_target_name] = updated
         except Exception as e:
             print(f"[!] Error processing '{effective_target_name}': {e}")
             report(effective_target_name, "failed", reason=str(e))
-            results[effective_target_name] = False
+            return effective_target_name, False
+
+    # Each mod is its own folder with its own files, so they are checked and fetched side by side: one after another,
+    # every mod's two or three requests waited in turn (2026-11-07: 28 mods took 26 s to check). A single component
+    # (the Launcher, the window, the updater itself) is one task anyway.
+    if len(tasks) > 1 and CHECK_WORKERS > 1:
+        with _BufferedPrints():
+            with concurrent.futures.ThreadPoolExecutor(max_workers=CHECK_WORKERS) as pool:
+                for done_name, updated in pool.map(lambda t: _buffered(one, t), tasks):
+                    results[done_name] = updated
+    else:
+        for t in tasks:
+            done_name, updated = one(t)
+            results[done_name] = updated
 
     if not is_single_component_dir:
         results.update(install_missing_dependencies(repositories, target_base_dir, log_file))
@@ -1906,6 +2016,7 @@ def run_updater(
     lists = (chan.get("lists") or "").strip()
     SETTINGS.lists = lists if lists.startswith(("https://", "file://")) else None
     SETTINGS.pin_commits = pin_commits
+    SETTINGS.download_workers = chan.get("download-workers")
     SETTINGS.check_only = check_only
     SETTINGS.work_dir = work_dir
     SETTINGS.state_dir = state_dir

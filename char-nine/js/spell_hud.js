@@ -6,7 +6,9 @@
    Runs from globalThis.BB_HUD_TICKS (bbee-sdk >= 0.3.3: BattleUI.LateUpdateWindow, after every C# Update). */
 (function () {
   var G = globalThis, CS = csharp_1, U = Util_1.U, TQ = TransUtil_1.default, IsNull = CSharpDefine_1.IsNull;
-  var T = (G.BB_HUD_TICKS = G.BB_HUD_TICKS || {}); if (T["char-nine/spell-hud"]) return;
+  // 1.0.0: a second load (a hot load) replaces the running tick instead of being refused, so HUD fixes reach a running
+  // game; the clones the old copy made are found again by name (own() below)
+  var T = (G.BB_HUD_TICKS = G.BB_HUD_TICKS || {});
   var ACTOR = "200401";
   var ELS = ["ph_water", "ph_wind", "ph_fire"];
   // [action, [ice, wind, fire] minimum stacks], first match wins (build_nine.py WEAVE, same order)
@@ -20,7 +22,7 @@
   // from the stored elements, as a small icon on the slot's lower-left corner; hidden while nothing is stored
   var STOCK = ["MOD_nine_stock_water", "MOD_nine_stock_wind", "MOD_nine_stock_fire"];
   var S = { ui: null, list: null, go: null, img: null, label: null, pl: null, nine: false, shown: null, ours: 0, spr: {}, hid: [],
-            mini: null, stock: null };
+            mini: null, stock: null, err: {} };
 
   function isNine(p) {
     if (S.pl === p) return S.nine;
@@ -56,15 +58,18 @@
   }
   function label(go) {  // a clone of the HUD's own small label (the talent icon's TextCount: MiSans Medium, bold, black underlay)
     if (S.label && !IsNull(S.label)) return S.label;
+    var had = own(go, "NineSpellName", CS.TMPro.TextMeshProUGUI); if (had) return (S.label = had);   // 1.0.0 (D1): one per slot
     var row = TQ.Query(S.ui.CsObj.transform, "TanlentIcons");
     var src = row ? TQ.Query(row.transform, "TextCount", CS.TMPro.TextMeshProUGUI) : null; if (!src) return null;
     var o = CS.UnityEngine.Object.Instantiate(src.gameObject, go.transform); o.name = "NineSpellName";
-    var rt = o.transform, V = CS.UnityEngine.Vector2;
-    rt.anchorMin = new V(1, 1); rt.anchorMax = new V(1, 1); rt.pivot = new V(1, 0);
-    rt.anchoredPosition = new V(0, 2); rt.sizeDelta = new V(420, 34);
-    var t = U.GetComponent(o, CS.TMPro.TextMeshProUGUI);
-    t.alignment = CS.TMPro.TextAlignmentOptions.BottomRight; t.enableWordWrapping = false; t.characterSpacing = 0; t.fontSize = 24;
-    return (S.label = t);
+    try {
+      var rt = o.transform, V = CS.UnityEngine.Vector2;
+      rt.anchorMin = new V(1, 1); rt.anchorMax = new V(1, 1); rt.pivot = new V(1, 0);
+      rt.anchoredPosition = new V(0, 2); rt.sizeDelta = new V(420, 34);
+      var t = U.GetComponent(o, CS.TMPro.TextMeshProUGUI);
+      t.alignment = CS.TMPro.TextAlignmentOptions.BottomRight; t.enableWordWrapping = false; t.characterSpacing = 0; t.fontSize = 24;
+      return (S.label = t);
+    } catch (e) { CS.UnityEngine.Object.Destroy(o); oops("label", e); return null }
   }
   function setOverlays(go, on) {
     for (var i = 0; i < OVERLAYS.length; i++) { var im = TQ.Query(go.transform, OVERLAYS[i], CS.UnityEngine.UI.Image); if (im) im.enabled = on }
@@ -73,19 +78,38 @@
     var spr = S.spr[a]; if (spr === undefined) { spr = null; try { spr = S.ui.LoadSprite(ATLAS, ART[a][0]) || null } catch (e) {} S.spr[a] = spr }
     return spr;
   }
+  // 1.0.0 (D1, the frame-rate fall once the Stock Slot is used): the icon was cloned again on every HUD frame while
+  // something was stored (window 4, 2026-11-09: 3103 clones after 12 Gate rounds, fps 240 -> 18, still climbing at idle).
+  // Each slot now holds at most one clone: an existing one is found by name and reused, a clone is kept the moment it
+  // exists, and a clone whose set-up fails is destroyed instead of being left behind for the next frame to repeat.
+  function own(go, nm, type) {   // the clone named nm under go, if there is one (extras from an older build destroyed)
+    var t = go.transform, found = null;
+    for (var i = t.childCount - 1; i >= 0; i--) {
+      var c = t.GetChild(i).gameObject; if (c.name !== nm) continue;
+      if (found) CS.UnityEngine.Object.Destroy(c); else found = c;
+    }
+    return found ? U.GetComponent(found, type) : null;
+  }
+  function oops(where, e) {     // the first failure of each kind goes to the mod log; the HUD keeps running
+    if (S.err[where]) return; S.err[where] = 1;
+    try { CS.System.IO.File.AppendAllText("@ROOT@/modlog.txt", new Date().toISOString() + " NINE spell HUD " + where + " failed: " + (e && e.stack || e) + "\n") } catch (x) {}
+  }
   function mini(go) {   // the Stock Slot icon: a copy of the slot's icon image, 46 % size, on its lower-left corner
     if (S.mini && !IsNull(S.mini)) return S.mini;
+    var had = own(go, "NineStockSpell", CS.UnityEngine.UI.Image); if (had) return (S.mini = had);
     if (!S.img || IsNull(S.img)) return null;
     var o = CS.UnityEngine.Object.Instantiate(S.img.gameObject, go.transform); o.name = "NineStockSpell";
-    for (var i = o.transform.childCount - 1; i >= 0; i--) o.transform.GetChild(i).gameObject.SetActive(false);
-    var rt = o.transform, V = CS.UnityEngine.Vector2, r = S.img.rectTransform.rect;
-    rt.anchorMin = new V(0, 0); rt.anchorMax = new V(0, 0); rt.pivot = new V(0, 0);
-    rt.sizeDelta = new V(r.width * 0.46, r.height * 0.46); rt.anchoredPosition = new V(-r.width * 0.1, -r.height * 0.1);
-    var im = U.GetComponent(o, CS.UnityEngine.UI.Image);
-    im.type = CS.UnityEngine.UI.Image.Type.Simple; im.fillAmount = 1; im.raycastTarget = false;
-    im.color = new CS.UnityEngine.Color(0.82, 0.86, 1.0, 1.0);    // a cooler tint than the Active Slot: stored, not ready
-    o.transform.SetAsLastSibling();
-    return (S.mini = im);
+    try {
+      for (var i = o.transform.childCount - 1; i >= 0; i--) o.transform.GetChild(i).gameObject.SetActive(false);
+      var rt = o.transform, V = CS.UnityEngine.Vector2, r = S.img.rectTransform.rect;
+      rt.anchorMin = new V(0, 0); rt.anchorMax = new V(0, 0); rt.pivot = new V(0, 0);
+      rt.sizeDelta = new V(r.width * 0.46, r.height * 0.46); rt.anchoredPosition = new V(-r.width * 0.1, -r.height * 0.1);
+      var im = U.GetComponent(o, CS.UnityEngine.UI.Image);
+      im.type = CS.UnityEngine.UI.Image.Type.Simple; im.fillAmount = 1; im.raycastTarget = false;
+      im.color = new CS.UnityEngine.Color(0.82, 0.86, 1.0, 1.0);    // a cooler tint than the Active Slot: stored, not ready
+      o.transform.SetAsLastSibling();
+      return (S.mini = im);
+    } catch (e) { CS.UnityEngine.Object.Destroy(o); throw e }
   }
   function stock(p) {
     var s = pick(p, STOCK);
@@ -123,7 +147,7 @@
     var bj = BattleJs_1.default.Instance, b = bj && bj.Battle, p = b && b.PlayerSelf;
     if (!p || !isNine(p)) return;
     if (S.ui !== ui) bind(ui);
-    try { stock(p) } catch (e) {}
+    try { stock(p) } catch (e) { oops("stock", e) }
     var a = pick(p);
     if (a === null && S.shown === null) return;                 // the common case: stock slot, nothing to do
     var go = (S.go && !IsNull(S.go)) ? S.go : (S.go = slot()); if (!go) return;
