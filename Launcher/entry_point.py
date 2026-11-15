@@ -304,6 +304,51 @@ def drop_missing_characters():
         for line in rep_: say("  - " + line)
 
 
+def retired_ids():
+    """The mods the channel's list retires: its '#retired: <id>' lines (Updater/repositories.txt)."""
+    ids = set()
+    try:
+        for line in open(os.path.join(os.path.dirname(ROOT), "Updater", "repositories.txt"), encoding="utf-8"):
+            line = line.strip()
+            if line.lower().startswith("#retired:"): ids.update(line[len("#retired:"):].replace(",", " ").split())
+    except Exception: pass
+    return ids
+
+
+def tidy_profile():
+    """The switched-on list, before the loader reads it: retired mods are switched off (their files stay); a mod whose
+    files are missing is set aside, and switched back on in its old place once its files are there."""
+    mods = os.path.join(ROOT, "mods"); prof = os.path.join(mods, "profile.json"); aside = os.path.join(mods, "set_aside.json")
+    try: data = json.load(open(prof, encoding="utf-8"))
+    except Exception: return
+    enabled = [m for m in data.get("enabled", []) if isinstance(m, str)]
+    def there(m): return any(os.path.isfile(os.path.join(ROOT, d, m, "mod.json")) for d in ("mods", "shared"))
+    try: was = json.load(open(aside, encoding="utf-8"))
+    except Exception: was = {}
+    order, waiting = was.get("order", []), [m for m in was.get("waiting", []) if m not in enabled]
+    back = [m for m in waiting if there(m)]
+    if back:
+        ranked = [m for m in order if m in enabled or m in back]
+        enabled = ranked + [m for m in enabled if m not in ranked]
+        waiting = [m for m in waiting if m not in back]
+        for m in back: say("'%s' has its files again: switched back on." % m)
+    retired = retired_ids(); new = []
+    for m in enabled:
+        if m in retired: say("'%s' is not part of this release any more: switched off (its files are kept)." % m)
+        elif not there(m):
+            say("'%s' is switched on but its files are missing: left out of this install. Press CHECK NOW in Options to download it again, then apply." % m)
+            waiting.append(m)
+        else: new.append(m)
+    if waiting and not order: order = list(data.get("enabled", []))
+    if new != data.get("enabled", []):
+        data["enabled"] = new
+        with open(prof + ".new", "w", encoding="utf-8") as f: json.dump(data, f, indent=1)
+        os.replace(prof + ".new", prof)
+    if waiting:
+        with open(aside, "w", encoding="utf-8") as f: json.dump({"order": order, "waiting": waiting}, f, indent=1)
+    elif os.path.exists(aside): os.remove(aside)
+
+
 def install(args):
     if not os.path.exists(os.path.join(GAME, EXE)): fail("Setup hasn't been run yet (no game folder link). Run 1_SETUP.bat first.")
     if not os.path.isdir(os.path.join(ROOT, "decoded", "tables")): fail("The game data hasn't been read yet. Run 1_SETUP.bat first.")
@@ -312,6 +357,7 @@ def install(args):
     if now and read != now:
         fail("The game data in this folder was read from %s, and the game is now build %s.\n"
              "Run 1_SETUP.bat again, then 2_INSTALL.bat." % ("game build " + read if read else "an earlier setup", now))
+    tidy_profile()
     retire_stale_backups()
     backup_save("before_install")
     drop_missing_characters()

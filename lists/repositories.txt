@@ -13,3 +13,6 @@ ex-ragna: https://github.com/ramman48/bbee-redux-public/tree/main/ex-ragna
 palette-maker: https://github.com/ramman48/bbee-redux-public/tree/main/palette-maker
 redux-menus: https://github.com/ramman48/bbee-redux-public/tree/main/redux-menus
 redux-prebuilt: https://github.com/ramman48/bbee-redux-public/tree/main/redux-prebuilt
+#retired: dr-party
+#retired: ex-hakumen
+#retired: four-player

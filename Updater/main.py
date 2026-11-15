@@ -1430,6 +1430,48 @@ def read_name_list(path: Path) -> Set[str]:
             if line.strip() and not line.startswith("#")}
 
 
+RETIRED_PREFIX = "#retired:"
+
+
+def retired_mods(repositories_file: Path) -> List[str]:
+    """The mods a channel's list retires: its '#retired: <id>' lines (notes to older updaters)."""
+    try:
+        lines = repositories_file.read_text(encoding="utf-8").splitlines()
+    except Exception:
+        return []
+    names = []
+    for line in lines:
+        line = line.strip()
+        if line.lower().startswith(RETIRED_PREFIX):
+            names += [n for n in line[len(RETIRED_PREFIX):].replace(",", " ").split() if SAFE_NAME.match(n)]
+    return names
+
+
+def switch_off_retired(repositories_file: Path, mods_dir: Path) -> List[str]:
+    """Takes the channel's retired mods out of the loader's switched-on list (Launcher/mods/profile.json).
+    Their folders and files stay; a mod that is not switched on is left as it is."""
+    names = retired_mods(repositories_file)
+    profile = mods_dir / "profile.json"
+    if not names or not profile.is_file():
+        return []
+    try:
+        data = json.loads(profile.read_text(encoding="utf-8"))
+        enabled = data.get("enabled", [])
+        off = [m for m in enabled if m in names]
+        if not off:
+            return []
+        data["enabled"] = [m for m in enabled if m not in names]
+        tmp = profile.with_name("profile.json.new")
+        tmp.write_text(json.dumps(data, indent=1), encoding="utf-8")
+        os.replace(tmp, profile)
+    except Exception as exc:
+        print(f"[!] Could not switch off the retired mods: {exc}")
+        return []
+    for m in off:
+        print(f"[*] '{m}' is not part of the '{SETTINGS.channel}' channel's release any more: switched off (its files are kept).")
+    return off
+
+
 def save_rollback(
     target_name: str,
     backup_dir: Path,
@@ -1581,7 +1623,10 @@ def update_directory_target(
     # Rule: Do not download/update if target folder or version.txt is missing
     elif not target_dir.exists() or not local_version_file.exists():
         wanted = create or (SETTINGS.install_new and target_dir.name not in SETTINGS.declined)
-        if wanted and not target_dir.exists():
+        # a folder with neither version.txt nor mod.json is what a first download that failed leaves behind
+        # (its kept work files): not an installed mod, so it is fetched like a new one
+        leftover = target_dir.is_dir() and not local_version_file.exists() and not (target_dir / "mod.json").is_file()
+        if wanted and (not target_dir.exists() or leftover):
             # only a plain folder name, made directly in the mods folder
             if not SAFE_NAME.match(target_dir.name) or target_dir.name in (".", ".."):
                 print(f"[!] '{target_name}' is not a usable folder name; not installed.")
@@ -2126,6 +2171,8 @@ def run_updater(
             log_file=log_file,
             is_single_component_dir=False,
         )
+        if not check_only:
+            switch_off_retired(repositories_file, mods_dir)
         results.update(mods_results)
 
     # 4. Update the updater itself (last: the code of this run is already loaded)
@@ -2165,7 +2212,7 @@ def summary_line(rep: Dict[str, dict]) -> str:
     for entry in rep.values():
         counts[entry["status"]] = counts.get(entry["status"], 0) + 1
     order = ["updated", "installed", "rolled-back", "available", "current", "newer-local", "held", "failed",
-             "missing-dependency", "unreachable", "stopped", "unpublished", "declined", "absent"]
+             "missing-dependency", "unreachable", "stopped", "unpublished", "declined", "absent", "retired"]
     parts = [f"{counts[k]} {k}" for k in order if counts.get(k)]
     return "[=] Summary: " + (", ".join(parts) if parts else "nothing to check")
 
@@ -2181,7 +2228,7 @@ def exit_code_for(rep: Dict[str, dict]) -> int:
         return 5
     if "failed" in statuses or "missing-dependency" in statuses:
         return 1
-    checked = [s for s in statuses if s not in ("absent", "unpublished", "declined", "held")]
+    checked = [s for s in statuses if s not in ("absent", "unpublished", "declined", "held", "retired")]
     if checked and all(s == "unreachable" for s in checked):
         return 2
     if "unreachable" in statuses:
