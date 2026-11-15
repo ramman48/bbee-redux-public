@@ -1,0 +1,3864 @@
+{
+ "mod": "char-nine",
+ "version": "1.0.8",
+ "files": {
+  "actor/animation/role/ninx_2a.ab": "e08738f31963e40647790e1500659abce1c03e3f",
+  "actor/animation/role/ninx_2b.ab": "d2f27f1b4b250308f6dd49d245ff06e50613b045",
+  "actor/animation/role/ninx_2c.ab": "289ba9749c6e51a204d4976f19b1d286723bd0a0",
+  "actor/animation/role/ninx_5a.ab": "974cecd0e620a92f5ba295307af8b0bc518ea53c",
+  "actor/animation/role/ninx_5b.ab": "573b109317c93adcd10d0c3ce2be126facbbdffc",
+  "actor/animation/role/ninx_5c.ab": "2b8c0d4f6b8445e994de404a9b65be0dbaf21c17",
+  "actor/animation/role/ninx_arts.ab": "02c06f07a12c78e5a94e5c03653b60f9ac174a03",
+  "actor/animation/role/ninx_flamepunisher.ab": "196ba3da7bc2b1b41010bbf2090823a51c0c8f69",
+  "actor/animation/role/ninx_j5a.ab": "1f121967ca338ee3c30e018ed52c1e1a713d5a4f",
+  "actor/animation/role/ninx_j5b.ab": "048f464c37a81fdd8e92b179c003f72169589c0c",
+  "actor/animation/role/ninx_j5c.ab": "df2f7c5b86e0b1e91de6576b514189be331c6f84",
+  "actor/animation/role/ninx_squat.ab": "487c9a3bbb832c3972a5de6290c95534a1569e12",
+  "actor/animation/role/ninx_squat_loop.ab": "bc35406966544d6e9aeee975dbbcc113898cc6fb",
+  "actor/animation/role/ninx_squat_up.ab": "e7423c1da39b87869c6385412ba8cb5380a84610",
+  "actor/animation/role/ph_born2_timeline.ab": "cffbe52e72cce72257068774170e773a29f4ccbc",
+  "actor/animation/role/ph_born_timeline.ab": "b0c029685296388fb8ef1f4de1d28e90aa832a00",
+  "actor/animation/role/ph_burst_x_inherit.ab": "dc00afc78a4aac564fec3f36a0725aa375b7c57e",
+  "actor/animation/role/ph_dash_timeline.ab": "79a3eeccb0bc8c5bbacafb58f9496ef653594372",
+  "actor/animation/role/ph_drop_inherit.ab": "e8787ba95dbb427150ae57182f7d318e53a62fac",
+  "actor/animation/role/ph_dropend4.ab": "28667fad42c0196fc8e9a9a464131fcec800035a",
+  "actor/animation/role/ph_knockdown_stand_inherit.ab": "83f9c8d20a9c153913e02d4683e8b593ccd5485b",
+  "actor/animation/role/ph_squat_loop_inherit.ab": "79ef9395a561e312142c777713b0d20ea129ce18",
+  "actor/animation/role/ph_squat_to_stand.ab": "ad6c94e5af33f81e71c071a063627c4f00094435",
+  "actor/animation/role/ph_stand2_timeline.ab": "171a1775bcd79becd29fde77fa80378b64b47060",
+  "actor/animation/role/ph_stand_inherit.ab": "def1cf1b51d6fa518cf3d2cc15f65fece54b8b61",
+  "actor/animation/role/ph_stand_timeline.ab": "e6d6774bddd31a38efb1f433c9582d963c7e2a8e",
+  "actor/animation/role/ph_standby_inherit.ab": "75a3c48748cc13020f51ff098efb1cf0b03e6e31",
+  "actor/animation/role/ph_upjump_1.ab": "6f635cebb57c43109437e4b5ea0dc01c04f8f98a",
+  "actor/animation/role/ph_upjump_2.ab": "7da593536486f1b82ccfb1fd8074a1352d03f7eb",
+  "actor/animation/role/ph_upjump_3.ab": "616fd9a45f8bfc9178f7677a8a5328f1d12c53e3",
+  "actor/logicdata/nin.ab": "0a53fa63763223a082c21bf91de99d09d40b44f8",
+  "actor/logicdata/ninb1.ab": "8bcb4a5d55d6c1987800f437f38a09a369e7570a",
+  "actor/logicdata/ninb2.ab": "7c7a2b94d6742955ea94d42fef9be2820ecd01ea",
+  "actor/logicdata/ninb3.ab": "b47c8a02ffcca235b25b5688aee1c01409c79ada",
+  "actor/mesh/ninx/g0.ab": "aaf61aaacb943628ffb738a8a5ae700c70358e4d",
+  "actor/sprite/ninx/02/ninx_page_00.ab": "2948d01161341ad5e498c07e864f699078079e69",
+  "actor/sprite/ninx/02/ninx_page_01.ab": "1f0e7e8687f3129199d68a03209c7198ad03a058",
+  "actor/sprite/ninx/80/ninx_page_00.ab": "61749a8ff81d8ff0018b6350f90b941b9accfb6a",
+  "actor/sprite/ninx/80/ninx_page_01.ab": "58cf24ed390d2474fbdb77d5422427db4acfe82f",
+  "actor/sprite/ninx/81/ninx_page_00.ab": "683aa6833c31eba30e3a88bea81f62f200ab40c9",
+  "actor/sprite/ninx/81/ninx_page_01.ab": "3fce669c6d3e88f40f5a2245ee9df2b8dd9081ed",
+  "actor/sprite/ninx/82/ninx_page_00.ab": "8b796b295ed6d008ad4fe569f8841d0aaa8d3a21",
+  "actor/sprite/ninx/82/ninx_page_01.ab": "62a60e3a5120e46190701dab9fb394e04cd283ba",
+  "actor/sprite/ninx/83/ninx_page_00.ab": "1de052207525c7546687e1c7bae8542c898fab1f",
+  "actor/sprite/ninx/83/ninx_page_01.ab": "5e1bb7adfa69e1c65ad1f6c3074368f5f8a6e37b",
+  "actor/sprite/ninx/84/ninx_page_00.ab": "73ae02b596c4f606ea2eda14aede4ebfb0b0593b",
+  "actor/sprite/ninx/84/ninx_page_01.ab": "2396d01fee09d449cced9494c423abc90b39ee86",
+  "actor/sprite/ninx/85/ninx_page_00.ab": "0137892224584a3efbb91b54adebdcfca2428ddd",
+  "actor/sprite/ninx/85/ninx_page_01.ab": "71c8c45f516687adae195f04245b14071dc78515",
+  "actor/sprite/ninx/86/ninx_page_00.ab": "f4d3836fe5bf0cf27aad072c581ffec1553b8fcb",
+  "actor/sprite/ninx/86/ninx_page_01.ab": "2b8064425cb9ed00d3273a6b7a183da013fb141f",
+  "actor/sprite/ninx/extra/ninx_page_00.ab": "f1815d4e6ac1dcf81d817d7fd118f5be086b2f65",
+  "actor/sprite/ninx/extra/ninx_page_01.ab": "774434acc44dadfb27413750dff0a90137547225",
+  "actor/sprite/ninx/extra2/ninx_blank.ab": "99af8881191c34eb0e4134954a86d618cede3d78",
+  "actor/sprite/ph/80/ph_atk_1_c.ab": "56fe251e6838be67b1f05cd37027441b699ada4c",
+  "actor/sprite/ph/80/ph_base_1_c.ab": "27b5126c20d1d660aad554be936266860cbc59e2",
+  "actor/sprite/ph/80/ph_base_2_c.ab": "75474af2189e954102be7371ba5892a6c049f5c5",
+  "actor/sprite/ph/80/ph_ca_1_c.ab": "4b092f4894616dd271dd9945dbc453ac79625cc3",
+  "actor/sprite/ph/80/ph_magic_1_c.ab": "330c3b02df96dc1444dd2389ad81e0bd419bec73",
+  "actor/sprite/ph/80/ph_magic_2_c.ab": "94fa0837424bba57f2d5163a5fdc0d2785711463",
+  "actor/sprite/ph/80/ph_show_1_c.ab": "1b2c964c51ed607f32320142d1c767fe1221ceb7",
+  "actor/sprite/ph/80/ph_show_2_c.ab": "df19f1eeb212f1b9a8fb7ed1f412cd9c12dd96cf",
+  "actor/sprite/ph/80/ph_skill_1_c.ab": "e3779c0b8dd9cbfc68302eba6dfbcfcafe8b7482",
+  "actor/sprite/ph/80/ph_skill_2_c.ab": "4efcb2fa1524cee9a95146c0077b011443a2808c",
+  "actor/sprite/ph/81/ph_atk_1_c.ab": "b7df6132b4fb7ec53c468eeee38f0af7bdd4dd8c",
+  "actor/sprite/ph/81/ph_base_1_c.ab": "c1d71f1cf32171929ea68b1e225fdffa9daba065",
+  "actor/sprite/ph/81/ph_base_2_c.ab": "f1f1e728a0e8661c44f726bcfa648149efb10619",
+  "actor/sprite/ph/81/ph_ca_1_c.ab": "4ae1bd73fd96469aba54d2ca275b3bc3198c8506",
+  "actor/sprite/ph/81/ph_magic_1_c.ab": "b3bac8af4c5274d7dca00dab06e18c43814e779a",
+  "actor/sprite/ph/81/ph_magic_2_c.ab": "40e33d4f7d59f28fb39a32c6a1cd64af40e88e18",
+  "actor/sprite/ph/81/ph_show_1_c.ab": "20cd897a4f34e2a009308a61619c491e01d7dc9c",
+  "actor/sprite/ph/81/ph_show_2_c.ab": "3b29b0d860682d89c89b379cab43762afe1f7e4e",
+  "actor/sprite/ph/81/ph_skill_1_c.ab": "4578d94873432cc36aa0c77dbfe5cb53e8ded594",
+  "actor/sprite/ph/81/ph_skill_2_c.ab": "b8685a8e4b5323821f6c8a37c6d54cdef5c97dcf",
+  "actor/sprite/ph/82/ph_atk_1_c.ab": "10c098f3f7a88feeeae2e16da404cb916f864600",
+  "actor/sprite/ph/82/ph_base_1_c.ab": "4e7377d5350f428ba564464f1d2e276411d23464",
+  "actor/sprite/ph/82/ph_base_2_c.ab": "0e66db4aeb2bfcd648a9bb571f318376d363b872",
+  "actor/sprite/ph/82/ph_ca_1_c.ab": "ab9c91c0b6ca91e2c6a8f1614256de119d264336",
+  "actor/sprite/ph/82/ph_magic_1_c.ab": "8f9e91d43f458666fc46df9c679a574c8fa5b35b",
+  "actor/sprite/ph/82/ph_magic_2_c.ab": "1ca4d6218ec1d7f2a5e35096deaacc82bcc3a022",
+  "actor/sprite/ph/82/ph_show_1_c.ab": "8887eebb9ccea6d71128ea2c45e508092d56c6bc",
+  "actor/sprite/ph/82/ph_show_2_c.ab": "98d2c77523ec7c372d0f0263db2a91717895b766",
+  "actor/sprite/ph/82/ph_skill_1_c.ab": "c3f268995ad7d0e1118a2dcab97dafe9868bf112",
+  "actor/sprite/ph/82/ph_skill_2_c.ab": "6bd527e5a346f095b2336e92bbdda3b42fe0db4f",
+  "actor/sprite/ph/83/ph_atk_1_c.ab": "503f0a320b0e9eb88539b868f4d0a1310de2c7be",
+  "actor/sprite/ph/83/ph_base_1_c.ab": "d02f36accdf919a333b4a1c30bdd8d3044487829",
+  "actor/sprite/ph/83/ph_base_2_c.ab": "f342796c16328af58aaa8b58c9897231f8f4c216",
+  "actor/sprite/ph/83/ph_ca_1_c.ab": "ce009eb771d82310019c3e29ff9928e37f98e1c7",
+  "actor/sprite/ph/83/ph_magic_1_c.ab": "9df85a6d54927c9a9e4519c76629d4934c94c182",
+  "actor/sprite/ph/83/ph_magic_2_c.ab": "0f4d1edda3fd4f527e959b3c4ebf1b95eb7d4c53",
+  "actor/sprite/ph/83/ph_show_1_c.ab": "1457b4342bd4f6354b7073c2112c2b949003866e",
+  "actor/sprite/ph/83/ph_show_2_c.ab": "c1c2ecf0df0a2fa79fa0158362cf0eca3107e5a4",
+  "actor/sprite/ph/83/ph_skill_1_c.ab": "58b04782d030c846cc38332cc9d1191106be6a96",
+  "actor/sprite/ph/83/ph_skill_2_c.ab": "1c94d35cbd47e18d24cefa3cad14a8c47bd29510",
+  "actor/sprite/ph/84/ph_atk_1_c.ab": "1f2308c2ee37ecc3e5ce7b1731b5f3b26d44b836",
+  "actor/sprite/ph/84/ph_base_1_c.ab": "bc90dae8242956cc462e528c32d70ddf3e03195b",
+  "actor/sprite/ph/84/ph_base_2_c.ab": "c633a7cb8717b276908dfa74b06c31cb81b16a6e",
+  "actor/sprite/ph/84/ph_ca_1_c.ab": "a70fed4ce389e6357af632f4ec8100befd27c022",
+  "actor/sprite/ph/84/ph_magic_1_c.ab": "4a76424f3d287f592e50057c5e79a698ba4ebf9f",
+  "actor/sprite/ph/84/ph_magic_2_c.ab": "8230657d199a3e4595187e29ebc3325dc8b1aa78",
+  "actor/sprite/ph/84/ph_show_1_c.ab": "4f07b1882be2bd7f8c4b1d946655794182fc62ef",
+  "actor/sprite/ph/84/ph_show_2_c.ab": "cd7e82a5a518c1974d96e2c3b7039a765964c95b",
+  "actor/sprite/ph/84/ph_skill_1_c.ab": "a82907ba0e6c13424c1fbd5c25184576da143339",
+  "actor/sprite/ph/84/ph_skill_2_c.ab": "73ec18b1e65a10cc6836a2321bbe569fa9922bd8",
+  "actor/sprite/ph/85/ph_atk_1_c.ab": "1300e232d200a807efef03f49b3afeb32cf7a40e",
+  "actor/sprite/ph/85/ph_base_1_c.ab": "4c8d1d0261a59d5e1fd159b0946a099ce950a2e2",
+  "actor/sprite/ph/85/ph_base_2_c.ab": "ad010f170d68a1018779ad53807fb473f2592052",
+  "actor/sprite/ph/85/ph_ca_1_c.ab": "4b145745de234f799d8ca07bc95c8197cf6f99d2",
+  "actor/sprite/ph/85/ph_magic_1_c.ab": "0767d47011620c5f6d06aa6605c3596d2351884d",
+  "actor/sprite/ph/85/ph_magic_2_c.ab": "3101c8aafac8e69639032a181eaaa8861a72c89c",
+  "actor/sprite/ph/85/ph_show_1_c.ab": "aeefdc65423aa944ba12d7bd68657d08034ded21",
+  "actor/sprite/ph/85/ph_show_2_c.ab": "9929df42b5c68b6872a8e7b8249bdd51380c9b9c",
+  "actor/sprite/ph/85/ph_skill_1_c.ab": "b09dc2f3358b1c6317557aad03833a3bdf85e2d0",
+  "actor/sprite/ph/85/ph_skill_2_c.ab": "cbbb58c6001e106cc12323eb1cf3c3893a107ad3",
+  "actor/sprite/ph/86/ph_atk_1_c.ab": "7eb8c98afb861accfbbe20274bec25d240b65813",
+  "actor/sprite/ph/86/ph_base_1_c.ab": "9f123c00c7f9b714c1a821b5ef961a3cc2698c2f",
+  "actor/sprite/ph/86/ph_base_2_c.ab": "1218518ce83494c60863a153ca8c278ca6aa52e4",
+  "actor/sprite/ph/86/ph_ca_1_c.ab": "23592d977b383d07dc621f5e60da89bef5eeed41",
+  "actor/sprite/ph/86/ph_magic_1_c.ab": "6b26e36cdfb9a3c8f225584fe4f46ddcc9f107af",
+  "actor/sprite/ph/86/ph_magic_2_c.ab": "3153753ec90c94bfb1dd6bebbc671f1066872c37",
+  "actor/sprite/ph/86/ph_show_1_c.ab": "c89c0472d2d6050cbc46af3b76022f5829432236",
+  "actor/sprite/ph/86/ph_show_2_c.ab": "56871be7195fbcdb9e265e8ef7273c844078fdf8",
+  "actor/sprite/ph/86/ph_skill_1_c.ab": "07fe12fca13339ccb2664be111cc6c1c0127d3da",
+  "actor/sprite/ph/86/ph_skill_2_c.ab": "2839a7b15873099cd8c665b8724c3309a4c65b81",
+  "actor/texturefamily/nin_02.ab": "3662a768f0524412ac519e4d6604f533b58dc225",
+  "actor/texturefamily/nin_extra.ab": "182c9652839dd29dafbaa494f3506540fd5f47f2",
+  "actor/texturefamily/nin_extra2.ab": "f6ca81507ea5d28de1aa3b0d04c615b68793ef1b",
+  "actor/texturefamily/ninx_02.ab": "3d4ac6bbb8b7f24577dfc07a0145198d9a590c33",
+  "actor/texturefamily/ninx_80.ab": "16baea61194898e55de811652f25882efcff9cf0",
+  "actor/texturefamily/ninx_81.ab": "4cdd7f60bc45191f36b01c1548307f03a9ad5d16",
+  "actor/texturefamily/ninx_82.ab": "884223aad056f87aa19b9cebf1b5c95043ffdd20",
+  "actor/texturefamily/ninx_83.ab": "95ca16fa8a1fdc998a6120ec2798aafcb18f75a9",
+  "actor/texturefamily/ninx_84.ab": "0e36d3b080df2d9e8cd623b6a3cdd0bb6baa9934",
+  "actor/texturefamily/ninx_85.ab": "6e6507dbe6445cb97d93ea1f0a1fc3ff21b08567",
+  "actor/texturefamily/ninx_86.ab": "dd3c2fc2ee56feeade75b11da6c89a003a4604e6",
+  "actor/texturefamily/ninx_extra.ab": "91c61eb7289c09ede96acf7e10f6d2c60b07623d",
+  "actor/texturefamily/ninx_extra2.ab": "56542f9dd8945fb4d6fe911fb2e0823764beab3e",
+  "actor/texturefamily/ph_80.ab": "cb8ae1bee3b56142f60b429e4f98a091de35c307",
+  "actor/texturefamily/ph_81.ab": "c3e921ee2451bca10f974af5be7a3bc6c99bba23",
+  "actor/texturefamily/ph_82.ab": "2582aee27fe043b430ff580e2fd63be4647226b3",
+  "actor/texturefamily/ph_83.ab": "367a43e777c1a990188734062009d05b08909c56",
+  "actor/texturefamily/ph_84.ab": "b5eaa352c33d30fa4f24591e08f01b5d4c16ea5f",
+  "actor/texturefamily/ph_85.ab": "9ad56d159fbeadb2f90e0096f2a089926ef1a584",
+  "actor/texturefamily/ph_86.ab": "207f7e3d617b96b8190844bc753ebf66e950e916",
+  "effect/common/material/01_fire/fire_614_b_ninev.ab": "f510187544f6383ef877dbe04644852bb70a194c",
+  "effect/common/material/09_pattern/pattern_809_a_ninev.ab": "e4102bad8718519383b255ba503d0178f7b19d33",
+  "effect/common/material/ninearts/air_008_a__ninev.ab": "a0b2272b34d7db029cc1d28c12497599c0324cff",
+  "effect/common/material/ninearts/glow_002_n__ninev.ab": "2a94514415a42283fbea03cd13f9c9bcf99e556a",
+  "effect/common/material/ninearts/particles_018_c__ninew.ab": "91cb602c117337bdbf5de73e576054da99c938d1",
+  "effect/common/material/ninearts/particles_608_a__ninef.ab": "d6cdc54aabbcbd0ee0fafec90a39ce5dbd19cb5f",
+  "effect/common/material/ninearts/particles_608_a__ninefg.ab": "bd94a234599d492a19a3b03124c418053590f7c4",
+  "effect/common/material/ninearts/particles_608_a__ninev.ab": "3f0a2b9e7fc660cdfa534072477eacbdb064dbcb",
+  "effect/common/material/ninearts/particles_608_a__ninew.ab": "6df9366aab37b614d7e72b8fccf024a319efad2a",
+  "effect/common/material/ninearts/sharp_452_g__ninev.ab": "e3d4b0061747a21cf468b3645381406c3e70370a",
+  "effect/common/material/ninearts/streak_621_a__ninev.ab": "f4bb5e5328406bb112efa421663e2ad5d1df13c1",
+  "effect/common/texture/01_fire/fire_614_4r_ninev.ab": "9f735801b956fab9e482f2a7184e68d9506b2f1c",
+  "effect/common/texture/10_ramp/ramp_311_4r_ninev.ab": "fdd99b12906f2348e0745ff3b77521069f0fb984",
+  "effect/prefab/monster/ph/nine/element_gather_02_fire.ab": "5e12084972b7c0fb410cb3a00f17e9d89a3cf5c7",
+  "effect/prefab/monster/ph/nine/element_gather_02_ice.ab": "2d72e65508eb80d9d7d505b0575f8acc6e72bb4d",
+  "effect/prefab/monster/ph/nine/element_gather_02_proc3.ab": "da6b5470b23d0ce628d14c4f417a508af7437b38",
+  "effect/prefab/monster/ph/nine/element_gather_02_wind.ab": "614d94e2a2ca4e5fffb7a5ebefd1c66619f4ef7d",
+  "effect/prefab/monster/ph/nine/magic_bba_pre_02a_n2.ab": "2bc973016864d5560b1b677aae5b28f7b54c7069",
+  "effect/prefab/monster/ph/nine/magic_cca_atk_04_n.ab": "c23c693c4b97ced643d154888acb13afe88faf66",
+  "effect/prefab/monster/ph/nine/magic_cca_atk_05a_n.ab": "1e70351d2fb14c85c5a599ffad639f135a7d642f",
+  "effect/prefab/monster/ph/nine/magic_cca_atk_06_n.ab": "774b283df9679571e12a9a4b90f2c0097ec347f9",
+  "effect/prefab/monster/ph/nine/ph_a1_01_n.ab": "2841c5f06fc02032931389aae8bcaacac8932ef3",
+  "effect/prefab/monster/ph/nine/ph_a2_01_n2.ab": "23c775f0901f302ff760e6f0e4a8c8e66c74ed29",
+  "effect/prefab/monster/ph/nine/ph_b1_02_n.ab": "858bccd8bfff5b8f90b989c791d108edf6766f62",
+  "effect/prefab/monster/ph/nine/ph_c1_01_n2.ab": "4591edfa154f1d05c6b918d5d43c0244599e9261",
+  "effect/prefab/monster/ph/nine/ph_c1_01a_n.ab": "2e913aa64685485cd962425699b87fb0058d451c",
+  "effect/prefab/monster/ph/nine/ph_c1_02_n2.ab": "95eb9ff8c11055765537a9519492f8044052afd0",
+  "effect/prefab/monster/ph/nine/ph_c2_01_n.ab": "7e44d54351e4a408a795ffd7329a4eaba144da70",
+  "effect/prefab/monster/ph/nine/ph_c2_02_n.ab": "ca7876170aa975308efd2f0c7db9406d4d0cbf4a",
+  "effect/prefab/monster/ph/nine/ph_magic_abc_1_02_n.ab": "a7f778eca296068917302d301933641045b96b03",
+  "effect/prefab/monster/ph/nine/ph_magic_abc_1_03a_n3.ab": "18fb724a82b1932159edd2b2917ee6b88176f09b",
+  "effect/prefab/monster/ph/ninearts/nine_arts_2a.ab": "093d71ffbdae394ce3287431f727ae536aba8b82",
+  "effect/prefab/monster/ph/ninearts/nine_arts_2b.ab": "d2506c56fcdecf049b89ea753ed6402ac02ef16a",
+  "effect/prefab/monster/ph/ninearts/nine_arts_2c.ab": "b8b0c8c8333be77d6b70a19e327eddae8dfcebea",
+  "effect/prefab/monster/ph/ninearts/nine_arts_5a.ab": "2c1f25bdb6ec2f2bc09e294bf7ee817f9c4bfbd1",
+  "effect/prefab/monster/ph/ninearts/nine_arts_5b.ab": "3cdae782c4f145de8218e415e61755bd8bfe10a2",
+  "effect/prefab/monster/ph/ninearts/nine_arts_5c.ab": "dc68b1353161bf556f1b208f23ff91d7d70b96e0",
+  "effect/prefab/monster/ph/ninearts/nine_arts_hit_fire.ab": "ed07de20034f3685913fd3ccc6631cfc13e1e3cb",
+  "effect/prefab/monster/ph/ninearts/nine_arts_hit_ice.ab": "75c8ee095ff8e33c52f163c914cd9a77048a4b7d",
+  "effect/prefab/monster/ph/ninearts/nine_arts_hit_wind.ab": "39579bae3e7cfc237db843da209c3e60616902d3",
+  "effect/prefab/monster/ph/ninearts/nine_arts_j5a.ab": "baaed8bde25b7324c6ab702ef2ade61eeb20a5f1",
+  "effect/prefab/monster/ph/ninearts/nine_arts_j5b.ab": "b081044ea52dc433b0127ed8cf84a17767506a70",
+  "effect/prefab/monster/ph/ninearts/nine_arts_j5c.ab": "d5725c96599aed134a2e5e445290b11d344456de",
+  "effect/prefab/monster/ph/nineviolet/ph_hit_02.ab": "401ac41569bcc6e277267a942f5be673362d034c",
+  "effect/prefab/monster/ph/nineviolet/ph_odod_boom_01.ab": "dd06999528cfc5bf7fc59c14708c4f7d4e8c1f03",
+  "ui/atlas/iconninehud200401/iconninehud200401.ab": "8fd5d7f5fb9bea9c31867693c4e5172f8327d8f3",
+  "ui/atlas/iconpotential200401/iconpotential200401.ab": "9292cea32cc6d5bd807f5843d90b5f4eb12616b4",
+  "ui/texture/heroheadicon/heroevohead_200401.ab": "5d99cd90fad66e32906333e4c1e8714b95a149e2",
+  "ui/texture/heroheadicon/heroevohead_off_200401.ab": "5c7714e2246818329ee8989ffa5bd4f31da8bcd1",
+  "ui/texture/heroheadicon/herofinalbattle_200401.ab": "47aca2d5c47555a342787b50616f5e334af4405d",
+  "ui/texture/heroheadicon/heroheadicon_200401.ab": "07d103f125d65a6353b51e7ee5a4059cac4e6247",
+  "ui/texture/heroheadicon/heropda_200401.ab": "217740827b797c08e33794afba5d6b31291c8b80",
+  "ui/texture/heroheadicon/heropvpfinish_200401.ab": "1f4bec3ab619dea9b7e1bd83c156afe91dd00f6e",
+  "ui/texture/heroheadicon/herosmallhead_200401.ab": "75188fa06dadf015146d096d7c9fb20a032d13f5",
+  "ui/texture/heroportraitcoatarms/heroportraitfull_200401.ab": "a3ef5ddda735e700a0ca679472316b6ae09695b2",
+  "ui/texture/heroportraitfull/heroportraitfull_200401.ab": "6e9aa4165643267acb54679430fcb89ca8e3e86a",
+  "ui/texture/heroportraitfullmb/heroportraitfull_200401.ab": "61671e1c1984b6e310620504554b71c33129624e",
+  "ui/texture/heroportraitlmb/heroportraitfull_200401.ab": "538de9bf78db4fb0044a6685c5c873491c301883",
+  "ui/texture/iconpotential/iconskill_200401.ab": "23a6340df936928fff31b5efa397c39b44a66f75",
+  "ui/texture/iconpotential/nineweave_a.ab": "30e2f0cce778650296a35d7bf9230512160e1927",
+  "ui/texture/iconpotential/nineweave_aa.ab": "7f1c6b8e5bddd06a5b3925e1dd0ab832a5da21e2",
+  "ui/texture/iconpotential/nineweave_aaa.ab": "54fa09aca150991dfe2aaf95f92a2f97d7eb1a0c",
+  "ui/texture/iconpotential/nineweave_aab.ab": "9225d6239675573d0079511528a97eba591fb921",
+  "ui/texture/iconpotential/nineweave_aac.ab": "6f909c6246db317aa8086d3b646e3be929730d4b",
+  "ui/texture/iconpotential/nineweave_ab.ab": "8c5031a033961f576ba46fa3041aa60f194ca820",
+  "ui/texture/iconpotential/nineweave_abc.ab": "771fc2e47ae6ef905d9ce3232320da094a1a2e57",
+  "ui/texture/iconpotential/nineweave_ac.ab": "e01e74b2e72d78c5d615f1b64f73f133c8168009",
+  "ui/texture/iconpotential/nineweave_b.ab": "c613114f072942aabe6c43163b8a1b7206963475",
+  "ui/texture/iconpotential/nineweave_bb.ab": "121da292820823704464b71746d6d1d3dcc47640",
+  "ui/texture/iconpotential/nineweave_bba.ab": "30d4d5fcc943476bbcd2f3234218890c08e15865",
+  "ui/texture/iconpotential/nineweave_bbb.ab": "4b7ea2aa4eeb95b874e2fea915f866d193459c68",
+  "ui/texture/iconpotential/nineweave_bbc.ab": "7608ab7847f3c2bdea3a39ea84840f568ae8fb1f",
+  "ui/texture/iconpotential/nineweave_bc.ab": "0b0f7079994859add3950899bef4a4e5c5a04147",
+  "ui/texture/iconpotential/nineweave_bcc.ab": "ab3c4ee747138c012a873206f65dbb3e61c06119",
+  "ui/texture/iconpotential/nineweave_c.ab": "3e8caa8d5bbfdafb169dc9b7b6a29530def2aa66",
+  "ui/texture/iconpotential/nineweave_cc.ab": "8ea88e42e1127675787b890e0b9d269577379d4b",
+  "ui/texture/iconpotential/nineweave_cca.ab": "fd4fc9c36603d80be9350a5418dd40e1e1b194f6",
+  "ui/texture/iconpotential/nineweave_ccc.ab": "7ffebb0950bd0fd23c811375816a00eaa3e5f28e",
+  "ui/texture/iconpotential/potential_2004011.ab": "ea7721cf8ee654afb909bc18ed9c372a90297e68",
+  "ui/texture/iconpotential/potential_2004012.ab": "47b747d58d675e73d4a359b5d987f06d52786268",
+  "ui/texture/iconpotential/potential_20401.ab": "d4f92979294f513f6cecb45ec4b3424d9d8027b6",
+  "ui/texture/iconpotential/potential_20402.ab": "dd2b0f0af3d51879523714c3c01d29e43bf1f464",
+  "ui/texture/iconpotential/potential_20403.ab": "f8d1e31782e9008257252ea6cde1de5fc413c28c",
+  "ui/texture/iconpotential/potential_20404.ab": "29da3a1f2d305e6061dcbf3f08315b98fe605ccc",
+  "ui/texture/iconpotential/potential_20405.ab": "c8c28eaf204e35c8d9ea27077a2c95c6d25d7885",
+  "ui/texture/iconpotential/potential_20406.ab": "56c1f236d044f0f2dbcd208badfa2c15fa93db39",
+  "ui/texture/iconpotential/potential_20407.ab": "d94843fa87e6a66f0cdb2f60083d0c439c77034f",
+  "ui/texture/iconpotential/potential_20408.ab": "df6ab426b81f93740d0ba306bdd6334282c5b735",
+  "ui/texture/iconpotential/potential_20409.ab": "bfa811f871dfc3fe235f14abce80879d5ca7341a",
+  "ui/texture/iconpotential/potential_20410.ab": "0c6ec139bc37e23473462f982849f62ae3270baf",
+  "ui/texture/iconpotential/potential_20411.ab": "b04b45522fe351e92008ee156f0145d36a0b09a8",
+  "ui/texture/iconpotential/potential_20412.ab": "a5a0c34bb9426f3f872220a293a23c6b62c48828",
+  "ui/texture/iconpotential/potential_20413.ab": "bf94f1081ab6583e2ffe6152f1ebf24085181e41",
+  "ui/texture/iconpotential/potential_20414.ab": "36889b76b0d8c2710d0a8a75f1299a5ee98b25d7",
+  "ui/texture/iconpotential/potential_20415.ab": "928ef71f41736954e742d12533edc390f4d62bbd",
+  "ui/texture/iconpotential/potential_20416.ab": "141dc1db8d46588ad08c08eb7ca24e9c3bb8f2f5",
+  "ui/texture/iconpotential/potential_20418.ab": "2fb4c4580341c8f8a5ec65624b31cef1d3dfe01b",
+  "ui/texture/iconpotential/potential_20420.ab": "024084e1518460d7c951261a6dce3b966340b5e3",
+  "ui/texture/iconpotential/potential_20421.ab": "ff5244bda3bf465ba03cff8b6dd30a3b08ac569c",
+  "ui/texture/iconpotential/potential_20422.ab": "d9fd02454838f8bfadfa2b26afc21dd0836141ec",
+  "ui/texture/iconpotential/potential_20423.ab": "fec6980af000e5504079400a4d1ba3f78aab5ffe",
+  "ui/texture/iconpotential/potential_20424.ab": "bd27b124a491a6fe3b06ed062d15682a32cd3e5e",
+  "ui/texture/iconpotential/potential_20425.ab": "64b3752e85d32cc338491def499e01c616bf1f85",
+  "ui/texture/iconpotential/potential_20426.ab": "2c352577941d285a95bed8fa78320cfab8bd44cd",
+  "ui/texture/iconpotential/potential_20427.ab": "856b8f84338a4c6bf8a648a20f1b7a0341ef7466",
+  "ui/texture/iconpotential/potential_20428.ab": "c21ab200139a5fa3c3ed5e6d850ae09ac0f6fe04",
+  "ui/texture/iconpotential/potential_20429.ab": "f65d3105f02e4f81cbe21d6059b9472f02ac9f7c",
+  "ui/texture/iconpotential/potential_20430.ab": "3bd9eac73f83529e9b568f21d36fcff3416e6d90",
+  "ui/texture/iconpotential/potential_20431.ab": "b4ea3f6d9c6df5ad4fe275c6a99d78cdb275abdf",
+  "ui/texture/iconpotential/potential_20432.ab": "5401c2a8fe61f559292ac4bc32bdee344a7a9b75",
+  "ui/texture/iconpotential/potential_20433.ab": "9b59127f1cd61eb33136c917c8bf9b99642634c4",
+  "ui/texture/iconpotential/potential_20434.ab": "5ff8bbbe5e3922af6d0c0cc01e0c1a6c3006d5fa",
+  "ui/texture/iconpotential/potential_20435.ab": "d6007f3a6b026eca95c30d7b3783bb80a77ea565",
+  "ui/texture/iconpotential/potential_20436.ab": "2585e102b0d6a625f01c8d3655e845d560315c54",
+  "ui/texture/iconpotential/potential_20437.ab": "e7d511cbdef19cd9ecd8b8b8f29b5c61e8dbf258",
+  "ui/texture/iconpotential/potential_ninetalent.ab": "ea244279664bd29a694c64e738978552a636b7cc"
+ },
+ "seeds": {
+  "actor/animation/role/ninx_2a.ab": null,
+  "actor/animation/role/ninx_2b.ab": null,
+  "actor/animation/role/ninx_2c.ab": null,
+  "actor/animation/role/ninx_5a.ab": null,
+  "actor/animation/role/ninx_5b.ab": null,
+  "actor/animation/role/ninx_5c.ab": null,
+  "actor/animation/role/ninx_arts.ab": null,
+  "actor/animation/role/ninx_flamepunisher.ab": null,
+  "actor/animation/role/ninx_j5a.ab": null,
+  "actor/animation/role/ninx_j5b.ab": null,
+  "actor/animation/role/ninx_j5c.ab": null,
+  "actor/animation/role/ninx_squat.ab": null,
+  "actor/animation/role/ninx_squat_loop.ab": null,
+  "actor/animation/role/ninx_squat_up.ab": null,
+  "actor/animation/role/ph_born2_timeline.ab": null,
+  "actor/animation/role/ph_born_timeline.ab": null,
+  "actor/animation/role/ph_burst_x_inherit.ab": null,
+  "actor/animation/role/ph_dash_timeline.ab": null,
+  "actor/animation/role/ph_drop_inherit.ab": null,
+  "actor/animation/role/ph_dropend4.ab": null,
+  "actor/animation/role/ph_knockdown_stand_inherit.ab": null,
+  "actor/animation/role/ph_squat_loop_inherit.ab": null,
+  "actor/animation/role/ph_squat_to_stand.ab": null,
+  "actor/animation/role/ph_stand2_timeline.ab": null,
+  "actor/animation/role/ph_stand_inherit.ab": null,
+  "actor/animation/role/ph_stand_timeline.ab": null,
+  "actor/animation/role/ph_standby_inherit.ab": null,
+  "actor/animation/role/ph_upjump_1.ab": null,
+  "actor/animation/role/ph_upjump_2.ab": null,
+  "actor/animation/role/ph_upjump_3.ab": null,
+  "actor/logicdata/nin.ab": null,
+  "actor/logicdata/ninb1.ab": null,
+  "actor/logicdata/ninb2.ab": null,
+  "actor/logicdata/ninb3.ab": null,
+  "actor/mesh/ninx/g0.ab": null,
+  "actor/sprite/ninx/02/ninx_page_00.ab": null,
+  "actor/sprite/ninx/02/ninx_page_01.ab": null,
+  "actor/sprite/ninx/80/ninx_page_00.ab": null,
+  "actor/sprite/ninx/80/ninx_page_01.ab": null,
+  "actor/sprite/ninx/81/ninx_page_00.ab": null,
+  "actor/sprite/ninx/81/ninx_page_01.ab": null,
+  "actor/sprite/ninx/82/ninx_page_00.ab": null,
+  "actor/sprite/ninx/82/ninx_page_01.ab": null,
+  "actor/sprite/ninx/83/ninx_page_00.ab": null,
+  "actor/sprite/ninx/83/ninx_page_01.ab": null,
+  "actor/sprite/ninx/84/ninx_page_00.ab": null,
+  "actor/sprite/ninx/84/ninx_page_01.ab": null,
+  "actor/sprite/ninx/85/ninx_page_00.ab": null,
+  "actor/sprite/ninx/85/ninx_page_01.ab": null,
+  "actor/sprite/ninx/86/ninx_page_00.ab": null,
+  "actor/sprite/ninx/86/ninx_page_01.ab": null,
+  "actor/sprite/ninx/extra/ninx_page_00.ab": null,
+  "actor/sprite/ninx/extra/ninx_page_01.ab": null,
+  "actor/sprite/ninx/extra2/ninx_blank.ab": null,
+  "actor/sprite/ph/80/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/80/ph_base_1_c.ab": null,
+  "actor/sprite/ph/80/ph_base_2_c.ab": null,
+  "actor/sprite/ph/80/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/80/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/80/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/80/ph_show_1_c.ab": null,
+  "actor/sprite/ph/80/ph_show_2_c.ab": null,
+  "actor/sprite/ph/80/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/80/ph_skill_2_c.ab": null,
+  "actor/sprite/ph/81/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/81/ph_base_1_c.ab": null,
+  "actor/sprite/ph/81/ph_base_2_c.ab": null,
+  "actor/sprite/ph/81/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/81/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/81/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/81/ph_show_1_c.ab": null,
+  "actor/sprite/ph/81/ph_show_2_c.ab": null,
+  "actor/sprite/ph/81/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/81/ph_skill_2_c.ab": null,
+  "actor/sprite/ph/82/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/82/ph_base_1_c.ab": null,
+  "actor/sprite/ph/82/ph_base_2_c.ab": null,
+  "actor/sprite/ph/82/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/82/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/82/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/82/ph_show_1_c.ab": null,
+  "actor/sprite/ph/82/ph_show_2_c.ab": null,
+  "actor/sprite/ph/82/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/82/ph_skill_2_c.ab": null,
+  "actor/sprite/ph/83/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/83/ph_base_1_c.ab": null,
+  "actor/sprite/ph/83/ph_base_2_c.ab": null,
+  "actor/sprite/ph/83/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/83/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/83/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/83/ph_show_1_c.ab": null,
+  "actor/sprite/ph/83/ph_show_2_c.ab": null,
+  "actor/sprite/ph/83/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/83/ph_skill_2_c.ab": null,
+  "actor/sprite/ph/84/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/84/ph_base_1_c.ab": null,
+  "actor/sprite/ph/84/ph_base_2_c.ab": null,
+  "actor/sprite/ph/84/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/84/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/84/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/84/ph_show_1_c.ab": null,
+  "actor/sprite/ph/84/ph_show_2_c.ab": null,
+  "actor/sprite/ph/84/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/84/ph_skill_2_c.ab": null,
+  "actor/sprite/ph/85/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/85/ph_base_1_c.ab": null,
+  "actor/sprite/ph/85/ph_base_2_c.ab": null,
+  "actor/sprite/ph/85/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/85/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/85/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/85/ph_show_1_c.ab": null,
+  "actor/sprite/ph/85/ph_show_2_c.ab": null,
+  "actor/sprite/ph/85/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/85/ph_skill_2_c.ab": null,
+  "actor/sprite/ph/86/ph_atk_1_c.ab": null,
+  "actor/sprite/ph/86/ph_base_1_c.ab": null,
+  "actor/sprite/ph/86/ph_base_2_c.ab": null,
+  "actor/sprite/ph/86/ph_ca_1_c.ab": null,
+  "actor/sprite/ph/86/ph_magic_1_c.ab": null,
+  "actor/sprite/ph/86/ph_magic_2_c.ab": null,
+  "actor/sprite/ph/86/ph_show_1_c.ab": null,
+  "actor/sprite/ph/86/ph_show_2_c.ab": null,
+  "actor/sprite/ph/86/ph_skill_1_c.ab": null,
+  "actor/sprite/ph/86/ph_skill_2_c.ab": null,
+  "actor/texturefamily/nin_02.ab": null,
+  "actor/texturefamily/nin_extra.ab": null,
+  "actor/texturefamily/nin_extra2.ab": null,
+  "actor/texturefamily/ninx_02.ab": null,
+  "actor/texturefamily/ninx_80.ab": null,
+  "actor/texturefamily/ninx_81.ab": null,
+  "actor/texturefamily/ninx_82.ab": null,
+  "actor/texturefamily/ninx_83.ab": null,
+  "actor/texturefamily/ninx_84.ab": null,
+  "actor/texturefamily/ninx_85.ab": null,
+  "actor/texturefamily/ninx_86.ab": null,
+  "actor/texturefamily/ninx_extra.ab": null,
+  "actor/texturefamily/ninx_extra2.ab": null,
+  "actor/texturefamily/ph_80.ab": null,
+  "actor/texturefamily/ph_81.ab": null,
+  "actor/texturefamily/ph_82.ab": null,
+  "actor/texturefamily/ph_83.ab": null,
+  "actor/texturefamily/ph_84.ab": null,
+  "actor/texturefamily/ph_85.ab": null,
+  "actor/texturefamily/ph_86.ab": null,
+  "effect/common/material/01_fire/fire_614_b_ninev.ab": null,
+  "effect/common/material/09_pattern/pattern_809_a_ninev.ab": null,
+  "effect/common/material/ninearts/air_008_a__ninev.ab": null,
+  "effect/common/material/ninearts/glow_002_n__ninev.ab": null,
+  "effect/common/material/ninearts/particles_018_c__ninew.ab": null,
+  "effect/common/material/ninearts/particles_608_a__ninef.ab": null,
+  "effect/common/material/ninearts/particles_608_a__ninefg.ab": null,
+  "effect/common/material/ninearts/particles_608_a__ninev.ab": null,
+  "effect/common/material/ninearts/particles_608_a__ninew.ab": null,
+  "effect/common/material/ninearts/sharp_452_g__ninev.ab": null,
+  "effect/common/material/ninearts/streak_621_a__ninev.ab": null,
+  "effect/common/texture/01_fire/fire_614_4r_ninev.ab": null,
+  "effect/common/texture/10_ramp/ramp_311_4r_ninev.ab": null,
+  "effect/prefab/monster/ph/nine/element_gather_02_fire.ab": null,
+  "effect/prefab/monster/ph/nine/element_gather_02_ice.ab": null,
+  "effect/prefab/monster/ph/nine/element_gather_02_proc3.ab": null,
+  "effect/prefab/monster/ph/nine/element_gather_02_wind.ab": null,
+  "effect/prefab/monster/ph/nine/magic_bba_pre_02a_n2.ab": null,
+  "effect/prefab/monster/ph/nine/magic_cca_atk_04_n.ab": null,
+  "effect/prefab/monster/ph/nine/magic_cca_atk_05a_n.ab": null,
+  "effect/prefab/monster/ph/nine/magic_cca_atk_06_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_a1_01_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_a2_01_n2.ab": null,
+  "effect/prefab/monster/ph/nine/ph_b1_02_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_c1_01_n2.ab": null,
+  "effect/prefab/monster/ph/nine/ph_c1_01a_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_c1_02_n2.ab": null,
+  "effect/prefab/monster/ph/nine/ph_c2_01_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_c2_02_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_magic_abc_1_02_n.ab": null,
+  "effect/prefab/monster/ph/nine/ph_magic_abc_1_03a_n3.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_2a.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_2b.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_2c.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_5a.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_5b.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_5c.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_hit_fire.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_hit_ice.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_hit_wind.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_j5a.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_j5b.ab": null,
+  "effect/prefab/monster/ph/ninearts/nine_arts_j5c.ab": null,
+  "effect/prefab/monster/ph/nineviolet/ph_hit_02.ab": null,
+  "effect/prefab/monster/ph/nineviolet/ph_odod_boom_01.ab": null,
+  "ui/atlas/iconninehud200401/iconninehud200401.ab": null,
+  "ui/atlas/iconpotential200401/iconpotential200401.ab": null,
+  "ui/texture/heroheadicon/heroevohead_200401.ab": null,
+  "ui/texture/heroheadicon/heroevohead_off_200401.ab": null,
+  "ui/texture/heroheadicon/herofinalbattle_200401.ab": null,
+  "ui/texture/heroheadicon/heroheadicon_200401.ab": null,
+  "ui/texture/heroheadicon/heropda_200401.ab": null,
+  "ui/texture/heroheadicon/heropvpfinish_200401.ab": null,
+  "ui/texture/heroheadicon/herosmallhead_200401.ab": null,
+  "ui/texture/heroportraitcoatarms/heroportraitfull_200401.ab": null,
+  "ui/texture/heroportraitfull/heroportraitfull_200401.ab": null,
+  "ui/texture/heroportraitfullmb/heroportraitfull_200401.ab": null,
+  "ui/texture/heroportraitlmb/heroportraitfull_200401.ab": null,
+  "ui/texture/iconpotential/iconskill_200401.ab": null,
+  "ui/texture/iconpotential/nineweave_a.ab": null,
+  "ui/texture/iconpotential/nineweave_aa.ab": null,
+  "ui/texture/iconpotential/nineweave_aaa.ab": null,
+  "ui/texture/iconpotential/nineweave_aab.ab": null,
+  "ui/texture/iconpotential/nineweave_aac.ab": null,
+  "ui/texture/iconpotential/nineweave_ab.ab": null,
+  "ui/texture/iconpotential/nineweave_abc.ab": null,
+  "ui/texture/iconpotential/nineweave_ac.ab": null,
+  "ui/texture/iconpotential/nineweave_b.ab": null,
+  "ui/texture/iconpotential/nineweave_bb.ab": null,
+  "ui/texture/iconpotential/nineweave_bba.ab": null,
+  "ui/texture/iconpotential/nineweave_bbb.ab": null,
+  "ui/texture/iconpotential/nineweave_bbc.ab": null,
+  "ui/texture/iconpotential/nineweave_bc.ab": null,
+  "ui/texture/iconpotential/nineweave_bcc.ab": null,
+  "ui/texture/iconpotential/nineweave_c.ab": null,
+  "ui/texture/iconpotential/nineweave_cc.ab": null,
+  "ui/texture/iconpotential/nineweave_cca.ab": null,
+  "ui/texture/iconpotential/nineweave_ccc.ab": null,
+  "ui/texture/iconpotential/potential_2004011.ab": null,
+  "ui/texture/iconpotential/potential_2004012.ab": null,
+  "ui/texture/iconpotential/potential_20401.ab": null,
+  "ui/texture/iconpotential/potential_20402.ab": null,
+  "ui/texture/iconpotential/potential_20403.ab": null,
+  "ui/texture/iconpotential/potential_20404.ab": null,
+  "ui/texture/iconpotential/potential_20405.ab": null,
+  "ui/texture/iconpotential/potential_20406.ab": null,
+  "ui/texture/iconpotential/potential_20407.ab": null,
+  "ui/texture/iconpotential/potential_20408.ab": null,
+  "ui/texture/iconpotential/potential_20409.ab": null,
+  "ui/texture/iconpotential/potential_20410.ab": null,
+  "ui/texture/iconpotential/potential_20411.ab": null,
+  "ui/texture/iconpotential/potential_20412.ab": null,
+  "ui/texture/iconpotential/potential_20413.ab": null,
+  "ui/texture/iconpotential/potential_20414.ab": null,
+  "ui/texture/iconpotential/potential_20415.ab": null,
+  "ui/texture/iconpotential/potential_20416.ab": null,
+  "ui/texture/iconpotential/potential_20418.ab": null,
+  "ui/texture/iconpotential/potential_20420.ab": null,
+  "ui/texture/iconpotential/potential_20421.ab": null,
+  "ui/texture/iconpotential/potential_20422.ab": null,
+  "ui/texture/iconpotential/potential_20423.ab": null,
+  "ui/texture/iconpotential/potential_20424.ab": null,
+  "ui/texture/iconpotential/potential_20425.ab": null,
+  "ui/texture/iconpotential/potential_20426.ab": null,
+  "ui/texture/iconpotential/potential_20427.ab": null,
+  "ui/texture/iconpotential/potential_20428.ab": null,
+  "ui/texture/iconpotential/potential_20429.ab": null,
+  "ui/texture/iconpotential/potential_20430.ab": null,
+  "ui/texture/iconpotential/potential_20431.ab": null,
+  "ui/texture/iconpotential/potential_20432.ab": null,
+  "ui/texture/iconpotential/potential_20433.ab": null,
+  "ui/texture/iconpotential/potential_20434.ab": null,
+  "ui/texture/iconpotential/potential_20435.ab": null,
+  "ui/texture/iconpotential/potential_20436.ab": null,
+  "ui/texture/iconpotential/potential_20437.ab": null,
+  "ui/texture/iconpotential/potential_ninetalent.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [
+   "actor/logicdata/nin",
+   "actor/logicdata/ninb1",
+   "actor/logicdata/ninb2",
+   "actor/logicdata/ninb3",
+   "actor/texturefamily/nin_02",
+   "actor/texturefamily/nin_extra",
+   "actor/texturefamily/nin_extra2",
+   "ui/texture/heroportraitfull/heroportraitfull_200401",
+   "ui/texture/heroportraitlmb/heroportraitfull_200401",
+   "ui/texture/heroportraitfullmb/heroportraitfull_200401",
+   "ui/texture/heroportraitcoatarms/heroportraitfull_200401",
+   "ui/texture/heroheadicon/heroheadicon_200401",
+   "ui/texture/iconpotential/potential_20401",
+   "ui/texture/iconpotential/potential_20402",
+   "ui/texture/iconpotential/potential_20403",
+   "ui/texture/iconpotential/potential_20404",
+   "ui/texture/iconpotential/potential_20405",
+   "ui/texture/iconpotential/potential_20406",
+   "ui/texture/iconpotential/potential_20407",
+   "ui/texture/iconpotential/potential_20408",
+   "ui/texture/iconpotential/potential_20409",
+   "ui/texture/iconpotential/potential_20410",
+   "ui/texture/iconpotential/potential_20411",
+   "ui/texture/iconpotential/potential_20412",
+   "ui/texture/iconpotential/potential_20413",
+   "ui/texture/iconpotential/potential_20414",
+   "ui/texture/iconpotential/potential_20415",
+   "ui/texture/iconpotential/potential_20416",
+   "ui/texture/iconpotential/potential_20418",
+   "ui/texture/iconpotential/potential_20420",
+   "ui/texture/iconpotential/potential_20421",
+   "ui/texture/iconpotential/potential_20422",
+   "ui/texture/iconpotential/potential_20423",
+   "ui/texture/iconpotential/potential_20424",
+   "ui/texture/iconpotential/potential_20425",
+   "ui/texture/iconpotential/potential_20426",
+   "ui/texture/iconpotential/potential_20427",
+   "ui/texture/iconpotential/potential_20428",
+   "ui/texture/iconpotential/potential_20429",
+   "ui/texture/iconpotential/potential_20430",
+   "ui/texture/iconpotential/potential_20431",
+   "ui/texture/iconpotential/potential_20432",
+   "ui/texture/iconpotential/potential_20433",
+   "ui/texture/iconpotential/potential_20434",
+   "ui/texture/iconpotential/potential_20435",
+   "ui/texture/iconpotential/potential_20436",
+   "ui/texture/iconpotential/potential_20437",
+   "ui/texture/iconpotential/potential_ninetalent",
+   "ui/texture/iconpotential/potential_2004011",
+   "ui/texture/iconpotential/potential_2004012",
+   "actor/animation/role/ph_stand_inherit",
+   "actor/animation/role/ph_standby_inherit",
+   "actor/animation/role/ph_stand_timeline",
+   "actor/animation/role/ph_stand2_timeline",
+   "actor/animation/role/ph_squat_loop_inherit",
+   "actor/animation/role/ph_squat_to_stand",
+   "actor/animation/role/ph_drop_inherit",
+   "actor/animation/role/ph_dash_timeline",
+   "actor/animation/role/ph_burst_x_inherit",
+   "actor/animation/role/ph_born_timeline",
+   "actor/animation/role/ph_born2_timeline",
+   "actor/animation/role/ph_knockdown_stand_inherit",
+   "actor/animation/role/ph_upjump_1",
+   "actor/animation/role/ph_upjump_2",
+   "actor/animation/role/ph_upjump_3",
+   "actor/animation/role/ph_dropend4",
+   "ui/texture/heroheadicon/herofinalbattle_200401",
+   "ui/texture/heroheadicon/heropvpfinish_200401",
+   "ui/texture/heroheadicon/heropda_200401",
+   "ui/texture/heroheadicon/herosmallhead_200401",
+   "ui/texture/iconpotential/iconskill_200401",
+   "ui/texture/heroheadicon/heroevohead_200401",
+   "ui/texture/heroheadicon/heroevohead_off_200401",
+   "ui/texture/iconpotential/nineweave_a",
+   "ui/texture/iconpotential/nineweave_aa",
+   "ui/texture/iconpotential/nineweave_aaa",
+   "ui/texture/iconpotential/nineweave_aab",
+   "ui/texture/iconpotential/nineweave_aac",
+   "ui/texture/iconpotential/nineweave_ab",
+   "ui/texture/iconpotential/nineweave_abc",
+   "ui/texture/iconpotential/nineweave_ac",
+   "ui/texture/iconpotential/nineweave_b",
+   "ui/texture/iconpotential/nineweave_bb",
+   "ui/texture/iconpotential/nineweave_bba",
+   "ui/texture/iconpotential/nineweave_bbb",
+   "ui/texture/iconpotential/nineweave_bbc",
+   "ui/texture/iconpotential/nineweave_bc",
+   "ui/texture/iconpotential/nineweave_bcc",
+   "ui/texture/iconpotential/nineweave_c",
+   "ui/texture/iconpotential/nineweave_cc",
+   "ui/texture/iconpotential/nineweave_cca",
+   "ui/texture/iconpotential/nineweave_ccc",
+   "effect/prefab/monster/ph/nineviolet/ph_odod_boom_01",
+   "effect/prefab/monster/ph/nineviolet/ph_hit_02",
+   "effect/common/material/01_fire/fire_614_b_ninev",
+   "effect/common/material/09_pattern/pattern_809_a_ninev",
+   "effect/common/texture/01_fire/fire_614_4r_ninev",
+   "effect/common/texture/10_ramp/ramp_311_4r_ninev",
+   "effect/prefab/monster/ph/nine/ph_c1_01_n2",
+   "effect/prefab/monster/ph/nine/ph_c1_01a_n",
+   "effect/prefab/monster/ph/nine/ph_c1_02_n2",
+   "effect/prefab/monster/ph/nine/ph_b1_02_n",
+   "effect/prefab/monster/ph/nine/ph_c2_01_n",
+   "effect/prefab/monster/ph/nine/ph_c2_02_n",
+   "effect/prefab/monster/ph/nine/ph_a2_01_n2",
+   "effect/prefab/monster/ph/nine/ph_a1_01_n",
+   "effect/prefab/monster/ph/nine/element_gather_02_proc3",
+   "effect/prefab/monster/ph/nine/ph_magic_abc_1_02_n",
+   "effect/prefab/monster/ph/nine/magic_cca_atk_06_n",
+   "effect/prefab/monster/ph/nine/magic_cca_atk_05a_n",
+   "effect/prefab/monster/ph/nine/magic_cca_atk_04_n",
+   "effect/prefab/monster/ph/nine/ph_magic_abc_1_03a_n3",
+   "effect/prefab/monster/ph/nine/magic_bba_pre_02a_n2",
+   "effect/prefab/monster/ph/nine/element_gather_02_fire",
+   "effect/prefab/monster/ph/nine/element_gather_02_wind",
+   "effect/prefab/monster/ph/nine/element_gather_02_ice",
+   "ui/atlas/iconpotential200401/iconpotential200401",
+   "ui/atlas/iconninehud200401/iconninehud200401",
+   "actor/sprite/ph/80/ph_atk_1_c",
+   "actor/sprite/ph/80/ph_base_1_c",
+   "actor/sprite/ph/80/ph_base_2_c",
+   "actor/sprite/ph/80/ph_ca_1_c",
+   "actor/sprite/ph/80/ph_magic_1_c",
+   "actor/sprite/ph/80/ph_magic_2_c",
+   "actor/sprite/ph/80/ph_show_1_c",
+   "actor/sprite/ph/80/ph_show_2_c",
+   "actor/sprite/ph/80/ph_skill_1_c",
+   "actor/sprite/ph/80/ph_skill_2_c",
+   "actor/texturefamily/ph_80",
+   "actor/sprite/ph/81/ph_atk_1_c",
+   "actor/sprite/ph/81/ph_base_1_c",
+   "actor/sprite/ph/81/ph_base_2_c",
+   "actor/sprite/ph/81/ph_ca_1_c",
+   "actor/sprite/ph/81/ph_magic_1_c",
+   "actor/sprite/ph/81/ph_magic_2_c",
+   "actor/sprite/ph/81/ph_show_1_c",
+   "actor/sprite/ph/81/ph_show_2_c",
+   "actor/sprite/ph/81/ph_skill_1_c",
+   "actor/sprite/ph/81/ph_skill_2_c",
+   "actor/texturefamily/ph_81",
+   "actor/sprite/ph/82/ph_atk_1_c",
+   "actor/sprite/ph/82/ph_base_1_c",
+   "actor/sprite/ph/82/ph_base_2_c",
+   "actor/sprite/ph/82/ph_ca_1_c",
+   "actor/sprite/ph/82/ph_magic_1_c",
+   "actor/sprite/ph/82/ph_magic_2_c",
+   "actor/sprite/ph/82/ph_show_1_c",
+   "actor/sprite/ph/82/ph_show_2_c",
+   "actor/sprite/ph/82/ph_skill_1_c",
+   "actor/sprite/ph/82/ph_skill_2_c",
+   "actor/texturefamily/ph_82",
+   "actor/sprite/ph/83/ph_atk_1_c",
+   "actor/sprite/ph/83/ph_base_1_c",
+   "actor/sprite/ph/83/ph_base_2_c",
+   "actor/sprite/ph/83/ph_ca_1_c",
+   "actor/sprite/ph/83/ph_magic_1_c",
+   "actor/sprite/ph/83/ph_magic_2_c",
+   "actor/sprite/ph/83/ph_show_1_c",
+   "actor/sprite/ph/83/ph_show_2_c",
+   "actor/sprite/ph/83/ph_skill_1_c",
+   "actor/sprite/ph/83/ph_skill_2_c",
+   "actor/texturefamily/ph_83",
+   "actor/sprite/ph/84/ph_atk_1_c",
+   "actor/sprite/ph/84/ph_base_1_c",
+   "actor/sprite/ph/84/ph_base_2_c",
+   "actor/sprite/ph/84/ph_ca_1_c",
+   "actor/sprite/ph/84/ph_magic_1_c",
+   "actor/sprite/ph/84/ph_magic_2_c",
+   "actor/sprite/ph/84/ph_show_1_c",
+   "actor/sprite/ph/84/ph_show_2_c",
+   "actor/sprite/ph/84/ph_skill_1_c",
+   "actor/sprite/ph/84/ph_skill_2_c",
+   "actor/texturefamily/ph_84",
+   "actor/sprite/ph/85/ph_atk_1_c",
+   "actor/sprite/ph/85/ph_base_1_c",
+   "actor/sprite/ph/85/ph_base_2_c",
+   "actor/sprite/ph/85/ph_ca_1_c",
+   "actor/sprite/ph/85/ph_magic_1_c",
+   "actor/sprite/ph/85/ph_magic_2_c",
+   "actor/sprite/ph/85/ph_show_1_c",
+   "actor/sprite/ph/85/ph_show_2_c",
+   "actor/sprite/ph/85/ph_skill_1_c",
+   "actor/sprite/ph/85/ph_skill_2_c",
+   "actor/texturefamily/ph_85",
+   "actor/sprite/ph/86/ph_atk_1_c",
+   "actor/sprite/ph/86/ph_base_1_c",
+   "actor/sprite/ph/86/ph_base_2_c",
+   "actor/sprite/ph/86/ph_ca_1_c",
+   "actor/sprite/ph/86/ph_magic_1_c",
+   "actor/sprite/ph/86/ph_magic_2_c",
+   "actor/sprite/ph/86/ph_show_1_c",
+   "actor/sprite/ph/86/ph_show_2_c",
+   "actor/sprite/ph/86/ph_skill_1_c",
+   "actor/sprite/ph/86/ph_skill_2_c",
+   "actor/texturefamily/ph_86"
+  ],
+  "entries": [
+   [
+    "actor/logicdata/nin",
+    []
+   ],
+   [
+    "actor/logicdata/ninb1",
+    []
+   ],
+   [
+    "actor/logicdata/ninb2",
+    []
+   ],
+   [
+    "actor/logicdata/ninb3",
+    []
+   ],
+   [
+    "actor/texturefamily/nin_02",
+    []
+   ],
+   [
+    "actor/texturefamily/nin_extra",
+    []
+   ],
+   [
+    "actor/texturefamily/nin_extra2",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfull/heroportraitfull_200401",
+    []
+   ],
+   [
+    "ui/texture/heroportraitlmb/heroportraitfull_200401",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfullmb/heroportraitfull_200401",
+    []
+   ],
+   [
+    "ui/texture/heroportraitcoatarms/heroportraitfull_200401",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroheadicon_200401",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20401",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20402",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20403",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20404",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20405",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20406",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20407",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20408",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20409",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20410",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20411",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20412",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20413",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20414",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20415",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20416",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20418",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20420",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20421",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20422",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20423",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20424",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20425",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20426",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20427",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20428",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20429",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20430",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20431",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20432",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20433",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20434",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20435",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20436",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_20437",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_ninetalent",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_2004011",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_2004012",
+    []
+   ],
+   [
+    "actor/animation/role/ph_stand_inherit",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_standby_inherit",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_stand_timeline",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_stand2_timeline",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_squat_loop_inherit",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_squat_to_stand",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_drop_inherit",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_dash_timeline",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_burst_x_inherit",
+    [
+     "actor/mesh/ph/skill",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_born_timeline",
+    [
+     "actor/mesh/ph/show",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_born2_timeline",
+    [
+     "actor/mesh/ph/show",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_knockdown_stand_inherit",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_upjump_1",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_upjump_2",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_upjump_3",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ph_dropend4",
+    [
+     "actor/mesh/ph/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "ui/texture/heroheadicon/herofinalbattle_200401",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropvpfinish_200401",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropda_200401",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herosmallhead_200401",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_200401",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroevohead_200401",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroevohead_off_200401",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_a",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_aa",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_aaa",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_aab",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_aac",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_ab",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_abc",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_ac",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_b",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_bb",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_bba",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_bbb",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_bbc",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_bc",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_bcc",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_c",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_cc",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_cca",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/nineweave_ccc",
+    []
+   ],
+   [
+    "effect/prefab/monster/ph/nineviolet/ph_odod_boom_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/sphere_601",
+     "effect/common/fbx/sphere_621",
+     "effect/common/fbx/sphere_622",
+     "effect/common/material/01_fire/fire_614_b_ninev",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_007_b",
+     "effect/common/material/06_normal/normal_005_e",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/09_pattern/pattern_809_a_ninev",
+     "effect/common/material/13_sharp/sharp_032_b",
+     "effect/common/material/13_sharp/sharp_621_c",
+     "effect/common/material/18_turbulence/turbulence_008_k24",
+     "effect/common/material/18_turbulence/turbulence_008_m37c",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/01_fire/fire_614_4r",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_007_4r",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_001a_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_007_1c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4c",
+     "effect/common/texture/04_mask/mask_426_4r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_664_1c",
+     "effect/common/texture/06_normal/normal_005a_4r",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/09_pattern/pattern_809_4r",
+     "effect/common/texture/10_ramp/ramp_311_4r",
+     "effect/common/texture/10_ramp/ramp_616a1_wb_4r",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_655_4r",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_032_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nineviolet/ph_hit_02",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_211",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_004_g",
+     "effect/common/material/04_mask/mask_712_e1",
+     "effect/common/material/13_sharp/sharp_004_f1",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/13_sharp/sharp_004_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/common/material/01_fire/fire_614_b_ninev",
+    [
+     "effect/common/texture/01_fire/fire_614_4r_ninev",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_001a_4r",
+     "effect/common/texture/04_mask/mask_026_4c",
+     "effect/common/texture/10_ramp/ramp_616a1_wb_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/09_pattern/pattern_809_a_ninev",
+    [
+     "effect/common/texture/09_pattern/pattern_809_4r",
+     "effect/common/texture/10_ramp/ramp_311_4r_ninev",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/texture/01_fire/fire_614_4r_ninev",
+    []
+   ],
+   [
+    "effect/common/texture/10_ramp/ramp_311_4r_ninev",
+    []
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_c1_01_n2",
+    [
+     "effect/common/fbx/loft_616",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_016_a",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/08_particles/particles_021_c",
+     "effect/common/material/18_turbulence/turbulence_008_m36",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_421a_1c",
+     "effect/common/texture/06_normal/normal_016_4c",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/08_particles/particles_029_4c",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_c1_01a_n",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_007_b",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_007_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_c1_02_n2",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_004_a",
+     "effect/common/material/04_mask/mask_712_c4",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/11_ring/ring_002_a",
+     "effect/common/material/14_air/air_209_c",
+     "effect/common/material/15_streak/streak_636_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_609_4c",
+     "effect/common/texture/04_mask/mask_673_1c",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/11_ring/ring_002_4c",
+     "effect/common/texture/14_air/air_209_4r",
+     "effect/common/texture/15_streak/streak_636_4c",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_b1_02_n",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_027",
+     "effect/common/fbx/plane_356",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/04_mask/mask_026_i8",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/14_air/air_032_a",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/material/17_trail/trail_305_d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_026_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_308_4c",
+     "effect/common/texture/04_mask/mask_325_4c",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/14_air/air_032_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/17_trail/trail_305_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_211_4r",
+     "effect/common/texture/18_turbulence/turbulence_215_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_c2_01_n",
+    [
+     "effect/common/fbx/loft_662",
+     "effect/common/fbx/loft_662a",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_401_e",
+     "effect/common/material/13_sharp/sharp_675_e",
+     "effect/common/material/15_streak/streak_761_c",
+     "effect/common/material/18_turbulence/turbulence_008_m34",
+     "effect/common/material/18_turbulence/turbulence_021_f124b",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_011a_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/04_mask/mask_624_1r",
+     "effect/common/texture/04_mask/mask_662_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "effect/common/texture/10_ramp/ramp_616_4r",
+     "effect/common/texture/13_sharp/sharp_675c_4r",
+     "effect/common/texture/15_streak/streak_761_4r",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_c2_02_n",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_211",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_004_h",
+     "effect/common/material/13_sharp/sharp_666_a",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/18_turbulence/turbulence_023_a4",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_004_4c",
+     "effect/common/texture/13_sharp/sharp_666_4c",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_a2_01_n2",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/sphere_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_010_c5",
+     "effect/common/material/08_particles/particles_601_a",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/14_air/air_008_d",
+     "effect/common/material/14_air/air_603_a",
+     "effect/common/material/18_turbulence/turbulence_265_i",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4r",
+     "effect/common/texture/04_mask/mask_029_1c",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "effect/common/texture/08_particles/particles_601_4c",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/14_air/air_008_4c",
+     "effect/common/texture/14_air/air_603_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_020_4r",
+     "effect/common/texture/18_turbulence/turbulence_031_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_a1_01_n",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_224",
+     "effect/common/fbx/plane_604",
+     "effect/common/fbx/plane_613",
+     "effect/common/material/02_glow/glow_002_l",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_002_n1",
+     "effect/common/material/02_glow/glow_203_a",
+     "effect/common/material/05_nature/nature_012_b",
+     "effect/common/material/05_nature/nature_352_a",
+     "effect/common/material/06_normal/normal_002_a",
+     "effect/common/material/08_particles/particles_029_d",
+     "effect/common/material/08_particles/particles_601_a",
+     "effect/common/material/14_air/air_008_d",
+     "effect/common/material/14_air/air_603_a",
+     "effect/common/material/15_streak/streak_620_a",
+     "effect/common/material/17_trail/trail_305_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_203_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_029_1c",
+     "effect/common/texture/05_nature/nature_012_4c",
+     "effect/common/texture/05_nature/nature_352_4c",
+     "effect/common/texture/06_normal/normal_002_4c",
+     "effect/common/texture/08_particles/particles_029_4c",
+     "effect/common/texture/08_particles/particles_601_4c",
+     "effect/common/texture/10_ramp/ramp_003_4c",
+     "effect/common/texture/14_air/air_008_4c",
+     "effect/common/texture/14_air/air_603_4r",
+     "effect/common/texture/15_streak/streak_620_4c",
+     "effect/common/texture/17_trail/trail_305_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_031_1c",
+     "effect/common/texture/18_turbulence/turbulence_031_1r",
+     "effect/common/texture/18_turbulence/turbulence_201_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_241_4r",
+     "effect/common/texture/18_turbulence/turbulence_719_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/element_gather_02_proc3",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_013",
+     "effect/common/fbx/plane_211",
+     "effect/common/fbx/ring_013",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_007_b",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/04_mask/mask_712_c2",
+     "effect/common/material/04_mask/mask_712_d",
+     "effect/common/material/05_nature/nature_653_b",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_004_h",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/13_sharp/sharp_004_f1",
+     "effect/common/material/13_sharp/sharp_032_a",
+     "effect/common/material/13_sharp/sharp_317_d",
+     "effect/common/material/17_trail/trail_601_d",
+     "effect/common/material/17_trail/trail_603_b",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/18_turbulence/turbulence_023_a4",
+     "effect/common/material/18_turbulence/turbulence_023_a4a",
+     "effect/common/material/18_turbulence/turbulence_023_a7",
+     "effect/common/material/20_water/water_617_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_007_4r",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_208_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_615_4c",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/05_nature/nature_650_4r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_004_4c",
+     "effect/common/texture/09_pattern/pattern_809a_4r",
+     "effect/common/texture/10_ramp/ramp_307_4c",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/13_sharp/sharp_004_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_317_4r",
+     "effect/common/texture/17_trail/trial_601_4r",
+     "effect/common/texture/17_trail/trial_603_4c",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038b_4r",
+     "effect/common/texture/18_turbulence/turbulence_040a_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "effect/common/texture/18_turbulence/turbulence_719_4r",
+     "effect/common/texture/20_water/water_617_4c",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_magic_abc_1_02_n",
+    [
+     "effect/common/fbx/ice_603",
+     "effect/common/fbx/ice_743a",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_002_n1",
+     "effect/common/material/05_nature/nature_688_a",
+     "effect/common/material/05_nature/nature_688_b",
+     "effect/common/material/05_nature/nature_810_a",
+     "effect/common/material/08_particles/particles_608_a",
+     "effect/common/material/14_air/air_008_a",
+     "effect/common/material/18_turbulence/turbulence_008_m17",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_007_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_027_4r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/05_nature/nature_688_4c",
+     "effect/common/texture/05_nature/nature_689_4c",
+     "effect/common/texture/05_nature/nature_810_4r",
+     "effect/common/texture/05_nature/nature_811_4c",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/texture/13_sharp/sharp_401_4r",
+     "effect/common/texture/14_air/air_008_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_201_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_422_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/magic_cca_atk_06_n",
+    [
+     "effect/common/fbx/ice_743",
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_211",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_004_g",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/05_nature/nature_008_a1",
+     "effect/common/material/05_nature/nature_702_f1",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/material/18_turbulence/turbulence_023_a6",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_007_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_027_4r",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_620b_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/05_nature/nature_008_4c",
+     "effect/common/texture/05_nature/nature_355_4c",
+     "effect/common/texture/05_nature/nature_806_4c",
+     "effect/common/texture/05_nature/nature_807_4c",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_201_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_422_1r",
+     "effect/common/texture/18_turbulence/turbulence_502_rainbow_4r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/magic_cca_atk_05a_n",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/sphere_619",
+     "effect/common/material/01_fire/fire_204_d",
+     "effect/common/material/02_glow/glow_001_f",
+     "effect/common/material/02_glow/glow_002_n1",
+     "effect/common/material/04_mask/mask_631_a",
+     "effect/common/material/05_nature/nature_008_e",
+     "effect/common/material/05_nature/nature_356_a",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/material/18_turbulence/turbulence_008_m34",
+     "effect/common/material/18_turbulence/turbulence_724_b",
+     "effect/common/texture/01_fire/fire_204_4c",
+     "effect/common/texture/01_fire/fire_303_4c",
+     "effect/common/texture/02_glow/glow_001_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_208_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_324_4c",
+     "effect/common/texture/04_mask/mask_631a_1r",
+     "effect/common/texture/04_mask/mask_662_1c",
+     "effect/common/texture/05_nature/nature_008_4c",
+     "effect/common/texture/05_nature/nature_356_4c",
+     "effect/common/texture/05_nature/nature_356a_4c",
+     "effect/common/texture/05_nature/nature_719_4c",
+     "effect/common/texture/10_ramp/ramp_616_4r",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turb_001_4r",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_008a_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_031_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_205_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_241_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/magic_cca_atk_04_n",
+    [
+     "effect/common/fbx/ice_743",
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_211",
+     "effect/common/fbx/ring_618",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_004_g",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/05_nature/nature_008_a1",
+     "effect/common/material/05_nature/nature_702_f1",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/material/18_turbulence/turbulence_023_a6",
+     "effect/common/material/18_turbulence/turbulence_024_a2",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_007_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_027_4r",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_620b_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/05_nature/nature_008_4c",
+     "effect/common/texture/05_nature/nature_355_4c",
+     "effect/common/texture/05_nature/nature_806_4c",
+     "effect/common/texture/05_nature/nature_807_4c",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/10_ramp/ramp_602_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turb_001_4r",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_201_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_422_1r",
+     "effect/common/texture/18_turbulence/turbulence_502_rainbow_4r",
+     "effect/common/texture/18_turbulence/turbulence_801_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/ph_magic_abc_1_03a_n3",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_679",
+     "effect/common/fbx/ring_404a",
+     "effect/common/fbx/ring_601",
+     "effect/common/material/02_glow/glow_002_n1",
+     "effect/common/material/04_mask/mask_355_c",
+     "effect/common/material/04_mask/mask_355_d",
+     "effect/common/material/04_mask/mask_806_f",
+     "effect/common/material/06_normal/normal_010_b1",
+     "effect/common/material/07_other/other_629_a",
+     "effect/common/material/08_particles/particles_004_j",
+     "effect/common/material/08_particles/particles_018_c",
+     "effect/common/material/13_sharp/sharp_004_f1",
+     "effect/common/material/15_streak/streak_032_b",
+     "effect/common/material/17_trail/trail_603_c",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_007_1c",
+     "effect/common/texture/04_mask/mask_007_4c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_011a_1r",
+     "effect/common/texture/04_mask/mask_017_1c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_335_1r",
+     "effect/common/texture/04_mask/mask_336_4c",
+     "effect/common/texture/06_normal/normal_010_4r",
+     "effect/common/texture/08_particles/particles_004_4c",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/09_pattern/pattern_053_4r",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/13_sharp/sharp_004_4c",
+     "effect/common/texture/13_sharp/sharp_724_4c",
+     "effect/common/texture/15_streak/streak_032_4c",
+     "effect/common/texture/15_streak/streak_706_4c",
+     "effect/common/texture/17_trail/trial_603_4r",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "effect/common/texture/18_turbulence/turbulence_705_4r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/magic_bba_pre_02a_n2",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/ring_404a",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/03_lightning/lightning_605_a",
+     "effect/common/material/04_mask/mask_355_d",
+     "effect/common/material/04_mask/mask_806_f",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/07_other/other_809_a",
+     "effect/common/material/08_particles/particles_018_c",
+     "effect/common/material/08_particles/particles_019_d",
+     "effect/common/material/08_particles/particles_063_c28",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/13_sharp/sharp_038_a",
+     "effect/common/material/13_sharp/sharp_805_a",
+     "effect/common/material/18_turbulence/turbulence_011_g",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/03_lightning/lightning_605_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_007_1c",
+     "effect/common/texture/04_mask/mask_007_4c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_011_4r",
+     "effect/common/texture/04_mask/mask_011a_1r",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_022_1c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_335_1r",
+     "effect/common/texture/04_mask/mask_336_4c",
+     "effect/common/texture/04_mask/mask_609_4c",
+     "effect/common/texture/04_mask/mask_643_1r",
+     "effect/common/texture/06_normal/normal_003_4r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/07_other/other_809_4c",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/08_particles/particles_019_4c",
+     "effect/common/texture/08_particles/particles_026_4c",
+     "effect/common/texture/09_pattern/pattern_017_4r",
+     "effect/common/texture/09_pattern/pattern_041_4r",
+     "effect/common/texture/09_pattern/pattern_053_4r",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/13_sharp/sharp_038_4c",
+     "effect/common/texture/13_sharp/sharp_805_4r",
+     "effect/common/texture/18_turbulence/turb_003_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_705_4r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/element_gather_02_fire",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_013",
+     "effect/common/fbx/plane_211",
+     "effect/common/fbx/ring_013",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_007_b",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/04_mask/mask_712_c2",
+     "effect/common/material/04_mask/mask_712_d",
+     "effect/common/material/05_nature/nature_653_b",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_004_h",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/13_sharp/sharp_004_f1",
+     "effect/common/material/13_sharp/sharp_032_a",
+     "effect/common/material/13_sharp/sharp_317_d",
+     "effect/common/material/17_trail/trail_601_d",
+     "effect/common/material/17_trail/trail_603_b",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/18_turbulence/turbulence_023_a4",
+     "effect/common/material/18_turbulence/turbulence_023_a4a",
+     "effect/common/material/18_turbulence/turbulence_023_a7",
+     "effect/common/material/20_water/water_617_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_007_4r",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_208_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_615_4c",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/05_nature/nature_650_4r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_004_4c",
+     "effect/common/texture/09_pattern/pattern_809a_4r",
+     "effect/common/texture/10_ramp/ramp_307_4c",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/13_sharp/sharp_004_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_317_4r",
+     "effect/common/texture/17_trail/trial_601_4r",
+     "effect/common/texture/17_trail/trial_603_4c",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038b_4r",
+     "effect/common/texture/18_turbulence/turbulence_040a_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "effect/common/texture/18_turbulence/turbulence_719_4r",
+     "effect/common/texture/20_water/water_617_4c",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/element_gather_02_wind",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_013",
+     "effect/common/fbx/plane_211",
+     "effect/common/fbx/ring_013",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_007_b",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/04_mask/mask_712_c2",
+     "effect/common/material/04_mask/mask_712_d",
+     "effect/common/material/05_nature/nature_653_b",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_004_h",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/13_sharp/sharp_004_f1",
+     "effect/common/material/13_sharp/sharp_032_a",
+     "effect/common/material/13_sharp/sharp_317_d",
+     "effect/common/material/17_trail/trail_601_d",
+     "effect/common/material/17_trail/trail_603_b",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/18_turbulence/turbulence_023_a4",
+     "effect/common/material/18_turbulence/turbulence_023_a4a",
+     "effect/common/material/18_turbulence/turbulence_023_a7",
+     "effect/common/material/20_water/water_617_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_007_4r",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_208_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_615_4c",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/05_nature/nature_650_4r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_004_4c",
+     "effect/common/texture/09_pattern/pattern_809a_4r",
+     "effect/common/texture/10_ramp/ramp_307_4c",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/13_sharp/sharp_004_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_317_4r",
+     "effect/common/texture/17_trail/trial_601_4r",
+     "effect/common/texture/17_trail/trial_603_4c",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038b_4r",
+     "effect/common/texture/18_turbulence/turbulence_040a_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "effect/common/texture/18_turbulence/turbulence_719_4r",
+     "effect/common/texture/20_water/water_617_4c",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/nine/element_gather_02_ice",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_013",
+     "effect/common/fbx/plane_211",
+     "effect/common/fbx/ring_013",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_007_b",
+     "effect/common/material/04_mask/mask_712_c",
+     "effect/common/material/04_mask/mask_712_c2",
+     "effect/common/material/04_mask/mask_712_d",
+     "effect/common/material/05_nature/nature_653_b",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/08_particles/particles_004_h",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/13_sharp/sharp_004_f1",
+     "effect/common/material/13_sharp/sharp_032_a",
+     "effect/common/material/13_sharp/sharp_317_d",
+     "effect/common/material/17_trail/trail_601_d",
+     "effect/common/material/17_trail/trail_603_b",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/18_turbulence/turbulence_023_a4",
+     "effect/common/material/18_turbulence/turbulence_023_a4a",
+     "effect/common/material/18_turbulence/turbulence_023_a7",
+     "effect/common/material/20_water/water_617_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_007_4r",
+     "effect/common/texture/04_mask/mask_001_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_208_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_615_4c",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/05_nature/nature_650_4r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_004_4c",
+     "effect/common/texture/09_pattern/pattern_809a_4r",
+     "effect/common/texture/10_ramp/ramp_307_4c",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/13_sharp/sharp_004_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_317_4r",
+     "effect/common/texture/17_trail/trial_601_4r",
+     "effect/common/texture/17_trail/trial_603_4c",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_007_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038b_4r",
+     "effect/common/texture/18_turbulence/turbulence_040a_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "effect/common/texture/18_turbulence/turbulence_719_4r",
+     "effect/common/texture/20_water/water_617_4c",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "ui/atlas/iconpotential200401/iconpotential200401",
+    []
+   ],
+   [
+    "ui/atlas/iconninehud200401/iconninehud200401",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/80/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_80",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/81/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_81",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/82/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_82",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/83/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_83",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/84/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_84",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/85/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_85",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_atk_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_base_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_ca_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_magic_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_magic_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_show_2_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_skill_1_c",
+    []
+   ],
+   [
+    "actor/sprite/ph/86/ph_skill_2_c",
+    []
+   ],
+   [
+    "actor/texturefamily/ph_86",
+    []
+   ]
+  ],
+  "guids": [
+   [
+    "actor/sprite/ph/80/ph_atk_1_c",
+    "5e8062265ac676d6dc5c6a6d961c33c0"
+   ],
+   [
+    "actor/sprite/ph/80/ph_base_1_c",
+    "d17998c2220839a3bb7a9eab46059b2b"
+   ],
+   [
+    "actor/sprite/ph/80/ph_base_2_c",
+    "82ff7e424c301d9b278f1775f49c120d"
+   ],
+   [
+    "actor/sprite/ph/80/ph_ca_1_c",
+    "320776e828570878ce2e148005fdf5e7"
+   ],
+   [
+    "actor/sprite/ph/80/ph_magic_1_c",
+    "dd087bacb0b08e136f87c8225597e670"
+   ],
+   [
+    "actor/sprite/ph/80/ph_magic_2_c",
+    "cefd2ae03f78563c77b359c09f19c939"
+   ],
+   [
+    "actor/sprite/ph/80/ph_show_1_c",
+    "0a44f64841595303688810b867a98e53"
+   ],
+   [
+    "actor/sprite/ph/80/ph_show_2_c",
+    "69fcc1161f510afd0cc30f5309eb1610"
+   ],
+   [
+    "actor/sprite/ph/80/ph_skill_1_c",
+    "8770c88c389061857d2f637bbe8e36e6"
+   ],
+   [
+    "actor/sprite/ph/80/ph_skill_2_c",
+    "485a39035a0ed0f71f71c3f5107e133c"
+   ],
+   [
+    "actor/sprite/ph/81/ph_atk_1_c",
+    "8c927cd52653fad1d29ef9f3f7cab2f7"
+   ],
+   [
+    "actor/sprite/ph/81/ph_base_1_c",
+    "5ae17bc528543548b718070895e4c936"
+   ],
+   [
+    "actor/sprite/ph/81/ph_base_2_c",
+    "b879756e8492c5ce54efefe339e8f77d"
+   ],
+   [
+    "actor/sprite/ph/81/ph_ca_1_c",
+    "16fad2fd7720d29895816acad2ad640f"
+   ],
+   [
+    "actor/sprite/ph/81/ph_magic_1_c",
+    "1bea5042a8449fa41cf25f9a56a1ca12"
+   ],
+   [
+    "actor/sprite/ph/81/ph_magic_2_c",
+    "21d6ccfddeec24a07e098503eff279d6"
+   ],
+   [
+    "actor/sprite/ph/81/ph_show_1_c",
+    "bb4d2cac2d439f2b6379b63deaa6b580"
+   ],
+   [
+    "actor/sprite/ph/81/ph_show_2_c",
+    "bb44128bbd958ef78fe0b57990ba21d5"
+   ],
+   [
+    "actor/sprite/ph/81/ph_skill_1_c",
+    "bb674646262ab9fb72494d0d121331f5"
+   ],
+   [
+    "actor/sprite/ph/81/ph_skill_2_c",
+    "c41940f010ed4301f2acce44a4205033"
+   ],
+   [
+    "actor/sprite/ph/82/ph_atk_1_c",
+    "0d5cf272710dea5b8851f75a8c59f2dc"
+   ],
+   [
+    "actor/sprite/ph/82/ph_base_1_c",
+    "acf29d8ab1ac1ca0827fea4a5a13d18c"
+   ],
+   [
+    "actor/sprite/ph/82/ph_base_2_c",
+    "b862ab5a10bd1a9bdfcc9f1b9a41c849"
+   ],
+   [
+    "actor/sprite/ph/82/ph_ca_1_c",
+    "431768ec0470519e14c27816dfa3a001"
+   ],
+   [
+    "actor/sprite/ph/82/ph_magic_1_c",
+    "3ac273d0b31933c2fcc88705b3540820"
+   ],
+   [
+    "actor/sprite/ph/82/ph_magic_2_c",
+    "7e2baa715168783384c86aa4b6aaa2e0"
+   ],
+   [
+    "actor/sprite/ph/82/ph_show_1_c",
+    "fa61090a7e052a4568d9ac08852f3c98"
+   ],
+   [
+    "actor/sprite/ph/82/ph_show_2_c",
+    "07bfcb67dd38ce6a0dfe698afd0fbdaf"
+   ],
+   [
+    "actor/sprite/ph/82/ph_skill_1_c",
+    "6d24048456cef56cb7f579ae18b4284a"
+   ],
+   [
+    "actor/sprite/ph/82/ph_skill_2_c",
+    "ce12d5e007b143dae4d2af22bc4ae38b"
+   ],
+   [
+    "actor/sprite/ph/83/ph_atk_1_c",
+    "3e48a9e906c88689ed96173405175977"
+   ],
+   [
+    "actor/sprite/ph/83/ph_base_1_c",
+    "facaf5192ef0b0296d869232941bb421"
+   ],
+   [
+    "actor/sprite/ph/83/ph_base_2_c",
+    "061d72129a8c741b63039fdd731e82b6"
+   ],
+   [
+    "actor/sprite/ph/83/ph_ca_1_c",
+    "502516ed97147d45bb7bcb913e6151c0"
+   ],
+   [
+    "actor/sprite/ph/83/ph_magic_1_c",
+    "989d9b997ad5cd3d8d7a60393d6b130f"
+   ],
+   [
+    "actor/sprite/ph/83/ph_magic_2_c",
+    "673b7b67b0ea5e70fac7570af4ffbed6"
+   ],
+   [
+    "actor/sprite/ph/83/ph_show_1_c",
+    "f5b44a06a2aa67291685f780f8361afa"
+   ],
+   [
+    "actor/sprite/ph/83/ph_show_2_c",
+    "1b04dd5ca9764f23fa8cd50f60911ec7"
+   ],
+   [
+    "actor/sprite/ph/83/ph_skill_1_c",
+    "d8bc22e71676a5845e5d016323509c10"
+   ],
+   [
+    "actor/sprite/ph/83/ph_skill_2_c",
+    "4e3b88f3283a37512952502f5cfcdc8f"
+   ],
+   [
+    "actor/sprite/ph/84/ph_atk_1_c",
+    "8335a30f0dde493efed3e8abf6780de6"
+   ],
+   [
+    "actor/sprite/ph/84/ph_base_1_c",
+    "87ea99fd0c568c8ae68d8c0db99b2aae"
+   ],
+   [
+    "actor/sprite/ph/84/ph_base_2_c",
+    "e35755d1d0619c09f1b9c108c0b4b6bb"
+   ],
+   [
+    "actor/sprite/ph/84/ph_ca_1_c",
+    "903ba7f2f8951e5a88227783868f2c7d"
+   ],
+   [
+    "actor/sprite/ph/84/ph_magic_1_c",
+    "38f697b11e43ed4cced711124a02afef"
+   ],
+   [
+    "actor/sprite/ph/84/ph_magic_2_c",
+    "23133a441c2478a3e6d3b774e4534685"
+   ],
+   [
+    "actor/sprite/ph/84/ph_show_1_c",
+    "02991e1fc7b669f34b687b7a2417591f"
+   ],
+   [
+    "actor/sprite/ph/84/ph_show_2_c",
+    "59233e1f908937cba925bf1348497011"
+   ],
+   [
+    "actor/sprite/ph/84/ph_skill_1_c",
+    "593e33343169b2c737585d6eb6a71941"
+   ],
+   [
+    "actor/sprite/ph/84/ph_skill_2_c",
+    "2a4c6366c29e55dbb3db893822d980d9"
+   ],
+   [
+    "actor/sprite/ph/85/ph_atk_1_c",
+    "dbcf1d61d11b2db4a226bf499297a431"
+   ],
+   [
+    "actor/sprite/ph/85/ph_base_1_c",
+    "887ac9de7009b7186e49f22e60026b6d"
+   ],
+   [
+    "actor/sprite/ph/85/ph_base_2_c",
+    "89eabcd7587d80a33cc3fe34192ea766"
+   ],
+   [
+    "actor/sprite/ph/85/ph_ca_1_c",
+    "5e6c76baf50cdb6ae3b466b315a31384"
+   ],
+   [
+    "actor/sprite/ph/85/ph_magic_1_c",
+    "a1a9124a678e9c36ca84daf20a6f49e4"
+   ],
+   [
+    "actor/sprite/ph/85/ph_magic_2_c",
+    "6770ef77231316949d984023c55309ce"
+   ],
+   [
+    "actor/sprite/ph/85/ph_show_1_c",
+    "78bd1e707e445ff437be8693c45ed515"
+   ],
+   [
+    "actor/sprite/ph/85/ph_show_2_c",
+    "d48692ed90e53df30409e8c66ef9d6cf"
+   ],
+   [
+    "actor/sprite/ph/85/ph_skill_1_c",
+    "0f1806fe101da4bffb2fd7ba42b875f4"
+   ],
+   [
+    "actor/sprite/ph/85/ph_skill_2_c",
+    "0462a379f3df61c66f7687a9317cdeb3"
+   ],
+   [
+    "actor/sprite/ph/86/ph_atk_1_c",
+    "40cc5b0f10244a07f4c96530849066de"
+   ],
+   [
+    "actor/sprite/ph/86/ph_base_1_c",
+    "3a393acbf1326a3725f52f1c599f17e8"
+   ],
+   [
+    "actor/sprite/ph/86/ph_base_2_c",
+    "c05f8ff980b40bba283f829c49f54562"
+   ],
+   [
+    "actor/sprite/ph/86/ph_ca_1_c",
+    "45417c22c8b15440f762f2e59dfb9ed0"
+   ],
+   [
+    "actor/sprite/ph/86/ph_magic_1_c",
+    "81b737727539bdb2cc98d609353324fa"
+   ],
+   [
+    "actor/sprite/ph/86/ph_magic_2_c",
+    "f325b7439f756f7c7f55708c00331489"
+   ],
+   [
+    "actor/sprite/ph/86/ph_show_1_c",
+    "5d004afccfe3c04efb016352bb97723b"
+   ],
+   [
+    "actor/sprite/ph/86/ph_show_2_c",
+    "91586ea36619d052cf77b2ced928c851"
+   ],
+   [
+    "actor/sprite/ph/86/ph_skill_1_c",
+    "1c0a7abf0c71d1dd37b4f54d55b97c1d"
+   ],
+   [
+    "actor/sprite/ph/86/ph_skill_2_c",
+    "62b076f7a92c040d3ce50f70ad1df7a6"
+   ]
+  ]
+ },
+ "importAdds": {
+  "names": [
+   "actor/sprite/ninx/02/ninx_page_00",
+   "actor/sprite/ninx/extra/ninx_page_00",
+   "actor/sprite/ninx/02/ninx_page_01",
+   "actor/sprite/ninx/extra/ninx_page_01",
+   "actor/sprite/ninx/extra2/ninx_blank",
+   "actor/texturefamily/ninx_extra",
+   "actor/texturefamily/ninx_extra2",
+   "actor/texturefamily/ninx_02",
+   "actor/mesh/ninx/g0",
+   "actor/animation/role/ninx_flamepunisher",
+   "actor/animation/role/ninx_5a",
+   "actor/animation/role/ninx_5b",
+   "actor/animation/role/ninx_5c",
+   "actor/animation/role/ninx_j5a",
+   "actor/animation/role/ninx_j5b",
+   "actor/animation/role/ninx_2b",
+   "actor/animation/role/ninx_2a",
+   "actor/animation/role/ninx_2c",
+   "actor/animation/role/ninx_j5c",
+   "actor/animation/role/ninx_arts",
+   "actor/animation/role/ninx_squat",
+   "actor/animation/role/ninx_squat_loop",
+   "actor/animation/role/ninx_squat_up",
+   "effect/common/material/ninearts/streak_621_a__ninev",
+   "effect/common/material/ninearts/particles_608_a__ninev",
+   "effect/common/material/ninearts/sharp_452_g__ninev",
+   "effect/common/material/ninearts/glow_002_n__ninev",
+   "effect/common/material/ninearts/air_008_a__ninev",
+   "effect/common/material/ninearts/particles_608_a__ninew",
+   "effect/common/material/ninearts/particles_018_c__ninew",
+   "effect/common/material/ninearts/particles_608_a__ninef",
+   "effect/common/material/ninearts/particles_608_a__ninefg",
+   "effect/prefab/monster/ph/ninearts/nine_arts_5a",
+   "effect/prefab/monster/ph/ninearts/nine_arts_2a",
+   "effect/prefab/monster/ph/ninearts/nine_arts_j5a",
+   "effect/prefab/monster/ph/ninearts/nine_arts_5b",
+   "effect/prefab/monster/ph/ninearts/nine_arts_2b",
+   "effect/prefab/monster/ph/ninearts/nine_arts_j5b",
+   "effect/prefab/monster/ph/ninearts/nine_arts_5c",
+   "effect/prefab/monster/ph/ninearts/nine_arts_2c",
+   "effect/prefab/monster/ph/ninearts/nine_arts_j5c",
+   "effect/prefab/monster/ph/ninearts/nine_arts_hit_ice",
+   "effect/prefab/monster/ph/ninearts/nine_arts_hit_wind",
+   "effect/prefab/monster/ph/ninearts/nine_arts_hit_fire",
+   "actor/sprite/ninx/80/ninx_page_00",
+   "actor/sprite/ninx/80/ninx_page_01",
+   "actor/texturefamily/ninx_80",
+   "actor/sprite/ninx/81/ninx_page_00",
+   "actor/sprite/ninx/81/ninx_page_01",
+   "actor/texturefamily/ninx_81",
+   "actor/sprite/ninx/82/ninx_page_00",
+   "actor/sprite/ninx/82/ninx_page_01",
+   "actor/texturefamily/ninx_82",
+   "actor/sprite/ninx/83/ninx_page_00",
+   "actor/sprite/ninx/83/ninx_page_01",
+   "actor/texturefamily/ninx_83",
+   "actor/sprite/ninx/84/ninx_page_00",
+   "actor/sprite/ninx/84/ninx_page_01",
+   "actor/texturefamily/ninx_84",
+   "actor/sprite/ninx/85/ninx_page_00",
+   "actor/sprite/ninx/85/ninx_page_01",
+   "actor/texturefamily/ninx_85",
+   "actor/sprite/ninx/86/ninx_page_00",
+   "actor/sprite/ninx/86/ninx_page_01",
+   "actor/texturefamily/ninx_86"
+  ],
+  "entries": [
+   [
+    "actor/sprite/ninx/02/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/extra/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/02/ninx_page_01",
+    []
+   ],
+   [
+    "actor/sprite/ninx/extra/ninx_page_01",
+    []
+   ],
+   [
+    "actor/sprite/ninx/extra2/ninx_blank",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_extra",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_extra2",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_02",
+    []
+   ],
+   [
+    "actor/mesh/ninx/g0",
+    []
+   ],
+   [
+    "actor/animation/role/ninx_flamepunisher",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_5a",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_5b",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_5c",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_j5a",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_j5b",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_2b",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_2a",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_2c",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_j5c",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_arts",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_squat",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_squat_loop",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/ninx_squat_up",
+    [
+     "actor/mesh/ninx/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/streak_621_a__ninev",
+    [
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/15_streak/streak_621_42c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/particles_608_a__ninev",
+    [
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/sharp_452_g__ninev",
+    [
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/13_sharp/sharp_452_4c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/glow_002_n__ninev",
+    [
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/air_008_a__ninev",
+    [
+     "effect/common/texture/14_air/air_008_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/particles_608_a__ninew",
+    [
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/particles_018_c__ninew",
+    [
+     "effect/common/texture/08_particles/particles_018_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/particles_608_a__ninef",
+    [
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/ninearts/particles_608_a__ninefg",
+    [
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_5a",
+    [
+     "effect/common/material/ninearts/particles_608_a__ninev",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/streak_621_a__ninev",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/15_streak/streak_621_42c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/material/ninearts/sharp_452_g__ninev",
+     "effect/common/texture/13_sharp/sharp_452_4c",
+     "effect/common/material/ninearts/glow_002_n__ninev",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/ninearts/air_008_a__ninev",
+     "effect/common/texture/14_air/air_008_4c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_2a",
+    [
+     "effect/common/material/ninearts/sharp_452_g__ninev",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/13_sharp/sharp_452_4c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/glow_002_n__ninev",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/ninearts/particles_608_a__ninev",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/ninearts/streak_621_a__ninev",
+     "effect/common/texture/15_streak/streak_621_42c",
+     "effect/common/material/ninearts/air_008_a__ninev",
+     "effect/common/texture/14_air/air_008_4c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_j5a",
+    [
+     "effect/common/material/ninearts/particles_608_a__ninev",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/sharp_452_g__ninev",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/13_sharp/sharp_452_4c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/material/ninearts/streak_621_a__ninev",
+     "effect/common/texture/15_streak/streak_621_42c",
+     "effect/common/material/ninearts/glow_002_n__ninev",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/ninearts/air_008_a__ninev",
+     "effect/common/texture/14_air/air_008_4c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_5b",
+    [
+     "effect/common/material/14_air/air_032_a",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_032_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_215_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_356",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/17_trail/trail_305_d",
+     "effect/common/texture/04_mask/mask_308_4c",
+     "effect/common/texture/17_trail/trail_305_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_211_4r",
+     "effect/common/material/ninearts/particles_608_a__ninew",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/ninearts/particles_018_c__ninew",
+     "effect/common/texture/08_particles/particles_018_4c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_2b",
+    [
+     "effect/common/material/14_air/air_032_a",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_032_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_215_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_356",
+     "effect/common/material/17_trail/trail_305_d",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_308_4c",
+     "effect/common/texture/17_trail/trail_305_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_211_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/material/ninearts/particles_018_c__ninew",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/ninearts/particles_608_a__ninew",
+     "effect/common/texture/08_particles/particles_608_44c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_j5b",
+    [
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/particles_608_a__ninew",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/14_air/air_032_a",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_032_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_215_1r",
+     "effect/common/fbx/plane_356",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/material/17_trail/trail_305_d",
+     "effect/common/texture/04_mask/mask_308_4c",
+     "effect/common/texture/17_trail/trail_305_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_211_4r",
+     "effect/common/material/ninearts/particles_018_c__ninew",
+     "effect/common/texture/08_particles/particles_018_4c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_5c",
+    [
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/particles_608_a__ninef",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/18_turbulence/turbulence_008_m36",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_421a_1c",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/fbx/loft_616",
+     "effect/common/material/02_glow/glow_004_a",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/material/14_air/air_209_c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_209_4r",
+     "effect/common/material/04_mask/mask_712_c4",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_673_1c",
+     "effect/common/material/15_streak/streak_636_b",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_609_4c",
+     "effect/common/texture/15_streak/streak_636_4c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/material/11_ring/ring_002_a",
+     "effect/common/texture/11_ring/ring_002_4c",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/material/ninearts/particles_608_a__ninefg",
+     "effect/common/material/08_particles/particles_021_c",
+     "effect/common/texture/08_particles/particles_029_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_2c",
+    [
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/particles_608_a__ninefg",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/ninearts/particles_608_a__ninef",
+     "effect/common/material/14_air/air_209_c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_209_4r",
+     "effect/common/material/02_glow/glow_004_a",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/material/15_streak/streak_636_b",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_609_4c",
+     "effect/common/texture/15_streak/streak_636_4c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/material/11_ring/ring_002_a",
+     "effect/common/texture/11_ring/ring_002_4c",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/18_turbulence/turbulence_008_m36",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_421a_1c",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/material/08_particles/particles_021_c",
+     "effect/common/texture/08_particles/particles_029_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/material/04_mask/mask_712_c4",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_673_1c",
+     "effect/common/fbx/loft_616"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_j5c",
+    [
+     "effect/common/material/14_air/air_209_c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_209_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/ninearts/particles_608_a__ninefg",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/02_glow/glow_004_a",
+     "effect/common/texture/02_glow/glow_004_4c",
+     "effect/common/material/11_ring/ring_002_a",
+     "effect/common/texture/11_ring/ring_002_4c",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/material/ninearts/particles_608_a__ninef",
+     "effect/common/material/15_streak/streak_636_b",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_609_4c",
+     "effect/common/texture/15_streak/streak_636_4c",
+     "effect/common/texture/18_turbulence/turbulence_011_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/material/18_turbulence/turbulence_008_m36",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_421a_1c",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/material/08_particles/particles_021_c",
+     "effect/common/texture/08_particles/particles_029_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/material/04_mask/mask_712_c4",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_673_1c",
+     "effect/common/fbx/loft_616"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_hit_ice",
+    [
+     "effect/common/material/ninearts/particles_608_a__ninev",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_hit_wind",
+    [
+     "effect/common/material/ninearts/particles_608_a__ninew",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/material/17_trail/trail_305_d",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_308_4c",
+     "effect/common/texture/17_trail/trail_305_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_211_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/14_air/air_032_a",
+     "effect/common/texture/04_mask/mask_012_1c",
+     "effect/common/texture/14_air/air_032_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_215_1r",
+     "effect/common/fbx/plane_356",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c"
+    ]
+   ],
+   [
+    "effect/prefab/monster/ph/ninearts/nine_arts_hit_fire",
+    [
+     "effect/common/material/01_fire/fire_005_b",
+     "effect/common/texture/01_fire/fire_006_4c",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/18_turbulence/turbulence_008_m36",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_421a_1c",
+     "effect/common/texture/18_turbulence/turb_002a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/fbx/loft_616",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/ninearts/particles_608_a__ninefg",
+     "effect/common/texture/08_particles/particles_608_44c",
+     "effect/common/material/08_particles/particles_021_c",
+     "effect/common/texture/08_particles/particles_029_4c",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r"
+    ]
+   ],
+   [
+    "actor/sprite/ninx/80/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/80/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_80",
+    []
+   ],
+   [
+    "actor/sprite/ninx/81/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/81/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_81",
+    []
+   ],
+   [
+    "actor/sprite/ninx/82/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/82/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_82",
+    []
+   ],
+   [
+    "actor/sprite/ninx/83/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/83/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_83",
+    []
+   ],
+   [
+    "actor/sprite/ninx/84/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/84/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_84",
+    []
+   ],
+   [
+    "actor/sprite/ninx/85/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/85/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_85",
+    []
+   ],
+   [
+    "actor/sprite/ninx/86/ninx_page_00",
+    []
+   ],
+   [
+    "actor/sprite/ninx/86/ninx_page_01",
+    []
+   ],
+   [
+    "actor/texturefamily/ninx_86",
+    []
+   ]
+  ],
+  "guids": [
+   [
+    "actor/sprite/ninx/02/ninx_page_00",
+    "c58d26fe086713f2e198b4a858531642"
+   ],
+   [
+    "actor/sprite/ninx/extra/ninx_page_00",
+    "b347b4cae5e3f00c6e482ea456bfdb01"
+   ],
+   [
+    "actor/sprite/ninx/02/ninx_page_01",
+    "49394a17b71f66165b3c1b7cb8b1385b"
+   ],
+   [
+    "actor/sprite/ninx/extra/ninx_page_01",
+    "fdaedceb09fbd33275541f7b58cdcc20"
+   ],
+   [
+    "actor/sprite/ninx/extra2/ninx_blank",
+    "f8e660a7729de809803c97e47bd2a349"
+   ],
+   [
+    "actor/sprite/ninx/80/ninx_page_00",
+    "cef4f58d8731c9c2947d2cc1f27a4a75"
+   ],
+   [
+    "actor/sprite/ninx/80/ninx_page_01",
+    "eb2697ca0e24ff7c54e56dc45bd7f61f"
+   ],
+   [
+    "actor/sprite/ninx/81/ninx_page_00",
+    "1298c529379831d7157f72b67ae47d90"
+   ],
+   [
+    "actor/sprite/ninx/81/ninx_page_01",
+    "ae4b9d70e849811ce75ada4336f4ef20"
+   ],
+   [
+    "actor/sprite/ninx/82/ninx_page_00",
+    "f6a0a94ec0618434f24cb6ba54b84957"
+   ],
+   [
+    "actor/sprite/ninx/82/ninx_page_01",
+    "b248b917ed5d77ad228de97982312623"
+   ],
+   [
+    "actor/sprite/ninx/83/ninx_page_00",
+    "31b8180e01818ffe67f3b3ddc03c8315"
+   ],
+   [
+    "actor/sprite/ninx/83/ninx_page_01",
+    "a4fe5e7a58844a06fd4ffa589e673709"
+   ],
+   [
+    "actor/sprite/ninx/84/ninx_page_00",
+    "7ef36568556c12137deb061382af9d02"
+   ],
+   [
+    "actor/sprite/ninx/84/ninx_page_01",
+    "fd6d16b1e3f2973c53229648bfb3bc97"
+   ],
+   [
+    "actor/sprite/ninx/85/ninx_page_00",
+    "dd59bbb364115816b0b2859f1f0378f8"
+   ],
+   [
+    "actor/sprite/ninx/85/ninx_page_01",
+    "b2dfc6f45253ca2b49a6d5175785dbe4"
+   ],
+   [
+    "actor/sprite/ninx/86/ninx_page_00",
+    "370308664871e8cb3ee837dfb9ff11ba"
+   ],
+   [
+    "actor/sprite/ninx/86/ninx_page_01",
+    "3b82dc9e890171f5252fa4ed149accf5"
+   ]
+  ]
+ },
+ "took": 1.3,
+ "stamp": "f32523baccb15116813f3ac4bba99f99c9c653ea",
+ "made": "2026-11-15 00:22:31"
+}

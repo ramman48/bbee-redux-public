@@ -1,0 +1,139 @@
+{
+ "mod": "redux-menus",
+ "version": "0.1.23",
+ "files": {
+  "effect/prefab/ui/common/reduxentropyswirlbody.ab": "604e5ea59f10f6c0996600a780099f0b4186804a",
+  "effect/prefab/ui/common/reduxentropyswirlflow.ab": "69de38e308d514d917b94d93b576e55683abe305",
+  "effect/prefab/ui/common/reduxentropyswirlflowfast.ab": "2e781895251826c6772448ee89e6135a9813ede5",
+  "ui/prefab/entropydial/entropydial.ab": "780e9b731db8c9cf4b3d7ebd174392c48034f3cd",
+  "ui/prefab/fourplayer/fourlobby.ab": "c6b17830eb1544c214a496f0665c5c25c93222a8"
+ },
+ "seeds": {
+  "effect/prefab/ui/common/reduxentropyswirlbody.ab": null,
+  "effect/prefab/ui/common/reduxentropyswirlflow.ab": null,
+  "effect/prefab/ui/common/reduxentropyswirlflowfast.ab": null,
+  "ui/prefab/entropydial/entropydial.ab": null,
+  "ui/prefab/fourplayer/fourlobby.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [],
+  "entries": [],
+  "guids": []
+ },
+ "importAdds": {
+  "names": [
+   "ui/prefab/entropydial/entropydial",
+   "ui/prefab/fourplayer/fourlobby",
+   "effect/prefab/ui/common/reduxentropyswirlflow",
+   "effect/prefab/ui/common/reduxentropyswirlflowfast",
+   "effect/prefab/ui/common/reduxentropyswirlbody"
+  ],
+  "entries": [
+   [
+    "ui/prefab/entropydial/entropydial",
+    []
+   ],
+   [
+    "ui/prefab/fourplayer/fourlobby",
+    []
+   ],
+   [
+    "effect/prefab/ui/common/reduxentropyswirlflow",
+    [
+     "effect/common/fbx/loft_659",
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/ring_617",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/18_turbulence/turbulence_001_a",
+     "effect/common/material/18_turbulence/turbulence_024_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_013_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/08_particles/particles_711a_4r",
+     "effect/common/texture/10_ramp/ramp_602_4c",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/11_ring/ring_505_4c",
+     "effect/common/texture/11_ring/ring_507_4c",
+     "effect/common/texture/13_sharp/sharp_049_4c",
+     "effect/common/texture/13_sharp/sharp_065_48c",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_603_4r",
+     "effect/common/texture/18_turbulence/turbulence_801_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/ui/common/reduxentropyswirlflowfast",
+    [
+     "effect/common/fbx/loft_659",
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/ring_617",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/11_ring/ring_002_f",
+     "effect/common/material/18_turbulence/turbulence_001_a",
+     "effect/common/material/18_turbulence/turbulence_024_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_013_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/08_particles/particles_711a_4r",
+     "effect/common/texture/10_ramp/ramp_602_4c",
+     "effect/common/texture/11_ring/ring_007_4c",
+     "effect/common/texture/11_ring/ring_505_4c",
+     "effect/common/texture/11_ring/ring_507_4c",
+     "effect/common/texture/13_sharp/sharp_049_4c",
+     "effect/common/texture/13_sharp/sharp_065_48c",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_603_4r",
+     "effect/common/texture/18_turbulence/turbulence_801_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/ui/common/reduxentropyswirlbody",
+    [
+     "effect/common/fbx/mesh_polygon_5",
+     "effect/common/fbx/sphere_001",
+     "effect/common/material/23_ui/consciousequip_501_a",
+     "effect/common/material/23_ui/consciousequip_501_e",
+     "effect/common/texture/04_mask/mask_031_1c",
+     "effect/common/texture/04_mask/mask_045_4c",
+     "effect/common/texture/07_other/other_015",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/11_ring/ring_001_4c",
+     "effect/common/texture/15_streak/streak_500_4c",
+     "effect/common/texture/18_turbulence/turbulence_013_4r",
+     "effect/common/texture/18_turbulence/turbulence_709_4r",
+     "effect/common/texture/21_ray/ray_802_4c",
+     "effect/common/texture/23_ui/conscious_glowring_501_4c",
+     "effect/common/texture/23_ui/consciousequip_503_4c",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/02_glow/glow_011_b",
+     "effect/common/texture/02_glow/glow_002_4c"
+    ]
+   ]
+  ],
+  "guids": []
+ },
+ "took": 3.2,
+ "stamp": "ff7f4f356c2c4740be689c6be774df7ee94197d3",
+ "made": "2026-11-15 00:22:31"
+}

@@ -1,0 +1,45 @@
+{
+ "mod": "palette-maker",
+ "version": "0.2.9",
+ "files": {
+  "palette/palrecolour.ab": "d3439ee9269f9aad416137d61bee57c11f27c741",
+  "ui/prefab/palmaker/palheroes.ab": "7dbc51c7bd3ce9f8c4aab3b2d843895913413a9c",
+  "ui/prefab/palmaker/palmaker.ab": "762de2abb43c3cf8d1b081c90690e2b4f5061a90"
+ },
+ "seeds": {
+  "palette/palrecolour.ab": null,
+  "ui/prefab/palmaker/palheroes.ab": null,
+  "ui/prefab/palmaker/palmaker.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [],
+  "entries": [],
+  "guids": []
+ },
+ "importAdds": {
+  "names": [
+   "palette/palrecolour",
+   "ui/prefab/palmaker/palheroes",
+   "ui/prefab/palmaker/palmaker"
+  ],
+  "entries": [
+   [
+    "palette/palrecolour",
+    []
+   ],
+   [
+    "ui/prefab/palmaker/palheroes",
+    []
+   ],
+   [
+    "ui/prefab/palmaker/palmaker",
+    []
+   ]
+  ],
+  "guids": []
+ },
+ "took": 1.2,
+ "stamp": "441035ad022d6db8562b8b5e397d59b7eb608c47",
+ "made": "2026-11-15 00:22:31"
+}

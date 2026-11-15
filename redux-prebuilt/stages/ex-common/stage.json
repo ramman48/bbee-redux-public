@@ -1,0 +1,31 @@
+{
+ "mod": "ex-common",
+ "version": "0.8.0",
+ "files": {
+  "ui/prefab/ex/exselect.ab": "c0f61fe5856f1021e6eb8ffab12b6ce7252bc630"
+ },
+ "seeds": {
+  "ui/prefab/ex/exselect.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [],
+  "entries": [],
+  "guids": []
+ },
+ "importAdds": {
+  "names": [
+   "ui/prefab/ex/exselect"
+  ],
+  "entries": [
+   [
+    "ui/prefab/ex/exselect",
+    []
+   ]
+  ],
+  "guids": []
+ },
+ "took": 2.5,
+ "stamp": "e529fc2077d91f0853ba70e866ba46ba2aca2b04",
+ "made": "2026-11-15 00:22:31"
+}

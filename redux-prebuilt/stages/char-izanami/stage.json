@@ -1,0 +1,2692 @@
+{
+ "mod": "char-izanami",
+ "version": "0.6.7",
+ "files": {
+  "actor/animation/role/mi_born2_timeline.ab": "648d059ea684934e7a2e6f014ad06926511c093b",
+  "actor/animation/role/mi_born_timeline.ab": "0987571841dce1340c851eda0ecbb1805d31a795",
+  "actor/animation/role/mi_burst_x_inherit.ab": "022c6e16a33f6cc28c9013a0de4d431ebbb8fc56",
+  "actor/animation/role/mi_dash_timeline.ab": "91c2406069e22864ba2bf5b63320ed96f10611d3",
+  "actor/animation/role/mi_drop_inherit.ab": "0adef74c22d4a3460dcb5a600c536d3577d14291",
+  "actor/animation/role/mi_dropend4.ab": "17d6b2a63d9dce229816b32675939c35c429f64f",
+  "actor/animation/role/mi_knockdown_stand_inherit.ab": "e110bce7007ce2238e0fc804a639e9f1ee30e4bd",
+  "actor/animation/role/mi_squat_loop_inherit.ab": "f5566bc7065ea24bf595b3abb40af016af9b33f6",
+  "actor/animation/role/mi_squat_to_stand.ab": "7e2d920cece32fbb0d0b373cd2209899f737abf4",
+  "actor/animation/role/mi_stand2_timeline.ab": "43ac88cb1de44f119fc3732b4b2de3cd225338f3",
+  "actor/animation/role/mi_stand_inherit.ab": "24e0d4a6dc10c9f4a123e17aab8eece870f1806a",
+  "actor/animation/role/mi_stand_timeline.ab": "23b5924e3bb1e1c2bb19cd38039ef14682dba91b",
+  "actor/animation/role/mi_standby_inherit.ab": "db1379a2ec5f9ce4719aa0f13222294668ed83bf",
+  "actor/animation/role/mi_upjump_1.ab": "a7a55458828c20ddbd524c85cbb3a9e4c26ae261",
+  "actor/animation/role/mi_upjump_2.ab": "1301d4184ea1787d7ccb64958f495516251c33c5",
+  "actor/animation/role/mi_upjump_3.ab": "67a5bbf634d457da0978f6d1c871593014907093",
+  "actor/logicdata/izn.ab": "8255e3a731d1b6f658d1c68ff68a534b7fd05fad",
+  "actor/logicdata/iznb1.ab": "922a50b279223ae0b2556caff965206c50b8dc0a",
+  "actor/logicdata/iznb2.ab": "f7e8b954b5c82cda3c5963d1bcae7248389e4ce3",
+  "actor/sprite/mi/80/mi_attack_1_c.ab": "7cb7692b184075a8ec6bb4417007028e6e79f730",
+  "actor/sprite/mi/80/mi_base_1_c.ab": "a9d5bb969d3991b0cef6c4c7ae273d84d3907dad",
+  "actor/sprite/mi/80/mi_behit_1_c.ab": "cd640a3f8be0a48f45b3ed17de90edb4b674732a",
+  "actor/sprite/mi/80/mi_defense_1_c.ab": "b4a702db3a7ede5eab05dfec67cf28a0f0aa1b6b",
+  "actor/sprite/mi/80/mi_grab_1_c.ab": "26ac35320c7b209c893e485f450de4e445e7ed84",
+  "actor/sprite/mi/80/mi_show_1_c.ab": "a428dfb5a669978dcf878f5574ef81dd20a0075c",
+  "actor/sprite/mi/80/mi_skilla_1_c.ab": "3448e74401d404587723f248efc2e863a73c4833",
+  "actor/sprite/mi/80/mi_skillb_1_c.ab": "95cc8db6a43a17c341fcff4b9699ec10332b2ef8",
+  "actor/sprite/mi/80/mi_skillc_1_c.ab": "dc369ba863e2d6a575715d23acb0594b753763a2",
+  "actor/sprite/mi/80/mi_skilld_1_c.ab": "8116d0ca5ef9fe6434eb8e8dbda274ac199a1355",
+  "actor/sprite/mi/80/mi_skillt_1_c.ab": "7414cc42c2a8c46929ef97defb54f8ca26907da2",
+  "actor/sprite/mi/80/mi_superskill_1_c.ab": "5228431fef6f8503106885fc92a993a72f40f6b5",
+  "actor/sprite/mi/81/mi_attack_1_c.ab": "2bc17316bdfa949f76092588d6a604217aa1d4a6",
+  "actor/sprite/mi/81/mi_base_1_c.ab": "c29bfae0d449da89d2ef72fd5c17da1962f840eb",
+  "actor/sprite/mi/81/mi_behit_1_c.ab": "a4acb519ce418888a8bf7a939a398d6a0d50838c",
+  "actor/sprite/mi/81/mi_defense_1_c.ab": "0288b2c49e0d1418c885a8ebdeda166e92dd1634",
+  "actor/sprite/mi/81/mi_grab_1_c.ab": "d2b639932507a2ec41a5e148d3f4879e0206469f",
+  "actor/sprite/mi/81/mi_show_1_c.ab": "83922fcb6a69448900b5a1db582dc94351ec8e10",
+  "actor/sprite/mi/81/mi_skilla_1_c.ab": "ad81607f096acbb27a2082dcac74d75515c8168e",
+  "actor/sprite/mi/81/mi_skillb_1_c.ab": "f00fc8671f35568540824a74fe4da078c6211e93",
+  "actor/sprite/mi/81/mi_skillc_1_c.ab": "51e960d8d123043d53b1c20f5254e5a172cd3061",
+  "actor/sprite/mi/81/mi_skilld_1_c.ab": "332eae7d443f7de3484dfd8bb0b2af6d72dec3c1",
+  "actor/sprite/mi/81/mi_skillt_1_c.ab": "48dbf17ca5c1420a5749c29f8d59dcc949b11f25",
+  "actor/sprite/mi/81/mi_superskill_1_c.ab": "0117528b7d6745790445d608df97b07b0353af26",
+  "actor/sprite/mi/82/mi_attack_1_c.ab": "a12de1748565c13ba647cc3bde5bee57d4e2650a",
+  "actor/sprite/mi/82/mi_base_1_c.ab": "0c9c470bb1a2dde57ac18e47bc95bb92b93eb162",
+  "actor/sprite/mi/82/mi_behit_1_c.ab": "47b3c9e590543bc44dbfa56f3f53f212047e40db",
+  "actor/sprite/mi/82/mi_defense_1_c.ab": "93a7d67a9682fcde7444940c84bd910dc6aa585e",
+  "actor/sprite/mi/82/mi_grab_1_c.ab": "861d1f9a9a4059cec5b7eb1506b6c3490a2f09f3",
+  "actor/sprite/mi/82/mi_show_1_c.ab": "01b96c5f80341c92307f65e8a10ca3bb0e63d5ff",
+  "actor/sprite/mi/82/mi_skilla_1_c.ab": "e7f38d5ab1726a70e99116c5c01b97c8e5727347",
+  "actor/sprite/mi/82/mi_skillb_1_c.ab": "03dd12b724b108c04ff850f53726a9ecedd3384e",
+  "actor/sprite/mi/82/mi_skillc_1_c.ab": "c1d1973d2eabab4c70d53431f49c1ab106d9c7da",
+  "actor/sprite/mi/82/mi_skilld_1_c.ab": "8eec1420d37b9e6737a75c146316ee99d47530d5",
+  "actor/sprite/mi/82/mi_skillt_1_c.ab": "74216ab7586eff6254a0d44569dfa31a849d6e33",
+  "actor/sprite/mi/82/mi_superskill_1_c.ab": "07215be3cd13f05567827613f60c248b93d6b431",
+  "actor/sprite/mi/83/mi_attack_1_c.ab": "bdab63a54e73101435f16045aa9fd1cd64354c1d",
+  "actor/sprite/mi/83/mi_base_1_c.ab": "2521a01307f36ae398cf70a3a20fbe38a329babe",
+  "actor/sprite/mi/83/mi_behit_1_c.ab": "18b3799679ea593ffce05810527b716b79557563",
+  "actor/sprite/mi/83/mi_defense_1_c.ab": "5543811325a4d2ebcedcbd8d8538a8817eba7e55",
+  "actor/sprite/mi/83/mi_grab_1_c.ab": "460c6c6a604166bb6ed86d5c0e19742b253a2953",
+  "actor/sprite/mi/83/mi_show_1_c.ab": "cc92b7c675a9ad856a9759ec0915feca023d9d58",
+  "actor/sprite/mi/83/mi_skilla_1_c.ab": "e264108e20bb93fa0eed6186cf943de6c2c70162",
+  "actor/sprite/mi/83/mi_skillb_1_c.ab": "4ae99dce1feb0c01128e6a40fef92c5ce37c0d9c",
+  "actor/sprite/mi/83/mi_skillc_1_c.ab": "836d3b479cb1abf3e93053aea1442dba391c07aa",
+  "actor/sprite/mi/83/mi_skilld_1_c.ab": "d9d7febac09e1bd0dfd7c7f8a21c883677b518a3",
+  "actor/sprite/mi/83/mi_skillt_1_c.ab": "95709f2f9b4abcab2aa163079f78ad045d39bf23",
+  "actor/sprite/mi/83/mi_superskill_1_c.ab": "56ca7e921b240452bfdd313e80a7e1e689f2fd4a",
+  "actor/sprite/mi/84/mi_attack_1_c.ab": "bc5c1be7563cbbaa16db0cb0d6a2ded89f1bb061",
+  "actor/sprite/mi/84/mi_base_1_c.ab": "a1db8b89f1bca400d2fc5e24d2def9abe750b950",
+  "actor/sprite/mi/84/mi_behit_1_c.ab": "6697fd2b032ac0bc63e88429fd710c146c1a7b0b",
+  "actor/sprite/mi/84/mi_defense_1_c.ab": "2ccd7b2fa016c488285e50e890422134a4a88eb3",
+  "actor/sprite/mi/84/mi_grab_1_c.ab": "8cb37c023fb59e7d082745fe2d9361e06895d17f",
+  "actor/sprite/mi/84/mi_show_1_c.ab": "42cbf30384b9de8c5ed22e81199dcc0ecdbe8d7f",
+  "actor/sprite/mi/84/mi_skilla_1_c.ab": "0d85d53f56b9e7252df33d39131e3a4df3719000",
+  "actor/sprite/mi/84/mi_skillb_1_c.ab": "ec522fe636963c4f9365c382a3508be4e6348019",
+  "actor/sprite/mi/84/mi_skillc_1_c.ab": "0f0bbeb609f6cc25ddd8583b0cfaafb8de663ba9",
+  "actor/sprite/mi/84/mi_skilld_1_c.ab": "80200b679641d6f0b7e68b0346bd95115ba8cb23",
+  "actor/sprite/mi/84/mi_skillt_1_c.ab": "ee58ef4e97618a32e87a7375212b1a0e51c843db",
+  "actor/sprite/mi/84/mi_superskill_1_c.ab": "ba05b3e09753151541c0754ab71102424bbade4c",
+  "actor/sprite/mi/85/mi_attack_1_c.ab": "c481d02fec410c92aef6e905816d3f87c26e9c4a",
+  "actor/sprite/mi/85/mi_base_1_c.ab": "923314191892290f34f8ce450f30df0fb338b0e9",
+  "actor/sprite/mi/85/mi_behit_1_c.ab": "f708125dc5940b0ea43bc91effb02d09cc808b21",
+  "actor/sprite/mi/85/mi_defense_1_c.ab": "3d651705803d21fc258d9292501e9814786a7923",
+  "actor/sprite/mi/85/mi_grab_1_c.ab": "bce1842fc5cb430444fcba65596576f2e304e4c0",
+  "actor/sprite/mi/85/mi_show_1_c.ab": "393b639a4900bb06a7cdbaa30bf1d5cc5d423411",
+  "actor/sprite/mi/85/mi_skilla_1_c.ab": "a010cf37720ff19dc6a65fcc75a3a1ea48b1163a",
+  "actor/sprite/mi/85/mi_skillb_1_c.ab": "a3350255f236f53cb3f12b911338e218e2d02ef1",
+  "actor/sprite/mi/85/mi_skillc_1_c.ab": "196c634a3ecdfb42fcdede49ae71dde46d1c8c65",
+  "actor/sprite/mi/85/mi_skilld_1_c.ab": "58a84bf5e808b6c10db8c89789f70553806ed34a",
+  "actor/sprite/mi/85/mi_skillt_1_c.ab": "f3e9809b5481f2685a94bec256f67f85141f8c29",
+  "actor/sprite/mi/85/mi_superskill_1_c.ab": "c090a7ed6d3070f47c03dc12e6a27fcc74a3771e",
+  "actor/sprite/mi/86/mi_attack_1_c.ab": "292bce0b94fd14beece6bb70f9482afc392c46be",
+  "actor/sprite/mi/86/mi_base_1_c.ab": "b8063fb018ef6b6a7949abc64aa83b79f52b63d1",
+  "actor/sprite/mi/86/mi_behit_1_c.ab": "c673fd77b5d9c6b15eb57745d7abd353a46bbeea",
+  "actor/sprite/mi/86/mi_defense_1_c.ab": "9c1e98deb8fa9d27c73e15f99caf38d995a679f7",
+  "actor/sprite/mi/86/mi_grab_1_c.ab": "dd5d21fb73cce1df7fc24ab49e864d56d1060778",
+  "actor/sprite/mi/86/mi_show_1_c.ab": "d91c3e5e7c7c93276204f23f3fce1b90ec061cb6",
+  "actor/sprite/mi/86/mi_skilla_1_c.ab": "e22294952eadaed7d0e4ab288470832a3a8d7c83",
+  "actor/sprite/mi/86/mi_skillb_1_c.ab": "bb4f002c325ac51fa90e126e8b63cb7275af6dcc",
+  "actor/sprite/mi/86/mi_skillc_1_c.ab": "2ed303c55344cfda1736c0937e6edc120cacb8ab",
+  "actor/sprite/mi/86/mi_skilld_1_c.ab": "817462e79eaa16a3d385f1c33e07feca16f38fcf",
+  "actor/sprite/mi/86/mi_skillt_1_c.ab": "9cb5b3bf075ca7db85bd7178f49543cd126612b9",
+  "actor/sprite/mi/86/mi_superskill_1_c.ab": "c876e81e28e6821742e08fe31203e6255c619382",
+  "actor/sprite/mibullet1/80/mibullet1_attack_1_c.ab": "0c5a4f92b4555119fe56da740e5ac55d37d72210",
+  "actor/sprite/mibullet1/80/mibullet1_base_1_c.ab": "b734fdc273cd8ad37a9abb8e3fa2ebaf5277cd21",
+  "actor/sprite/mibullet1/80/mibullet1_behit_1_c.ab": "5ed53db854f54c2e7196dc378d201c9c48dcd500",
+  "actor/sprite/mibullet1/80/mibullet1_defense_1_c.ab": "5baf373eea9f08e2fb2310de9b9b4312297562ff",
+  "actor/sprite/mibullet1/80/mibullet1_grab_1_c.ab": "99b21a73d0044cc4984ff348d5031bea93c8db84",
+  "actor/sprite/mibullet1/80/mibullet1_skill_1_c.ab": "df537a75312edfcee1341adc117fcc9df4fb13a9",
+  "actor/sprite/mibullet1/81/mibullet1_attack_1_c.ab": "5b056ce846afc3ec1226e5ba58d7271c5c08c05c",
+  "actor/sprite/mibullet1/81/mibullet1_base_1_c.ab": "c5f082940270c290703082d52794f35950af33d9",
+  "actor/sprite/mibullet1/81/mibullet1_behit_1_c.ab": "622e8727e0db2a0b86fc2bc44c6978b30fc3d954",
+  "actor/sprite/mibullet1/81/mibullet1_defense_1_c.ab": "6567b7e909240c6f4c4d81da1785b93848b4c3d7",
+  "actor/sprite/mibullet1/81/mibullet1_grab_1_c.ab": "2a389d64a94c13c630356c424f917ef8c62a45de",
+  "actor/sprite/mibullet1/81/mibullet1_skill_1_c.ab": "92c397411fcdd024a8d1b774f8ba493432bfc25e",
+  "actor/sprite/mibullet1/82/mibullet1_attack_1_c.ab": "d676b18d2fa1e3a0b9937200ff08364ef9546f72",
+  "actor/sprite/mibullet1/82/mibullet1_base_1_c.ab": "0137658e138efd40e5850b0971da0dfb9c5d9dbe",
+  "actor/sprite/mibullet1/82/mibullet1_behit_1_c.ab": "968daf98275db74a1ac10add185b2df5553759e9",
+  "actor/sprite/mibullet1/82/mibullet1_defense_1_c.ab": "0287450a280ec0df9cbbdfc421b7a9ae975748dd",
+  "actor/sprite/mibullet1/82/mibullet1_grab_1_c.ab": "8de0db835b7a3c162f2d14a167c5c60bb5119bcf",
+  "actor/sprite/mibullet1/82/mibullet1_skill_1_c.ab": "ebc05d24f909eb662716e9768548445c59a50876",
+  "actor/sprite/mibullet1/83/mibullet1_attack_1_c.ab": "26347c6a584ae2b8565df93701e005e7fff640ca",
+  "actor/sprite/mibullet1/83/mibullet1_base_1_c.ab": "4536adef8265b819ebe3be18836bdef1ee6b8820",
+  "actor/sprite/mibullet1/83/mibullet1_behit_1_c.ab": "e2082c2b04760bb20fcce004278c6b0ecd0c847f",
+  "actor/sprite/mibullet1/83/mibullet1_defense_1_c.ab": "25e8fb4d7dbfa141089be230adc5f758afb8559f",
+  "actor/sprite/mibullet1/83/mibullet1_grab_1_c.ab": "5bf1e032e98aa384af50fee678e4322397673c59",
+  "actor/sprite/mibullet1/83/mibullet1_skill_1_c.ab": "ecea5c09c5f53fe836ce7dc5e1f685b8df5c7d24",
+  "actor/sprite/mibullet1/84/mibullet1_attack_1_c.ab": "19fa0a875d8a5c814d3465c2af65461890127886",
+  "actor/sprite/mibullet1/84/mibullet1_base_1_c.ab": "a40df0754b5a892baab1a21845329ca4cc2cb05d",
+  "actor/sprite/mibullet1/84/mibullet1_behit_1_c.ab": "738cb656afe3590dc9e0e032147dded2dcedeab1",
+  "actor/sprite/mibullet1/84/mibullet1_defense_1_c.ab": "d097492197b5c7a8e1a82b93cffb75635175042f",
+  "actor/sprite/mibullet1/84/mibullet1_grab_1_c.ab": "3891d81f24ba6e2d299ca1c342e7933ff839c846",
+  "actor/sprite/mibullet1/84/mibullet1_skill_1_c.ab": "21271a3808ccba2bf32789981a2f7a0790ece0b1",
+  "actor/sprite/mibullet1/85/mibullet1_attack_1_c.ab": "2f71ba67093e6301c177c8acd0d3bd5ed7f50701",
+  "actor/sprite/mibullet1/85/mibullet1_base_1_c.ab": "71dce13fdc0cd56bb223c89556c009abf43dd209",
+  "actor/sprite/mibullet1/85/mibullet1_behit_1_c.ab": "f7eb021b76cff589147254052f99e1b9567d7d40",
+  "actor/sprite/mibullet1/85/mibullet1_defense_1_c.ab": "69646ccb94d1cec78a720bdff0c80ba3c3462b23",
+  "actor/sprite/mibullet1/85/mibullet1_grab_1_c.ab": "68bdcc30ddeae692e8e1d75f8696c68996d39074",
+  "actor/sprite/mibullet1/85/mibullet1_skill_1_c.ab": "1158eccd5fafd3a953e399785a2a3ec154601144",
+  "actor/sprite/mibullet1/86/mibullet1_attack_1_c.ab": "aa3de8cf8f4bcbd15abcd58cbdab0d8a33bf4833",
+  "actor/sprite/mibullet1/86/mibullet1_base_1_c.ab": "749f7a744e43697a74b67a348f683c2c2d54bcc5",
+  "actor/sprite/mibullet1/86/mibullet1_behit_1_c.ab": "d8e5b9553aaf7d6f59a395d86170925a42060487",
+  "actor/sprite/mibullet1/86/mibullet1_defense_1_c.ab": "0006572935a8fb87053072f66de1c14d2d5f861b",
+  "actor/sprite/mibullet1/86/mibullet1_grab_1_c.ab": "82bcea04f6be5407487dd256075bca2a9971fa8d",
+  "actor/sprite/mibullet1/86/mibullet1_skill_1_c.ab": "d65459c4fb6114af96284504fa6325773e8aa5fc",
+  "actor/texturefamily/izn_02.ab": "52ce5b40b145649499369734322dfc46948f4e2d",
+  "actor/texturefamily/izn_80.ab": "c311efdcf5ad3d8fd0f7f05b8f23cdad8e276e65",
+  "actor/texturefamily/izn_81.ab": "578044ab535d8131c90669a1313552f76e028042",
+  "actor/texturefamily/izn_82.ab": "ebe65f9597a792f761ea32ab888c445f2262c55e",
+  "actor/texturefamily/izn_83.ab": "3842ba3cfbe5c3b3f435ac380e75e24b11ba0193",
+  "actor/texturefamily/izn_84.ab": "9d2dee93c33d0ed5ba41dfe512a2b2d2e911dd0a",
+  "actor/texturefamily/izn_85.ab": "70d625e08a296897e47794144b0238ea8654261b",
+  "actor/texturefamily/izn_86.ab": "a7b4e3125d87295eb4f4aae6974e758dcfce1c38",
+  "actor/texturefamily/izn_extra.ab": "99918765fc2f348dd7e5fd7da89eb0f5c07f63e1",
+  "actor/texturefamily/izn_extra2.ab": "25fbeb4f099f3ff2352801bfdff89b37c715eb23",
+  "actor/texturefamily/iznb1_02.ab": "afdb9a8b51c62c1aca1e20e321528e989c1673e5",
+  "actor/texturefamily/iznb1_80.ab": "b81664d16d4c41b6fd1313119549ea677914774c",
+  "actor/texturefamily/iznb1_81.ab": "e41b59766b802506265fdfe8660060c09f73ad15",
+  "actor/texturefamily/iznb1_82.ab": "ec05629c0ddd4973df15240330809571f26f662f",
+  "actor/texturefamily/iznb1_83.ab": "115810a2852f5b6956a1defc5e76e37c501f9107",
+  "actor/texturefamily/iznb1_84.ab": "ff98044a573db67dcff39b31e6de38e03bc6d179",
+  "actor/texturefamily/iznb1_85.ab": "31791d66405448562cc4f22ed7d285463a9ffc22",
+  "actor/texturefamily/iznb1_86.ab": "5b518bb34785a2466dd52c1d9669695e85dc4ca1",
+  "actor/texturefamily/iznb1_extra.ab": "4483ce2192971a70e273cf51cd322a6a62102b23",
+  "actor/texturefamily/iznb1_extra2.ab": "0323082c12e530bf5aea475578cf00e085743227",
+  "actor/texturefamily/mi_80.ab": "c3a24ca9fcd137f2a38053f07ba923fc2d29c2b9",
+  "actor/texturefamily/mi_81.ab": "62f83aadd954c2ef2ac6ab2fc455bc43a4816198",
+  "actor/texturefamily/mi_82.ab": "3dd9b001d094778392e06d0dc3f53132f99a3e73",
+  "actor/texturefamily/mi_83.ab": "9ccaf049ab854ce9ed9e413145d3b8542e89036e",
+  "actor/texturefamily/mi_84.ab": "e4135126f5a6a4cb55be9b0c59ab888e98b674a4",
+  "actor/texturefamily/mi_85.ab": "a8c18617f1930cb1fc94dfb657c8b52381408bca",
+  "actor/texturefamily/mi_86.ab": "2d91d5335d3dc89334adb1e9959cb12763d1706b",
+  "actor/texturefamily/mibullet1_80.ab": "1a283160a2bba6433630b36909143a84b0886753",
+  "actor/texturefamily/mibullet1_81.ab": "36ef96469955bbcbadd04e42312eb564ad229e81",
+  "actor/texturefamily/mibullet1_82.ab": "6d996e20b8897ce7ff401bddfdd16d4f8a8fb575",
+  "actor/texturefamily/mibullet1_83.ab": "b0f6bbb111323956742ddd46357047f50d90fb76",
+  "actor/texturefamily/mibullet1_84.ab": "34db6c87159b16db10343a727e07af723b0bcc33",
+  "actor/texturefamily/mibullet1_85.ab": "7d65b79752b7a903630f69818caba4c34ba6ce60",
+  "actor/texturefamily/mibullet1_86.ab": "9a80c3c3d06c43fd4e1fb166dc548e8349fffff3",
+  "effect/prefab/monster/mi/izn/mi_214a_01.ab": "d5be96da601a63803f6eeed2e87f2025cb68daf8",
+  "effect/prefab/monster/mi/izn/mi_236236b_1_01.ab": "74f77f6d21117cf6af55a651bbb2e7c70158b51b",
+  "effect/prefab/monster/mi/izn/mi_236236b_1_02.ab": "8fcd57293d0a61ecd91b035eb9450278aed65476",
+  "effect/prefab/monster/mi/izn/mi_2c_01.ab": "5837b6000a8f6e206c933ede06a50b1b4e8b50e5",
+  "effect/prefab/monster/mi/izn/mi_3c_01.ab": "050a4d6e0999db2708fe0b99dbb555539f7488df",
+  "effect/prefab/monster/mi/izn/mi_426c_charge_01d.ab": "d68800ba40faaeaf10eeee6ad99e80ee1b4fb48d",
+  "effect/prefab/monster/mi/izn/mi_4bc_success_01.ab": "c2859915e0702d465353eb54deee0762e9e64f17",
+  "effect/prefab/monster/mi/izn/mi_5a_01.ab": "5a9f680ae8147e05d2ed76909b94f5cfa53a2dbd",
+  "effect/prefab/monster/mi/izn/mi_5b_01.ab": "f63e6398cc4a67fd4a6c4f8fd317463a0367f211",
+  "effect/prefab/monster/mi/izn/mi_6a_01.ab": "c88b273a2d3c1c4dc8f0290f0acd38ad5620feae",
+  "effect/prefab/monster/mi/izn/mi_6c_01_a.ab": "01e72707cc26b90134b0b4f3ee0a027060700adf",
+  "effect/prefab/monster/mi/izn/mi_6c_01_b.ab": "05b5f1fb81e544fac98f0eba27e5918f3841d3c0",
+  "effect/prefab/monster/mi/izn/mi_crush_charge_01.ab": "7c564816ac28d6c2e2b35558f7527af5664bbf1f",
+  "effect/prefab/monster/mi/izn/mi_jbc_success_01.ab": "899602888e4c2faed6423c9995ea06d36c2b8d07",
+  "effect/prefab/monster/mi/izn/mi_jc_01.ab": "c868def7b1d9719fc546ea867dcbb08a29c062d3",
+  "effect/prefab/monster/mi/izn/suboss_gd1_02.ab": "3e83cbf467439a7d95c116d9f738889685b36f0c",
+  "effect/prefab/role/izn/izn_dash_ring.ab": "b683682fd76fc49ec36d2aee494bb8b66f09276d",
+  "ui/atlas/iconpotential200301/iconpotential200301.ab": "ca1e8d83b5f3904a01cafd12e26e025a1c49df5a",
+  "ui/texture/iconpotential200301/potential_20301.ab": "27c3c0bcff488aee999b62d8567800a74afda0a8",
+  "ui/texture/iconpotential200301/potential_20304.ab": "dfe32469c4f4851b76d1fad4bd28dda97ae455a2",
+  "ui/texture/iconpotential200301/potential_20307.ab": "b202f40446b56107036049ec6ff2a19965ac9950",
+  "ui/texture/iconpotential200301/potential_20309.ab": "b40e01b8d7d2ec7ebbfd6c34c52b04ae95830b1b",
+  "ui/texture/iconpotential200301/potential_20311.ab": "2fa5df9d33a8b301cbe795dbff8715d26524d23a",
+  "ui/texture/iconpotential200301/potential_20312.ab": "21d4ec458738118b19b117b59d03a23be977bf88",
+  "ui/texture/iconpotential200301/potential_20319.ab": "cf18ae7b4d166fa5468699769fc5cb9dc4774752",
+  "ui/texture/iconpotential200301/potential_20321.ab": "eaf35129f9b68ae750abcd67388cada56e473316",
+  "ui/texture/iconpotential200301/potential_20323.ab": "3edb80a2ec6f805433da87802253e463aae29fdd",
+  "ui/texture/iconpotential200301/potential_20326.ab": "76632ec6d48815b3f4bf64414e6ee0a2623737ad",
+  "ui/texture/iconpotential200301/potential_20328.ab": "1c8178e9df3f712c709b2c647cbe261ea2e5938e",
+  "ui/texture/iconpotential200301/potential_20330.ab": "db8a4c67222dda2e6ec147d0e95ab85a966e595b",
+  "ui/texture/iconpotential200301/potential_20337.ab": "3e337c4fdb61358afebe19382a6da2c7709582a9"
+ },
+ "seeds": {
+  "actor/animation/role/mi_born2_timeline.ab": null,
+  "actor/animation/role/mi_born_timeline.ab": null,
+  "actor/animation/role/mi_burst_x_inherit.ab": null,
+  "actor/animation/role/mi_dash_timeline.ab": null,
+  "actor/animation/role/mi_drop_inherit.ab": null,
+  "actor/animation/role/mi_dropend4.ab": null,
+  "actor/animation/role/mi_knockdown_stand_inherit.ab": null,
+  "actor/animation/role/mi_squat_loop_inherit.ab": null,
+  "actor/animation/role/mi_squat_to_stand.ab": null,
+  "actor/animation/role/mi_stand2_timeline.ab": null,
+  "actor/animation/role/mi_stand_inherit.ab": null,
+  "actor/animation/role/mi_stand_timeline.ab": null,
+  "actor/animation/role/mi_standby_inherit.ab": null,
+  "actor/animation/role/mi_upjump_1.ab": null,
+  "actor/animation/role/mi_upjump_2.ab": null,
+  "actor/animation/role/mi_upjump_3.ab": null,
+  "actor/logicdata/izn.ab": null,
+  "actor/logicdata/iznb1.ab": null,
+  "actor/logicdata/iznb2.ab": null,
+  "actor/sprite/mi/80/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/80/mi_base_1_c.ab": null,
+  "actor/sprite/mi/80/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/80/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/80/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/80/mi_show_1_c.ab": null,
+  "actor/sprite/mi/80/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/80/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/80/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/80/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/80/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/80/mi_superskill_1_c.ab": null,
+  "actor/sprite/mi/81/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/81/mi_base_1_c.ab": null,
+  "actor/sprite/mi/81/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/81/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/81/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/81/mi_show_1_c.ab": null,
+  "actor/sprite/mi/81/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/81/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/81/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/81/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/81/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/81/mi_superskill_1_c.ab": null,
+  "actor/sprite/mi/82/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/82/mi_base_1_c.ab": null,
+  "actor/sprite/mi/82/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/82/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/82/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/82/mi_show_1_c.ab": null,
+  "actor/sprite/mi/82/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/82/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/82/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/82/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/82/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/82/mi_superskill_1_c.ab": null,
+  "actor/sprite/mi/83/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/83/mi_base_1_c.ab": null,
+  "actor/sprite/mi/83/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/83/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/83/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/83/mi_show_1_c.ab": null,
+  "actor/sprite/mi/83/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/83/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/83/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/83/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/83/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/83/mi_superskill_1_c.ab": null,
+  "actor/sprite/mi/84/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/84/mi_base_1_c.ab": null,
+  "actor/sprite/mi/84/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/84/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/84/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/84/mi_show_1_c.ab": null,
+  "actor/sprite/mi/84/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/84/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/84/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/84/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/84/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/84/mi_superskill_1_c.ab": null,
+  "actor/sprite/mi/85/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/85/mi_base_1_c.ab": null,
+  "actor/sprite/mi/85/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/85/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/85/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/85/mi_show_1_c.ab": null,
+  "actor/sprite/mi/85/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/85/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/85/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/85/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/85/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/85/mi_superskill_1_c.ab": null,
+  "actor/sprite/mi/86/mi_attack_1_c.ab": null,
+  "actor/sprite/mi/86/mi_base_1_c.ab": null,
+  "actor/sprite/mi/86/mi_behit_1_c.ab": null,
+  "actor/sprite/mi/86/mi_defense_1_c.ab": null,
+  "actor/sprite/mi/86/mi_grab_1_c.ab": null,
+  "actor/sprite/mi/86/mi_show_1_c.ab": null,
+  "actor/sprite/mi/86/mi_skilla_1_c.ab": null,
+  "actor/sprite/mi/86/mi_skillb_1_c.ab": null,
+  "actor/sprite/mi/86/mi_skillc_1_c.ab": null,
+  "actor/sprite/mi/86/mi_skilld_1_c.ab": null,
+  "actor/sprite/mi/86/mi_skillt_1_c.ab": null,
+  "actor/sprite/mi/86/mi_superskill_1_c.ab": null,
+  "actor/sprite/mibullet1/80/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/80/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/80/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/80/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/80/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/80/mibullet1_skill_1_c.ab": null,
+  "actor/sprite/mibullet1/81/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/81/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/81/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/81/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/81/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/81/mibullet1_skill_1_c.ab": null,
+  "actor/sprite/mibullet1/82/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/82/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/82/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/82/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/82/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/82/mibullet1_skill_1_c.ab": null,
+  "actor/sprite/mibullet1/83/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/83/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/83/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/83/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/83/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/83/mibullet1_skill_1_c.ab": null,
+  "actor/sprite/mibullet1/84/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/84/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/84/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/84/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/84/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/84/mibullet1_skill_1_c.ab": null,
+  "actor/sprite/mibullet1/85/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/85/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/85/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/85/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/85/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/85/mibullet1_skill_1_c.ab": null,
+  "actor/sprite/mibullet1/86/mibullet1_attack_1_c.ab": null,
+  "actor/sprite/mibullet1/86/mibullet1_base_1_c.ab": null,
+  "actor/sprite/mibullet1/86/mibullet1_behit_1_c.ab": null,
+  "actor/sprite/mibullet1/86/mibullet1_defense_1_c.ab": null,
+  "actor/sprite/mibullet1/86/mibullet1_grab_1_c.ab": null,
+  "actor/sprite/mibullet1/86/mibullet1_skill_1_c.ab": null,
+  "actor/texturefamily/izn_02.ab": null,
+  "actor/texturefamily/izn_80.ab": null,
+  "actor/texturefamily/izn_81.ab": null,
+  "actor/texturefamily/izn_82.ab": null,
+  "actor/texturefamily/izn_83.ab": null,
+  "actor/texturefamily/izn_84.ab": null,
+  "actor/texturefamily/izn_85.ab": null,
+  "actor/texturefamily/izn_86.ab": null,
+  "actor/texturefamily/izn_extra.ab": null,
+  "actor/texturefamily/izn_extra2.ab": null,
+  "actor/texturefamily/iznb1_02.ab": null,
+  "actor/texturefamily/iznb1_80.ab": null,
+  "actor/texturefamily/iznb1_81.ab": null,
+  "actor/texturefamily/iznb1_82.ab": null,
+  "actor/texturefamily/iznb1_83.ab": null,
+  "actor/texturefamily/iznb1_84.ab": null,
+  "actor/texturefamily/iznb1_85.ab": null,
+  "actor/texturefamily/iznb1_86.ab": null,
+  "actor/texturefamily/iznb1_extra.ab": null,
+  "actor/texturefamily/iznb1_extra2.ab": null,
+  "actor/texturefamily/mi_80.ab": null,
+  "actor/texturefamily/mi_81.ab": null,
+  "actor/texturefamily/mi_82.ab": null,
+  "actor/texturefamily/mi_83.ab": null,
+  "actor/texturefamily/mi_84.ab": null,
+  "actor/texturefamily/mi_85.ab": null,
+  "actor/texturefamily/mi_86.ab": null,
+  "actor/texturefamily/mibullet1_80.ab": null,
+  "actor/texturefamily/mibullet1_81.ab": null,
+  "actor/texturefamily/mibullet1_82.ab": null,
+  "actor/texturefamily/mibullet1_83.ab": null,
+  "actor/texturefamily/mibullet1_84.ab": null,
+  "actor/texturefamily/mibullet1_85.ab": null,
+  "actor/texturefamily/mibullet1_86.ab": null,
+  "effect/prefab/monster/mi/izn/mi_214a_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_236236b_1_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_236236b_1_02.ab": null,
+  "effect/prefab/monster/mi/izn/mi_2c_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_3c_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_426c_charge_01d.ab": null,
+  "effect/prefab/monster/mi/izn/mi_4bc_success_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_5a_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_5b_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_6a_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_6c_01_a.ab": null,
+  "effect/prefab/monster/mi/izn/mi_6c_01_b.ab": null,
+  "effect/prefab/monster/mi/izn/mi_crush_charge_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_jbc_success_01.ab": null,
+  "effect/prefab/monster/mi/izn/mi_jc_01.ab": null,
+  "effect/prefab/monster/mi/izn/suboss_gd1_02.ab": null,
+  "effect/prefab/role/izn/izn_dash_ring.ab": null,
+  "ui/atlas/iconpotential200301/iconpotential200301.ab": null,
+  "ui/texture/iconpotential200301/potential_20301.ab": null,
+  "ui/texture/iconpotential200301/potential_20304.ab": null,
+  "ui/texture/iconpotential200301/potential_20307.ab": null,
+  "ui/texture/iconpotential200301/potential_20309.ab": null,
+  "ui/texture/iconpotential200301/potential_20311.ab": null,
+  "ui/texture/iconpotential200301/potential_20312.ab": null,
+  "ui/texture/iconpotential200301/potential_20319.ab": null,
+  "ui/texture/iconpotential200301/potential_20321.ab": null,
+  "ui/texture/iconpotential200301/potential_20323.ab": null,
+  "ui/texture/iconpotential200301/potential_20326.ab": null,
+  "ui/texture/iconpotential200301/potential_20328.ab": null,
+  "ui/texture/iconpotential200301/potential_20330.ab": null,
+  "ui/texture/iconpotential200301/potential_20337.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [
+   "actor/logicdata/izn",
+   "actor/logicdata/iznb1",
+   "actor/logicdata/iznb2",
+   "actor/texturefamily/izn_02",
+   "actor/texturefamily/izn_extra",
+   "actor/texturefamily/izn_extra2",
+   "actor/texturefamily/iznb1_02",
+   "actor/texturefamily/iznb1_extra",
+   "actor/texturefamily/iznb1_extra2",
+   "actor/animation/role/mi_stand_inherit",
+   "actor/animation/role/mi_standby_inherit",
+   "actor/animation/role/mi_stand_timeline",
+   "actor/animation/role/mi_stand2_timeline",
+   "actor/animation/role/mi_squat_loop_inherit",
+   "actor/animation/role/mi_squat_to_stand",
+   "actor/animation/role/mi_drop_inherit",
+   "actor/animation/role/mi_dash_timeline",
+   "actor/animation/role/mi_burst_x_inherit",
+   "actor/animation/role/mi_born_timeline",
+   "actor/animation/role/mi_born2_timeline",
+   "actor/animation/role/mi_knockdown_stand_inherit",
+   "actor/animation/role/mi_upjump_1",
+   "actor/animation/role/mi_upjump_2",
+   "actor/animation/role/mi_upjump_3",
+   "actor/animation/role/mi_dropend4",
+   "effect/prefab/role/izn/izn_dash_ring",
+   "effect/prefab/monster/mi/izn/mi_426c_charge_01d",
+   "effect/prefab/monster/mi/izn/suboss_gd1_02",
+   "effect/prefab/monster/mi/izn/mi_214a_01",
+   "effect/prefab/monster/mi/izn/mi_2c_01",
+   "effect/prefab/monster/mi/izn/mi_3c_01",
+   "effect/prefab/monster/mi/izn/mi_5a_01",
+   "effect/prefab/monster/mi/izn/mi_5b_01",
+   "effect/prefab/monster/mi/izn/mi_6a_01",
+   "effect/prefab/monster/mi/izn/mi_jc_01",
+   "effect/prefab/monster/mi/izn/mi_6c_01_a",
+   "effect/prefab/monster/mi/izn/mi_6c_01_b",
+   "effect/prefab/monster/mi/izn/mi_crush_charge_01",
+   "effect/prefab/monster/mi/izn/mi_236236b_1_01",
+   "effect/prefab/monster/mi/izn/mi_236236b_1_02",
+   "effect/prefab/monster/mi/izn/mi_4bc_success_01",
+   "effect/prefab/monster/mi/izn/mi_jbc_success_01",
+   "ui/texture/iconpotential200301/potential_20301",
+   "ui/texture/iconpotential200301/potential_20304",
+   "ui/texture/iconpotential200301/potential_20307",
+   "ui/texture/iconpotential200301/potential_20309",
+   "ui/texture/iconpotential200301/potential_20311",
+   "ui/texture/iconpotential200301/potential_20312",
+   "ui/texture/iconpotential200301/potential_20319",
+   "ui/texture/iconpotential200301/potential_20321",
+   "ui/texture/iconpotential200301/potential_20323",
+   "ui/texture/iconpotential200301/potential_20326",
+   "ui/texture/iconpotential200301/potential_20328",
+   "ui/texture/iconpotential200301/potential_20330",
+   "ui/texture/iconpotential200301/potential_20337",
+   "ui/atlas/iconpotential200301/iconpotential200301",
+   "actor/sprite/mi/80/mi_attack_1_c",
+   "actor/sprite/mi/80/mi_base_1_c",
+   "actor/sprite/mi/80/mi_behit_1_c",
+   "actor/sprite/mi/80/mi_defense_1_c",
+   "actor/sprite/mi/80/mi_grab_1_c",
+   "actor/sprite/mi/80/mi_show_1_c",
+   "actor/sprite/mi/80/mi_skilla_1_c",
+   "actor/sprite/mi/80/mi_skillb_1_c",
+   "actor/sprite/mi/80/mi_skillc_1_c",
+   "actor/sprite/mi/80/mi_skilld_1_c",
+   "actor/sprite/mi/80/mi_skillt_1_c",
+   "actor/sprite/mi/80/mi_superskill_1_c",
+   "actor/texturefamily/izn_80",
+   "actor/texturefamily/mi_80",
+   "actor/sprite/mibullet1/80/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/80/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/80/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/80/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/80/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/80/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_80",
+   "actor/texturefamily/mibullet1_80",
+   "actor/sprite/mi/81/mi_attack_1_c",
+   "actor/sprite/mi/81/mi_base_1_c",
+   "actor/sprite/mi/81/mi_behit_1_c",
+   "actor/sprite/mi/81/mi_defense_1_c",
+   "actor/sprite/mi/81/mi_grab_1_c",
+   "actor/sprite/mi/81/mi_show_1_c",
+   "actor/sprite/mi/81/mi_skilla_1_c",
+   "actor/sprite/mi/81/mi_skillb_1_c",
+   "actor/sprite/mi/81/mi_skillc_1_c",
+   "actor/sprite/mi/81/mi_skilld_1_c",
+   "actor/sprite/mi/81/mi_skillt_1_c",
+   "actor/sprite/mi/81/mi_superskill_1_c",
+   "actor/texturefamily/izn_81",
+   "actor/texturefamily/mi_81",
+   "actor/sprite/mibullet1/81/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/81/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/81/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/81/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/81/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/81/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_81",
+   "actor/texturefamily/mibullet1_81",
+   "actor/sprite/mi/82/mi_attack_1_c",
+   "actor/sprite/mi/82/mi_base_1_c",
+   "actor/sprite/mi/82/mi_behit_1_c",
+   "actor/sprite/mi/82/mi_defense_1_c",
+   "actor/sprite/mi/82/mi_grab_1_c",
+   "actor/sprite/mi/82/mi_show_1_c",
+   "actor/sprite/mi/82/mi_skilla_1_c",
+   "actor/sprite/mi/82/mi_skillb_1_c",
+   "actor/sprite/mi/82/mi_skillc_1_c",
+   "actor/sprite/mi/82/mi_skilld_1_c",
+   "actor/sprite/mi/82/mi_skillt_1_c",
+   "actor/sprite/mi/82/mi_superskill_1_c",
+   "actor/texturefamily/izn_82",
+   "actor/texturefamily/mi_82",
+   "actor/sprite/mibullet1/82/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/82/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/82/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/82/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/82/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/82/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_82",
+   "actor/texturefamily/mibullet1_82",
+   "actor/sprite/mi/83/mi_attack_1_c",
+   "actor/sprite/mi/83/mi_base_1_c",
+   "actor/sprite/mi/83/mi_behit_1_c",
+   "actor/sprite/mi/83/mi_defense_1_c",
+   "actor/sprite/mi/83/mi_grab_1_c",
+   "actor/sprite/mi/83/mi_show_1_c",
+   "actor/sprite/mi/83/mi_skilla_1_c",
+   "actor/sprite/mi/83/mi_skillb_1_c",
+   "actor/sprite/mi/83/mi_skillc_1_c",
+   "actor/sprite/mi/83/mi_skilld_1_c",
+   "actor/sprite/mi/83/mi_skillt_1_c",
+   "actor/sprite/mi/83/mi_superskill_1_c",
+   "actor/texturefamily/izn_83",
+   "actor/texturefamily/mi_83",
+   "actor/sprite/mibullet1/83/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/83/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/83/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/83/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/83/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/83/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_83",
+   "actor/texturefamily/mibullet1_83",
+   "actor/sprite/mi/84/mi_attack_1_c",
+   "actor/sprite/mi/84/mi_base_1_c",
+   "actor/sprite/mi/84/mi_behit_1_c",
+   "actor/sprite/mi/84/mi_defense_1_c",
+   "actor/sprite/mi/84/mi_grab_1_c",
+   "actor/sprite/mi/84/mi_show_1_c",
+   "actor/sprite/mi/84/mi_skilla_1_c",
+   "actor/sprite/mi/84/mi_skillb_1_c",
+   "actor/sprite/mi/84/mi_skillc_1_c",
+   "actor/sprite/mi/84/mi_skilld_1_c",
+   "actor/sprite/mi/84/mi_skillt_1_c",
+   "actor/sprite/mi/84/mi_superskill_1_c",
+   "actor/texturefamily/izn_84",
+   "actor/texturefamily/mi_84",
+   "actor/sprite/mibullet1/84/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/84/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/84/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/84/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/84/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/84/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_84",
+   "actor/texturefamily/mibullet1_84",
+   "actor/sprite/mi/85/mi_attack_1_c",
+   "actor/sprite/mi/85/mi_base_1_c",
+   "actor/sprite/mi/85/mi_behit_1_c",
+   "actor/sprite/mi/85/mi_defense_1_c",
+   "actor/sprite/mi/85/mi_grab_1_c",
+   "actor/sprite/mi/85/mi_show_1_c",
+   "actor/sprite/mi/85/mi_skilla_1_c",
+   "actor/sprite/mi/85/mi_skillb_1_c",
+   "actor/sprite/mi/85/mi_skillc_1_c",
+   "actor/sprite/mi/85/mi_skilld_1_c",
+   "actor/sprite/mi/85/mi_skillt_1_c",
+   "actor/sprite/mi/85/mi_superskill_1_c",
+   "actor/texturefamily/izn_85",
+   "actor/texturefamily/mi_85",
+   "actor/sprite/mibullet1/85/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/85/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/85/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/85/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/85/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/85/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_85",
+   "actor/texturefamily/mibullet1_85",
+   "actor/sprite/mi/86/mi_attack_1_c",
+   "actor/sprite/mi/86/mi_base_1_c",
+   "actor/sprite/mi/86/mi_behit_1_c",
+   "actor/sprite/mi/86/mi_defense_1_c",
+   "actor/sprite/mi/86/mi_grab_1_c",
+   "actor/sprite/mi/86/mi_show_1_c",
+   "actor/sprite/mi/86/mi_skilla_1_c",
+   "actor/sprite/mi/86/mi_skillb_1_c",
+   "actor/sprite/mi/86/mi_skillc_1_c",
+   "actor/sprite/mi/86/mi_skilld_1_c",
+   "actor/sprite/mi/86/mi_skillt_1_c",
+   "actor/sprite/mi/86/mi_superskill_1_c",
+   "actor/texturefamily/izn_86",
+   "actor/texturefamily/mi_86",
+   "actor/sprite/mibullet1/86/mibullet1_attack_1_c",
+   "actor/sprite/mibullet1/86/mibullet1_base_1_c",
+   "actor/sprite/mibullet1/86/mibullet1_behit_1_c",
+   "actor/sprite/mibullet1/86/mibullet1_defense_1_c",
+   "actor/sprite/mibullet1/86/mibullet1_grab_1_c",
+   "actor/sprite/mibullet1/86/mibullet1_skill_1_c",
+   "actor/texturefamily/iznb1_86",
+   "actor/texturefamily/mibullet1_86"
+  ],
+  "entries": [
+   [
+    "actor/logicdata/izn",
+    []
+   ],
+   [
+    "actor/logicdata/iznb1",
+    []
+   ],
+   [
+    "actor/logicdata/iznb2",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_02",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_extra",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_extra2",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_02",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_extra",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_extra2",
+    []
+   ],
+   [
+    "actor/animation/role/mi_stand_inherit",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_standby_inherit",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_stand_timeline",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_stand2_timeline",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_squat_loop_inherit",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_squat_to_stand",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_drop_inherit",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_dash_timeline",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_burst_x_inherit",
+    [
+     "actor/mesh/mi/skillb",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_born_timeline",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_born2_timeline",
+    [
+     "actor/mesh/mi/show",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_knockdown_stand_inherit",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_upjump_1",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_upjump_2",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_upjump_3",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/mi_dropend4",
+    [
+     "actor/mesh/mi/base",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "effect/prefab/role/izn/izn_dash_ring",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/ring_007",
+     "effect/common/fbx/ring_601",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_002_a",
+     "effect/common/material/08_particles/particles_035_a",
+     "effect/common/material/15_streak/streak_604_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/06_normal/normal_002_4c",
+     "effect/common/texture/08_particles/particles_035_4c",
+     "effect/common/texture/15_streak/streak_603_4r",
+     "effect/common/texture/15_streak/streak_604_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_241_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_426c_charge_01d",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_211",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/04_mask/mask_712_e1",
+     "effect/common/material/08_particles/particles_063_c26",
+     "effect/common/material/11_ring/ring_603_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_643_1r",
+     "effect/common/texture/04_mask/mask_712_1r",
+     "effect/common/texture/07_other/other_023",
+     "effect/common/texture/08_particles/particles_026_4c",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/11_ring/ring_603_4c",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/suboss_gd1_02",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_224",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/02_glow/glow_002_f",
+     "effect/common/material/06_normal/normal_002_a",
+     "effect/common/material/13_sharp/sharp_660_b",
+     "effect/common/material/18_turbulence/turbulence_008_m6",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_619_1r",
+     "effect/common/texture/06_normal/normal_002_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/13_sharp/sharp_660_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_241_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_214a_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/ring_602",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_013_a",
+     "effect/common/material/13_sharp/sharp_757_a",
+     "effect/common/material/18_turbulence/turbulence_008_m37",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_664_1c",
+     "effect/common/texture/06_normal/normal_013_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/13_sharp/sharp_757_4r",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_2c_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_367",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/13_sharp/sharp_321_a",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/13_sharp/sharp_321_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_3c_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/sphere_622",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_401_e",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_323_a",
+     "effect/common/material/13_sharp/sharp_724_f",
+     "effect/common/material/18_turbulence/turbulence_008_m37",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/04_mask/mask_664_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_323_4c",
+     "effect/common/texture/13_sharp/sharp_724_4c",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_5a_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/13_sharp/sharp_320_a",
+     "effect/common/material/13_sharp/sharp_756_a",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/13_sharp/sharp_756_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_5b_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_320_a",
+     "effect/common/material/13_sharp/sharp_640_b",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/13_sharp/sharp_640_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_6a_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_371",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/13_sharp/sharp_320_b",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_040_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_jc_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_211",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_313_b",
+     "effect/common/material/13_sharp/sharp_320_a",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_307_4c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_313_4r",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_040a_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_719_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_6c_01_a",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_366",
+     "effect/common/fbx/plane_368",
+     "effect/common/fbx/plane_690",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_002_n1",
+     "effect/common/material/04_mask/mask_711_a4",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_032_b",
+     "effect/common/material/13_sharp/sharp_320_b",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_008_m5a",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_713_1r",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_040_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_6c_01_b",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_366",
+     "effect/common/fbx/plane_368",
+     "effect/common/fbx/plane_690",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/02_glow/glow_002_n1",
+     "effect/common/material/04_mask/mask_711_a4",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_032_b",
+     "effect/common/material/13_sharp/sharp_320_b",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/material/18_turbulence/turbulence_008_m5a",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_713_1r",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_040_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_crush_charge_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/06_normal/normal_015_a",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_305_d",
+     "effect/common/material/18_turbulence/turbulence_008_m37",
+     "effect/common/material/18_turbulence/turbulence_008_m5",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4r",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_664_1c",
+     "effect/common/texture/06_normal/normal_015_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_305_4c",
+     "effect/common/texture/18_turbulence/turb_001a_4r",
+     "effect/common/texture/18_turbulence/turb_002_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_031_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_236236b_1_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_376",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/04_mask/mask_711_a4",
+     "effect/common/material/06_normal/normal_010_b",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_032_b",
+     "effect/common/material/13_sharp/sharp_320_d",
+     "effect/common/material/13_sharp/sharp_327_a",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/material/18_turbulence/turbulence_008_m5a",
+     "effect/common/material/18_turbulence/turbulence_023_a1",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_017_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_620_1r",
+     "effect/common/texture/04_mask/mask_713_1r",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_032_42c",
+     "effect/common/texture/13_sharp/sharp_327_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/15_streak/streak_311_4c",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r_1",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_040_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_265_4r",
+     "gameplay/map/element/fbx/plane_001",
+     "gameplay/map/element/mask/lightmask_2/shlight04",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_236236b_1_02",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_401_e",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_327_a",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_327_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turb_003a_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_4bc_success_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_375",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/13_sharp/sharp_321_a",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/13_sharp/sharp_321_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_038a_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/monster/mi/izn/mi_jbc_success_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_382",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/04_mask/mask_711_a4",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/06_normal/normal_010_b4",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/13_sharp/sharp_320_b",
+     "effect/common/material/14_air/air_625_a",
+     "effect/common/material/18_turbulence/turbulence_008_m29d",
+     "effect/common/material/18_turbulence/turbulence_008_m5a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_014_1c",
+     "effect/common/texture/04_mask/mask_018_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_030_1c",
+     "effect/common/texture/04_mask/mask_420_1c",
+     "effect/common/texture/04_mask/mask_601_1r",
+     "effect/common/texture/04_mask/mask_618_1r",
+     "effect/common/texture/04_mask/mask_713_1r",
+     "effect/common/texture/04_mask/mask_721_1c",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/06_normal/normal_010_4c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/texture/13_sharp/sharp_320_4c",
+     "effect/common/texture/14_air/air_625_4r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_040_4r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/flame",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20301",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20304",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20307",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20309",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20311",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20312",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20319",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20321",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20323",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20326",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20328",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20330",
+    []
+   ],
+   [
+    "ui/texture/iconpotential200301/potential_20337",
+    []
+   ],
+   [
+    "ui/atlas/iconpotential200301/iconpotential200301",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/80/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_80",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_80",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_80",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_80",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/81/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_81",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_81",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_81",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_81",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/82/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_82",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_82",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_82",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_82",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/83/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_83",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_83",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_83",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_83",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/84/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_84",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_84",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_84",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_84",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/85/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_85",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_85",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_85",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_85",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_show_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_skilla_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_skillb_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_skillc_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_skilld_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_skillt_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mi/86/mi_superskill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/izn_86",
+    []
+   ],
+   [
+    "actor/texturefamily/mi_86",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_attack_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_base_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_behit_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_defense_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_grab_1_c",
+    []
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_skill_1_c",
+    []
+   ],
+   [
+    "actor/texturefamily/iznb1_86",
+    []
+   ],
+   [
+    "actor/texturefamily/mibullet1_86",
+    []
+   ]
+  ],
+  "guids": [
+   [
+    "actor/sprite/mi/80/mi_attack_1_c",
+    "bde04573f33f73242197704eacb190b8"
+   ],
+   [
+    "actor/sprite/mi/80/mi_base_1_c",
+    "a223b466bf26a165beb92a1ef5643b29"
+   ],
+   [
+    "actor/sprite/mi/80/mi_behit_1_c",
+    "d5d1cf02a88003aa76e13ca46b4eb53d"
+   ],
+   [
+    "actor/sprite/mi/80/mi_defense_1_c",
+    "2b82b90e3f90b23bac3ef917ed4ceccc"
+   ],
+   [
+    "actor/sprite/mi/80/mi_grab_1_c",
+    "2b9c47f62cc1636e2081969c1395c503"
+   ],
+   [
+    "actor/sprite/mi/80/mi_show_1_c",
+    "0a7ef33efaec8a160124b61315603595"
+   ],
+   [
+    "actor/sprite/mi/80/mi_skilla_1_c",
+    "42b6a74f4066d4c434d0970f7caf564b"
+   ],
+   [
+    "actor/sprite/mi/80/mi_skillb_1_c",
+    "8ebd026201d8817f4b85b76ed5fec1b8"
+   ],
+   [
+    "actor/sprite/mi/80/mi_skillc_1_c",
+    "6c2b5c6aed4a8de94fa3e0cc250ee8dd"
+   ],
+   [
+    "actor/sprite/mi/80/mi_skilld_1_c",
+    "b42e99c97024588e6ff015016d9c0f7f"
+   ],
+   [
+    "actor/sprite/mi/80/mi_skillt_1_c",
+    "accdb2c399759326eb6dfd1445783564"
+   ],
+   [
+    "actor/sprite/mi/80/mi_superskill_1_c",
+    "3c962ebc61d0664f06dbf97f051d4d27"
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_attack_1_c",
+    "e4ef91e0bed420ceb0d638b03ace2d4f"
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_base_1_c",
+    "9e474b704249b5e79de44e286c97b4b3"
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_behit_1_c",
+    "4358970bb5be56918820fe331f15810a"
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_defense_1_c",
+    "be69d2ef8928a36ea7c922280947621c"
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_grab_1_c",
+    "9daeb8821e198567a699068639bdf500"
+   ],
+   [
+    "actor/sprite/mibullet1/80/mibullet1_skill_1_c",
+    "8c2926ca0835d9222a20b7afc4090441"
+   ],
+   [
+    "actor/sprite/mi/81/mi_attack_1_c",
+    "92974901234c95adec964fd374236bb4"
+   ],
+   [
+    "actor/sprite/mi/81/mi_base_1_c",
+    "139a6ecd1091bba00c8e917950837527"
+   ],
+   [
+    "actor/sprite/mi/81/mi_behit_1_c",
+    "5dbe81298b2cb77629e9df7483a801b9"
+   ],
+   [
+    "actor/sprite/mi/81/mi_defense_1_c",
+    "1be1d18df826867a93be943d3d0a259f"
+   ],
+   [
+    "actor/sprite/mi/81/mi_grab_1_c",
+    "831dcf95c6f2ba04b1f725b8c498b44a"
+   ],
+   [
+    "actor/sprite/mi/81/mi_show_1_c",
+    "42e05ed7896c24ead8689d868259ff58"
+   ],
+   [
+    "actor/sprite/mi/81/mi_skilla_1_c",
+    "62ef425405e8f90c8a091f62907e97fb"
+   ],
+   [
+    "actor/sprite/mi/81/mi_skillb_1_c",
+    "91213866257e4f6c7ee6ec83a9700d17"
+   ],
+   [
+    "actor/sprite/mi/81/mi_skillc_1_c",
+    "8c08ad3f470e367073e2fff3f38a7ec3"
+   ],
+   [
+    "actor/sprite/mi/81/mi_skilld_1_c",
+    "e17a2604a3f3c086c571f252267e7d5a"
+   ],
+   [
+    "actor/sprite/mi/81/mi_skillt_1_c",
+    "2dba9bbf02c02297cef3a001e8fbc30d"
+   ],
+   [
+    "actor/sprite/mi/81/mi_superskill_1_c",
+    "ee3f601bc85aa4a9f1887e5a7f3d0154"
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_attack_1_c",
+    "3f2bff345f07ae1feff40e652ba83761"
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_base_1_c",
+    "495772a8791d7c1339f370559655b79e"
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_behit_1_c",
+    "4cb84aa22a0c90bf8c1949aa061c758e"
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_defense_1_c",
+    "0b3ad9bdf3a6cfed2d3387e75130628f"
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_grab_1_c",
+    "06fae8988887c401c98e66a8dad718a4"
+   ],
+   [
+    "actor/sprite/mibullet1/81/mibullet1_skill_1_c",
+    "9e0b8a5aacd85eea7ae151f8f0919610"
+   ],
+   [
+    "actor/sprite/mi/82/mi_attack_1_c",
+    "1343c7590a8af510bc6b07c4a594bd5c"
+   ],
+   [
+    "actor/sprite/mi/82/mi_base_1_c",
+    "bf9717ff68abb57595918c80c69e5a41"
+   ],
+   [
+    "actor/sprite/mi/82/mi_behit_1_c",
+    "cd4c8ff43242f2ad5df260515291c71c"
+   ],
+   [
+    "actor/sprite/mi/82/mi_defense_1_c",
+    "1089638fa6b54303947734031a4188a8"
+   ],
+   [
+    "actor/sprite/mi/82/mi_grab_1_c",
+    "50d2609de31d1a5b0d7c72458a24cd68"
+   ],
+   [
+    "actor/sprite/mi/82/mi_show_1_c",
+    "d6244091f272da3b20275edabbdfb9cd"
+   ],
+   [
+    "actor/sprite/mi/82/mi_skilla_1_c",
+    "827c8c37b02ce0090cb440e62082567a"
+   ],
+   [
+    "actor/sprite/mi/82/mi_skillb_1_c",
+    "2d357948addc8c6b8f7c83ded247e7b8"
+   ],
+   [
+    "actor/sprite/mi/82/mi_skillc_1_c",
+    "31d22afadde35590a777e205922a4626"
+   ],
+   [
+    "actor/sprite/mi/82/mi_skilld_1_c",
+    "41a8511e00624045facdc8e7839f6f4a"
+   ],
+   [
+    "actor/sprite/mi/82/mi_skillt_1_c",
+    "14048f14571b2ce8b8191bfa71502fbc"
+   ],
+   [
+    "actor/sprite/mi/82/mi_superskill_1_c",
+    "2fb8bb39f4d8bb19be84dc36993594a1"
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_attack_1_c",
+    "b865e15e0723561c9c7f6507a09f9f59"
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_base_1_c",
+    "09d180b3166e142ed93bc15beac24649"
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_behit_1_c",
+    "f4fe0dbb76fb3b7a0ee4968c159f5571"
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_defense_1_c",
+    "d3507c3184ffed2f0250aff410ddb057"
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_grab_1_c",
+    "81eb8b5486f547157051f61947876a64"
+   ],
+   [
+    "actor/sprite/mibullet1/82/mibullet1_skill_1_c",
+    "4d8aa0548f3e0a25cd6246b9eab8d297"
+   ],
+   [
+    "actor/sprite/mi/83/mi_attack_1_c",
+    "62ca364f17433f5afdfef4dd92019346"
+   ],
+   [
+    "actor/sprite/mi/83/mi_base_1_c",
+    "4a85c7c33ff246d6b140f173705c4a31"
+   ],
+   [
+    "actor/sprite/mi/83/mi_behit_1_c",
+    "5faf6631a4c6f7406a69e93d7432bcd5"
+   ],
+   [
+    "actor/sprite/mi/83/mi_defense_1_c",
+    "19353b324d8504fe5edefc12786b69ac"
+   ],
+   [
+    "actor/sprite/mi/83/mi_grab_1_c",
+    "5400118336a119b37d745db9dd2d87fc"
+   ],
+   [
+    "actor/sprite/mi/83/mi_show_1_c",
+    "eb2dd710bd4f02ed1ebc6af02366d54e"
+   ],
+   [
+    "actor/sprite/mi/83/mi_skilla_1_c",
+    "fb775635ef3b87a51de5043e488a6fca"
+   ],
+   [
+    "actor/sprite/mi/83/mi_skillb_1_c",
+    "4668c8abb0b593d201212247bbfce2fe"
+   ],
+   [
+    "actor/sprite/mi/83/mi_skillc_1_c",
+    "2dfcf620f90075664ebe2eb46e93c656"
+   ],
+   [
+    "actor/sprite/mi/83/mi_skilld_1_c",
+    "c9eb6f4d0a09253717e7c4b34c689f5b"
+   ],
+   [
+    "actor/sprite/mi/83/mi_skillt_1_c",
+    "f58540cf9b28ffa87943bdfabd23f2c8"
+   ],
+   [
+    "actor/sprite/mi/83/mi_superskill_1_c",
+    "fb5fce13dc5daa6c3b3aea15748c3ad9"
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_attack_1_c",
+    "de8390f8cc1ba2606b18e2f49392b035"
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_base_1_c",
+    "deef980419daad1492c2227b7bbcbc95"
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_behit_1_c",
+    "c71febd24430eb1a2c7093f3590c071d"
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_defense_1_c",
+    "ba0804554984fe433e5f04297c7ebcd7"
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_grab_1_c",
+    "d931e37995380fec31eef6b645dc9084"
+   ],
+   [
+    "actor/sprite/mibullet1/83/mibullet1_skill_1_c",
+    "520badab13d5d23587e43e64f2fd880f"
+   ],
+   [
+    "actor/sprite/mi/84/mi_attack_1_c",
+    "853ed70d93addcf49d8f242443eff461"
+   ],
+   [
+    "actor/sprite/mi/84/mi_base_1_c",
+    "3358fffff2a3aece43ec642469cfc20e"
+   ],
+   [
+    "actor/sprite/mi/84/mi_behit_1_c",
+    "01b36a26ea690d5f3b4981a4ca27a287"
+   ],
+   [
+    "actor/sprite/mi/84/mi_defense_1_c",
+    "8e45ab658f833ad826a12de96d78b673"
+   ],
+   [
+    "actor/sprite/mi/84/mi_grab_1_c",
+    "ee226e7b7c80627114afda4d2ecbaf09"
+   ],
+   [
+    "actor/sprite/mi/84/mi_show_1_c",
+    "e2fa963525f0f35eea252be86b7c1eaa"
+   ],
+   [
+    "actor/sprite/mi/84/mi_skilla_1_c",
+    "966e2a14e7fa8b8d28d160784f55314b"
+   ],
+   [
+    "actor/sprite/mi/84/mi_skillb_1_c",
+    "b329196093f71d2353e4e66b3ca60db5"
+   ],
+   [
+    "actor/sprite/mi/84/mi_skillc_1_c",
+    "7b981ce95bece704d4dd375563aa09e8"
+   ],
+   [
+    "actor/sprite/mi/84/mi_skilld_1_c",
+    "9b153cb0adad5581af45e659a596d48e"
+   ],
+   [
+    "actor/sprite/mi/84/mi_skillt_1_c",
+    "9ccb9a9ebe8fdb5499c8e0947e6ea4a0"
+   ],
+   [
+    "actor/sprite/mi/84/mi_superskill_1_c",
+    "58b376a829d8ae31b5f83ecaf56755d2"
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_attack_1_c",
+    "b6abc8c17a0aed34673026ffb7ee8d0d"
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_base_1_c",
+    "2bedda3c0879d68559f0fc9d31bb8ea8"
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_behit_1_c",
+    "09579a9fa46f6b2e564f81946a0d6126"
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_defense_1_c",
+    "d58d9c25e31bcf8e08e5032dd15c2b0e"
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_grab_1_c",
+    "184180a8783b471759c69c15b159eee0"
+   ],
+   [
+    "actor/sprite/mibullet1/84/mibullet1_skill_1_c",
+    "d023dec591c90ede41240da13bfc37e2"
+   ],
+   [
+    "actor/sprite/mi/85/mi_attack_1_c",
+    "ccebb1512da9fd9a910537566117a56f"
+   ],
+   [
+    "actor/sprite/mi/85/mi_base_1_c",
+    "cc04246409fd77e842270dab2a30b228"
+   ],
+   [
+    "actor/sprite/mi/85/mi_behit_1_c",
+    "f1b664857bd8f1070c0bb64fcc64ef03"
+   ],
+   [
+    "actor/sprite/mi/85/mi_defense_1_c",
+    "b6f5c6f2cba6997d14eb5a2523fed905"
+   ],
+   [
+    "actor/sprite/mi/85/mi_grab_1_c",
+    "b212c7947ea9d3adac956b3e73bccaae"
+   ],
+   [
+    "actor/sprite/mi/85/mi_show_1_c",
+    "46896639bea9cd6decac81c49e0ed343"
+   ],
+   [
+    "actor/sprite/mi/85/mi_skilla_1_c",
+    "157715d99257967d834dda954aa11389"
+   ],
+   [
+    "actor/sprite/mi/85/mi_skillb_1_c",
+    "f6bca12c86578bd54046af4b74a6607d"
+   ],
+   [
+    "actor/sprite/mi/85/mi_skillc_1_c",
+    "bb51109c96bcac74600b951eae9e42c0"
+   ],
+   [
+    "actor/sprite/mi/85/mi_skilld_1_c",
+    "519ac4de3495b22c2b273812c8bbbbdf"
+   ],
+   [
+    "actor/sprite/mi/85/mi_skillt_1_c",
+    "70272a566ac4f57400a1eeb09594bd2d"
+   ],
+   [
+    "actor/sprite/mi/85/mi_superskill_1_c",
+    "f1751ddc454e7227420687d226d563be"
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_attack_1_c",
+    "0bb4ec2a1d5c7848460fef2668def720"
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_base_1_c",
+    "20c281b4052542f54dad85d4d409f004"
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_behit_1_c",
+    "f1dae9b7ac0cec9cc76f3ae78c2f5078"
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_defense_1_c",
+    "7b5c82649fe92d184f51db9804ea5c4a"
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_grab_1_c",
+    "567df5ce15ec9356fbe276bc6b6982c5"
+   ],
+   [
+    "actor/sprite/mibullet1/85/mibullet1_skill_1_c",
+    "65ee97298fe075f39ff185d2c9d3ed32"
+   ],
+   [
+    "actor/sprite/mi/86/mi_attack_1_c",
+    "d51aa4d755a2fb754cc0ddd1bfdced02"
+   ],
+   [
+    "actor/sprite/mi/86/mi_base_1_c",
+    "966fcdda852987b1183e05a33938128f"
+   ],
+   [
+    "actor/sprite/mi/86/mi_behit_1_c",
+    "9314369986b867dad324c8307728e8e8"
+   ],
+   [
+    "actor/sprite/mi/86/mi_defense_1_c",
+    "21bd0c0f15d1a615464bab4af07e5f35"
+   ],
+   [
+    "actor/sprite/mi/86/mi_grab_1_c",
+    "4a04d853821fcee3a710b7af5b2e8c08"
+   ],
+   [
+    "actor/sprite/mi/86/mi_show_1_c",
+    "f9348134133e493470a6dfe158df66d1"
+   ],
+   [
+    "actor/sprite/mi/86/mi_skilla_1_c",
+    "a314d5fa51627ea09e1405dd854aa6a9"
+   ],
+   [
+    "actor/sprite/mi/86/mi_skillb_1_c",
+    "d11bfd8ef4137de785f49dd6be34f795"
+   ],
+   [
+    "actor/sprite/mi/86/mi_skillc_1_c",
+    "9b09f4ec84ddd82dd189d3c7bd801e66"
+   ],
+   [
+    "actor/sprite/mi/86/mi_skilld_1_c",
+    "20cd661fb1845506358d251f562d6f7f"
+   ],
+   [
+    "actor/sprite/mi/86/mi_skillt_1_c",
+    "de1629b327dc1e802b3d45bd61e00f91"
+   ],
+   [
+    "actor/sprite/mi/86/mi_superskill_1_c",
+    "3302d532b6990d84a650be199b24fe42"
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_attack_1_c",
+    "74f941e1eb754e1a07e481fbf75b0a3d"
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_base_1_c",
+    "6454ee7506c0cacc8670f673218ab534"
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_behit_1_c",
+    "3038114a4c6f4ea20932578c7b502ce1"
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_defense_1_c",
+    "266b3de74b50200bbdc79626a40ad99c"
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_grab_1_c",
+    "8f4c6c6ccd4782b18f84f0cef1b28641"
+   ],
+   [
+    "actor/sprite/mibullet1/86/mibullet1_skill_1_c",
+    "6e7b9b009ed4e1a80c40868ae56cd4be"
+   ]
+  ]
+ },
+ "importAdds": {
+  "names": [],
+  "entries": [],
+  "guids": []
+ },
+ "took": 0.8,
+ "stamp": "e4c2f70ff75010959653ccefac639a4834e52db4",
+ "made": "2026-11-15 00:22:31"
+}

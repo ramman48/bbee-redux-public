@@ -1,0 +1,152 @@
+{
+ "mod": "entropy-grim",
+ "version": "1.0.5",
+ "files": {
+  "ui/atlas/grimcrystals/grimcrystals.ab": "faaf4a1afca95a471c7a61bcdc318cf2ff220898",
+  "ui/atlas/grimicons/grimicons.ab": "e92821cccafa95dcc91cc23fd05a368bbb428fb0",
+  "ui/atlas/grimperks/grimperks.ab": "e160a7293314c0d8e4307bfd92a97c7ea3733989",
+  "ui/prefab/grim/endlesscore.ab": "d3e810df0010396707eae5550b96976cbb71c159",
+  "ui/prefab/grim/endlessframe.ab": "b32439d4f6c952608edcb3bd81dcd1535273bf33",
+  "ui/prefab/grim/endlesshall.ab": "294c7410f53cbdab869ed28c5af2107c99278d6e",
+  "ui/prefab/grim/endlesssign.ab": "97ba1e944160f212dbedeff49fa71c4d700671c0",
+  "ui/prefab/grim/endlessskin.ab": "3b8e5140ae565011276c5e0dea4e84f6e5b796ef",
+  "ui/prefab/grim/endlesstop.ab": "edb50e419f5bbb3c1b58a9dc8c979f3514fc5653",
+  "ui/prefab/grim/grimframe.ab": "0a7d88446adeebf27ce9aa1a61d363ba9f76dea3",
+  "ui/prefab/grim/grimgate.ab": "f0537ddcb835e774f0b529f97f10bc2fc8091a73",
+  "ui/prefab/grim/grimhall.ab": "e85fe2fee77f1cafbc096edeae80f3067ff62afb",
+  "ui/prefab/grim/grimnameflame.ab": "524d4281383f1883b084a53e3342a60e5eada61c",
+  "ui/prefab/grim/grimsign.ab": "fe924934c8d10ec3ffc9f5a5c9839bd2c484c521",
+  "ui/prefab/grim/grimskin.ab": "672420153e56a6595337d53a0c6d5472eec12fac",
+  "ui/prefab/grim/grimtop.ab": "8807166b69df22dd568e81be837e3e90248831c4",
+  "ui/texture/grim/grimemblem.ab": "2e0f37ada77c10a2d6da60ddbaf8001c1389452d",
+  "ui/texture/grim/grimemblemblue.ab": "298e90a9c5c486d9907e086cfe5b06a08383cd72"
+ },
+ "seeds": {
+  "ui/atlas/grimcrystals/grimcrystals.ab": null,
+  "ui/atlas/grimicons/grimicons.ab": null,
+  "ui/atlas/grimperks/grimperks.ab": null,
+  "ui/prefab/grim/endlesscore.ab": null,
+  "ui/prefab/grim/endlessframe.ab": null,
+  "ui/prefab/grim/endlesshall.ab": null,
+  "ui/prefab/grim/endlesssign.ab": null,
+  "ui/prefab/grim/endlessskin.ab": null,
+  "ui/prefab/grim/endlesstop.ab": null,
+  "ui/prefab/grim/grimframe.ab": null,
+  "ui/prefab/grim/grimgate.ab": null,
+  "ui/prefab/grim/grimhall.ab": null,
+  "ui/prefab/grim/grimnameflame.ab": null,
+  "ui/prefab/grim/grimsign.ab": null,
+  "ui/prefab/grim/grimskin.ab": null,
+  "ui/prefab/grim/grimtop.ab": null,
+  "ui/texture/grim/grimemblem.ab": null,
+  "ui/texture/grim/grimemblemblue.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [
+   "ui/texture/grim/grimemblem",
+   "ui/texture/grim/grimemblemblue",
+   "ui/atlas/grimicons/grimicons",
+   "ui/atlas/grimperks/grimperks",
+   "ui/atlas/grimcrystals/grimcrystals"
+  ],
+  "entries": [
+   [
+    "ui/texture/grim/grimemblem",
+    []
+   ],
+   [
+    "ui/texture/grim/grimemblemblue",
+    []
+   ],
+   [
+    "ui/atlas/grimicons/grimicons",
+    []
+   ],
+   [
+    "ui/atlas/grimperks/grimperks",
+    []
+   ],
+   [
+    "ui/atlas/grimcrystals/grimcrystals",
+    []
+   ]
+  ],
+  "guids": []
+ },
+ "importAdds": {
+  "names": [
+   "ui/prefab/grim/endlesscore",
+   "ui/prefab/grim/endlessframe",
+   "ui/prefab/grim/endlesshall",
+   "ui/prefab/grim/endlesssign",
+   "ui/prefab/grim/endlessskin",
+   "ui/prefab/grim/endlesstop",
+   "ui/prefab/grim/grimframe",
+   "ui/prefab/grim/grimgate",
+   "ui/prefab/grim/grimhall",
+   "ui/prefab/grim/grimnameflame",
+   "ui/prefab/grim/grimsign",
+   "ui/prefab/grim/grimskin",
+   "ui/prefab/grim/grimtop"
+  ],
+  "entries": [
+   [
+    "ui/prefab/grim/endlesscore",
+    []
+   ],
+   [
+    "ui/prefab/grim/endlessframe",
+    []
+   ],
+   [
+    "ui/prefab/grim/endlesshall",
+    []
+   ],
+   [
+    "ui/prefab/grim/endlesssign",
+    []
+   ],
+   [
+    "ui/prefab/grim/endlessskin",
+    []
+   ],
+   [
+    "ui/prefab/grim/endlesstop",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimframe",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimgate",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimhall",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimnameflame",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimsign",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimskin",
+    []
+   ],
+   [
+    "ui/prefab/grim/grimtop",
+    []
+   ]
+  ],
+  "guids": []
+ },
+ "took": 2.2,
+ "stamp": "7e9de7bed00a4966ae14e9710ed677ebb41ed689",
+ "made": "2026-11-15 00:22:31"
+}

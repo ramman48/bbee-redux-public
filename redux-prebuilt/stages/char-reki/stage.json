@@ -1,0 +1,355 @@
+{
+ "mod": "char-reki",
+ "version": "0.5.9",
+ "files": {
+  "actor/logicdata/rki.ab": "caf8ce1a02192f9d97578010d7234f57f136e418",
+  "actor/logicdata/rkib1.ab": "17b21ae1f26e1856514a24812d49fe90e5f67bd8",
+  "actor/logicdata/rkib3.ab": "dddd893d0224d186e44e6589675292cbefcb3011",
+  "actor/spine/leiji_caogao/leiji_caogao.skel.ab": "d7107c6b357282262af1caef5b5f29988225e666",
+  "actor/spine/leiji_caogao/leiji_caogao_skin_02.ab": "6d228e9c7d90566468b345525ff4971391accedb",
+  "effect/prefab/monster/leiji/rkidash/leiji_dash_front_atk_02.ab": "100be2bd60efa6e49915642eb324bab882775552",
+  "effect/prefab/role/rki/rki_dash_ring.ab": "34ff397de9c80c8c3905d072f9fbef418b44b13d",
+  "ui/atlas/iconhud201101/iconhud201101.ab": "462016cb77078265c2267ce8932110e4a7831af2",
+  "ui/atlas/iconpotential201101/iconpotential201101.ab": "e3f1a9019fe110b7fa4180c59bd97777d97bbb50",
+  "ui/texture/heroheadicon/herofinalbattle_201101.ab": "824817a7d49f105c0f678f4658e3a2539d2c2152",
+  "ui/texture/heroheadicon/heroheadicon_201101.ab": "c0a3236f21bc4f9955ff6ded93b2cbdb99f4ebb9",
+  "ui/texture/heroheadicon/heropda_201101.ab": "980724af873d623862aad2bb486ea6c2fa74eaf8",
+  "ui/texture/heroheadicon/heropvpfinish_201101.ab": "9b1ce70b42a0795e65285643951a6ae85e93c2cc",
+  "ui/texture/heroheadicon/herosmallhead_201101.ab": "d7c1d0d00a1d1f13496b9d9b88f3b00b80af33bb",
+  "ui/texture/heroportraitcoatarms/heroportraitfull_201101.ab": "248b8f9247b30a95928eae5c4a6a1ca4cb3d0e80",
+  "ui/texture/heroportraitfull/heroportraitfull_201101.ab": "048c1441bb4e06512d337ba34adb52d468f35697",
+  "ui/texture/heroportraitfullmb/heroportraitfull_201101.ab": "ad1426b3e2c902eb764cb8177c1e979f6ab1b073",
+  "ui/texture/heroportraitlmb/heroportraitfull_201101.ab": "7aa51295714db70a5c40a6496c0a9594093c5602",
+  "ui/texture/iconpotential/herohead_201101.ab": "47c65e922972c1810296f2eb083deb951bc27f13",
+  "ui/texture/iconpotential/herohead_201101_off.ab": "10374cb01330803430dc2bf8a9f91ef574962093",
+  "ui/texture/iconpotential/iconskill_201101.ab": "011d1445552a336ef0df9d98569ad4704c98800d",
+  "ui/texture/iconpotential/iconskill_2011011.ab": "710b609e2567df21bf2df4ed343fa4c4ec1f4d7f",
+  "ui/texture/iconpotential/iconskill_2011012.ab": "8a9d54b522ed4ae8b9ccaee1b80db55eea3fc1a8",
+  "ui/texture/iconpotential/iconskill_201101_final.ab": "d57fc499fe1dfe2859cd0c110df4e33b14d826c1",
+  "ui/texture/iconpotential/iconskill_201101off.ab": "87a74e9f0af8aeb98d31e5c7aa11b1f84428bf17",
+  "ui/texture/iconpotential/potential_21101.ab": "77e22940d8194f7c9380f408d9c1971da2501f96",
+  "ui/texture/iconpotential/potential_21104.ab": "d1eaa92556d675f6985178e25ecf0e70db2ddb95",
+  "ui/texture/iconpotential/potential_21107.ab": "92ff6706da721e4cbffc5fef9ae73884c49ef9b7",
+  "ui/texture/iconpotential/potential_21110.ab": "652bd89242ef191b4b17d211dfe827e825ae85fa",
+  "ui/texture/iconpotential/potential_21114.ab": "3350381fb94905a20d752c25ded1e3072d925ddc",
+  "ui/texture/iconpotential/potential_21117.ab": "e611b9d88ea7486a85a0c32a2b50439657494ab3",
+  "ui/texture/iconpotential/potential_21126.ab": "f51da83948b012ba2690c2ce224a48ff6a7260d2",
+  "ui/texture/iconpotential/potential_21129.ab": "eb7175bceeff0238aab98c2202fdee98f9af88f6",
+  "ui/texture/iconpotential/potential_21132.ab": "3768b1db4f4cff0e64e4ab0b23af115be9acfd9b",
+  "ui/texture/iconpotential/potential_21140.ab": "177a970ab948b16f0f78be61b52c4431b2e32b04",
+  "ui/texture/iconpotential/potential_21141.ab": "7a25c0ccc61b73d5da80bd45bb9a4d14f4613078",
+  "ui/texture/iconpotential/potential_21142.ab": "3a545bb659581fe4a4668b03dcb20cb8d3ab68cb",
+  "ui/texture/iconpotential/potential_21143.ab": "c686c01f1818c758dfb510e0e76e0d051e9565ef",
+  "ui/texture/iconpotential/talent_2183.ab": "966c6db250fb25b478a3923f38d8f1ada1bc1816"
+ },
+ "seeds": {
+  "actor/logicdata/rki.ab": null,
+  "actor/logicdata/rkib1.ab": null,
+  "actor/logicdata/rkib3.ab": null,
+  "actor/spine/leiji_caogao/leiji_caogao.skel.ab": null,
+  "actor/spine/leiji_caogao/leiji_caogao_skin_02.ab": null,
+  "effect/prefab/monster/leiji/rkidash/leiji_dash_front_atk_02.ab": null,
+  "effect/prefab/role/rki/rki_dash_ring.ab": null,
+  "ui/atlas/iconhud201101/iconhud201101.ab": null,
+  "ui/atlas/iconpotential201101/iconpotential201101.ab": null,
+  "ui/texture/heroheadicon/herofinalbattle_201101.ab": null,
+  "ui/texture/heroheadicon/heroheadicon_201101.ab": null,
+  "ui/texture/heroheadicon/heropda_201101.ab": null,
+  "ui/texture/heroheadicon/heropvpfinish_201101.ab": null,
+  "ui/texture/heroheadicon/herosmallhead_201101.ab": null,
+  "ui/texture/heroportraitcoatarms/heroportraitfull_201101.ab": null,
+  "ui/texture/heroportraitfull/heroportraitfull_201101.ab": null,
+  "ui/texture/heroportraitfullmb/heroportraitfull_201101.ab": null,
+  "ui/texture/heroportraitlmb/heroportraitfull_201101.ab": null,
+  "ui/texture/iconpotential/herohead_201101.ab": null,
+  "ui/texture/iconpotential/herohead_201101_off.ab": null,
+  "ui/texture/iconpotential/iconskill_201101.ab": null,
+  "ui/texture/iconpotential/iconskill_2011011.ab": null,
+  "ui/texture/iconpotential/iconskill_2011012.ab": null,
+  "ui/texture/iconpotential/iconskill_201101_final.ab": null,
+  "ui/texture/iconpotential/iconskill_201101off.ab": null,
+  "ui/texture/iconpotential/potential_21101.ab": null,
+  "ui/texture/iconpotential/potential_21104.ab": null,
+  "ui/texture/iconpotential/potential_21107.ab": null,
+  "ui/texture/iconpotential/potential_21110.ab": null,
+  "ui/texture/iconpotential/potential_21114.ab": null,
+  "ui/texture/iconpotential/potential_21117.ab": null,
+  "ui/texture/iconpotential/potential_21126.ab": null,
+  "ui/texture/iconpotential/potential_21129.ab": null,
+  "ui/texture/iconpotential/potential_21132.ab": null,
+  "ui/texture/iconpotential/potential_21140.ab": null,
+  "ui/texture/iconpotential/potential_21141.ab": null,
+  "ui/texture/iconpotential/potential_21142.ab": null,
+  "ui/texture/iconpotential/potential_21143.ab": null,
+  "ui/texture/iconpotential/talent_2183.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [
+   "actor/logicdata/rki",
+   "actor/logicdata/rkib1",
+   "actor/logicdata/rkib3",
+   "ui/texture/heroportraitfull/heroportraitfull_201101",
+   "ui/texture/heroportraitlmb/heroportraitfull_201101",
+   "ui/texture/heroportraitfullmb/heroportraitfull_201101",
+   "ui/texture/heroportraitcoatarms/heroportraitfull_201101",
+   "ui/texture/heroheadicon/heroheadicon_201101",
+   "ui/texture/heroheadicon/heropvpfinish_201101",
+   "ui/texture/heroheadicon/heropda_201101",
+   "ui/texture/heroheadicon/herofinalbattle_201101",
+   "ui/texture/heroheadicon/herosmallhead_201101",
+   "ui/texture/iconpotential/iconskill_201101",
+   "ui/texture/iconpotential/iconskill_201101_final",
+   "ui/texture/iconpotential/iconskill_2011011",
+   "ui/texture/iconpotential/iconskill_2011012",
+   "ui/texture/iconpotential/talent_2183",
+   "ui/texture/iconpotential/herohead_201101",
+   "ui/texture/iconpotential/herohead_201101_off",
+   "ui/texture/iconpotential/iconskill_201101off",
+   "ui/atlas/iconhud201101/iconhud201101",
+   "ui/texture/iconpotential/potential_21140",
+   "ui/texture/iconpotential/potential_21141",
+   "ui/texture/iconpotential/potential_21101",
+   "ui/texture/iconpotential/potential_21104",
+   "ui/texture/iconpotential/potential_21107",
+   "ui/texture/iconpotential/potential_21110",
+   "ui/texture/iconpotential/potential_21114",
+   "ui/texture/iconpotential/potential_21117",
+   "ui/texture/iconpotential/potential_21126",
+   "ui/texture/iconpotential/potential_21129",
+   "ui/texture/iconpotential/potential_21132",
+   "ui/texture/iconpotential/potential_21142",
+   "ui/texture/iconpotential/potential_21143",
+   "ui/atlas/iconpotential201101/iconpotential201101",
+   "actor/spine/leiji_caogao/leiji_caogao_skin_02",
+   "effect/prefab/monster/leiji/rkidash/leiji_dash_front_atk_02",
+   "effect/prefab/role/rki/rki_dash_ring"
+  ],
+  "entries": [
+   [
+    "actor/logicdata/rki",
+    []
+   ],
+   [
+    "actor/logicdata/rkib1",
+    []
+   ],
+   [
+    "actor/logicdata/rkib3",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfull/heroportraitfull_201101",
+    []
+   ],
+   [
+    "ui/texture/heroportraitlmb/heroportraitfull_201101",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfullmb/heroportraitfull_201101",
+    []
+   ],
+   [
+    "ui/texture/heroportraitcoatarms/heroportraitfull_201101",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroheadicon_201101",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropvpfinish_201101",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropda_201101",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herofinalbattle_201101",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herosmallhead_201101",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_201101",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_201101_final",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_2011011",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_2011012",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/talent_2183",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/herohead_201101",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/herohead_201101_off",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_201101off",
+    []
+   ],
+   [
+    "ui/atlas/iconhud201101/iconhud201101",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21140",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21141",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21101",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21104",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21107",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21110",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21114",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21117",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21126",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21129",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21132",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21142",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21143",
+    []
+   ],
+   [
+    "ui/atlas/iconpotential201101/iconpotential201101",
+    []
+   ],
+   [
+    "actor/spine/leiji_caogao/leiji_caogao_skin_02",
+    []
+   ],
+   [
+    "effect/prefab/monster/leiji/rkidash/leiji_dash_front_atk_02",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_009_a",
+     "effect/common/material/06_normal/normal_010_c3",
+     "effect/common/material/08_particles/particles_063_c18",
+     "effect/common/material/08_particles/particles_063_c2",
+     "effect/common/material/08_particles/particles_063_c8",
+     "effect/common/material/13_sharp/sharp_724_c",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_008_1c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/04_mask/mask_011_1r",
+     "effect/common/texture/04_mask/mask_011_4c",
+     "effect/common/texture/04_mask/mask_017_1c",
+     "effect/common/texture/04_mask/mask_026_4r",
+     "effect/common/texture/04_mask/mask_308_4r",
+     "effect/common/texture/04_mask/mask_642_1r",
+     "effect/common/texture/04_mask/mask_643_1r",
+     "effect/common/texture/04_mask/mask_643a_1r",
+     "effect/common/texture/06_normal/normal_009_4c",
+     "effect/common/texture/06_normal/normal_701_4r",
+     "effect/common/texture/08_particles/particles_026_4c",
+     "effect/common/texture/10_ramp/ramp_617_4r",
+     "effect/common/texture/13_sharp/sharp_724_4c",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_024_4r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "gameplay/map/element/fbx/plane_001",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ],
+   [
+    "effect/prefab/role/rki/rki_dash_ring",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/ring_007",
+     "effect/common/fbx/ring_601",
+     "effect/common/material/02_glow/glow_002_c",
+     "effect/common/material/02_glow/glow_002_n",
+     "effect/common/material/06_normal/normal_002_a",
+     "effect/common/material/08_particles/particles_035_a",
+     "effect/common/material/15_streak/streak_604_a",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/06_normal/normal_002_4c",
+     "effect/common/texture/08_particles/particles_035_4c",
+     "effect/common/texture/15_streak/streak_603_4r",
+     "effect/common/texture/15_streak/streak_604_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/texture/18_turbulence/turbulence_241_4r",
+     "noah/rendering/shader/effect/common",
+     "noah/rendering/shader/effect/refract"
+    ]
+   ]
+  ],
+  "guids": [
+   [
+    "actor/spine/leiji_caogao/leiji_caogao_skin_02",
+    "a1d0ff9e384280fba6388450fe3403dc"
+   ]
+  ]
+ },
+ "importAdds": {
+  "names": [],
+  "entries": [],
+  "guids": []
+ },
+ "took": 2.6,
+ "stamp": "aee36625a0d6b2d622515cadffb98b3de38bf415",
+ "made": "2026-11-15 00:22:31"
+}

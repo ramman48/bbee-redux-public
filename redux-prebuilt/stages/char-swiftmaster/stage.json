@@ -1,0 +1,3556 @@
+{
+ "mod": "char-swiftmaster",
+ "version": "0.2.5",
+ "files": {
+  "actor/animation/role/swm_a2.ab": "50f5248431f8453b0da5ea150cbea64b60773a7d",
+  "actor/animation/role/swm_a5.ab": "b498c8d68b6fd07e99c34934eefe8aec65df491c",
+  "actor/animation/role/swm_a5a.ab": "c9bb4a7f2a4c7635324257c3815b62038990c43e",
+  "actor/animation/role/swm_airdash.ab": "f98d3d853391df7e453afd50c1892d4b1230dcce",
+  "actor/animation/role/swm_arashi.ab": "2e3723214ec66a31fd168b5309af5b8528aeace0",
+  "actor/animation/role/swm_arashi_air.ab": "e73642eb6fcf7d0f587736adac19fb3710aa6822",
+  "actor/animation/role/swm_assault.ab": "1fe6c150707b2e2633a069b51223f5129cd717e3",
+  "actor/animation/role/swm_attack_timeline.ab": "d470e425e65a415994d431f23451266eb149e74b",
+  "actor/animation/role/swm_b2.ab": "d9978ac5fc243cca4206a5f0547ab862f1559018",
+  "actor/animation/role/swm_b5.ab": "5db58b0233618acfd35e495334b0ef698206f529",
+  "actor/animation/role/swm_backdash.ab": "900d87afe46f0db3f72af145681a6d6881a7a97b",
+  "actor/animation/role/swm_ball.ab": "b33592832760a1fe297d1df417be497a686d9afa",
+  "actor/animation/role/swm_behit.ab": "050c5a3b0153e258a27a08543e845048ca195ed7",
+  "actor/animation/role/swm_behit_air.ab": "de07d0f8a171ff115249edefaf88f61a5c3e825b",
+  "actor/animation/role/swm_behit_crouch.ab": "1c46652dedcffdde07b67bb63baf5eee13ae3181",
+  "actor/animation/role/swm_behit_down.ab": "e305f4853e316261bd4611c47024522b181cfb2c",
+  "actor/animation/role/swm_behit_timeline.ab": "e896a06fa0226de16b346be40ad7a5d7c690659d",
+  "actor/animation/role/swm_behit_up.ab": "75ba4d1441994321e83ad24c3967cf971dff2d62",
+  "actor/animation/role/swm_blowoff.ab": "93b98d99b6ddf38172d160384b8c32bdac253af6",
+  "actor/animation/role/swm_born_timeline.ab": "bf67e21edf0949e17ca35c4512f97db8b2f3e3b4",
+  "actor/animation/role/swm_c2.ab": "26e544e613ecee7e32251291c01a8f7c509a152a",
+  "actor/animation/role/swm_c4.ab": "15dd2a6ec82aae47496f7855bbd1cb8224639971",
+  "actor/animation/role/swm_c5.ab": "f331f7be75e71a12e0271293f3cd745f494bbd76",
+  "actor/animation/role/swm_c5_charged.ab": "656fe381d629dd2033c328cb0cb08f64e2a15da7",
+  "actor/animation/role/swm_c6.ab": "f2e77afac1a99ed454be28bf2dd57fb8ce5487b0",
+  "actor/animation/role/swm_crumple.ab": "e908bd9f1daf0e89abbd1dba840dbc5a03dd1a37",
+  "actor/animation/role/swm_d4.ab": "3b33288ccaa1df96dde9319813b44ca8c6c98c3d",
+  "actor/animation/role/swm_d4_air.ab": "f9ee3e29636decfa7fc338c10641439d23bc2bb1",
+  "actor/animation/role/swm_d6.ab": "39e568981b1fdc4518e89d0a7886d5a85318b2f9",
+  "actor/animation/role/swm_d6_air.ab": "04017ab5d3ea9d70a41579823fac11dbd8903e42",
+  "actor/animation/role/swm_dash.ab": "b5028cefb51abceb04ffa3f47da5975b2e79acd6",
+  "actor/animation/role/swm_dash_timeline.ab": "8e3c4fcdfd9906d46aa9f8ef6e8906f2f6857949",
+  "actor/animation/role/swm_dead.ab": "75be7b9df091f4725ba6ac5b2368068f1a543f67",
+  "actor/animation/role/swm_dead_timeline.ab": "dfd44f2466599ff4c9ecbc0c2b7c6b56208aee0f",
+  "actor/animation/role/swm_dizzy.ab": "18aa85d9dc8b59e1eb4dfeb51118e3a187dd052d",
+  "actor/animation/role/swm_doll_end.ab": "3ed9894972ecc9be96efc732b561eba59efd6175",
+  "actor/animation/role/swm_down.ab": "ab0d1545cb7627ef4436d4508852dae125b66263",
+  "actor/animation/role/swm_down_front.ab": "7384bd3a161a4e00c5c6b0a597601de52f2ff618",
+  "actor/animation/role/swm_drop.ab": "87aee96eb31cc4428d46e214b699857c10147c8d",
+  "actor/animation/role/swm_drop_start.ab": "e78b8bf9eff99613078d44d8917e42863b08bad1",
+  "actor/animation/role/swm_drop_timeline.ab": "8a30382067b221f750e796fac849157e33d61772",
+  "actor/animation/role/swm_dropend.ab": "4030d3e703ebc734514b31f12d59cce7f77ccc91",
+  "actor/animation/role/swm_dropend_timeline.ab": "44fe10816c9abe3e1fa0376822732ef0c7a7fbf9",
+  "actor/animation/role/swm_fx_a2.ab": "efe9308521cc9fbf7743def00029e877537d19c7",
+  "actor/animation/role/swm_fx_a5.ab": "14fb94d4332f27c2d35cc301fa13763b22be814a",
+  "actor/animation/role/swm_fx_a5a.ab": "b30bf46e5d91e925e4cd493a477ade33553af463",
+  "actor/animation/role/swm_fx_arashi.ab": "be78f289634e9f803e4029992c6622c376730665",
+  "actor/animation/role/swm_fx_assault.ab": "9c4053545de3f8747fad7956a0d108e86b65c4a7",
+  "actor/animation/role/swm_fx_b2.ab": "b9d21a575f0bee797548ec4f36c2f1e300c1c721",
+  "actor/animation/role/swm_fx_b5.ab": "870ff7143f2569946689e3c48720ecfae09d692b",
+  "actor/animation/role/swm_fx_c2.ab": "31359a17b62733a9ad9a14d3f9152430a270fe0d",
+  "actor/animation/role/swm_fx_c4.ab": "c3f68322db7fb01b38728ca9bf033a27237858a5",
+  "actor/animation/role/swm_fx_c5.ab": "c43ed74975bddc8abccec9788e912af49aa21f40",
+  "actor/animation/role/swm_fx_c6.ab": "c5b21977c30fbdf36633ee4809be9837aefc8389",
+  "actor/animation/role/swm_fx_d4.ab": "e38e30ff57901882e6dad0a848f7071192ecb4d9",
+  "actor/animation/role/swm_fx_d6.ab": "d23672ec3a66caba3eb4c216536be5f12852caf7",
+  "actor/animation/role/swm_fx_dash.ab": "34dc0f0d86dd36dad159b9643364762a33afbe94",
+  "actor/animation/role/swm_fx_j2c.ab": "ff56dbff0a69b42f64061646cfc84772a5a7b21c",
+  "actor/animation/role/swm_fx_ja.ab": "be9f3449314cb053fba7eb6a1310a4a24c56aa5c",
+  "actor/animation/role/swm_fx_jb.ab": "d3dc8bafb419bd3daccdd3822b4aeab81e164bf4",
+  "actor/animation/role/swm_fx_jc.ab": "66ddd21a9c1753343cc40e89a9cf9216586eb9d5",
+  "actor/animation/role/swm_fx_kaze.ab": "e4698a838a40e867f8116c79c77f3ddb573f1441",
+  "actor/animation/role/swm_fx_quaker.ab": "41ad170b391f27b5e3bed8ba0ce199a090d0e32e",
+  "actor/animation/role/swm_getup.ab": "40137168004dc58b131f3c491ad2403f22ad55e1",
+  "actor/animation/role/swm_getup_front.ab": "1851f6e4ec1dc05abf6c495c3434da6725d45ed6",
+  "actor/animation/role/swm_grab.ab": "1e17e0428f1d24dfc7b61a1211be8f358325c8a5",
+  "actor/animation/role/swm_guard.ab": "74488e4c20412a8c74cba43c3b54df27537bdec0",
+  "actor/animation/role/swm_idle2.ab": "a289c54f398b4a2c38e5ddaa861b246a02ef4097",
+  "actor/animation/role/swm_intro.ab": "d4adbe67bb738aa928b9fc8aee1fa33981b24c4d",
+  "actor/animation/role/swm_j2c.ab": "699093bb495cd87227c961d90066b5bc69f98f98",
+  "actor/animation/role/swm_ja.ab": "66a1d1eb204f5a2de4683238675f549559fca1be",
+  "actor/animation/role/swm_jb.ab": "925d840908a605ca9eb956f6c6d33d330e523fd5",
+  "actor/animation/role/swm_jc.ab": "1808e4ea1b04c11648931a806593984fb1826e03",
+  "actor/animation/role/swm_jc_charged.ab": "a4ca68bb2d3208af98e995f332ae8054abd6f0f8",
+  "actor/animation/role/swm_jump.ab": "f39ef72ea8a1943aeca9f59bc6b22e84d9b477e9",
+  "actor/animation/role/swm_jump2.ab": "3077c33dfac622162e5832ce7046c89d1abb4480",
+  "actor/animation/role/swm_jump_timeline.ab": "3dd89a4ab0e5465a804ec4b514576de43948d1e1",
+  "actor/animation/role/swm_kaze.ab": "cd5f47c0b31a246073b82faf376ee2f6b47c9a57",
+  "actor/animation/role/swm_kaze_air.ab": "bb73197419e5eed520e0f9106073dea91d65c54b",
+  "actor/animation/role/swm_lose.ab": "9c9295954a40455347a208db84e4d54e0be5f7ea",
+  "actor/animation/role/swm_parried.ab": "bd4d446a0b61a54e9180d63d34d52a26c9995cc7",
+  "actor/animation/role/swm_quaker.ab": "9ce5061fbcee3d10c288e13625e21b7d5a1b678c",
+  "actor/animation/role/swm_quaker_air.ab": "f4b6af17aba0880066a41234078068e4f61a2d6e",
+  "actor/animation/role/swm_roll.ab": "15ebf8ea7570c5df728e066f60473465cf46d9e3",
+  "actor/animation/role/swm_run.ab": "5169456daff77a2b49978bb76f37cc932ceb002c",
+  "actor/animation/role/swm_run_start.ab": "4d0905bc499e8cec1c010c80b2287c44d5d3e1c2",
+  "actor/animation/role/swm_run_timeline.ab": "aafd299c0d6f662f37b05902f89dd65c461f2f0f",
+  "actor/animation/role/swm_runbrake.ab": "07cb59d402c9842d039d21b85b5b17cdcf2ee279",
+  "actor/animation/role/swm_skill_timeline.ab": "0ec3be494e687e8510985e411af002c53b83fb1f",
+  "actor/animation/role/swm_sonic.ab": "df48c8acafb8eb91b78357ce6f6f12840e5745f9",
+  "actor/animation/role/swm_spin.ab": "d9c64a5632e7b181cb93258c8b2186c09fdebebc",
+  "actor/animation/role/swm_squat.ab": "3ffeb08009a7943d3603824e04a81ab14711f752",
+  "actor/animation/role/swm_squat_loop.ab": "5cf45a652b7292bc1a75b268de5f77b5fbaa289f",
+  "actor/animation/role/swm_squat_to_stand.ab": "989ac8bcb247508c434cac6a8c836b481c722f9c",
+  "actor/animation/role/swm_stand.ab": "f15f5803ffdb82658e84a6df8d07474526e64cb5",
+  "actor/animation/role/swm_stand_1.ab": "f0a958244bb130c39cac29e514499c449f53ecea",
+  "actor/animation/role/swm_stand_2.ab": "7096ad2b1662e2af6158a2af5fc871d08d798bbe",
+  "actor/animation/role/swm_stand_timeline.ab": "903af956734c0d941315dadde929467c5d103ce6",
+  "actor/animation/role/swm_throw.ab": "5b0dfc2c6f7d3b8ea03496e1c8596caf28e0610d",
+  "actor/animation/role/swm_tumble.ab": "9862c27d04bc88051e6a6245e41665f8503e4336",
+  "actor/animation/role/swm_turn.ab": "0e945af0b1215b13154234b1ce06e5efbdff8c03",
+  "actor/animation/role/swm_ult.ab": "1b6bf360bde5d7ead9afedf8f644538f68116dda",
+  "actor/animation/role/swm_ult_after.ab": "22586034df6fee8c1cabf06f36c0dcb7905c2d40",
+  "actor/animation/role/swm_upjump_1.ab": "886cd7b9286ca43216ea8d4ff1e7eef71805c11b",
+  "actor/animation/role/swm_upjump_2.ab": "bf537d54229ff44aebddcc98e9dc0c94d46a87a0",
+  "actor/animation/role/swm_victory.ab": "65020d5364406b15a3a619adfc97e6975a894ec2",
+  "actor/animation/role/swm_vortex.ab": "d960961022e3b0d6599ed79fab123d225f6dd6b4",
+  "actor/animation/role/swm_vortex_air.ab": "ac036619243e9a1c4dd48f46e0b80808b7470539",
+  "actor/animation/role/swm_vortex_end.ab": "9fb38b0e433fd5324a355ceed95b8e65b942e999",
+  "actor/animation/role/swm_vortex_loop.ab": "3ad4cc419fb49910b776285ad30ca61b43eddaef",
+  "actor/animation/role/swm_vortex_start.ab": "747cf735f7d3cb297ca4be55a1f8de6a98bd5476",
+  "actor/animation/role/swm_walk.ab": "77c0cd77edf96041dfd49b99cdee0f0d5d377f91",
+  "actor/animation/role/swm_walk_back.ab": "279517250ddb8a3ed233154ecafaefdc19d8b9ae",
+  "actor/animation/role/swm_wall.ab": "32b01a79993eb864d6855073fba220838ca28169",
+  "actor/animation/role/swm_win.ab": "3a19fb3094c20e4ba8e6d02c331f3932834a438b",
+  "actor/animation/role/swm_win_timeline.ab": "b9019df1208ce23e14eb8c208948c7d15ac32e5a",
+  "actor/logicdata/swm.ab": "45f69b186fea8f91ac79793b1c72d93db01a9eab",
+  "actor/logicdata/swmbullet.ab": "40a94e550377a6e8e2781514ab4ce3c1687acb84",
+  "actor/mesh/swm/g0.ab": "5813a1ea25cec7ed627624b68977984dcf377347",
+  "actor/mesh/swm/g1.ab": "033d90afa7651218d18fc6558cec0606e403c0e4",
+  "actor/mesh/swm/g2.ab": "b7e65d1e0e1baf6006586e518c4a5f8ec339b289",
+  "actor/mesh/swm/g3.ab": "49d9ead47e3cdef65166805bf07144e40b8ae045",
+  "actor/sprite/swm/02/swm_page_00.ab": "2dded730489f01e27c2a20da8e5348210165d87b",
+  "actor/sprite/swm/02/swm_page_01.ab": "df5fbc912d35b5cd1894a68d1276c8b3a1057220",
+  "actor/sprite/swm/02/swm_page_02.ab": "83828a37aa6fc126845204365cfa1be3b7666b2f",
+  "actor/sprite/swm/02/swm_page_03.ab": "0cd157e7f1128eb63f4e6125ae7a9fed28bfdc05",
+  "actor/sprite/swm/02/swm_page_04.ab": "fa2aa0591577ed03a99fd4419c55d400c6b00f42",
+  "actor/sprite/swm/02/swm_page_05.ab": "90c838dcd9b6dae4aaca88f7b1e3d5f410c21e8e",
+  "actor/sprite/swm/02/swm_page_06.ab": "a045a4f624ac9692f8e459bd20cfffc2ea6d87d7",
+  "actor/sprite/swm/02/swm_page_07.ab": "4828d1cb2f2fb7eb3e260586805d711efba8e162",
+  "actor/sprite/swm/02/swm_page_08.ab": "85fcfb014b0629b16ed9a92e620818e568f71d5c",
+  "actor/sprite/swm/02/swm_page_09.ab": "441f6259f8530cb056024467f579993d42acae9e",
+  "actor/sprite/swm/02/swm_page_10.ab": "607a09cc0c11e2dac1c773f904bfea0d95ec2d76",
+  "actor/sprite/swm/02/swm_page_11.ab": "757a9e7abf4da1c10679ff6e0479a148ba4b6e13",
+  "actor/sprite/swm/02/swm_page_12.ab": "5f3ede5ac3a50d575ac8c2589f882bc511224d69",
+  "actor/sprite/swm/extra/swm_page_00.ab": "9c9e34b506b0bbbe4308f567bf257b86705675b0",
+  "actor/sprite/swm/extra/swm_page_01.ab": "4d640057b71297656ff29516504bda71f64d8646",
+  "actor/sprite/swm/extra/swm_page_02.ab": "aa16b225d817d3486e86994ebfcd24ac0d20c0c2",
+  "actor/sprite/swm/extra/swm_page_03.ab": "eec3274f2aa56a1deb7bdfff9ebe202d3b45f0e2",
+  "actor/sprite/swm/extra/swm_page_04.ab": "069f732437e3a199a7403fd9193f9ad5135c089f",
+  "actor/sprite/swm/extra/swm_page_05.ab": "a123c64536257a15f893222845bfde4191f5b086",
+  "actor/sprite/swm/extra/swm_page_06.ab": "41bf3fdee1e0e0afc345e1a42e3ae682bdda68cd",
+  "actor/sprite/swm/extra/swm_page_07.ab": "6ccd6daef6f1aa3b281df2e000416e7a61203663",
+  "actor/sprite/swm/extra/swm_page_08.ab": "5221e5c331d1f01694c6c04b086841c7936a6bfb",
+  "actor/sprite/swm/extra/swm_page_09.ab": "99b8f996f72fe34d566796121db9ef0a18030376",
+  "actor/sprite/swm/extra/swm_page_10.ab": "be6833ab65aa13d2c7dc2a4e0847c54acc98eee4",
+  "actor/sprite/swm/extra/swm_page_11.ab": "d565bf3c19efaf8f8a53597e74e5a0a8a2e2434c",
+  "actor/sprite/swm/extra/swm_page_12.ab": "5a7813b5c22e3ce91e11fc7c1cc4914e747d56cb",
+  "actor/sprite/swm/extra2/swm_blank.ab": "be49d3913bc088e23854c427028b8a4bf66533b4",
+  "actor/texturefamily/swm_02.ab": "5f950e705ac091f66a6d076d814b5da0063db134",
+  "actor/texturefamily/swm_extra.ab": "e2c60fed23f52fff00a6862fbe4ee4326cc6a091",
+  "actor/texturefamily/swm_extra2.ab": "8d462253db078ca85ef119b9f48092876022ff30",
+  "data/audiocollection.ab": "600f0f20f3756708b4c86aa883d0e8f90028cc2d",
+  "effect/common/material/02_glow/glow_002_d_swm.ab": "46a4a6f5e8ab27db2687ef2008487876273f3a5a",
+  "effect/common/material/08_particles/particles_022_d_swm.ab": "bf16e25cd81096442c3ad887a89996a646928f52",
+  "effect/common/material/13_sharp/sharp_001_a_swm.ab": "1bff543d67a9c22355ba80cdfbac2905379c456c",
+  "effect/common/material/13_sharp/sharp_641_a_swm.ab": "0e8842a83f0e9399c44c09a720a53dcda86d5713",
+  "effect/common/material/swm/air_027_b__swme.ab": "6cdeabaac60ff242fed6dc7742ff8c9c7ba79fa1",
+  "effect/common/material/swm/air_027_b__swmh.ab": "75552b3627fa4cc4e5c58c590c95e99ace63e3fe",
+  "effect/common/material/swm/air_027_b__swmi.ab": "acaa72fb64c6d09c6dc760f930a39b5f8d04d2df",
+  "effect/common/material/swm/air_027_b__swmm.ab": "bbd3bcb08a4edab39d9ba0d1d20beac56061b4ba",
+  "effect/common/material/swm/air_027_b__swmo.ab": "057be8d45b7e1fef27723052ce85724fe127e3b1",
+  "effect/common/material/swm/air_027_b__swmw.ab": "9ac6d94038f1a256bd8655079824d1c6cb90e203",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a31.ab": "a96ae3cf41edb702de2f92ee66cd0252aa403021",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a5.ab": "40cbf2f5518638a1e56f01795daea1f26eed8be3",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a9.ab": "f8258d5f2180389b79b0f0ca17d353188b0787a4",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_circle00_d_a5.ab": "ca5d33c811fb4dbb1c783ae8abb0c0dc6ea16977",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact02_d_a34.ab": "44adf615445309909833c0e2537b8a7bb28db2a8",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact04_d_a31.ab": "72370081e5cdae5c4aa11133822fc5a333577e36",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact07_d_a31.ab": "9ee295fe2019b23d9bd84485bc11b8ac402846a1",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a32.ab": "a90ff900e4890ddad8cd2dd812e5934d5be06619",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43.ab": "7868c2e047d105ba63cb4fc086128afe6d62d08b",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a22.ab": "a85c9dd9c4b6e6e694a5ca38696bb43ffc4a414c",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a36.ab": "f5280b0ec3ea93244e2a681e676290ae16a6a35e",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38.ab": "ceeddd234e2d5eca2a8e75d5260877d4f235ebbc",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a41.ab": "3fc5bbd0f56e22cd521b8c96d01bec747242e0a9",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a48.ab": "d1f288f0d0efd11cbfa1427d9400d45dc74959e4",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50.ab": "253a6a91a28870b176e9b61c9a6e2542406b3244",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a19.ab": "c494c1096384bc7e2df2fecfe39612c5e3ef05b8",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a22.ab": "1eaab7850d388a4d6d14484b478e165be48ae88a",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a29.ab": "4357d24bab42e88a7f7c09d8f59fe4b422e03dc8",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a36.ab": "edae5b11dfeab7a9863195546bafe5110ff26341",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a39.ab": "27f2faca0ea268083d75b01c3f3351435249c7fe",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16.ab": "bb3e8da225c5735427f639171fa1373958d58a2a",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a5.ab": "70a55efe6cc76baf54fe620e3ec2adf40971c453",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a50.ab": "2832ab9f2aace2ea7c6191bebecac6d6fdb4644d",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a6.ab": "49368cb7e4fba84c38090275e78b281f6ca4215b",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a11.ab": "d1f541f1f2df7653cf4e15e8148660257679fb4e",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a14.ab": "9553f95836fcf71a147c6456508bf5bcde844733",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a41.ab": "04ee33fc2c075ad7687d982d990407ef3caba2bc",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind14_d_a16.ab": "3631943aa9cbb8a9e547ad534f22dfab4e951fd0",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind15_d_a17.ab": "289829d3fc087aa2d595fa27bd2fdd94c54faef9",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke00_d_a18.ab": "1e582640d3ed3f97c88cd0fdae5c359ce1fe074b",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke03_d_a17.ab": "e72944b331b205a89583e44d12aeb8ff9bef7f0a",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke04_d_a17.ab": "b25d1c2df30b98e68aa8b13662fd688b1739b6d0",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a13.ab": "2e3ece6c622192d5f071302ebfab82488926ca66",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32.ab": "e4442d9f55a61c5179515cb89be73c7166ab1665",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a5.ab": "8a09e2291a1384cdd5b521b03f873c126cc30f3e",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a6.ab": "9976d3d328de13542a6b5ee814b99fd4ae012408",
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a7.ab": "0b2fb51d5e39035fd1ac4eedc2ab7aec8d47e435",
+  "effect/common/material/swm/glow_002_n__swmg.ab": "63853ffd2ab79e0fb032ddd671dd45bac87ed337",
+  "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g7.ab": "46397f21c7f26426917bf8f5790665074ee2cd03",
+  "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g9.ab": "f4037ba05f85f1356ab25ffd3f303035a97416d8",
+  "effect/common/texture/swm/swm_a_t_eft_10a_element00_d.ab": "0464f88078842ab0a2e9402eb469093d2250f466",
+  "effect/common/texture/swm/swm_a_t_eft_11a_circle00_d.ab": "97aa55c0965ab7ccaa3fe8647ea4c644c81e7d86",
+  "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d.ab": "29c34d4e2fca5a79dbd3c32e3f39ee6d44ffa9f3",
+  "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d.ab": "441e6d25a5356d2ae3e2956fe1c477f02fe827c7",
+  "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d.ab": "8f87898e9be0dc9a1a07cd065f55ec2f516d53b7",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d.ab": "7aec18abd7edb61489029126bdc5afa2a8137f99",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d.ab": "e2ae1ae81ca20f66bf551f5e130ed45fcdc00def",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d.ab": "68192333559f658c5545a873ab4b0b4c6370303a",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d.ab": "f14738e2b493e18ddfa0679d55afa39065210efe",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d.ab": "42c9e0620a12e1b67e4326ca6d861ac707bcc4cf",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d.ab": "4ddf9236e417ee9b6b138b2d6597a677584421e1",
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d.ab": "3d8ab22f544cd3375084695c02a6cc948a027198",
+  "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d.ab": "de53219a12ceeda8d1b6acdcc2ce452a978be66a",
+  "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d.ab": "68c156c9a4c510aeb8b3abdf66b53baa5c72ed9c",
+  "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d.ab": "dcefb4ff92438f57f165945fa43951956745d266",
+  "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d.ab": "575dd197e84ddcdae75925a049da1c9b2835acbe",
+  "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d.ab": "f86b3824cbf661db7e141b98f7547074e6d5dba0",
+  "effect/common/texture/swm/swm_stroke.ab": "6aa80b98b303bf129f1c9d59a162e25784958636",
+  "effect/common/texture/swm/swm_stroke_erode.ab": "c98a3b12f71bfc417715cca779aa05207f831d0c",
+  "effect/common/texture/swm/swm_stroke_mask.ab": "28744ace8e344da986d89213f5200d9e0889db3b",
+  "effect/common/texture/swm/swm_wind_edge.ab": "3b631c1caf2f5b900671b6678a34a608e327482c",
+  "effect/common/texture/swm/swm_wind_erode.ab": "8a86cad3eba9e6fa15c91e2bc47fe386d1d603a9",
+  "effect/common/texture/swm/swm_wind_field.ab": "f86b3b9f9842d79b67aa297f0822ae93ea83b963",
+  "effect/common/texture/swm/swm_wind_mask.ab": "36d8c1be2bc051202a452e2be042e80432df416a",
+  "effect/common/texture/swm/swm_windlines.ab": "bddc8399913bfd05187a4921e8899aba78a83ba6",
+  "effect/prefab/hit/swmskin/hit_607.ab": "9adc905078fe3829b7c6d6e0487e10c0d9f4089f",
+  "effect/prefab/role/icey/swmskin/icey_hit_01.ab": "bceba152bca298b7ae9538d4474c1d386fa27018",
+  "effect/prefab/role/swm/swm_2a.ab": "81ad2d45555dab2f84d9779c50c13b424e6f2d95",
+  "effect/prefab/role/swm/swm_2b.ab": "96104649055016eac6a8e99fd505b085d5d404e2",
+  "effect/prefab/role/swm/swm_5a.ab": "0ea81a7387669ccc5de7f9a32a7bca7177d5e38d",
+  "effect/prefab/role/swm/swm_5aa.ab": "e3eac46a980c35db198dbbae22422563e36c8257",
+  "effect/prefab/role/swm/swm_arc.ab": "5a50ab881411d9fd9845deb1f8256e5ed3459cb6",
+  "effect/prefab/role/swm/swm_blade.ab": "d50f823c49a315f924b099d55f495a114363deab",
+  "effect/prefab/role/swm/swm_d2a.ab": "5d2a13cb7e92c1a7bbc49fe31036839aabe7ec97",
+  "effect/prefab/role/swm/swm_d2b.ab": "091f732740283dafbaddf126c2522581a3b41b86",
+  "effect/prefab/role/swm/swm_d2c.ab": "d19e04772d8d97c1816b9151364c87ab0c41520e",
+  "effect/prefab/role/swm/swm_d5a.ab": "8beb6abbba24a77102498a99863eaf4785b78877",
+  "effect/prefab/role/swm/swm_d5aa.ab": "b4bcc4ad23c89301d4af6e1643e89d08c0ca4133",
+  "effect/prefab/role/swm/swm_d5b.ab": "914b38d40fc66998a4df8fe2925b2624a32f5041",
+  "effect/prefab/role/swm/swm_d5c.ab": "61b3dbb5857e4ae22833c438a4a298a885183036",
+  "effect/prefab/role/swm/swm_dfoot.ab": "ef27f6d95b66db97e2172b3ae6e508fffb4192c5",
+  "effect/prefab/role/swm/swm_dfoot2.ab": "038f4b082ad4956e7d1497b78aaee1a7983bc4d9",
+  "effect/prefab/role/swm/swm_dj2c.ab": "9fadf11b4a42f3ab41518b0e5fa96a5a11d17d23",
+  "effect/prefab/role/swm/swm_dj5a.ab": "40f121633274750937a4e06578843b401a1a7e93",
+  "effect/prefab/role/swm/swm_dj5b.ab": "e93447e42c6be8903bf02cb462d4e276ece0ae53",
+  "effect/prefab/role/swm/swm_dj5c.ab": "8b5edb2d36d03be78f52a72181f9a0b1f51d2a2a",
+  "effect/prefab/role/swm/swm_dorb.ab": "a3a2d2d1de15fe985113da6f5796b54fabb9bc5f",
+  "effect/prefab/role/swm/swm_dorbend.ab": "3770a2dc43771e4b4566ace021bb313685f2acdd",
+  "effect/prefab/role/swm/swm_drange.ab": "44cadf285a19bf89046ed26779bfb71a1f5396dc",
+  "effect/prefab/role/swm/swm_flat.ab": "cffb5bc3cd8692f3f8aac27a8232cf811b6b79ef",
+  "effect/prefab/role/swm/swm_j5a.ab": "57e88992e173449a7640eacc44d1f1208f8e6c00",
+  "effect/prefab/role/swm/swm_j5b.ab": "c1f304a24cb24da7d6e957e127b08800af7814da",
+  "ui/atlas/iconpotential201001/iconpotential201001.ab": "dae5c1147e0ef8010b793eb5eb6560719d4ea6d7",
+  "ui/texture/baseactor/baseactor_201001.ab": "299c63fffde0ae65c47393704b19b129c34c16a7",
+  "ui/texture/baseactor/baseactor_201001off.ab": "f557048271b0de227484d5bd9dc808912808a5d5",
+  "ui/texture/heroheadicon/heroevohead_201001.ab": "3b71e8a3381008ff7cb8a123bc7ff499edf7a8b4",
+  "ui/texture/heroheadicon/heroevohead_off_201001.ab": "797beab4529fac022893bdb04a2fe13df513be5b",
+  "ui/texture/heroheadicon/herofinalbattle_201001.ab": "558a0cf7f3c3e8307d60d857e01c32cd36127595",
+  "ui/texture/heroheadicon/heroheadicon_201001.ab": "ad905a14682a3e4f6f2dc59385b5e3249d52b0c6",
+  "ui/texture/heroheadicon/heropda_201001.ab": "d14b2c672ddaa32ad2ca75e83c9a710008a5b43a",
+  "ui/texture/heroheadicon/heropvpfinish_201001.ab": "7f6543289f05e10bff91b31ba1bc7f09bf8edc37",
+  "ui/texture/heroheadicon/herosmallhead_201001.ab": "7f0681f96f3665d84a35cfb3989038f081e071df",
+  "ui/texture/heroheadselcetmb/heroheadselect_0_201001.ab": "0b7e30ed27dd260f367f2d37198d02a7c04c3d54",
+  "ui/texture/heroheadselcetmb/heroheadselect_1_201001.ab": "574bf887e1fc62e1f55f6f24f85ff05c66483edf",
+  "ui/texture/heroheadselcetmb/heroheadselect_2_201001.ab": "b1d514b5bb0a88494033aec9c6b171cad9058c87",
+  "ui/texture/heroportraitfull/heroportraitfull_201001.ab": "f057ee054d9ddc4a2db650a140f91d60e914c70d",
+  "ui/texture/heroportraitfullmb/heroportraitfull_201001.ab": "c9c44127fb78a670cfd9549ca3e7f5c2fbcbfca6",
+  "ui/texture/heroportraitlmb/heroportraitfull_201001.ab": "76191609c1f2f45c2faadd5aa80f361a383fd84b",
+  "ui/texture/iconpotential/potential_21381.ab": "204514af241b4542400671beb240383b595713d5",
+  "ui/texture/iconpotential/potential_21382.ab": "9973b16c9d7153e6ab5f4394353208bfd2b24a11",
+  "ui/texture/iconpotential/potential_21383.ab": "194888e9b8b86a355c5055c3ba685fcc46786f71",
+  "ui/texture/iconpotential/potential_21384.ab": "91b1d18ac9562ab401afededaaf86dc50e64e055",
+  "ui/texture/iconpotential/potential_21385.ab": "eef3ac9679156c98e0eb29390799e195f342e466",
+  "ui/texture/iconpotential/potential_21386.ab": "d19e4d5fb20b8e41a2a932e815c3f16c478b0ed4",
+  "ui/texture/iconpotential/potential_21387.ab": "cad3eeb3e8add71d02e414da51a45893af2bb6dc",
+  "ui/texture/iconpotential/potential_21388.ab": "01c88847a81c56c09a9ecf1d822f8bfedf72e880",
+  "ui/texture/iconpotential/potential_21389.ab": "245f2dbee77c179b92814a7e4757bba59935e201",
+  "ui/texture/iconpotential/potential_21390.ab": "3365c202d7b2ec49a4c8cdc99655d590dc73bc29",
+  "ui/texture/iconpotential/potential_21391.ab": "3802a2120b483e904f42086f4f7d22701570045d",
+  "ui/texture/iconpotential/potential_21392.ab": "23fa7c4a5ddcaf571855fd2420b81ad7bb006898",
+  "ui/texture/iconpotential/potential_21393.ab": "447198b8974776696040c551f7be85a5e5aea3a8"
+ },
+ "seeds": {
+  "actor/animation/role/swm_a2.ab": null,
+  "actor/animation/role/swm_a5.ab": null,
+  "actor/animation/role/swm_a5a.ab": null,
+  "actor/animation/role/swm_airdash.ab": null,
+  "actor/animation/role/swm_arashi.ab": null,
+  "actor/animation/role/swm_arashi_air.ab": null,
+  "actor/animation/role/swm_assault.ab": null,
+  "actor/animation/role/swm_attack_timeline.ab": null,
+  "actor/animation/role/swm_b2.ab": null,
+  "actor/animation/role/swm_b5.ab": null,
+  "actor/animation/role/swm_backdash.ab": null,
+  "actor/animation/role/swm_ball.ab": null,
+  "actor/animation/role/swm_behit.ab": null,
+  "actor/animation/role/swm_behit_air.ab": null,
+  "actor/animation/role/swm_behit_crouch.ab": null,
+  "actor/animation/role/swm_behit_down.ab": null,
+  "actor/animation/role/swm_behit_timeline.ab": null,
+  "actor/animation/role/swm_behit_up.ab": null,
+  "actor/animation/role/swm_blowoff.ab": null,
+  "actor/animation/role/swm_born_timeline.ab": null,
+  "actor/animation/role/swm_c2.ab": null,
+  "actor/animation/role/swm_c4.ab": null,
+  "actor/animation/role/swm_c5.ab": null,
+  "actor/animation/role/swm_c5_charged.ab": null,
+  "actor/animation/role/swm_c6.ab": null,
+  "actor/animation/role/swm_crumple.ab": null,
+  "actor/animation/role/swm_d4.ab": null,
+  "actor/animation/role/swm_d4_air.ab": null,
+  "actor/animation/role/swm_d6.ab": null,
+  "actor/animation/role/swm_d6_air.ab": null,
+  "actor/animation/role/swm_dash.ab": null,
+  "actor/animation/role/swm_dash_timeline.ab": null,
+  "actor/animation/role/swm_dead.ab": null,
+  "actor/animation/role/swm_dead_timeline.ab": null,
+  "actor/animation/role/swm_dizzy.ab": null,
+  "actor/animation/role/swm_doll_end.ab": null,
+  "actor/animation/role/swm_down.ab": null,
+  "actor/animation/role/swm_down_front.ab": null,
+  "actor/animation/role/swm_drop.ab": null,
+  "actor/animation/role/swm_drop_start.ab": null,
+  "actor/animation/role/swm_drop_timeline.ab": null,
+  "actor/animation/role/swm_dropend.ab": null,
+  "actor/animation/role/swm_dropend_timeline.ab": null,
+  "actor/animation/role/swm_fx_a2.ab": null,
+  "actor/animation/role/swm_fx_a5.ab": null,
+  "actor/animation/role/swm_fx_a5a.ab": null,
+  "actor/animation/role/swm_fx_arashi.ab": null,
+  "actor/animation/role/swm_fx_assault.ab": null,
+  "actor/animation/role/swm_fx_b2.ab": null,
+  "actor/animation/role/swm_fx_b5.ab": null,
+  "actor/animation/role/swm_fx_c2.ab": null,
+  "actor/animation/role/swm_fx_c4.ab": null,
+  "actor/animation/role/swm_fx_c5.ab": null,
+  "actor/animation/role/swm_fx_c6.ab": null,
+  "actor/animation/role/swm_fx_d4.ab": null,
+  "actor/animation/role/swm_fx_d6.ab": null,
+  "actor/animation/role/swm_fx_dash.ab": null,
+  "actor/animation/role/swm_fx_j2c.ab": null,
+  "actor/animation/role/swm_fx_ja.ab": null,
+  "actor/animation/role/swm_fx_jb.ab": null,
+  "actor/animation/role/swm_fx_jc.ab": null,
+  "actor/animation/role/swm_fx_kaze.ab": null,
+  "actor/animation/role/swm_fx_quaker.ab": null,
+  "actor/animation/role/swm_getup.ab": null,
+  "actor/animation/role/swm_getup_front.ab": null,
+  "actor/animation/role/swm_grab.ab": null,
+  "actor/animation/role/swm_guard.ab": null,
+  "actor/animation/role/swm_idle2.ab": null,
+  "actor/animation/role/swm_intro.ab": null,
+  "actor/animation/role/swm_j2c.ab": null,
+  "actor/animation/role/swm_ja.ab": null,
+  "actor/animation/role/swm_jb.ab": null,
+  "actor/animation/role/swm_jc.ab": null,
+  "actor/animation/role/swm_jc_charged.ab": null,
+  "actor/animation/role/swm_jump.ab": null,
+  "actor/animation/role/swm_jump2.ab": null,
+  "actor/animation/role/swm_jump_timeline.ab": null,
+  "actor/animation/role/swm_kaze.ab": null,
+  "actor/animation/role/swm_kaze_air.ab": null,
+  "actor/animation/role/swm_lose.ab": null,
+  "actor/animation/role/swm_parried.ab": null,
+  "actor/animation/role/swm_quaker.ab": null,
+  "actor/animation/role/swm_quaker_air.ab": null,
+  "actor/animation/role/swm_roll.ab": null,
+  "actor/animation/role/swm_run.ab": null,
+  "actor/animation/role/swm_run_start.ab": null,
+  "actor/animation/role/swm_run_timeline.ab": null,
+  "actor/animation/role/swm_runbrake.ab": null,
+  "actor/animation/role/swm_skill_timeline.ab": null,
+  "actor/animation/role/swm_sonic.ab": null,
+  "actor/animation/role/swm_spin.ab": null,
+  "actor/animation/role/swm_squat.ab": null,
+  "actor/animation/role/swm_squat_loop.ab": null,
+  "actor/animation/role/swm_squat_to_stand.ab": null,
+  "actor/animation/role/swm_stand.ab": null,
+  "actor/animation/role/swm_stand_1.ab": null,
+  "actor/animation/role/swm_stand_2.ab": null,
+  "actor/animation/role/swm_stand_timeline.ab": null,
+  "actor/animation/role/swm_throw.ab": null,
+  "actor/animation/role/swm_tumble.ab": null,
+  "actor/animation/role/swm_turn.ab": null,
+  "actor/animation/role/swm_ult.ab": null,
+  "actor/animation/role/swm_ult_after.ab": null,
+  "actor/animation/role/swm_upjump_1.ab": null,
+  "actor/animation/role/swm_upjump_2.ab": null,
+  "actor/animation/role/swm_victory.ab": null,
+  "actor/animation/role/swm_vortex.ab": null,
+  "actor/animation/role/swm_vortex_air.ab": null,
+  "actor/animation/role/swm_vortex_end.ab": null,
+  "actor/animation/role/swm_vortex_loop.ab": null,
+  "actor/animation/role/swm_vortex_start.ab": null,
+  "actor/animation/role/swm_walk.ab": null,
+  "actor/animation/role/swm_walk_back.ab": null,
+  "actor/animation/role/swm_wall.ab": null,
+  "actor/animation/role/swm_win.ab": null,
+  "actor/animation/role/swm_win_timeline.ab": null,
+  "actor/logicdata/swm.ab": null,
+  "actor/logicdata/swmbullet.ab": null,
+  "actor/mesh/swm/g0.ab": null,
+  "actor/mesh/swm/g1.ab": null,
+  "actor/mesh/swm/g2.ab": null,
+  "actor/mesh/swm/g3.ab": null,
+  "actor/sprite/swm/02/swm_page_00.ab": null,
+  "actor/sprite/swm/02/swm_page_01.ab": null,
+  "actor/sprite/swm/02/swm_page_02.ab": null,
+  "actor/sprite/swm/02/swm_page_03.ab": null,
+  "actor/sprite/swm/02/swm_page_04.ab": null,
+  "actor/sprite/swm/02/swm_page_05.ab": null,
+  "actor/sprite/swm/02/swm_page_06.ab": null,
+  "actor/sprite/swm/02/swm_page_07.ab": null,
+  "actor/sprite/swm/02/swm_page_08.ab": null,
+  "actor/sprite/swm/02/swm_page_09.ab": null,
+  "actor/sprite/swm/02/swm_page_10.ab": null,
+  "actor/sprite/swm/02/swm_page_11.ab": null,
+  "actor/sprite/swm/02/swm_page_12.ab": null,
+  "actor/sprite/swm/extra/swm_page_00.ab": null,
+  "actor/sprite/swm/extra/swm_page_01.ab": null,
+  "actor/sprite/swm/extra/swm_page_02.ab": null,
+  "actor/sprite/swm/extra/swm_page_03.ab": null,
+  "actor/sprite/swm/extra/swm_page_04.ab": null,
+  "actor/sprite/swm/extra/swm_page_05.ab": null,
+  "actor/sprite/swm/extra/swm_page_06.ab": null,
+  "actor/sprite/swm/extra/swm_page_07.ab": null,
+  "actor/sprite/swm/extra/swm_page_08.ab": null,
+  "actor/sprite/swm/extra/swm_page_09.ab": null,
+  "actor/sprite/swm/extra/swm_page_10.ab": null,
+  "actor/sprite/swm/extra/swm_page_11.ab": null,
+  "actor/sprite/swm/extra/swm_page_12.ab": null,
+  "actor/sprite/swm/extra2/swm_blank.ab": null,
+  "actor/texturefamily/swm_02.ab": null,
+  "actor/texturefamily/swm_extra.ab": null,
+  "actor/texturefamily/swm_extra2.ab": null,
+  "data/audiocollection.ab": "d68c448261a38cf3bb2fae01a3ae4eb6797945d2",
+  "effect/common/material/02_glow/glow_002_d_swm.ab": null,
+  "effect/common/material/08_particles/particles_022_d_swm.ab": null,
+  "effect/common/material/13_sharp/sharp_001_a_swm.ab": null,
+  "effect/common/material/13_sharp/sharp_641_a_swm.ab": null,
+  "effect/common/material/swm/air_027_b__swme.ab": null,
+  "effect/common/material/swm/air_027_b__swmh.ab": null,
+  "effect/common/material/swm/air_027_b__swmi.ab": null,
+  "effect/common/material/swm/air_027_b__swmm.ab": null,
+  "effect/common/material/swm/air_027_b__swmo.ab": null,
+  "effect/common/material/swm/air_027_b__swmw.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a31.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a5.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a9.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_circle00_d_a5.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact02_d_a34.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact04_d_a31.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact07_d_a31.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a32.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a22.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a36.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a41.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a48.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a19.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a22.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a29.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a36.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a39.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a5.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a50.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a6.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a11.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a14.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a41.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind14_d_a16.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind15_d_a17.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke00_d_a18.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke03_d_a17.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke04_d_a17.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a13.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a5.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a6.ab": null,
+  "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a7.ab": null,
+  "effect/common/material/swm/glow_002_n__swmg.ab": null,
+  "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g7.ab": null,
+  "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g9.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_10a_element00_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_circle00_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d.ab": null,
+  "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d.ab": null,
+  "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d.ab": null,
+  "effect/common/texture/swm/swm_stroke.ab": null,
+  "effect/common/texture/swm/swm_stroke_erode.ab": null,
+  "effect/common/texture/swm/swm_stroke_mask.ab": null,
+  "effect/common/texture/swm/swm_wind_edge.ab": null,
+  "effect/common/texture/swm/swm_wind_erode.ab": null,
+  "effect/common/texture/swm/swm_wind_field.ab": null,
+  "effect/common/texture/swm/swm_wind_mask.ab": null,
+  "effect/common/texture/swm/swm_windlines.ab": null,
+  "effect/prefab/hit/swmskin/hit_607.ab": null,
+  "effect/prefab/role/icey/swmskin/icey_hit_01.ab": null,
+  "effect/prefab/role/swm/swm_2a.ab": null,
+  "effect/prefab/role/swm/swm_2b.ab": null,
+  "effect/prefab/role/swm/swm_5a.ab": null,
+  "effect/prefab/role/swm/swm_5aa.ab": null,
+  "effect/prefab/role/swm/swm_arc.ab": null,
+  "effect/prefab/role/swm/swm_blade.ab": null,
+  "effect/prefab/role/swm/swm_d2a.ab": null,
+  "effect/prefab/role/swm/swm_d2b.ab": null,
+  "effect/prefab/role/swm/swm_d2c.ab": null,
+  "effect/prefab/role/swm/swm_d5a.ab": null,
+  "effect/prefab/role/swm/swm_d5aa.ab": null,
+  "effect/prefab/role/swm/swm_d5b.ab": null,
+  "effect/prefab/role/swm/swm_d5c.ab": null,
+  "effect/prefab/role/swm/swm_dfoot.ab": null,
+  "effect/prefab/role/swm/swm_dfoot2.ab": null,
+  "effect/prefab/role/swm/swm_dj2c.ab": null,
+  "effect/prefab/role/swm/swm_dj5a.ab": null,
+  "effect/prefab/role/swm/swm_dj5b.ab": null,
+  "effect/prefab/role/swm/swm_dj5c.ab": null,
+  "effect/prefab/role/swm/swm_dorb.ab": null,
+  "effect/prefab/role/swm/swm_dorbend.ab": null,
+  "effect/prefab/role/swm/swm_drange.ab": null,
+  "effect/prefab/role/swm/swm_flat.ab": null,
+  "effect/prefab/role/swm/swm_j5a.ab": null,
+  "effect/prefab/role/swm/swm_j5b.ab": null,
+  "ui/atlas/iconpotential201001/iconpotential201001.ab": null,
+  "ui/texture/baseactor/baseactor_201001.ab": null,
+  "ui/texture/baseactor/baseactor_201001off.ab": null,
+  "ui/texture/heroheadicon/heroevohead_201001.ab": null,
+  "ui/texture/heroheadicon/heroevohead_off_201001.ab": null,
+  "ui/texture/heroheadicon/herofinalbattle_201001.ab": null,
+  "ui/texture/heroheadicon/heroheadicon_201001.ab": null,
+  "ui/texture/heroheadicon/heropda_201001.ab": null,
+  "ui/texture/heroheadicon/heropvpfinish_201001.ab": null,
+  "ui/texture/heroheadicon/herosmallhead_201001.ab": null,
+  "ui/texture/heroheadselcetmb/heroheadselect_0_201001.ab": null,
+  "ui/texture/heroheadselcetmb/heroheadselect_1_201001.ab": null,
+  "ui/texture/heroheadselcetmb/heroheadselect_2_201001.ab": null,
+  "ui/texture/heroportraitfull/heroportraitfull_201001.ab": null,
+  "ui/texture/heroportraitfullmb/heroportraitfull_201001.ab": null,
+  "ui/texture/heroportraitlmb/heroportraitfull_201001.ab": null,
+  "ui/texture/iconpotential/potential_21381.ab": null,
+  "ui/texture/iconpotential/potential_21382.ab": null,
+  "ui/texture/iconpotential/potential_21383.ab": null,
+  "ui/texture/iconpotential/potential_21384.ab": null,
+  "ui/texture/iconpotential/potential_21385.ab": null,
+  "ui/texture/iconpotential/potential_21386.ab": null,
+  "ui/texture/iconpotential/potential_21387.ab": null,
+  "ui/texture/iconpotential/potential_21388.ab": null,
+  "ui/texture/iconpotential/potential_21389.ab": null,
+  "ui/texture/iconpotential/potential_21390.ab": null,
+  "ui/texture/iconpotential/potential_21391.ab": null,
+  "ui/texture/iconpotential/potential_21392.ab": null,
+  "ui/texture/iconpotential/potential_21393.ab": null
+ },
+ "writes": [],
+ "cloneAdds": {
+  "names": [
+   "actor/logicdata/swm",
+   "actor/logicdata/swmbullet",
+   "effect/prefab/hit/swmskin/hit_607",
+   "effect/prefab/role/icey/swmskin/icey_hit_01",
+   "effect/common/material/02_glow/glow_002_d_swm",
+   "effect/common/material/08_particles/particles_022_d_swm",
+   "effect/common/material/13_sharp/sharp_001_a_swm",
+   "effect/common/material/13_sharp/sharp_641_a_swm"
+  ],
+  "entries": [
+   [
+    "actor/logicdata/swm",
+    []
+   ],
+   [
+    "actor/logicdata/swmbullet",
+    []
+   ],
+   [
+    "effect/prefab/hit/swmskin/hit_607",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_d_swm",
+     "effect/common/material/08_particles/particles_022_d_swm",
+     "effect/common/material/13_sharp/sharp_001_a_swm",
+     "effect/common/material/13_sharp/sharp_641_a_swm",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_019_4c",
+     "effect/common/texture/13_sharp/sharp_001_4c",
+     "effect/common/texture/13_sharp/sharp_641_4c",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/icey/swmskin/icey_hit_01",
+    [
+     "effect/common/fbx/plane_001",
+     "effect/common/material/02_glow/glow_002_d_swm",
+     "effect/common/material/08_particles/particles_022_d_swm",
+     "effect/common/material/13_sharp/sharp_001_a_swm",
+     "effect/common/material/13_sharp/sharp_641_a_swm",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/08_particles/particles_019_4c",
+     "effect/common/texture/13_sharp/sharp_001_4c",
+     "effect/common/texture/13_sharp/sharp_641_4c",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/02_glow/glow_002_d_swm",
+    [
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/08_particles/particles_022_d_swm",
+    [
+     "effect/common/texture/08_particles/particles_019_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/13_sharp/sharp_001_a_swm",
+    [
+     "effect/common/texture/13_sharp/sharp_001_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/13_sharp/sharp_641_a_swm",
+    [
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/13_sharp/sharp_641_4c",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ]
+  ],
+  "guids": []
+ },
+ "importAdds": {
+  "names": [
+   "actor/sprite/swm/02/swm_page_00",
+   "actor/sprite/swm/extra/swm_page_00",
+   "actor/sprite/swm/02/swm_page_01",
+   "actor/sprite/swm/extra/swm_page_01",
+   "actor/sprite/swm/02/swm_page_02",
+   "actor/sprite/swm/extra/swm_page_02",
+   "actor/sprite/swm/02/swm_page_03",
+   "actor/sprite/swm/extra/swm_page_03",
+   "actor/sprite/swm/02/swm_page_04",
+   "actor/sprite/swm/extra/swm_page_04",
+   "actor/sprite/swm/02/swm_page_05",
+   "actor/sprite/swm/extra/swm_page_05",
+   "actor/sprite/swm/02/swm_page_06",
+   "actor/sprite/swm/extra/swm_page_06",
+   "actor/sprite/swm/02/swm_page_07",
+   "actor/sprite/swm/extra/swm_page_07",
+   "actor/sprite/swm/02/swm_page_08",
+   "actor/sprite/swm/extra/swm_page_08",
+   "actor/sprite/swm/02/swm_page_09",
+   "actor/sprite/swm/extra/swm_page_09",
+   "actor/sprite/swm/02/swm_page_10",
+   "actor/sprite/swm/extra/swm_page_10",
+   "actor/sprite/swm/02/swm_page_11",
+   "actor/sprite/swm/extra/swm_page_11",
+   "actor/sprite/swm/02/swm_page_12",
+   "actor/sprite/swm/extra/swm_page_12",
+   "actor/sprite/swm/extra2/swm_blank",
+   "actor/texturefamily/swm_extra",
+   "actor/texturefamily/swm_extra2",
+   "actor/texturefamily/swm_02",
+   "actor/mesh/swm/g0",
+   "actor/mesh/swm/g1",
+   "actor/mesh/swm/g2",
+   "actor/mesh/swm/g3",
+   "actor/animation/role/swm_stand",
+   "actor/animation/role/swm_run_start",
+   "actor/animation/role/swm_run",
+   "actor/animation/role/swm_runbrake",
+   "actor/animation/role/swm_walk",
+   "actor/animation/role/swm_walk_back",
+   "actor/animation/role/swm_turn",
+   "actor/animation/role/swm_squat",
+   "actor/animation/role/swm_squat_loop",
+   "actor/animation/role/swm_squat_to_stand",
+   "actor/animation/role/swm_jump",
+   "actor/animation/role/swm_jump2",
+   "actor/animation/role/swm_drop_start",
+   "actor/animation/role/swm_drop",
+   "actor/animation/role/swm_dropend",
+   "actor/animation/role/swm_dash",
+   "actor/animation/role/swm_backdash",
+   "actor/animation/role/swm_airdash",
+   "actor/animation/role/swm_guard",
+   "actor/animation/role/swm_parried",
+   "actor/animation/role/swm_behit",
+   "actor/animation/role/swm_behit_up",
+   "actor/animation/role/swm_behit_crouch",
+   "actor/animation/role/swm_behit_air",
+   "actor/animation/role/swm_behit_down",
+   "actor/animation/role/swm_blowoff",
+   "actor/animation/role/swm_spin",
+   "actor/animation/role/swm_wall",
+   "actor/animation/role/swm_tumble",
+   "actor/animation/role/swm_down",
+   "actor/animation/role/swm_getup",
+   "actor/animation/role/swm_down_front",
+   "actor/animation/role/swm_getup_front",
+   "actor/animation/role/swm_roll",
+   "actor/animation/role/swm_ball",
+   "actor/animation/role/swm_crumple",
+   "actor/animation/role/swm_dizzy",
+   "actor/animation/role/swm_win",
+   "actor/animation/role/swm_lose",
+   "actor/animation/role/swm_a5",
+   "actor/animation/role/swm_a5a",
+   "actor/animation/role/swm_a2",
+   "actor/animation/role/swm_ja",
+   "actor/animation/role/swm_b5",
+   "actor/animation/role/swm_b2",
+   "actor/animation/role/swm_jb",
+   "actor/animation/role/swm_c5",
+   "actor/animation/role/swm_c6",
+   "actor/animation/role/swm_c4",
+   "actor/animation/role/swm_c2",
+   "actor/animation/role/swm_jc",
+   "actor/animation/role/swm_j2c",
+   "actor/animation/role/swm_c5_charged",
+   "actor/animation/role/swm_jc_charged",
+   "actor/animation/role/swm_assault",
+   "actor/animation/role/swm_grab",
+   "actor/animation/role/swm_throw",
+   "actor/animation/role/swm_kaze",
+   "actor/animation/role/swm_kaze_air",
+   "actor/animation/role/swm_d6",
+   "actor/animation/role/swm_d6_air",
+   "actor/animation/role/swm_sonic",
+   "actor/animation/role/swm_quaker",
+   "actor/animation/role/swm_quaker_air",
+   "actor/animation/role/swm_d4",
+   "actor/animation/role/swm_d4_air",
+   "actor/animation/role/swm_vortex",
+   "actor/animation/role/swm_vortex_start",
+   "actor/animation/role/swm_vortex_loop",
+   "actor/animation/role/swm_vortex_end",
+   "actor/animation/role/swm_vortex_air",
+   "actor/animation/role/swm_arashi",
+   "actor/animation/role/swm_arashi_air",
+   "actor/animation/role/swm_ult",
+   "actor/animation/role/swm_ult_after",
+   "actor/animation/role/swm_doll_end",
+   "actor/animation/role/swm_fx_a5",
+   "actor/animation/role/swm_fx_a5a",
+   "actor/animation/role/swm_fx_a2",
+   "actor/animation/role/swm_fx_ja",
+   "actor/animation/role/swm_fx_b5",
+   "actor/animation/role/swm_fx_b2",
+   "actor/animation/role/swm_fx_jb",
+   "actor/animation/role/swm_fx_c5",
+   "actor/animation/role/swm_fx_c6",
+   "actor/animation/role/swm_fx_c4",
+   "actor/animation/role/swm_fx_c2",
+   "actor/animation/role/swm_fx_jc",
+   "actor/animation/role/swm_fx_j2c",
+   "actor/animation/role/swm_fx_kaze",
+   "actor/animation/role/swm_fx_d6",
+   "actor/animation/role/swm_fx_quaker",
+   "actor/animation/role/swm_fx_d4",
+   "actor/animation/role/swm_fx_arashi",
+   "actor/animation/role/swm_fx_dash",
+   "actor/animation/role/swm_fx_assault",
+   "actor/animation/role/swm_intro",
+   "actor/animation/role/swm_idle2",
+   "actor/animation/role/swm_victory",
+   "actor/animation/role/swm_dead",
+   "actor/animation/role/swm_stand_timeline",
+   "actor/animation/role/swm_stand_1",
+   "actor/animation/role/swm_stand_2",
+   "actor/animation/role/swm_run_timeline",
+   "actor/animation/role/swm_upjump_1",
+   "actor/animation/role/swm_upjump_2",
+   "actor/animation/role/swm_jump_timeline",
+   "actor/animation/role/swm_drop_timeline",
+   "actor/animation/role/swm_dropend_timeline",
+   "actor/animation/role/swm_dash_timeline",
+   "actor/animation/role/swm_behit_timeline",
+   "actor/animation/role/swm_dead_timeline",
+   "actor/animation/role/swm_win_timeline",
+   "actor/animation/role/swm_born_timeline",
+   "actor/animation/role/swm_attack_timeline",
+   "actor/animation/role/swm_skill_timeline",
+   "ui/texture/heroportraitfull/heroportraitfull_201001",
+   "ui/texture/heroportraitlmb/heroportraitfull_201001",
+   "ui/texture/heroportraitfullmb/heroportraitfull_201001",
+   "ui/texture/heroheadicon/heroheadicon_201001",
+   "ui/texture/heroheadicon/heroevohead_201001",
+   "ui/texture/heroheadicon/heroevohead_off_201001",
+   "ui/texture/heroheadicon/herosmallhead_201001",
+   "ui/texture/heroheadicon/herofinalbattle_201001",
+   "ui/texture/heroheadicon/heropvpfinish_201001",
+   "ui/texture/heroheadicon/heropda_201001",
+   "ui/texture/baseactor/baseactor_201001",
+   "ui/texture/baseactor/baseactor_201001off",
+   "ui/texture/iconpotential/potential_21381",
+   "ui/texture/iconpotential/potential_21382",
+   "ui/texture/iconpotential/potential_21383",
+   "ui/texture/iconpotential/potential_21384",
+   "ui/texture/iconpotential/potential_21385",
+   "ui/texture/iconpotential/potential_21386",
+   "ui/texture/iconpotential/potential_21387",
+   "ui/texture/iconpotential/potential_21388",
+   "ui/texture/iconpotential/potential_21389",
+   "ui/texture/iconpotential/potential_21390",
+   "ui/texture/iconpotential/potential_21391",
+   "ui/texture/iconpotential/potential_21392",
+   "ui/texture/iconpotential/potential_21393",
+   "ui/texture/heroheadselcetmb/heroheadselect_0_201001",
+   "ui/texture/heroheadselcetmb/heroheadselect_1_201001",
+   "ui/texture/heroheadselcetmb/heroheadselect_2_201001",
+   "ui/atlas/iconpotential201001/iconpotential201001",
+   "effect/common/texture/swm/swm_wind_erode",
+   "effect/common/texture/swm/swm_wind_edge",
+   "effect/common/texture/swm/swm_wind_field",
+   "effect/common/texture/swm/swm_wind_mask",
+   "effect/common/texture/swm/swm_stroke_erode",
+   "effect/common/texture/swm/swm_stroke_mask",
+   "effect/common/texture/swm/swm_windlines",
+   "effect/common/texture/swm/swm_stroke",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+   "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+   "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+   "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d",
+   "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+   "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d",
+   "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d",
+   "effect/common/texture/swm/swm_a_t_eft_11a_circle00_d",
+   "effect/common/material/swm/air_027_b__swmm",
+   "effect/common/material/swm/air_027_b__swmi",
+   "effect/common/material/swm/glow_002_n__swmg",
+   "effect/common/material/swm/air_027_b__swme",
+   "effect/common/material/swm/air_027_b__swmo",
+   "effect/common/material/swm/air_027_b__swmw",
+   "effect/common/material/swm/air_027_b__swmh",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a41",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a41",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke00_d_a18",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a39",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a29",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a31",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a36",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke04_d_a17",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke03_d_a17",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind14_d_a16",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact02_d_a34",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact07_d_a31",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a13",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind15_d_a17",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a48",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact04_d_a31",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a14",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a6",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a50",
+   "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g9",
+   "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g7",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a19",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a5",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a22",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a9",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_circle00_d_a5",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a5",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a11",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a6",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a7",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a5",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a32",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a36",
+   "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a22",
+   "effect/prefab/role/swm/swm_arc",
+   "effect/prefab/role/swm/swm_flat",
+   "effect/prefab/role/swm/swm_5a",
+   "effect/prefab/role/swm/swm_5aa",
+   "effect/prefab/role/swm/swm_2a",
+   "effect/prefab/role/swm/swm_2b",
+   "effect/prefab/role/swm/swm_j5a",
+   "effect/prefab/role/swm/swm_j5b",
+   "effect/prefab/role/swm/swm_blade",
+   "effect/prefab/role/swm/swm_d5a",
+   "effect/prefab/role/swm/swm_d5aa",
+   "effect/prefab/role/swm/swm_d2a",
+   "effect/prefab/role/swm/swm_d2b",
+   "effect/prefab/role/swm/swm_dj5a",
+   "effect/prefab/role/swm/swm_dj5b",
+   "effect/prefab/role/swm/swm_d5b",
+   "effect/prefab/role/swm/swm_d2c",
+   "effect/prefab/role/swm/swm_dj2c",
+   "effect/prefab/role/swm/swm_d5c",
+   "effect/prefab/role/swm/swm_dj5c",
+   "effect/prefab/role/swm/swm_dorb",
+   "effect/prefab/role/swm/swm_dorbend",
+   "effect/prefab/role/swm/swm_dfoot",
+   "effect/prefab/role/swm/swm_dfoot2",
+   "effect/prefab/role/swm/swm_drange"
+  ],
+  "entries": [
+   [
+    "actor/sprite/swm/02/swm_page_00",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_00",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_01",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_01",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_02",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_02",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_03",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_03",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_04",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_04",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_05",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_05",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_06",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_06",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_07",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_07",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_08",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_08",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_09",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_09",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_10",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_10",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_11",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_11",
+    []
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_12",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_12",
+    []
+   ],
+   [
+    "actor/sprite/swm/extra2/swm_blank",
+    []
+   ],
+   [
+    "actor/texturefamily/swm_extra",
+    []
+   ],
+   [
+    "actor/texturefamily/swm_extra2",
+    []
+   ],
+   [
+    "actor/texturefamily/swm_02",
+    []
+   ],
+   [
+    "actor/mesh/swm/g0",
+    []
+   ],
+   [
+    "actor/mesh/swm/g1",
+    []
+   ],
+   [
+    "actor/mesh/swm/g2",
+    []
+   ],
+   [
+    "actor/mesh/swm/g3",
+    []
+   ],
+   [
+    "actor/animation/role/swm_stand",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_run_start",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_run",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_runbrake",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_walk",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_walk_back",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_turn",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_squat",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_squat_loop",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_squat_to_stand",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_jump",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_jump2",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_drop_start",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_drop",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dropend",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dash",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_backdash",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_airdash",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_guard",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_parried",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_behit",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_behit_up",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_behit_crouch",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_behit_air",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_behit_down",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_blowoff",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_spin",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_wall",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_tumble",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_down",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_getup",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_down_front",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_getup_front",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_roll",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_ball",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_crumple",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dizzy",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_win",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_lose",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_a5",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_a5a",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_a2",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_ja",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_b5",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_b2",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_jb",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_c5",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_c6",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_c4",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_c2",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_jc",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_j2c",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_c5_charged",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_jc_charged",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_assault",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_grab",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_throw",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_kaze",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_kaze_air",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_d6",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_d6_air",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_sonic",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_quaker",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_quaker_air",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_d4",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_d4_air",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_vortex",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_vortex_start",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_vortex_loop",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_vortex_end",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_vortex_air",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_arashi",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_arashi_air",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_ult",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_ult_after",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_doll_end",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_a5",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_a5a",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_a2",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_ja",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_b5",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_b2",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_jb",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_c5",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_c6",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_c4",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_c2",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_jc",
+    [
+     "actor/mesh/swm/g2",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_j2c",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_kaze",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_d6",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_quaker",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_d4",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_arashi",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_dash",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_fx_assault",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_intro",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_idle2",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_victory",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dead",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_stand_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_stand_1",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_stand_2",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_run_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_upjump_1",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_upjump_2",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_jump_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_drop_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dropend_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dash_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_behit_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_dead_timeline",
+    [
+     "actor/mesh/swm/g0",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_win_timeline",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_born_timeline",
+    [
+     "actor/mesh/swm/g3",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_attack_timeline",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "actor/animation/role/swm_skill_timeline",
+    [
+     "actor/mesh/swm/g1",
+     "effect/common/texture/04_mask/mask_801_4c",
+     "effect/common/texture/18_turbulence/turbulence_022_1r",
+     "rendering/material/sprite/spritepalette",
+     "rendering/shader/sprite/litrole",
+     "rendering/shader/sprite/shadowcaster"
+    ]
+   ],
+   [
+    "ui/texture/heroportraitfull/heroportraitfull_201001",
+    []
+   ],
+   [
+    "ui/texture/heroportraitlmb/heroportraitfull_201001",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfullmb/heroportraitfull_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroheadicon_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroevohead_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroevohead_off_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herosmallhead_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herofinalbattle_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropvpfinish_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropda_201001",
+    []
+   ],
+   [
+    "ui/texture/baseactor/baseactor_201001",
+    []
+   ],
+   [
+    "ui/texture/baseactor/baseactor_201001off",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21381",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21382",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21383",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21384",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21385",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21386",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21387",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21388",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21389",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21390",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21391",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21392",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/potential_21393",
+    []
+   ],
+   [
+    "ui/texture/heroheadselcetmb/heroheadselect_0_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadselcetmb/heroheadselect_1_201001",
+    []
+   ],
+   [
+    "ui/texture/heroheadselcetmb/heroheadselect_2_201001",
+    []
+   ],
+   [
+    "ui/atlas/iconpotential201001/iconpotential201001",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_wind_erode",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_wind_edge",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_wind_field",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_wind_mask",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_stroke_erode",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_stroke_mask",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_windlines",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_stroke",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d",
+    []
+   ],
+   [
+    "effect/common/texture/swm/swm_a_t_eft_11a_circle00_d",
+    []
+   ],
+   [
+    "effect/common/material/swm/air_027_b__swmm",
+    [
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_field",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/air_027_b__swmi",
+    [
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_field",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_n__swmg",
+    [
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/air_027_b__swme",
+    [
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_edge",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/air_027_b__swmo",
+    [
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_field",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/air_027_b__swmw",
+    [
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_windlines",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/air_027_b__swmh",
+    [
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_stroke",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a41",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a41",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke00_d_a18",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a39",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a29",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a31",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a36",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke04_d_a17",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke03_d_a17",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind14_d_a16",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact02_d_a34",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact07_d_a31",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a13",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind15_d_a17",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a48",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact04_d_a31",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a14",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a6",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a50",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g9",
+    [
+     "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g7",
+    [
+     "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a19",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a5",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a22",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a9",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_circle00_d_a5",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_circle00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a5",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a11",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a6",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a7",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a5",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a32",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a36",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a22",
+    [
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_arc",
+    [
+     "effect/common/material/swm/air_027_b__swmm",
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_field",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swme",
+     "effect/common/texture/swm/swm_wind_edge",
+     "effect/common/material/swm/air_027_b__swmo",
+     "effect/common/material/swm/air_027_b__swmi",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_n__swmg",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_flat",
+    [
+     "effect/common/material/swm/air_027_b__swme",
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_edge",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmi",
+     "effect/common/texture/swm/swm_wind_field",
+     "effect/common/material/swm/air_027_b__swmo",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_n__swmg",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/swm/air_027_b__swmm"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_5a",
+    [
+     "effect/common/material/swm/air_027_b__swmh",
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_stroke",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmw",
+     "effect/common/texture/swm/swm_windlines"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_5aa",
+    [
+     "effect/common/material/swm/air_027_b__swmw",
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_windlines",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmh",
+     "effect/common/texture/swm/swm_stroke"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_2a",
+    [
+     "effect/common/material/swm/air_027_b__swmw",
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_windlines",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmh",
+     "effect/common/texture/swm/swm_stroke"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_2b",
+    [
+     "effect/common/material/swm/air_027_b__swmh",
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_stroke",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmw",
+     "effect/common/texture/swm/swm_windlines"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_j5a",
+    [
+     "effect/common/material/swm/air_027_b__swmh",
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_stroke",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmw",
+     "effect/common/texture/swm/swm_windlines"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_j5b",
+    [
+     "effect/common/material/swm/air_027_b__swmw",
+     "effect/common/texture/swm/swm_stroke_mask",
+     "effect/common/texture/swm/swm_windlines",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_stroke_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swmh",
+     "effect/common/texture/swm/swm_stroke"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_blade",
+    [
+     "effect/common/material/swm/air_027_b__swmi",
+     "effect/common/texture/swm/swm_wind_mask",
+     "effect/common/texture/swm/swm_wind_field",
+     "effect/common/texture/18_turbulence/turbulence_021_1r",
+     "effect/common/texture/swm/swm_wind_erode",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/air_027_b__swme",
+     "effect/common/texture/swm/swm_wind_edge"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d5a",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a41"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d5aa",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d2a",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d2b",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dj5a",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dj5b",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d5b",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a36",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a41",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a31",
+     "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke00_d_a18",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a39",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a29"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d2c",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke03_d_a17",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke04_d_a17",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dj2c",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a43",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a38",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/fbx/plane_001"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_d5c",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact07_d_a31",
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a48",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind14_d_a16",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact02_d_a34",
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a13",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke00_d_a18",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke04_d_a17",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke04_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact04_d_a31",
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind15_d_a17",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_dashsmoke03_d_a17",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_dashsmoke03_d"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dj5c",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a48",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact04_d_a31",
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact04_d",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a32",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a50",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a13",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind15_d_a17",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind15_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact02_d_a34",
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact02_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind14_d_a16",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind14_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_impact07_d_a31",
+     "effect/common/texture/swm/swm_a_t_eft_11a_impact07_d"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dorb",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a19",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a16",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a14",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d",
+     "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g7",
+     "effect/common/texture/swm/swm_g_t_eft_cmn_element00_d",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a6",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a50",
+     "effect/common/material/swm/glow_205_b__swmd_t_eft_cmn_element00_d_g9"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dorbend",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a5",
+     "effect/common/texture/swm/swm_a_t_eft_cmn_element00_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind06_d_a22",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind06_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_cmn_element00_d_a7",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_circle00_d_a5",
+     "effect/common/texture/swm/swm_a_t_eft_11a_circle00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a5",
+     "effect/common/texture/swm/swm_a_t_eft_10a_element00_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a5",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind12_d",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_10a_element00_d_a9",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind12_d_a6",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind13_d_a11",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind13_d"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dfoot",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a36",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a32",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_dfoot2",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind04_d_a32",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind04_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/role/swm/swm_drange",
+    [
+     "effect/common/material/swm/glow_002_d__swmd_t_eft_11a_wind05_d_a22",
+     "effect/common/texture/swm/swm_a_t_eft_11a_wind05_d",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ]
+  ],
+  "guids": [
+   [
+    "actor/sprite/swm/02/swm_page_00",
+    "314a6ad5714053867cfec90255b8a14f"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_00",
+    "8d4fd55cc93e84d159eac36845025dda"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_01",
+    "f3afc93cff0bc3e918902d6cc823af92"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_01",
+    "0d73d32e5bfa3bba68799788ee21054e"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_02",
+    "635436f15027e2c84cb08ba5beae8f32"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_02",
+    "0c74fbb6c436c0ca2f8b5d9783b98eca"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_03",
+    "2480db0612006cca5d26a82442a636c5"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_03",
+    "8856690055af56683a76d531cf577599"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_04",
+    "a4b19455d1942acd9b745ef268b3a122"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_04",
+    "619d31b283ed2253460f66e2f766be9a"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_05",
+    "87002d772da852ddfe1f6d2ad91865ac"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_05",
+    "e7d50235011b2781457587eb966e6097"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_06",
+    "695b74167beebb5c61358a6d48952b70"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_06",
+    "6dba13431955f43d631b4e94035e44c4"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_07",
+    "33103afae75b84b92867b6d167cc9081"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_07",
+    "235c05bb31e3adcd1882367d7804a984"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_08",
+    "25457825ace15078828be971c16f9b01"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_08",
+    "54bd6c5cf1f318229c7510dc5013abb7"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_09",
+    "995c37034f7fadaf6c943b20b70f9cea"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_09",
+    "1919b57174fa7850ef07efe1448c4704"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_10",
+    "098f5cd7968f98318abe16af5b6ab70e"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_10",
+    "9cd04061e9aefc7733d0c53115527824"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_11",
+    "aa8c9add202d44837195b32982086fff"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_11",
+    "1140fc7c29fc033d36a65303c2125e1f"
+   ],
+   [
+    "actor/sprite/swm/02/swm_page_12",
+    "f2ba609b4d689db46ab97e1d2863ed39"
+   ],
+   [
+    "actor/sprite/swm/extra/swm_page_12",
+    "fb7e011d9a64f50d317f8279ee5ad334"
+   ],
+   [
+    "actor/sprite/swm/extra2/swm_blank",
+    "3b860a13260c468a6cd12c1b9e1eae89"
+   ]
+  ]
+ },
+ "took": 2.6,
+ "stamp": "c3dab485f0735c31f39c9bf0365ca5180fe6fb61",
+ "made": "2026-11-15 00:22:31"
+}
