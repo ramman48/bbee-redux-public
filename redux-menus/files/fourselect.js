@@ -200,7 +200,9 @@
     X.quiet(hs, false);
     setTimeout(function () { try { if (cg && !cg.Equals(null)) cg.alpha = 1; } catch (e) {} }, 1500);
     try { hs.nav.movRemainTime = 0; hs.actorLoaded = false; } catch (e) {}
-    try { if (require("DataBinding").DB.CallBackToPvePrepareRoom.Value) hs.CloseHeroSelect(); else hs.OnBackClick(); } catch (e) { log("back: " + es(e)); }
+    // a select the game opened with a way back of its own (the DBS labs story: a prep room, OnHeroSelectClose teleports
+    // to the lab) closes as its own Back button does; Sky City keeps OnBackClick
+    try { if (require("DataBinding").DB.CallBackToPvePrepareRoom.Value || hs.OnHeroSelectClose) hs.CloseHeroSelect(); else hs.OnBackClick(); } catch (e) { log("back: " + es(e)); }
     X.hs = null;
   };
   // the hero, then the Legacies (Evotype records, or null), then the fight: the game's own steps, its screens hidden

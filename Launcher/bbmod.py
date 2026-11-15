@@ -65,7 +65,7 @@ def node_check():
         if shutil.which(NODE) is None: _node.append((False, "Node.js not installed"))
         else:
             try:
-                said = subprocess.run([NODE, "--version"], capture_output=True, text=True, timeout=20).stdout.strip()
+                said = subprocess.run([NODE, "--version"], capture_output=True, text=True, errors="replace", timeout=20).stdout.strip()
                 major = int(re.match(r"v?(\d+)", said).group(1))
                 _node.append((True, "") if major >= NODE_OLDEST else (False, "this PC's Node.js %s is older than %d" % (said, NODE_OLDEST)))
             except Exception:
@@ -292,7 +292,7 @@ def check_js(checks, report):
     key = lambda text: hashlib.sha1((NODE + "\0" + text).encode("utf-8")).hexdigest()
     todo = [c for c in checks if key(c[3]) not in passed]
     def run(c):
-        return c, subprocess.run([NODE, "--check", c[1]], capture_output=True, text=True)
+        return c, subprocess.run([NODE, "--check", c[1]], capture_output=True, text=True, errors="replace")
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as tp: results = {c[0]: r for c, r in tp.map(run, todo)}
     for logical, p, specs, text in checks:
         r = results.get(logical)
@@ -660,7 +660,7 @@ def _build(pool):
         addp = os.path.join(tempfile.gettempdir(), "bbmod_import_%s_%d.json" % (mid, os.getpid()))
         t0 = time.time()
         r = subprocess.run([sys.executable, os.path.join(mdir(mid), spec["script"])] + list(spec.get("args", [])) + ["--out", out, "--adds", addp],
-                           capture_output=True, text=True, env=dict(os.environ, BBMOD_OUT=out))
+                           capture_output=True, text=True, errors="replace", env=dict(os.environ, BBMOD_OUT=out))
         took = time.time() - t0
         print("\n".join(r.stdout.rstrip().splitlines()[-25:])); print("  %s %s took %.0f s" % (mid, spec["script"], took))
         if r.returncode != 0 or not os.path.exists(addp):
@@ -712,7 +712,7 @@ def _build(pool):
     phase("clones and importers")
     print("assets:")
     if any(mods[m].get("content", {}).get("assets") for m in order):
-        r = subprocess.run([sys.executable, os.path.abspath(__file__), "_assets", json.dumps(order)], capture_output=True, text=True)
+        r = subprocess.run([sys.executable, os.path.abspath(__file__), "_assets", json.dumps(order)], capture_output=True, text=True, errors="replace")
         print(r.stdout.rstrip()); [report.append(l) for l in r.stdout.splitlines() if l.startswith(("CONFLICT", "ERROR"))]
         if r.returncode != 0: report.append("ERROR assets: child process failed (rc %d): %s" % (r.returncode, r.stderr[-600:]))
     errs = [r for r in report if r.startswith(("CONFLICT", "ERROR"))]
@@ -840,7 +840,7 @@ def game_running():
     login crashed on the save's mod characters ('reading special'), reporting every save as corrupted."""
     try:
         import subprocess
-        out = subprocess.run(["tasklist", "/FI", "IMAGENAME eq BlazblueEntropyEffect.exe"], capture_output=True, text=True).stdout
+        out = subprocess.run(["tasklist", "/FI", "IMAGENAME eq BlazblueEntropyEffect.exe"], capture_output=True, text=True, errors="replace").stdout
         return "blazblueentropyeffect.exe" in out.lower()
     except Exception:
         return False

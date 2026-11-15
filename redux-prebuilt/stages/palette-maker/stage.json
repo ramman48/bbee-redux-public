@@ -1,6 +1,6 @@
 {
  "mod": "palette-maker",
- "version": "0.2.9",
+ "version": "0.2.10",
  "files": {
   "palette/palrecolour.ab": "d3439ee9269f9aad416137d61bee57c11f27c741",
   "ui/prefab/palmaker/palheroes.ab": "7dbc51c7bd3ce9f8c4aab3b2d843895913413a9c",
@@ -39,7 +39,7 @@
   ],
   "guids": []
  },
- "took": 1.3,
- "stamp": "4904d7dadb8c23984ba3d9c14eb42d8af35797c2",
- "made": "2026-11-15 00:47:38"
+ "took": 1.5,
+ "stamp": "39acb14d5434dfb00bb8021d27d3b3dd054de868",
+ "made": "2026-11-15 04:54:20"
 }

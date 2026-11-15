@@ -1385,6 +1385,9 @@
   "ui/texture/heroheadicon/heropda_201301",
   "ui/texture/heroheadicon/herofinalbattle_201301",
   "ui/texture/heroheadicon/herosmallhead_201301",
+  "ui/texture/iconpotential/iconskill_201301",
+  "ui/texture/iconpotential/iconskill_201301off",
+  "ui/atlas/iconhud201301/iconhud201301",
   "ui/texture/iconpotential/potential_21351",
   "ui/texture/iconpotential/potential_21352",
   "ui/texture/iconpotential/potential_21353",
@@ -1437,7 +1440,6 @@
   "effect/prefab/role/rwi/rwi_fireball",
   "effect/prefab/role/rwi/rwi_tornado",
   "effect/prefab/role/rwi/rwi_arma_shatter",
-  "ui/atlas/iconhud201301/iconhud201301",
   "effect/prefab/hit/rwiskin_05/hit_100",
   "effect/prefab/hit/rwiskin_05/hit_104",
   "actor/logicdata/swm",
@@ -17140,6 +17142,18 @@
    []
   ],
   [
+   "ui/texture/iconpotential/iconskill_201301",
+   []
+  ],
+  [
+   "ui/texture/iconpotential/iconskill_201301off",
+   []
+  ],
+  [
+   "ui/atlas/iconhud201301/iconhud201301",
+   []
+  ],
+  [
    "ui/texture/iconpotential/potential_21351",
    []
   ],
@@ -18622,10 +18636,6 @@
     "effect/common/texture/18_turbulence/turbulence_719_4r",
     "noah/rendering/shader/effect/common"
    ]
-  ],
-  [
-   "ui/atlas/iconhud201301/iconhud201301",
-   []
   ],
   [
    "effect/prefab/hit/rwiskin_05/hit_100",

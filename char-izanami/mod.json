@@ -4203,7 +4203,9 @@
      "RelationId": [
       740226
      ],
-     "IconId": 20326
+     "IconId": 20326,
+     "IsUltraSkill": 1,
+     "SkillCost": 100
     },
     {
      "$new": true,
@@ -5651,7 +5653,9 @@
      "Type": 2,
      "Inherit": [
       740121
-     ]
+     ],
+     "IsUltraSkill": true,
+     "SkillCostOrigin": 100
     },
     {
      "$new": true,
@@ -33717,5 +33721,5 @@
    }
   ]
  },
- "version": "0.6.7"
+ "version": "0.6.8"
 }

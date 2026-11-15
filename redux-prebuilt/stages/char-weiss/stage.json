@@ -1,6 +1,6 @@
 {
  "mod": "char-weiss",
- "version": "0.4.9",
+ "version": "0.4.10",
  "files": {
   "actor/animation/role/rwi_air_turn.ab": "68bb3f9180c8726a86f791b53d27d3a5eaa8e78b",
   "actor/animation/role/rwi_airdash.ab": "e8b2846b44da9ceb7f4abc817f93875252d230f6",
@@ -222,7 +222,7 @@
   "effect/common/fbx/rwi/arc_rwief450_2nd.ab": "de1f4695a1ade1562f9fed5cf665801b06729119",
   "effect/common/fbx/rwi/arc_rwief450_3rd.ab": "01cef78c20b989a7e8c9629acfda99564c30bbc8",
   "effect/common/fbx/rwi/arc_shard.ab": "49c6643b04aba3f5a0bbf2aaa3308e003ab3033d",
-  "effect/common/fbx/rwi/arc_snowfall_streak.ab": "55428285c5140169ea65f697ba8b927797a1af3c",
+  "effect/common/fbx/rwi/arc_snowfall_streak.ab": "622f636cb93b0d12fd3361278b612df1eb9a7f5c",
   "effect/common/fbx/rwi/arc_storm_rise_a.ab": "123ed266dc131ce6432e27a53bf407ba04abef22",
   "effect/common/fbx/rwi/arc_storm_rise_b.ab": "a61d282fc47abdbfb381687583f058e8a58c5213",
   "effect/common/fbx/rwi/arc_torrent_crystal.ab": "8f6e9a5188b5c700c3d895d481106eed3714f861",
@@ -510,7 +510,7 @@
   "effect/prefab/role/rwi/arc_rwief450_2nd.ab": "e0ff22799d82c5267dddf9e7d031749a9b5c758c",
   "effect/prefab/role/rwi/arc_rwief450_3rd.ab": "20e4fd7c2a24c1d5633ff7360f3e9ab824fb8c26",
   "effect/prefab/role/rwi/arc_shard.ab": "64ac8ee48165cf40ec587a12aea917580ae9d4d0",
-  "effect/prefab/role/rwi/arc_snowfall_streak.ab": "5d847620c7d7c9180c6f4481acf2f0cc35e269af",
+  "effect/prefab/role/rwi/arc_snowfall_streak.ab": "e6de475c58ac064736619d588c18b4d46a17b56a",
   "effect/prefab/role/rwi/arc_storm_rise_a.ab": "75fe8592d6395480e817550dddcb5a727a5ac7fc",
   "effect/prefab/role/rwi/arc_storm_rise_b.ab": "deb3d3f630076996651905f7dbe3b3d9ea417475",
   "effect/prefab/role/rwi/arc_torrent_crystal.ab": "2965f1297137ffa25da140078c1bc15fd3ef5948",
@@ -678,7 +678,7 @@
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief450_2nd.ab": "f69229f040ceea4eccf1566501216f496e22059e",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief450_3rd.ab": "d9f53e589fd9146ddff3743ba616b949226bdfa6",
   "effect/prefab/role/rwi/rwiskin_05/arc_shard.ab": "d6a99d7db84186f56ea27259428c2f6153a5409a",
-  "effect/prefab/role/rwi/rwiskin_05/arc_snowfall_streak.ab": "add9fd38781cb1f254616e0016d611140a36a470",
+  "effect/prefab/role/rwi/rwiskin_05/arc_snowfall_streak.ab": "80ac65cfc3d7e1b5051c7afdbb47b1c6f5895119",
   "effect/prefab/role/rwi/rwiskin_05/arc_storm_rise_a.ab": "890b9d013d5c763124cde7e0180917d8c6725325",
   "effect/prefab/role/rwi/rwiskin_05/arc_storm_rise_b.ab": "af9ecc40b3197b8221846ef969109260d5142663",
   "effect/prefab/role/rwi/rwiskin_05/arc_torrent_crystal.ab": "9e85d19d9c8f99e421a9c007318900f1fd8b1dc8",
@@ -802,7 +802,7 @@
   "effect/prefab/role/rwi/rwiskin_05/rwi_v_stage_wallboom_s3.ab": "3406fb31d32ac174ef706cba2ed6cb59a2657c0c",
   "effect/prefab/role/rwi/rwiskin_05/rwi_v_sword.ab": "9c428cedd05228f7493881992ce55d86eb6b77d4",
   "effect/prefab/role/rwi/rwiskin_05/rwi_v_sword_hit.ab": "7759d7e1617d8dc4ea78bf8d774fe0be53f3b3c4",
-  "ui/atlas/iconhud201301/iconhud201301.ab": "cb49b285072f050d9ae032bf8656bd24bb9def20",
+  "ui/atlas/iconhud201301/iconhud201301.ab": "d337baa588dc45d6fc3657e6e9a8d75fdedfd14b",
   "ui/atlas/iconpotential201301/iconpotential201301.ab": "55ae1af732446b7c81db864f7b7fc79f44df94b8",
   "ui/texture/heroheadicon/herofinalbattle_201301.ab": "54fd9b8dbdb8007c42b3148028e4149d72554764",
   "ui/texture/heroheadicon/heroheadicon_201301.ab": "c61da4074e506be16d827679838be8257c893e49",
@@ -812,6 +812,8 @@
   "ui/texture/heroportraitfull/heroportraitfull_201301.ab": "a9d6b3aefe80e368ef49143d9fb353ecabd910fb",
   "ui/texture/heroportraitfullmb/heroportraitfull_201301.ab": "5026d0d680696dfb99f95c98c772275a6cbd5183",
   "ui/texture/heroportraitlmb/heroportraitfull_201301.ab": "26946f5ea78c4356f3a54a61e1e2d033ae54f338",
+  "ui/texture/iconpotential/iconskill_201301.ab": "416d366239dfe12f0e64d75259a50c12e4d88609",
+  "ui/texture/iconpotential/iconskill_201301off.ab": "660e2a36f863fc10f4d554d9a7dacc64eaa0eb5f",
   "ui/texture/iconpotential/potential_21351.ab": "50c14ed17ee9648381a36064c768b4ee1e6770cd",
   "ui/texture/iconpotential/potential_21352.ab": "7722c01a60ef232ea83c8a51f0ae72c7df8a880c",
   "ui/texture/iconpotential/potential_21353.ab": "0bcf52e612f1a8333231da1f9b24cce01453b493",
@@ -1636,6 +1638,8 @@
   "ui/texture/heroportraitfull/heroportraitfull_201301.ab": null,
   "ui/texture/heroportraitfullmb/heroportraitfull_201301.ab": null,
   "ui/texture/heroportraitlmb/heroportraitfull_201301.ab": null,
+  "ui/texture/iconpotential/iconskill_201301.ab": null,
+  "ui/texture/iconpotential/iconskill_201301off.ab": null,
   "ui/texture/iconpotential/potential_21351.ab": null,
   "ui/texture/iconpotential/potential_21352.ab": null,
   "ui/texture/iconpotential/potential_21353.ab": null,
@@ -1663,6 +1667,9 @@
    "ui/texture/heroheadicon/heropda_201301",
    "ui/texture/heroheadicon/herofinalbattle_201301",
    "ui/texture/heroheadicon/herosmallhead_201301",
+   "ui/texture/iconpotential/iconskill_201301",
+   "ui/texture/iconpotential/iconskill_201301off",
+   "ui/atlas/iconhud201301/iconhud201301",
    "ui/texture/iconpotential/potential_21351",
    "ui/texture/iconpotential/potential_21352",
    "ui/texture/iconpotential/potential_21353",
@@ -1715,7 +1722,6 @@
    "effect/prefab/role/rwi/rwi_fireball",
    "effect/prefab/role/rwi/rwi_tornado",
    "effect/prefab/role/rwi/rwi_arma_shatter",
-   "ui/atlas/iconhud201301/iconhud201301",
    "effect/prefab/hit/rwiskin_05/hit_100",
    "effect/prefab/hit/rwiskin_05/hit_104"
   ],
@@ -1762,6 +1768,18 @@
    ],
    [
     "ui/texture/heroheadicon/herosmallhead_201301",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_201301",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/iconskill_201301off",
+    []
+   ],
+   [
+    "ui/atlas/iconhud201301/iconhud201301",
     []
    ],
    [
@@ -3247,10 +3265,6 @@
      "effect/common/texture/18_turbulence/turbulence_719_4r",
      "noah/rendering/shader/effect/common"
     ]
-   ],
-   [
-    "ui/atlas/iconhud201301/iconhud201301",
-    []
    ],
    [
     "effect/prefab/hit/rwiskin_05/hit_100",
@@ -17227,7 +17241,7 @@
    ]
   ]
  },
- "took": 2.1,
- "stamp": "87a76c6708c00da9c5cd27ffd8037b900fbf5f74",
- "made": "2026-11-15 00:47:38"
+ "took": 5.2,
+ "stamp": "36d04ba606782b6b0145ca73b2744ea1a0d49e38",
+ "made": "2026-11-15 04:54:20"
 }

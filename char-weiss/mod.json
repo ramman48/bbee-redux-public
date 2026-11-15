@@ -1,7 +1,7 @@
 {
  "id": "char-weiss",
  "name": "Weiss Schnee (Cross Effect)",
- "version": "0.4.9",
+ "version": "0.4.10",
  "author": "BBEE modding project",
  "description": "Weiss Schnee from BlazBlue Cross Tag Battle as a playable character (ActorId 201301): her own sprites, animations and moves, built on the character data system. Unofficial.",
  "gameBuilds": [
@@ -5686,8 +5686,7 @@
       "set": {
        "BulletId": 20130102,
        "BulletAction": "rwi_ts_flower",
-       "TeacherSkillId": 2013011,
-       "Icon": "\n$UI/Atlas/IconHud201301/IconHud201301\u0012\u0011IconSkill_2013011"
+       "TeacherSkillId": 2013011
       }
      }
     },
@@ -5699,8 +5698,7 @@
       "set": {
        "BulletId": 20130102,
        "BulletAction": "rwi_ts_torrent",
-       "TeacherSkillId": 2013012,
-       "Icon": "\n$UI/Atlas/IconHud201301/IconHud201301\u0012\u0011IconSkill_2013012"
+       "TeacherSkillId": 2013012
       }
      }
     }
@@ -14870,6 +14868,8 @@
    "PDA_HeroPortraitFull_201301": "tex:UI/Texture/HeroHeadIcon/HeroPDA_201301",
    "HeroPortraitFull_201301": "tex:UI/Texture/HeroHeadIcon/HeroFinalBattle_201301",
    "PVE_HeroPortraitFull_201301_H": "tex:UI/Texture/HeroHeadIcon/HeroSmallHead_201301",
+   "IconSkill_201301": "tex:UI/Texture/IconPotential/IconSkill_201301",
+   "IconSkill_201301OFF": "tex:UI/Texture/IconPotential/IconSkill_201301OFF",
    "Potential_21351": "tex:UI/Texture/IconPotential/Potential_21351",
    "Potential_21352": "tex:UI/Texture/IconPotential/Potential_21352",
    "Potential_21353": "tex:UI/Texture/IconPotential/Potential_21353",
@@ -14921,10 +14921,6 @@
    {
     "file": "data/js/core/ActorUtil",
     "append": "/* char-weiss: her online relay trigger rides on her alone */\ntry{var _st=globalThis.BB_SELF_TRIGGERS=globalThis.BB_SELF_TRIGGERS||{};_st[201301]=(_st[201301]||[]).filter(function(i){return i!==213991}).concat([213991])}catch(e){}"
-   },
-   {
-    "file": "data/js/core/ActorUtil",
-    "append": "/* char-weiss: the battle HUD's talent icon from its own atlas (stand-in) */\ntry{var S_=globalThis.BB_HUD_SPRITES=globalThis.BB_HUD_SPRITES||{};Object.assign(S_,{\"Talent_20130\":\"IconHud201301\"})}catch(e){}"
    }
   ],
   "bundleClones": [
@@ -15070,6 +15066,48 @@
      ]
     ],
     "image": "art/smallhead.png"
+   },
+   {
+    "from": "ui/texture/iconpotential/potential_5303",
+    "to": "ui/texture/iconpotential/iconskill_201301",
+    "rename": [
+     [
+      "Potential_5303",
+      "IconSkill_201301"
+     ]
+    ],
+    "image": "art/icons/IconSkill_201301.png"
+   },
+   {
+    "from": "ui/texture/iconpotential/potential_5303",
+    "to": "ui/texture/iconpotential/iconskill_201301off",
+    "rename": [
+     [
+      "Potential_5303",
+      "IconSkill_201301OFF"
+     ]
+    ],
+    "image": "gen/icons/IconSkill_201301OFF.png"
+   },
+   {
+    "from": "ui/atlas/iconpotential101801/iconpotential101801",
+    "to": "ui/atlas/iconhud201301/iconhud201301",
+    "rename": [
+     [
+      "IconPotential101801",
+      "IconHud201301"
+     ]
+    ],
+    "atlasSprites": [
+     [
+      "IconSkill_201301",
+      "art/icons/IconSkill_201301.png"
+     ],
+     [
+      "IconSkill_201301OFF",
+      "gen/icons/IconSkill_201301OFF.png"
+     ]
+    ]
    },
    {
     "from": "ui/texture/iconpotential/potential_5303",
@@ -15736,30 +15774,6 @@
     ]
    },
    {
-    "from": "ui/atlas/iconpotential101801/iconpotential101801",
-    "to": "ui/atlas/iconhud201301/iconhud201301",
-    "rename": [
-     [
-      "IconPotential101801",
-      "IconHud201301"
-     ]
-    ],
-    "atlasSprites": [
-     [
-      "Talent_20130",
-      "sprite:ui/atlas/icontalent/icontalent#Talent_5049"
-     ],
-     [
-      "IconSkill_2013011",
-      "sprite:ui/atlas/iconskill/iconskill#IconSkill_1028011"
-     ],
-     [
-      "IconSkill_2013012",
-      "sprite:ui/atlas/iconskill/iconskill#IconSkill_1002012"
-     ]
-    ]
-   },
-   {
     "from": "effect/prefab/hit/hit_100",
     "to": "effect/prefab/hit/rwiskin_05/hit_100",
     "rename": [
@@ -15872,6 +15886,24 @@
        "path": "UI/Texture/HeroHeadIcon/HeroSmallHead_201301",
        "width": 75,
        "height": 87
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/IconPotential/IconSkill_201301",
+       "width": 248,
+       "height": 248
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/IconPotential/IconSkill_201301OFF",
+       "width": 248,
+       "height": 248
       }
      },
      {

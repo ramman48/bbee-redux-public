@@ -1,8 +1,8 @@
 {
  "mod": "char-weiss",
- "version": "0.4.9",
+ "version": "0.4.10",
  "gameBuild": "26424974",
- "made": "2026-11-14 23:35",
+ "made": "2026-11-15 04:49",
  "importers": [
   {
    "script": "import_weiss.py",
@@ -16985,7 +16985,7 @@
   "effect/common/fbx/rwi/arc_rwief450_2nd.ab": "13da81ef90cf1074aeb90077d25e0e1c66d288de9895eb56fa84fb868824b313",
   "effect/common/fbx/rwi/arc_rwief450_3rd.ab": "23e53546c3cdadeb85baf62481e2b1acb6fe23afaaaa3515a68a0a8f3f016258",
   "effect/common/fbx/rwi/arc_shard.ab": "f3643b5f3225f3155873368586b3e6b504fcee18ad2d61466507cd992b5d93f6",
-  "effect/common/fbx/rwi/arc_snowfall_streak.ab": "8a50d1e805906ff7ff17b3c11013df5a7484f169f31099141c68ee71575a66c4",
+  "effect/common/fbx/rwi/arc_snowfall_streak.ab": "99dee78151eb0ebd7ca9e0c482839e1e2d9a450c6f48384de97356effe9da84a",
   "effect/common/fbx/rwi/arc_storm_rise_a.ab": "3ab4ce08c1b39e31af1f153ff5875bb3cc8e0d1735a9747113c0f86f07ef9e16",
   "effect/common/fbx/rwi/arc_storm_rise_b.ab": "816279749714e2147f87452bc85d162321e90f78cd405f90e5ca335723d5f6ae",
   "effect/common/fbx/rwi/arc_torrent_crystal.ab": "b4df23de2a8b9f710f20133872768cc1330462e0ce5c50d016e9feaba6b4fa4f",
@@ -17271,7 +17271,7 @@
   "effect/prefab/role/rwi/arc_rwief450_2nd.ab": "dd988c499dbc6b4542273bc5a899c4270618f565fe8d5019f45964e524db84de",
   "effect/prefab/role/rwi/arc_rwief450_3rd.ab": "09d07a41a70f0928ec278574b530cc190aec07cb6b896b9b015f4f0c6c4ab6b9",
   "effect/prefab/role/rwi/arc_shard.ab": "fd6e2c6b2838f34195baecd75820e01e5b5ce1c3814d253b91f0cd3f491d111d",
-  "effect/prefab/role/rwi/arc_snowfall_streak.ab": "611afc4ea924d43ba6e60f1c1eecf26e43673c3e0447ccb586c38c9c1c526b36",
+  "effect/prefab/role/rwi/arc_snowfall_streak.ab": "7b07c16fd7bdac30a424e93fbaddeccfb21efe0148ca39792b0a867cbe39b005",
   "effect/prefab/role/rwi/arc_storm_rise_a.ab": "1a60b0e733ae02411254f0387eaa1fdbe77b17ca17f1273c598ae1dbc77fd189",
   "effect/prefab/role/rwi/arc_storm_rise_b.ab": "dd9f9080d03c6a2da6f1d05b2fe899686e257a69325503eec2db8bfc2555a9d6",
   "effect/prefab/role/rwi/arc_torrent_crystal.ab": "8884e4b188c884c3820b051fdc60c4a6042902e8ffd6f380e4cc08a439b195eb",
@@ -17401,7 +17401,7 @@
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief450_2nd.ab": "b7d7ef8c1e97578548bc0bf554afe87b8fa5a703349d59e294377b099d6b4900",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief450_3rd.ab": "8361e62fb83c3c6da9dc476bdb2c758089c2f8338bb1062f83b36c836a3aa435",
   "effect/prefab/role/rwi/rwiskin_05/arc_shard.ab": "dce42afc207da7d69e9f97d5009ba510be25b4a2a6f80013c1b8c8b456833408",
-  "effect/prefab/role/rwi/rwiskin_05/arc_snowfall_streak.ab": "91314c2a86d7ef1965fbb1fb33b76ba7c9173814c38fddf4f0e5004382880ea5",
+  "effect/prefab/role/rwi/rwiskin_05/arc_snowfall_streak.ab": "c9492947777d9cce38cfa81a5592a262d36a3eb191f90478f29d0773c623cf65",
   "effect/prefab/role/rwi/rwiskin_05/arc_storm_rise_a.ab": "c916236bb6921667e94edeac4b96e89d2664d7aa295bbe09de4aab8c61d05f6d",
   "effect/prefab/role/rwi/rwiskin_05/arc_storm_rise_b.ab": "6620ad3ae805ee39a267f1a1f5f065d57a80621392de7b943e36989793356302",
   "effect/prefab/role/rwi/rwiskin_05/arc_torrent_crystal.ab": "53bd91d87c27c05151be14de212169ff3e248d79a2fb85b60cc1dcb0e8a9f98a",

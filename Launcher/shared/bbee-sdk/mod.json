@@ -6,7 +6,8 @@
  "description": "Runtime hooks other mods rely on: sprite aliasing (mods declare \"spriteAliases\" so a new tactic/potential id can reuse an existing icon), and the generated ModRegistry (require(\"Example\").ModRegistry: mods, spriteAlias, gameBuild). v0.2: textureAliases (LoadTexture + texture metrics lookup). 0.3.2: HUD sprite registry (globalThis.BB_HUD_SPRITES = {spriteName: atlasName}); the battle HUD's talent list preloads them from the named atlas before each Refresh, so a mod character's talent icon shows (the widget asks only the stock IconTalent atlas). 0.3.3: a late per-frame HUD hook: globalThis.BB_HUD_TICKS = {id: function(ui, dt)} runs from BattleUI.LateUpdateWindow (after every C# Update, so C# redraws never overwrite a mod's HUD change on screen); until LateUpdateWindow has been seen, BattleUI_Standalone.UpdateWindow runs them as a fallback. Each tick's first error is logged once.",
  "gameBuilds": [
   "24904166",
-  "25627491"
+  "25627491",
+  "26263712"
  ],
  "dependencies": [],
  "content": {

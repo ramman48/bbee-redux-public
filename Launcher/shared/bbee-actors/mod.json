@@ -1,12 +1,13 @@
 {
  "id": "bbee-actors",
  "name": "BBEE Actors (added-character plumbing)",
- "version": "0.2.1",
+ "version": "0.3.1",
  "author": "BBEE modding project",
- "description": "Shared plumbing for added playable characters (ActorId >= 190000): never locked, auto-granted on the prototype select screen, Potential pools via BaseActorConf.PotentialPoolId, economy-table fallbacks to a donor actor (globalThis.BB_ACTOR_DONOR), per-character persistent trigger rows (globalThis.BB_SELF_TRIGGERS). Lifted from ex-ragna 0.5.0 without its EX styling. 0.2.1: the hero-select intro-movie button is disabled for mod characters (ids >= 190000 have no HeroSelect/*_Introduction_<id>.usm).",
+ "description": "Shared plumbing for added playable characters (ActorId >= 190000): never locked, auto-granted on the prototype select screen, Potential pools via BaseActorConf.PotentialPoolId, economy-table fallbacks to a donor actor (globalThis.BB_ACTOR_DONOR), per-character persistent trigger rows (globalThis.BB_SELF_TRIGGERS, on every player of that character, co-op included). Lifted from ex-ragna 0.5.0 without its EX styling. 0.2.1: the hero-select intro-movie button is disabled for mod characters (ids >= 190000 have no HeroSelect/*_Introduction_<id>.usm). 0.3.0: the hero registry (globalThis.BB_HERO_REGISTER, BB_HEROES) and the auto-grant on the two-player co-op select screen. 0.3.1: an added character's own Boss Rush reward row wins over its donor's.",
  "gameBuilds": [
   "25478197",
-  "25627491"
+  "25627491",
+  "26263712"
  ],
  "dependencies": [
   "bbee-sdk"
@@ -25,7 +26,7 @@
       "null==e?(r={id:t.actorId},(e=new ResourceData_1.BaseActor(r)).fake=!(t.actorId>=190000)):e.fake=!1,"
      ]
     ],
-    "append": "/* bbee-actors: donor actor per added character (economy tables keyed by a stock actor); trigger rows that ride on one added character only (BB_SELF_TRIGGERS[actorId] = [trigger Idx, ...]) */\ntry{globalThis.BB_ACTOR_DONOR=globalThis.BB_ACTOR_DONOR||{};globalThis.BB_SELF_TRIGGERS=globalThis.BB_SELF_TRIGGERS||{}}catch(e){}"
+    "append": "/* bbee-actors: donor actor per added character (economy tables keyed by a stock actor); trigger rows that ride on one added character only (BB_SELF_TRIGGERS[actorId] = [trigger Idx, ...]) */\ntry{globalThis.BB_ACTOR_DONOR=globalThis.BB_ACTOR_DONOR||{};globalThis.BB_SELF_TRIGGERS=globalThis.BB_SELF_TRIGGERS||{}}catch(e){}\n/* bbee-actors 0.3.0: one registry entry per added character (docs\\characters\\template\\DESIGN.md section 3) */\ntry{var G_=globalThis;G_.BB_HEROES=G_.BB_HEROES||{};G_.BB_HERO_REGISTER=function(id,h){G_.BB_HEROES[id]=h;h.donor&&((G_.BB_ACTOR_DONOR=G_.BB_ACTOR_DONOR||{})[id]=h.donor);h.selfTriggers&&((G_.BB_SELF_TRIGGERS=G_.BB_SELF_TRIGGERS||{})[id]=h.selfTriggers);h.backdrop&&((G_.BB_TRYOUT_BACKDROP=G_.BB_TRYOUT_BACKDROP||{})[id]=h.backdrop);if(h.hudSprites){var S_=G_.BB_HUD_SPRITES=G_.BB_HUD_SPRITES||{};for(var k in h.hudSprites)S_[k]=h.hudSprites[k]}return h};G_.BB_HERO=function(id){return G_.BB_HEROES[id]||null}}catch(e){}"
    },
    {
     "file": "data/js/core/PotentialUtil",
@@ -164,7 +165,7 @@
     "replace": [
      [
       "Xlsx_1.Xlsx.BossRushRewardConf.Get(t.server.id)",
-      "Xlsx_1.Xlsx.BossRushRewardConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id))"
+      "(Xlsx_1.Xlsx.BossRushRewardConf.Get(t.server.id,3)||Xlsx_1.Xlsx.BossRushRewardConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id)))"
      ]
     ]
    },
@@ -173,7 +174,7 @@
     "replace": [
      [
       "Xlsx_1.Xlsx.BossRushRewardConf.Get(t.server.id)",
-      "Xlsx_1.Xlsx.BossRushRewardConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id))"
+      "(Xlsx_1.Xlsx.BossRushRewardConf.Get(t.server.id,3)||Xlsx_1.Xlsx.BossRushRewardConf.Get((t.server.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.server.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.server.id)?.potentialPoolId||t.server.id):t.server.id)))"
      ]
     ]
    },
@@ -182,11 +183,11 @@
     "replace": [
      [
       "Xlsx_1.Xlsx.BossRushRewardConf.Get(t.id)",
-      "Xlsx_1.Xlsx.BossRushRewardConf.Get((t.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.id)?.potentialPoolId||t.id):t.id))"
+      "(Xlsx_1.Xlsx.BossRushRewardConf.Get(t.id,3)||Xlsx_1.Xlsx.BossRushRewardConf.Get((t.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[t.id]||Xlsx_1.Xlsx.BaseActorConf.Get(t.id)?.potentialPoolId||t.id):t.id)))"
      ],
      [
       "Xlsx_1.Xlsx.BossRushRewardConf.Get(o.id)",
-      "Xlsx_1.Xlsx.BossRushRewardConf.Get((o.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[o.id]||Xlsx_1.Xlsx.BaseActorConf.Get(o.id)?.potentialPoolId||o.id):o.id))"
+      "(Xlsx_1.Xlsx.BossRushRewardConf.Get(o.id,3)||Xlsx_1.Xlsx.BossRushRewardConf.Get((o.id>=190000?(globalThis.BB_ACTOR_DONOR&&globalThis.BB_ACTOR_DONOR[o.id]||Xlsx_1.Xlsx.BaseActorConf.Get(o.id)?.potentialPoolId||o.id):o.id)))"
      ]
     ]
    },
@@ -223,6 +224,29 @@
      [
       "addPersistantSelfPlayerTriggers(e){this.addPersistantPlayerTriggers(this.Battle.PlayerSelf,e)}",
       "addPersistantSelfPlayerTriggers(e){var _b=this.Battle.PlayerSelf&&this.Battle.PlayerSelf.BaseID,_t=globalThis.BB_SELF_TRIGGERS&&globalThis.BB_SELF_TRIGGERS[_b];this.addPersistantPlayerTriggers(this.Battle.PlayerSelf,_t?e.concat(_t):e)}"
+     ],
+     [
+      "addPersistantPlayerTriggers(e,t){for(var a of t){",
+      "addPersistantPlayerTriggers(e,t){try{var _x=e&&t&&globalThis.BB_SELF_TRIGGERS&&globalThis.BB_SELF_TRIGGERS[e.BaseID];_x&&(t=t.concat(_x.filter(function(i){if(t.indexOf(i)>=0)return!1;try{return!e.TriggerMgr.FindTrigger(i)}catch(z){return!0}})))}catch(z){}for(var a of t){"
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battle/BattleTryout",
+    "appendFile": "files/tryout_backdrop.js",
+    "replace": [
+     [
+      "var n=a.transform.Find(r.BaseID.toFixed(0));if(n)for(",
+      "var n=a.transform.Find(r.BaseID.toFixed(0));n||(n=globalThis.BB_TRYOUT_BACKDROP_MAKE&&globalThis.BB_TRYOUT_BACKDROP_MAKE(a,r.BaseID));if(n)for("
+     ]
+    ]
+   },
+   {
+    "file": "data/js/gameplay/battlebreedprepare/SceneUICoopHeroSelect",
+    "replace": [
+     [
+      "PrepareData(){this.listHero=ActorUtil_1.default.GetListSeedHero()",
+      "PrepareData(){try{var P_=require(\"Server/Model/Player\").ModelPlayer.Instance,pb_=require(\"Gen/pbdef\");Xlsx_1.Xlsx.BaseActorConf.All.forEach(function(c){c.actorId>=190000&&P_.GetBaseActorCount(c.actorId)<=0&&P_.AddResource(pb_.EResourceChangeReason.Gm,0,pb_.STResource.create({type:pb_.EResourceType.BaseActor,id:c.actorId,count:1}))});try{ResourceChange_1.RC.UpdateChanges(P_.GetChangePack().list)}catch(y){}}catch(x){}this.listHero=ActorUtil_1.default.GetListSeedHero()"
      ]
     ]
    }

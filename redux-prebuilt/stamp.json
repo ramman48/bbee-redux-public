@@ -1,6 +1,6 @@
 {
  "gameBuild": "26424974",
- "loader": "list 3fb86a587e55b9a8fa000d5cfb6bf69185a03eb3",
+ "loader": "list 03250808e4e47e9f60eab41188481833c36de1d2",
  "order": [
   "bbee-actors",
   "bbee-inspector",
@@ -22,23 +22,23 @@
  ],
  "settings": {},
  "mods": {
-  "bbee-sdk": "8bae69d439651b63f0d14dfe5f6719fa0898e52d",
-  "bbee-actors": "ece34c3db52c225a3d3cb0e57e792531739e6134",
-  "bbee-inspector": "65725c7a79a596bf8e26d5fc29ecf01b5ed455b8",
-  "zenith-live": "076a518b761ca36382beb0925e21da04144c45bd",
-  "boons-plus": "88cf62fd9f3ad848e858a7193fac263cf0aeb392",
-  "ex-common": "d23c7c4c87165427594170284172286aa47c551f",
-  "ex-ragna": "2bfa53fc7389b73ade84c687d9945928870fde5e",
-  "char-nine": "394092a4c2363698fef445e672912d5d95e653e9",
-  "char-izanami": "1db267515980b720ce84770eac876b0a20a6a091",
-  "char-reki": "a25d59cc65a66ccf58a076633942c808cdfba7ab",
-  "char-susanoo": "9d29804c32d75d133dfd8a560f5f5aaf1844541f",
-  "entropy-grim": "5f3613de295f835247da69162b2437b0ead0c22a",
-  "char-ruby": "a7bdb7585d72d7d294292349a92e4db9d66ff641",
-  "char-weiss": "87a76c6708c00da9c5cd27ffd8037b900fbf5f74",
-  "char-swiftmaster": "60e25e9893336dc5517d7bd566957fab3ac32ee3",
-  "redux-menus": "93c967b1d2cfabe0f8731b6756a8ca2bb905fe2f",
-  "palette-maker": "4904d7dadb8c23984ba3d9c14eb42d8af35797c2"
+  "bbee-sdk": "b6ad0e8f498c31355d15321c366977b9613c42d7",
+  "bbee-actors": "6eaf6b9457f303c2f67092d9f652b49b585ee2bd",
+  "bbee-inspector": "e1f49182b18136a7cfc7b136d37c14349abff635",
+  "zenith-live": "cbf642e8c552d7574265c393c5a65af739cec84c",
+  "boons-plus": "b2badd895df188b48f731ce72af417b54093db04",
+  "ex-common": "9867cdceb113f2ebbe914eba50e6741a684f224c",
+  "ex-ragna": "eee22f4007a57d20055d510011fee61902b10684",
+  "char-nine": "70a01dd3e9541844ab286bcefde68ecb296629b4",
+  "char-izanami": "99c7401614ef32c38283cf561ca42c25fcaed4f9",
+  "char-reki": "77eccb658226e6849b9ab42c3c461e18ca67061e",
+  "char-susanoo": "4dd1c8dc518a8523011b0df95171625b443c9ad6",
+  "entropy-grim": "f8622325ec189d66dcb60a55e11445266086e5a5",
+  "char-ruby": "d5a1ff70321a14fd981a7f98049dec85c03b5c12",
+  "char-weiss": "36d04ba606782b6b0145ca73b2744ea1a0d49e38",
+  "char-swiftmaster": "16f658f0d144b43aad55560cc5e561c8d544ed0d",
+  "redux-menus": "e56fbfa54080d8968a95cbee4b9aa19f55379e2b",
+  "palette-maker": "39acb14d5434dfb00bb8021d27d3b3dd054de868"
  },
  "writes": {
   "boons-plus": [],
@@ -55,7 +55,7 @@
   "redux-menus": [],
   "palette-maker": []
  },
- "made": "2026-11-15 00:47:38",
+ "made": "2026-11-15 04:54:20",
  "layOrder": [
   "boons-plus",
   "ex-common",

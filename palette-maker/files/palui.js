@@ -265,7 +265,7 @@
     });
 
     var acts = [["BtnSave", "SAVE", function () { W.save(); }, 1], ["BtnWear", "WEAR", function () { W.wear(); }], ["BtnBase", "BASE PALETTE", function () { W.base(); }],
-      ["BtnCopy", "COPY CODE", function () { W.copy(); }], ["BtnExport", "EXPORT FILE", function () { W.exportFile(); }], ["BtnDelete", "DELETE", function () { W.del(); }], ["BtnClose", "CLOSE", function () { if (W.studio()) status(keysHint(true)); else W.close(); }]];
+      ["BtnCopy", "COPY CODE", function () { W.copy(); }], ["BtnExport", "EXPORT FILE", function () { W.exportFile(); }], ["BtnDelete", "DELETE", function () { W.del(); }], ["BtnClose", "CLOSE", function () { if (W.studio()) { W.holdT = 0; W.holdBlock = true; W.leave(); } else W.close(); }]];
     acts.forEach(function (a) {
       var e = el(find(mk, "Bar/" + a[0]), a[2], { size: 19, gold: !!a[3] }); label(e, a[1]); if (a[0] == "BtnClose") W.bClose = e;
       if (a[0] == "BtnDelete") { if (e.glowI) tint(e.glowI, [1, 0.3, 0.26]); if (e.onI) tint(e.onI, [1, 0.42, 0.36]); }   // the one button that loses work glows red
@@ -562,7 +562,7 @@
       if (W.picking) { W.hidden = false; W.pal = null; W.hPage = 0; W.heroList(); log("hero choice opened"); return; }
       M.editing = true; M.hideHud(true);
       if (W.studio()) { recentre(a); if (ZM.ryId === undefined) findRightY(); W.zoomTo(ZM.last != null ? ZM.last : ZM.def); }
-      label(W.bClose, W.studio() ? (W.mode == "stick" ? "HOLD B TO LEAVE" : "HOLD TO LEAVE") : "CLOSE");
+      label(W.bClose, W.studio() ? (W.mode == "stick" ? "HOLD B TO LEAVE" : "LEAVE") : "CLOSE");
       viewLabels();
       if (W.hidden && W.pal && W.pal.hero == a.BaseID) {     // back from trying moves: the palette as it was left
         W.hidden = false; W.list(); W.refresh(); status(keysHint(false)); log("back for hero " + a.BaseID); return;
@@ -591,9 +591,9 @@
   W.studio = function () { return !!M.studio && !W.picking; };
   function keysHint(leaving) {
     var pad = W.mode == "stick" || joyActive(), start = pad ? "Start" : "Esc", b = pad ? "B" : "Backspace";
-    return leaving ? "Hold " + b + " to leave Try Out. " + start + " or TRY MOVES hides the maker so you can try your moves."
+    return leaving ? "Hold " + b + " or click LEAVE to leave the Colour Maker. " + start + " or TRY MOVES hides the maker so you can try your moves."
       : pad ? "Point at the hero and press A to pick its part. Start: try moves. Right stick: zoom. Hold B: leave."
-      : "Click the hero to pick its part. Esc: try moves. F: sit still. L: backdrop. H: type a colour. Wheel: zoom.";
+      : "Click the hero to pick its part. Esc: try moves. F: sit still. L: backdrop. H: type a colour. Wheel: zoom. LEAVE or hold Backspace: leave.";
   }
   // Start (Esc) or TRY MOVES in the dressing room: hide the maker to try moves in the palette being made, and bring it
   // back. One press can reach here twice (read by the window and by Try Out's pause hook): 0.35 s apart counts once.
