@@ -25,6 +25,20 @@ _PLAIN = [
      "No connection to the update server. Check your internet, then press CHECK NOW in Options."),
     (r"is running\. Close the game|game is open|close it completely|Close the game completely",
      "The game is open. Close it completely (check the taskbar), then press the button again."),
+    (r"Couldn't find the game|Could not find the game",
+     "The Terminal could not find the game by itself. In Steam, right-click BlazBlue Entropy Effect > Manage > Browse "
+     "local files to see its folder. Then Options > General > FIND THE GAME BY HAND > CHOOSE, pick that folder, and "
+     "press the button again."),
+    (r"mod-character references would remain|couldn't be removed",
+     "Your save holds data for a character that is no longer installed, and the Terminal could not take it out. "
+     "Nothing was changed and your save is backed up. Press MAKE REPORT (Options > Saves and reports) and send the "
+     "report on Discord."),
+    (r"missing mod '",
+     "One of your mods did not finish downloading. Press CHECK NOW in Options to download it again, then press the "
+     "button again."),
+    (r"building tools/hca failed|\.NET SDK",
+     "A mod that is not part of this release tried to build its sounds. Press CHECK NOW in Options so the Terminal "
+     "updates and switches it off, then press the button again."),
     (r"No space left|WinError 112|Errno 28|disk is full|not enough space",
      "The disk is full. Free some space on it (a few GB), then press the button again."),
     (r"PermissionError|Access is denied|WinError 5\b|WinError 32\b|being used by another process|Errno 13",
@@ -49,6 +63,9 @@ def plain_error(text):
     """the sentence a person reads first when a job stops; '' when there is nothing to explain"""
     text = str(text or "")
     if not text.strip(): return ""
+    # every install says "BlazBlue Centralfiction not found: ... (nothing is missing)": not a fault, and it must not
+    # make the "a file is missing" hint come up for every other stop
+    text = "\n".join(l for l in text.splitlines() if "nothing is missing" not in l)
     for pattern, said in _PLAIN:
         if re.search(pattern, text): return said
     return "The job stopped. Press MAKE REPORT (Options > Saves and reports) and send the report on Discord."

@@ -73,9 +73,37 @@ def steam_libraries():
 
 
 def find_game():
-    for lib in steam_libraries():
+    def has(g): return bool(g) and os.path.exists(os.path.join(g, EXE))
+    libs = steam_libraries()
+    # the usual library folders on every drive (a library Steam's own list does not name: a moved or copied library,
+    # a Steam the registry does not know)
+    for d in "CDEFGHIJKLMNOPQRSTUVWXYZ":
+        root = d + ":" + os.sep
+        if not os.path.isdir(root): continue
+        for rel in ("SteamLibrary", "Steam", "Games\\Steam", "Games\\SteamLibrary", "Program Files (x86)\\Steam", "Program Files\\Steam"):
+            p = os.path.join(root, rel)
+            if os.path.isdir(os.path.join(p, "steamapps")) and p.lower() not in [l.lower() for l in libs]: libs.append(p)
+    for lib in libs:
         g = os.path.join(lib, "steamapps", "common", FOLDER)
-        if os.path.exists(os.path.join(g, EXE)): return g
+        if has(g): return g
+        # the folder name Steam itself recorded for the game
+        try:
+            acf = open(os.path.join(lib, "steamapps", "appmanifest_%s.acf" % APPID), encoding="utf-8", errors="replace").read()
+            m = re.search(r'"installdir"\s+"([^"]+)"', acf)
+            if m and has(os.path.join(lib, "steamapps", "common", m.group(1))): return os.path.join(lib, "steamapps", "common", m.group(1))
+        except OSError: pass
+    # Windows' own record of the Steam game
+    try:
+        import winreg
+        for hive in (winreg.HKEY_LOCAL_MACHINE, winreg.HKEY_CURRENT_USER):
+            for key in (r"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App " + APPID,
+                        r"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Steam App " + APPID):
+                try:
+                    with winreg.OpenKey(hive, key) as k:
+                        g = os.path.normpath(winreg.QueryValueEx(k, "InstallLocation")[0])
+                        if has(g): return g
+                except OSError: pass
+    except ImportError: pass
     return None
 
 
@@ -127,8 +155,9 @@ def setup(args):
     else:
         g = args[0] if args else find_game()
         if not g or not os.path.exists(os.path.join(g, EXE)):
-            fail("Couldn't find the game. Run:  python entry_point.py setup \"<your game folder>\"\n"
-                 "(the folder that contains %s; in Steam: right-click the game > Manage > Browse local files)" % EXE)
+            fail("Couldn't find the game. In the Terminal: Options > General > FIND THE GAME BY HAND, and choose the folder\n"
+                 "that contains %s (in Steam: right-click the game > Manage > Browse local files).\n"
+                 "Without the Terminal's window:  python entry_point.py setup \"<your game folder>\"" % EXE)
         if os.path.lexists(GAME): fail("There is already a 'game' entry in %s that doesn't point to the game. Delete it and run setup again." % ROOT)
         r = subprocess.run(["cmd", "/c", "mklink", "/J", GAME, g], capture_output=True, text=True)
         if r.returncode != 0 or not os.path.exists(os.path.join(GAME, EXE)):
