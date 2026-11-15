@@ -261,7 +261,7 @@ def clean(data):
     if bp: new["ModelPlayerNewBaseActorPack"] = edit(bp, 1, lambda pack: prune(pack, {1}, lambda e: custom(key_of(e) or 0), removed, "character"))
     di = msgs.get("ModelPlayerNewDungeonInfo")
     if di: new["ModelPlayerNewDungeonInfo"] = edit(di, 1, lambda dg: prune_packed(edit(dg, 5, lambda rec:
-            prune(rec, {3, 8}, lambda e: custom(key_of(e) or 0), removed, "run record")), 8, removed, "hidden-character entry"))
+            prune(rec, {3, 8, 10}, lambda e: custom(key_of(e) or 0), removed, "run record")), 8, removed, "hidden-character entry"))
     hr = msgs.get("ModelPlayerNewHeatRecord")
     if hr: new["ModelPlayerNewHeatRecord"] = edit(hr, 1, lambda h: prune(h, {3, 5, 7}, lambda e: custom(key_of(e) or 0), removed, "heat record"))
     # Found 2026-10-11: a tester who had played Trials and Boss Rush as a mod character could not uninstall
