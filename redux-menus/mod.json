@@ -2,7 +2,7 @@
   "id": "redux-menus",
   "name": "Redux Menus",
   "author": "BBEE modding project",
-  "version": "0.1.24",
+  "version": "0.1.25",
   "description": "Redux's menus as their own mod, so the base game can still be tested without them. It replaces the character select, the Colours, Mind Crystals, Partner and Legacy screens, the Entropy menu, the pause menu and the dev menu, and adds the lobby screen that Four players online runs on. The character select keeps every stock feature: locks and how to get a hero, unlocking, the DLC store, Intel and Video. Switch the mod off and the stock screens come back. Four players online needs it on. Every DLC ownership check is unchanged. This is an unofficial mod, in development for the test group.",
   "gameBuilds": [
     "25627491",

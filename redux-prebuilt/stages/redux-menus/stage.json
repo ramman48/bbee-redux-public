@@ -1,6 +1,6 @@
 {
  "mod": "redux-menus",
- "version": "0.1.24",
+ "version": "0.1.25",
  "files": {
   "effect/prefab/ui/common/reduxentropyswirlbody.ab": "604e5ea59f10f6c0996600a780099f0b4186804a",
   "effect/prefab/ui/common/reduxentropyswirlflow.ab": "69de38e308d514d917b94d93b576e55683abe305",
@@ -133,7 +133,7 @@
   ],
   "guids": []
  },
- "took": 3.4,
- "stamp": "e56fbfa54080d8968a95cbee4b9aa19f55379e2b",
- "made": "2026-11-15 05:11:17"
+ "took": 3.3,
+ "stamp": "617a3a52c78b2aeef533d156ff448b705ab64f59",
+ "made": "2026-11-15 05:23:48"
 }
