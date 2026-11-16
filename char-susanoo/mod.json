@@ -2,7 +2,7 @@
  "id": "char-susanoo",
  "name": "Susanoo",
  "author": "BBEE modding project",
- "version": "0.1.11",
+ "version": "0.1.13",
  "description": "Susanoo (ActorId 193301) as his own playable character, built on EX Hakumen's Susanoo form: always in that form, his SP gauge as a super gauge, the beam as his Ultra, Retribution as his guard, 28 Potentials over nine tabs. Unofficial; not affiliated with 91Act or Arc System Works.",
  "gameBuilds": [
   "25598842",
