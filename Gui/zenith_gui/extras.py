@@ -25,6 +25,9 @@ _PLAIN = [
      "No connection to the update server. Check your internet, then press CHECK NOW in Options."),
     (r"is running\. Close the game|game is open|close it completely|Close the game completely",
      "The game is open. Close it completely (check the taskbar), then press the button again."),
+    (r"not a version the mods are made for|game build unknown",
+     "This copy of the game is not the Steam version the mods are made for. Update the game in Steam, or choose the "
+     "Steam copy in Options > General > FIND THE GAME BY HAND, then press the button again."),
     (r"Couldn't find the game|Could not find the game",
      "The Terminal could not find the game by itself. In Steam, right-click BlazBlue Entropy Effect > Manage > Browse "
      "local files to see its folder. Then Options > General > FIND THE GAME BY HAND > CHOOSE, pick that folder, and "

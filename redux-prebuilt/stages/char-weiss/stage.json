@@ -1,6 +1,6 @@
 {
  "mod": "char-weiss",
- "version": "0.4.10",
+ "version": "0.4.11",
  "files": {
   "actor/animation/role/rwi_air_turn.ab": "68bb3f9180c8726a86f791b53d27d3a5eaa8e78b",
   "actor/animation/role/rwi_airdash.ab": "e8b2846b44da9ceb7f4abc817f93875252d230f6",
@@ -17241,7 +17241,7 @@
    ]
   ]
  },
- "took": 4.7,
- "stamp": "36d04ba606782b6b0145ca73b2744ea1a0d49e38",
- "made": "2026-11-15 05:23:48"
+ "took": 5.0,
+ "stamp": "cff4a54cc5f505c86bb04335b51441e8b4cb2042",
+ "made": "2026-11-15 18:50:02"
 }

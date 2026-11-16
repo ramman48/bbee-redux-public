@@ -1,6 +1,6 @@
 {
  "mod": "char-izanami",
- "version": "0.6.8",
+ "version": "0.6.9",
  "files": {
   "actor/animation/role/mi_born2_timeline.ab": "648d059ea684934e7a2e6f014ad06926511c093b",
   "actor/animation/role/mi_born_timeline.ab": "0987571841dce1340c851eda0ecbb1805d31a795",
@@ -2687,6 +2687,6 @@
   "guids": []
  },
  "took": 0.3,
- "stamp": "99c7401614ef32c38283cf561ca42c25fcaed4f9",
- "made": "2026-11-15 05:23:48"
+ "stamp": "d2b433c2d30ea3edb426524683cb0054d44515bd",
+ "made": "2026-11-15 18:50:02"
 }

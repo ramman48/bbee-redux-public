@@ -72,9 +72,36 @@ def steam_libraries():
     return out
 
 
+def linux_steam_libraries(drive=None):
+    """Steam's libraries on a Linux PC, seen from Wine or Proton (the Linux disk is drive Z:): each user's Steam folder
+    (native, the Debian link, Flatpak, Snap) and the libraries its list names, their Linux paths turned into Z: paths."""
+    drive = drive or os.environ.get("ZENITH_LINUX_ROOT") or "Z:\\"
+    home = os.path.join(drive, "home")
+    if not os.path.isdir(home): return []
+    out = []
+    def add(p):
+        if os.path.isdir(os.path.join(p, "steamapps")) and p.lower() not in [o.lower() for o in out]: out.append(p)
+    try: users = os.listdir(home)
+    except OSError: users = []
+    for u in users:
+        for rel in (".steam/steam", ".steam/root", ".local/share/Steam", ".steam/debian-installation",
+                    ".var/app/com.valvesoftware.Steam/.local/share/Steam", ".var/app/com.valvesoftware.Steam/.steam/steam",
+                    "snap/steam/common/.local/share/Steam"):
+            p = os.path.join(home, u, *rel.split("/"))
+            add(p)
+            vdf = os.path.join(p, "steamapps", "libraryfolders.vdf")
+            if os.path.exists(vdf):
+                for m in re.finditer(r'"path"\s+"([^"]+)"', open(vdf, encoding="utf-8", errors="replace").read()):
+                    lp = m.group(1)
+                    if lp.startswith("/"): add(os.path.join(drive, *[x for x in lp.split("/") if x]))
+    return out
+
+
 def find_game():
     def has(g): return bool(g) and os.path.exists(os.path.join(g, EXE))
     libs = steam_libraries()
+    for p in linux_steam_libraries():
+        if p.lower() not in [l.lower() for l in libs]: libs.append(p)
     # the usual library folders on every drive (a library Steam's own list does not name: a moved or copied library,
     # a Steam the registry does not know)
     for d in "CDEFGHIJKLMNOPQRSTUVWXYZ":
@@ -117,12 +144,23 @@ def find_bbcf():
 
 
 def installed_build():
-    """the Steam build id of the linked game, or None if Steam's app manifest isn't next to it"""
+    """the Steam build id of the linked game: from Steam's app manifest next to it, else from its GameAssembly.dll
+    (pipeline.build_from_files), else None"""
     try:
         acf = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(GAME))), "appmanifest_%s.acf" % APPID)
         return re.search(r'"buildid"\s+"(\d+)"', open(acf, encoding="utf-8", errors="replace").read()).group(1)
     except Exception:
-        return None
+        pass
+    try:
+        import hashlib
+        digest = hashlib.sha1(open(os.path.join(os.path.realpath(GAME), "GameAssembly.dll"), "rb").read()).hexdigest()
+        base = os.path.join(ROOT, "tools", "schema")
+        for b in sorted(os.listdir(base), reverse=True):
+            p = os.path.join(base, b, "gameassembly.sha1")
+            if os.path.exists(p) and open(p, encoding="utf-8").read().strip() == digest: return b
+    except Exception:
+        pass
+    return None
 
 
 def setup(args):
@@ -164,7 +202,8 @@ def setup(args):
             fail("Couldn't create the folder link (%s). Put this folder on the same drive as your user folder, or run as administrator." % (r.stderr or r.stdout).strip())
         say("Game folder link  created -> " + g)
     if not os.path.exists(os.path.join(os.path.realpath(GAME), "..", "..", "appmanifest_%s.acf" % APPID)):
-        say("Note: Steam's app manifest wasn't found next to the game; the build check will say '?'.")
+        say("Note: Steam's app manifest wasn't found next to the game; the build is read from the game's own files"
+            + (" (build %s)." % installed_build() if installed_build() else ": they match no build the mods are made for."))
     else:
         say("Game build  " + str(installed_build()))
     need_closed()

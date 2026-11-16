@@ -248,6 +248,22 @@ def where_custom(data):
     return out
 
 
+def drop_keyed(b, removed, label, depth=0):
+    """b with every map entry keyed by a mod character removed, at any depth: a length-delimited field whose submessage
+    starts with a varint field 1 holding the id. Only parts that hold such an id are rewritten (2026-11-15)."""
+    out = bytearray()
+    for f, w, v, raw in fields(b):
+        if w == 2 and v:
+            try: inner = fields(v)
+            except Exception: inner = None
+            if inner and inner[0][0] == 1 and inner[0][1] == 0 and custom(inner[0][2]):
+                removed.append((label, f, inner[0][2])); continue
+            if inner and depth < 12 and scan_custom(v):
+                nv = drop_keyed(v, removed, label, depth + 1); out += wv((f << 3) | 2) + wv(len(nv)) + nv; continue
+        out += raw
+    return bytes(out)
+
+
 def clean(data):
     """-> (new decompressed DataSave, report lines). Raises if a custom id would remain."""
     removed, notes = [], []
@@ -269,8 +285,10 @@ def clean(data):
     cr = msgs.get("ModelPlayerNewRecord")            # .1 record > 3: per-character Trial record, keyed by character
     if cr: new["ModelPlayerNewRecord"] = edit(cr, 1, lambda r: prune(r, {2, 3}, lambda e: custom(key_of(e) or 0), removed, "Trial record"))
     br = msgs.get("ModelPlayerNewBossRushRecord")    # .1 > 1 > 2: per-character Boss Rush record, keyed by character
-    if br: new["ModelPlayerNewBossRushRecord"] = edit(br, 1, lambda a: edit(a, 1, lambda r:
-            prune(r, {2}, lambda e: custom(key_of(e) or 0), removed, "Boss Rush record")))
+    # SMBossRushRecord: 1 singleRecord, 2 multiRecord (co-op, found 2026-11-15), both a Record keyed by character in field 2
+    if br: new["ModelPlayerNewBossRushRecord"] = edit(br, 1, lambda a: edit(edit(a, 1, lambda r:
+            prune(r, {2}, lambda e: custom(key_of(e) or 0), removed, "Boss Rush record")), 2, lambda r:
+            prune(r, {2}, lambda e: custom(key_of(e) or 0), removed, "co-op Boss Rush record")))
     bc = msgs.get("ModelBattleChallenge")            # .2 info > 1 records[id] > 2 BattleChallengeRecord: 1 finishActorId, 3 perfectFinishActorId
     if bc and pattern_hits(bc):                      # the Trial stays finished (2 finishTimes); only the character leaves its lists
         new["ModelBattleChallenge"] = edit(bc, 2, lambda info: each(info, 1, lambda rec: edit(rec, 2, lambda r:
@@ -314,6 +332,18 @@ def clean(data):
             out += wv((5 << 3) | 2) + wv(len(sm)) + bytes(sm); continue
         out += raw
     left = scan_custom(bytes(out)) + pattern_hits(bytes(out))
+    if left:   # the last pass: entries keyed by a mod character in a place not named above
+        swept = bytearray()
+        for f, w, v, raw in fields(bytes(out)):
+            if f == 2 and w == 2 and scan_custom(v):
+                body = bytearray()
+                for f2, w2, v2, raw2 in fields(v):
+                    if f2 == 2 and w2 == 2: nv = drop_keyed(v2, removed, "record"); body += wv((2 << 3) | 2) + wv(len(nv)) + nv
+                    else: body += raw2
+                swept += wv((2 << 3) | 2) + wv(len(body)) + body
+            else: swept += raw
+        out = swept
+        left = scan_custom(bytes(out)) + pattern_hits(bytes(out))
     if left: raise RuntimeError("%d mod-character references would remain, in %s; save NOT changed"
                                 % (left, ", ".join(where_custom(bytes(out))[:6]) or "a place not found"))
     rep = ["removed %s (id %s)" % (lab, k) for lab, f, k in removed] + notes

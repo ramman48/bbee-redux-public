@@ -1,6 +1,6 @@
 {
  "mod": "char-nine",
- "version": "1.0.8",
+ "version": "1.0.9",
  "files": {
   "actor/animation/role/ninx_2a.ab": "e08738f31963e40647790e1500659abce1c03e3f",
   "actor/animation/role/ninx_2b.ab": "d2f27f1b4b250308f6dd49d245ff06e50613b045",
@@ -167,7 +167,7 @@
   "effect/prefab/monster/ph/nine/magic_cca_atk_04_n.ab": "c23c693c4b97ced643d154888acb13afe88faf66",
   "effect/prefab/monster/ph/nine/magic_cca_atk_05a_n.ab": "1e70351d2fb14c85c5a599ffad639f135a7d642f",
   "effect/prefab/monster/ph/nine/magic_cca_atk_06_n.ab": "774b283df9679571e12a9a4b90f2c0097ec347f9",
-  "effect/prefab/monster/ph/nine/ph_a1_01_n.ab": "2841c5f06fc02032931389aae8bcaacac8932ef3",
+  "effect/prefab/monster/ph/nine/ph_a1_01_n.ab": "c6390a170f0cefc7ea46d49fbb1ee38f236f9ff2",
   "effect/prefab/monster/ph/nine/ph_a2_01_n2.ab": "23c775f0901f302ff760e6f0e4a8c8e66c74ed29",
   "effect/prefab/monster/ph/nine/ph_b1_02_n.ab": "858bccd8bfff5b8f90b989c791d108edf6766f62",
   "effect/prefab/monster/ph/nine/ph_c1_01_n2.ab": "4591edfa154f1d05c6b918d5d43c0244599e9261",
@@ -3858,7 +3858,7 @@
    ]
   ]
  },
- "took": 0.9,
- "stamp": "70a01dd3e9541844ab286bcefde68ecb296629b4",
- "made": "2026-11-15 05:23:48"
+ "took": 1.2,
+ "stamp": "69f4253dd6dc182278fc545547ddccceac6b177a",
+ "made": "2026-11-15 18:50:02"
 }

@@ -1,6 +1,6 @@
 {
  "mod": "char-susanoo",
- "version": "0.1.10",
+ "version": "0.1.11",
  "files": {
   "actor/logicdata/hsx.ab": "39519263250dccda2a64bb425c0e23793dfd7d10",
   "actor/logicdata/hsxbullet.ab": "1f56e380ae0835180b6617a39b541c9825d22e05",
@@ -10683,7 +10683,7 @@
   ],
   "guids": []
  },
- "took": 5.8,
- "stamp": "4dd1c8dc518a8523011b0df95171625b443c9ad6",
- "made": "2026-11-15 05:23:48"
+ "took": 6.0,
+ "stamp": "f82f54e37da5c6e05d197713dbd1a080a582ff3f",
+ "made": "2026-11-15 18:50:02"
 }

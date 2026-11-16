@@ -428,155 +428,6 @@
     {
      "ActorId": 201101,
      "Group": 2,
-     "Order": 1,
-     "Action": "fenshen",
-     "InputDir": 2,
-     "Input": "Skill",
-     "StartTrigger": [
-      "Start_2"
-     ],
-     "ReqTriggerId": [
-      21133
-     ],
-     "Mps": [
-      {
-       "Slot": 2,
-       "MpChange": -30.0,
-       "Limit": "-1",
-       "MpChangeLowerbound": -100.0
-      }
-     ],
-     "AllowActiveState": true,
-     "AllowGround": true,
-     "Mutelist": "\"all\":0.15,\"5\":0.01,\"3\":0.38",
-     "AutoTurn": 1,
-     "SatisfyInputkey": [
-      2
-     ],
-     "Icon": [
-      10,
-      36,
-      85,
-      73,
-      47,
-      65,
-      116,
-      108,
-      97,
-      115,
-      47,
-      73,
-      99,
-      111,
-      110,
-      72,
-      117,
-      100,
-      50,
-      48,
-      49,
-      49,
-      48,
-      49,
-      47,
-      73,
-      99,
-      111,
-      110,
-      72,
-      117,
-      100,
-      50,
-      48,
-      49,
-      49,
-      48,
-      49,
-      18,
-      16,
-      73,
-      99,
-      111,
-      110,
-      83,
-      107,
-      105,
-      108,
-      108,
-      95,
-      50,
-      48,
-      49,
-      49,
-      48,
-      49,
-      10,
-      36,
-      85,
-      73,
-      47,
-      65,
-      116,
-      108,
-      97,
-      115,
-      47,
-      73,
-      99,
-      111,
-      110,
-      72,
-      117,
-      100,
-      50,
-      48,
-      49,
-      49,
-      48,
-      49,
-      47,
-      73,
-      99,
-      111,
-      110,
-      72,
-      117,
-      100,
-      50,
-      48,
-      49,
-      49,
-      48,
-      49,
-      18,
-      19,
-      73,
-      99,
-      111,
-      110,
-      83,
-      107,
-      105,
-      108,
-      108,
-      95,
-      50,
-      48,
-      49,
-      49,
-      48,
-      49,
-      79,
-      70,
-      70
-     ],
-     "ActionpointInputTag": 2,
-     "ActionpointInputTag2": 1,
-     "$new": true
-    },
-    {
-     "ActorId": 201101,
-     "Group": 2,
      "Order": 2,
      "Action": "fenshen",
      "InputDir": 2,
@@ -724,7 +575,7 @@
     {
      "ActorId": 201101,
      "Group": 2,
-     "Order": 3,
+     "Order": 2,
      "Action": "fenshen",
      "InputDir": 2,
      "Input": "Skill",
@@ -732,7 +583,6 @@
       "Start_2"
      ],
      "ReqTriggerId": [
-      21111,
       21133
      ],
      "Mps": [
@@ -744,8 +594,10 @@
       }
      ],
      "AllowActiveState": true,
-     "AllowFlying": true,
-     "Mutelist": "\"all\":0.15,\"5\":0.01",
+     "AllowGround": true,
+     "ActdurStrict": 0.23,
+     "Timeout": 0.65,
+     "Mutelist": "\"all\":0.15,\"5\":0.01,\"3\":0.38",
      "AutoTurn": 1,
      "SatisfyInputkey": [
       2
@@ -869,7 +721,7 @@
      ],
      "ActionpointInputTag": 2,
      "ActionpointInputTag2": 1,
-     "$new": true
+     "$append": true
     },
     {
      "ActorId": 201101,
@@ -1022,15 +874,15 @@
     {
      "ActorId": 201101,
      "Group": 2,
-     "Order": 5,
-     "Action": "skill_throw_m",
-     "InputDir": 1,
+     "Order": 4,
+     "Action": "fenshen",
+     "InputDir": 2,
      "Input": "Skill",
      "StartTrigger": [
       "Start_2"
      ],
      "ReqTriggerId": [
-      21114,
+      21111,
       21133
      ],
      "Mps": [
@@ -1042,8 +894,8 @@
       }
      ],
      "AllowActiveState": true,
-     "AllowGround": true,
-     "Mutelist": "\"all\":0.5,\"5\":0.1",
+     "AllowFlying": true,
+     "Mutelist": "\"all\":0.15,\"5\":0.01",
      "AutoTurn": 1,
      "SatisfyInputkey": [
       2
@@ -1167,7 +1019,7 @@
      ],
      "ActionpointInputTag": 2,
      "ActionpointInputTag2": 1,
-     "$new": true
+     "$append": true
     },
     {
      "ActorId": 201101,
@@ -1320,26 +1172,28 @@
     {
      "ActorId": 201101,
      "Group": 2,
-     "Order": 7,
-     "Action": "atk_jianqi_45_air",
+     "Order": 6,
+     "Action": "skill_throw_m",
+     "InputDir": 1,
      "Input": "Skill",
      "StartTrigger": [
       "Start_2"
      ],
      "ReqTriggerId": [
+      21114,
       21133
      ],
      "Mps": [
       {
        "Slot": 2,
-       "MpChange": -20.0,
+       "MpChange": -30.0,
        "Limit": "-1",
        "MpChangeLowerbound": -100.0
       }
      ],
      "AllowActiveState": true,
-     "AllowFlying": true,
-     "Mutelist": "\"all\":0.18,\"5\":0.01,\"3\":0.38",
+     "AllowGround": true,
+     "Mutelist": "\"all\":0.5,\"5\":0.1",
      "AutoTurn": 1,
      "SatisfyInputkey": [
       2
@@ -1463,7 +1317,7 @@
      ],
      "ActionpointInputTag": 2,
      "ActionpointInputTag2": 1,
-     "$new": true
+     "$append": true
     },
     {
      "ActorId": 201101,
@@ -1614,8 +1468,8 @@
     {
      "ActorId": 201101,
      "Group": 2,
-     "Order": 9,
-     "Action": "atk_jianqi_0",
+     "Order": 8,
+     "Action": "atk_jianqi_45_air",
      "Input": "Skill",
      "StartTrigger": [
       "Start_2"
@@ -1632,7 +1486,9 @@
       }
      ],
      "AllowActiveState": true,
-     "AllowGround": true,
+     "AllowFlying": true,
+     "ActdurStrict": 0.28,
+     "Timeout": 1.15,
      "Mutelist": "\"all\":0.18,\"5\":0.01,\"3\":0.38",
      "AutoTurn": 1,
      "SatisfyInputkey": [
@@ -1757,7 +1613,7 @@
      ],
      "ActionpointInputTag": 2,
      "ActionpointInputTag2": 1,
-     "$new": true
+     "$append": true
     },
     {
      "ActorId": 201101,
@@ -1904,6 +1760,156 @@
      "ActionpointInputTag": 2,
      "ActionpointInputTag2": 1,
      "$new": true
+    },
+    {
+     "ActorId": 201101,
+     "Group": 2,
+     "Order": 10,
+     "Action": "atk_jianqi_0",
+     "Input": "Skill",
+     "StartTrigger": [
+      "Start_2"
+     ],
+     "ReqTriggerId": [
+      21133
+     ],
+     "Mps": [
+      {
+       "Slot": 2,
+       "MpChange": -20.0,
+       "Limit": "-1",
+       "MpChangeLowerbound": -100.0
+      }
+     ],
+     "AllowActiveState": true,
+     "AllowGround": true,
+     "ActdurStrict": 0.28,
+     "Timeout": 1.18,
+     "Mutelist": "\"all\":0.18,\"5\":0.01,\"3\":0.38",
+     "AutoTurn": 1,
+     "SatisfyInputkey": [
+      2
+     ],
+     "Icon": [
+      10,
+      36,
+      85,
+      73,
+      47,
+      65,
+      116,
+      108,
+      97,
+      115,
+      47,
+      73,
+      99,
+      111,
+      110,
+      72,
+      117,
+      100,
+      50,
+      48,
+      49,
+      49,
+      48,
+      49,
+      47,
+      73,
+      99,
+      111,
+      110,
+      72,
+      117,
+      100,
+      50,
+      48,
+      49,
+      49,
+      48,
+      49,
+      18,
+      16,
+      73,
+      99,
+      111,
+      110,
+      83,
+      107,
+      105,
+      108,
+      108,
+      95,
+      50,
+      48,
+      49,
+      49,
+      48,
+      49,
+      10,
+      36,
+      85,
+      73,
+      47,
+      65,
+      116,
+      108,
+      97,
+      115,
+      47,
+      73,
+      99,
+      111,
+      110,
+      72,
+      117,
+      100,
+      50,
+      48,
+      49,
+      49,
+      48,
+      49,
+      47,
+      73,
+      99,
+      111,
+      110,
+      72,
+      117,
+      100,
+      50,
+      48,
+      49,
+      49,
+      48,
+      49,
+      18,
+      19,
+      73,
+      99,
+      111,
+      110,
+      83,
+      107,
+      105,
+      108,
+      108,
+      95,
+      50,
+      48,
+      49,
+      49,
+      48,
+      49,
+      79,
+      70,
+      70
+     ],
+     "ActionpointInputTag": 2,
+     "ActionpointInputTag2": 1,
+     "$append": true
     },
     {
      "ActorId": 201101,
@@ -3004,7 +3010,7 @@
      "AllowActiveState": true,
      "AllowGround": true,
      "AllowFlying": true,
-     "Mutelist": "\"all\":3.3",
+     "Mutelist": "\"11\":0.5",
      "AutoTurn": 1,
      "SatisfyInputkey": [
       11
@@ -4156,6 +4162,19 @@
      ],
      "$append": true,
      "SkillGroupId": 2
+    },
+    {
+     "ActorId": 201101,
+     "Action": "kuangbao_atk4_sh",
+     "HitTimes": 3.0,
+     "ElementType": 3,
+     "DamageRatio": [
+      3.84
+     ],
+     "DamageRatioPvp": [
+      3.84
+     ],
+     "$append": true
     }
    ],
    "SkillFromTeacher": [
@@ -7708,7 +7727,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "Your shadow's hits deal 40% of your damage instead of 20%.",
+    "ActorActionDesc_2011046": "Your shadow's damage is doubled.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -8154,7 +8173,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "影子的攻击造成你40%的伤害，而非20%。",
+    "ActorActionDesc_2011046": "影子造成的伤害翻倍。",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -8600,7 +8619,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "影子的攻擊造成你40%的傷害，而非20%。",
+    "ActorActionDesc_2011046": "影子造成的傷害翻倍。",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -9046,7 +9065,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "Die Treffer deines Schattens bewirken 40 % deines Schadens statt 20 %.",
+    "ActorActionDesc_2011046": "Der Schaden deines Schattens wird verdoppelt.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -9492,7 +9511,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "Los golpes de tu sombra infligen un 40 % de tu daño en lugar de un 20 %.",
+    "ActorActionDesc_2011046": "El daño de tu sombra se duplica.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -9938,7 +9957,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "Les coups de ton ombre infligent 40 % de tes dégâts au lieu de 20 %.",
+    "ActorActionDesc_2011046": "Les dégâts de ton ombre sont doublés.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -10384,7 +10403,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "影の攻撃が、自分のダメージの20%ではなく40%を与える。",
+    "ActorActionDesc_2011046": "影が与えるダメージが2倍になる。",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -10830,7 +10849,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "그림자의 공격이 자신의 대미지의 20%가 아닌 40%를 준다.",
+    "ActorActionDesc_2011046": "그림자가 주는 대미지가 2배가 된다.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -11276,7 +11295,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "Os golpes da sua sombra causam 40% do seu dano em vez de 20%.",
+    "ActorActionDesc_2011046": "O dano da sua sombra é dobrado.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -11722,7 +11741,7 @@
     "ActorActionName_2011046": "Heavy Shadow",
     "ActorActionNameRuby_2011046": "Heavy Shadow",
     "ActorActionInput_2011046": "",
-    "ActorActionDesc_2011046": "Удары твоей тени наносят 40% твоего урона вместо 20%.",
+    "ActorActionDesc_2011046": "Урон твоей тени удваивается.",
     "ActorActionAffectedObject_2011046": "Universal Enhancement",
     "ActorActionName_2011047": "",
     "ActorActionNameRuby_2011047": "",
@@ -11968,7 +11987,7 @@
    },
    {
     "file": "data/js/gameplay/buff/BuffFuncs",
-    "append": "/* char-reki runtime: the Mirror (docs/characters/reki/KIT_MIRROR.md), appended to gameplay/buff/BuffFuncs by bbmod.\n\n   Mirror Point (fenshen) adds rki_plant. rkiPlant, for Reki herself only, makes a copy of her on her spot with\n   Taokaka's shadow piece (tk_create_shadow_player: a 201101 on her own moves; her boss's shadow function makes a boss\n   actor); rkiTake (0.12 s, again at 0.24 s, both game-timed) takes it over: the copy's buffs cleared quietly (it would follow her and copy every action,\n   and its end kills it), its AI stopped, rki_mirror on it (the stock shadow's flags and its end, 10.0 s), a\n   dark tint. A second Mirror Point ends the first shadow.\n   rkiEcho (rki_echo_<move>, half a second after the move starts): the planted shadow plays the same move from its\n   spot, facing her. Only the moves that add the buff are repeated: never hurt, jump, dash or heal.\n   rkiSwap (rki_swap, at a dash's start): with a shadow planted, she and the shadow trade places.\n   Every step is guarded: a failure logs once (tag REKI) and the game goes on. */\n(function () {\n  var U = Util_1.U, CS = csharp_1;\n  var S = globalThis.RKI || (globalThis.RKI = { m: new Map(), said: {} });\n  S.pend = S.pend || {}; S.fcp = S.fcp || {}; S.U = U;  // for live checks from the room\n  function log(k, m) {\n    if (k && S.said[k]) return; if (k) S.said[k] = 1;\n    try { if (globalThis.BBTR && BBTR.x && BBTR.x.log) { BBTR.x.log(\"REKI \" + m); return } } catch (x) {}\n    try { CS.System.IO.File.AppendAllText(\"@ROOT@/modlog.txt\", (new Date()).toISOString() + \" REKI \" + m + \"\\n\") } catch (x) {}\n  }\n  function actors() {\n    var out = [];\n    try { var L = CS.GamePlay.BattleBase.Cur.PlayerObjMgr.ActorList; for (var i = 0; i < L.Count; i++) out.push(L.get_Item(i)) }\n    catch (x) { log(\"list\", \"actor list EXC \" + x) }\n    return out;\n  }\n  function alive(s) {\n    try { return !!s && U.FpToFloat(s.Attr.HP) > 0 && s.BuffMgr.BuffExist(\"rki_mirror\") } catch (x) { return false }\n  }\n  function fp2(x, y) { return U.Vector2ToFp2(new CS.UnityEngine.Vector2(x, y)) }\n  function mine(e) { var r = S.m.get(e.UniqueId); return r && alive(r.s) ? r : null }\n\n  /* ---- phase 2: the cards (docs/characters/reki/CARDS.md). Each card effect is a buff on one of her actions whose\n     params name the cards it needs (\"need\") and the cards that switch it off (\"skip\"); a card is held when its\n     trigger (Potential id * 10 + 1) is on her. */\n  S.old = S.old || {}; S.xf = S.xf || new Map(); S.mark = S.mark || {}; S.own = S.own || {}; S.ownT = S.ownT || -9; S.trail = S.trail || {};\n  var BULLET = 20110101;\n  function now() { try { return U.FpToFloat(CS.GamePlay.BattleBase.Cur.BattleTimeFp) } catch (x) { return -1 } }\n  function P(a, k) { var v = \"\"; try { v = a.GetS(k) } catch (x) { try { v = a.Get(k) } catch (y) {} } return v == null ? \"\" : String(v) }\n  function own(e, pid) {\n    var t = now(); if (t - S.ownT > 1 || t < S.ownT) { S.own = {}; S.ownT = t }\n    var k = e.UniqueId + \":\" + pid;\n    if (!(k in S.own)) { var v = false; try { v = !!e.TriggerMgr.FindTriggerByIdxRange(pid * 10 + 1, pid * 10 + 5) } catch (x) {} S.own[k] = v }\n    return S.own[k];\n  }\n  function cards(e, a) {\n    var n = P(a, \"need\"), s = P(a, \"skip\");\n    if (n && !n.split(\",\").every(function (p) { return own(e, +p) })) return false;\n    if (s && s.split(\",\").some(function (p) { return own(e, +p) })) return false;\n    // after / notafter: a marker set in the last 3 s (Final Chapter and Thunderhead share kuangbao_atk5)\n    var af = P(a, \"after\"), na = P(a, \"notafter\"), t = now();\n    if (af && !(t - (S.mark[e.UniqueId + af] || -9) < 3)) return false;\n    if (na && t - (S.mark[e.UniqueId + na] || -9) < 3) return false;\n    // in: only while she is in that action (a piece on a move that a variant copies: Thunder Drop on Plunge's landing)\n    var ia = P(a, \"in\");\n    if (ia) { var cur = \"\"; try { cur = String(e.ActionMgr.CurrentActionName) } catch (x) {} if (cur !== ia) return false }\n    return true;\n  }\n  function mp(e, v, slot) {\n    try { e.Attr.ChangeMPBy(U.FloatToFp(v), slot || 2); if (S.dbg) log(null, \"mp\" + (slot || 2) + \" +\" + v) } catch (x) { log(\"mp\" + (slot || 2), \"mp EXC \" + x) }\n  }\n  function skill(e) {\n    try { var k = e.SkillMgr.FindSkillByActionName(String(e.ActionMgr.CurrentActionName)); return k ? k.SkillActivate : null } catch (x) { return null }\n  }\n  // one projectile of her bullet actor (rkib1), playing action b at (x, y), flying along (dx, dy)\n  function bullet(e, b, x, y, dx, dy) {\n    try {\n      var o = CS.GamePlay.BattleBase.Cur.BulletMgr.CreateBulletByParams(e, BULLET, fp2(x, y), fp2(dx, dy || 0), U.FloatToFp(1), b, skill(e), null);\n      if (!o) log(\"nob\" + b, \"bullet \" + b + \" not created\");\n      else if (S.dbg) log(null, \"fx \" + b + \" at \" + x.toFixed(1) + \",\" + y.toFixed(1));\n      return o;\n    } catch (x) { log(\"bx\" + b, \"bullet \" + b + \" EXC \" + x); return null }\n  }\n  function ab(e, b, card) { return own(e, card) ? b + \"_ab\" : b }\n  // bursts or bolts along the line between two points (Swap Cut, Return Through)\n  function path(e, x0, y0, x1, y1, b, n) {\n    for (var i = 1; i <= n; i++) { var f = i / (n + 1); bullet(e, b, x0 + (x1 - x0) * f, y0 + (y1 - y0) * f, x1 > x0 ? 1 : -1, 0) }\n  }\n  function afterimage(e, x, y) {\n    if (!own(e, 21112)) return;\n    bullet(e, \"atk_dashboom\", x, y, e.Dir, 0);\n    if (own(e, 21110)) bullet(e, \"lei_warning\", x, y, e.Dir, 0);           // hidden: Afterimage bursts twice\n  }\n  function enemies(e, cx, cy, r) {\n    var out = [];\n    actors().forEach(function (o) {\n      try {\n        if (!o || o.IsDead || o.Faction === e.Faction || U.FpToFloat(o.Attr.HP) <= 0) return;\n        var d = Math.hypot(+o.Position.x - cx, +o.Position.y - cy); if (d <= r) out.push({ a: o, d: d });\n      } catch (x) {}\n    });\n    out.sort(function (p, q) { return p.d - q.d });\n    return out;\n  }\n\n  // which way the shadow swings or shoots: at the enemy Reki faces (the nearest one ahead of her), else her own facing.\n  // It used to face Reki, so from the far side it struck away from the fight (the lead, 2026-10-22)\n  function aim(e, sx, sy) {\n    var ex = +e.Position.x, best = null;\n    enemies(e, ex, +e.Position.y, 16).some(function (o) {\n      var ox = +o.a.Position.x;\n      if ((ox - ex) * e.Dir >= -0.5) { best = ox; return true }\n      return false;\n    });\n    if (best === null) return e.Dir;\n    return Math.abs(best - sx) < 0.3 ? e.Dir : (best > sx ? 1 : -1);\n  }\n\n  // the copy is drawn in full colour (Taokaka's are too). Her rig has the boss shadow's own page, the same layout\n  // painted dark navy: the copy's renderer draws it as _MainTex through a property block (the glow mask stays hers,\n  // so the orange rims come with it). The shared material is untouched; without the page, the old dark violet tint\n  var PAGE = \"actor/spine/leiji_caogao/leiji_caogao_shadow\", TINT = [0.22, 0.16, 0.42, 0.9];\n  function TYPEOF(t) { var f = (typeof puerts !== \"undefined\" && puerts.$typeof) || globalThis.$typeof; return f(t) }\n  function page() {\n    if (S.page === undefined) {\n      try { S.page = U.GetSingleton(CS.NOAH.Asset.AssetManagerBase).LoadAssetByType(TYPEOF(CS.UnityEngine.Texture2D), PAGE) || null }\n      catch (x) { S.page = null; log(\"tint\", \"shadow page EXC \" + x) }\n    }\n    return S.page;\n  }\n  function tint(s) {\n    try {\n      var sa = s.Renderer.SkeletonAnim, sk = sa.skeleton, tx = page();\n      if (tx) {\n        var mr = sa.GetComponent(TYPEOF(CS.UnityEngine.MeshRenderer)), b = new CS.UnityEngine.MaterialPropertyBlock();\n        mr.GetPropertyBlock(b); b.SetTexture(\"_MainTex\", tx); mr.SetPropertyBlock(b);\n        sk.R = 1; sk.G = 1; sk.B = 1; sk.A = 1;\n      } else { sk.R = TINT[0]; sk.G = TINT[1]; sk.B = TINT[2]; sk.A = TINT[3] }\n    } catch (x) { log(\"tint\", \"tint EXC \" + x) }\n  }\n\n  // 0.5.7 (the lead's call on the testers' reports, 2026-11-13): the shadow's own hits deal 20% of hers, 40% with Heavy\n  // Shadow (21134). The copy is a 201101 with her attack and none of her Potentials, so her +20% a card is not on it:\n  // its share is set against her hit with the cards she holds now, through the stock final-damage buff 1302\n  // (FinalDamAddRate, Strength = the share added; measured working on NaN, 2026-10). Heavy Shadow's old buff, 10741, is\n  // FinalDamRate, the attribute 11111 uses, which was measured to add nothing (notes 2026-10).\n  // Measured in game (window 2, 2026-11-14 04:11-04:13, cards.py v57_): the copy's own sword hits deal half of her hit\n  // without cards before any buff (atk4_sh 37.9 against her 379.2 at strength -0.80; atk1_sh 160 against 320 at 0), and\n  // its projectiles deal her hit without cards in full, untouched by a buff on the copy (Mirror Passes: 318.5 / 637.1\n  // against her 573.4 / 1146.7 with 4 cards). So the copy's body gets 1302 at share / 0.5 - 1.\n  // A 1302 on each projectile did nothing either (rerun, run_reki3.log: the shadow's wave 379.2, Mirror Passes 318.5 /\n  // 637.1). Projectiles take the share from the spawn instead: every spawn of her bullet actors in her move tree scales\n  // its damage by 1 - 0.02 x stacks of rki_shd + 0.05 x stacks of rki_shu on the actor that spawns it (steps\n  // shadow_projectile_scale, the stock DamageScaleV expression with BuffStack, as Bullet's and Jin's). Reki carries\n  // neither (x1); the shadow carries one, set here: 20% is 40 stacks of rki_shd, 328% (every card) 46 of rki_shu.\n  var SHARE = 0.2, SHARE_HEAVY = 0.4, SHARE_PER_CARD = 0.2, BODY_NATIVE = 0.5, STACK_DN = 0.02, STACK_UP = 0.05, CARD_IDS = [];\n  for (var ci = 21101; ci <= 21137; ci++) CARD_IDS.push(ci);\n  S.share = S.share || {};\n  function shadowShare(e, s, life) {\n    try {\n      var n = CARD_IDS.filter(function (p) { return own(e, p) }).length;\n      var share = (own(e, 21134) ? SHARE_HEAVY : SHARE) * (1 + SHARE_PER_CARD * n);\n      var st = share / BODY_NATIVE - 1;\n      S.share[e.UniqueId] = { sid: s.UniqueId };\n      if (Math.abs(st) > 0.001) s.BuffMgr.AddBuff(\"1302\", U.FloatToFp(life + 1), U.FloatToFp(st), 1, e);\n      // the projectiles' scale: their own damage is her hit without cards (x1), so the scale is the share itself\n      var k = Math.round(Math.abs(share - 1) / (share < 1 ? STACK_DN : STACK_UP)), b = share < 1 ? \"rki_shd\" : \"rki_shu\", got = \"\";\n      if (k > 0) {\n        s.BuffMgr.AddBuff(b, U.FloatToFp(life + 1), U.FloatToFp(1), 1, e);\n        s.BuffMgr.ChangeBuffStack(b, Math.min(k, 99));\n        try { got = \" (\" + s.BuffMgr.GetBuffStack(b) + \" read back)\" } catch (x) {}\n      }\n      var rd = \"?\"; try { rd = U.FpToFloat(s.Attr.FinalAttr.get_Item(21)).toFixed(2) } catch (x) {}\n      log(null, \"shadow share \" + share.toFixed(2) + \" (cards \" + n + \", body 1302 \" + st.toFixed(2) + \", projectiles \"\n          + (k > 0 ? b + \" x\" + Math.min(k, 99) + got : \"x1\") + \", FinalDamAddRate \" + rd + \")\");\n    } catch (x) { log(\"share\", \"shadow share EXC \" + x) }\n  }\n  // the shadow's projectiles, every 0.02 s while it lives (rki_shadow_up on her): its Sword Waves become the _shw\n  // copies, whose hit boxes have their own Id. A copy counts as its caster for a box Id's hold (0.4 s on the waves,\n  // notes 2026-10), so with the shadow firing at once its wave never hit an enemy hers had just hit (v57_wave_*: no hit\n  // from it in five cases; it hit after this, run_reki3.log)\n  var SHW = { atk_jianqi_0: \"atk_jianqi_0_shw\", atk_jianqi_45: \"atk_jianqi_45_shw\", atk_jianqi_0_p: \"atk_jianqi_0_p_shw\", atk_jianqi_45_p: \"atk_jianqi_45_p_shw\" };\n  function fromShadow(o, sid) {\n    var c = o;\n    for (var i = 0; i < 4; i++) {\n      try { c = c.Caster } catch (x) { return false }\n      if (!c) return false;\n      if (c.UniqueId === sid) return true;\n    }\n    return false;\n  }\n  buffFuncs.rkiShBul = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      var m = mine(e), sh = S.share[e.UniqueId]; if (!m || !sh || sh.sid !== m.s.UniqueId) return;\n      var L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          if (!fromShadow(o, m.s.UniqueId)) continue;\n          var n = String(o.ActionMgr.CurrentActionName);\n          if (SHW[n]) {\n            o.ActionMgr.ChangeAction(SHW[n]);\n            if (S.dbg) log(null, \"shadow projectile \" + n + \" -> \" + SHW[n]);\n          }\n        } catch (x) { log(\"shbul\" + i, \"shadow projectile EXC \" + x) }\n      }\n    } catch (x) { log(\"shbul\", \"shadow projectiles EXC \" + x) }\n  };\n\n  // one look, no timers: rki_plant calls it at 0.12 s and again at 0.24 s (S.pend: this plant still waits for its copy)\n  function take(e, last) {\n    // Taokaka's piece keeps one copy per caster and brings the same actor back on the next call (game, 2026-10-18),\n    // so the last shadow's actor is a candidate again; one still carrying rki_mirror is a live shadow\n    var best = null;\n    actors().forEach(function (a) {\n      try {\n        if (a === e || a.UniqueId === e.UniqueId || a.BaseID !== e.BaseID) return;\n        if (!a.Caster || a.Caster.UniqueId !== e.UniqueId) return;\n        if (a.BuffMgr.BuffExist(\"rki_mirror\")) return;\n        if (!best || a.UniqueId > best.UniqueId) best = a;\n      } catch (x) {}\n    });\n    if (!best) {\n      if (!last) return;\n      S.pend[e.UniqueId] = 0; S.fcp[e.UniqueId] = 0;\n      var same = actors().filter(function (a) { try { return a.BaseID === e.BaseID && a !== e } catch (x) { return false } }).length;\n      log(null, \"plant: no shadow found (\" + same + \" other \" + e.BaseID + \" in the room)\"); return;\n    }\n    var s = best, fc = !!S.fcp[e.UniqueId];\n    S.fcp[e.UniqueId] = 0;\n    // a shadow Final Chapter planted for itself lasts the move, not a Mirror Point's time\n    var life = fc ? FC_SEC : (own(e, 21110) ? 20 : 10.0);\n    // quietly: shadow_player_tk's end would run its KillSelf\n    try { s.BuffMgr.RemoveAllQuiet() } catch (x) { log(\"rm\", \"copy buffs EXC \" + x) }\n    try { s.StopAI() } catch (x) {}\n    try { s.BuffMgr.AddBuff(\"rki_mirror\", U.FloatToFp(life), U.FloatToFp(1), 1, e) } catch (x) { log(\"add\", \"mirror buff EXC \" + x) }\n    shadowShare(e, s, life);\n    try { s.Dir = e.Dir } catch (x) {}\n    // Mirror Point Air: a shadow planted off the ground stays where it was planted (the game's own nogravity buff;\n    // it takes hold at the next action change, so it goes on before the stand); ClearAll drops the fall speed the copy\n    // was born with, which nogravity alone keeps (game, 2026-10-21)\n    var air = false; try { air = e.ActorPosition.IsOffGround } catch (x) {}\n    if (air) {\n      try { s.BuffMgr.AddBuff(\"nogravity\", U.FloatToFp(30), U.FloatToFp(1), 1, e); s.ActorPosition.ClearAll() } catch (x) { log(\"air\", \"air shadow EXC \" + x) }\n    }\n    try { s.ActionMgr.ChangeAction(\"stand\") } catch (x) {}\n    tint(s);\n    S.m.set(e.UniqueId, { s: s, x: +s.Position.x, y: +s.Position.y });\n    S.pend[e.UniqueId] = 0;\n    // her marker for as long as the shadow lives: the held Skill's switch into Mirror Recall needs it\n    try { e.BuffMgr.AddBuff(\"rki_shadow_up\", U.FloatToFp(life), U.FloatToFp(1), 1, e) } catch (x) { log(\"up\", \"shadow marker EXC \" + x) }\n    if (fc) { fcStrike(e, s); return }\n    // a planted shadow stays where it was planted. It used to start following her at once with Long Mirror and Mirror\n    // Strings, which took every Crossfire away (Boogy, 2026-11-10: \"it just shouldn't do it as base\"; \"If it was just\n    // something you could control, by recalling your shadow for example\"): the follow now starts in rkiCall\n    delete S.trail[e.UniqueId];\n    try { e.BuffMgr.Remove(\"rki_trail\") } catch (x) {}\n    var hp = \"?\"; try { hp = U.FpToFloat(s.Attr.HP).toFixed(0) } catch (x) {}\n    log(null, \"plant: shadow #\" + s.UniqueId + \" at \" + (+s.Position.x).toFixed(2) + \" hp \" + hp + \" mirror \" + s.BuffMgr.BuffExist(\"rki_mirror\"));\n  }\n\n  // Final Chapter's own shadow (option A, card review 2026-10-23): set across from her, the far side of the enemy she\n  // faces (else ahead of her), it plays the Ultra from there; it lasts the move\n  var FC_SEC = 4;\n  function fcStrike(e, s) {\n    var ex = +e.Position.x, ey = +e.Position.y, nx = ex + e.Dir * 5;\n    enemies(e, ex, ey, 12).some(function (o) {\n      var ox = +o.a.Position.x;\n      if ((ox - ex) * e.Dir >= -0.5) { nx = ox + e.Dir * 2.5; return true }\n      return false;\n    });\n    try { s.ActorPosition.TeleportForce(fp2(nx, ey)) } catch (x) { log(\"fctp\", \"final chapter shadow move EXC \" + x) }\n    var m = S.m.get(e.UniqueId); if (m) { m.x = nx; m.y = ey }\n    s.Dir = aim(e, nx, ey);\n    s.ActionMgr.ChangeAction(\"kuangbao_atk3_sh\");\n    if (String(s.ActionMgr.CurrentActionName) !== \"kuangbao_atk3_sh\") s.ActionMgr.ChangeAction(\"kuangbao_atk3\");\n    log(null, \"final chapter: own shadow at \" + nx.toFixed(2) + \" -> \" + s.ActionMgr.CurrentActionName);\n  }\n\n  // Taokaka's piece makes the copy; rkiTake (0.12 / 0.24 s) takes it over\n  function plant(e, fc) {\n    S.pend[e.UniqueId] = 1;\n    S.fcp[e.UniqueId] = fc ? 1 : 0;\n    e.BuffMgr.AddBuff(\"tk_create_shadow_player\", U.FloatToFp(0.3), U.FloatToFp(1), 1, e);\n  }\n  // a copy is born inside Mirror Point too: only Reki herself (no Caster) makes one\n  buffFuncs.rkiPlant = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      // again moves it: the old shadow ends first (Taokaka's piece makes no second copy while one lives)\n      var old = mine(e);\n      if (old) {\n        S.old[e.UniqueId] = { x: +old.s.Position.x, y: +old.s.Position.y };\n        afterimage(e, +old.s.Position.x, +old.s.Position.y);\n        try { old.s.BuffMgr.Remove(\"rki_mirror\") } catch (x) {} S.m.delete(e.UniqueId);\n      }\n      delete S.trail[e.UniqueId];   // planting again ends the follow\n      try { e.BuffMgr.Remove(\"rki_trail\") } catch (x) {}\n      plant(e, false);\n    } catch (x) { log(\"plant\", \"plant EXC \" + x) }\n  };\n  // Final Chapter with no shadow planted: one of its own for the move (a planted one echoes as before, rki_c_echo_fc)\n  buffFuncs.rkiFcPlant = (e, t, a, r) => {\n    try {\n      if (e.Caster || mine(e) || S.pend[e.UniqueId] || !cards(e, a)) return;\n      plant(e, true);\n    } catch (x) { log(\"fcplant\", \"final chapter plant EXC \" + x) }\n  };\n  buffFuncs.rkiTake = (e, t, a, r) => {\n    try {\n      if (e.Caster || !S.pend[e.UniqueId]) return;\n      take(e, S.pend[e.UniqueId]++ >= 2);\n    } catch (x) { log(\"take\", \"take EXC \" + x) }\n  };\n\n  var ECHO_FX = { kuangbao_atk2: \"fx_rage\" };\n  buffFuncs.rkiEcho = (e, t, a, r) => {\n    try {\n      var m = mine(e); if (!m) return;\n      if (e.Caster || !cards(e, a)) return;\n      // 0.5.7 (the testers, 2026-11-12; card 21137): the shadow's Raimei restores MP to her, once per echo. Given\n      // before the trail's return, so a trailing shadow's Raimei pays too\n      var g = +P(a, \"mp\"), gc = +P(a, \"mpcard\");\n      if (g && (!gc || own(e, gc))) mp(e, g);\n      // a trailing shadow replays the move itself, half a second behind, from where she made it (rkiTrail)\n      if (S.trail[e.UniqueId] && e.BuffMgr.BuffExist(\"rki_trail\")) return;\n      var act = P(a, \"act\");\n      if (!act) { log(\"noact\", \"echo: no move name\"); return }\n      var s = m.s;\n      // an air move echoed by a shadow on the ground: its ground form (\"ground\"), so the shot is not fired into the floor\n      if (P(a, \"ground\")) { var off = false; try { off = s.ActorPosition.IsOffGround } catch (x) {} if (!off) act = P(a, \"ground\") }\n      try { s.ActorPosition.TeleportForce(fp2(m.x, m.y)) } catch (x) { log(\"tp\", \"echo return EXC \" + x) }\n      s.Dir = aim(e, m.x, m.y);\n      s.ActionMgr.ChangeAction(act + \"_sh\");\n      if (String(s.ActionMgr.CurrentActionName) !== act + \"_sh\") s.ActionMgr.ChangeAction(act);\n      // the copy draws no effect of its own for these moves: she plays it at its spot (an effect-only projectile)\n      if (ECHO_FX[act]) bullet(e, ECHO_FX[act], m.x, m.y, s.Dir, 0);\n      log(null, \"echo \" + act + \" -> \" + s.ActionMgr.CurrentActionName);\n    } catch (x) { log(\"echo\", \"echo EXC \" + x) }\n  };\n\n  // the trailing shadow (hidden 211037), every 0.02 s while rki_trail lasts: it stands where she stood half a second\n  // ago, faces as she faced and replays every move she started then, from its first frame (ActionChangeAutoId tells a\n  // move started again from one still playing). An attack it replays as the shadow form (_sh, effects unbound) where\n  // her tree has one. It used to take up only her steps and stand still through everything else (the lead,\n  // 2026-10-23: \"its just static it needs to copy rekis move animations\"). Taokaka's astral copy follows her the same way\n  var NOCOPY = /^(behit|push_|knockdown|dead|reborn|born|pvp_born|winpose|StagePass|paid_show|bornshow|standUp|quickStand|reactive|addHP|fenshen|summon)|_show$/;\n  var SHF = { atk1: 1, atk2: 1, atk3: 1, atk4: 1, atk_dash: 1, atk_dashs: 1, atk_shenglong: 1, atk_shenglongss: 1, kuangbao_atk2: 1, kuangbao_atk3: 1 };\n  var TRAIL = 0.5;\n  function shadowForm(n) { return SHF[n] ? n + \"_sh\" : n }\n  buffFuncs.rkiTrail = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      var m = mine(e), h = S.trail[e.UniqueId];\n      if (!m || !h) { try { e.BuffMgr.Remove(\"rki_trail\") } catch (x) {} return }\n      var tn = now(), cur = String(e.ActionMgr.CurrentActionName), id = -1;\n      try { id = e.ActionMgr.ActionChangeAutoId } catch (x) {}\n      h.push({ t: tn, x: +e.Position.x, y: +e.Position.y, d: e.Dir, a: NOCOPY.test(cur) ? \"stand\" : cur, id: id });\n      var p = null;\n      while (h.length && h[0].t <= tn - TRAIL) p = h.shift();\n      if (!p) return;\n      h.unshift(p);   // kept: the next tick still has a sample at least half a second old\n      var s = m.s, sc = String(s.ActionMgr.CurrentActionName);\n      if (NOCOPY.test(sc)) return;   // a hit reaction plays out from the spot it has reached\n      s.ActorPosition.TeleportForce(fp2(p.x, p.y));\n      m.x = p.x; m.y = p.y; s.Dir = p.d;\n      if (p.id === m.tid && sc === m.ta) return;\n      var want = shadowForm(p.a);\n      s.ActionMgr.ChangeAction(want);\n      if (String(s.ActionMgr.CurrentActionName) !== want && want !== p.a) s.ActionMgr.ChangeAction(p.a);\n      m.ta = String(s.ActionMgr.CurrentActionName); m.tid = p.id;\n    } catch (x) { log(\"trail\", \"trail EXC \" + x) }\n  };\n\n  buffFuncs.rkiSwap = (e, t, a, r) => {\n    try {\n      if (e.Caster || String(e.ActionMgr.CurrentActionName).indexOf(\"_swap\") < 0) return;   // Down + Dash only (2026-10-22)\n      // no shadow: it stays a dash (Lightning Charge moved to Dash, then Skill: card review 2026-10-23)\n      var m = mine(e); if (!m) return;\n      var s = m.s, ex = +e.Position.x, ey = +e.Position.y, sx = +s.Position.x, sy = +s.Position.y;\n      if (own(e, 21122) && own(e, 21125)) { try { e.BuffMgr.AddBuff(\"2206_replace2\", U.FloatToFp(0.35), U.FloatToFp(1), 1, e) } catch (x) {} }\n      afterimage(e, sx, sy);\n      e.ActorPosition.TeleportForce(fp2(sx, sy)); s.ActorPosition.TeleportForce(fp2(ex, ey));\n      m.x = ex; m.y = ey; s.Dir = (sx > ex) ? 1 : -1;\n      S.old[e.UniqueId] = { x: ex, y: ey };\n      if (own(e, 21125)) path(e, ex, ey, sx, sy, \"lei_attack\", 3);\n      log(null, \"swap \" + ex.toFixed(2) + \" <-> \" + sx.toFixed(2));\n    } catch (x) { log(\"swap\", \"swap EXC \" + x) }\n  };\n\n  // projectiles of a card: b at x (one or a list, in her facing), y; from her, her shadow (\"sh\"), where the shadow last\n  // stood (\"old\"), or midway (\"mid\"); dir f / b / both; ang: extra angles in degrees; neg: only while MP is below 0;\n  // air: only while off the ground; after: only if the marker named was set in the last 2 s\n  buffFuncs.rkiShot = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) { if (S.dbg && !e.Caster && P(a, \"neg\")) log(null, \"shot \" + P(a, \"b\") + \": cards not held\"); return }\n      if (P(a, \"neg\") && !(U.FpToFloat(e.Attr.GetMP(2)) < 0)) { if (S.dbg) log(null, \"shot \" + P(a, \"b\") + \": not over-exhausted (MP \" + U.FpToFloat(e.Attr.GetMP(2)).toFixed(1) + \")\"); return }\n      if (P(a, \"air\")) { var off = false; try { off = e.ActorPosition.IsOffGround } catch (x) {} if (!off) return }\n      var aft = P(a, \"after\"); if (aft && !(now() - (S.mark[e.UniqueId + aft] || -9) < 2)) return;\n      var from = P(a, \"from\") || \"me\", m = mine(e), ox = +e.Position.x, oy = +e.Position.y, f = e.Dir;\n      // shair: only while the shadow is off the ground (0.5.6: Rising Dragon's lightning below a shadow in mid-air)\n      if (P(a, \"shair\")) { var so = false; try { so = !!(m && m.s.ActorPosition.IsOffGround) } catch (x3) {} if (!so) return }\n      if (from === \"sh\") { if (!m) return; ox = +m.s.Position.x; oy = +m.s.Position.y; f = aim(e, ox, oy); m.s.Dir = f }\n      else if (from === \"old\") { var o = S.old[e.UniqueId]; if (!o) return; ox = o.x; oy = o.y }   // the spot of the shadow before this one\n      else if (from === \"mid\") { if (!m) return; ox = (ox + +m.s.Position.x) / 2; oy = (oy + +m.s.Position.y) / 2 }\n      var b = P(a, \"b\"), xs = (P(a, \"x\") || (P(a, \"ang\") ? \"\" : \"0\")).split(\",\").filter(String).map(Number), y = +(P(a, \"y\") || 0), dir = P(a, \"dir\") || \"f\";\n      xs.forEach(function (x) {\n        var d = dir === \"b\" ? -f : dir === \"both\" ? (x < 0 ? -f : f) : f;\n        bullet(e, b, ox + x * f, oy + y, d, 0);\n      });\n      (P(a, \"ang\") ? P(a, \"ang\").split(\",\").map(Number) : []).forEach(function (g) {\n        var rad = g * Math.PI / 180; bullet(e, b, ox + f, oy + 0.6, f * Math.cos(rad), Math.sin(rad));\n      });\n    } catch (x) { log(\"shot\", \"shot EXC \" + x) }\n  };\n\n  // her shadow's live projectiles switch to the card's version (the shadow's own trigger check does not see her cards)\n  buffFuncs.rkiBSwap = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var from = P(a, \"from\").split(\",\"), to = P(a, \"to\").split(\",\"), L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList, n = 0;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          var rc = o.RootCaster || o.Caster; if (!rc || rc.UniqueId !== m.s.UniqueId) continue;\n          var k = from.indexOf(String(o.ActionMgr.CurrentActionName)); if (k < 0) continue;\n          o.ActionMgr.ChangeAction(to[k]); n++;\n        } catch (x) {}\n      }\n      if (n) log(null, \"shadow projectiles -> \" + P(a, \"to\") + \" x\" + n);\n    } catch (x) { log(\"bswap\", \"bswap EXC \" + x) }\n  };\n\n  // her live Raijin Rings: projectiles cast by `owner` that are in a ring action (not its fade or its lightning)\n  function rings(owner) {\n    var out = [];\n    try {\n      var L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          var c = o.Caster; if (!c || c.UniqueId !== owner.UniqueId) continue;\n          var n = String(o.ActionMgr.CurrentActionName);\n          if (/^(huixuanbiao|ts_raijin_ring)/.test(n) && !/_dis$|_d$|_leidian/.test(n)) out.push(o);\n        } catch (x) {}\n      }\n    } catch (x) { log(\"rings\", \"ring list EXC \" + x) }\n    return out;\n  }\n  S.ring = S.ring || {}; S.ringm = S.ringm || {};\n  // Overcharge's ring: lightning where the ring stops. It used to strike a fixed 4 u ahead of her 0.8 s after the throw,\n  // wherever the ring was (Boogy, 2026-11-10: \"It seems to trigger it as soon as it's far enough from Reki\"). Every\n  // 0.03 s while the card's buff lasts: the ring is followed, and the bolt falls once, where it has come to rest\n  buffFuncs.rkiRingStop = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var rs = rings(e); if (S.dbg && !rs.length) log(\"ringnone\", \"ring stop: no ring of hers found\"); if (!rs.length) return;\n      var o = rs[rs.length - 1], id = o.UniqueId, x = +o.Position.x, y = +o.Position.y, st = S.ring[e.UniqueId];\n      if (!st || st.id !== id) st = S.ring[e.UniqueId] = { id: id, x0: x, px: x, py: y, n: 0, done: 0, neg: 0 };\n      if (U.FpToFloat(e.Attr.GetMP(2)) < 0) st.neg = 1;\n      st.n++;\n      // the ring slows to its far point and turns back without ever standing still: the stop is where it turns\n      var dx = x - st.px, fx = st.px, fy = st.py; st.px = x; st.py = y;\n      if (!st.out && Math.abs(x - st.x0) > 0.5) st.out = x > st.x0 ? 1 : -1;\n      if (S.dbg && st.n % 10 == 0) log(null, \"ring \" + st.n + \" x \" + x.toFixed(2) + \" step \" + dx.toFixed(3) + \" neg \" + st.neg);\n      if (st.done || !st.neg || !st.out || Math.abs(x - st.x0) < 1.5 || dx * st.out > 0.002) return;\n      x = fx; y = fy;\n      st.done = 1;\n      var off = false; try { off = e.ActorPosition.IsOffGround } catch (x2) {}\n      bullet(e, \"lei_attack\", x, off ? y : +e.Position.y, e.Dir, 0);\n      log(null, \"ring stopped at \" + x.toFixed(2) + \": lightning\");\n    } catch (x) { log(\"ringstop\", \"ring stop EXC \" + x) }\n  };\n  // Mirror Ring + Rapid Ring: the two rings burst where they meet. It used to burst midway between her and the shadow\n  // 0.9 s after the throw, whether or not the rings were there (Boogy, 2026-11-10)\n  buffFuncs.rkiRingMeet = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var mine_ = rings(e), theirs = rings(m.s);\n      if (S.dbg) log(\"ringcount\" + mine_.length + theirs.length, \"ring meet: hers \" + mine_.length + \", the shadow's \" + theirs.length);\n      // 0.5.6 (Boogy, 2026-11-12: \"the 2 rings do no do anything when they meet\"). Two things could keep the burst from\n      // ever firing: the shadow's ring listed under her (then \"the shadow's\" list is empty), and two rings closing fast\n      // enough to pass each other between two checks without ever being read within 2 u. Now: her ring against the\n      // shadow's, or, when the shadow's list is empty, her two newest rings; and a pair that has swapped sides since\n      // the last check has met, wherever the check caught them\n      var p, q;\n      if (mine_.length && theirs.length) { p = mine_[mine_.length - 1]; q = theirs[theirs.length - 1] }\n      else if (mine_.length >= 2) { p = mine_[mine_.length - 2]; q = mine_[mine_.length - 1] }\n      else return;\n      var key = p.UniqueId + \":\" + q.UniqueId;\n      if (S.ringm[e.UniqueId] === key) return;\n      var px = +p.Position.x, py = +p.Position.y, qx = +q.Position.x, qy = +q.Position.y, dx = px - qx;\n      var last = S.ringd && S.ringd.k === key ? S.ringd.dx : null;\n      S.ringd = { k: key, dx: dx };\n      var near = Math.hypot(dx, py - qy) <= 2.0;   // (a ring is about 2 u across)\n      var crossed = last !== null && last * dx < 0 && Math.abs(py - qy) <= 2.0;\n      if (!near && !crossed) return;\n      S.ringm[e.UniqueId] = key;\n      bullet(e, ab(e, \"atk_dashboom\", 21134), (px + qx) / 2, (py + qy) / 2, e.Dir, 0);\n      log(null, \"rings met at \" + ((px + qx) / 2).toFixed(2) + (crossed && !near ? \" (crossed)\" : \"\"));\n    } catch (x) { log(\"ringmeet\", \"ring meet EXC \" + x) }\n  };\n\n  // 0.5.6 (Boogy, forwarded 2026-11-12: the air attack \"works really well when facing an enemy, but imo feels horrible\n  // when there's none ... more diagonal momentum when there is no enemy ... slide on the ground more too\"). The dive homes\n  // on the nearest enemy in its search box (1 u behind to 14 u ahead, 14 u below to 2 u above) and then drops straight\n  // down; with nothing in that box it dropped straight down where she was. On the dive's first frame: no enemy in the\n  // box, and she takes the far dive instead (atk_air_far: 45 degrees down and ahead, a longer slide on landing)\n  buffFuncs.rkiFarDive = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      if (String(e.ActionMgr.CurrentActionName) !== \"atk_air_drop\") return;\n      var ex = +e.Position.x, ey = +e.Position.y, f = e.Dir >= 0 ? 1 : -1;\n      var any = enemies(e, ex, ey, 99).some(function (o) {\n        var dx = (+o.a.Position.x - ex) * f, dy = +o.a.Position.y - ey;\n        return dx >= -1 && dx <= 14 && dy >= -14 && dy <= 2;\n      });\n      if (any) return;\n      e.ActionMgr.ChangeAction(\"atk_air_far\");\n      log(null, \"air attack: no enemy in reach, the far dive\");\n    } catch (x) { log(\"fardive\", \"far dive EXC \" + x) }\n  };\n\n  // a delayed card effect: the action's own buff ends with the move, so it puts the real one on her (write_cards.py)\n  buffFuncs.rkiDefer = (e, t, a, r) => {\n    try { if (!e.Caster && cards(e, a)) e.BuffMgr.AddBuff(P(a, \"b\"), U.FloatToFp(+P(a, \"life\") || 1), U.FloatToFp(1), 1, e) } catch (x) { log(\"defer\", \"defer EXC \" + x) }\n  };\n  buffFuncs.rkiMark = (e, t, a, r) => { if (!e.Caster) S.mark[e.UniqueId + P(a, \"k\")] = now() };\n  buffFuncs.rkiGive = (e, t, a, r) => { try { if (!e.Caster && cards(e, a)) mp(e, +P(a, \"mp\")) } catch (x) {} };\n\n  // Crossing Waves: lightning where her waves and the shadow's actually meet. 0.5.7 (Boogy, 2026-11-12: the shadow's\n  // waves came half a second late, so only the level wave ever met hers): the shadow now fires with her, and this no\n  // longer works out a meeting point from the half-second head start. Every 0.03 s while the card's buff lasts it reads\n  // the live waves (hers and the shadow's, any direction, Three Waves' fan included) and strikes once for each of her\n  // waves, where it comes within reach of one of the shadow's or passes it between two looks. With Three Waves and\n  // Breaker Wave a warning mark too (hidden 211014); with Shadow Burst also once where the shadow last stood (211013)\n  var WAVE = /^atk_jianqi(_0|_45|s|s_air)(_p)?(_shw)?$/;\n  S.wm = S.wm || {};\n  function waves(e, m) {\n    var mineW = [], theirs = [], seen = S.wm.own || (S.wm.own = {}), tn = now();\n    try {\n      var L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          if (!WAVE.test(String(o.ActionMgr.CurrentActionName))) continue;\n          var rc = o.RootCaster || o.Caster, id = rc ? rc.UniqueId : -1;\n          if (id !== e.UniqueId && id !== m.s.UniqueId) continue;\n          var k = o.UniqueId, w = seen[k];\n          if (!w || tn - w.t > 3) {\n            // a wave's owner: the shadow's by its caster, else by where it was first seen (a copy's projectile can be\n            // listed under her, as its rings were: 0.5.6)\n            var ox = +o.Position.x, oy = +o.Position.y;\n            var dm = Math.hypot(ox - +e.Position.x, oy - +e.Position.y), ds = Math.hypot(ox - +m.s.Position.x, oy - +m.s.Position.y);\n            w = seen[k] = { t: tn, sh: id === m.s.UniqueId || ds < dm };\n          }\n          (w.sh ? theirs : mineW).push(o);\n        } catch (x) {}\n      }\n    } catch (x) { log(\"waves\", \"wave list EXC \" + x) }\n    return [mineW, theirs];\n  }\n  buffFuncs.rkiWaveMeet = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var w = waves(e, m), hers = w[0], theirs = w[1];\n      if (!hers.length || !theirs.length) return;\n      var st = S.wm[e.UniqueId] || (S.wm[e.UniqueId] = { done: {}, dx: {}, old: -9, prune: -9 }), tn = now();\n      if (tn - st.prune > 5 || tn < st.prune) {   // forget waves and pairs older than 5 s (ids are reused)\n        st.prune = tn; st.dx = {};\n        [st.done, S.wm.own || {}].forEach(function (o) { Object.keys(o).forEach(function (k) { var v = o[k]; if (tn - (v.t !== undefined ? v.t : v) > 5 || tn < (v.t !== undefined ? v.t : v)) delete o[k] }) });\n      }\n      hers.forEach(function (p) {\n        var pk = p.UniqueId;\n        if (st.done[pk] && tn - st.done[pk] < 3) return;\n        var px = +p.Position.x, py = +p.Position.y;\n        theirs.some(function (q) {\n          var qx = +q.Position.x, qy = +q.Position.y, dx = px - qx, key = pk + \":\" + q.UniqueId, last = st.dx[key];\n          st.dx[key] = dx;\n          var near = Math.hypot(dx, py - qy) <= 1.6;\n          var crossed = last !== undefined && last * dx < 0 && Math.abs(py - qy) <= 2.0;\n          if (!near && !crossed) return false;\n          st.done[pk] = tn;\n          var x = (px + qx) / 2, y = (py + qy) / 2 - 0.5;\n          bullet(e, \"lei_attack\", x, y, 1, 0);\n          if (own(e, 21107) && own(e, 21108)) bullet(e, \"lei_warning\", x, y, 1, 0);\n          if (own(e, 21112) && S.old[e.UniqueId] && tn - st.old > 1) { st.old = tn; bullet(e, \"lei_attack\", S.old[e.UniqueId].x, S.old[e.UniqueId].y, 1, 0) }\n          log(null, \"waves met at \" + x.toFixed(2) + \",\" + y.toFixed(2) + (crossed && !near ? \" (crossed)\" : \"\"));\n          return true;\n        });\n      });\n    } catch (x) { log(\"wavemeet\", \"wave meet EXC \" + x) }\n  };\n\n  // Twin Dragons + Mirror Point Air: a shadow standing in the air dives when she rises\n  buffFuncs.rkiDive = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var off = false; try { off = m.s.ActorPosition.IsOffGround } catch (x) {}\n      if (off) { try { m.s.BuffMgr.Remove(\"nogravity\"); m.s.Dir = e.Dir } catch (x) {} m.s.ActionMgr.ChangeAction(\"atk_air_add\"); log(null, \"shadow dives\") }\n    } catch (x) { log(\"dive\", \"dive EXC \" + x) }\n  };\n\n  // Return Through: the shadow comes back to her side; bursts along its path\n  buffFuncs.rkiCall = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) { log(null, \"return: no shadow\"); return }\n      var sx = +m.s.Position.x, sy = +m.s.Position.y, ex = +e.Position.x, ey = +e.Position.y, side = sx > ex ? 1 : -1;\n      var b = ab(e, \"atk_dashboom\", 21134);\n      path(e, sx, sy, ex, ey, b, Math.max(1, Math.min(4, Math.round(Math.abs(sx - ex) / 2.5))));\n      if (own(e, 21125)) path(e, sx, sy, ex, ey, \"lei_attack\", 2);\n      if (own(e, 21110) && own(e, 21132)) {\n        var lo = Math.min(sx, ex), hi = Math.max(sx, ex), hit = enemies(e, (sx + ex) / 2, (sy + ey) / 2, 99)\n          .filter(function (o) { var x = +o.a.Position.x; return x >= lo - 1 && x <= hi + 1 && Math.abs(+o.a.Position.y - ey) < 3 }).length;\n        if (S.dbg) log(null, \"return path: \" + hit + \" enemies\"); if (hit) mp(e, Math.min(20, 7 * hit));\n      }\n      var nx = ex + side * 1.2; m.s.ActorPosition.TeleportForce(fp2(nx, ey)); m.x = nx; m.y = ey; m.s.Dir = -side;\n      S.old[e.UniqueId] = { x: sx, y: sy };\n      // hidden (Long Mirror + Mirror Recall): once called back, the shadow follows her half a second behind (rkiTrail)\n      // until she plants it again\n      if (own(e, 21110)) {\n        S.trail[e.UniqueId] = [];\n        try { e.BuffMgr.AddBuff(\"rki_trail\", U.FloatToFp(20), U.FloatToFp(1), 1, e) } catch (x) { log(\"trail\", \"trail EXC \" + x) }\n      }\n      log(null, \"return through from \" + sx.toFixed(2));\n    } catch (x) { log(\"call\", \"call EXC \" + x) }\n  };\n\n  // the marker outlived a shadow that was killed early: nothing to call back, so she stops instead of an empty call\n  buffFuncs.rkiCallGate = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a) || mine(e)) return;\n      try { e.BuffMgr.Remove(\"rki_shadow_up\") } catch (x) {}\n      e.ActionMgr.ChangeAction(\"stand\");\n      log(null, \"return: no shadow, call stopped\");\n    } catch (x) { log(\"callgate\", \"call gate EXC \" + x) }\n  };\n\n  buffFuncs.rkiArmor = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var d = U.FloatToFp(+P(a, \"dur\") || 1);\n      e.BuffMgr.AddBuff(\"90121\", d, U.FloatToFp(1), 1, e); e.BuffMgr.AddBuff(\"10521\", d, U.FloatToFp(0.5), 1, e);\n      if (S.dbg) log(null, \"armour \" + e.BuffMgr.BuffExist(\"90121\") + \" \" + e.BuffMgr.BuffExist(\"10521\"));\n    } catch (x) { log(\"armor\", \"armor EXC \" + x) }\n  };\n  buffFuncs.rkiInv = (e, t, a, r) => {\n    try { if (!cards(e, a)) return; e.BuffMgr.AddBuff(\"2206_replace2\", U.FloatToFp(+P(a, \"dur\") || 0.5), U.FloatToFp(1), 1, e) }\n    catch (x) { log(\"inv\", \"inv EXC \" + x) }\n  };\n\n  // Lightning Field: each step strikes the nearest enemy within 6 u of where Final Chapter ended\n  buffFuncs.rkiField = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      // the nearest enemy around her where she is now (Final Chapter's finish throws them several units away)\n      var o = enemies(e, +e.Position.x, +e.Position.y, 9)[0]; if (!o) return;\n      bullet(e, ab(e, \"lei_attack\", 21134), +o.a.Position.x, +o.a.Position.y, 1, 0);\n    } catch (x) { log(\"field\", \"field EXC \" + x) }\n  };\n\n  /* the Crossfire (talent Half a Second): the talent's trigger puts rki_xmark on every enemy she hits; two hits from\n     opposite sides within 0.5 s are a Crossfire: the second deals the talent's share more (of what that hit took),\n     restores MP, and pays the cards. One per enemy per 0.5 s. */\n  buffFuncs.rkiXHit = (v, t, a, r) => {\n    try {\n      var h = t.Caster; if (!h) return;\n      var me = h.Caster || h, src = h;                  // a hit by her shadow counts from the shadow's side\n      var tn = now(), hp = U.FpToFloat(v.Attr.HP), side = (+src.Position.x > +v.Position.x) ? 1 : -1;\n      var k = v.UniqueId, p = S.xf.get(k);\n      // a Crossfire is a hit by her and a hit by her shadow on one enemy within 0.5 s, whichever sides they come from\n      // (Boogy, 2026-11-10: needing both sides was \"basically impossible to hit consistently on small enemies\"); two of\n      // her own hits from opposite sides still count, as before\n      var who = src !== me ? 1 : 0;\n      S.xf.set(k, { side: side, who: who, t: tn, hp: hp, cool: p && p.cool });\n      if (!p || (p.side === side && p.who === who) || tn - p.t > 0.5 || (p.cool && tn - p.cool < 0.5)) return;\n      S.xf.get(k).cool = tn;\n      var s = U.FpToFloat(t.Strength) || 0.3, dmg = Math.max(0, p.hp - hp) * s;\n      if (dmg > 0) { try { CS.GamePlay.BattleUtils.ActorDirectDamage(me, v, U.FloatToFp(dmg), 0) } catch (x) { log(\"xdmg\", \"crossfire damage EXC \" + x) } }\n      var gain = Math.round(s * 10), act = \"\"; try { act = String(me.ActionMgr.CurrentActionName) } catch (x) {}\n      if (own(me, 21132)) gain += (own(me, 21101) && /^atk[123]/.test(act)) ? 8 : 4;\n      mp(me, gain);\n      if (own(me, 21117)) {\n        var sp = 10; if (own(me, 21118) && own(me, 21132) && S.field && tn - S.field.t < 7) sp += 5;\n        mp(me, sp, 3);\n      }\n      if (own(me, 21110) && own(me, 21132)) {\n        var m = mine(me); if (m) { try { var b = m.s.BuffMgr.Find(\"rki_mirror\"); b.TimeEllapsed = U.FloatToFp(Math.max(0, U.FpToFloat(b.TimeEllapsed) - 1));\n          try { var u = me.BuffMgr.Find(\"rki_shadow_up\"); if (u) u.TimeEllapsed = b.TimeEllapsed } catch (x) {} if (S.dbg) log(null, \"shadow time +1 s (\" + U.FpToFloat(b.TimeEllapsed).toFixed(1) + \" s used)\") } catch (x) { log(\"xt\", \"crossfire time EXC \" + x) } }\n      }\n      log(null, \"crossfire on \" + k + \" +\" + dmg.toFixed(0) + \" dmg, +\" + gain + \" MP\" + (src !== me ? \" (shadow)\" : \"\"));\n    } catch (x) { log(\"xhit\", \"crossfire EXC \" + x) }\n  };\n})();\n"
+    "append": "/* char-reki runtime: the Mirror (docs/characters/reki/KIT_MIRROR.md), appended to gameplay/buff/BuffFuncs by bbmod.\n\n   Mirror Point (fenshen) adds rki_plant. rkiPlant, for Reki herself only, makes a copy of her on her spot with\n   Taokaka's shadow piece (tk_create_shadow_player: a 201101 on her own moves; her boss's shadow function makes a boss\n   actor); rkiTake (0.12 s, again at 0.24 s, both game-timed) takes it over: the copy's buffs cleared quietly (it would follow her and copy every action,\n   and its end kills it), its AI stopped, rki_mirror on it (the stock shadow's flags and its end, 10.0 s), a\n   dark tint. A second Mirror Point ends the first shadow.\n   rkiEcho (rki_echo_<move>, half a second after the move starts): the planted shadow plays the same move from its\n   spot, facing her. Only the moves that add the buff are repeated: never hurt, jump, dash or heal.\n   rkiSwap (rki_swap, at a dash's start): with a shadow planted, she and the shadow trade places.\n   Every step is guarded: a failure logs once (tag REKI) and the game goes on. */\n(function () {\n  var U = Util_1.U, CS = csharp_1;\n  var S = globalThis.RKI || (globalThis.RKI = { m: new Map(), said: {} });\n  S.pend = S.pend || {}; S.fcp = S.fcp || {}; S.U = U;  // for live checks from the room\n  function log(k, m) {\n    if (k && S.said[k]) return; if (k) S.said[k] = 1;\n    try { if (globalThis.BBTR && BBTR.x && BBTR.x.log) { BBTR.x.log(\"REKI \" + m); return } } catch (x) {}\n    try { CS.System.IO.File.AppendAllText(\"@ROOT@/modlog.txt\", (new Date()).toISOString() + \" REKI \" + m + \"\\n\") } catch (x) {}\n  }\n  function actors() {\n    var out = [];\n    try { var L = CS.GamePlay.BattleBase.Cur.PlayerObjMgr.ActorList; for (var i = 0; i < L.Count; i++) out.push(L.get_Item(i)) }\n    catch (x) { log(\"list\", \"actor list EXC \" + x) }\n    return out;\n  }\n  function alive(s) {\n    try { return !!s && U.FpToFloat(s.Attr.HP) > 0 && s.BuffMgr.BuffExist(\"rki_mirror\") } catch (x) { return false }\n  }\n  function fp2(x, y) { return U.Vector2ToFp2(new CS.UnityEngine.Vector2(x, y)) }\n  function mine(e) { var r = S.m.get(e.UniqueId); return r && alive(r.s) ? r : null }\n\n  /* ---- phase 2: the cards (docs/characters/reki/CARDS.md). Each card effect is a buff on one of her actions whose\n     params name the cards it needs (\"need\") and the cards that switch it off (\"skip\"); a card is held when its\n     trigger (Potential id * 10 + 1) is on her. */\n  S.old = S.old || {}; S.xf = S.xf || new Map(); S.mark = S.mark || {}; S.own = S.own || {}; S.ownT = S.ownT || -9; S.trail = S.trail || {};\n  var BULLET = 20110101;\n  function now() { try { return U.FpToFloat(CS.GamePlay.BattleBase.Cur.BattleTimeFp) } catch (x) { return -1 } }\n  function P(a, k) { var v = \"\"; try { v = a.GetS(k) } catch (x) { try { v = a.Get(k) } catch (y) {} } return v == null ? \"\" : String(v) }\n  function own(e, pid) {\n    var t = now(); if (t - S.ownT > 1 || t < S.ownT) { S.own = {}; S.ownT = t }\n    var k = e.UniqueId + \":\" + pid;\n    if (!(k in S.own)) { var v = false; try { v = !!e.TriggerMgr.FindTriggerByIdxRange(pid * 10 + 1, pid * 10 + 5) } catch (x) {} S.own[k] = v }\n    return S.own[k];\n  }\n  function cards(e, a) {\n    var n = P(a, \"need\"), s = P(a, \"skip\");\n    if (n && !n.split(\",\").every(function (p) { return own(e, +p) })) return false;\n    if (s && s.split(\",\").some(function (p) { return own(e, +p) })) return false;\n    // after / notafter: a marker set in the last 3 s (Final Chapter and Thunderhead share kuangbao_atk5)\n    var af = P(a, \"after\"), na = P(a, \"notafter\"), t = now();\n    if (af && !(t - (S.mark[e.UniqueId + af] || -9) < 3)) return false;\n    if (na && t - (S.mark[e.UniqueId + na] || -9) < 3) return false;\n    // in: only while she is in that action (a piece on a move that a variant copies: Thunder Drop on Plunge's landing)\n    var ia = P(a, \"in\");\n    if (ia) { var cur = \"\"; try { cur = String(e.ActionMgr.CurrentActionName) } catch (x) {} if (cur !== ia) return false }\n    return true;\n  }\n  function mp(e, v, slot) {\n    try { e.Attr.ChangeMPBy(U.FloatToFp(v), slot || 2); if (S.dbg) log(null, \"mp\" + (slot || 2) + \" +\" + v) } catch (x) { log(\"mp\" + (slot || 2), \"mp EXC \" + x) }\n  }\n  function skill(e) {\n    try { var k = e.SkillMgr.FindSkillByActionName(String(e.ActionMgr.CurrentActionName)); return k ? k.SkillActivate : null } catch (x) { return null }\n  }\n  // one projectile of her bullet actor (rkib1), playing action b at (x, y), flying along (dx, dy)\n  function bullet(e, b, x, y, dx, dy) {\n    try {\n      var o = CS.GamePlay.BattleBase.Cur.BulletMgr.CreateBulletByParams(e, BULLET, fp2(x, y), fp2(dx, dy || 0), U.FloatToFp(1), b, skill(e), null);\n      if (!o) log(\"nob\" + b, \"bullet \" + b + \" not created\");\n      else if (S.dbg) log(null, \"fx \" + b + \" at \" + x.toFixed(1) + \",\" + y.toFixed(1));\n      return o;\n    } catch (x) { log(\"bx\" + b, \"bullet \" + b + \" EXC \" + x); return null }\n  }\n  function ab(e, b, card) { return own(e, card) ? b + \"_ab\" : b }\n  // bursts or bolts along the line between two points (Swap Cut, Return Through)\n  function path(e, x0, y0, x1, y1, b, n) {\n    for (var i = 1; i <= n; i++) { var f = i / (n + 1); bullet(e, b, x0 + (x1 - x0) * f, y0 + (y1 - y0) * f, x1 > x0 ? 1 : -1, 0) }\n  }\n  function afterimage(e, x, y) {\n    if (!own(e, 21112)) return;\n    bullet(e, \"atk_dashboom\", x, y, e.Dir, 0);\n    if (own(e, 21110)) bullet(e, \"lei_warning\", x, y, e.Dir, 0);           // hidden: Afterimage bursts twice\n  }\n  function enemies(e, cx, cy, r) {\n    var out = [];\n    actors().forEach(function (o) {\n      try {\n        if (!o || o.IsDead || o.Faction === e.Faction || U.FpToFloat(o.Attr.HP) <= 0) return;\n        var d = Math.hypot(+o.Position.x - cx, +o.Position.y - cy); if (d <= r) out.push({ a: o, d: d });\n      } catch (x) {}\n    });\n    out.sort(function (p, q) { return p.d - q.d });\n    return out;\n  }\n\n  // which way the shadow swings or shoots: at the enemy Reki faces (the nearest one ahead of her), else her own facing.\n  // It used to face Reki, so from the far side it struck away from the fight (the lead, 2026-10-22)\n  function aim(e, sx, sy) {\n    var ex = +e.Position.x, best = null;\n    enemies(e, ex, +e.Position.y, 16).some(function (o) {\n      var ox = +o.a.Position.x;\n      if ((ox - ex) * e.Dir >= -0.5) { best = ox; return true }\n      return false;\n    });\n    if (best === null) return e.Dir;\n    return Math.abs(best - sx) < 0.3 ? e.Dir : (best > sx ? 1 : -1);\n  }\n\n  // the copy is drawn in full colour (Taokaka's are too). Her rig has the boss shadow's own page, the same layout\n  // painted dark navy: the copy's renderer draws it as _MainTex through a property block (the glow mask stays hers,\n  // so the orange rims come with it). The shared material is untouched; without the page, the old dark violet tint\n  var PAGE = \"actor/spine/leiji_caogao/leiji_caogao_shadow\", TINT = [0.22, 0.16, 0.42, 0.9];\n  function TYPEOF(t) { var f = (typeof puerts !== \"undefined\" && puerts.$typeof) || globalThis.$typeof; return f(t) }\n  function page() {\n    if (S.page === undefined) {\n      try { S.page = U.GetSingleton(CS.NOAH.Asset.AssetManagerBase).LoadAssetByType(TYPEOF(CS.UnityEngine.Texture2D), PAGE) || null }\n      catch (x) { S.page = null; log(\"tint\", \"shadow page EXC \" + x) }\n    }\n    return S.page;\n  }\n  function tint(s) {\n    try {\n      var sa = s.Renderer.SkeletonAnim, sk = sa.skeleton, tx = page();\n      if (tx) {\n        var mr = sa.GetComponent(TYPEOF(CS.UnityEngine.MeshRenderer)), b = new CS.UnityEngine.MaterialPropertyBlock();\n        mr.GetPropertyBlock(b); b.SetTexture(\"_MainTex\", tx); mr.SetPropertyBlock(b);\n        sk.R = 1; sk.G = 1; sk.B = 1; sk.A = 1;\n      } else { sk.R = TINT[0]; sk.G = TINT[1]; sk.B = TINT[2]; sk.A = TINT[3] }\n    } catch (x) { log(\"tint\", \"tint EXC \" + x) }\n  }\n\n  // 0.5.7 (the lead's call on the testers' reports, 2026-11-13): the shadow's own hits deal 20% of hers, 40% with Heavy\n  // Shadow (21134). The copy is a 201101 with her attack and none of her Potentials, so her +20% a card is not on it:\n  // its share is set against her hit with the cards she holds now, through the stock final-damage buff 1302\n  // (FinalDamAddRate, Strength = the share added; measured working on NaN, 2026-10). Heavy Shadow's old buff, 10741, is\n  // FinalDamRate, the attribute 11111 uses, which was measured to add nothing (notes 2026-10).\n  // Measured in game (window 2, 2026-11-14 04:11-04:13, cards.py v57_): the copy's own sword hits deal half of her hit\n  // without cards before any buff (atk4_sh 37.9 against her 379.2 at strength -0.80; atk1_sh 160 against 320 at 0), and\n  // its projectiles deal her hit without cards in full, untouched by a buff on the copy (Mirror Passes: 318.5 / 637.1\n  // against her 573.4 / 1146.7 with 4 cards). So the copy's body gets 1302 at share / 0.5 - 1.\n  // A 1302 on each projectile did nothing either (rerun, run_reki3.log: the shadow's wave 379.2, Mirror Passes 318.5 /\n  // 637.1). Projectiles take the share from the spawn instead: every spawn of her bullet actors in her move tree scales\n  // its damage by 1 - 0.02 x stacks of rki_shd + 0.05 x stacks of rki_shu on the actor that spawns it (steps\n  // shadow_projectile_scale, the stock DamageScaleV expression with BuffStack, as Bullet's and Jin's). Reki carries\n  // neither (x1); the shadow carries one, set here: 20% is 40 stacks of rki_shd, 328% (every card) 46 of rki_shu.\n  var SHARE = 0.2, SHARE_HEAVY = 0.4, SHARE_PER_CARD = 0.2, BODY_NATIVE = 0.5, STACK_DN = 0.02, STACK_UP = 0.05, CARD_IDS = [];\n  for (var ci = 21101; ci <= 21137; ci++) CARD_IDS.push(ci);\n  S.share = S.share || {};\n  function shadowShare(e, s, life) {\n    try {\n      var n = CARD_IDS.filter(function (p) { return own(e, p) }).length;\n      var share = (own(e, 21134) ? SHARE_HEAVY : SHARE) * (1 + SHARE_PER_CARD * n);\n      var st = share / BODY_NATIVE - 1;\n      S.share[e.UniqueId] = { sid: s.UniqueId };\n      if (Math.abs(st) > 0.001) s.BuffMgr.AddBuff(\"1302\", U.FloatToFp(life + 1), U.FloatToFp(st), 1, e);\n      // the projectiles' scale: their own damage is her hit without cards (x1), so the scale is the share itself\n      var k = Math.round(Math.abs(share - 1) / (share < 1 ? STACK_DN : STACK_UP)), b = share < 1 ? \"rki_shd\" : \"rki_shu\", got = \"\";\n      if (k > 0) {\n        s.BuffMgr.AddBuff(b, U.FloatToFp(life + 1), U.FloatToFp(1), 1, e);\n        s.BuffMgr.ChangeBuffStack(b, Math.min(k, 99));\n        try { got = \" (\" + s.BuffMgr.GetBuffStack(b) + \" read back)\" } catch (x) {}\n      }\n      var rd = \"?\"; try { rd = U.FpToFloat(s.Attr.FinalAttr.get_Item(21)).toFixed(2) } catch (x) {}\n      log(null, \"shadow share \" + share.toFixed(2) + \" (cards \" + n + \", body 1302 \" + st.toFixed(2) + \", projectiles \"\n          + (k > 0 ? b + \" x\" + Math.min(k, 99) + got : \"x1\") + \", FinalDamAddRate \" + rd + \")\");\n    } catch (x) { log(\"share\", \"shadow share EXC \" + x) }\n  }\n  // the shadow's projectiles, every 0.02 s while it lives (rki_shadow_up on her): its Sword Waves become the _shw\n  // copies, whose hit boxes have their own Id. A copy counts as its caster for a box Id's hold (0.4 s on the waves,\n  // notes 2026-10), so with the shadow firing at once its wave never hit an enemy hers had just hit (v57_wave_*: no hit\n  // from it in five cases; it hit after this, run_reki3.log)\n  var SHW = { atk_jianqi_0: \"atk_jianqi_0_shw\", atk_jianqi_45: \"atk_jianqi_45_shw\", atk_jianqi_0_p: \"atk_jianqi_0_p_shw\", atk_jianqi_45_p: \"atk_jianqi_45_p_shw\" };\n  function fromShadow(o, sid) {\n    var c = o;\n    for (var i = 0; i < 4; i++) {\n      try { c = c.Caster } catch (x) { return false }\n      if (!c) return false;\n      if (c.UniqueId === sid) return true;\n    }\n    return false;\n  }\n  buffFuncs.rkiShBul = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      var m = mine(e), sh = S.share[e.UniqueId]; if (!m || !sh || sh.sid !== m.s.UniqueId) return;\n      var L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          if (!fromShadow(o, m.s.UniqueId)) continue;\n          var n = String(o.ActionMgr.CurrentActionName);\n          if (SHW[n]) {\n            o.ActionMgr.ChangeAction(SHW[n]);\n            if (S.dbg) log(null, \"shadow projectile \" + n + \" -> \" + SHW[n]);\n          }\n        } catch (x) { log(\"shbul\" + i, \"shadow projectile EXC \" + x) }\n      }\n    } catch (x) { log(\"shbul\", \"shadow projectiles EXC \" + x) }\n  };\n\n  // one look, no timers: rki_plant calls it at 0.12 s and again at 0.24 s (S.pend: this plant still waits for its copy)\n  function take(e, last) {\n    // Taokaka's piece keeps one copy per caster and brings the same actor back on the next call (game, 2026-10-18),\n    // so the last shadow's actor is a candidate again; one still carrying rki_mirror is a live shadow\n    var best = null;\n    actors().forEach(function (a) {\n      try {\n        if (a === e || a.UniqueId === e.UniqueId || a.BaseID !== e.BaseID) return;\n        if (!a.Caster || a.Caster.UniqueId !== e.UniqueId) return;\n        if (a.BuffMgr.BuffExist(\"rki_mirror\")) return;\n        if (!best || a.UniqueId > best.UniqueId) best = a;\n      } catch (x) {}\n    });\n    if (!best) {\n      if (!last) return;\n      S.pend[e.UniqueId] = 0; S.fcp[e.UniqueId] = 0;\n      var same = actors().filter(function (a) { try { return a.BaseID === e.BaseID && a !== e } catch (x) { return false } }).length;\n      log(null, \"plant: no shadow found (\" + same + \" other \" + e.BaseID + \" in the room)\"); return;\n    }\n    var s = best, fc = !!S.fcp[e.UniqueId];\n    S.fcp[e.UniqueId] = 0;\n    // a shadow Final Chapter planted for itself lasts the move, not a Mirror Point's time\n    var life = fc ? FC_SEC : (own(e, 21110) ? 20 : 10.0);\n    // quietly: shadow_player_tk's end would run its KillSelf\n    try { s.BuffMgr.RemoveAllQuiet() } catch (x) { log(\"rm\", \"copy buffs EXC \" + x) }\n    try { s.StopAI() } catch (x) {}\n    try { s.BuffMgr.AddBuff(\"rki_mirror\", U.FloatToFp(life), U.FloatToFp(1), 1, e) } catch (x) { log(\"add\", \"mirror buff EXC \" + x) }\n    shadowShare(e, s, life);\n    try { s.Dir = e.Dir } catch (x) {}\n    // Mirror Point Air: a shadow planted off the ground stays where it was planted (the game's own nogravity buff;\n    // it takes hold at the next action change, so it goes on before the stand); ClearAll drops the fall speed the copy\n    // was born with, which nogravity alone keeps (game, 2026-10-21)\n    var air = false; try { air = e.ActorPosition.IsOffGround } catch (x) {}\n    if (air) {\n      try { s.BuffMgr.AddBuff(\"nogravity\", U.FloatToFp(30), U.FloatToFp(1), 1, e); s.ActorPosition.ClearAll() } catch (x) { log(\"air\", \"air shadow EXC \" + x) }\n    }\n    try { s.ActionMgr.ChangeAction(\"stand\") } catch (x) {}\n    tint(s);\n    S.m.set(e.UniqueId, { s: s, x: +s.Position.x, y: +s.Position.y });\n    S.pend[e.UniqueId] = 0;\n    // her marker for as long as the shadow lives: the held Skill's switch into Mirror Recall needs it\n    try { e.BuffMgr.AddBuff(\"rki_shadow_up\", U.FloatToFp(life), U.FloatToFp(1), 1, e) } catch (x) { log(\"up\", \"shadow marker EXC \" + x) }\n    if (fc) { fcStrike(e, s); return }\n    // a planted shadow stays where it was planted. It used to start following her at once with Long Mirror and Mirror\n    // Strings, which took every Crossfire away (Boogy, 2026-11-10: \"it just shouldn't do it as base\"; \"If it was just\n    // something you could control, by recalling your shadow for example\"): the follow now starts in rkiCall\n    delete S.trail[e.UniqueId];\n    try { e.BuffMgr.Remove(\"rki_trail\") } catch (x) {}\n    var hp = \"?\"; try { hp = U.FpToFloat(s.Attr.HP).toFixed(0) } catch (x) {}\n    log(null, \"plant: shadow #\" + s.UniqueId + \" at \" + (+s.Position.x).toFixed(2) + \" hp \" + hp + \" mirror \" + s.BuffMgr.BuffExist(\"rki_mirror\"));\n  }\n\n  // Final Chapter's own shadow (option A, card review 2026-10-23): set across from her, the far side of the enemy she\n  // faces (else ahead of her), it plays the Ultra from there; it lasts the move\n  var FC_SEC = 4;\n  function fcStrike(e, s) {\n    var ex = +e.Position.x, ey = +e.Position.y, nx = ex + e.Dir * 5;\n    enemies(e, ex, ey, 12).some(function (o) {\n      var ox = +o.a.Position.x;\n      if ((ox - ex) * e.Dir >= -0.5) { nx = ox + e.Dir * 2.5; return true }\n      return false;\n    });\n    try { s.ActorPosition.TeleportForce(fp2(nx, ey)) } catch (x) { log(\"fctp\", \"final chapter shadow move EXC \" + x) }\n    var m = S.m.get(e.UniqueId); if (m) { m.x = nx; m.y = ey }\n    s.Dir = aim(e, nx, ey);\n    s.ActionMgr.ChangeAction(\"kuangbao_atk3_sh\");\n    if (String(s.ActionMgr.CurrentActionName) !== \"kuangbao_atk3_sh\") s.ActionMgr.ChangeAction(\"kuangbao_atk3\");\n    log(null, \"final chapter: own shadow at \" + nx.toFixed(2) + \" -> \" + s.ActionMgr.CurrentActionName);\n  }\n\n  // Taokaka's piece makes the copy; rkiTake (0.12 / 0.24 s) takes it over\n  function plant(e, fc) {\n    S.pend[e.UniqueId] = 1;\n    S.fcp[e.UniqueId] = fc ? 1 : 0;\n    e.BuffMgr.AddBuff(\"tk_create_shadow_player\", U.FloatToFp(0.3), U.FloatToFp(1), 1, e);\n  }\n  // a copy is born inside Mirror Point too: only Reki herself (no Caster) makes one\n  buffFuncs.rkiPlant = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      // again moves it: the old shadow ends first (Taokaka's piece makes no second copy while one lives)\n      var old = mine(e);\n      if (old) {\n        S.old[e.UniqueId] = { x: +old.s.Position.x, y: +old.s.Position.y };\n        afterimage(e, +old.s.Position.x, +old.s.Position.y);\n        try { old.s.BuffMgr.Remove(\"rki_mirror\") } catch (x) {} S.m.delete(e.UniqueId);\n      }\n      delete S.trail[e.UniqueId];   // planting again ends the follow\n      try { e.BuffMgr.Remove(\"rki_trail\") } catch (x) {}\n      plant(e, false);\n    } catch (x) { log(\"plant\", \"plant EXC \" + x) }\n  };\n  // Final Chapter with no shadow planted: one of its own for the move (a planted one echoes as before, rki_c_echo_fc)\n  buffFuncs.rkiFcPlant = (e, t, a, r) => {\n    try {\n      if (e.Caster || mine(e) || S.pend[e.UniqueId] || !cards(e, a)) return;\n      plant(e, true);\n    } catch (x) { log(\"fcplant\", \"final chapter plant EXC \" + x) }\n  };\n  buffFuncs.rkiTake = (e, t, a, r) => {\n    try {\n      if (e.Caster || !S.pend[e.UniqueId]) return;\n      take(e, S.pend[e.UniqueId]++ >= 2);\n    } catch (x) { log(\"take\", \"take EXC \" + x) }\n  };\n\n  // 0.5.10: empty. The shadow's Rage Step form makes its own effect projectile now (steps shadow_fx), as every form does\n  var ECHO_FX = {};\n  buffFuncs.rkiEcho = (e, t, a, r) => {\n    try {\n      var m = mine(e); if (!m) return;\n      if (e.Caster || !cards(e, a)) return;\n      // 0.5.7 (the testers, 2026-11-12; card 21137): the shadow's Raimei restores MP to her, once per echo. Given\n      // before the trail's return, so a trailing shadow's Raimei pays too\n      var g = +P(a, \"mp\"), gc = +P(a, \"mpcard\");\n      if (g && (!gc || own(e, gc))) mp(e, g);\n      // a trailing shadow replays the move itself, half a second behind, from where she made it (rkiTrail)\n      if (S.trail[e.UniqueId] && e.BuffMgr.BuffExist(\"rki_trail\")) return;\n      var act = P(a, \"act\");\n      if (!act) { log(\"noact\", \"echo: no move name\"); return }\n      var s = m.s;\n      // an air move echoed by a shadow on the ground: its ground form (\"ground\"), so the shot is not fired into the floor\n      if (P(a, \"ground\")) { var off = false; try { off = s.ActorPosition.IsOffGround } catch (x) {} if (!off) act = P(a, \"ground\") }\n      try { s.ActorPosition.TeleportForce(fp2(m.x, m.y)) } catch (x) { log(\"tp\", \"echo return EXC \" + x) }\n      s.Dir = aim(e, m.x, m.y);\n      s.ActionMgr.ChangeAction(act + \"_sh\");\n      if (String(s.ActionMgr.CurrentActionName) !== act + \"_sh\") s.ActionMgr.ChangeAction(act);\n      // the copy draws no effect of its own for these moves: she plays it at its spot (an effect-only projectile)\n      if (ECHO_FX[act]) bullet(e, ECHO_FX[act], m.x, m.y, s.Dir, 0);\n      log(null, \"echo \" + act + \" -> \" + s.ActionMgr.CurrentActionName);\n    } catch (x) { log(\"echo\", \"echo EXC \" + x) }\n  };\n\n  // the trailing shadow (hidden 211037), every 0.02 s while rki_trail lasts: it stands where she stood half a second\n  // ago, faces as she faced and replays every move she started then, from its first frame (ActionChangeAutoId tells a\n  // move started again from one still playing). An attack it replays as the shadow form (_sh, effects unbound) where\n  // her tree has one. It used to take up only her steps and stand still through everything else (the lead,\n  // 2026-10-23: \"its just static it needs to copy rekis move animations\"). Taokaka's astral copy follows her the same way\n  var NOCOPY = /^(behit|push_|knockdown|dead|reborn|born|pvp_born|winpose|StagePass|paid_show|bornshow|standUp|quickStand|reactive|addHP|fenshen|summon)|_show$/;\n  // 0.5.10: the follow also takes the shadow's forms of her run (the copy has no stick to hold a run: Boogy, \"the shadow\n  // has no run animation when following her\"), her waves, her ring and Final Chapter's last two moves (steps\n  // shadow_forms / shadow_fx: the shadow's forms play their effects through projectiles)\n  var SHF = { atk1: 1, atk2: 1, atk3: 1, atk4: 1, atk_dash: 1, atk_dashs: 1, atk_shenglong: 1, atk_shenglongss: 1, kuangbao_atk2: 1, kuangbao_atk3: 1,\n              kuangbao_atk4: 1, kuangbao_atk5: 1, atk_jianqi_0: 1, atk_jianqi_45_air: 1, skill_throw_m: 1, runStart: 1, run: 1, run2: 1 };\n  var TRAIL = 0.5;\n  function shadowForm(n) { return SHF[n] ? n + \"_sh\" : n }\n  buffFuncs.rkiTrail = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      var m = mine(e), h = S.trail[e.UniqueId];\n      if (!m || !h) { try { e.BuffMgr.Remove(\"rki_trail\") } catch (x) {} return }\n      var tn = now(), cur = String(e.ActionMgr.CurrentActionName), id = -1;\n      try { id = e.ActionMgr.ActionChangeAutoId } catch (x) {}\n      h.push({ t: tn, x: +e.Position.x, y: +e.Position.y, d: e.Dir, a: NOCOPY.test(cur) ? \"stand\" : cur, id: id });\n      var p = null;\n      while (h.length && h[0].t <= tn - TRAIL) p = h.shift();\n      if (!p) return;\n      h.unshift(p);   // kept: the next tick still has a sample at least half a second old\n      var s = m.s, sc = String(s.ActionMgr.CurrentActionName);\n      if (NOCOPY.test(sc)) return;   // a hit reaction plays out from the spot it has reached\n      s.ActorPosition.TeleportForce(fp2(p.x, p.y));\n      m.x = p.x; m.y = p.y; s.Dir = p.d;\n      if (p.id === m.tid && sc === m.ta) return;\n      var want = shadowForm(p.a);\n      s.ActionMgr.ChangeAction(want);\n      if (String(s.ActionMgr.CurrentActionName) !== want && want !== p.a) s.ActionMgr.ChangeAction(p.a);\n      m.ta = String(s.ActionMgr.CurrentActionName); m.tid = p.id;\n    } catch (x) { log(\"trail\", \"trail EXC \" + x) }\n  };\n\n  buffFuncs.rkiSwap = (e, t, a, r) => {\n    try {\n      if (e.Caster || String(e.ActionMgr.CurrentActionName).indexOf(\"_swap\") < 0) return;   // Down + Dash only (2026-10-22)\n      // no shadow: it stays a dash (Lightning Charge moved to Dash, then Skill: card review 2026-10-23)\n      var m = mine(e); if (!m) return;\n      var s = m.s, ex = +e.Position.x, ey = +e.Position.y, sx = +s.Position.x, sy = +s.Position.y;\n      if (own(e, 21122) && own(e, 21125)) { try { e.BuffMgr.AddBuff(\"2206_replace2\", U.FloatToFp(0.35), U.FloatToFp(1), 1, e) } catch (x) {} }\n      afterimage(e, sx, sy);\n      e.ActorPosition.TeleportForce(fp2(sx, sy)); s.ActorPosition.TeleportForce(fp2(ex, ey));\n      m.x = ex; m.y = ey; s.Dir = (sx > ex) ? 1 : -1;\n      S.old[e.UniqueId] = { x: ex, y: ey };\n      if (own(e, 21125)) path(e, ex, ey, sx, sy, \"lei_attack\", 3);\n      log(null, \"swap \" + ex.toFixed(2) + \" <-> \" + sx.toFixed(2));\n    } catch (x) { log(\"swap\", \"swap EXC \" + x) }\n  };\n\n  // projectiles of a card: b at x (one or a list, in her facing), y; from her, her shadow (\"sh\"), where the shadow last\n  // stood (\"old\"), or midway (\"mid\"); dir f / b / both; ang: extra angles in degrees; neg: only while MP is below 0;\n  // air: only while off the ground; after: only if the marker named was set in the last 2 s\n  buffFuncs.rkiShot = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) { if (S.dbg && !e.Caster && P(a, \"neg\")) log(null, \"shot \" + P(a, \"b\") + \": cards not held\"); return }\n      if (P(a, \"neg\") && !(U.FpToFloat(e.Attr.GetMP(2)) < 0)) { if (S.dbg) log(null, \"shot \" + P(a, \"b\") + \": not over-exhausted (MP \" + U.FpToFloat(e.Attr.GetMP(2)).toFixed(1) + \")\"); return }\n      if (P(a, \"air\")) { var off = false; try { off = e.ActorPosition.IsOffGround } catch (x) {} if (!off) return }\n      var aft = P(a, \"after\"); if (aft && !(now() - (S.mark[e.UniqueId + aft] || -9) < 2)) return;\n      var from = P(a, \"from\") || \"me\", m = mine(e), ox = +e.Position.x, oy = +e.Position.y, f = e.Dir;\n      // shair: only while the shadow is off the ground (0.5.6: Rising Dragon's lightning below a shadow in mid-air)\n      if (P(a, \"shair\")) { var so = false; try { so = !!(m && m.s.ActorPosition.IsOffGround) } catch (x3) {} if (!so) return }\n      if (from === \"sh\") { if (!m) return; ox = +m.s.Position.x; oy = +m.s.Position.y; f = aim(e, ox, oy); m.s.Dir = f }\n      else if (from === \"old\") { var o = S.old[e.UniqueId]; if (!o) return; ox = o.x; oy = o.y }   // the spot of the shadow before this one\n      else if (from === \"mid\") { if (!m) return; ox = (ox + +m.s.Position.x) / 2; oy = (oy + +m.s.Position.y) / 2 }\n      var b = P(a, \"b\"), xs = (P(a, \"x\") || (P(a, \"ang\") ? \"\" : \"0\")).split(\",\").filter(String).map(Number), y = +(P(a, \"y\") || 0), dir = P(a, \"dir\") || \"f\";\n      xs.forEach(function (x) {\n        var d = dir === \"b\" ? -f : dir === \"both\" ? (x < 0 ? -f : f) : f;\n        bullet(e, b, ox + x * f, oy + y, d, 0);\n      });\n      (P(a, \"ang\") ? P(a, \"ang\").split(\",\").map(Number) : []).forEach(function (g) {\n        var rad = g * Math.PI / 180; bullet(e, b, ox + f, oy + 0.6, f * Math.cos(rad), Math.sin(rad));\n      });\n    } catch (x) { log(\"shot\", \"shot EXC \" + x) }\n  };\n\n  // her shadow's live projectiles switch to the card's version (the shadow's own trigger check does not see her cards)\n  buffFuncs.rkiBSwap = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var from = P(a, \"from\").split(\",\"), to = P(a, \"to\").split(\",\"), L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList, n = 0;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          var rc = o.RootCaster || o.Caster; if (!rc || rc.UniqueId !== m.s.UniqueId) continue;\n          var k = from.indexOf(String(o.ActionMgr.CurrentActionName)); if (k < 0) continue;\n          o.ActionMgr.ChangeAction(to[k]); n++;\n        } catch (x) {}\n      }\n      if (n) log(null, \"shadow projectiles -> \" + P(a, \"to\") + \" x\" + n);\n    } catch (x) { log(\"bswap\", \"bswap EXC \" + x) }\n  };\n\n  // her live Raijin Rings: projectiles cast by `owner` that are in a ring action (not its fade or its lightning)\n  function rings(owner) {\n    var out = [];\n    try {\n      var L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          var c = o.Caster; if (!c || c.UniqueId !== owner.UniqueId) continue;\n          var n = String(o.ActionMgr.CurrentActionName);\n          if (/^(huixuanbiao|ts_raijin_ring)/.test(n) && !/_dis$|_d$|_leidian/.test(n)) out.push(o);\n        } catch (x) {}\n      }\n    } catch (x) { log(\"rings\", \"ring list EXC \" + x) }\n    return out;\n  }\n  S.ring = S.ring || {}; S.ringm = S.ringm || {};\n  // Overcharge's ring: lightning where the ring stops. It used to strike a fixed 4 u ahead of her 0.8 s after the throw,\n  // wherever the ring was (Boogy, 2026-11-10: \"It seems to trigger it as soon as it's far enough from Reki\"). Every\n  // 0.03 s while the card's buff lasts: the ring is followed, and the bolt falls once, where it has come to rest\n  buffFuncs.rkiRingStop = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var rs = rings(e); if (S.dbg && !rs.length) log(\"ringnone\", \"ring stop: no ring of hers found\"); if (!rs.length) return;\n      var o = rs[rs.length - 1], id = o.UniqueId, x = +o.Position.x, y = +o.Position.y, st = S.ring[e.UniqueId];\n      if (!st || st.id !== id) st = S.ring[e.UniqueId] = { id: id, x0: x, px: x, py: y, n: 0, done: 0, neg: 0 };\n      if (U.FpToFloat(e.Attr.GetMP(2)) < 0) st.neg = 1;\n      st.n++;\n      // the ring slows to its far point and turns back without ever standing still: the stop is where it turns\n      var dx = x - st.px, fx = st.px, fy = st.py; st.px = x; st.py = y;\n      if (!st.out && Math.abs(x - st.x0) > 0.5) st.out = x > st.x0 ? 1 : -1;\n      if (S.dbg && st.n % 10 == 0) log(null, \"ring \" + st.n + \" x \" + x.toFixed(2) + \" step \" + dx.toFixed(3) + \" neg \" + st.neg);\n      if (st.done || !st.neg || !st.out || Math.abs(x - st.x0) < 1.5 || dx * st.out > 0.002) return;\n      x = fx; y = fy;\n      st.done = 1;\n      var off = false; try { off = e.ActorPosition.IsOffGround } catch (x2) {}\n      bullet(e, \"lei_attack\", x, off ? y : +e.Position.y, e.Dir, 0);\n      log(null, \"ring stopped at \" + x.toFixed(2) + \": lightning\");\n    } catch (x) { log(\"ringstop\", \"ring stop EXC \" + x) }\n  };\n  // Mirror Ring + Rapid Ring: the two rings burst where they meet. It used to burst midway between her and the shadow\n  // 0.9 s after the throw, whether or not the rings were there (Boogy, 2026-11-10)\n  buffFuncs.rkiRingMeet = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var mine_ = rings(e), theirs = rings(m.s);\n      if (S.dbg) log(\"ringcount\" + mine_.length + theirs.length, \"ring meet: hers \" + mine_.length + \", the shadow's \" + theirs.length);\n      // 0.5.6 (Boogy, 2026-11-12: \"the 2 rings do no do anything when they meet\"). Two things could keep the burst from\n      // ever firing: the shadow's ring listed under her (then \"the shadow's\" list is empty), and two rings closing fast\n      // enough to pass each other between two checks without ever being read within 2 u. Now: her ring against the\n      // shadow's, or, when the shadow's list is empty, her two newest rings; and a pair that has swapped sides since\n      // the last check has met, wherever the check caught them\n      var p, q;\n      if (mine_.length && theirs.length) { p = mine_[mine_.length - 1]; q = theirs[theirs.length - 1] }\n      else if (mine_.length >= 2) { p = mine_[mine_.length - 2]; q = mine_[mine_.length - 1] }\n      else return;\n      var key = p.UniqueId + \":\" + q.UniqueId;\n      if (S.ringm[e.UniqueId] === key) return;\n      var px = +p.Position.x, py = +p.Position.y, qx = +q.Position.x, qy = +q.Position.y, dx = px - qx;\n      var last = S.ringd && S.ringd.k === key ? S.ringd.dx : null;\n      S.ringd = { k: key, dx: dx };\n      var near = Math.hypot(dx, py - qy) <= 2.0;   // (a ring is about 2 u across)\n      var crossed = last !== null && last * dx < 0 && Math.abs(py - qy) <= 2.0;\n      if (!near && !crossed) return;\n      S.ringm[e.UniqueId] = key;\n      bullet(e, ab(e, \"atk_dashboom\", 21134), (px + qx) / 2, (py + qy) / 2, e.Dir, 0);\n      log(null, \"rings met at \" + ((px + qx) / 2).toFixed(2) + (crossed && !near ? \" (crossed)\" : \"\"));\n    } catch (x) { log(\"ringmeet\", \"ring meet EXC \" + x) }\n  };\n\n  // 0.5.6 (Boogy, forwarded 2026-11-12: the air attack \"works really well when facing an enemy, but imo feels horrible\n  // when there's none ... more diagonal momentum when there is no enemy ... slide on the ground more too\"). The dive homes\n  // on the nearest enemy in its search box (1 u behind to 14 u ahead, 14 u below to 2 u above) and then drops straight\n  // down; with nothing in that box it dropped straight down where she was. On the dive's first frame: no enemy in the\n  // box, and she takes the far dive instead (atk_air_far: 45 degrees down and ahead, a longer slide on landing)\n  buffFuncs.rkiFarDive = (e, t, a, r) => {\n    try {\n      if (e.Caster) return;\n      if (String(e.ActionMgr.CurrentActionName) !== \"atk_air_drop\") return;\n      var ex = +e.Position.x, ey = +e.Position.y, f = e.Dir >= 0 ? 1 : -1;\n      var any = enemies(e, ex, ey, 99).some(function (o) {\n        var dx = (+o.a.Position.x - ex) * f, dy = +o.a.Position.y - ey;\n        return dx >= -1 && dx <= 14 && dy >= -14 && dy <= 2;\n      });\n      if (any) return;\n      e.ActionMgr.ChangeAction(\"atk_air_far\");\n      log(null, \"air attack: no enemy in reach, the far dive\");\n    } catch (x) { log(\"fardive\", \"far dive EXC \" + x) }\n  };\n\n  // a delayed card effect: the action's own buff ends with the move, so it puts the real one on her (write_cards.py)\n  buffFuncs.rkiDefer = (e, t, a, r) => {\n    try { if (!e.Caster && cards(e, a)) e.BuffMgr.AddBuff(P(a, \"b\"), U.FloatToFp(+P(a, \"life\") || 1), U.FloatToFp(1), 1, e) } catch (x) { log(\"defer\", \"defer EXC \" + x) }\n  };\n  buffFuncs.rkiMark = (e, t, a, r) => { if (!e.Caster) S.mark[e.UniqueId + P(a, \"k\")] = now() };\n  buffFuncs.rkiGive = (e, t, a, r) => { try { if (!e.Caster && cards(e, a)) mp(e, +P(a, \"mp\")) } catch (x) {} };\n\n  // Crossing Waves: lightning where her waves and the shadow's actually meet. 0.5.7 (Boogy, 2026-11-12: the shadow's\n  // waves came half a second late, so only the level wave ever met hers): the shadow now fires with her, and this no\n  // longer works out a meeting point from the half-second head start. Every 0.03 s while the card's buff lasts it reads\n  // the live waves (hers and the shadow's, any direction, Three Waves' fan included) and strikes once for each of her\n  // waves, where it comes within reach of one of the shadow's or passes it between two looks. With Three Waves and\n  // Breaker Wave a warning mark too (hidden 211014); with Shadow Burst also once where the shadow last stood (211013)\n  var WAVE = /^atk_jianqi(_0|_45|s|s_air)(_p)?(_shw)?$/;\n  S.wm = S.wm || {};\n  function waves(e, m) {\n    var mineW = [], theirs = [], seen = S.wm.own || (S.wm.own = {}), tn = now();\n    try {\n      var L = CS.GamePlay.BattleBase.Cur.BulletMgr.BulletList;\n      for (var i = 0; i < L.Count; i++) {\n        var o = L.get_Item(i);\n        try {\n          if (!WAVE.test(String(o.ActionMgr.CurrentActionName))) continue;\n          var rc = o.RootCaster || o.Caster, id = rc ? rc.UniqueId : -1;\n          if (id !== e.UniqueId && id !== m.s.UniqueId) continue;\n          var k = o.UniqueId, w = seen[k];\n          if (!w || tn - w.t > 3) {\n            // a wave's owner: the shadow's by its caster, else by where it was first seen (a copy's projectile can be\n            // listed under her, as its rings were: 0.5.6)\n            var ox = +o.Position.x, oy = +o.Position.y;\n            var dm = Math.hypot(ox - +e.Position.x, oy - +e.Position.y), ds = Math.hypot(ox - +m.s.Position.x, oy - +m.s.Position.y);\n            w = seen[k] = { t: tn, sh: id === m.s.UniqueId || ds < dm };\n          }\n          (w.sh ? theirs : mineW).push(o);\n        } catch (x) {}\n      }\n    } catch (x) { log(\"waves\", \"wave list EXC \" + x) }\n    return [mineW, theirs];\n  }\n  buffFuncs.rkiWaveMeet = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var w = waves(e, m), hers = w[0], theirs = w[1];\n      if (!hers.length || !theirs.length) return;\n      var st = S.wm[e.UniqueId] || (S.wm[e.UniqueId] = { done: {}, dx: {}, old: -9, prune: -9 }), tn = now();\n      if (tn - st.prune > 5 || tn < st.prune) {   // forget waves and pairs older than 5 s (ids are reused)\n        st.prune = tn; st.dx = {};\n        [st.done, S.wm.own || {}].forEach(function (o) { Object.keys(o).forEach(function (k) { var v = o[k]; if (tn - (v.t !== undefined ? v.t : v) > 5 || tn < (v.t !== undefined ? v.t : v)) delete o[k] }) });\n      }\n      hers.forEach(function (p) {\n        var pk = p.UniqueId;\n        if (st.done[pk] && tn - st.done[pk] < 3) return;\n        var px = +p.Position.x, py = +p.Position.y;\n        theirs.some(function (q) {\n          var qx = +q.Position.x, qy = +q.Position.y, dx = px - qx, key = pk + \":\" + q.UniqueId, last = st.dx[key];\n          st.dx[key] = dx;\n          var near = Math.hypot(dx, py - qy) <= 1.6;\n          var crossed = last !== undefined && last * dx < 0 && Math.abs(py - qy) <= 2.0;\n          if (!near && !crossed) return false;\n          st.done[pk] = tn;\n          var x = (px + qx) / 2, y = (py + qy) / 2 - 0.5;\n          bullet(e, \"lei_attack\", x, y, 1, 0);\n          if (own(e, 21107) && own(e, 21108)) bullet(e, \"lei_warning\", x, y, 1, 0);\n          if (own(e, 21112) && S.old[e.UniqueId] && tn - st.old > 1) { st.old = tn; bullet(e, \"lei_attack\", S.old[e.UniqueId].x, S.old[e.UniqueId].y, 1, 0) }\n          log(null, \"waves met at \" + x.toFixed(2) + \",\" + y.toFixed(2) + (crossed && !near ? \" (crossed)\" : \"\"));\n          return true;\n        });\n      });\n    } catch (x) { log(\"wavemeet\", \"wave meet EXC \" + x) }\n  };\n\n  // Twin Dragons + Mirror Point Air: a shadow standing in the air dives when she rises\n  buffFuncs.rkiDive = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) return;\n      var off = false; try { off = m.s.ActorPosition.IsOffGround } catch (x) {}\n      if (off) { try { m.s.BuffMgr.Remove(\"nogravity\"); m.s.Dir = e.Dir } catch (x) {} m.s.ActionMgr.ChangeAction(\"atk_air_add\"); log(null, \"shadow dives\") }\n    } catch (x) { log(\"dive\", \"dive EXC \" + x) }\n  };\n\n  // Return Through: the shadow comes back to her side; bursts along its path\n  buffFuncs.rkiCall = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var m = mine(e); if (!m) { log(null, \"return: no shadow\"); return }\n      var sx = +m.s.Position.x, sy = +m.s.Position.y, ex = +e.Position.x, ey = +e.Position.y, side = sx > ex ? 1 : -1;\n      var b = ab(e, \"atk_dashboom\", 21134);\n      path(e, sx, sy, ex, ey, b, Math.max(1, Math.min(4, Math.round(Math.abs(sx - ex) / 2.5))));\n      if (own(e, 21125)) path(e, sx, sy, ex, ey, \"lei_attack\", 2);\n      if (own(e, 21110) && own(e, 21132)) {\n        var lo = Math.min(sx, ex), hi = Math.max(sx, ex), hit = enemies(e, (sx + ex) / 2, (sy + ey) / 2, 99)\n          .filter(function (o) { var x = +o.a.Position.x; return x >= lo - 1 && x <= hi + 1 && Math.abs(+o.a.Position.y - ey) < 3 }).length;\n        if (S.dbg) log(null, \"return path: \" + hit + \" enemies\"); if (hit) mp(e, Math.min(20, 7 * hit));\n      }\n      var nx = ex + side * 1.2; m.s.ActorPosition.TeleportForce(fp2(nx, ey)); m.x = nx; m.y = ey; m.s.Dir = -side;\n      S.old[e.UniqueId] = { x: sx, y: sy };\n      // hidden (Long Mirror + Mirror Recall): once called back, the shadow follows her half a second behind (rkiTrail)\n      // until she plants it again\n      if (own(e, 21110)) {\n        S.trail[e.UniqueId] = [];\n        try { e.BuffMgr.AddBuff(\"rki_trail\", U.FloatToFp(20), U.FloatToFp(1), 1, e) } catch (x) { log(\"trail\", \"trail EXC \" + x) }\n      }\n      log(null, \"return through from \" + sx.toFixed(2));\n    } catch (x) { log(\"call\", \"call EXC \" + x) }\n  };\n\n  // the marker outlived a shadow that was killed early: nothing to call back, so she stops instead of an empty call\n  buffFuncs.rkiCallGate = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a) || mine(e)) return;\n      try { e.BuffMgr.Remove(\"rki_shadow_up\") } catch (x) {}\n      e.ActionMgr.ChangeAction(\"stand\");\n      log(null, \"return: no shadow, call stopped\");\n    } catch (x) { log(\"callgate\", \"call gate EXC \" + x) }\n  };\n\n  buffFuncs.rkiArmor = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      var d = U.FloatToFp(+P(a, \"dur\") || 1);\n      e.BuffMgr.AddBuff(\"90121\", d, U.FloatToFp(1), 1, e); e.BuffMgr.AddBuff(\"10521\", d, U.FloatToFp(0.5), 1, e);\n      if (S.dbg) log(null, \"armour \" + e.BuffMgr.BuffExist(\"90121\") + \" \" + e.BuffMgr.BuffExist(\"10521\"));\n    } catch (x) { log(\"armor\", \"armor EXC \" + x) }\n  };\n  buffFuncs.rkiInv = (e, t, a, r) => {\n    try { if (!cards(e, a)) return; e.BuffMgr.AddBuff(\"2206_replace2\", U.FloatToFp(+P(a, \"dur\") || 0.5), U.FloatToFp(1), 1, e) }\n    catch (x) { log(\"inv\", \"inv EXC \" + x) }\n  };\n\n  // Lightning Field: each step strikes the nearest enemy within 6 u of where Final Chapter ended\n  buffFuncs.rkiField = (e, t, a, r) => {\n    try {\n      if (e.Caster || !cards(e, a)) return;\n      // the nearest enemy around her where she is now (Final Chapter's finish throws them several units away)\n      var o = enemies(e, +e.Position.x, +e.Position.y, 9)[0]; if (!o) return;\n      bullet(e, ab(e, \"lei_attack\", 21134), +o.a.Position.x, +o.a.Position.y, 1, 0);\n    } catch (x) { log(\"field\", \"field EXC \" + x) }\n  };\n\n  /* the Crossfire (talent Half a Second): the talent's trigger puts rki_xmark on every enemy she hits; two hits from\n     opposite sides within 0.5 s are a Crossfire: the second deals the talent's share more (of what that hit took),\n     restores MP, and pays the cards. One per enemy per 0.5 s. */\n  // 0.5.10 (Boogy, 2026-11-15: \"Crossfire only procs from Raimei, no other move\"). The mark came only from her talent's\n  // trigger, which fires on her hits alone (the shadow copy has no triggers), and a hit by one of her own projectiles\n  // counted as a shadow hit (its Caster is the projectile), so her Raimei's cut and its own shockwave made a Crossfire and\n  // nothing the shadow did ever did. Now every hit of the shadow (its moves' hits and every projectile hit, steps\n  // shadow_fx) leaves the mark at Strength XS; such a mark counts only when the hit's line of casters reaches her\n  // shadow, and takes the talent's share from her last own mark. Who hit is read from that line, not from the Caster.\n  var XS = 5;   // marks above this Strength come from a hit's own victim list (9), not from her talent (0.3 to 0.6)\n  S.xs = S.xs || {};\n  buffFuncs.rkiXHit = (v, t, a, r) => {\n    try {\n      var h = t.Caster; if (!h) return;\n      var me = h, line = [h];\n      for (var i = 0; i < 6; i++) { var c = null; try { c = me.Caster } catch (x) {} if (!c) break; me = c; line.push(c) }\n      var m = mine(me), byShadow = !!m && line.some(function (o) { return o.UniqueId === m.s.UniqueId });\n      var str = U.FpToFloat(t.Strength) || 0, fromHit = str > XS;\n      if (fromHit && !byShadow) return;                 // her own projectile: her talent marked that hit already\n      if (!fromHit) S.xs[me.UniqueId] = str;\n      var src = h;                                      // the side is where the hitter stands (shadow or projectile)\n      var tn = now(), hp = U.FpToFloat(v.Attr.HP), side = (+src.Position.x > +v.Position.x) ? 1 : -1;\n      var k = v.UniqueId, p = S.xf.get(k);\n      // a record from an earlier fight: the battle clock starts again and enemy ids are given out again, so an old\n      // record read as a hit \"-460 s ago\" (a false Crossfire) and an old cooldown in the future blocked every Crossfire\n      // on that enemy (game, window 4, 2026-11-15, cards.py t7_xf_rage)\n      if (p && (tn < p.t || (p.cool && tn < p.cool))) p = null;\n      // a Crossfire is a hit by her and a hit by her shadow on one enemy within 0.5 s, whichever sides they come from\n      // (Boogy, 2026-11-10: needing both sides was \"basically impossible to hit consistently on small enemies\"); two of\n      // her own hits from opposite sides still count, as before\n      var who = byShadow ? 1 : 0;\n      if (S.dbg) log(null, \"xmark on \" + k + \" from \" + (byShadow ? \"shadow\" : \"her\") + (h !== me && !byShadow ? \" (projectile)\" : \"\") + \" side \" + side\n                     + (p ? \" (last: \" + (p.who ? \"shadow\" : \"her\") + \" side \" + p.side + \", \" + (tn - p.t).toFixed(2) + \" s ago\" + (p.cool ? \", cool \" + (tn - p.cool).toFixed(2) : \"\") + \")\" : \"\"));\n      S.xf.set(k, { side: side, who: who, t: tn, hp: hp, cool: p && p.cool });\n      if (!p || (p.side === side && p.who === who) || tn - p.t > 0.5 || (p.cool && tn - p.cool < 0.5)) return;\n      S.xf.get(k).cool = tn;\n      var s = (fromHit ? S.xs[me.UniqueId] : str) || 0.3, dmg = Math.max(0, p.hp - hp) * s;\n      if (dmg > 0) { try { CS.GamePlay.BattleUtils.ActorDirectDamage(me, v, U.FloatToFp(dmg), 0) } catch (x) { log(\"xdmg\", \"crossfire damage EXC \" + x) } }\n      var gain = Math.round(s * 10), act = \"\"; try { act = String(me.ActionMgr.CurrentActionName) } catch (x) {}\n      if (own(me, 21132)) gain += (own(me, 21101) && /^atk[123]/.test(act)) ? 8 : 4;\n      mp(me, gain);\n      if (own(me, 21117)) {\n        var sp = 10; if (own(me, 21118) && own(me, 21132) && S.field && tn - S.field.t < 7) sp += 5;\n        mp(me, sp, 3);\n      }\n      if (own(me, 21110) && own(me, 21132)) {\n        var m = mine(me); if (m) { try { var b = m.s.BuffMgr.Find(\"rki_mirror\"); b.TimeEllapsed = U.FloatToFp(Math.max(0, U.FpToFloat(b.TimeEllapsed) - 1));\n          try { var u = me.BuffMgr.Find(\"rki_shadow_up\"); if (u) u.TimeEllapsed = b.TimeEllapsed } catch (x) {} if (S.dbg) log(null, \"shadow time +1 s (\" + U.FpToFloat(b.TimeEllapsed).toFixed(1) + \" s used)\") } catch (x) { log(\"xt\", \"crossfire time EXC \" + x) } }\n      }\n      log(null, \"crossfire on \" + k + \" +\" + dmg.toFixed(0) + \" dmg, +\" + gain + \" MP\" + (byShadow ? \" (shadow)\" : \"\"));\n    } catch (x) { log(\"xhit\", \"crossfire EXC \" + x) }\n  };\n})();\n"
    },
    {
     "file": "data/js/gameplay/battle/BattleTryout",
@@ -18063,7 +18082,7 @@
       "set": [
        {
         "path": "Name",
-        "value": "Reki: Crossfire mark"
+        "value": "Reki: Crossfire mark (0.5.10: CoExist, every mark reaches rkiXHit)"
        },
        {
         "path": "LogicArray",
@@ -18087,6 +18106,10 @@
           }
          }
         ]
+       },
+       {
+        "path": "AddReplaceType",
+        "value": 4
        }
       ]
      },
@@ -18753,5 +18776,5 @@
    }
   ]
  },
- "version": "0.5.9"
+ "version": "0.5.10"
 }

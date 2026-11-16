@@ -31,7 +31,7 @@ from PySide6.QtGui import QDesktopServices, QGuiApplication, QImage
 
 from . import extras, fetch, logs, modlist
 
-VERSION = "0.5.10"
+VERSION = "0.5.11"
 HERE = os.path.dirname(os.path.abspath(__file__))
 APPID = "2273430"
 EXE = "BlazblueEntropyEffect.exe"
@@ -1309,7 +1309,24 @@ class Controller(QObject):
             except OSError as e:
                 self.said.emit("The game could not be started (%s)." % (e.strerror or e))
             return
-        QDesktopServices.openUrl(QUrl("steam://rungameid/" + APPID))
+        # through Steam first (its overlay, its cloud saves); where Steam's link does not open, or no game window has
+        # appeared 25 s later, the game's own program is started, as Steam would start it (2026-11-15: PLAY did nothing)
+        opened = QDesktopServices.openUrl(QUrl("steam://rungameid/" + APPID))
+        if opened:
+            self.said.emit("Starting the game through Steam...")
+            QTimer.singleShot(25000, lambda: None if _game_open() else self._start_direct(exe))
+        else:
+            self._start_direct(exe)
+
+    def _start_direct(self, exe):
+        if not os.path.isfile(exe):
+            self.said.emit("The game's program was not found. Press Set up and install, or start the game from Steam.")
+            return
+        try:
+            subprocess.Popen([exe], cwd=os.path.dirname(exe), env=dict(os.environ, SteamAppId=APPID, SteamGameId=APPID))
+            self.said.emit("Starting the game directly. Steam has to be running.")
+        except OSError as e:
+            self.said.emit("The game could not be started (%s). Start it from Steam: the mods are already in." % (e.strerror or e))
 
     def _start_copy(self, copy_id, name):
         exe = os.path.join(self._copy_dir(copy_id), "game", self._copy_info(copy_id)["exe"])

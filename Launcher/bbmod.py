@@ -81,10 +81,26 @@ encode_table, verify_table, encode_fixed_table = _mp["encode_table"], _mp["verif
 rebuild_bundle, slice_bundle, find_entry, noah_xor = _mp["rebuild_bundle"], _mp["slice_bundle"], _mp["find_entry"], _mp["noah_xor"]
 SCHEMA, JSKEYS = _mp["SCHEMA"], _mp["JSKEYS"]
 
+def build_from_files(root):
+    """the game build of the linked game from its GameAssembly.dll, when Steam's app manifest is not next to it (a game
+    folder moved out of its Steam library, Proton on Linux): the build whose tools/schema/<build>/gameassembly.sha1
+    holds the same SHA-1, else None (2026-11-15)"""
+    import hashlib as _h
+    try:
+        ga = os.path.join(os.path.realpath(os.path.join(root, "game")), "GameAssembly.dll")
+        digest = _h.sha1(open(ga, "rb").read()).hexdigest()
+        base = os.path.join(root, "tools", "schema")
+        for b in sorted(os.listdir(base), reverse=True):
+            p = os.path.join(base, b, "gameassembly.sha1")
+            if os.path.exists(p) and open(p, encoding="utf-8").read().strip() == digest: return b
+    except Exception: pass
+    return None
 def game_build():
     try:
-        m = re.search(r'"buildid"\s+"(\d+)"', open(STEAM_MANIFEST, encoding="utf-8").read()); return m.group(1) if m else "?"
-    except OSError: return "?"
+        m = re.search(r'"buildid"\s+"(\d+)"', open(STEAM_MANIFEST, encoding="utf-8").read())
+        if m: return m.group(1)
+    except OSError: pass
+    return build_from_files(ROOT) or "?"
 
 
 def load_profile():

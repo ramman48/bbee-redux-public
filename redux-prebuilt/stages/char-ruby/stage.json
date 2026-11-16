@@ -1,6 +1,6 @@
 {
  "mod": "char-ruby",
- "version": "1.0.4",
+ "version": "1.0.5",
  "files": {
   "actor/animation/role/rrb_air_turn.ab": "1f5b4d471a73fa0dd2fb31b1b5ce47306c5b57fb",
   "actor/animation/role/rrb_appeal.ab": "f08761e32b3e04aa70b2804f0a34d4a5afe2c2ef",
@@ -22271,6 +22271,6 @@
   ]
  },
  "took": 2.7,
- "stamp": "d5a1ff70321a14fd981a7f98049dec85c03b5c12",
- "made": "2026-11-15 05:23:48"
+ "stamp": "231d796b9b4e56655856fd57295b2c607683adc1",
+ "made": "2026-11-15 18:50:02"
 }

@@ -2,7 +2,7 @@
  "id": "char-susanoo",
  "name": "Susanoo",
  "author": "BBEE modding project",
- "version": "0.1.10",
+ "version": "0.1.11",
  "description": "Susanoo (ActorId 193301) as his own playable character, built on EX Hakumen's Susanoo form: always in that form, his SP gauge as a super gauge, the beam as his Ultra, Retribution as his guard, 28 Potentials over nine tabs. Unofficial; not affiliated with 91Act or Arc System Works.",
  "gameBuilds": [
   "25598842",
@@ -11939,7 +11939,16 @@
    "Potential_21379": "tex:UI/Texture/IconPotential193301/Potential_21379"
   },
   "textureAliases": {
-   "UI/Texture/HeroPortraitFull/HeroPortraitFull_193301": "UI/Texture/HeroPortraitFull/HeroPortraitFull_103301"
+   "UI/Texture/HeroPortraitFull/HeroPortraitFull_193301": "UI/Texture/HeroPortraitFull/HeroPortraitFull_103301",
+   "UI/Texture/IconPotential/Potential_21371": "UI/Texture/IconPotential193301/Potential_21371",
+   "UI/Texture/IconPotential/Potential_21372": "UI/Texture/IconPotential193301/Potential_21372",
+   "UI/Texture/IconPotential/Potential_21373": "UI/Texture/IconPotential193301/Potential_21373",
+   "UI/Texture/IconPotential/Potential_21374": "UI/Texture/IconPotential193301/Potential_21374",
+   "UI/Texture/IconPotential/Potential_21375": "UI/Texture/IconPotential193301/Potential_21375",
+   "UI/Texture/IconPotential/Potential_21376": "UI/Texture/IconPotential193301/Potential_21376",
+   "UI/Texture/IconPotential/Potential_21377": "UI/Texture/IconPotential193301/Potential_21377",
+   "UI/Texture/IconPotential/Potential_21378": "UI/Texture/IconPotential193301/Potential_21378",
+   "UI/Texture/IconPotential/Potential_21379": "UI/Texture/IconPotential193301/Potential_21379"
   },
   "js": [
    {

@@ -83,11 +83,25 @@ def _steam_manifest(root):
         if os.path.exists(cand): return cand
     except Exception: pass
     return r"C:\Program Files (x86)\Steam\steamapps\appmanifest_2273430.acf"
+def build_from_files(root):
+    """the game build of the linked game from its GameAssembly.dll, when Steam's app manifest is not next to it (a game
+    folder moved out of its Steam library, Proton on Linux): the build whose tools/schema/<build>/gameassembly.sha1
+    holds the same SHA-1, else None (2026-11-15)"""
+    import hashlib as _h
+    try:
+        ga = os.path.join(os.path.realpath(os.path.join(root, "game")), "GameAssembly.dll")
+        digest = _h.sha1(open(ga, "rb").read()).hexdigest()
+        base = os.path.join(root, "tools", "schema")
+        for b in sorted(os.listdir(base), reverse=True):
+            p = os.path.join(base, b, "gameassembly.sha1")
+            if os.path.exists(p) and open(p, encoding="utf-8").read().strip() == digest: return b
+    except Exception: pass
+    return None
 def _build_id():
     try:
         acf = open(_steam_manifest(ROOT), encoding="utf-8", errors="replace").read()
         return re.search(r'"buildid"\s+"(\d+)"', acf).group(1)
-    except Exception: return "unknown"
+    except Exception: return build_from_files(ROOT) or "unknown"
 SNAP = os.path.join(ROOT, "tools", "schema", _build_id())
 if os.path.exists(DUMP):
     text = open(DUMP, encoding="utf-8", errors="replace").read()
@@ -107,6 +121,12 @@ if os.path.exists(DUMP):
 else:
     _sp = os.path.join(SNAP, "proto_schema_snapshot.json")
     if not os.path.exists(_sp):
+        if os.path.basename(SNAP) == "unknown":
+            known = sorted(b for b in os.listdir(os.path.join(ROOT, "tools", "schema")) if b.isdigit())
+            sys.exit("This copy of BlazBlue Entropy Effect is not a version the mods are made for. They need the Steam version, "
+                     "build %s (the game's own files differ from it, and Steam's record of the game was not found next to it). "
+                     "Update the game in Steam, or point the Terminal at the Steam copy (Options > General > FIND THE GAME BY HAND)."
+                     % (known[-1] if known else "?"))
         sys.exit("No dump/dump.cs and no schema snapshot for game build %s. See docs/BUILD_UPDATE.md." % os.path.basename(SNAP))
     _snap = json.load(open(_sp)); enums = set(_snap["enums"])
     schema = {k: {int(n): tuple(v) for n, v in f.items()} for k, f in _snap["schema"].items()}

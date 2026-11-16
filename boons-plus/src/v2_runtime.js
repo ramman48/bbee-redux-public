@@ -26,7 +26,8 @@ var BP2X = (function () {
   function isBoss(a) { var g = tags(a); try { return !!g && (g.HasTag("boss") || g.HasTag("Boss") || g.HasTag("EliteBoss") || g.HasTag("FinalBoss")) } catch (x) { return false } }
   function isElite(a) { var g = tags(a); try { return !!g && (g.HasTag("elite") || g.HasTag("Elite")) } catch (x) { return false } }
   /* can hits move it (NoHitFly = 1, FixPosition = 5)? Unknown -> treat as immovable (boss rules, never a shove) */
-  function launchable(a) { try { var at = a.Attr; return !(at.GetResistance(1) || at.GetResistance(5)) } catch (x) { once("res", "GetResistance EXC " + x); return false } }
+  function launchable(a) { if (isBoss(a)) return false;   /* 1.1.4: a boss is never lifted or thrown: a flying one stayed where a lift left it */
+    try { var at = a.Attr; return !(at.GetResistance(1) || at.GetResistance(5)) } catch (x) { once("res", "GetResistance EXC " + x); return false } }
   function invincible(a) { try { return (a.ActionMgr && a.ActionMgr.Attr && a.ActionMgr.Attr.Invincipal > 0) || (a.BuffMgr && a.BuffMgr.BuffAttr && a.BuffMgr.BuffAttr.Invincipal > 0) } catch (x) { return false } }
   function fp2(x, y) { return U.Vector2ToFp2(new CS.UnityEngine.Vector2(x, y)) }
   /* how far the ground is below a point (m): BattleUtils.GroundHeight casts a ray straight down and returns the hit

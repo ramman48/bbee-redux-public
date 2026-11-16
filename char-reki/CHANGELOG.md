@@ -1,5 +1,17 @@
 # Reki: patch notes
 
+## 0.5.10 (2026-11-15)
+- Fixed Up + Summon without enough SP, and Down + Summon at any time, leaving her able only to walk. A Summon press now holds back only Summon, for half a second, as it does for the other heroes.
+- Fixed Overcharge changing the rhythm of Sword Wave, Mirror Point and Raijin Ring when you press Skill again. With the card they come out at the same pace as without it, and can still be used past 0 MP.
+- Fixed Thunder God Step missing every cut when the enemy stood against her back. She turns to the nearest enemy before the blink and again after it.
+- Fixed Rising Dragon dropping her back to the floor at its end, and leaving her stuck in mid-air when used in the air. She now stays at the top of the rise for a moment, then falls.
+- Fixed Rising Dragon in the air giving back her double jump and air dash.
+- Fixed Crossfire coming only from Raimei. The hits of your shadow's moves and projectiles now count, and your own projectiles no longer count as your shadow's.
+- Fixed Crossfire sometimes failing, or coming from a single hit, on enemies in later fights.
+- Fixed your shadow having no run animation while it follows you after Mirror Recall.
+- Fixed your shadow's attacks missing their slashes and bursts, Final Chapter's last two strikes among them.
+- Changed Heavy Shadow's text to say what it does: it doubles your shadow's damage.
+
 ## 0.5.8 (2026-11-14)
 - Changed the wording of the Potential and move texts to read like the game's own. No move works differently.
 - Added her move and Potential descriptions in the nine other languages. They were English in every language before.
