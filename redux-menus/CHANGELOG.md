@@ -1,5 +1,12 @@
 # Redux Menus: patch notes
 
+## 0.1.26 (2026-11-16, development)
+- Fixed: on the Legacy menu, choosing Legacy I moves on to Legacy II by itself. After Legacy II, or at once when no second Legacy is left to pick, the cursor goes to Start Dive.
+- Fixed: the Triple Dash & Jump switch on the Legacy menu did nothing for heroes whose dash and jump wait on their own Triple Dash and Triple Jump cards, such as Reki. It now gives them the same effect as holding those cards.
+- Fixed: the Extreme tab of the Entropy menu listed the rewards of Grim of the Abyss next to Extreme's own. Each tab now lists only its own rewards.
+- Fixed: The Prisoner could not be unlocked on the character select after Clear the Infection, although his Avatar Analyzer was owned. Hold to unlock works for him now, as on the game's own select.
+- Fixed: the entries of the pause menu now show their icons the first time the menu opens.
+
 ## 0.1.23 (2026-11-14)
 - Fixed: opening the Entropy menu at the hub console showed the game's old panels for a moment and then stalled before the new menu appeared. The new menu now opens straight away.
 - Fixed: the old pause menu's numbers showed behind the new pause menu.

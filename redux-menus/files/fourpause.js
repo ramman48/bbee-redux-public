@@ -140,7 +140,9 @@
       B.label = fnt(txt(s, vis, "Label", 0, 0, w - 30, h, 25, INK, TMP.TextAlignmentOptions.Center, 0), "display");
     } else {
       var ic = row.Find("Box/icon"), im = ic ? ic.GetComponent(T(UI.Image)) : null;
-      if (im && im.sprite) { B.icon = H.img(vis, "Icon", -w / 2 + 52, 0, 58, 58, null, null, INK); B.icon.sprite = im.sprite; B.icon.preserveAspect = true; }
+      // 0.1.26 (Boogy, 2026-11-15: the first time the menu opened there were no icons beside the names, a second open had them):
+      // the stock row has not set its icon yet when the card is built, so the icon is made whenever the row has one and takes the sprite as soon as it is there
+      if (im) { B.icSrc = im; B.icon = H.img(vis, "Icon", -w / 2 + 52, 0, 58, 58, null, null, INK); B.icon.preserveAspect = true; B.icon.sprite = im.sprite; B.icon.enabled = !!im.sprite; }
       B.idx = fnt(txt(s, vis, "Idx", w / 2 - 22, 0, 60, 34, 21, DIM, TMP.TextAlignmentOptions.Right, 0, 1), "body"); setT(B.idx, (i < 9 ? "0" : "") + (i + 1));
       B.label = fnt(txt(s, vis, "Label", -w / 2 + 104, 0, w - 190, h * 0.85, 33, INK, TMP.TextAlignmentOptions.Left, 0, 0), "body");
       B.label.enableWordWrapping = true; B.label.enableAutoSizing = true; B.label.fontSizeMin = 20; B.label.fontSizeMax = 33;
@@ -153,6 +155,7 @@
   }
   function cardAt(B, t, u, lit) {
     if (lit && !B.on) B.at = t; if (!lit && B.on) B.offAt = t; B.on = lit;
+    if (B.icSrc && B.icon) { try { var spr = B.icSrc.sprite; if (spr && !spr.Equals(null) && B.icon.sprite !== spr) { B.icon.sprite = spr; B.icon.enabled = true; } } catch (e) { } }
     var g = B.g = lit ? H.ease(H.clamp01((t - B.at) / 0.12)) : 1 - H.ease(H.clamp01((t - B.offAt) / 0.2));
     var HUE = B.red ? mixc(TEAL, RED, g) : TEAL, key = g.toFixed(2) + (B.red ? "r" : "");
     if (B.vk !== key) {

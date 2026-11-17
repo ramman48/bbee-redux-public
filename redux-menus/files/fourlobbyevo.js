@@ -619,14 +619,32 @@
   // fight: every PC there plays every hero and only this one would know ----
   var TRIPLE = [11801, 11741], TRIPLE_LABEL = "Triple Dash & Jump";
   function tripleOn() { try { return !!B.opt("triple"); } catch (x) { return false; } }
-  E.tripleTick = function () {
+  var HTRIPLE = {};
+  function heroTriple(base) {
+    if (HTRIPLE[base]) return HTRIPLE[base];
+    var out = [];
+    try {
+      var X = require("Gen/Xlsx").Xlsx;
+      X.BaseActorPotentialConf.All.forEach(function (p) {
+        if (p.actorId != base || !p.triggerInfo) return;
+        var d = X.PlayerBattleTriggerDetail.Get(p.triggerInfo.id, p.triggerInfo.level || 1);
+        if (d && d.OPFunc == "AddTrigger" && /^Id:(11801|11741)(,RefreshSkill:1)?$/.test(String(d.OPParams)) && out.indexOf(p.triggerInfo.id) < 0) out.push(p.triggerInfo.id);
+      });
+    } catch (x) { log("triple cards of " + base + ": " + B.es(x)); }
+    return (HTRIPLE[base] = out);
+  }
+  E.tripleTick = function (testRoom) {   // testRoom: the test room (not a run) may call it, to see what a run would add
     if (!tripleOn()) return "off";
     var L = G.BB4L; if (L && L.state && L.state != "none") return "four-player lobby";
     var b = null; try { b = require("GamePlay/Battle/BattleJs").default.Instance; } catch (x) {}
-    if (!b || b.BattleClassName != "BattleBreed") return "not in a run";
+    if (!b || (b.BattleClassName != "BattleBreed" && !(testRoom && b.BattleClassName == "BattleTryout"))) return "not in a run";
     var pl = b.Battle && b.Battle.PlayerSelf; if (!pl || pl.Equals(null) || !pl.TriggerMgr) return "no hero";
     var added = [];
-    TRIPLE.forEach(function (id) {
+    // 0.1.26 (Fury, 2026-11-16: the switch did nothing for some added heroes): a hero whose dash and jump rows wait on their own card (Reki's
+    // 21122 / 21119, Ex Hakumen's 19214) is not opened by the stock triggers alone. Its Triple Dash and Triple Jump cards are the Potentials
+    // whose trigger is only "AddTrigger 11801 / 11741"; the hero gets those trigger nodes too, as if it held the cards.
+    var own = heroTriple(pl.BaseID);
+    TRIPLE.concat(own).forEach(function (id) {
       try {
         if (pl.TriggerMgr.FindTrigger(id, true)) return;
         var nd = cs.GamePlay.PlayerTriggerMgr.NewTriggerNode(id, 1);

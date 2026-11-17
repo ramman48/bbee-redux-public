@@ -1,6 +1,6 @@
 {
  "mod": "char-ruby",
- "version": "1.0.5",
+ "version": "1.0.6",
  "files": {
   "actor/animation/role/rrb_air_turn.ab": "1f5b4d471a73fa0dd2fb31b1b5ce47306c5b57fb",
   "actor/animation/role/rrb_appeal.ab": "f08761e32b3e04aa70b2804f0a34d4a5afe2c2ef",
@@ -980,8 +980,8 @@
   "effect/prefab/role/rrb/wave_rrb_sweep_s3k.ab": "89e8b72c95a0d12df7775ac8f6143003c810cdc3",
   "effect/prefab/role/rrb/wave_rrb_sweep_s3x.ab": "8bde9e9c443aeb986cacf9c20eda2b3ef154f172",
   "ui/atlas/iconpotential200701/iconpotential200701.ab": "ffb29eb1ebd377474c6209e02e3c69baab37fa8e",
-  "ui/texture/heroheadicon/heroevohead_200701.ab": "abdfc3d68440f89feeee3d55b8e731fc9671d87d",
-  "ui/texture/heroheadicon/heroevohead_off_200701.ab": "4f42b0aa77c917cd00a536c09908fb9c119686aa",
+  "ui/texture/heroheadicon/heroevohead_200701.ab": "174a7215fcc902af0289f93831b22c00bdc85ce1",
+  "ui/texture/heroheadicon/heroevohead_off_200701.ab": "56bd9ee87effd1a64729d55a1c900f800b697dbe",
   "ui/texture/heroheadicon/herofinalbattle_200701.ab": "1539df63c952a99fca19137d747d049516c46cd4",
   "ui/texture/heroheadicon/heroheadicon_200701.ab": "f58f702529084563260efda038ea695e8259d97e",
   "ui/texture/heroheadicon/heropda_200701.ab": "c0f583a5e07a975c9243869605d9701798ac4454",
@@ -22270,7 +22270,7 @@
    ]
   ]
  },
- "took": 3.2,
- "stamp": "7cf67bc62ac2ce5643ccbf90b192ff2a78e817dd",
- "made": "2026-11-16 19:05:36"
+ "took": 3.0,
+ "stamp": "323bba9e0997a4f92d30e78d88cca07a36ddfb72",
+ "made": "2026-11-16 20:12:44"
 }

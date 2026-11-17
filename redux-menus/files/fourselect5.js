@@ -499,7 +499,7 @@
     if (st.movWant && st.movId !== st.movWant && t >= st.movStartAt) movieStart(st, st.movWant);
     var mvk = st.movOk ? ease((t - st.movOkAt) / 0.3) : 0; setC(st.vid, W, mvk);
     // the lock, or what comes next
-    var why = locked0 ? (lk0.why || "") + (lk0.item && !lk0.special && !lk0.dlc ? "\n<color=#ffd27a>" + lk0.text + "</color>" : "") : "";
+    var why = locked0 ? (lk0.why || "") + (lk0.item && (!lk0.special || lk0.can) && !lk0.dlc ? "\n<color=#ffd27a>" + lk0.text + "</color>" : "") : "";
     setT(st.rWhy, why);
     var hp = F.hp || 0, holding = !!F.holding, canHold = locked0 && lk0.can;
     act(st.holdTrack.gameObject, canHold); act(st.holdFill.gameObject, canHold); act(st.holdT.gameObject, canHold);

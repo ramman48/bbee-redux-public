@@ -265,6 +265,9 @@
         var ee = p.list[Z.view[Z.cur]] || null;   // 0.1.19: Free Choice keeps the Legacies (their skills and talents); only the tactics they hand down are replaced
         if (p.step == "evo2") p.evo2 = ee; else { p.evo = ee; if (!ee || (p.evo2 && (p.evo2.uid == ee.uid || p.evo2.id == ee.id))) p.evo2 = null; }
         Z.zone = "go";   // 0.1.21 (Boogy, 2026-11-12): once a Legacy is chosen the cursor moves to Start Dive by itself, as the stock game's does; left or up comes back to the list
+        // 0.1.26 (Kirin, 2026-11-16): a first Legacy moves on to the second one by itself, as the stock screen and the solo pick did;
+        // the cursor goes to Start Dive after the second, or at once when no second Legacy is left to choose
+        if (p.step == "evo1" && p.evo && p.evos.filter(function (q) { return q.id != p.hero && q.id != p.evo.id; }).length && S.v5Step("evo2")) Z.zone = "list";
         st.setAt = st.burstAt = UE.Time.unscaledTime;
         try { if (G.BB4SEL) G.BB4SEL.sfx("sfx_ui_53"); } catch (x) {} return true;
       }

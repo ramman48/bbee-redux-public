@@ -1428,7 +1428,7 @@
       }
     } else if (hold) { hold.fx = X ? X.kill(hold.fx) : null; Z.hold = null; }
     Z.holdT.text = Z.hold && !Z.hold.done ? "UNLOCKING  " + Math.round(hp * 100) + "%" : "";
-    Z.why.text = locked0 ? lk0.why + (lk0.item && !lk0.special && !lk0.dlc ? "\n<color=#ffd27a>" + lk0.text + "</color>" + (lk0.can ? "   <color=#8fe39a>Hold " + (padNow() ? "A" : "Enter") + " to unlock</color>" : "") : "")
+    Z.why.text = locked0 ? lk0.why + (lk0.item && (!lk0.special || lk0.can) && !lk0.dlc ? "\n<color=#ffd27a>" + lk0.text + "</color>" + (lk0.can ? "   <color=#8fe39a>Hold " + (padNow() ? "A" : "Enter") + " to unlock</color>" : "") : "")
       : S.solo ? "" : "";
     var hc = Z.k.colour || NO_HERO, tv = (TABFX[tab.g.key] || TABFX.heroes).veil;
     var vc = Z.veil.color, wr = hc[0] * 0.05 + tv[0], wg = hc[1] * 0.05 + tv[1], wb = hc[2] * 0.05 + tv[2];

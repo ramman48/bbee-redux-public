@@ -1,6 +1,6 @@
 {
  "mod": "char-weiss",
- "version": "0.4.11",
+ "version": "0.4.12",
  "files": {
   "actor/animation/role/rwi_air_turn.ab": "68bb3f9180c8726a86f791b53d27d3a5eaa8e78b",
   "actor/animation/role/rwi_airdash.ab": "e8b2846b44da9ceb7f4abc817f93875252d230f6",
@@ -802,7 +802,7 @@
   "effect/prefab/role/rwi/rwiskin_05/rwi_v_stage_wallboom_s3.ab": "3406fb31d32ac174ef706cba2ed6cb59a2657c0c",
   "effect/prefab/role/rwi/rwiskin_05/rwi_v_sword.ab": "9c428cedd05228f7493881992ce55d86eb6b77d4",
   "effect/prefab/role/rwi/rwiskin_05/rwi_v_sword_hit.ab": "7759d7e1617d8dc4ea78bf8d774fe0be53f3b3c4",
-  "ui/atlas/iconhud201301/iconhud201301.ab": "d337baa588dc45d6fc3657e6e9a8d75fdedfd14b",
+  "ui/atlas/iconhud201301/iconhud201301.ab": "1ffa38dafca342553b08d493dd3c3683eb484bfe",
   "ui/atlas/iconpotential201301/iconpotential201301.ab": "55ae1af732446b7c81db864f7b7fc79f44df94b8",
   "ui/texture/heroheadicon/herofinalbattle_201301.ab": "54fd9b8dbdb8007c42b3148028e4149d72554764",
   "ui/texture/heroheadicon/heroheadicon_201301.ab": "c61da4074e506be16d827679838be8257c893e49",
@@ -812,6 +812,8 @@
   "ui/texture/heroportraitfull/heroportraitfull_201301.ab": "a9d6b3aefe80e368ef49143d9fb353ecabd910fb",
   "ui/texture/heroportraitfullmb/heroportraitfull_201301.ab": "5026d0d680696dfb99f95c98c772275a6cbd5183",
   "ui/texture/heroportraitlmb/heroportraitfull_201301.ab": "26946f5ea78c4356f3a54a61e1e2d033ae54f338",
+  "ui/texture/iconpotential/herohead_201301.ab": "99ac4b816d298f3ce93a95dcd99bd97fd78ccbf4",
+  "ui/texture/iconpotential/herohead_201301_off.ab": "9ba43dfbf28fc37c3eaabb8141ef4cc39027a6c1",
   "ui/texture/iconpotential/iconskill_201301.ab": "416d366239dfe12f0e64d75259a50c12e4d88609",
   "ui/texture/iconpotential/iconskill_201301off.ab": "660e2a36f863fc10f4d554d9a7dacc64eaa0eb5f",
   "ui/texture/iconpotential/potential_21351.ab": "50c14ed17ee9648381a36064c768b4ee1e6770cd",
@@ -1638,6 +1640,8 @@
   "ui/texture/heroportraitfull/heroportraitfull_201301.ab": null,
   "ui/texture/heroportraitfullmb/heroportraitfull_201301.ab": null,
   "ui/texture/heroportraitlmb/heroportraitfull_201301.ab": null,
+  "ui/texture/iconpotential/herohead_201301.ab": null,
+  "ui/texture/iconpotential/herohead_201301_off.ab": null,
   "ui/texture/iconpotential/iconskill_201301.ab": null,
   "ui/texture/iconpotential/iconskill_201301off.ab": null,
   "ui/texture/iconpotential/potential_21351.ab": null,
@@ -1668,6 +1672,8 @@
    "ui/texture/heroheadicon/herofinalbattle_201301",
    "ui/texture/heroheadicon/herosmallhead_201301",
    "ui/texture/iconpotential/iconskill_201301",
+   "ui/texture/iconpotential/herohead_201301",
+   "ui/texture/iconpotential/herohead_201301_off",
    "ui/texture/iconpotential/iconskill_201301off",
    "ui/atlas/iconhud201301/iconhud201301",
    "ui/texture/iconpotential/potential_21351",
@@ -1772,6 +1778,14 @@
    ],
    [
     "ui/texture/iconpotential/iconskill_201301",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/herohead_201301",
+    []
+   ],
+   [
+    "ui/texture/iconpotential/herohead_201301_off",
     []
    ],
    [
@@ -17241,7 +17255,7 @@
    ]
   ]
  },
- "took": 3.2,
- "stamp": "e0cd3003473190a4293d191d8d31cf8449011cb6",
- "made": "2026-11-16 19:05:36"
+ "took": 2.3,
+ "stamp": "0f8466f7d5d94ce8cbab6c27e4a45235eafcf9c4",
+ "made": "2026-11-16 20:12:44"
 }

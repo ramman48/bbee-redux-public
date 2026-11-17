@@ -1,5 +1,8 @@
 # Entropy Overhaul: Grim of the Abyss: patch notes
 
+## 1.0.6 (2026-11-16, development)
+- Fixed: on the Entropy menu, a modifier step that cost more Entropy than you had left could still be taken at the top limit, and the total passed it (103 / 100). The step is refused now, as it already was below the top limit.
+
 ## 1.0.5 (2026-11-14)
 - Added: the twenty new Mind Crystals have icons of their own. They wore the icons of other crystals before.
 

@@ -1,6 +1,6 @@
 {
  "mod": "boons-plus",
- "version": "1.1.4",
+ "version": "1.1.5",
  "files": {
   "effect/common/material/boonsplus/air_008_a__bpr.ab": "50f20b31b3339908ce69f6b5fd401228008eba86",
   "effect/common/material/boonsplus/air_008_a__bpw.ab": "f21bb3f5b05fd503a35a5c9d2b05fe7facb21fdc",
@@ -6098,7 +6098,7 @@
   ],
   "guids": []
  },
- "took": 14.8,
- "stamp": "ccf3f26f2069a2365545002c6f4a9e37f2bae8b3",
- "made": "2026-11-16 19:05:36"
+ "took": 10.0,
+ "stamp": "c26f349122d1dcff4455d3656a3c7cd1f687880f",
+ "made": "2026-11-16 20:12:44"
 }

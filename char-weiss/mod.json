@@ -1,7 +1,7 @@
 {
  "id": "char-weiss",
  "name": "Weiss Schnee (Cross Effect)",
- "version": "0.4.11",
+ "version": "0.4.12",
  "author": "BBEE modding project",
  "description": "Weiss Schnee from BlazBlue Cross Tag Battle as a playable character (ActorId 201301): her own sprites, animations and moves, built on the character data system. Unofficial.",
  "gameBuilds": [
@@ -15322,8 +15322,8 @@
    }
   },
   "spriteAliases": {
-   "HeroHead_201301": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_201301",
-   "HeroHead_201301_Off": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_201301",
+   "HeroHead_201301": "tex:UI/Texture/IconPotential/HeroHead_201301",
+   "HeroHead_201301_Off": "tex:UI/Texture/IconPotential/HeroHead_201301_Off",
    "HeroPortraitFull_201301_S": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_201301",
    "PVP_HeroPortraitFull_201301": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_201301",
    "BaseActor_201301": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_201301",
@@ -15548,6 +15548,28 @@
    },
    {
     "from": "ui/texture/iconpotential/potential_5303",
+    "to": "ui/texture/iconpotential/herohead_201301",
+    "rename": [
+     [
+      "Potential_5303",
+      "HeroHead_201301"
+     ]
+    ],
+    "image": "art/evo_head.png"
+   },
+   {
+    "from": "ui/texture/iconpotential/potential_5303",
+    "to": "ui/texture/iconpotential/herohead_201301_off",
+    "rename": [
+     [
+      "Potential_5303",
+      "HeroHead_201301_Off"
+     ]
+    ],
+    "image": "art/evo_head_off.png"
+   },
+   {
+    "from": "ui/texture/iconpotential/potential_5303",
     "to": "ui/texture/iconpotential/iconskill_201301off",
     "rename": [
      [
@@ -15570,6 +15592,14 @@
      [
       "IconSkill_201301",
       "art/icons/IconSkill_201301.png"
+     ],
+     [
+      "HeroHead_201301",
+      "art/evo_head.png"
+     ],
+     [
+      "HeroHead_201301_Off",
+      "art/evo_head_off.png"
      ],
      [
       "IconSkill_201301OFF",
@@ -16363,6 +16393,24 @@
        "path": "UI/Texture/IconPotential/IconSkill_201301",
        "width": 248,
        "height": 248
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/IconPotential/HeroHead_201301",
+       "width": 189,
+       "height": 184
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/IconPotential/HeroHead_201301_Off",
+       "width": 189,
+       "height": 184
       }
      },
      {

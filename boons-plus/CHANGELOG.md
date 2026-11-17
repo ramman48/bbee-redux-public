@@ -1,5 +1,8 @@
 # Tactics Plus Ultra: patch notes
 
+## 1.1.5 (2026-11-16, development)
+- Fixed: Tide and Decay Tactics, their families and their descriptions showed names like BlessFaction_1101 and TriggerDesc_37112 when the game was not set to English or Chinese. They show the English text now.
+
 ## 1.1.3 (2026-11-14, development)
 - Added: each Tide and Decay family has an emblem of its own in the Tactic Codex and the Tactic trees. They showed their first Tactic's icon before.
 

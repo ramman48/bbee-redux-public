@@ -1,6 +1,6 @@
 {
  "mod": "entropy-grim",
- "version": "1.0.5",
+ "version": "1.0.6",
  "files": {
   "ui/atlas/grimcrystals/grimcrystals.ab": "faaf4a1afca95a471c7a61bcdc318cf2ff220898",
   "ui/atlas/grimicons/grimicons.ab": "e92821cccafa95dcc91cc23fd05a368bbb428fb0",
@@ -146,7 +146,7 @@
   ],
   "guids": []
  },
- "took": 2.2,
- "stamp": "5349004849fd5576ecc9da9e74663fdbe2851845",
- "made": "2026-11-16 19:05:36"
+ "took": 2.1,
+ "stamp": "d9e87bcb4bda7a47a8f9ff5e9187d2eddd87fb53",
+ "made": "2026-11-16 20:12:44"
 }

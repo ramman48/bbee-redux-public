@@ -1386,6 +1386,8 @@
   "ui/texture/heroheadicon/herofinalbattle_201301",
   "ui/texture/heroheadicon/herosmallhead_201301",
   "ui/texture/iconpotential/iconskill_201301",
+  "ui/texture/iconpotential/herohead_201301",
+  "ui/texture/iconpotential/herohead_201301_off",
   "ui/texture/iconpotential/iconskill_201301off",
   "ui/atlas/iconhud201301/iconhud201301",
   "ui/texture/iconpotential/potential_21351",
@@ -17143,6 +17145,14 @@
   ],
   [
    "ui/texture/iconpotential/iconskill_201301",
+   []
+  ],
+  [
+   "ui/texture/iconpotential/herohead_201301",
+   []
+  ],
+  [
+   "ui/texture/iconpotential/herohead_201301_off",
    []
   ],
   [

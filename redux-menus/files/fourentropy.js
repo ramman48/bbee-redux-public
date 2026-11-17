@@ -4735,6 +4735,10 @@ var _ed = (function () {
       // Extreme (4): for the modes above Extreme it answers with a text key, and they use Extreme's rewards
       if (list) for (var b of list) {
         var need = +b.MinSan; if (!(need >= 0)) continue;
+        // Extreme, Grim of the Abyss and Endless share this list: Grim's rewards are ids 30-37, Endless's 38-45 (entropy-grim).
+        // Each tab shows its own: Extreme neither of those, Grim its eight, Endless both sets (as the stock window's PerkInContext)
+        var isG = false, isE = false; try { isG = !!(HU.GrimIsPerk && HU.GrimIsPerk(+b.id)); isE = !!(HU.EndlessIsPerk && HU.EndlessIsPerk(+b.id)); } catch (xp) {}
+        if (mode === 104 ? !isG : mode === 105 ? !(isG || isE) : (isG || isE)) continue;
         var d = ''; try { d = clean(String(HU.GetHeatBuffDesc(b, Math.max(tot, need), mode === 2 ? 2 : 4) || '')).replace(/\s*\n\s*/g, ' '); } catch (xd) { d = ''; }
         if (!d || /^HeatBuffDesc_/.test(d)) continue;
         out.push({ need: need, got: tot >= need, d: d });

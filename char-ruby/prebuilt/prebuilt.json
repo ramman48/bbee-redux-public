@@ -1,8 +1,8 @@
 {
  "mod": "char-ruby",
- "version": "1.0.5",
+ "version": "1.0.6",
  "gameBuild": "26424974",
- "made": "2026-11-15 18:46",
+ "made": "2026-11-16 20:09",
  "importers": [
   {
    "script": "import_ruby.py",
@@ -23819,8 +23819,8 @@
   "effect/prefab/role/rrb/wave_rrb_sweep_s3k.ab": "8ce13260f4ffa5c725307c6b901a1bb0e977ff1528180b694d5b653d19a5df21",
   "effect/prefab/role/rrb/wave_rrb_sweep_s3x.ab": "a8e272e58546c528941d864f022effe6692054c4f15eb945c4923af917ac5ddf",
   "ui/atlas/iconpotential200701/iconpotential200701.ab": "75348dc5c7352d3cb4d0953df55690e86e503a10d8a044ae74b84778221e7d41",
-  "ui/texture/heroheadicon/heroevohead_200701.ab": "eb39c3337250d7ce8a23dd7e61045410a2efed2c370d51068ed56cb4df3bcd7e",
-  "ui/texture/heroheadicon/heroevohead_off_200701.ab": "69fa019a7703c419020408ba497ee4b01e10396c51b547b04f011b34903c023e",
+  "ui/texture/heroheadicon/heroevohead_200701.ab": "7d32a3bc3b0a8c4cf5cf9e0b51e5f77a8dd934f9f6b97dcbfd04dff2202e068f",
+  "ui/texture/heroheadicon/heroevohead_off_200701.ab": "630cb8351b0af40dc63fcd59ecb63be462d26c8108f146a894fae44ef8813184",
   "ui/texture/heroheadicon/herofinalbattle_200701.ab": "9faa43cf196a719bee6f99a4f5d495f38b9628ad29d87d2cc169479563686d06",
   "ui/texture/heroheadicon/heroheadicon_200701.ab": "5135fc3c6c25ce16ab42e9d489a03a38e8cb0a7e70584b49582ffb57a76d0e71",
   "ui/texture/heroheadicon/heropda_200701.ab": "c6b3566d1bfa9add5ee13fd16e0e2a11efed507db29a66f4c4b23dc5c2a9c6dd",

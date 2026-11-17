@@ -1,5 +1,13 @@
 # Reki: patch notes
 
+## 0.5.12 (2026-11-16)
+- Fixed Rising Dragon (Up + Attack) holding her still at the top of the rise for over half a second. She now starts to fall soon after the last hit, as other uppercuts do.
+- Fixed Sword Wave in the air firing upward with Three Waves held, and your shadow's air wave firing upward. Both now fire down and ahead.
+- Fixed Triple Dash giving only one dash in the air. You can now dash three times in the air, as on the ground.
+- Fixed Raimei (hold Attack) leaving her floating after it carries her off a platform. She now falls as soon as the move ends.
+- Fixed Lightning Charge dropping her off a platform halfway through the charge while its lightning stayed on the platform. The charge now runs level with its lightning, and she falls at the end.
+- Fixed Summon playing its pose without calling anything.
+
 ## 0.5.10 (2026-11-15)
 - Fixed Up + Summon without enough SP, and Down + Summon at any time, leaving her able only to walk. A Summon press now holds back only Summon, for half a second, as it does for the other heroes.
 - Fixed Overcharge changing the rhythm of Sword Wave, Mirror Point and Raijin Ring when you press Skill again. With the card they come out at the same pace as without it, and can still be used past 0 MP.

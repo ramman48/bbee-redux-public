@@ -65,10 +65,10 @@
     r.item = l.reqDecoderId | 0; r.need = l.reqDecoderCount | 0; r.have = l.hasDecoderCount | 0;
     if (r.dlc) { r.text = "DLC"; r.why = loc("Dlc_PurchaseTip", "Unlock with the hero's DLC."); return r; }
     if (r.redux) { r.why = String(l.lockByRedux); }
-    else if (r.special) { r.why = loc("BaseActor_UnlockCondition_" + id, "Unlocked by the story."); }
+    else if (r.special && !(r.item && r.have >= r.need)) { r.why = loc("BaseActor_UnlockCondition_" + id, "Unlocked by the story."); }
     else if (r.item) { r.why = "Unlock with " + itemName(r.item) + " x" + r.need + "."; }
-    r.can = !!r.item && !r.special && r.have >= r.need;
-    r.text = r.item && !r.special ? itemName(r.item) + "  " + r.have + " / " + r.need : "Locked";
+    r.can = !!r.item && r.have >= r.need;   // 0.1.26 (The_Eggman): a story hero (The Prisoner) unlocks like any other once its analyzer is held, as the stock select allows
+    r.text = r.item && (!r.special || r.can) ? itemName(r.item) + "  " + r.have + " / " + r.need : "Locked";
     return r;
   };
 
