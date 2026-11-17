@@ -31,7 +31,7 @@ from PySide6.QtGui import QDesktopServices, QGuiApplication, QImage
 
 from . import extras, fetch, logs, modlist
 
-VERSION = "0.5.11"
+VERSION = "0.5.12"
 HERE = os.path.dirname(os.path.abspath(__file__))
 APPID = "2273430"
 EXE = "BlazblueEntropyEffect.exe"
@@ -146,6 +146,41 @@ def _version_newer(a, b):
     """version a is higher than b, compared number by number ("0.3.14" > "0.3.12")"""
     key = lambda v: [int(n) for n in re.findall(r"\d+", str(v))]
     return key(a) > key(b)
+
+
+def _under_wine():
+    """the window runs under Wine or Proton (a Linux PC or a Steam Deck): Wine shows the Linux disk as drive Z:"""
+    if os.name != "nt": return False
+    if os.environ.get("WINEPREFIX") or os.environ.get("WINELOADER"): return True
+    try:
+        import winreg
+        winreg.CloseKey(winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\Wine")); return True
+    except OSError:
+        return os.path.isdir("Z:\\home") and os.path.isdir("Z:\\usr")
+
+
+def _proton_data_dirs(product):
+    """the game's data folder in Steam's Proton prefix, on every Linux Steam library seen from Wine (drive Z:)"""
+    import glob as _g
+    out, libs = [], []
+    for home in _g.glob("Z:\\home\\*"):
+        for rel in (".steam/steam", ".steam/root", ".local/share/Steam", ".steam/debian-installation",
+                    ".var/app/com.valvesoftware.Steam/.local/share/Steam", "snap/steam/common/.local/share/Steam"):
+            p = os.path.join(home, *rel.split("/"))
+            if os.path.isdir(os.path.join(p, "steamapps")) and p not in libs: libs.append(p)
+            vdf = os.path.join(p, "steamapps", "libraryfolders.vdf")
+            try:
+                for m in re.finditer(r'"path"\s+"([^"]+)"', open(vdf, encoding="utf-8", errors="replace").read()):
+                    lp = m.group(1)
+                    q = os.path.join("Z:\\", *[x for x in lp.split("/") if x]) if lp.startswith("/") else lp
+                    if os.path.isdir(os.path.join(q, "steamapps")) and q not in libs: libs.append(q)
+            except OSError:
+                pass
+    for lib in libs:
+        d = os.path.join(lib, "steamapps", "compatdata", "2273430", "pfx", "drive_c", "users", "steamuser", "AppData",
+                         "LocalLow", "91Act", product)
+        if os.path.isdir(d): out.append(d)
+    return out
 
 
 def _game_open():
@@ -1271,7 +1306,12 @@ class Controller(QObject):
         """the game's own data folder (Player.log, logs mods write there)"""
         info = self._copy_info()
         home = self.profile_root or os.path.expanduser("~")
-        return os.path.join(home, "AppData", "LocalLow", "91Act", str(info.get("product") or STOCK_PRODUCT) if info else STOCK_PRODUCT)
+        product = str(info.get("product") or STOCK_PRODUCT) if info else STOCK_PRODUCT
+        here = os.path.join(home, "AppData", "LocalLow", "91Act", product)
+        if not os.path.isdir(here) and not self.profile_root and _under_wine():   # Linux: Steam's Proton prefix (2026-11-16)
+            found = _proton_data_dirs(product)
+            if found: return found[0]
+        return here
 
     @Slot()
     def dismiss(self):
@@ -1314,7 +1354,10 @@ class Controller(QObject):
         opened = QDesktopServices.openUrl(QUrl("steam://rungameid/" + APPID))
         if opened:
             self.said.emit("Starting the game through Steam...")
-            QTimer.singleShot(25000, lambda: None if _game_open() else self._start_direct(exe))
+            # under Wine the game's process is out of sight (Steam's own prefix), so no second copy is started
+            # (Boogy, 2026-11-16: the game opened twice, once with no saves)
+            if not _under_wine():
+                QTimer.singleShot(25000, lambda: None if _game_open() else self._start_direct(exe))
         else:
             self._start_direct(exe)
 

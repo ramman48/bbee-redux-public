@@ -47,13 +47,23 @@ static class ZenithTerminal
             start.EnvironmentVariables.Remove("PYTHONPATH");
             start.EnvironmentVariables["PYTHONNOUSERSITE"] = "1";
         }
-        try { Process.Start(start); }
+        try
+        {
+            // under Wine / Proton this stays until the window closes: Steam ends what a closed program started (2026-11-16)
+            using (Process window = Process.Start(start)) { if (window != null && UnderWine()) window.WaitForExit(); }
+        }
         catch (Exception error)
         {
             MessageBox.Show("The window could not be started.\n\n" + error.Message, Name, MessageBoxButtons.OK, MessageBoxIcon.Warning);
             return 4;
         }
         return 0;
+    }
+
+    static bool UnderWine()
+    {
+        try { using (var key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey(@"Software\Wine")) return key != null; }
+        catch (Exception) { return false; }
     }
 
     static string FirstFile(params string[] candidates)

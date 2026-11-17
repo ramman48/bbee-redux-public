@@ -132,6 +132,28 @@ def load_mods():
         assert m["id"] == os.path.basename(m["_dir"]), f"{mj}: id must equal folder name"
         mods[m["id"]] = m
     return mods
+def clear_dir(path, tries=6):
+    """remove a folder this tool made, with retries: antivirus, a cloud sync or Explorer may hold it for a moment
+    (WinError 5 / 32). Read-only flags are cleared on the way; a folder still held at the end is renamed aside
+    (<name>.old-<time>) and removed by a later run, so the caller always gets the path free (2026-11-16)."""
+    import stat
+    def unlock(func, p, exc):
+        try: os.chmod(p, stat.S_IWRITE); func(p)
+        except Exception: pass
+    for i in range(tries):
+        try: shutil.rmtree(path, onexc=unlock)
+        except Exception: pass
+        if not os.path.exists(path): break
+        time.sleep(0.5 * (i + 1))
+    if os.path.exists(path):
+        aside = "%s.old-%s" % (path.rstrip("\\/"), time.strftime("%Y%m%d%H%M%S"))
+        os.replace(path, aside)
+        print("note: %s was held by another program; it was moved aside to %s" % (path, aside))
+    parent, name = os.path.split(path.rstrip("\\/"))
+    for old in glob.glob(os.path.join(parent, name + ".old-*")):
+        shutil.rmtree(old, ignore_errors=True)
+
+
 def resolve_order(mods, enabled):
     order, seen, stack = [], set(), []
     def visit(i):
@@ -634,7 +656,7 @@ def _build(pool):
         gb = mods[mid].get("gameBuilds", ["*"])
         if "*" not in gb and build_id not in gb: print(f"  WARNING {mid} verified on builds {gb}, game is {build_id}")
     report = []
-    if os.path.exists(OUT): shutil.rmtree(OUT)
+    if os.path.exists(OUT): clear_dir(OUT)
     os.makedirs(OUT)
     def phase(name, t=[time.time()]):
         now = time.time(); print("  [%.1f s] %s" % (now - t[0], name)); t[0] = now

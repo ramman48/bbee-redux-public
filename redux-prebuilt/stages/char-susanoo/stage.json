@@ -636,7 +636,7 @@
   "effect/prefab/role/ha/hsxskin_93/ha_atkhold_4c_3_01.ab": "cb362b75759f57477b6395bfbbbd92bb4ea006a6",
   "effect/prefab/role/ha/hsxskin_93/ha_atkhold_4c_3_02.ab": "6ac847a47d30634cea01f31980b31d94643a84ca",
   "effect/prefab/role/ha/hsxskin_93/ha_atkhold_4c_3_03.ab": "3c318208353c9c97dd566e559e2e0071a71a89b3",
-  "effect/prefab/role/ha/hsxskin_93/ha_atkhold_4c_3a_01.ab": "ce3f53a12f3777ac8b19509ca10668eef9ac8318",
+  "effect/prefab/role/ha/hsxskin_93/ha_atkhold_4c_3a_01.ab": "b25045bc86c301ed0cef61a01e6eb3259d28e164",
   "effect/prefab/role/ha/hsxskin_93/ha_attack1_01.ab": "ff06434d3ffcdb185953fb14d7d8d2aa3d01fdf9",
   "effect/prefab/role/ha/hsxskin_93/ha_attack1_hold1_01.ab": "6e09218e47b1b45d1563642b81beaae14bfb90a2",
   "effect/prefab/role/ha/hsxskin_93/ha_attack1_hold1_02.ab": "5e92fc72d33237d16b0c20ab0d5b4feb7fe245d6",
@@ -10683,7 +10683,7 @@
   ],
   "guids": []
  },
- "took": 6.7,
- "stamp": "2bf4058d8bceb2e3b083263a28dc7758fb27f5b8",
- "made": "2026-11-15 19:56:56"
+ "took": 6.9,
+ "stamp": "c42cafc126f7a33b29148474aea0f26ff3f2c2b3",
+ "made": "2026-11-16 19:05:36"
 }

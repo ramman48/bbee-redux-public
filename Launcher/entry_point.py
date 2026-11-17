@@ -248,26 +248,68 @@ def retire_stale_backups():
 
 
 # ZENITH_SAVE_ROOT: the game's save area when it is not under this user's profile (Proton, Bottles)
-SAVE_ROOT = os.environ.get("ZENITH_SAVE_ROOT") or os.path.expandvars(r"%USERPROFILE%\AppData\LocalLow\91Act\BlazblueEntropyEffect")
+WIN_SAVE_ROOT = os.path.expandvars(r"%USERPROFILE%\AppData\LocalLow\91Act\BlazblueEntropyEffect")
+PROTON_SAVES = ("steamapps", "compatdata", "2273430", "pfx", "drive_c", "users", "steamuser", "AppData", "LocalLow", "91Act",
+                "BlazblueEntropyEffect")
+
+
+def _save_dirs(root):
+    """every <...>/Save folder with numbered slot files at or below root (up to 3 levels: the save area, its Steam
+    folder, an account folder, or the Save folder itself)"""
+    out = []
+    if not root or not os.path.isdir(root): return out
+    def has_slots(d): return any(f.isdigit() and os.path.isfile(os.path.join(d, f)) for f in os.listdir(d))
+    if os.path.basename(os.path.normpath(root)).lower() == "save" and has_slots(root): return [root]
+    for pat in ("Save", os.path.join("*", "Save"), os.path.join("*", "*", "Save")):
+        for d in glob.glob(os.path.join(root, pat)):
+            if os.path.isdir(d) and has_slots(d) and d not in out: out.append(d)
+    return out
+
+
+def find_save_root():
+    """the save area: the folder chosen in the Terminal (any level down to a Save folder), else the usual Windows place
+    when it holds saves, else Steam's Proton prefix for the game on a Linux library (2026-11-16)"""
+    chosen = os.environ.get("ZENITH_SAVE_ROOT")
+    if chosen: return chosen
+    if _save_dirs(WIN_SAVE_ROOT): return WIN_SAVE_ROOT
+    try:
+        for lib in linux_steam_libraries():
+            p = os.path.join(lib, *PROTON_SAVES)
+            if _save_dirs(p): return p
+    except Exception: pass
+    return WIN_SAVE_ROOT
+
+
+SAVE_ROOT = None   # set on first use (find_save_root needs the Steam library search below)
+
+
+def _root():
+    global SAVE_ROOT
+    if SAVE_ROOT is None: SAVE_ROOT = find_save_root()
+    return SAVE_ROOT
 
 
 def backup_save(tag):
-    """copy the whole save area (every account, its Save, Backup and ColdBackup) into save_backups/<time>_<tag>"""
+    """copy the save area (every account, its Save, Backup and ColdBackup) into save_backups/<time>_<tag>; a folder
+    chosen below the save area (an account or a Save folder) is copied as it is"""
     import shutil
-    if not os.path.isdir(SAVE_ROOT): say("No save folder found yet (%s); nothing to back up." % SAVE_ROOT); return None
+    root = _root()
+    if not os.path.isdir(root): say("No save folder found yet (%s); nothing to back up." % root); return None
     dst = os.path.join(ROOT, "save_backups", time.strftime("%Y%m%d_%H%M%S") + "_" + tag)
-    for sub in ("Steam", "XBoxPc", "Global"):
-        src = os.path.join(SAVE_ROOT, sub)
-        if os.path.isdir(src): shutil.copytree(src, os.path.join(dst, sub))
+    subs = [sub for sub in ("Steam", "XBoxPc", "Global") if os.path.isdir(os.path.join(root, sub))]
+    if subs:
+        for sub in subs: shutil.copytree(os.path.join(root, sub), os.path.join(dst, sub))
+    else:
+        shutil.copytree(root, os.path.join(dst, os.path.basename(os.path.normpath(root)) or "saves"))
     say("Save backed up to: " + dst)
     return dst
 
 
 def save_files():
-    """the files the game loads your progress from: <account>/Save/<slot> and Save/Backup/<slot>"""
+    """the files the game loads your progress from: each Save/<slot> and Save/Backup/<slot> under the save area"""
     out = []
-    for acc in glob.glob(os.path.join(SAVE_ROOT, "Steam", "*", "Save")) + glob.glob(os.path.join(SAVE_ROOT, "XBoxPc", "*", "Save")):
-        for f in glob.glob(os.path.join(acc, "*")) + glob.glob(os.path.join(acc, "Backup", "*")):
+    for d in _save_dirs(_root()):
+        for f in glob.glob(os.path.join(d, "*")) + glob.glob(os.path.join(d, "Backup", "*")):
             if os.path.isfile(f) and os.path.basename(f).isdigit(): out.append(f)
     return out
 
@@ -279,7 +321,7 @@ def repair_save(args, backup=True):
     sys.path.insert(0, os.path.join(ROOT, "tools"))
     import savefile
     files = save_files()
-    if not files: say("No save files found under " + SAVE_ROOT); return
+    if not files: say("No save files found under " + _root()); return
     if backup and not backup_save("before_repair"): fail("Couldn't back up the save; nothing was changed.")
     changed = 0
     for f in files:
