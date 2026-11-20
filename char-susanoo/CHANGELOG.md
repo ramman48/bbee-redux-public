@@ -1,5 +1,41 @@
 # Susanoo: patch notes
 
+## 0.1.14 (2026-11-20)
+- Strike of the Possessed God now fires when you hold Summon. Tapping Summon, for example to pick an option, no longer spends SP on it. Keep holding to power it up with MP as before.
+- The beam can be started in the air: Susanoo now stays in the air while it fires and falls after it.
+- Dash now cancels the beam once it fires, and comes out sooner during Sundering Claws, Dancing Dual Kick, his Skills and Aerial Claws.
+- Liberating Dagger now cuts enemies behind Susanoo as well as ahead. Its invincibility ends once the cut lands, and Dash can cancel it after that.
+- Roar of the Mad King gives control back right after the finishing blow. Before, he stood still for about 5 more seconds.
+- Susanoo now gains less SP from each hit (attacks 0.6, Skills 2, from 1.5 and 4). Defeated enemies, Retribution and his Potentials give the same SP as before.
+- His SP seal now shows next to the health bar from the start of a run, without needing EX Hakumen.
+- Jump now recovers from being knocked away, as with the other heroes' Triple Jump.
+- Holding Skill now takes a moment longer before Blade of Judgement or Retribution's guard comes out, so a slow tap stays Void Eruption.
+- Void Charge now shows a burst of flame when it is fully charged.
+- Void pillars and flame pillars now deal 2.5 times their damage, and void lines and orbs 1.5 times theirs.
+- Sundering Claws, Dancing Dual Kick, Hunter's Fang's landing, the third Aerial Claw, Void Charge, Void Rend's last strikes and his Skills deal more damage. The beam's first phase deals twice as much, and Roar of the Mad King almost twice as much. Liberating Dagger deals about a quarter less.
+- Flame pillars and Sundering Claws' last hit now break Super Armor, and bosses and elites can be staggered for 2 seconds in every 5 (before, 1.2 seconds in every 6.2).
+- Only Roar of the Mad King, the beam and Liberating Dagger move the camera in now, every other move shakes the screen less, and Void Charge no longer slows time.
+- Void pillars are about a third as tall and narrower, and flame pillars are smaller and end as soon as they finish.
+- Blade of Judgement's flaming sword no longer stays on Susanoo for about 3 seconds after the cut.
+- He runs at Hakumen's speed, and his run animation keeps pace with his feet. Void Step glides farther and runs straight on when you hold a direction.
+
+## 0.1.13 (2026-11-15)
+- Fixed Susanoo's Void Rend Legacy drawing a line across the whole screen when another hero uses it.
+- His other Legacy's void pillars rise as tall columns.
+
+## 0.1.12 (2026-11-15)
+- Each void pillar rises as a tall column instead of a pile of rocks, and the whole line of pillars rises when an enemy is near.
+- Sky Render's flame pillars appear when Susanoo lands during his third air claw.
+- The line from Void Rend's last hit runs only ahead of Susanoo, as far as it hits.
+- Void Eruption's two circling orbs circle Susanoo and hit instead of staying under the floor.
+- He gets back up from a knockdown as soon as other heroes do.
+
+## 0.1.11 (2026-11-15)
+- His Potential icons show on the Potential choice screen instead of white squares.
+
+## 0.1.10 (2026-11-14)
+- New Potential icons with the game's own figure.
+
 ## 0.1.9 (2026-11-14)
 - Changed the wording of the Potential and move texts to read like the game's own. No move works differently.
 - Fixed Triple Dash naming Hakumen's dash as the move it changes.

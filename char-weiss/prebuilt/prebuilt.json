@@ -1,8 +1,8 @@
 {
  "mod": "char-weiss",
- "version": "0.4.12",
+ "version": "0.4.13",
  "gameBuild": "26424974",
- "made": "2026-11-16 19:01",
+ "made": "2026-11-20 09:51",
  "importers": [
   {
    "script": "import_weiss.py",
@@ -17259,7 +17259,7 @@
   "effect/prefab/role/rwi/arc_rwief311_slash.ab": "36aa0ee515092aad48bb1b2148c97ee8894ead8a6e04cbb87e1985d10e3e9165",
   "effect/prefab/role/rwi/arc_rwief320.ab": "af54d03004db0bea06e4d28b9b0c6b2375e74a0c19cb52d4a1244b8c77cf1980",
   "effect/prefab/role/rwi/arc_rwief400_dash.ab": "83aa324fc72f5c0eab6faca27617f632ebc2c6e3e4ea1b670be8e5ec491de0f4",
-  "effect/prefab/role/rwi/arc_rwief400_slash.ab": "7f876d73d179f4c52e3c58926d0bd3a0c1e2a78ce1a38a3a7991d38c36abffcb",
+  "effect/prefab/role/rwi/arc_rwief400_slash.ab": "ab326e7ebf4678d459b8d069715423aca253574e4808b14a3738d9bcfa88f767",
   "effect/prefab/role/rwi/arc_rwief402_slash.ab": "9898f7d0d0b3901f070c1f8c65fb36fbd46e4cb8eaafdad33022139f110d46c0",
   "effect/prefab/role/rwi/arc_rwief403a_slash.ab": "88f2e96ae60f4f4a8091d980cd6fe2133f7c645c8f46c726afc4dda0c5963510",
   "effect/prefab/role/rwi/arc_rwief405c.ab": "4d0b255fca4698074677777992100f92b3f6e296749e5527a5a207e25372c9fb",
@@ -17389,7 +17389,7 @@
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief311_slash.ab": "8e3093a14cdd1022811aa1de4eb0990e471da2429a1285665bba8145e27a5a64",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief320.ab": "f70d93ec9f62876216f6e0894012e6c8cc825fe05386c59494339ed861a4662c",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief400_dash.ab": "fe734a37a917ef1dfb7a8dc7d0df6b4f5d355c913409a77e29aae69d544ccb0f",
-  "effect/prefab/role/rwi/rwiskin_05/arc_rwief400_slash.ab": "da27e822e86473f4a882e077b3553091f50be92056302870c712e4d37e7b7400",
+  "effect/prefab/role/rwi/rwiskin_05/arc_rwief400_slash.ab": "aa821558f5d9059296ebb727774493d238c2d46bcca554d2d6f74c1716503ea6",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief402_slash.ab": "9d98caa9622757dd551c18c8cb0945e902e5c4dde5cbfbe08ca38ab5aadb030a",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief403a_slash.ab": "bcef69b16151c3225f0edf918ccf8e1a3322c630298f4fc2a668681c0de8e5fc",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief405c.ab": "c6d64742b8c5f7253e6227bed725a314741482ae36934d4bfb7a54d2b33a49b7",

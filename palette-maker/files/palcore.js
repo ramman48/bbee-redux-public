@@ -15,7 +15,7 @@
   if (OLD && OLD.timer) { try { clearInterval(OLD.timer); } catch (e) {} }
   if (OLD && OLD.preRender) { try { cs.UnityEngine.Canvas.remove_willRenderCanvases(OLD.preRender); } catch (e) {} }
   if (OLD && OLD.releaseAll) { try { OLD.releaseAll(); } catch (e) {} }
-  var M = G.BBPAL = { VER: "0.2.7", worn: {}, remote: {}, states: [], partsCache: {}, ui: OLD ? OLD.ui : null };
+  var M = G.BBPAL = { VER: "0.2.12", worn: {}, remote: {}, states: [], partsCache: {}, ui: OLD ? OLD.ui : null };
   var MAXP = 16, TAU = 0.003, SCALE = 2, OWN_MB = 512;   // other players' pages at half size: the same memory as the stock BC7 page
 
   // the game's log (the play-session report reads it by the tag), the test room's log when it is there, and our own file
@@ -516,7 +516,11 @@
   function glowApply(st) {
     var r = st.gr && !isNull(st.gr) ? st.gr : (st.gr = heroRenderer(st.v)); if (!r) return;
     var m = r.sharedMaterial, blk = M._gblk || (M._gblk = new UE.MaterialPropertyBlock()), g = st.pal.glow;
-    if (!st.glowOrig) { st.glowOrig = {}; GLOW_CH.forEach(function (ch) { st.glowOrig[ch] = m.GetColor(emProp(ch)); }); }
+    // 0.2.11: the hero's own glow is read from the material it draws with NOW. Each palette of a hero has its own material, and
+    // the glow read for the first palette worn stayed in st.glowOrig, so every other palette's channels were written back in
+    // that palette's colour (j!, Jin: "all the other palettes' glow effects changed to the edited one's original colour")
+    var mid = m.GetInstanceID();
+    if (!st.glowOrig || st.glowMat !== mid) { st.glowOrig = {}; st.glowMat = mid; GLOW_CH.forEach(function (ch) { st.glowOrig[ch] = m.GetColor(emProp(ch)); }); }
     r.GetPropertyBlock(blk);
     // codes made before 0.2.4 have no W: the line followed X then, and still does for them
     var old = !st.pal.glow2 && !g.W && g.X;
@@ -529,7 +533,12 @@
   function glowBack(st) {
     if (!st.glowOn || !st.gr || isNull(st.gr) || !st.glowOrig) return;
     var blk = M._gblk || (M._gblk = new UE.MaterialPropertyBlock()); st.gr.GetPropertyBlock(blk);
-    GLOW_CH.forEach(function (ch) { blk.SetColor(emProp(ch), st.glowOrig[ch]); });
+    var cm = null; try { cm = st.gr.sharedMaterial; } catch (e) {}
+    GLOW_CH.forEach(function (ch) {
+      // the colour of the material the renderer draws with now; the saved one only while it is still the same material
+      var c = cm && !isNull(cm) ? cm.GetColor(emProp(ch)) : st.glowOrig[ch];
+      blk.SetColor(emProp(ch), c);
+    });
     st.gr.SetPropertyBlock(blk); st.glowOn = false;
   }
 
@@ -554,8 +563,37 @@
   // tint (col) or put back (null) the layers of one hub. Its record holds the renderers it tinted and whether each had a
   // property block of the game's before: one that had none is cleared when the tint comes off, so a pooled effect keeps
   // nothing of ours (a block holding the material's own colour stayed on it and froze its colour animation).
+  // 0.2.12 (catfih, 2026-11: the tint "merges both the base colour of the attack and the new one"): the colour a layer draws is
+  // its material tint times its particles' own start colour times its texture. The tint replaced the first only, so a red
+  // particle under a blue tint drew dark. Now the effect's own hue is taken out first, on the clones the game plays:
+  //   1. each particle system's start colour becomes the grey of the same brightness (the original struct is kept and put back);
+  //   2. the layer's material grayscale switch (_EnableGrayscale / _GrayscaleLerp of NOAH/Effect/Variant/Common) is turned on
+  //      through the same property block, so a textured colour goes too.
+  // Colour over lifetime is not reachable from the scripts' binding; it keeps whatever hue it carries.
+  function psGrey(rec, on) {
+    if (!rec.ps) {
+      rec.ps = []; rec.psDone = false;
+      try {
+        var ps = rec.hub.GetComponentsInChildren(T(UE.ParticleSystem), true);
+        for (var i = 0; i < ps.Length; i++) rec.ps.push({ p: ps.get_Item(i), orig: null });
+      } catch (e) { return; }
+    }
+    var MM = UE.ParticleSystem.MinMaxGradient;
+    rec.ps.forEach(function (q) {
+      try {
+        if (isNull(q.p)) return;
+        var m = q.p.main;
+        if (on) {
+          if (!q.orig) q.orig = m.startColor;
+          var c = q.orig.color, mx = Math.max(c.r, c.g, c.b);
+          m.startColor = new MM(new UE.Color(mx, mx, mx, c.a));
+        } else if (q.orig) { m.startColor = q.orig; q.orig = null; }
+      } catch (e) { if (!M.e7) { M.e7 = 1; log("particle colours: " + es(e)); } }
+    });
+  }
   function tintHub(rec, col) {
     var blk = M._blk || (M._blk = new UE.MaterialPropertyBlock());
+    try { if (!M.noGrey) psGrey(rec, !!col); } catch (e) {}
     rec.list.forEach(function (it) {
       var r = it.r; if (isNull(r)) return;
       var m = r.sharedMaterial; if (!m || isNull(m)) return;
@@ -566,6 +604,9 @@
         if (!col) { blk.SetColor(p, o); return; }
         var mx = Math.max(o.r, o.g, o.b, 0.001); blk.SetColor(p, new UE.Color(col[0] * mx, col[1] * mx, col[2] * mx, o.a));
       });
+      try {
+        if (!M.noGrey && m.HasProperty("_GrayscaleLerp")) { blk.SetFloat("_EnableGrayscale", col ? 1 : m.GetFloat("_EnableGrayscale")); blk.SetFloat("_GrayscaleLerp", col ? 1 : m.GetFloat("_GrayscaleLerp")); }
+      } catch (e) {}
       r.SetPropertyBlock(blk);
     });
   }
@@ -577,7 +618,7 @@
       var had = true; try { had = r.HasPropertyBlock(); } catch (e) {}
       list.push({ r: r, props: props, had: had });
     }
-    return { list: list, key: null };
+    return { list: list, key: null, hub: hub };
   }
   // Run just before the frame is drawn (M.pin). Every frame: the hero's action effects (its effect list, cheap), so a
   // move's own effect is drawn tinted from its first frame; every 3rd frame: every live effect hub (hit and bullet
@@ -788,6 +829,7 @@
       var orig = P.OnEventPause;
       P.OnEventPause = function () {
         var N = G.BBPAL;     // the core of now, after a hot reload too
+        if (N && N.leavingAt) return;     // on its way out: the pause key does nothing
         if (N && N.studio && N.ui && N.ui.studioToggle) { try { N.ui.studioToggle(); } catch (e) { N.log("start: " + es(e)); } return; }
         return orig.apply(this, arguments);
       };
@@ -795,15 +837,30 @@
     }
     M.pauseHooked = true;
   }
+  // 0.2.11: the way out is asked once and watched. Until the dressing room is really gone nothing may bring the maker back
+  // (testers 11-19: LEAVE and Backspace ended in "try moves" and the maker again). If Try Out is still there after 6 s the
+  // quit is asked again, straight through the game's own QuitToLobby.
   M.leaveStudio = function () {
+    if (M.leavingAt) return;
+    M.leavingAt = Date.now(); M.pendingOpen = null;
     log("leaving Try Out to the lobby");
-    try { require("GamePlay/BattleTryout/BattleTryoutRun").default.Instance.QuitAsync(); } catch (e) { log("leave: " + es(e)); }
+    var T = null; try { T = require("GamePlay/BattleTryout/BattleTryoutRun").default; } catch (e) { log("leave: " + es(e)); }
+    var b0 = null; try { b0 = tryoutBattle(); } catch (e) {}
+    try { T.Instance.QuitAsync(); } catch (e) { log("leave: " + es(e)); }
+    setTimeout(function () {
+      try {
+        if (!M.leavingAt) return;
+        var b = tryoutBattle();
+        if (b && b0 && (b === b0 || b.Equals(b0))) { log("leave: Try Out is still up after 6 s, asking again"); T.ReturnType = 99; T.QuitToLobby(); }
+      } catch (e) { log("leave again: " + es(e)); }
+    }, 6000);
+    setTimeout(function () { if (M.leavingAt) { M.leavingAt = 0; log("leave: the guard is lifted after 30 s"); } }, 30000);
   };
   function keepStageEmpty() {
     var a = M.me(), b = tryoutBattle();
     if (!b || !a || isNull(a) || a.BaseID != M.studio.hero) {
       if (M.pendingOpen) return;
-      M.studio = null; log("left the dressing room");
+      M.studio = null; M.leavingAt = 0; log("left the dressing room");
       try { if (M.ui && M.ui.leftStudio) M.ui.leftStudio(); } catch (e) { log("after Try Out: " + es(e)); }
       return;
     }

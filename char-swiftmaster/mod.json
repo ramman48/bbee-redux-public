@@ -2,7 +2,7 @@
  "id": "char-swiftmaster",
  "name": "Swift Master",
  "author": "BBEE modding project",
- "version": "0.2.5",
+ "version": "0.2.6",
  "description": "Swift Master from DNF Duel as a playable character (ActorId 201001). A phase 1 development build: movement, the Attack string, Launcher, Low Sweep, the air string, Air Down Attack, the Dash Attack and four Skills, with stand-in portraits, sounds and effects. Built on your machine from your own DNF Duel install. Unofficial.",
  "gameBuilds": [
   "26424974"

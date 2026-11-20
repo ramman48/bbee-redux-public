@@ -1,6 +1,6 @@
 {
  "mod": "char-nine",
- "version": "1.0.9",
+ "version": "1.0.10",
  "files": {
   "actor/animation/role/ninx_2a.ab": "e08738f31963e40647790e1500659abce1c03e3f",
   "actor/animation/role/ninx_2b.ab": "d2f27f1b4b250308f6dd49d245ff06e50613b045",
@@ -3858,7 +3858,7 @@
    ]
   ]
  },
- "took": 1.3,
- "stamp": "0bcf8d5060592967e9dcbb93e28485af575b6579",
- "made": "2026-11-16 20:12:44"
+ "took": 1.8,
+ "stamp": "1b240b322e905fd8d617640bc958b77680ca8b3d",
+ "made": "2026-11-20 09:55:03"
 }

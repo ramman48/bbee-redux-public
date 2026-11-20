@@ -84,4 +84,5 @@ def place(out_dir, dest, say=print):
 
 
 def clear(dest):
-    if os.path.isdir(dest): shutil.rmtree(dest)
+    import safe_rm
+    safe_rm.rmtree(dest)

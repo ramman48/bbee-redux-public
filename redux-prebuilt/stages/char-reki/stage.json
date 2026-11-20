@@ -1,6 +1,6 @@
 {
  "mod": "char-reki",
- "version": "0.5.12",
+ "version": "0.5.13",
  "files": {
   "actor/logicdata/rki.ab": "caf8ce1a02192f9d97578010d7234f57f136e418",
   "actor/logicdata/rkib1.ab": "17b21ae1f26e1856514a24812d49fe90e5f67bd8",
@@ -349,7 +349,7 @@
   "entries": [],
   "guids": []
  },
- "took": 1.8,
- "stamp": "7e15e55d3df415e9b68576e3c6fdb5b3b019c03e",
- "made": "2026-11-16 20:12:44"
+ "took": 3.1,
+ "stamp": "8bf95d74a9749f6b534085f6fd2e06d5acd00fdd",
+ "made": "2026-11-20 09:55:03"
 }

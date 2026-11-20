@@ -31,7 +31,7 @@ from PySide6.QtGui import QDesktopServices, QGuiApplication, QImage
 
 from . import extras, fetch, logs, modlist
 
-VERSION = "0.5.12"
+VERSION = "0.5.13"
 HERE = os.path.dirname(os.path.abspath(__file__))
 APPID = "2273430"
 EXE = "BlazblueEntropyEffect.exe"
@@ -430,8 +430,30 @@ class Controller(QObject):
         profile["enabled"] = list(enabled)
         with open(path, "w", encoding="utf-8") as f: json.dump(profile, f, indent=1)
 
+    def _retired(self):
+        """the mods the channel's list retires ('#retired: <id>' lines in Updater\\repositories.txt): kept on disk,
+        never switched on (2026-11-20)"""
+        out = set()
+        try:
+            with open(self._terminal("Updater", "repositories.txt"), encoding="utf-8") as f:
+                for line in f:
+                    if line.strip().lower().startswith("#retired:"):
+                        out.update(line.strip()[len("#retired:"):].replace(",", " ").split())
+        except OSError:
+            pass
+        return out
+
+    def _no_retired(self, ids):
+        """ids without the retired ones; says so when one was asked for"""
+        retired = self._retired()
+        kept = [i for i in ids if i not in retired]
+        if len(kept) != len(ids):
+            self.said.emit("Not in this release: it comes back in a later update, and stays off until then.")
+        return kept
+
     def _read_mods(self, build):
         enabled = set(self._enabled())
+        retired = self._retired()
         core_on = set(self._core_on())
         chosen = self._chosen() if self.settingsAvailable else None
         out, present = [], set()
@@ -475,6 +497,9 @@ class Controller(QObject):
                 })
                 folder_now = os.path.join(base, name)
                 out[-1].update(self._mod_extras(mod_id, folder_now, core))
+                if mod_id in retired and not core:
+                    out[-1].update(note="Not in this release: comes back in a later update", enabled=False, locked=True,
+                                   retired=True)
         for mod in out: mod["missing"] = [d for d in mod["needs"] if d not in present]
         titles = {m["id"]: m["title"] for m in out}
         for mod in out:                           # what stops when this one is switched off (improvement 19)
@@ -650,6 +675,10 @@ class Controller(QObject):
                 "ready": ("1 mod ready to install" if on == 1 else "%d mods ready to install" % on) if on else "Nothing switched on",
                 "changes": "A newer version is waiting" if self._only_newer() else "Changes not applied yet",
                 "installed": "1 mod installed" if on == 1 else "%d mods installed" % on}[self._state]
+        if self._state in ("no-game", "setup") and not on:
+            # the big button stays grey until a mod is on (Delta0kami, 2026-11-18: "the button for set up and install is
+            # greyed out"; every mod had been switched off)
+            text = "No mod is switched on: tick the ones you want in the Library"
         return "%s: %s" % (self.copyName, text[:1].lower() + text[1:]) if self._copy else text
 
     def _only_newer(self):
@@ -1622,6 +1651,7 @@ class Controller(QObject):
     # ---- the list of mods ------------------------------------------------------------------------------------
     @Slot(str, bool)
     def setEnabled(self, mod_id, on):
+        if on and not self._no_retired([mod_id]): return
         self._write_enabled([i for i in self._enabled() if i != mod_id] + ([mod_id] if on else []))
         self.refresh()
 
@@ -1629,6 +1659,7 @@ class Controller(QObject):
     def setSetEnabled(self, name, on):
         """every mod of a set (Redux) on, or every one off, in one go"""
         ids = [m["id"] for m in self._mods if m["set"] == name and not m["locked"]]
+        if on: ids = [i for i in ids if i not in self._retired()]
         if not name or not ids: return
         self._write_enabled([i for i in self._enabled() if i not in ids] + (ids if on else []))
         self.refresh()
@@ -1639,6 +1670,7 @@ class Controller(QObject):
         and core files are left out; switched on, they keep the order redux.json gives them."""
         have = {m["id"] for m in self._mods if not m["locked"]}
         ids = [str(i) for i in ids if str(i) in have]
+        if on: ids = self._no_retired(ids)
         if not ids: return
         self._write_enabled([i for i in self._enabled() if i not in ids] + (ids if on else []))
         self.refresh()
@@ -2669,9 +2701,17 @@ class Controller(QObject):
     @Slot(str)
     def setGameFolder(self, url):
         """the game's folder chosen by hand (Bottles or a Proton prefix the Terminal could not find): read from there"""
-        folder = self._local(url)
-        if not os.path.isfile(os.path.join(folder, EXE)):
-            self.said.emit("That folder does not hold %s. Choose the folder the game's program is in." % EXE); return
+        picked = self._local(url)
+        # the program itself, its _Data folder, the folder above the game or a Steam library are all accepted
+        # (Bad The Solguy, 2026-11-18: picked by hand and still told the game was not there)
+        base = os.path.dirname(picked) if os.path.isfile(picked) else picked
+        tries = [base, os.path.dirname(base), os.path.join(base, "BlazblueEntropyEffect"),
+                 os.path.join(base, "common", "BlazblueEntropyEffect"),
+                 os.path.join(base, "steamapps", "common", "BlazblueEntropyEffect")]
+        folder = next((f for f in tries if f and os.path.isfile(os.path.join(f, EXE))), None)
+        if not folder:
+            self.said.emit("No %s was found in %s or next to it. Choose the folder the game's program is in "
+                           "(in Steam: right-click the game > Manage > Browse local files)." % (EXE, picked)); return
         self._run("FINDING THE GAME", SETUP_STEPS, SETUP_MARKS, [["setup", folder]], "The game's data is read.")
 
     @Property(str, notify=settingsChanged)

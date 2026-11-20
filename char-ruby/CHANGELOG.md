@@ -1,5 +1,8 @@
 # char-ruby: patch notes
 
+## 1.0.7 (2026-11-20)
+- Fixed the air Down + Dash stopping Ruby in mid-air once its push ended. She now keeps falling forward after it, the way the Up + Dash carries her up.
+
 ## 1.0.4 (2026-11-14)
 - Changed the wording of the Potential and move texts to read like the game's own. No move works differently.
 - The new wording is in all ten languages.

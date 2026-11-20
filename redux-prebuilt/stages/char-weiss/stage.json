@@ -1,6 +1,6 @@
 {
  "mod": "char-weiss",
- "version": "0.4.12",
+ "version": "0.4.13",
  "files": {
   "actor/animation/role/rwi_air_turn.ab": "68bb3f9180c8726a86f791b53d27d3a5eaa8e78b",
   "actor/animation/role/rwi_airdash.ab": "e8b2846b44da9ceb7f4abc817f93875252d230f6",
@@ -498,7 +498,7 @@
   "effect/prefab/role/rwi/arc_rwief311_slash.ab": "400bd9f348c6546029dd1991623e8f222a1d7cbb",
   "effect/prefab/role/rwi/arc_rwief320.ab": "f554533db0f680c592844f3a66e8acbeddb300d8",
   "effect/prefab/role/rwi/arc_rwief400_dash.ab": "bff3907c7677c5aa9a618bd13748530facfe0c83",
-  "effect/prefab/role/rwi/arc_rwief400_slash.ab": "d9e55dc57340671cbe99245fe987bb7995a56506",
+  "effect/prefab/role/rwi/arc_rwief400_slash.ab": "322a2689d6d933d1b1ff4015f1ebbb4b13f3cc41",
   "effect/prefab/role/rwi/arc_rwief402_slash.ab": "8fb51965a7687ad4130f7dbbab2a36ec4f149e9f",
   "effect/prefab/role/rwi/arc_rwief403a_slash.ab": "6fcbaa81481be284378a88dee0a461f9eb633e3c",
   "effect/prefab/role/rwi/arc_rwief405c.ab": "5f998dc8f93df8309876ca3ba876b346a002ced7",
@@ -666,7 +666,7 @@
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief311_slash.ab": "21607d473131421f641fabbe1b9f9ff101bf6f12",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief320.ab": "c230b286aee00dc7cc20ec70a285509af444639b",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief400_dash.ab": "b0be9a02a005df447e3bb93a884504ccaed213c1",
-  "effect/prefab/role/rwi/rwiskin_05/arc_rwief400_slash.ab": "abbe19e3e088c485f7b49e033a1be4594bea3d04",
+  "effect/prefab/role/rwi/rwiskin_05/arc_rwief400_slash.ab": "7eefb9c3e6385a17ad8c41d766dfc21b99f78b81",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief402_slash.ab": "987b3cc6b499f609cb5f4916778a6fba1e1691a2",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief403a_slash.ab": "8b4c85501df3d6d3415c4aa478762ae9acecf05e",
   "effect/prefab/role/rwi/rwiskin_05/arc_rwief405c.ab": "7b4bed7fb2200a03f4e26ee9ed242261ca2b52e6",
@@ -17255,7 +17255,7 @@
    ]
   ]
  },
- "took": 2.3,
- "stamp": "0f8466f7d5d94ce8cbab6c27e4a45235eafcf9c4",
- "made": "2026-11-16 20:12:44"
+ "took": 4.6,
+ "stamp": "d52fba82cfe334a5b71ea792dd8c4e3112eb752c",
+ "made": "2026-11-20 09:55:03"
 }

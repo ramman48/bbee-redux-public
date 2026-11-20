@@ -1,6 +1,6 @@
 {
  "mod": "char-susanoo",
- "version": "0.1.13",
+ "version": "0.1.14",
  "files": {
   "actor/logicdata/hsx.ab": "39519263250dccda2a64bb425c0e23793dfd7d10",
   "actor/logicdata/hsxbullet.ab": "1f56e380ae0835180b6617a39b541c9825d22e05",
@@ -717,6 +717,18 @@
   "ui/texture/heroheadicon/heropda_193301.ab": "9ed8a4d811a8b0bc3026175bdb6ce6e2bc8fbb44",
   "ui/texture/heroheadicon/heropvpfinish_193301.ab": "e7da5a5148af270b259307cbde286d331d8c57a4",
   "ui/texture/heroheadicon/iconherohead_193301.ab": "c639207adcdd91c50de959ba153d25669ab97a25",
+  "ui/texture/heroheadicon/sus_meter_back.ab": "37ff80e25db9bb73be446d1981b0297e0d7aeab1",
+  "ui/texture/heroheadicon/sus_meter_bead.ab": "69e8d3566c6291f02a243be371184cbb1958abf7",
+  "ui/texture/heroheadicon/sus_meter_crest.ab": "cfd520f3d9e215d3bc6569f13fe20a2e7a5b887a",
+  "ui/texture/heroheadicon/sus_meter_ember.ab": "0aed8d1fb4936f1143dae1209584661ba1cbe123",
+  "ui/texture/heroheadicon/sus_meter_halo.ab": "e7da46cb484f318f6b6af2d6b98dc554cd0ab681",
+  "ui/texture/heroheadicon/sus_meter_lines.ab": "ef9ecec304c3d9d9853232eb9ca4ecc0772aba01",
+  "ui/texture/heroheadicon/sus_meter_manea.ab": "6f6b5061ac207a9d62f888027f21e44e1dd14cf5",
+  "ui/texture/heroheadicon/sus_meter_maneb.ab": "5711abebed1d0f610cfbfaf81b28fd0f1a4035f6",
+  "ui/texture/heroheadicon/sus_meter_ring.ab": "a5b22c8e18656a1ca2bc95264746448cf019adbe",
+  "ui/texture/heroheadicon/sus_meter_socket.ab": "836c196e345d646450e581cc2012268c1141a7e2",
+  "ui/texture/heroheadicon/sus_meter_spark.ab": "ccbb3e5d65bcec6dc4a8b697ac6c225ade5b7a6e",
+  "ui/texture/heroheadicon/sus_meter_wave.ab": "1faf03ba945649faa629bdc0a2aee76077e3a4e7",
   "ui/texture/heroheadselcetmb/heroheadselect_0_193301.ab": "c7eb8fffe8ebca4fd4e24276457d1707eafd7f40",
   "ui/texture/heroheadselcetmb/heroheadselect_1_193301.ab": "6bb1e81912833dfc2c643fd87bd1ee99796d64df",
   "ui/texture/heroheadselcetmb/heroheadselect_2_193301.ab": "902a09b60259ca4f92769a2955912d02b59443d8",
@@ -1452,6 +1464,18 @@
   "ui/texture/heroheadicon/heropda_193301.ab": null,
   "ui/texture/heroheadicon/heropvpfinish_193301.ab": null,
   "ui/texture/heroheadicon/iconherohead_193301.ab": null,
+  "ui/texture/heroheadicon/sus_meter_back.ab": null,
+  "ui/texture/heroheadicon/sus_meter_bead.ab": null,
+  "ui/texture/heroheadicon/sus_meter_crest.ab": null,
+  "ui/texture/heroheadicon/sus_meter_ember.ab": null,
+  "ui/texture/heroheadicon/sus_meter_halo.ab": null,
+  "ui/texture/heroheadicon/sus_meter_lines.ab": null,
+  "ui/texture/heroheadicon/sus_meter_manea.ab": null,
+  "ui/texture/heroheadicon/sus_meter_maneb.ab": null,
+  "ui/texture/heroheadicon/sus_meter_ring.ab": null,
+  "ui/texture/heroheadicon/sus_meter_socket.ab": null,
+  "ui/texture/heroheadicon/sus_meter_spark.ab": null,
+  "ui/texture/heroheadicon/sus_meter_wave.ab": null,
   "ui/texture/heroheadselcetmb/heroheadselect_0_193301.ab": null,
   "ui/texture/heroheadselcetmb/heroheadselect_1_193301.ab": null,
   "ui/texture/heroheadselcetmb/heroheadselect_2_193301.ab": null,
@@ -1646,6 +1670,18 @@
    "effect/prefab/hit/hsxskin_93/hit_023",
    "effect/prefab/hit/hsxskin_93/hit_014",
    "actor/logicdata/hsxult",
+   "ui/texture/heroheadicon/sus_meter_back",
+   "ui/texture/heroheadicon/sus_meter_lines",
+   "ui/texture/heroheadicon/sus_meter_ring",
+   "ui/texture/heroheadicon/sus_meter_wave",
+   "ui/texture/heroheadicon/sus_meter_manea",
+   "ui/texture/heroheadicon/sus_meter_maneb",
+   "ui/texture/heroheadicon/sus_meter_bead",
+   "ui/texture/heroheadicon/sus_meter_socket",
+   "ui/texture/heroheadicon/sus_meter_spark",
+   "ui/texture/heroheadicon/sus_meter_crest",
+   "ui/texture/heroheadicon/sus_meter_halo",
+   "ui/texture/heroheadicon/sus_meter_ember",
    "actor/sprite/su/80/su_attack_1_c",
    "actor/sprite/su/80/su_attack_2_c",
    "actor/sprite/su/80/su_attack2_1_c",
@@ -6058,6 +6094,54 @@
    ],
    [
     "actor/logicdata/hsxult",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_back",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_lines",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_ring",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_wave",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_manea",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_maneb",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_bead",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_socket",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_spark",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_crest",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_halo",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/sus_meter_ember",
     []
    ],
    [
@@ -10683,7 +10767,7 @@
   ],
   "guids": []
  },
- "took": 7.1,
- "stamp": "c42cafc126f7a33b29148474aea0f26ff3f2c2b3",
- "made": "2026-11-16 20:12:44"
+ "took": 1.5,
+ "stamp": "e17fbed9e70b18297c915c757bbf3094384437fa",
+ "made": "2026-11-20 09:55:03"
 }

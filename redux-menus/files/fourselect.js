@@ -279,7 +279,11 @@
     var res = await owner.Request(CRS).PostAsync(q);
     if (!res || !res.res) { log("unlock " + id + ": no answer"); return false; }
     require("Core/ResourceChange").RC.UpdateChanges(res.res.resChange.list);
-    var d = DB.BaseActor.GetData(id); if (!d) { log("unlock " + id + ": not owned after the request"); return false; }
+    // 0.1.27: the hero's data can land a moment after the change pack (The Prisoner, NotoriusCaitSithVII 11-17: "prevents me from
+    // unlocking"): waited for up to 1.5 s before the unlock is called failed. The request itself was accepted in window 4's check
+    var d = DB.BaseActor.GetData(id);
+    for (var w = 0; !d && w < 15; w++) { await new Promise(function (r) { setTimeout(r, 100); }); d = DB.BaseActor.GetData(id); }
+    if (!d) { log("unlock " + id + ": not owned after the request"); return false; }
     d.fake = false;
     log("unlocked " + id + (hs ? "" : " (no stock select: the global request)"));
     if (!hs) return true;

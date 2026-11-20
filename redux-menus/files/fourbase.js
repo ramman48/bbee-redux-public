@@ -25,7 +25,7 @@
   B.LOGF = B.DEV ? B.ROOT + "/modlog" + SUF + ".txt" : B.DATA + "/FourPlayer" + SUF + ".log";
   B.LOBBYDIR = B.DEV ? B.ROOT + "/local_only/fourplayer/lobbies" : B.DATA + "/FourPlayerLobbies";
   // redux-menus' own version (four-player's B.VER, the one two games must share, is set in fourlobby.js)
-  B.MENUS = "0.1.10";
+  B.MENUS = "0.1.27";   // keep equal to mod.json
   // how many players a lobby and a fight take (Soulve, 2026-10-17: "increases the max limit of players to 8 and account
   // for up to 16 players in the future"). Every part reads B.MAX; the screens lay themselves out for any count up to
   // B.CAP, so going to 16 is this one number (and a test with 16).
@@ -73,6 +73,6 @@
     var t = String(F.GetLastWriteTimeUtc(p).Ticks);
     if (B.t[n] != t) { (0, eval)(F.ReadAllText(p)); B.t[n] = t; }
   };
-  if (!B.started) { B.started = 1; B.log("FOURBASE", "redux-menus " + B.MENUS + " in window " + B.WIN + (B.DEV ? " (development PC)" : "") + ", log " + B.LOGF); }
+  if (!B.started) { B.started = 1; B.log("FOURBASE", "redux-menus " + B.MENUS + " in window " + B.WIN + (B.DEV ? " (work folder)" : " (player PC)") + ", log " + B.LOGF); }
   return "FOURBASE ready";
 })();

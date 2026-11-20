@@ -1,5 +1,11 @@
 # Nine: patch notes
 
+## 1.0.10 (2026-11-20)
+- Fixed the air string doing the fire palm twice before the tornado. In a jump, Attack now gives the palm, the tornado and then the fire rush.
+- Fixed Attack + Skill pressed together in the middle of Vermilion Waltz not switching Magic Arts. It now switches on any press of any Attack string.
+- Fixed Nine standing up for a moment between crouched attacks while Down is held. She now stays crouched.
+- Changed Magic Arts' text to list its three orders of strikes one per line, and Weave's text to mark each spell with a dot, in all ten languages.
+
 ## 1.0.9 (2026-11-15)
 - Fixed Rising Roar dealing damage only at the bottom of the Phantom's arm. The arm and the flame now hit along their whole length.
 - Fixed Rising Roar's flame pointing down and backward when Nine faces left.

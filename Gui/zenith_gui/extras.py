@@ -43,10 +43,13 @@ _PLAIN = [
      "A mod that is not part of this release tried to build its sounds. Press CHECK NOW in Options so the Terminal "
      "updates and switches it off, then press the button again."),
     (r"No space left|WinError 112|Errno 28|disk is full|not enough space",
-     "The disk is full. Free some space on it (a few GB), then press the button again."),
+     "The drive that holds the Terminal's folder is full. An update needs room for its download while it runs (up "
+     "to about 2 GB). Free space on that drive, or move the whole Terminal folder to a drive with more room, then "
+     "press the button again. On a Steam Deck, check the drive the Terminal folder is on, not only the SD card."),
     (r"PermissionError|Access is denied|WinError 5\b|WinError 32\b|being used by another process|Errno 13",
      "Windows would not let the Terminal change a file. Close the game, and any folder or program that has the "
-     "Terminal's files open, then press the button again."),
+     "Terminal's files open, then press the button again. If the Terminal is in Downloads or a OneDrive folder, "
+     "move it to a plain folder such as C:\\Games\\ZenithTerminal."),
     (r"SHA256|sha256|integrity check",
      "A download arrived damaged. Press CHECK NOW in Options to download it again."),
     (r"CONFLICT",
@@ -98,7 +101,7 @@ def report_files(launcher, terminal, data_dir, game_data):
                 ("Updater", "version.txt"), ("Gui", "version.txt"), ("package", "EDITION.txt")):
         path = os.path.join(terminal, *rel)
         if os.path.isfile(path): out.append((path, "extra/terminal/" + "_".join(rel)))
-    for name in ("last_run.log", "settings.json", "install_history.json"):
+    for name in ("last_run.log", "settings.json", "install_history.json", "last_crash.log"):
         path = os.path.join(data_dir or "", name)
         if data_dir and os.path.isfile(path): out.append((path, "extra/window/" + name))
     return out

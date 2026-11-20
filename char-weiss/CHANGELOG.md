@@ -1,5 +1,65 @@
 # char-weiss: patch notes
 
+## 0.4.13 (2026-11-20)
+
+From Boogy's report on 0.4.12 (every bug, the text notes and the design requests).
+
+Fixed
+- Her idle breathing plays through the whole stand instead of stopping after one breath.
+- The Crush Trigger can't be used again straight after a miss: a missed leap has its landing and a short pause first.
+- Heavy Thrust has Super Armor as its text says, instead of making her invincible.
+- The fourth strike of her Attack string crashes a black glyph onto the enemy whenever the glyph is in range, not only when she stands next to it.
+- The Arma Gigas's sword hits enemies on either side of it, including enemies behind her.
+- Snowfall's held landing hits only what its cuts reach, and with Frost the enemy stays frozen through the rising cuts.
+- Her first air attack hits through its whole swing, including enemies below her.
+- Jumping off a black glyph no longer uses up her double jump.
+- Glyph Throw comes out when Down + Dash is pressed during a dash, right after one, or twice in a row.
+- The Long Lunge hold carries the dash attack farther, with a slide to a stop.
+- Triple Strike holds the enemy in front of her, so all three cuts and the finisher land. The dash attack now staggers the enemy and slides it along instead of knocking it down, so what follows can reach it.
+- The dash attack's glyph (Lunge Glyph) appears on the hit, also when a direction is held or a follow-up comes right after.
+- Fire Dust's burst and burning floor come with its Potential only; without it the fireball hits on its own.
+- Lightning Dust's circuit between her glyphs comes with its Potential only, and it now damages every enemy on it.
+- Wind Dust's Potential opens a vortex where a tornado first hits.
+- Fire, Lightning and Wind shots have sounds.
+- Ice Pillar's walls stop enemies, no longer break when an enemy walks into them, and break from enemy hits instead. They are narrower and taller, with no ice spikes behind them.
+- Frost Pillar's ice pillar rises from the ground under the enemy instead of in the air.
+- White Night and Glacial Torrent are Ultras now, so her SP gauge fills in a run.
+- The hidden effect that gives Super Armor during the Crush Trigger is now called Crush Trigger.
+
+Changed
+- Her first two Attack strikes can go into the Up + Attack or Down + Attack string, her third into that string's last hit, and every ground string ends with the fourth strike. The Down + Attack string can't restart itself.
+- Snowfall dives at once, in a fast plunge.
+- A black glyph lights up and grows when she is in range to use it, and the range is as large above the glyph as beside it. It is the same range for her follow-ups, Glyph Cancel, the fourth strike and jumping off it.
+- Jump cancels her air attacks early, as her dash does.
+- Glyph Step also leaves a glyph under her third jump.
+- The dash attack ends without its long recovery.
+- Glyph Dash: during a dash, Up + Attack, Up + Skill or Up + Dash at a black glyph gives Twisting Step, Piercing Step or Pirouette, with no Potential needed. Glissade now keeps the glyph's uses for those follow-ups.
+- Glyph Cancel also works after the Down + Attack string's finisher and the dash attack.
+- Piercing Step costs 20 MP, deals more damage and lands into Snowfall's landing strike and its follow-ups.
+- Twisting Step springs up higher and cuts down in an arc. Twisting Step and Pirouette each leave a black glyph where they end for 2 seconds.
+- Dust: Summon alone loads Ice, Up + Summon loads Fire.
+- Precision Parry costs 20 MP, and Counter Glyph places its glyph just above her.
+- Ice Pillar: Pillar Glyph places its glyph next to her. With Great Pillar the larger wall costs 75 MP and no hit breaks it.
+- Glacial Torrent is Up + Skill with its own Potential (where Snow Globe was), and costs 50 SP. Holding Attack is always Heavy Thrust.
+- EX Ice Shard places one black glyph in front of the nearest enemy and one behind it, wherever it stands on the screen.
+- Glyph Runner gives Super Armor for 1 second after a dash starts.
+- Many move and Potential texts reworded as Boogy asked. The changed lines show in English in the other nine languages until they are translated.
+
+Removed
+- Snow Globe and its Potential (Glacial Torrent takes its place; Globe Glyph became Torrent Glyph).
+
+## 0.4.12 (2026-11-16)
+- Fixed Weiss's head on the Evotype screen being a close-up that didn't fit the frame.
+
+## 0.4.11 (2026-11-15)
+- Fixed her Skill button in the bottom-left corner showing an empty frame.
+
+## 0.4.10 (2026-11-15)
+- Added her Skill icon on the HUD. Fixed Snowfall's streak always drawing down to the right, the crouch jab standing her up for a moment, the Crush Trigger's swing sound playing twice, and her idle changing pose too often.
+
+## 0.4.9 (2026-11-15)
+- Her first public release (the Part 1 build).
+
 ## 0.4.8 (2026-11-14)
 - Changed the wording of the Potential and move texts to read like the game's own. No move works differently.
 - Changed the inputs of Glyph Kick, Glyph Dash, Glyph Cancel, Far Glyph, Dust and Glacial Torrent to be shown the way the game shows inputs.

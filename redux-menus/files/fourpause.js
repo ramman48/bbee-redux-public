@@ -714,6 +714,18 @@
     };
     Pr.UninitWindow = function () { try { if (G.BB4PAUSE.onClose) G.BB4PAUSE.onClose(this); } catch (e) { log("close: " + es(e)); } return Pr.__v4uninit.apply(this, arguments); };
   }
+  // 0.1.27 ("The original UI was still visible", Windows 10; seen in game 2026-11-20): during a run the game writes the alpha of
+  // BattleInfoStatWrap (Highest Combos, Perfect Clear, Battle Time, AP, the rating) back to 1 every frame, so the 0.25 s
+  // watch hid it for one frame in six. The hidden parts are put back to 0 just before each frame is drawn, after the game's
+  // own updates, so none of them is ever drawn under the new pause.
+  try { if (P.pre) UE.Canvas.remove_willRenderCanvases(P.pre); } catch (e) { }
+  try {
+    P.pre = new UE.Canvas.WillRenderCanvases(function () {
+      var q = G.BB4PAUSE, s = q && q.st; if (!s || !s.kidG) return;
+      for (var i = 0; i < s.kidG.length; i++) { try { var g = s.kidG[i]; if (g && !g.Equals(null) && g.alpha != 0) g.alpha = 0; } catch (e) { } }
+    });
+    UE.Canvas.add_willRenderCanvases(P.pre);
+  } catch (e) { P.pre = null; log("no pre-render hook: " + es(e)); }
   // hooked on the first tick, not while the game's own scripts are still loading (this file is appended to one of them)
   if (P.hookTimer) clearInterval(P.hookTimer);
   P.hookTimer = setInterval(function () { try { if (hookWin() !== false) { clearInterval(P.hookTimer); P.hookTimer = 0; if (reopen) { P.onOpen(reopen); reopen = null; } } } catch (e) { } }, 30);

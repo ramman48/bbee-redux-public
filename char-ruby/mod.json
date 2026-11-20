@@ -2,7 +2,7 @@
  "id": "char-ruby",
  "name": "Ruby Rose (Cross Effect, alpha)",
  "author": "BBEE modding project",
- "version": "1.0.6",
+ "version": "1.0.7",
  "description": "Ruby Rose from BlazBlue Cross Tag Battle as a playable character (ActorId 200701). Built on your machine from your own BlazBlue Cross Tag Battle install; requires BBTAG and all of its DLC. Unofficial.",
  "gameBuilds": [
   "25478197",

@@ -1,8 +1,8 @@
 {
  "mod": "char-ruby",
- "version": "1.0.6",
+ "version": "1.0.7",
  "gameBuild": "26424974",
- "made": "2026-11-16 20:09",
+ "made": "2026-11-20 09:47",
  "importers": [
   {
    "script": "import_ruby.py",

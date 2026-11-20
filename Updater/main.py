@@ -1081,6 +1081,32 @@ def fetch_files_to_staging(
     return "ok"
 
 
+LINK_FROM = 1 << 20     # files this big are backed up by a hard link; smaller ones are copied
+
+
+def link_or_copy(src: Path, dst: Path) -> None:
+    """the backup of a file about to change: a hard link where the drive allows it (it costs no space; the apply puts a
+    new file in place, so the link keeps the old one), else a copy (2026-11-20)"""
+    if src.stat().st_size < LINK_FROM:
+        shutil.copy2(src, dst)
+        return
+    try:
+        if dst.exists():
+            dst.unlink()
+        os.link(src, dst)
+    except OSError:
+        shutil.copy2(src, dst)
+
+
+def move_into_place(src: Path, dst: Path) -> None:
+    """a staged file over its target: moved on the same drive (no second copy, and the target becomes a new file, which
+    a hard-linked backup needs), copied across drives (2026-11-20)"""
+    try:
+        os.replace(src, dst)
+    except OSError:
+        shutil.copy2(src, dst)
+
+
 def create_backup(mod_dir: Path, files_to_backup: List[str], work_root: Optional[Path] = None) -> Tuple[Path, Set[str]]:
     """Creates a backup containing ONLY the files listed in files.txt (plus version.txt).
 
@@ -1106,7 +1132,7 @@ def create_backup(mod_dir: Path, files_to_backup: List[str], work_root: Optional
         if src_file.is_file():
             dst_file = backup_dir / norm_path
             dst_file.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(src_file, dst_file)
+            link_or_copy(src_file, dst_file)
             backed_up_files.add(str(norm_path).replace("\\", "/"))
 
     return backup_dir, backed_up_files
@@ -1131,6 +1157,11 @@ def restore_backup(
         dst_file = mod_dir / norm_path
         if src_file.is_file():
             dst_file.parent.mkdir(parents=True, exist_ok=True)
+            try:
+                if dst_file.is_file() and os.path.samefile(src_file, dst_file):
+                    continue        # never replaced: the backup is still the file itself (a hard link)
+            except OSError:
+                pass
             shutil.copy2(src_file, dst_file)
 
     # Step 2: Delete files from manifest that were newly created during the failed update
@@ -1234,7 +1265,7 @@ def apply_mod_update(
             if not is_inside(dest_file, mod_dir):
                 raise ValueError(f"'{rel_path}' is outside {mod_dir}; not written.")
             dest_file.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(staging_file, dest_file)
+            move_into_place(staging_file, dest_file)
 
             # Integrity verification on the target file
             expected_sha = files_manifest.get(rel_path)
@@ -1269,10 +1300,12 @@ def apply_mod_update(
                     raise ValueError(
                         f"SHA256 mismatch for version.txt: expected {expected_ver_sha}, got {ver_sha}"
                     )
-            shutil.copy2(staging_version_file, dest_version_file)
+            move_into_place(staging_version_file, dest_version_file)
             updated_files_log.append(dest_version_file)
         elif fallback_version:
-            dest_version_file.write_text(f"{fallback_version.strip()}\n", encoding="utf-8")
+            tmp_version = dest_version_file.with_name("version.txt.new")
+            tmp_version.write_text(f"{fallback_version.strip()}\n", encoding="utf-8")
+            os.replace(tmp_version, dest_version_file)
             updated_files_log.append(dest_version_file)
         else:
             raise RuntimeError(f"No version.txt found in staging and no fallback version provided for {mod_dir.name}.")

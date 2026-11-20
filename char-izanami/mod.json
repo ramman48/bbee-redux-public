@@ -81,11 +81,11 @@
        "Attr": [
         {
          "Type": 1,
-         "Value": 800.0
+         "Value": 1000.0
         },
         {
          "Type": 6,
-         "Value": 170.0
+         "Value": 190.0
         },
         {
          "Type": 18,
@@ -134,15 +134,100 @@
    ],
    "HeroPortraitOffsetConfigUI": [
     {
-     "$copyRows": {
-      "where": {
-       "Id": 100101
-      },
-      "set": {
-       "Id": 200301
-      },
-      "allowDuplicateKeys": true
-     }
+     "Id": 200301,
+     "Key": "BattleChallengePrepare",
+     "PivotX": 0.5576,
+     "PivotY": 0.1075,
+     "Scale": 1.4698,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "BreedFinishRoom",
+     "PivotX": 0.4955,
+     "PivotY": 0.2149,
+     "Scale": 2.3884,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "BreedPrepare",
+     "PivotX": 0.5093,
+     "PivotY": 0.2609,
+     "Scale": 1.8372,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "BreedPrepareS",
+     "PivotX": 0.53,
+     "PivotY": 0.2966,
+     "Scale": 1.6535,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "BreedResult",
+     "PivotX": 0.5576,
+     "PivotY": 0.174,
+     "Scale": 1.8372,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "FesL",
+     "PivotX": 0.4403,
+     "PivotY": 0.2046,
+     "Scale": 1.1391,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "FesR",
+     "PivotX": 0.6679,
+     "PivotY": 0.2046,
+     "Scale": 1.1391,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "FesShadowL",
+     "PivotX": 0.7645,
+     "PivotY": 0.1586,
+     "Scale": 1.8372,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "FesShadowR",
+     "PivotX": 0.3369,
+     "PivotY": 0.1586,
+     "Scale": 1.8372,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "GenericActorDetail",
+     "PivotX": 0.6403,
+     "PivotY": 0.1075,
+     "Scale": 1.4698,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "PvpTeamMatchL",
+     "PivotX": 0.5231,
+     "PivotY": 0.2046,
+     "Scale": 2.2047,
+     "$append": true
+    },
+    {
+     "Id": 200301,
+     "Key": "PvpTeamMatchR",
+     "PivotX": 0.5576,
+     "PivotY": 0.2046,
+     "Scale": 2.2047,
+     "$append": true
     }
    ],
    "ActorConfig": [
@@ -1239,8 +1324,8 @@
      ],
      "Mutelist": "\"all\":0.80,\"5\":0.80,\"7\":1.0,\"8\":0.15",
      "Preinputtime": 0.35,
-     "ActdurStrict": 2.23,
-     "Timeout": 3.33,
+     "ActdurStrict": 2.14,
+     "Timeout": 3.2,
      "ReqTriggerId": [
       20322
      ],
@@ -3351,7 +3436,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3364,7 +3455,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3377,7 +3474,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3390,7 +3493,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3403,7 +3512,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 6
+     "SkillGroupId": 6,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3416,7 +3531,13 @@
       0.428
      ],
      "$append": true,
-     "SkillGroupId": 6
+     "SkillGroupId": 6,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3429,7 +3550,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3442,7 +3569,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3455,7 +3588,13 @@
       1.222
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3468,7 +3607,13 @@
       0.489
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3481,7 +3626,13 @@
       1.833
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3494,7 +3645,13 @@
       1.711
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3507,7 +3664,13 @@
       1.8
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3520,7 +3683,13 @@
       1.915
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3533,7 +3702,13 @@
       1.1
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3546,7 +3721,13 @@
       1.8
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3559,7 +3740,13 @@
       3.218
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3572,7 +3759,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3585,7 +3778,13 @@
       0.978
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3598,7 +3797,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3611,7 +3816,13 @@
       1.6
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3624,7 +3835,13 @@
       3.667
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3637,7 +3854,13 @@
       2.493
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3650,7 +3873,13 @@
       1.08
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3663,7 +3892,13 @@
       0.937
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3819,7 +4054,13 @@
       2.0
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3832,7 +4073,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3845,7 +4092,13 @@
       2.31
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3858,7 +4111,13 @@
       2.43
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3871,7 +4130,13 @@
       2.43
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3884,7 +4149,13 @@
       1.32
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3897,7 +4168,13 @@
       1.32
      ],
      "$append": true,
-     "SkillGroupId": 4
+     "SkillGroupId": 4,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3910,7 +4187,13 @@
       0.489
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3923,7 +4206,13 @@
       2.749
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3936,7 +4225,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3949,7 +4244,13 @@
       0.9
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -3988,7 +4289,13 @@
       1.2
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -4001,7 +4308,13 @@
       1.0
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -4014,7 +4327,13 @@
       1.4
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -4027,7 +4346,13 @@
       1.8
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 20030101,
@@ -5003,7 +5328,13 @@
       2.79
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -5018,7 +5349,13 @@
       1.3
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -5031,7 +5368,13 @@
       2.585
      ],
      "$append": true,
-     "SkillGroupId": 1
+     "SkillGroupId": 1,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 4.0
+      }
+     ]
     },
     {
      "ActorId": 20030102,
@@ -5085,7 +5428,13 @@
       1.2
      ],
      "$append": true,
-     "SkillGroupId": 2
+     "SkillGroupId": 2,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -5099,7 +5448,13 @@
      ],
      "$append": true,
      "SkillGroupId": 2,
-     "$new": true
+     "$new": true,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     },
     {
      "ActorId": 200301,
@@ -5113,7 +5468,13 @@
      ],
      "$append": true,
      "SkillGroupId": 2,
-     "$new": true
+     "$new": true,
+     "MpAdd": [
+      {
+       "Slot": 3,
+       "SkillAdd": 6.0
+      }
+     ]
     }
    ],
    "BaseActorPotentialConf": [
@@ -5752,7 +6113,9 @@
      "IconId": 20326,
      "PreLabels": [
       20332
-     ]
+     ],
+     "IsUltraSkill": 1,
+     "SkillCost": 100
     },
     {
      "$new": true,
@@ -11602,10 +11965,10 @@
    }
   },
   "spriteAliases": {
-   "HeroHead_200301": "tex:UI/Texture/IconBoss/IconBoss_5034",
-   "HeroHead_200301_Off": "tex:UI/Texture/IconBoss/IconBoss_5034",
-   "HeroPortraitFull_200301_S": "tex:UI/Texture/IconBoss/IconBoss_5034",
-   "PVE_HeroPortraitFull_200301_H": "tex:UI/Texture/IconBoss/IconBoss_5034",
+   "HeroHead_200301": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_200301",
+   "HeroHead_200301_Off": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_200301",
+   "HeroPortraitFull_200301_S": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_200301",
+   "PVE_HeroPortraitFull_200301_H": "tex:UI/Texture/HeroHeadIcon/HeroHeadIcon_200301",
    "Potential_20301": "tex:UI/Texture/IconPotential200301/Potential_20301",
    "Potential_20304": "tex:UI/Texture/IconPotential200301/Potential_20304",
    "Potential_20307": "tex:UI/Texture/IconPotential200301/Potential_20307",
@@ -11644,10 +12007,6 @@
    "Talent_5097": "Talent_5043"
   },
   "textureAliases": {
-   "UI/Texture/HeroPortraitFull/HeroPortraitFull_200301": "UI/Texture/IconBoss/IconBoss_5034",
-   "UI/Texture/HeroPortraitLMB/HeroPortraitFull_200301": "UI/Texture/IconBoss/IconBoss_5034",
-   "UI/Texture/HeroPortraitFullMB/HeroPortraitFull_200301": "UI/Texture/IconBoss/IconBoss_5034",
-   "UI/Texture/HeroPortraitCoatArms/HeroPortraitFull_200301": "UI/Texture/IconBoss/IconBoss_5034",
    "UI/Texture/IconPotential/Potential_20301": "UI/Texture/IconPotential200301/Potential_20301",
    "UI/Texture/IconPotential/Potential_20304": "UI/Texture/IconPotential200301/Potential_20304",
    "UI/Texture/IconPotential/Potential_20307": "UI/Texture/IconPotential200301/Potential_20307",
@@ -11674,34 +12033,6 @@
    {
     "file": "data/js/core/AudioUtil",
     "append": "/* char-izanami audio_polish: the cue names the game asks for by id (vo_200301_intro / _ready / _unlock / _power / _challenge / _prize / _sad / _relax, vo_izn_dead) play her own lines from the boss sheet vo_boss_mi. TsGetParamId gives every string an id (never < 0), so a name is redirected unless her own sheet, when loaded, holds it. */\n;(function(){try{var A=exports.default,get=A.TsGetParamId,O=[\"200301\", \"izn\"],M={\"challenge\": \"vo_mi_born\", \"dead\": \"vo_mi_dead\", \"intro\": \"vo_sys_BossMi_Born_01_0\", \"power\": \"vo_mi_D_active\", \"prize\": \"vo_mi_stand_born_show_2\", \"ready\": \"vo_sys_BossMi_Born_02_0\", \"relax\": \"vo_mi_stand\", \"sad\": \"vo_mi_623B\", \"unlock\": \"vo_sys_BossMi_Born_01_0\"},C={\"challenge\": 0.4, \"prize\": 0.3},S=\"vo_cx_izanami\";var own=function(n){try{var q=CS.CriWare.CriAtom.GetCueSheet(S);return !!(q&&q.acb&&q.acb.Exists(n))}catch(e){return false}};A.TsGetParamId=function(n){var r=get.call(A,n);if(typeof n==\"string\"&&n.slice(0,3)==\"vo_\"){var k=n.indexOf(\"_\",3);if(k>3&&O.indexOf(n.slice(3,k))>=0){var s=n.slice(k+1),m=M[s];if(m&&!own(n)&&!(C[s]<Math.random()))r=get.call(A,m)}}return r}}catch(e){}})();"
-   },
-   {
-    "file": "data/js/gameplay/battle/BattleJs",
-    "append": "/* char-izanami: she inherits nothing (docs/characters/izanami/POTENTIALS_1.0.md section 7, direction B) on BattleJs */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301,OWN=[2003012,2003013],TAL=5097;if(H.call(P,'__iznMix'))return;P.__iznMix=1;if(H.call(P,'applyTeacherSkillToPlayer')){var A=P.applyTeacherSkillToPlayer;P.applyTeacherSkillToPlayer=function(e,t){try{if(e&&e.BaseID==ID&&t&&t.skills&&t.skills.some(function(s){return s&&OWN.indexOf(s.id)<0})){var k=t.skills.map(function(s,i){return s&&OWN.indexOf(s.id)<0?{id:OWN[i==1?1:0],level:s.level||1,fromActorId:ID}:s});t=Object.create(t,{skills:{value:k}});globalThis.__iznMixSkills=(globalThis.__iznMixSkills||0)+1}}catch(z){}return A.call(this,e,t)}}if(H.call(P,'AddPlayerTriggersFromFesActor')){var F=P.AddPlayerTriggersFromFesActor;P.AddPlayerTriggersFromFesActor=function(t,a){try{if(t&&t.BaseID==ID&&a&&a.talents){var n=[];a.talents.forEach(function(x){var f=x.fromActorId||0;if(f&&f!=ID)return;n.push(f==0&&x.id!=TAL?{id:TAL,quality:x.quality||1,fromActorId:0}:x)});a=Object.create(a,{talents:{value:n}});globalThis.__iznMixTalents=(globalThis.__iznMixTalents||0)+1}}catch(z){}var g=[].slice.call(arguments);g[1]=a;return F.apply(this,g)}}})(BattleJs.prototype)}catch(e){}\n"
-   },
-   {
-    "file": "data/js/gameplay/battle/BattleCoopBossRush",
-    "append": "/* char-izanami: she inherits nothing (docs/characters/izanami/POTENTIALS_1.0.md section 7, direction B) on BattleCoopBossRush */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301,OWN=[2003012,2003013],TAL=5097;if(H.call(P,'__iznMix'))return;P.__iznMix=1;if(H.call(P,'applyTeacherSkillToPlayer')){var A=P.applyTeacherSkillToPlayer;P.applyTeacherSkillToPlayer=function(e,t){try{if(e&&e.BaseID==ID&&t&&t.skills&&t.skills.some(function(s){return s&&OWN.indexOf(s.id)<0})){var k=t.skills.map(function(s,i){return s&&OWN.indexOf(s.id)<0?{id:OWN[i==1?1:0],level:s.level||1,fromActorId:ID}:s});t=Object.create(t,{skills:{value:k}});globalThis.__iznMixSkills=(globalThis.__iznMixSkills||0)+1}}catch(z){}return A.call(this,e,t)}}if(H.call(P,'AddPlayerTriggersFromFesActor')){var F=P.AddPlayerTriggersFromFesActor;P.AddPlayerTriggersFromFesActor=function(t,a){try{if(t&&t.BaseID==ID&&a&&a.talents){var n=[];a.talents.forEach(function(x){var f=x.fromActorId||0;if(f&&f!=ID)return;n.push(f==0&&x.id!=TAL?{id:TAL,quality:x.quality||1,fromActorId:0}:x)});a=Object.create(a,{talents:{value:n}});globalThis.__iznMixTalents=(globalThis.__iznMixTalents||0)+1}}catch(z){}var g=[].slice.call(arguments);g[1]=a;return F.apply(this,g)}}})(BattleCoopBossRush.prototype)}catch(e){}\n"
-   },
-   {
-    "file": "data/js/gameplay/battle/BattleCoopBreed",
-    "append": "/* char-izanami: she inherits nothing (docs/characters/izanami/POTENTIALS_1.0.md section 7, direction B) on BattleCoopBreed */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301,OWN=[2003012,2003013],TAL=5097;if(H.call(P,'__iznMix'))return;P.__iznMix=1;if(H.call(P,'applyTeacherSkillToPlayer')){var A=P.applyTeacherSkillToPlayer;P.applyTeacherSkillToPlayer=function(e,t){try{if(e&&e.BaseID==ID&&t&&t.skills&&t.skills.some(function(s){return s&&OWN.indexOf(s.id)<0})){var k=t.skills.map(function(s,i){return s&&OWN.indexOf(s.id)<0?{id:OWN[i==1?1:0],level:s.level||1,fromActorId:ID}:s});t=Object.create(t,{skills:{value:k}});globalThis.__iznMixSkills=(globalThis.__iznMixSkills||0)+1}}catch(z){}return A.call(this,e,t)}}if(H.call(P,'AddPlayerTriggersFromFesActor')){var F=P.AddPlayerTriggersFromFesActor;P.AddPlayerTriggersFromFesActor=function(t,a){try{if(t&&t.BaseID==ID&&a&&a.talents){var n=[];a.talents.forEach(function(x){var f=x.fromActorId||0;if(f&&f!=ID)return;n.push(f==0&&x.id!=TAL?{id:TAL,quality:x.quality||1,fromActorId:0}:x)});a=Object.create(a,{talents:{value:n}});globalThis.__iznMixTalents=(globalThis.__iznMixTalents||0)+1}}catch(z){}var g=[].slice.call(arguments);g[1]=a;return F.apply(this,g)}}})(BattleCoopBreed.prototype)}catch(e){}\n"
-   },
-   {
-    "file": "data/js/gameplay/battle/BattleTeamBossRush",
-    "append": "/* char-izanami: she inherits nothing (docs/characters/izanami/POTENTIALS_1.0.md section 7, direction B) on BattleTeamBossRush */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301,OWN=[2003012,2003013],TAL=5097;if(H.call(P,'__iznMix'))return;P.__iznMix=1;if(H.call(P,'applyTeacherSkillToPlayer')){var A=P.applyTeacherSkillToPlayer;P.applyTeacherSkillToPlayer=function(e,t){try{if(e&&e.BaseID==ID&&t&&t.skills&&t.skills.some(function(s){return s&&OWN.indexOf(s.id)<0})){var k=t.skills.map(function(s,i){return s&&OWN.indexOf(s.id)<0?{id:OWN[i==1?1:0],level:s.level||1,fromActorId:ID}:s});t=Object.create(t,{skills:{value:k}});globalThis.__iznMixSkills=(globalThis.__iznMixSkills||0)+1}}catch(z){}return A.call(this,e,t)}}if(H.call(P,'AddPlayerTriggersFromFesActor')){var F=P.AddPlayerTriggersFromFesActor;P.AddPlayerTriggersFromFesActor=function(t,a){try{if(t&&t.BaseID==ID&&a&&a.talents){var n=[];a.talents.forEach(function(x){var f=x.fromActorId||0;if(f&&f!=ID)return;n.push(f==0&&x.id!=TAL?{id:TAL,quality:x.quality||1,fromActorId:0}:x)});a=Object.create(a,{talents:{value:n}});globalThis.__iznMixTalents=(globalThis.__iznMixTalents||0)+1}}catch(z){}var g=[].slice.call(arguments);g[1]=a;return F.apply(this,g)}}})(BattleTeamBossRush.prototype)}catch(e){}\n"
-   },
-   {
-    "file": "data/js/gameplay/battle/BattleTeamBreed",
-    "append": "/* char-izanami: she inherits nothing (docs/characters/izanami/POTENTIALS_1.0.md section 7, direction B) on BattleTeamBreed */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301,OWN=[2003012,2003013],TAL=5097;if(H.call(P,'__iznMix'))return;P.__iznMix=1;if(H.call(P,'applyTeacherSkillToPlayer')){var A=P.applyTeacherSkillToPlayer;P.applyTeacherSkillToPlayer=function(e,t){try{if(e&&e.BaseID==ID&&t&&t.skills&&t.skills.some(function(s){return s&&OWN.indexOf(s.id)<0})){var k=t.skills.map(function(s,i){return s&&OWN.indexOf(s.id)<0?{id:OWN[i==1?1:0],level:s.level||1,fromActorId:ID}:s});t=Object.create(t,{skills:{value:k}});globalThis.__iznMixSkills=(globalThis.__iznMixSkills||0)+1}}catch(z){}return A.call(this,e,t)}}if(H.call(P,'AddPlayerTriggersFromFesActor')){var F=P.AddPlayerTriggersFromFesActor;P.AddPlayerTriggersFromFesActor=function(t,a){try{if(t&&t.BaseID==ID&&a&&a.talents){var n=[];a.talents.forEach(function(x){var f=x.fromActorId||0;if(f&&f!=ID)return;n.push(f==0&&x.id!=TAL?{id:TAL,quality:x.quality||1,fromActorId:0}:x)});a=Object.create(a,{talents:{value:n}});globalThis.__iznMixTalents=(globalThis.__iznMixTalents||0)+1}}catch(z){}var g=[].slice.call(arguments);g[1]=a;return F.apply(this,g)}}})(BattleTeamBreed.prototype)}catch(e){}\n"
-   },
-   {
-    "file": "data/js/gameplay/battlebreedprepare/SceneUIFesSelect",
-    "append": "/* char-izanami: no mixtures on the Evotype screen (POTENTIALS_1.0.md section 7, direction A) */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301;if(H.call(P,'__iznMix'))return;P.__iznMix=1;function me(s){try{return !!(s&&s.seed&&s.seed.server&&s.seed.server.id==ID)}catch(z){return false}}var C=P.OnFactorConfirmClick;P.OnFactorConfirmClick=function(a,r){try{if(me(this)&&a&&a.factor&&a.factor.server&&a.factor.server.id!=ID&&!a.confirm){WindowUtil_1.default.QueueMessages(Util_1.U.GetLocale('IZN_FesSelect_NoMixture'));globalThis.__iznMixBlocked=(globalThis.__iznMixBlocked||0)+1;return Promise.resolve()}}catch(z){}return C.apply(this,arguments)};var K=P.CanPickFactor;P.CanPickFactor=function(){try{if(me(this))return false}catch(z){}return K.apply(this,arguments)};var N=P.CanChooseFesCount;P.CanChooseFesCount=function(){try{if(me(this))return 0}catch(z){}return N.apply(this,arguments)}})(SceneUIFesSelect.prototype)}catch(e){}\n"
-   },
-   {
-    "file": "data/js/window/BreedPrepareUI",
-    "append": "/* char-izanami: no mixtures at the run start (POTENTIALS_1.0.md section 7, direction A, for selects that skip the Evotype screen) */\ntry{(function(P){var H=Object.prototype.hasOwnProperty,ID=200301;if(H.call(P,'__iznMix'))return;P.__iznMix=1;var O=P.OnStart;P.OnStart=function(t,e){try{if(t=='BreedPrepare'&&e=='EnterFight'&&!this.isStart){var d=DataBinding_1.DB.TeamData.Value,bad=0;if(d&&d.seed&&d.seed.server&&d.seed.server.id==ID&&d.factors&&d.factors.forEach){d.factors.forEach(function(f){try{if(f&&f.server&&f.server.id!=ID)bad++}catch(z){}})}if(bad){var fr=d.factors,ks=[];fr.forEach(function(f,k){try{if(f&&f.server&&f.server.id!=ID)ks.push(k)}catch(z){}});if(typeof fr.delete=='function'){ks.forEach(function(k){fr.delete(k)})}else if(fr.splice){ks.sort(function(a,b){return b-a}).forEach(function(i){fr.splice(i,1)})}WindowUtil_1.default.QueueMessages(Util_1.U.GetLocale('IZN_FesSelect_NoMixture'));globalThis.__iznMixStart=(globalThis.__iznMixStart||0)+1}}}catch(z){}return O.apply(this,arguments)}})(BreedPrepareUI.prototype)}catch(e){}\n"
    },
    {
     "file": "data/js/gameplay/battle/BattleTryout",
@@ -32865,6 +33196,57 @@
       "mibullet1_86"
      ]
     ]
+   },
+   {
+    "from": "ui/texture/heroportraitfull/heroportraitfull_103701",
+    "to": "ui/texture/heroportraitfull/heroportraitfull_200301",
+    "rename": [
+     "103701",
+     "200301"
+    ],
+    "image": "art/portrait/portrait_full.png"
+   },
+   {
+    "from": "ui/texture/heroportraitlmb/heroportraitfull_103701",
+    "to": "ui/texture/heroportraitlmb/heroportraitfull_200301",
+    "rename": [
+     "103701",
+     "200301"
+    ],
+    "image": "art/portrait/portrait_lmb.png"
+   },
+   {
+    "from": "ui/texture/heroportraitfullmb/heroportraitfull_103701",
+    "to": "ui/texture/heroportraitfullmb/heroportraitfull_200301",
+    "rename": [
+     "103701",
+     "200301"
+    ],
+    "image": "art/portrait/portrait_mb.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroportraitcoatarms/heroportraitfull_200301",
+    "rename": [
+     "103701",
+     "200301"
+    ],
+    "image": "art/portrait/portrait_coatarms.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/heroheadicon_200301",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "HeroHeadIcon_200301"
+     ]
+    ],
+    "image": "art/portrait/head.png"
    }
   ],
   "assets": [
@@ -32886,7 +33268,7 @@
         "path": "LogicArray",
         "value": [
          {
-          "Type": 15,
+          "Type": 14,
           "ValueConstFp": {
            "value": 4294967296
           },
@@ -32899,8 +33281,13 @@
           "OnlyUpdateWhenBattleRun": 0,
           "ScriptCall": "",
           "ParamSet": {
-           "ParamList": [],
-           "ParamHintTypeInEditor": ""
+           "ParamList": [
+            {
+             "Key": "Attr",
+             "Value": "FianlDamReduceRate"
+            }
+           ],
+           "ParamHintTypeInEditor": "BuffLogic_AttrChange"
           }
          },
          {
@@ -32915,7 +33302,7 @@
            "value": 2147483648
           },
           "OnlyUpdateWhenBattleRun": 0,
-          "ScriptCall": "PlayEffect_mi_623B",
+          "ScriptCall": "BeHit_27011",
           "ParamSet": {
            "ParamList": [
             {
@@ -32927,24 +33314,24 @@
              "Value": "sfx_mi_623B_behit"
             },
             {
-             "Key": "bindPos",
-             "Value": "BehitBoxCenter"
+             "Key": "offsetx",
+             "Value": "0"
             },
             {
              "Key": "offsety",
-             "Value": "0.3"
+             "Value": "1.0"
             },
             {
-             "Key": "ScriptCDName",
-             "Value": "623B_HitEffect"
+             "Key": "scale",
+             "Value": "1"
             },
             {
-             "Key": "ScriptCD",
-             "Value": "0.1"
+             "Key": "front",
+             "Value": "1"
             },
             {
              "Key": "HitStage",
-             "Value": "PostHit"
+             "Value": "PreCalc"
             }
            ],
            "ParamHintTypeInEditor": "BuffLogic_ScriptCallBehit"
@@ -33014,6 +33401,10 @@
          "EndOnActionInclude": 0,
          "EndOnActionsList": []
         }
+       },
+       {
+        "path": "AddEffects",
+        "value": []
        }
       ]
      },
@@ -33443,6 +33834,51 @@
       "key": "path",
       "value": {
        "path": "UI/Texture/IconPotential200301/Potential_20337",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroPortraitFull/HeroPortraitFull_200301",
+       "width": 1168,
+       "height": 1904
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroPortraitLMB/HeroPortraitFull_200301",
+       "width": 1080,
+       "height": 1049
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroPortraitFullMB/HeroPortraitFull_200301",
+       "width": 1881,
+       "height": 2067
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroPortraitCoatArms/HeroPortraitFull_200301",
+       "width": 1000,
+       "height": 1000
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/HeroHeadIcon_200301",
        "width": 256,
        "height": 256
       }
@@ -35230,5 +35666,5 @@
    }
   ]
  },
- "version": "0.6.10"
+ "version": "0.6.11"
 }

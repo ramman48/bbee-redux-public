@@ -2,7 +2,7 @@
  "id": "char-susanoo",
  "name": "Susanoo",
  "author": "BBEE modding project",
- "version": "0.1.13",
+ "version": "0.1.14",
  "description": "Susanoo (ActorId 193301) as his own playable character, built on EX Hakumen's Susanoo form: always in that form, his SP gauge as a super gauge, the beam as his Ultra, Retribution as his guard, 28 Potentials over nine tabs. Unofficial; not affiliated with 91Act or Arc System Works.",
  "gameBuilds": [
   "25598842",
@@ -38,7 +38,7 @@
         "86",
         "87"
        ],
-       "MoveSpeed": 5.4,
+       "MoveSpeed": 5.0,
        "Describe": "ha",
        "ScriptType": "ha",
        "CueSheets": [
@@ -456,7 +456,7 @@
      "StartTrigger": [
       "Start_1"
      ],
-     "Mutelist": "\"all\":0.71,\"2\":0.01,\"5\":0.71,\"11\":0.01",
+     "Mutelist": "\"all\":0.71,\"2\":0.01,\"5\":0.30,\"11\":0.01",
      "Timeout": 1.074,
      "Mps": [
       {
@@ -493,7 +493,7 @@
       38
      ],
      "Preinputtime": 0.21,
-     "Mutelist": "\"all\":0.71,\"2\":0.01,\"5\":0.71,\"11\":0.01",
+     "Mutelist": "\"all\":0.71,\"2\":0.01,\"5\":0.30,\"11\":0.01",
      "Timeout": 1.074,
      "Mps": [
       {
@@ -523,7 +523,7 @@
      "StartTrigger": [
       "Start_1"
      ],
-     "Mutelist": "\"all\":0.63,\"2\":0.01,\"5\":0.63,\"11\":0.01",
+     "Mutelist": "\"all\":0.63,\"2\":0.01,\"5\":0.30,\"11\":0.01",
      "Timeout": 1.05,
      "Mps": [
       {
@@ -560,7 +560,7 @@
       38
      ],
      "Preinputtime": 0.21,
-     "Mutelist": "\"all\":0.63,\"2\":0.01,\"5\":0.63,\"11\":0.01",
+     "Mutelist": "\"all\":0.63,\"2\":0.01,\"5\":0.30,\"11\":0.01",
      "Timeout": 1.05,
      "Mps": [
       {
@@ -807,7 +807,7 @@
      "ExitTrigger": [
       "End_1"
      ],
-     "Mutelist": "\"all\":0.71,\"2\":0.01,\"5\":0.71,\"11\":0.01",
+     "Mutelist": "\"all\":0.71,\"2\":0.01,\"5\":0.30,\"11\":0.01",
      "TimeoutAddcd": 0.774,
      "Mps": [
       {
@@ -1056,7 +1056,7 @@
       }
      ],
      "AllowFlying": false,
-     "Mutelist": "\"all\":0.60,\"11\":0.01",
+     "Mutelist": "\"all\":0.60,\"11\":0.01,\"5\":0.25",
      "Timeout": 1.05,
      "SatisfyInputkey": [
       2
@@ -1099,7 +1099,7 @@
      ],
      "AllowFlying": false,
      "ActdurStrict": 0.45,
-     "Mutelist": "\"all\":0.45,\"11\":0.01",
+     "Mutelist": "\"all\":0.45,\"11\":0.01,\"5\":0.25",
      "Timeout": 1.6,
      "SatisfyInputkey": [
       2
@@ -1142,7 +1142,7 @@
       }
      ],
      "AllowFlying": false,
-     "Mutelist": "\"all\":0.40,\"11\":0.01",
+     "Mutelist": "\"all\":0.40,\"11\":0.01,\"5\":0.25",
      "Timeout": 0.85,
      "SatisfyInputkey": [
       2
@@ -1177,7 +1177,7 @@
       }
      ],
      "AllowFlying": true,
-     "Mutelist": "\"all\":0.4",
+     "Mutelist": "\"all\":0.4,\"5\":0.20",
      "Timeout": 3.5,
      "SatisfyInputkey": [
       2
@@ -1236,7 +1236,7 @@
       }
      ],
      "AllowFlying": false,
-     "Mutelist": "\"all\":0.47,\"11\":0.01",
+     "Mutelist": "\"all\":0.47,\"11\":0.01,\"5\":0.20",
      "Timeout": 0.92,
      "SatisfyInputkey": [
       2
@@ -1417,7 +1417,7 @@
      "ActionpointInputTag2": 1,
      "Order": 106,
      "Action": "s_air2",
-     "Mutelist": "\"all\":0.30,\"5\":0.30,\"11\":0.01",
+     "Mutelist": "\"all\":0.30,\"5\":0.15,\"11\":0.01",
      "PreSkillOrder": [
       105
      ],
@@ -1446,7 +1446,7 @@
      "ActionpointInputTag2": 1,
      "Order": 107,
      "Action": "s_air3",
-     "Mutelist": "\"all\":0.68,\"5\":0.68,\"11\":0.01",
+     "Mutelist": "\"all\":0.68,\"5\":0.30,\"11\":0.01",
      "PreSkillOrder": [
       106
      ],
@@ -1846,10 +1846,10 @@
      "AutoTurn": 1,
      "UiSkip": 1,
      "UiSkipMobile": 1,
-     "Group": 11,
+     "Group": 6,
      "Input": "Summon",
      "AllowFlying": true,
-     "ActionpointInputTag": 11,
+     "ActionpointInputTag": 6,
      "ActionpointInputTag2": 1,
      "Order": 124,
      "Action": "s_beam_intro",
@@ -1865,7 +1865,10 @@
       }
      ],
      "Mutelist": "\"11\":0.5",
-     "Timeout": 5.0
+     "Timeout": 5.0,
+     "UseLongPress": true,
+     "LongPressStart": 0.25,
+     "LongPressEnd": 0.7
     },
     {
      "ActorId": 193301,
@@ -5385,10 +5388,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.2
+      2.6
      ],
      "DamageRatioPvp": [
-      2.2
+      2.6
      ]
     },
     {
@@ -5445,10 +5448,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.2
+      1.8
      ],
      "DamageRatioPvp": [
-      1.2
+      1.8
      ]
     },
     {
@@ -5490,10 +5493,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      3.0
+      3.4
      ],
      "DamageRatioPvp": [
-      3.0
+      3.4
      ]
     },
     {
@@ -5505,10 +5508,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      4.2
+      4.6
      ],
      "DamageRatioPvp": [
-      4.2
+      4.6
      ]
     },
     {
@@ -5520,10 +5523,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.2
+      2.6
      ],
      "DamageRatioPvp": [
-      2.2
+      2.6
      ]
     },
     {
@@ -5550,10 +5553,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.0
+      3.6364
      ],
      "DamageRatioPvp": [
-      2.0
+      3.6364
      ]
     },
     {
@@ -5565,10 +5568,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      9.0
+      16.3636
      ],
      "DamageRatioPvp": [
-      9.0
+      16.3636
      ]
     },
     {
@@ -5580,10 +5583,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.7
+      3.0
      ],
      "DamageRatioPvp": [
-      2.7
+      3.0
      ]
     },
     {
@@ -5595,10 +5598,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.4
+      2.0
      ],
      "DamageRatioPvp": [
-      1.4
+      2.0
      ]
     },
     {
@@ -5670,10 +5673,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      5.0
+      3.6
      ],
      "DamageRatioPvp": [
-      5.0
+      3.6
      ]
     },
     {
@@ -5685,10 +5688,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      3.0
+      6.0
      ],
      "DamageRatioPvp": [
-      3.0
+      6.0
      ]
     },
     {
@@ -5760,10 +5763,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.4
+      0.5
      ],
      "DamageRatioPvp": [
-      0.4
+      0.5
      ]
     },
     {
@@ -5775,10 +5778,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.0
+      1.4
      ],
      "DamageRatioPvp": [
-      1.0
+      1.4
      ]
     },
     {
@@ -5790,10 +5793,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.4
+      2.1
      ],
      "DamageRatioPvp": [
-      1.4
+      2.1
      ]
     },
     {
@@ -5805,10 +5808,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.4
+      2.8
      ],
      "DamageRatioPvp": [
-      2.4
+      2.8
      ]
     },
     {
@@ -5928,10 +5931,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.9
+      1.2
      ],
      "DamageRatioPvp": [
-      0.9
+      1.2
      ]
     },
     {
@@ -6003,10 +6006,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.2
+      2.6
      ],
      "DamageRatioPvp": [
-      2.2
+      2.6
      ]
     },
     {
@@ -6018,10 +6021,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.0
+      2.6
      ],
      "DamageRatioPvp": [
-      2.0
+      2.6
      ]
     },
     {
@@ -6033,10 +6036,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.3
+      3.0
      ],
      "DamageRatioPvp": [
-      2.3
+      3.0
      ]
     },
     {
@@ -6048,10 +6051,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      7.0
+      5.0
      ],
      "DamageRatioPvp": [
-      7.0
+      5.0
      ]
     },
     {
@@ -6063,10 +6066,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.2
+      1.8
      ],
      "DamageRatioPvp": [
-      1.2
+      1.8
      ]
     },
     {
@@ -6078,10 +6081,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.4
+      2.8
      ],
      "DamageRatioPvp": [
-      2.4
+      2.8
      ]
     },
     {
@@ -6093,10 +6096,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.4
+      2.0
      ],
      "DamageRatioPvp": [
-      1.4
+      2.0
      ]
     },
     {
@@ -6108,10 +6111,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.8
+      2.2
      ],
      "DamageRatioPvp": [
-      1.8
+      2.2
      ]
     },
     {
@@ -6273,10 +6276,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.4
+      2.8
      ],
      "DamageRatioPvp": [
-      2.4
+      2.8
      ]
     },
     {
@@ -6957,10 +6960,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.4
+      1.0
      ],
      "DamageRatioPvp": [
-      0.4
+      1.0
      ]
     },
     {
@@ -6972,10 +6975,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.8
+      2.0
      ],
      "DamageRatioPvp": [
-      0.8
+      2.0
      ]
     },
     {
@@ -6987,10 +6990,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.3
+      0.45
      ],
      "DamageRatioPvp": [
-      0.3
+      0.45
      ]
     },
     {
@@ -7002,10 +7005,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.3
+      0.45
      ],
      "DamageRatioPvp": [
-      0.3
+      0.45
      ]
     },
     {
@@ -7017,10 +7020,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.3
+      0.45
      ],
      "DamageRatioPvp": [
-      0.3
+      0.45
      ]
     },
     {
@@ -7032,10 +7035,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.3
+      0.45
      ],
      "DamageRatioPvp": [
-      0.3
+      0.45
      ]
     },
     {
@@ -7047,10 +7050,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.5
+      0.75
      ],
      "DamageRatioPvp": [
-      0.5
+      0.75
      ]
     },
     {
@@ -7062,10 +7065,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.35
+      0.525
      ],
      "DamageRatioPvp": [
-      0.35
+      0.525
      ]
     },
     {
@@ -7077,10 +7080,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.3
+      0.75
      ],
      "DamageRatioPvp": [
-      0.3
+      0.75
      ]
     },
     {
@@ -7092,10 +7095,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.525
+      0.7875
      ],
      "DamageRatioPvp": [
-      0.525
+      0.7875
      ]
     },
     {
@@ -7107,10 +7110,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.35
+      0.525
      ],
      "DamageRatioPvp": [
-      0.35
+      0.525
      ]
     },
     {
@@ -7122,10 +7125,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.525
+      0.7875
      ],
      "DamageRatioPvp": [
-      0.525
+      0.7875
      ]
     },
     {
@@ -7137,10 +7140,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.75
+      1.125
      ],
      "DamageRatioPvp": [
-      0.75
+      1.125
      ]
     },
     {
@@ -7152,10 +7155,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.5
+      0.75
      ],
      "DamageRatioPvp": [
-      0.5
+      0.75
      ]
     },
     {
@@ -7167,10 +7170,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.75
+      1.125
      ],
      "DamageRatioPvp": [
-      0.75
+      1.125
      ]
     },
     {
@@ -7182,10 +7185,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.6
+      1.5
      ],
      "DamageRatioPvp": [
-      0.6
+      1.5
      ]
     },
     {
@@ -7197,10 +7200,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.4
+      1.0
      ],
      "DamageRatioPvp": [
-      0.4
+      1.0
      ]
     },
     {
@@ -7212,10 +7215,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.6
+      1.5
      ],
      "DamageRatioPvp": [
-      0.6
+      1.5
      ]
     },
     {
@@ -7227,10 +7230,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.2
+      3.0
      ],
      "DamageRatioPvp": [
-      1.2
+      3.0
      ]
     },
     {
@@ -7242,10 +7245,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.8
+      2.0
      ],
      "DamageRatioPvp": [
-      0.8
+      2.0
      ]
     },
     {
@@ -7257,10 +7260,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      1.2
+      3.0
      ],
      "DamageRatioPvp": [
-      1.2
+      3.0
      ]
     },
     {
@@ -7272,10 +7275,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.45
+      1.125
      ],
      "DamageRatioPvp": [
-      0.45
+      1.125
      ]
     },
     {
@@ -7287,10 +7290,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.45
+      1.125
      ],
      "DamageRatioPvp": [
-      0.45
+      1.125
      ]
     },
     {
@@ -7302,10 +7305,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.6
+      1.5
      ],
      "DamageRatioPvp": [
-      0.6
+      1.5
      ]
     },
     {
@@ -7317,10 +7320,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.9
+      2.25
      ],
      "DamageRatioPvp": [
-      0.9
+      2.25
      ]
     },
     {
@@ -7332,10 +7335,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.9
+      2.25
      ],
      "DamageRatioPvp": [
-      0.9
+      2.25
      ]
     },
     {
@@ -7438,10 +7441,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      0.1
+      0.1818
      ],
      "DamageRatioPvp": [
-      0.1
+      0.1818
      ]
     },
     {
@@ -7453,10 +7456,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      3.4
+      6.1818
      ],
      "DamageRatioPvp": [
-      3.4
+      6.1818
      ]
     },
     {
@@ -7468,10 +7471,10 @@
      "FluctMin": 1.0,
      "FluctMax": 1.0,
      "DamageRatio": [
-      2.5
+      4.5455
      ],
      "DamageRatioPvp": [
-      2.5
+      4.5455
      ]
     }
    ],
@@ -9017,8 +9020,8 @@
     "ActorActionAffectedObject_720009": "",
     "ActorActionName_720019": "Strike of the Possessed God",
     "ActorActionNameRuby_720019": "Strike of the Possessed God",
-    "ActorActionDesc_720019": "Fires a beam from the void. Hold <action=Summon><action=Dynamic> to spend MP and power it up twice. The last phase burns for as long as your MP lasts.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionDesc_720019": "Fires a beam from the void. Keep holding <action=Summon><action=Dynamic> to spend MP and power it up twice. The last phase burns for as long as your MP lasts.",
+    "ActorActionInput_720019": "Hold <action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "Liberating Dagger",
     "ActorActionNameRuby_720018": "Liberating Dagger",
@@ -9204,7 +9207,7 @@
     "ActorSkill_193301": "Void Eruption",
     "ActorSkillDesc_193301": "Punches the ground, sending a burst upward that launches enemies.",
     "ActorUltra_193301": "Strike of the Possessed God",
-    "ActorUltraDesc_193301": "Fires a beam from the void. Hold <action=Summon><action=Dynamic> to spend MP and power it up twice. The last phase burns for as long as your MP lasts.",
+    "ActorUltraDesc_193301": "Fires a beam from the void. Keep holding <action=Summon><action=Dynamic> to spend MP and power it up twice. The last phase burns for as long as your MP lasts.",
     "ProfileHero_Height_193301": "",
     "ProfileHero_Weight_193301": "",
     "ProfileHero_Blood_193301": "",
@@ -9314,7 +9317,7 @@
     "ActorActionName_720019": "附身神击",
     "ActorActionNameRuby_720019": "附身神击",
     "ActorActionDesc_720019": "发射一道来自虚空的光束。按住<action=Summon><action=Dynamic>可消耗MP将其强化两次。最后阶段在MP耗尽前会一直燃烧。",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "长按<action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "解放之刃",
     "ActorActionNameRuby_720018": "解放之刃",
@@ -9610,7 +9613,7 @@
     "ActorActionName_720019": "附身神擊",
     "ActorActionNameRuby_720019": "附身神擊",
     "ActorActionDesc_720019": "發射一道來自虛空的光束。按住<action=Summon><action=Dynamic>可消耗MP將其強化兩次。最後階段在MP耗盡前會一直燃燒。",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "長按<action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "解放之刃",
     "ActorActionNameRuby_720018": "解放之刃",
@@ -9906,7 +9909,7 @@
     "ActorActionName_720019": "Schlag des besessenen Gottes",
     "ActorActionNameRuby_720019": "Schlag des besessenen Gottes",
     "ActorActionDesc_720019": "Feuert einen Strahl aus der Leere ab. Halte <action=Summon><action=Dynamic> gedrückt, um MP zu verbrauchen und ihn zweimal zu verstärken. Die letzte Phase brennt, solange deine MP reichen.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "Halte <action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "Befreiender Dolch",
     "ActorActionNameRuby_720018": "Befreiender Dolch",
@@ -10202,7 +10205,7 @@
     "ActorActionName_720019": "Golpe del Dios Poseído",
     "ActorActionNameRuby_720019": "Golpe del Dios Poseído",
     "ActorActionDesc_720019": "Dispara un haz del vacío. Mantén <action=Summon><action=Dynamic> para gastar PM y potenciarlo dos veces. La última fase arde mientras te queden PM.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "Mantén pulsado <action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "Daga Liberadora",
     "ActorActionNameRuby_720018": "Daga Liberadora",
@@ -10498,7 +10501,7 @@
     "ActorActionName_720019": "Frappe du dieu possédé",
     "ActorActionNameRuby_720019": "Frappe du dieu possédé",
     "ActorActionDesc_720019": "Tire un rayon du néant. Maintiens <action=Summon><action=Dynamic> pour dépenser des PM et le renforcer deux fois. La dernière phase brûle tant qu'il te reste des PM.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "Maintenir <action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "Dague libératrice",
     "ActorActionNameRuby_720018": "Dague libératrice",
@@ -10794,7 +10797,7 @@
     "ActorActionName_720019": "憑神の一撃",
     "ActorActionNameRuby_720019": "憑神の一撃",
     "ActorActionDesc_720019": "虚空から光線を放つ。<action=Summon><action=Dynamic>を押し続けるとMPを消費して2段階まで強化する。最終段階はMPが続く限り燃え続ける。",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "<action=Summon><action=Dynamic>を長押し",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "解放の刃",
     "ActorActionNameRuby_720018": "解放の刃",
@@ -11090,7 +11093,7 @@
     "ActorActionName_720019": "빙의신의 일격",
     "ActorActionNameRuby_720019": "빙의신의 일격",
     "ActorActionDesc_720019": "허공에서 빔을 발사한다. <action=Summon><action=Dynamic>을 누르고 있으면 MP를 소모해 2단계까지 강화한다. 마지막 단계는 MP가 남아 있는 동안 계속 타오른다.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "<action=Summon><action=Dynamic>길게 누르기",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "해방의 단검",
     "ActorActionNameRuby_720018": "해방의 단검",
@@ -11386,7 +11389,7 @@
     "ActorActionName_720019": "Golpe do Deus Possuído",
     "ActorActionNameRuby_720019": "Golpe do Deus Possuído",
     "ActorActionDesc_720019": "Dispara um feixe do vazio. Segure <action=Summon><action=Dynamic> para gastar PM e fortalecê-lo duas vezes. A última fase queima enquanto durarem seus PM.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "Segure <action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "Adaga Libertadora",
     "ActorActionNameRuby_720018": "Adaga Libertadora",
@@ -11682,7 +11685,7 @@
     "ActorActionName_720019": "Удар одержимого бога",
     "ActorActionNameRuby_720019": "Удар одержимого бога",
     "ActorActionDesc_720019": "Выпускает луч из пустоты. Удерживай <action=Summon><action=Dynamic>, чтобы потратить ОД и дважды усилить его. Последняя фаза горит, пока хватает твоих ОД.",
-    "ActorActionInput_720019": "<action=Summon><action=Dynamic>",
+    "ActorActionInput_720019": "Удерживай <action=Summon><action=Dynamic>",
     "ActorActionAffectedObject_720019": "",
     "ActorActionName_720018": "Освобождающий кинжал",
     "ActorActionNameRuby_720018": "Освобождающий кинжал",
@@ -11936,7 +11939,19 @@
    "Potential_21376": "tex:UI/Texture/IconPotential193301/Potential_21376",
    "Potential_21377": "tex:UI/Texture/IconPotential193301/Potential_21377",
    "Potential_21378": "tex:UI/Texture/IconPotential193301/Potential_21378",
-   "Potential_21379": "tex:UI/Texture/IconPotential193301/Potential_21379"
+   "Potential_21379": "tex:UI/Texture/IconPotential193301/Potential_21379",
+   "SUS_Meter_Back": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Back",
+   "SUS_Meter_Lines": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Lines",
+   "SUS_Meter_Ring": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Ring",
+   "SUS_Meter_Wave": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Wave",
+   "SUS_Meter_ManeA": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_ManeA",
+   "SUS_Meter_ManeB": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_ManeB",
+   "SUS_Meter_Bead": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Bead",
+   "SUS_Meter_Socket": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Socket",
+   "SUS_Meter_Spark": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Spark",
+   "SUS_Meter_Crest": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Crest",
+   "SUS_Meter_Halo": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Halo",
+   "SUS_Meter_Ember": "tex:UI/Texture/HeroHeadIcon/SUS_Meter_Ember"
   },
   "textureAliases": {
    "UI/Texture/HeroPortraitFull/HeroPortraitFull_193301": "UI/Texture/HeroPortraitFull/HeroPortraitFull_103301",
@@ -11957,11 +11972,15 @@
    },
    {
     "file": "data/js/gameplay/playertrigger/PlayerTriggerFuncs",
-    "append": "var SUS_LOG = \"@ROOT@/modlog.txt\";\n/* ===== Susanoo runtime (char-susanoo, ActorId 193301) -- appended to data/js/gameplay/playertrigger/PlayerTriggerFuncs by bbmod =====\n   0.1.5: his own copy of the part of EX Hakumen's runtime (mods/ex-hakumen/runtime.js 0.5.11) he ran on, so he needs no\n   EX Hakumen (D7). EX Hakumen loses the Susanoo form (the lead, 2026-10-23); this file is Susanoo's from here on.\n   He is always in the form (forever): no drain, no return, no transformation. What it does:\n   - the form: his replace map MOD_sus_form is kept on him from his first tick and after each revive; a Hakumen state he\n     can stand in before it is on (an entrance, idle) is started again as Susanoo's;\n   - SP (slot 3) is his super gauge, kept under 100: attack hit +1.5, Skill hit +4, kill +6 (+14 with Void Hunger 19331,\n     +10 more with Eternal Void 19330, +6 more for a beam kill), Retribution block +15, passing through an attack in\n     Vanishing Step +8 with 19348 + 19359; Eternal Void (19330) feeds 50% more; Void Hunger raises a stone where an\n     enemy falls (his bullet 19330102);\n   - MP slots: 7 at 100 (the form), 8 at 0, 4 / 5 / 6 up while he attacks / uses a Skill / steps and 0.25 s after;\n   - the held beam: MP taken as each phase starts, one scene effect per phase (his hsx_beam2 / hsx_beam3, the fade at\n     the end) started on his mouth and moved with him;\n   - the camera push-ins (this PC's Susanoo only), the co-op marker MOD_sus_coop (no boss pull-out in co-op), the boss\n     stagger guard, the gauge across rooms.\n   Trigger rows 193900-193907 call it (bbee-actors BB_SELF_TRIGGERS[193301]); every entry point acts on BaseID 193301\n   only. EX Hakumen's runtime is called by his own rows 191900-191907, which Susanoo no longer carries, so the two never\n   act on the same hero. Log lines start with \"SUS\". DEV ONLY: with globalThis.EXH_DEV_GAUGE or SUS_DEV_GAUGE set the\n   gauge never drops under 50. */\nvar SUSRT = (function () {\n    /**\n     * Susanoo's runtime: one module, one state per player\n     * @returns {Object} the entry points the trigger functions call (start, tick, atk, sk, sup, kill, hurt, dodge)\n     */\n    var U = Util_1.U, ID = 193301, LOGP = (typeof SUS_LOG === \"string\" ? SUS_LOG : \"\");\n    try {                                                // a test window (-bbwin N, N > 1) writes to its own modlog<N>.txt, as dev-testroom does\n        var av = csharp_1.System.Environment.GetCommandLineArgs(), W = 1;\n        for (var ai = 0; ai < av.Length - 1; ai++) if (String(av.get_Item(ai)).toLowerCase() == \"-bbwin\") W = Math.max(1, parseInt(av.get_Item(ai + 1)) || 1);\n        if (W > 1 && LOGP) LOGP = LOGP.replace(/\\.txt$/, W + \".txt\");\n    } catch (x) {\n    }\n    var C = {\n        feedHit: 1.5,\n        feedSkill: 4,\n        feedKill: 6,\n        hunger: 14,\n        feast: 10,\n        retrib: 15,\n        vstep: 8,\n        formCap: 99,\n        stagWin: 1.2,\n        stagRest: 5.0\n    };\n    // his cards (EX Hakumen's Susanoo cards + 100; a card X is owned while he holds its trigger X*10+1)\n    var EV = 19330, HUNGER = 19331, ORBS = 19347, VSTEP = 19348, STRIDE = 19359, BEAM = 19350;\n    var FORM = \"MOD_sus_form\", COOP = \"MOD_sus_coop\", BLOCKED = \"MOD_sus_blocked\";\n\n    function blank() {\n        /**\n         * one state per player: two Susanoos in a co-op fight keep their own\n         * @returns {Object} a fresh per-player state\n         */\n        return {\n            gen: -1, lastAct: \"\", seen: {}, n: 0, logged: 0, slotLog: 0, own: {}, ownT: -9, lastHit: {}, killSeen: {},\n            roomKey: -2, roomPollT: -9, roomT: -9, formSP: -1, formUntil: -9, snapT: -9, old: null, cur: null\n        };\n    }\n\n    var ST = {}, S = blank();\n\n    function use(p) {\n        /**\n         * makes this player's state the current one (S), made on first use\n         * @param {Object} p: the player\n         */\n        var k = \"?\";\n        try {\n            k = String(p.UniqueId)\n        } catch (x) {\n        }\n        S = ST[k] || (ST[k] = blank())\n    }\n\n    var BORN = {born: 1, born2: 1, born3: 1, born_start: 1, s_born: 1, s_born2: 1, s_born3: 1, s_born_start: 1};\n\n    function now() {\n        /**\n         * battle time in seconds (the wall clock when no battle runs)\n         * @returns {number} seconds\n         */\n        try {\n            var v = U.FpToFloat(csharp_1.GamePlay.BattleBase.Cur.BattleTimeFp);\n            if (isFinite(v)) return v\n        } catch (x) {\n        }\n        return Date.now() / 1000\n    }\n\n    function log(m) {\n        /**\n         * appends one \"SUS\" line to the mod log (at most 400 per room)\n         * @param {string} m: the message\n         */\n        if (!LOGP || S.logged > 400) return;\n        S.logged++;\n        try {\n            csharp_1.System.IO.File.AppendAllText(LOGP, (new Date()).toISOString() + \" SUS \" + m + \"\\n\")\n        } catch (x) {\n        }\n    }\n\n    function fp(n) {\n        /**\n         * float to fixed-point\n         * @param {number} n: the float\n         * @returns {*} the fixed-point value\n         */\n        return U.FloatToFp(n)\n    }\n\n    function f(v) {\n        /**\n         * fixed-point to float (0 if it fails)\n         * @param {*} v: the fixed-point value\n         * @returns {number} the float\n         */\n        try {\n            return U.FpToFloat(v)\n        } catch (x) {\n            return 0\n        }\n    }\n\n    function has(p, idx) {\n        /**\n         * the buff is on the player\n         * @param {Object} p: the player\n         * @param {string|int} idx: the buff id\n         * @returns {boolean} true if the buff is on\n         */\n        try {\n            return !!p.BuffMgr.Find(idx)\n        } catch (x) {\n            return false\n        }\n    }\n\n    function add(p, idx, dur) {\n        /**\n         * adds a buff (strength 1, one stack); a failure is logged\n         * @param {Object} p: the player\n         * @param {string|int} idx: the buff id\n         * @param {number} dur: duration in seconds\n         */\n        try {\n            p.BuffMgr.AddBuff(idx, fp(dur), fp(1), 1, p)\n        } catch (x) {\n            log(\"buff \" + idx + \" failed: \" + x)\n        }\n    }\n\n    function rm(p, idx) {\n        /**\n         * removes a buff\n         * @param {Object} p: the player\n         * @param {string|int} idx: the buff id\n         */\n        try {\n            p.BuffMgr.Remove(idx)\n        } catch (x) {\n        }\n    }\n\n    function own(p, pid) {\n        /**\n         * the Potential is owned (it's trigger, pid*10+1), cached 2 s\n         * @param {Object} p: player trigger\n         * @param {int} pid: pid*10+1\n         */\n        var t = now();\n        if (t - S.ownT > 2 || t < S.ownT) {\n            S.own = {};\n            S.ownT = t\n        }\n        var k = pid * 10 + 1;\n        if (!(k in S.own)) {\n            var v = false;\n            try {\n                v = !!p.TriggerMgr.FindTrigger(k)\n            } catch (x) {\n            }\n            S.own[k] = v\n        }\n        return S.own[k];\n    }\n\n    function sp(p) {\n        /**\n         * his SP, the super gauge (MP slot 3); 0 if it cannot be read\n         * @param {Object} p: the player\n         * @returns {number} the SP\n         */\n        try {\n            return f(p.Attr.GetMP(3))\n        } catch (x) {\n            return 0\n        }\n    }\n\n    function setSP(p, v) {\n        /**\n         * sets his SP (MP slot 3) to v\n         * @param {Object} p: the player\n         * @param {number} v: the new SP\n         */\n        try {\n            p.Attr.ChangeMPBy(fp(v - sp(p)), 3)\n        } catch (x) {\n        }\n    }\n\n    function stage() {\n        /**\n         * the run's room (phase * 1000 + room), or -1 if unknown\n         * @returns {int} phase * 1000 + room, or -1\n         */\n        var mods = [\"GamePlay/BattleBreedRun/BattleBreedRun\", \"GamePlay/BattleBreedRun/BattleBreedRunBase\"];\n        for (var i = 0; i < mods.length; i++) {\n            try {\n                var M = require(mods[i]).default, B = M && (M.Instance || M.SilentInstance || M.s_instanceBase);\n                if (B && B.currentPhase != null) return Number(B.currentPhase) * 1000 + Number(B.currentStageIndex || 0)\n            } catch (x) {\n            }\n        }\n        return -1;\n    }\n\n    // the gauge across rooms: a new room is seen from the run's room key (polled every 0.2 s) or from an entrance; the\n    // stock OnBorn refill at a spawn is taken back to what he had (two snapshots 0.3 s apart give the value from before)\n    function snap(t) {\n        /**\n         * snapshot of the carried SP, at most one every 0.3 s; the one before is kept in S.old\n         * @param {number} t: battle time in seconds\n         */\n        if (t >= S.snapT && t - S.snapT < 0.3) return;\n        S.snapT = t;\n        S.old = S.cur;\n        S.cur = {form: S.formSP}\n    }\n\n    function pre(v) {\n        /**\n         * the SP from before a stock OnBorn refill: the older snapshot if v is more than 20 over it\n         * @param {number} v: the SP now\n         * @returns {number} the SP to carry\n         */\n        var o = S.old ? S.old.form : -1;\n        return (o >= 0 && v > o + 20) ? o : v\n    }\n\n    function arrive(p, t, why) {\n        /**\n         * a new room (at most one every 2 s): resets the log caps and carries the gauge for 1.5 s\n         * @param {Object} p: the player\n         * @param {number} t: battle time in seconds\n         * @param {string} why: what showed the new room, written to the log\n         * @returns {boolean} true if it counted as a new room\n         */\n        if (t >= S.roomT && t - S.roomT < 2) return false;\n        S.roomT = t;\n        S.logged = 0;\n        S.slotLog = 0;                       // the log cap is per room\n        S.formSP = pre(S.formSP);\n        S.formUntil = t + 1.5;\n        log(\"new room (\" + why + \"): SP \" + sp(p).toFixed(1) + \", carried \" + S.formSP.toFixed(1));\n        return true;\n    }\n\n    function room(p, t) {\n        /**\n         * polls the run's room key every 0.2 s; a changed key (not the first one seen) is a new room\n         * @param {Object} p: the player\n         * @param {number} t: battle time in seconds\n         * @returns {boolean} true if a new room was entered\n         */\n        if (t >= S.roomPollT && t - S.roomPollT < 0.2) return false;\n        S.roomPollT = t;\n        var k = stage();\n        if (k < 0 || k === S.roomKey) return false;\n        var first = S.roomKey === -2;\n        S.roomKey = k;\n        if (first) return false;\n        return arrive(p, t, \"stage \" + k);\n    }\n\n    function fresh() {\n        /**\n         * a new battle (the actor id counter went back): clears the per-battle state, the stagger guards and the zoom\n         */\n        var g = -1;\n        try {\n            g = csharp_1.GamePlay.BattleBase.Cur.m_ActorUniqueIdGen\n        } catch (x) {\n        }\n        if (g < S.gen) {\n            S.seen = {};\n            S.n = 0;\n            S.lastAct = null;\n            S.lastHit = {};\n            S.killSeen = {};\n            S.own = {};\n            S.ownT = -9;\n            SG = {};\n            zoomOff()\n        }\n        S.gen = g\n    }\n\n    function mine(p) {\n        /**\n         * the actor is Susanoo (BaseID 193301)\n         * @param {Object} p: the actor\n         * @returns {boolean} true if it is Susanoo\n         */\n        try {\n            return p.BaseID === ID\n        } catch (x) {\n            return false\n        }\n    }\n\n    // Hakumen's own states he can be standing in before his replace map is on (a room's entrance, idle): started again\n    // as Susanoo's, so his first frames are not Hakumen's\n    var HAKU_START = {born: 1, born2: 1, born3: 1, born_start: 1, born_start_2: 1, stand: 1, standby: 1, run: 1};\n\n    function keep(p, a) {\n        /**\n         * keeps the form's replace map (MOD_sus_form) on him while alive; a Hakumen start state is started again as Susanoo's\n         * @param {Object} p: the player\n         * @param {string} a: the current action name\n         */\n        try {\n            if (p.IsDead) return\n        } catch (x) {\n        }\n        if (has(p, FORM)) return;\n        add(p, FORM, 36000);\n        log(\"form kept (\" + a + \")\");\n        if (HAKU_START[a]) {\n            try {\n                p.ActionMgr.ChangeAction(\"s_\" + a)\n            } catch (x) {\n            }\n        }\n    }\n\n    function feed(p, v, why) {\n        /**\n         * his gauge (never to 100)\n         * @param {Object} p: the player\n         * @param {number} v: SP to add (x1.5 with Eternal Void)\n         * @param {string} why: reason written to the log\n         */\n        if (!(v > 0)) return;\n        if (own(p, EV)) v *= 1.5;\n        var s = sp(p), to = Math.min(C.formCap, s + v);\n        if (to <= s) return;\n        try {\n            p.Attr.ChangeMPBy(fp(to - s), 3)\n        } catch (x) {\n            return\n        }\n        log(\"feed +\" + (to - s).toFixed(1) + \" \" + why + \" -> \" + to.toFixed(1));\n    }\n\n    function slots(p) {\n        /**\n         * MP 7 = 100 (the form), MP 8 = 0; MP 4 / 5 / 6: attack / Skill / step\n         * @param {Object} p: the player\n         */\n        var want = [[7, 100], [8, 0]];\n        // the follow-ups that cross buttons (step > Attack slide, step > Skill thrust, Attack > Summon dagger, Skill > Summon\n        // strike) are starting rows that need their slot: a PreSkillOrder naming a row of another button's group never\n        // matched in game (EX Hakumen 0.4.0)\n        try {\n            var an = String(p.ActionMgr.CurrentActionName || \"\"), tn = now(),\n                K = S.kindT || (S.kindT = {4: -9, 5: -9, 6: -9});\n            if (/^s_(jab|claw|palm|sweep2?|crescent|claws\\w*|kick\\w*|cal\\d|slide2?|dive\\w*|air\\d?|charge\\w*)$/.test(an)) K[4] = tn;\n            if (/^s_(earth|flame|thrust2?|iaido\\w*|eruption\\w*)$/.test(an)) K[5] = tn;\n            if (/^s_(step\\d?|stepend)$/.test(an)) K[6] = tn;\n            for (var k = 4; k <= 6; k++) {\n                if (K[k] > tn) K[k] = -9;   // a new battle restarts the clock\n                want.push([k, tn - K[k] <= 0.25 ? 100 : 0]);\n            }\n        } catch (x) {\n        }\n        for (var i = 0; i < want.length; i++) {\n            try {\n                var cur = f(p.Attr.GetMP(want[i][0]));\n                if (Math.abs(cur - want[i][1]) > 0.5) {\n                    p.Attr.ChangeMPBy(fp(want[i][1] - cur), want[i][0]);\n                    if (S.slotLog < 16) {\n                        S.slotLog++;\n                        log(\"slot \" + want[i][0] + \": \" + cur.toFixed(0) + \" -> \" + f(p.Attr.GetMP(want[i][0])).toFixed(0))\n                    }\n                }\n            } catch (x) {\n                if (S.slotLog < 16) {\n                    S.slotLog++;\n                    log(\"slot \" + want[i][0] + \" failed: \" + x)\n                }\n            }\n        }\n    }\n\n    function once(sid) {\n        /**\n         * true the first time a skill session is seen (the memory is cleared past 400)\n         * @param {string} sid: the session key (\"a\" or \"s\" + SkillSessionId)\n         * @returns {boolean} true if not seen before\n         */\n        if (S.seen[sid]) return false;\n        if (++S.n > 400) {\n            S.seen = {};\n            S.n = 1\n        }\n        S.seen[sid] = 1;\n        return true\n    }\n\n    function actOf(a) {\n        /**\n         * the attacker's current action name (\"\" if unknown)\n         * @param {Object} a: the hit info\n         * @returns {string} the action name\n         */\n        try {\n            var at = a.Attacker;\n            if (at && at.ActionMgr) return String(at.ActionMgr.CurrentActionName || \"\")\n        } catch (x) {\n        }\n        return \"\"\n    }\n\n    function isFoe(a) {\n        /**\n         * the actor is an enemy, not a prop (Stuff) or a trap (Trap)\n         * @param {Object} a: the actor\n         * @returns {boolean} true if it is an enemy\n         */\n        try {\n            var g = a && a.TagMgr;\n            if (!g) return false;\n            return !(g.HasTag(\"Stuff\") || g.HasTag(\"Trap\"))\n        } catch (x) {\n            return false\n        }\n    }\n\n    /* \"also make sure susannno cant infinitely stun bosses or stagger them with his skills\" (design note, 2026-10-12): his\n       first hit on a boss opens a window of C.stagWin s in which his hits stagger as they always did; then the boss takes the\n       game's armour buff (2301) for C.stagRest s. Damage untouched; bosses only (MonsterConfig ExtParams Tag=Boss). */\n    var SG = {}, MROW = {};\n\n    function bossy(a) {\n        /**\n         * the actor is a boss (MonsterConfig ExtParams Tag=Boss), cached per BaseID\n         * @param {Object} a: the actor\n         * @returns {boolean} true if it is a boss\n         */\n        var id = a.BaseID;\n        if (MROW[id] !== undefined) return MROW[id];\n        var b = false;\n        try {\n            var r = require(\"Gen/Xlsx\").Xlsx.MonsterConfig.Get(id),\n                e = r ? (r.ExtParams !== undefined ? r.ExtParams : r.extParams) : \"\";\n            b = /Boss/.test((String(e || \"\").match(/Tag=([^;]*)/) || [])[1] || \"\")\n        } catch (x) {\n        }\n        return (MROW[id] = b);\n    }\n\n    function stagHit(p, v) {\n        /**\n         * his hit on a boss opens a stagger window, unless a window or its rest is still running\n         * @param {Object} p: the player\n         * @param {Object} v: the actor hit\n         */\n        if (!v) return;\n        try {\n            if (!bossy(v)) return;\n            var id = v.UniqueId, t = now(), g = SG[id];\n            if (g && t < g.w + C.stagWin + C.stagRest) return;\n            SG[id] = {a: v, w: t, on: false};\n            log(\"stagger window opens on boss \" + v.BaseID);\n        } catch (x) {\n        }\n    }\n\n    function stagTick(p, t) {\n        /**\n         * a boss whose stagger window closed takes the armour buff 2301 for C.stagRest s; old entries are dropped\n         * @param {Object} p: the player\n         * @param {number} t: battle time in seconds\n         */\n        for (var id in SG) {\n            var g = SG[id];\n            if (g.on || t < g.w + C.stagWin) {\n                if (g.on && t > g.w + C.stagWin + C.stagRest + 30) delete SG[id];\n                continue\n            }\n            g.on = true;\n            try {\n                if (!g.a.IsDead) {\n                    g.a.BuffMgr.AddBuff(\"2301\", fp(C.stagRest), fp(10), 1, p);\n                    log(\"boss \" + g.a.BaseID + \" resists stagger for \" + C.stagRest + \" s\")\n                }\n            } catch (x) {\n                log(\"stagger guard failed: \" + x)\n            }\n        }\n    }\n\n    var BEAM_MP = {s_beam2: 25, s_beam3: 30, s_beam3b: 30};   // the held beam: MP taken as each phase starts\n    /* The held beam's phases draw through the scene-effect player: one effect per phase (fx/, built in the kit from the\n       boss's own beam), started when the phase starts, moved with him each tick, stopped when he leaves the beam; a phase\n       that repeats (s_beam3 / s_beam3b) keeps its effect. sx, sy: phase 2 and 3 are 2.3 and 3.3 times phase 1's height.\n       The effect's point is 1.13 ahead and 0.5 up in its own space; it is put on his mouth, measured against his feet\n       facing forward in each phase's held pose (his held-pose export, VFX director 2026-11-05; phase 1 is placed by the\n       tree's own entry): phase 2 1.08 ahead / 0.50 up; since 2026-11-06 every phase holds the same crouch, mouth 1.06 / 0.57 (animation director). */\n    var BEAM_FX = {s_beam2: [2, 1.25, 2.3], s_beam3: [3, 1.4, 3.3], s_beam3b: [3, 1.4, 3.3]},   // phase, sx, sy\n        MOUTH = {2: [1.06, 0.57], 3: [1.06, 0.57]},\n        FXDIR = \"Benediction/Susanoo/hsx_beam\",\n        BF = {hub: null, k: 0, dir: 1, sx: 1, sy: 1, z: null};\n\n    function beamAt(p, k, dir, sx, sy) {\n        /**\n         * where a beam phase's effect goes so its point sits on his mouth\n         * @param {Object} p: the player\n         * @param {int} k: the beam phase (2 or 3)\n         * @param {int} dir: facing, 1 or -1\n         * @param {number} sx: the effect's horizontal scale\n         * @param {number} sy: the effect's vertical scale\n         * @returns {number[]} [x, y] in world space\n         */\n        var m = MOUTH[k] || MOUTH[2];\n        return [p.Position.x + dir * (m[0] - 1.13 * sx), p.Position.y + m[1] - 0.5 * sy]\n    }\n\n    function scene() {\n        /**\n         * the battle's scene (null outside a battle)\n         * @returns {Object|null} the scene\n         */\n        try {\n            return csharp_1.GamePlay.BattleBase.Cur.BattleScene\n        } catch (x) {\n            return null\n        }\n    }\n\n    function beamStop(fade, p) {\n        /**\n         * stops the running beam effect; with fade, the fade effect plays where it was\n         * @param {boolean} fade: play the fade effect\n         * @param {Object} p: the player\n         */\n        if (!BF.hub) return;\n        var sc = scene(), V2 = csharp_1.UnityEngine.Vector2;\n        try {\n            if (sc) sc.StopSceneEffect(BF.hub, false)\n        } catch (x) {\n            log(\"beam fx stop EXC \" + x)\n        }\n        var k = BF.k;\n        BF.hub = null;\n        BF.k = 0;\n        if (fade && sc && p) {\n            try {\n                var o = beamAt(p, k, BF.dir, BF.sx, BF.sy);\n                sc.StartSceneEffect(FXDIR + \"_fade\", new V2(o[0], o[1]), new V2(BF.dir * BF.sx, BF.sy), 0, 0)\n            } catch (x) {\n            }\n        }\n    }\n\n    function beamFollow(p) {\n        /**\n         * moves the running beam effect onto his mouth (its depth is kept)\n         * @param {Object} p: the player\n         */\n        if (!BF.hub) return;\n        try {\n            var tr = BF.hub.transform, q = tr.position, o = beamAt(p, BF.k, BF.dir, BF.sx, BF.sy);\n            if (BF.z === null) BF.z = q.z;\n            tr.position = new csharp_1.UnityEngine.Vector3(o[0], o[1], BF.z)\n        } catch (x) {\n        }\n    }\n\n    function teamFx(p) {\n        /**\n         * how this game draws p's script-made effects: \"full\" for this game's own player, else the game's\n         * \"Teammate Effect Intensity\" (Settings, Graphics): \"off\", \"low\" or \"full\" (Standard)\n         * @param {Object} p: the player\n         * @returns {string} \"full\", \"low\" or \"off\"\n         */\n        try {\n            var B = csharp_1.GamePlay.BattleBase.Cur;\n            if (!B || B.PlayerSelf === p) return \"full\";\n            var s = csharp_1.ACERender.ACERenderPipeline.Current.Settings;\n            if (s.PveTeammateEffectHide == 1) return \"off\";\n            return s.PveTeammateEffectLevel == csharp_1.NOAH.VFX.VFXHubLOD.Max ? \"full\" : \"low\"\n        } catch (x) {\n            return \"full\"\n        }\n    }\n\n    function beamFx(p, a) {\n        /**\n         * starts the effect of the beam phase action a starts; a repeated phase keeps its effect; outside the beam the\n         * effect stops (fading on s_beam_end)\n         * @param {Object} p: the player\n         * @param {string} a: the new action name\n         */\n        var w = BEAM_FX[a];\n        if (!w) {\n            if (BF.hub) beamStop(a === \"s_beam_end\", p);\n            return\n        }\n        if (BF.hub && BF.k === w[0]) return;\n        beamStop(false, p);\n        var sc = scene();\n        if (!sc) return;\n        var V2 = csharp_1.UnityEngine.Vector2, dir = 1;\n        try {\n            dir = p.Dir < 0 ? -1 : 1\n        } catch (x) {\n        }\n        // 0.1.7: a teammate's beam follows the game's \"Teammate Effect Intensity\" (Boogy, 2026-11-09: \"The team mate\n        // effect intensity setting doesn't work on Susanoo's Kamehameha move\"). Phases 2 and 3 draw as scene effects,\n        // which belong to no actor, so the game's teammate setting never reached them: Off draws none, Low draws them\n        // at phase 1's size; the player's own beam is unchanged.\n        var tf = teamFx(p);\n        if (tf === \"off\") {\n            log(\"beam fx phase \" + w[0] + \": a teammate's, Teammate Effect Intensity Off: not drawn\");\n            return\n        }\n        var sx = tf === \"low\" ? 1 : w[1], sy = tf === \"low\" ? 1 : w[2];\n        try {\n            var o = beamAt(p, w[0], dir, sx, sy);\n            BF.hub = sc.StartSceneEffect(FXDIR + w[0], new V2(o[0], o[1]), new V2(dir * sx, sy), 0, 0);\n            BF.k = w[0];\n            BF.dir = dir;\n            BF.sx = sx;\n            BF.sy = sy;\n            BF.z = null;\n            beamFollow(p);\n            log(\"beam fx phase \" + w[0] + (BF.hub ? \"\" : \" (not started)\") + \" dir \" + dir + \" at \" + (o[0] - p.Position.x).toFixed(2) + \",\" + (o[1] - p.Position.y).toFixed(2));\n        } catch (x) {\n            log(\"beam fx EXC \" + x)\n        }\n    }\n\n    function enter(p, a, prev, t) {\n        /**\n         * the current action changed to a\n         * @param {Object} p: the player\n         * @param {string} a: the new action name\n         * @param {string} prev: the previous action name\n         * @param {number} t: battle time in seconds\n         */\n        if (BEAM_MP[a]) {                                  // (the data's MP test let a phase start at 0 MP in game: checked here)\n            var m2 = 0;\n            try {\n                m2 = U.FpToFloat(p.Attr.GetMP(2))\n            } catch (x) {\n            }\n            if (m2 < BEAM_MP[a] - 0.01) {\n                try {\n                    p.ActionMgr.ChangeAction(\"s_beam_end\")\n                } catch (x) {\n                }\n                log(\"beam: MP \" + m2.toFixed(1) + \", ends\");\n                return\n            }\n            try {\n                p.Attr.ChangeMPBy(fp(-BEAM_MP[a]), 2)\n            } catch (x) {\n            }\n            log(\"beam \" + a + \": MP -\" + BEAM_MP[a] + \" -> \" + (m2 - BEAM_MP[a]).toFixed(1));\n        }\n        beamFx(p, a);\n        if (BORN[a]) arrive(p, t, \"entrance \" + a);\n        if (a === \"s_counter\") {\n            add(p, BLOCKED, 1.0);\n            feed(p, C.retrib, \"Retribution block\")\n        }\n    }\n\n    /* Boss scale (design note, 2026-10-12: \"camera shakes or zoom ins\"): CameraDirector's zoom level pushed in while he draws\n       for a screen cut or seizes for the Roar, given back as the cut lands. action: [from s, to s, levels in] */\n    var ZOOM = {\n        s_storm: [0.0, 0.26, 5],\n        s_storm3: [0.0, 0.26, 5],\n        s_dagger: [0.0, 0.75, 5],\n        s_dagger_twin: [0.0, 0.75, 5],\n        s_ult_b: [0.0, 1.1, 6],\n        s_iaido: [0.0, 0.20, 3],\n        s_iaido_twin: [0.0, 0.20, 3],\n        s_beam_intro: [0.0, 0.55, 7],\n        s_beam3: [0.0, 9, 3],\n        s_beam3b: [0.0, 9, 3]\n    };\n    var Z = {keep: null, dir: null, lv0: 0, act: \"\", t0: 0, skip: \"\"};\n\n    function zoomOff() {\n        /**\n         * gives the camera back the zoom level it had before the push-in\n         */\n        if (!Z.keep) return;\n        try {\n            var c = csharp_1.GamePlay.CameraDirector.Cur;\n            if (c && c === Z.dir) {\n                c.SetZLevel(Z.lv0);\n                c.CurZLevel.Copy(Z.keep)\n            }\n        } catch (x) {\n        }\n        Z.keep = null;\n        Z.dir = null;\n    }\n\n    // the camera is this PC's alone (testers 2026-10-22: \"Susanoo makes EVERYONE zoom in\"): only the Susanoo played here\n    // moves it, and not when two players share one screen\n    function local(p) {\n        /**\n         * the camera is this player's: he is this PC's player and the screen is not shared\n         * @param {Object} p: the player\n         * @returns {boolean} true if he may move the camera\n         */\n        try {\n            var B = csharp_1.GamePlay.BattleBase.Cur;\n            return !!B && B.PlayerSelf === p && !B.IsLocalCoopMode\n        } catch (x) {\n            return false\n        }\n    }\n\n    // the marker the boss's cam_far pull-out is gated on: no pull-out in a fight with more than one hero (read from the\n    // fight's heroes, the same in every game)\n    function coop(p) {\n        /**\n         * puts the co-op marker (MOD_sus_coop) on him with more than one hero in the fight, takes it off otherwise\n         * @param {Object} p: the player\n         */\n        var n = 1;\n        try {\n            n = csharp_1.GamePlay.BattleBase.Cur.GetAllMainPlayers().Count\n        } catch (x) {\n            return\n        }\n        var on = has(p, COOP);\n        if (n > 1 && !on) {\n            add(p, COOP, 36000);\n            log(\"co-op fight (\" + n + \" heroes): no camera pull-out\")\n        } else if (n <= 1 && on) rm(p, COOP);\n    }\n\n    function zoom(a, t, p) {\n        /**\n         * pushes the camera in during the window ZOOM gives for action a, and back out after it\n         * @param {string} a: the current action name\n         * @param {number} t: battle time in seconds\n         * @param {Object} p: the player\n         */\n        if (!local(p)) return;\n        if (a !== Z.act) {\n            Z.act = a;\n            Z.t0 = t;\n            Z.skip = \"\"\n        }\n        var z = ZOOM[a], dt = t - Z.t0;\n        if (!z || dt < z[0] || dt >= z[1]) {\n            zoomOff();\n            return\n        }\n        if (Z.keep || Z.skip === a) return;\n        try {\n            var c = csharp_1.GamePlay.CameraDirector.Cur;\n            if (!c) return;\n            var keep = new csharp_1.GamePlay.CameraZLevelParam();\n            keep.Copy(c.CurZLevel);\n            var max = c.MaxZLevel, lv0 = -1;\n            for (var i = 0; i <= max && lv0 < 0; i++) {\n                c.SetZLevel(i);\n                if (Math.abs(c.CurZLevel.ZScale - keep.ZScale) < 1e-4) lv0 = i\n            }\n            if (lv0 < 0 || lv0 >= max) {\n                if (lv0 >= 0) c.SetZLevel(lv0);\n                c.CurZLevel.Copy(keep);\n                Z.skip = a;\n                return\n            }\n            c.SetZLevel(Math.min(max, lv0 + z[2]));\n            Z.keep = keep;\n            Z.dir = c;\n            Z.lv0 = lv0;\n            log(\"zoom in on \" + a + \" from level \" + lv0 + \" of \" + max);\n        } catch (x) {\n            log(\"zoom EXC \" + x)\n        }\n    }\n\n    function hungerStone(p, v) {\n        /**\n         * Void Hunger: a stone of the void rises where the enemy fell\n         * @param {Object} p: the player\n         * @param {Object} v: the enemy that fell\n         */\n        try {\n            var sa = null;\n            try {\n                var sk = p.SkillMgr.FindSkillByActionName(\"s_earth\");\n                sa = sk ? sk.SkillActivate : null\n            } catch (x) {\n            }\n            var t = now();\n            if (t - (S.stoneT || -9) < 0.1 && t >= (S.stoneT || -9)) return;\n            S.stoneT = t;      // a crowd kill raises one stone\n            var W2 = csharp_1.UnityEngine.Vector2,\n                y = (v.Position.y - p.Position.y > 3) ? v.Position.y : Math.min(p.Position.y, v.Position.y);\n            var b = csharp_1.GamePlay.BattleBase.Cur.BulletMgr.CreateBulletByParams(p, 19330102, U.Vector2ToFp2(new W2(v.Position.x, y)),\n                U.Vector2ToFp2(new W2(1, 0)), U.FloatToFp(1), \"dropend3\", sa, null);\n            log(\"hunger stone\" + (b ? \"\" : \" (not created)\"));\n        } catch (x) {\n            log(\"hunger stone EXC \" + x)\n        }\n    }\n\n    // 0.1.8: his Skill and Ultra casts (Megalith, Towering Flame, Void Eruption, Splintering Thrust, Blade of Judgement,\n    // the beam and its phases, Liberating Dagger, Roar of the Mad King, the strikes and the storm)\n    var CAST = /^s_(earth|flame|eruption|erup_air|erup_land|thrust2?|iaido\\w*|skill_gate\\w*|beam\\w*|dagger\\w*|ult_\\w|strike\\d|storm\\d?)$/;\n    var GUARD = \"MOD_sus_castguard\";\n\n    function castGuard(p, a) {\n        /**\n         * super armour and half damage while a cast plays (MOD_sus_castguard); off as soon as another action starts\n         * @param {Object} p: the player\n         * @param {string} a: the current action name\n         */\n        var on = CAST.test(a);\n        if (on && !S.guard) {\n            add(p, GUARD, 30);\n            S.guard = 1;\n            if ((S.guardLog || 0) < 12) { S.guardLog = (S.guardLog || 0) + 1; log(\"cast guard on (\" + a + \")\") }\n        } else if (!on && S.guard) {\n            rm(p, GUARD);\n            S.guard = 0;\n            if ((S.guardLog || 0) < 12) { S.guardLog = (S.guardLog || 0) + 1; log(\"cast guard off (\" + a + \")\") }\n        } else if (on && !has(p, GUARD)) {\n            add(p, GUARD, 30)\n        }\n    }\n\n    function tick(p) {\n        /**\n         * every tick: the form, MP slots, co-op marker, camera, action changes, beam effect, stagger guard, rooms and gauge cap\n         * @param {Object} p: the player\n         */\n        fresh();\n        var t = now(), a = \"\";\n        try {\n            a = String(p.ActionMgr.CurrentActionName || \"\")\n        } catch (x) {\n            return\n        }\n        if (!S.hello) {\n            S.hello = 1;\n            log(\"runtime on \" + p.BaseID + \" (char-susanoo src/runtime.js)\")\n        }\n        keep(p, a);\n        castGuard(p, a);\n        slots(p);\n        coop(p);\n        zoom(a, t, p);\n        if (S.lastAct === null) S.lastAct = a;             // a new room: the action it starts in isn't an event\n        else if (a !== S.lastAct) {\n            enter(p, a, S.lastAct, t);\n            S.lastAct = a\n        }\n        if (BF.hub) {\n            if (BEAM_FX[a]) beamFollow(p); else beamStop(false, p)\n        }\n        stagTick(p, t);\n        room(p, t);\n        var s = sp(p);\n        if (globalThis.EXH_DEV_GAUGE || globalThis.SUS_DEV_GAUGE) {\n            if (s < 50) {\n                setSP(p, 50);\n                s = 50\n            }\n        }   // DEV ONLY: the supers stay usable\n        if (t < S.formUntil && S.formSP >= 0 && s > S.formSP + 2) {         // a room entered: the stock OnBorn refill is taken back\n            log(\"room entered: SP \" + s.toFixed(1) + \" -> \" + S.formSP.toFixed(1));\n            setSP(p, S.formSP);\n            s = S.formSP;\n            S.formUntil = -9;\n        }\n        // Try Out with \"MP / SP stay full\" on (the stock train_add_SPMP buff): the gauge is left where the game keeps it\n        if (!has(p, \"train_add_SPMP\") && s > C.formCap) {\n            setSP(p, C.formCap);\n            s = C.formCap\n        }\n        S.formSP = s;\n        snap(t);\n    }\n\n    return {\n        start: function (p) {\n            /**\n             * a room starts: the action it starts in is not an action change\n             * @param {Object} p: the player\n             */\n            fresh();\n            S.lastAct = null;\n            log(\"room start: stage \" + stage() + \", SP \" + sp(p).toFixed(1))\n        },\n        tick: tick,\n        atk: function (p, h) {\n            /**\n             * his attack hit: stagger guard, last hit on the target, +C.feedHit once per skill session\n             * @param {Object} p: the player\n             * @param {Object} h: the hit info\n             */\n            fresh();\n            stagHit(p, h.Target);\n            var s = h.Ssss;\n            if (!s || s.TriggerNode) return;\n            var act = actOf(h);\n            try {\n                if (h.Target) S.lastHit[h.Target.UniqueId] = act\n            } catch (x) {\n            }\n            if (once(\"a\" + s.SkillSessionId)) feed(p, C.feedHit, \"attack \" + act)\n        },\n        sk: function (p, h) {\n            /**\n             * his Skill hit: stagger guard, last hit on the target, +C.feedSkill once per skill session\n             * @param {Object} p: the player\n             * @param {Object} h: the hit info\n             */\n            fresh();\n            stagHit(p, h.Target);\n            var s = h.Ssss;\n            if (!s || s.TriggerNode) return;\n            var act = actOf(h);\n            try {\n                if (h.Target) S.lastHit[h.Target.UniqueId] = act\n            } catch (x) {\n            }\n            if (once(\"s\" + s.SkillSessionId)) feed(p, C.feedSkill, \"skill \" + act)\n        },\n        sup: function (p, h) {\n            /**\n             * his super hit: stagger guard and last hit on the target; the gauge is not fed\n             * @param {Object} p: the player\n             * @param {Object} h: the hit info\n             */\n            stagHit(p, h.Target);\n            try {\n                if (h.Target) S.lastHit[h.Target.UniqueId] = actOf(h)\n            } catch (x) {\n            }\n        },\n        kill: function (p, v) {\n            /**\n             * an enemy he killed, once per enemy: feeds the gauge (Void Hunger, Eternal Void, beam and orb bonuses) and\n             * raises the Void Hunger stone\n             * @param {Object} p: the player\n             * @param {Object} v: the enemy killed\n             */\n            if (!isFoe(v)) return;\n            var id = 0;\n            try {\n                id = v.UniqueId\n            } catch (x) {\n            }\n            if (S.killSeen[id]) return;\n            S.killSeen[id] = 1;\n            var by = S.lastHit[id] || \"\", hu = own(p, HUNGER), k = hu ? C.hunger : C.feedKill;\n            if (hu) hungerStone(p, v);\n            if (hu && own(p, EV)) k += C.feast;\n            if (hu && (/^s_(strike|beam)/.test(by) && own(p, BEAM) || /^TS_orb/.test(by) && own(p, ORBS))) k += C.feedKill;\n            feed(p, k, \"kill\" + (by ? \" by \" + by : \"\"))\n        },\n        hurt: function (p) {\n            /**\n             * he was hit: only checks for a new battle\n             * @param {Object} p: the player\n             */\n            fresh()\n        },\n        dodge: function (p) {\n            /**\n             * he dodged an attack: +C.vstep in Vanishing Step with cards 19348 and 19359\n             * @param {Object} p: the player\n             */\n            fresh();\n            if (/^s_vanish/.test(S.lastAct) && own(p, VSTEP) && own(p, STRIDE)) feed(p, C.vstep, \"Vanishing Step through an attack\")\n        },\n        _use: use, _ST: ST, get _S() {\n            return S\n        }, _C: C, _ID: ID\n    };\n})();\n(function () {\n    /**\n     * every call is for one player: his own state first\n     */\n    for (var k in SUSRT) {\n        if (k.charAt(0) === \"_\" || typeof SUSRT[k] !== \"function\") continue;\n        (function (fn, name) {\n            /**\n             * replaces one entry point with a wrapper that selects the player's state first\n             * @param {Function} fn: the entry point\n             * @param {string} name: its key in SUSRT\n             */\n            SUSRT[name] = function (p) {\n                /**\n                 * selects p's state, then calls the entry point with the same arguments\n                 * @param {Object} p: the player\n                 * @returns {*} what the entry point returns\n                 */\n                SUSRT._use(p);\n                return fn.apply(this, arguments)\n            }\n        })(SUSRT[k], k)\n    }\n})();\ntrigFuncs.trSUS_start = (t, e, l, a) => {\n    /**\n     * trigger function: a room starts (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.start(t)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_tick = (t, e, l, a) => {\n    /**\n     * trigger function: every tick (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.tick(t)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_atk = (t, e, l, a) => {\n    /**\n     * trigger function: his attack hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the hit info\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.atk(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_sk = (t, e, l, a) => {\n    /**\n     * trigger function: his Skill hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the hit info\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.sk(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_sup = (t, e, l, a) => {\n    /**\n     * trigger function: his super hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the hit info\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.sup(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_kill = (t, e, l, a) => {\n    /**\n     * trigger function: an enemy he killed (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the enemy killed\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.kill(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_hurt = (t, e, l, a) => {\n    /**\n     * trigger function: he was hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.hurt(t)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_dodge = (t, e, l, a) => {\n    /**\n     * trigger function: he dodged an attack (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.dodge(t)\n    } catch (x) {\n    }\n    return !1\n};\n"
+    "append": "var SUS_LOG = \"@ROOT@/modlog.txt\";\n/* ===== Susanoo runtime (char-susanoo, ActorId 193301) -- appended to data/js/gameplay/playertrigger/PlayerTriggerFuncs by bbmod =====\n   0.1.5: his own copy of the part of EX Hakumen's runtime (mods/ex-hakumen/runtime.js 0.5.11) he ran on, so he needs no\n   EX Hakumen (D7). EX Hakumen loses the Susanoo form (the lead, 2026-10-23); this file is Susanoo's from here on.\n   He is always in the form (forever): no drain, no return, no transformation. What it does:\n   - the form: his replace map MOD_sus_form is kept on him from his first tick and after each revive; a Hakumen state he\n     can stand in before it is on (an entrance, idle) is started again as Susanoo's;\n   - SP (slot 3) is his super gauge, kept under 100: attack hit +0.6, Skill hit +2 (0.1.14), kill +6 (+14 with Void Hunger 19331,\n     +10 more with Eternal Void 19330, +6 more for a beam kill), Retribution block +15, passing through an attack in\n     Vanishing Step +8 with 19348 + 19359; Eternal Void (19330) feeds 50% more; Void Hunger raises a stone where an\n     enemy falls (his bullet 19330102);\n   - MP slots: 7 at 100 (the form), 8 at 0, 4 / 5 / 6 up while he attacks / uses a Skill / steps and 0.25 s after;\n   - the held beam: MP taken as each phase starts, one scene effect per phase (his hsx_beam2 / hsx_beam3, the fade at\n     the end) started on his mouth and moved with him;\n   - the camera push-ins (this PC's Susanoo only), the co-op marker MOD_sus_coop (no boss pull-out in co-op), the boss\n     stagger guard, the gauge across rooms.\n   Trigger rows 193900-193907 call it (bbee-actors BB_SELF_TRIGGERS[193301]); every entry point acts on BaseID 193301\n   only. EX Hakumen's runtime is called by his own rows 191900-191907, which Susanoo no longer carries, so the two never\n   act on the same hero. Log lines start with \"SUS\". DEV ONLY: with globalThis.EXH_DEV_GAUGE or SUS_DEV_GAUGE set the\n   gauge never drops under 50. */\nvar SUSRT = (function () {\n    /**\n     * Susanoo's runtime: one module, one state per player\n     * @returns {Object} the entry points the trigger functions call (start, tick, atk, sk, sup, kill, hurt, dodge)\n     */\n    var U = Util_1.U, ID = 193301, LOGP = (typeof SUS_LOG === \"string\" ? SUS_LOG : \"\");\n    try {                                                // a test window (-bbwin N, N > 1) writes to its own modlog<N>.txt, as dev-testroom does\n        var av = csharp_1.System.Environment.GetCommandLineArgs(), W = 1;\n        for (var ai = 0; ai < av.Length - 1; ai++) if (String(av.get_Item(ai)).toLowerCase() == \"-bbwin\") W = Math.max(1, parseInt(av.get_Item(ai + 1)) || 1);\n        if (W > 1 && LOGP) LOGP = LOGP.replace(/\\.txt$/, W + \".txt\");\n    } catch (x) {\n    }\n    /* 0.1.14 (Pie Burritos, 2026-11-20: \"he gains SP far too easily, so these moves can be spammed\"): an attack hit\n       feeds 0.6 (was 1.5) and a Skill hit 2 (was 4); kills, Retribution and the cards keep the amounts their texts give.\n       Attack mashed on the dummy filled 7.6 SP a second in 0.1.13 (the beam's 40 every 5 s). The boss stagger window is\n       2.0 s and the rest after it 3.0 s (were 1.2 and 5.0: bosses and elites stood unstaggerable 80% of the time; still\n       never an endless stun, the rule of 2026-10-12). */\n    var C = {\n        feedHit: 0.6,\n        feedSkill: 2,\n        feedKill: 6,\n        hunger: 14,\n        feast: 10,\n        retrib: 15,\n        vstep: 8,\n        formCap: 99,\n        stagWin: 2.0,\n        stagRest: 3.0\n    };\n    // his cards (EX Hakumen's Susanoo cards + 100; a card X is owned while he holds its trigger X*10+1)\n    var EV = 19330, HUNGER = 19331, ORBS = 19347, VSTEP = 19348, STRIDE = 19359, BEAM = 19350;\n    var FORM = \"MOD_sus_form\", COOP = \"MOD_sus_coop\", BLOCKED = \"MOD_sus_blocked\";\n\n    function blank() {\n        /**\n         * one state per player: two Susanoos in a co-op fight keep their own\n         * @returns {Object} a fresh per-player state\n         */\n        return {\n            gen: -1, lastAct: \"\", seen: {}, n: 0, logged: 0, slotLog: 0, own: {}, ownT: -9, lastHit: {}, killSeen: {},\n            roomKey: -2, roomPollT: -9, roomT: -9, formSP: -1, formUntil: -9, snapT: -9, old: null, cur: null\n        };\n    }\n\n    var ST = {}, S = blank();\n\n    function use(p) {\n        /**\n         * makes this player's state the current one (S), made on first use\n         * @param {Object} p: the player\n         */\n        var k = \"?\";\n        try {\n            k = String(p.UniqueId)\n        } catch (x) {\n        }\n        S = ST[k] || (ST[k] = blank())\n    }\n\n    var BORN = {born: 1, born2: 1, born3: 1, born_start: 1, s_born: 1, s_born2: 1, s_born3: 1, s_born_start: 1};\n\n    function now() {\n        /**\n         * battle time in seconds (the wall clock when no battle runs)\n         * @returns {number} seconds\n         */\n        try {\n            var v = U.FpToFloat(csharp_1.GamePlay.BattleBase.Cur.BattleTimeFp);\n            if (isFinite(v)) return v\n        } catch (x) {\n        }\n        return Date.now() / 1000\n    }\n\n    function log(m) {\n        /**\n         * appends one \"SUS\" line to the mod log (at most 400 per room)\n         * @param {string} m: the message\n         */\n        if (!LOGP || S.logged > 400) return;\n        S.logged++;\n        try {\n            csharp_1.System.IO.File.AppendAllText(LOGP, (new Date()).toISOString() + \" SUS \" + m + \"\\n\")\n        } catch (x) {\n        }\n    }\n\n    function fp(n) {\n        /**\n         * float to fixed-point\n         * @param {number} n: the float\n         * @returns {*} the fixed-point value\n         */\n        return U.FloatToFp(n)\n    }\n\n    function f(v) {\n        /**\n         * fixed-point to float (0 if it fails)\n         * @param {*} v: the fixed-point value\n         * @returns {number} the float\n         */\n        try {\n            return U.FpToFloat(v)\n        } catch (x) {\n            return 0\n        }\n    }\n\n    function has(p, idx) {\n        /**\n         * the buff is on the player\n         * @param {Object} p: the player\n         * @param {string|int} idx: the buff id\n         * @returns {boolean} true if the buff is on\n         */\n        try {\n            return !!p.BuffMgr.Find(idx)\n        } catch (x) {\n            return false\n        }\n    }\n\n    function add(p, idx, dur) {\n        /**\n         * adds a buff (strength 1, one stack); a failure is logged\n         * @param {Object} p: the player\n         * @param {string|int} idx: the buff id\n         * @param {number} dur: duration in seconds\n         */\n        try {\n            p.BuffMgr.AddBuff(idx, fp(dur), fp(1), 1, p)\n        } catch (x) {\n            log(\"buff \" + idx + \" failed: \" + x)\n        }\n    }\n\n    function rm(p, idx) {\n        /**\n         * removes a buff\n         * @param {Object} p: the player\n         * @param {string|int} idx: the buff id\n         */\n        try {\n            p.BuffMgr.Remove(idx)\n        } catch (x) {\n        }\n    }\n\n    function own(p, pid) {\n        /**\n         * the Potential is owned (it's trigger, pid*10+1), cached 2 s\n         * @param {Object} p: player trigger\n         * @param {int} pid: pid*10+1\n         */\n        var t = now();\n        if (t - S.ownT > 2 || t < S.ownT) {\n            S.own = {};\n            S.ownT = t\n        }\n        var k = pid * 10 + 1;\n        if (!(k in S.own)) {\n            var v = false;\n            try {\n                v = !!p.TriggerMgr.FindTrigger(k)\n            } catch (x) {\n            }\n            S.own[k] = v\n        }\n        return S.own[k];\n    }\n\n    function sp(p) {\n        /**\n         * his SP, the super gauge (MP slot 3); 0 if it cannot be read\n         * @param {Object} p: the player\n         * @returns {number} the SP\n         */\n        try {\n            return f(p.Attr.GetMP(3))\n        } catch (x) {\n            return 0\n        }\n    }\n\n    function setSP(p, v) {\n        /**\n         * sets his SP (MP slot 3) to v\n         * @param {Object} p: the player\n         * @param {number} v: the new SP\n         */\n        try {\n            p.Attr.ChangeMPBy(fp(v - sp(p)), 3)\n        } catch (x) {\n        }\n    }\n\n    function stage() {\n        /**\n         * the run's room (phase * 1000 + room), or -1 if unknown\n         * @returns {int} phase * 1000 + room, or -1\n         */\n        var mods = [\"GamePlay/BattleBreedRun/BattleBreedRun\", \"GamePlay/BattleBreedRun/BattleBreedRunBase\"];\n        for (var i = 0; i < mods.length; i++) {\n            try {\n                var M = require(mods[i]).default, B = M && (M.Instance || M.SilentInstance || M.s_instanceBase);\n                if (B && B.currentPhase != null) return Number(B.currentPhase) * 1000 + Number(B.currentStageIndex || 0)\n            } catch (x) {\n            }\n        }\n        return -1;\n    }\n\n    // the gauge across rooms: a new room is seen from the run's room key (polled every 0.2 s) or from an entrance; the\n    // stock OnBorn refill at a spawn is taken back to what he had (two snapshots 0.3 s apart give the value from before)\n    function snap(t) {\n        /**\n         * snapshot of the carried SP, at most one every 0.3 s; the one before is kept in S.old\n         * @param {number} t: battle time in seconds\n         */\n        if (t >= S.snapT && t - S.snapT < 0.3) return;\n        S.snapT = t;\n        S.old = S.cur;\n        S.cur = {form: S.formSP}\n    }\n\n    function pre(v) {\n        /**\n         * the SP from before a stock OnBorn refill: the older snapshot if v is more than 20 over it\n         * @param {number} v: the SP now\n         * @returns {number} the SP to carry\n         */\n        var o = S.old ? S.old.form : -1;\n        return (o >= 0 && v > o + 20) ? o : v\n    }\n\n    function arrive(p, t, why) {\n        /**\n         * a new room (at most one every 2 s): resets the log caps and carries the gauge for 1.5 s\n         * @param {Object} p: the player\n         * @param {number} t: battle time in seconds\n         * @param {string} why: what showed the new room, written to the log\n         * @returns {boolean} true if it counted as a new room\n         */\n        if (t >= S.roomT && t - S.roomT < 2) return false;\n        S.roomT = t;\n        S.logged = 0;\n        S.slotLog = 0;                       // the log cap is per room\n        S.formSP = pre(S.formSP);\n        S.formUntil = t + 1.5;\n        log(\"new room (\" + why + \"): SP \" + sp(p).toFixed(1) + \", carried \" + S.formSP.toFixed(1));\n        return true;\n    }\n\n    function room(p, t) {\n        /**\n         * polls the run's room key every 0.2 s; a changed key (not the first one seen) is a new room\n         * @param {Object} p: the player\n         * @param {number} t: battle time in seconds\n         * @returns {boolean} true if a new room was entered\n         */\n        if (t >= S.roomPollT && t - S.roomPollT < 0.2) return false;\n        S.roomPollT = t;\n        var k = stage();\n        if (k < 0 || k === S.roomKey) return false;\n        var first = S.roomKey === -2;\n        S.roomKey = k;\n        if (first) return false;\n        return arrive(p, t, \"stage \" + k);\n    }\n\n    function fresh() {\n        /**\n         * a new battle (the actor id counter went back): clears the per-battle state, the stagger guards and the zoom\n         */\n        var g = -1;\n        try {\n            g = csharp_1.GamePlay.BattleBase.Cur.m_ActorUniqueIdGen\n        } catch (x) {\n        }\n        if (g < S.gen) {\n            S.seen = {};\n            S.n = 0;\n            S.lastAct = null;\n            S.lastHit = {};\n            S.killSeen = {};\n            S.own = {};\n            S.ownT = -9;\n            SG = {};\n            zoomOff()\n        }\n        S.gen = g\n    }\n\n    function mine(p) {\n        /**\n         * the actor is Susanoo (BaseID 193301)\n         * @param {Object} p: the actor\n         * @returns {boolean} true if it is Susanoo\n         */\n        try {\n            return p.BaseID === ID\n        } catch (x) {\n            return false\n        }\n    }\n\n    // Hakumen's own states he can be standing in before his replace map is on (a room's entrance, idle): started again\n    // as Susanoo's, so his first frames are not Hakumen's\n    var HAKU_START = {born: 1, born2: 1, born3: 1, born_start: 1, born_start_2: 1, stand: 1, standby: 1, run: 1};\n\n    function keep(p, a) {\n        /**\n         * keeps the form's replace map (MOD_sus_form) on him while alive; a Hakumen start state is started again as Susanoo's\n         * @param {Object} p: the player\n         * @param {string} a: the current action name\n         */\n        try {\n            if (p.IsDead) return\n        } catch (x) {\n        }\n        if (has(p, FORM)) return;\n        add(p, FORM, 36000);\n        log(\"form kept (\" + a + \")\");\n        if (HAKU_START[a]) {\n            try {\n                p.ActionMgr.ChangeAction(\"s_\" + a)\n            } catch (x) {\n            }\n        }\n    }\n\n    function feed(p, v, why) {\n        /**\n         * his gauge (never to 100)\n         * @param {Object} p: the player\n         * @param {number} v: SP to add (x1.5 with Eternal Void)\n         * @param {string} why: reason written to the log\n         */\n        if (!(v > 0)) return;\n        if (own(p, EV)) v *= 1.5;\n        var s = sp(p), to = Math.min(C.formCap, s + v);\n        if (to <= s) return;\n        try {\n            p.Attr.ChangeMPBy(fp(to - s), 3)\n        } catch (x) {\n            return\n        }\n        log(\"feed +\" + (to - s).toFixed(1) + \" \" + why + \" -> \" + to.toFixed(1));\n    }\n\n    function slots(p) {\n        /**\n         * MP 7 = 100 (the form), MP 8 = 0; MP 4 / 5 / 6: attack / Skill / step\n         * @param {Object} p: the player\n         */\n        var want = [[7, 100], [8, 0]];\n        // the follow-ups that cross buttons (step > Attack slide, step > Skill thrust, Attack > Summon dagger, Skill > Summon\n        // strike) are starting rows that need their slot: a PreSkillOrder naming a row of another button's group never\n        // matched in game (EX Hakumen 0.4.0)\n        try {\n            var an = String(p.ActionMgr.CurrentActionName || \"\"), tn = now(),\n                K = S.kindT || (S.kindT = {4: -9, 5: -9, 6: -9});\n            if (/^s_(jab|claw|palm|sweep2?|crescent|claws\\w*|kick\\w*|cal\\d|slide2?|dive\\w*|air\\d?|charge\\w*)$/.test(an)) K[4] = tn;\n            if (/^s_(earth|flame|thrust2?|iaido\\w*|eruption\\w*)$/.test(an)) K[5] = tn;\n            if (/^s_(step\\d?|stepend)$/.test(an)) K[6] = tn;\n            for (var k = 4; k <= 6; k++) {\n                if (K[k] > tn) K[k] = -9;   // a new battle restarts the clock\n                want.push([k, tn - K[k] <= 0.25 ? 100 : 0]);\n            }\n        } catch (x) {\n        }\n        for (var i = 0; i < want.length; i++) {\n            try {\n                var cur = f(p.Attr.GetMP(want[i][0]));\n                if (Math.abs(cur - want[i][1]) > 0.5) {\n                    p.Attr.ChangeMPBy(fp(want[i][1] - cur), want[i][0]);\n                    if (S.slotLog < 16) {\n                        S.slotLog++;\n                        log(\"slot \" + want[i][0] + \": \" + cur.toFixed(0) + \" -> \" + f(p.Attr.GetMP(want[i][0])).toFixed(0))\n                    }\n                }\n            } catch (x) {\n                if (S.slotLog < 16) {\n                    S.slotLog++;\n                    log(\"slot \" + want[i][0] + \" failed: \" + x)\n                }\n            }\n        }\n    }\n\n    function once(sid) {\n        /**\n         * true the first time a skill session is seen (the memory is cleared past 400)\n         * @param {string} sid: the session key (\"a\" or \"s\" + SkillSessionId)\n         * @returns {boolean} true if not seen before\n         */\n        if (S.seen[sid]) return false;\n        if (++S.n > 400) {\n            S.seen = {};\n            S.n = 1\n        }\n        S.seen[sid] = 1;\n        return true\n    }\n\n    function actOf(a) {\n        /**\n         * the attacker's current action name (\"\" if unknown)\n         * @param {Object} a: the hit info\n         * @returns {string} the action name\n         */\n        try {\n            var at = a.Attacker;\n            if (at && at.ActionMgr) return String(at.ActionMgr.CurrentActionName || \"\")\n        } catch (x) {\n        }\n        return \"\"\n    }\n\n    function isFoe(a) {\n        /**\n         * the actor is an enemy, not a prop (Stuff) or a trap (Trap)\n         * @param {Object} a: the actor\n         * @returns {boolean} true if it is an enemy\n         */\n        try {\n            var g = a && a.TagMgr;\n            if (!g) return false;\n            return !(g.HasTag(\"Stuff\") || g.HasTag(\"Trap\"))\n        } catch (x) {\n            return false\n        }\n    }\n\n    /* \"also make sure susannno cant infinitely stun bosses or stagger them with his skills\" (design note, 2026-10-12): his\n       first hit on a boss opens a window of C.stagWin s in which his hits stagger as they always did; then the boss takes the\n       game's armour buff (2301) for C.stagRest s. Damage untouched; bosses only (MonsterConfig ExtParams Tag=Boss). */\n    var SG = {}, MROW = {};\n\n    function bossy(a) {\n        /**\n         * the actor is a boss (MonsterConfig ExtParams Tag=Boss), cached per BaseID\n         * @param {Object} a: the actor\n         * @returns {boolean} true if it is a boss\n         */\n        var id = a.BaseID;\n        if (MROW[id] !== undefined) return MROW[id];\n        var b = false;\n        try {\n            var r = require(\"Gen/Xlsx\").Xlsx.MonsterConfig.Get(id),\n                e = r ? (r.ExtParams !== undefined ? r.ExtParams : r.extParams) : \"\";\n            b = /Boss/.test((String(e || \"\").match(/Tag=([^;]*)/) || [])[1] || \"\")\n        } catch (x) {\n        }\n        return (MROW[id] = b);\n    }\n\n    function stagHit(p, v) {\n        /**\n         * his hit on a boss opens a stagger window, unless a window or its rest is still running\n         * @param {Object} p: the player\n         * @param {Object} v: the actor hit\n         */\n        if (!v) return;\n        try {\n            if (!bossy(v)) return;\n            var id = v.UniqueId, t = now(), g = SG[id];\n            if (g && t < g.w + C.stagWin + C.stagRest) return;\n            SG[id] = {a: v, w: t, on: false};\n            log(\"stagger window opens on boss \" + v.BaseID);\n        } catch (x) {\n        }\n    }\n\n    function stagTick(p, t) {\n        /**\n         * a boss whose stagger window closed takes the armour buff 2301 for C.stagRest s; old entries are dropped\n         * @param {Object} p: the player\n         * @param {number} t: battle time in seconds\n         */\n        for (var id in SG) {\n            var g = SG[id];\n            if (g.on || t < g.w + C.stagWin) {\n                if (g.on && t > g.w + C.stagWin + C.stagRest + 30) delete SG[id];\n                continue\n            }\n            g.on = true;\n            try {\n                if (!g.a.IsDead) {\n                    g.a.BuffMgr.AddBuff(\"2301\", fp(C.stagRest), fp(10), 1, p);\n                    log(\"boss \" + g.a.BaseID + \" resists stagger for \" + C.stagRest + \" s\")\n                }\n            } catch (x) {\n                log(\"stagger guard failed: \" + x)\n            }\n        }\n    }\n\n    var BEAM_MP = {s_beam2: 25, s_beam3: 30, s_beam3b: 30};   // the held beam: MP taken as each phase starts\n    /* The held beam's phases draw through the scene-effect player: one effect per phase (fx/, built in the kit from the\n       boss's own beam), started when the phase starts, moved with him each tick, stopped when he leaves the beam; a phase\n       that repeats (s_beam3 / s_beam3b) keeps its effect. sx, sy: phase 2 and 3 are 2.3 and 3.3 times phase 1's height.\n       The effect's point is 1.13 ahead and 0.5 up in its own space; it is put on his mouth, measured against his feet\n       facing forward in each phase's held pose (his held-pose export, VFX director 2026-11-05; phase 1 is placed by the\n       tree's own entry): phase 2 1.08 ahead / 0.50 up; since 2026-11-06 every phase holds the same crouch, mouth 1.06 / 0.57 (animation director). */\n    var BEAM_FX = {s_beam2: [2, 1.25, 2.3], s_beam3: [3, 1.4, 3.3], s_beam3b: [3, 1.4, 3.3]},   // phase, sx, sy\n        MOUTH = {2: [1.06, 0.57], 3: [1.06, 0.57]},\n        FXDIR = \"Benediction/Susanoo/hsx_beam\",\n        BF = {hub: null, k: 0, dir: 1, sx: 1, sy: 1, z: null};\n\n    function beamAt(p, k, dir, sx, sy) {\n        /**\n         * where a beam phase's effect goes so its point sits on his mouth\n         * @param {Object} p: the player\n         * @param {int} k: the beam phase (2 or 3)\n         * @param {int} dir: facing, 1 or -1\n         * @param {number} sx: the effect's horizontal scale\n         * @param {number} sy: the effect's vertical scale\n         * @returns {number[]} [x, y] in world space\n         */\n        var m = MOUTH[k] || MOUTH[2];\n        return [p.Position.x + dir * (m[0] - 1.13 * sx), p.Position.y + m[1] - 0.5 * sy]\n    }\n\n    function scene() {\n        /**\n         * the battle's scene (null outside a battle)\n         * @returns {Object|null} the scene\n         */\n        try {\n            return csharp_1.GamePlay.BattleBase.Cur.BattleScene\n        } catch (x) {\n            return null\n        }\n    }\n\n    function beamStop(fade, p) {\n        /**\n         * stops the running beam effect; with fade, the fade effect plays where it was\n         * @param {boolean} fade: play the fade effect\n         * @param {Object} p: the player\n         */\n        if (!BF.hub) return;\n        var sc = scene(), V2 = csharp_1.UnityEngine.Vector2;\n        try {\n            if (sc) sc.StopSceneEffect(BF.hub, false)\n        } catch (x) {\n            log(\"beam fx stop EXC \" + x)\n        }\n        var k = BF.k;\n        BF.hub = null;\n        BF.k = 0;\n        if (fade && sc && p) {\n            try {\n                var o = beamAt(p, k, BF.dir, BF.sx, BF.sy);\n                sc.StartSceneEffect(FXDIR + \"_fade\", new V2(o[0], o[1]), new V2(BF.dir * BF.sx, BF.sy), 0, 0)\n            } catch (x) {\n            }\n        }\n    }\n\n    function beamFollow(p) {\n        /**\n         * moves the running beam effect onto his mouth (its depth is kept)\n         * @param {Object} p: the player\n         */\n        if (!BF.hub) return;\n        try {\n            var tr = BF.hub.transform, q = tr.position, o = beamAt(p, BF.k, BF.dir, BF.sx, BF.sy);\n            if (BF.z === null) BF.z = q.z;\n            tr.position = new csharp_1.UnityEngine.Vector3(o[0], o[1], BF.z)\n        } catch (x) {\n        }\n    }\n\n    function teamFx(p) {\n        /**\n         * how this game draws p's script-made effects: \"full\" for this game's own player, else the game's\n         * \"Teammate Effect Intensity\" (Settings, Graphics): \"off\", \"low\" or \"full\" (Standard)\n         * @param {Object} p: the player\n         * @returns {string} \"full\", \"low\" or \"off\"\n         */\n        try {\n            var B = csharp_1.GamePlay.BattleBase.Cur;\n            if (!B || B.PlayerSelf === p) return \"full\";\n            var s = csharp_1.ACERender.ACERenderPipeline.Current.Settings;\n            if (s.PveTeammateEffectHide == 1) return \"off\";\n            return s.PveTeammateEffectLevel == csharp_1.NOAH.VFX.VFXHubLOD.Max ? \"full\" : \"low\"\n        } catch (x) {\n            return \"full\"\n        }\n    }\n\n    function beamFx(p, a) {\n        /**\n         * starts the effect of the beam phase action a starts; a repeated phase keeps its effect; outside the beam the\n         * effect stops (fading on s_beam_end)\n         * @param {Object} p: the player\n         * @param {string} a: the new action name\n         */\n        var w = BEAM_FX[a];\n        if (!w) {\n            if (BF.hub) beamStop(a === \"s_beam_end\", p);\n            return\n        }\n        if (BF.hub && BF.k === w[0]) return;\n        beamStop(false, p);\n        var sc = scene();\n        if (!sc) return;\n        var V2 = csharp_1.UnityEngine.Vector2, dir = 1;\n        try {\n            dir = p.Dir < 0 ? -1 : 1\n        } catch (x) {\n        }\n        // 0.1.7: a teammate's beam follows the game's \"Teammate Effect Intensity\" (Boogy, 2026-11-09: \"The team mate\n        // effect intensity setting doesn't work on Susanoo's Kamehameha move\"). Phases 2 and 3 draw as scene effects,\n        // which belong to no actor, so the game's teammate setting never reached them: Off draws none, Low draws them\n        // at phase 1's size; the player's own beam is unchanged.\n        var tf = teamFx(p);\n        if (tf === \"off\") {\n            log(\"beam fx phase \" + w[0] + \": a teammate's, Teammate Effect Intensity Off: not drawn\");\n            return\n        }\n        var sx = tf === \"low\" ? 1 : w[1], sy = tf === \"low\" ? 1 : w[2];\n        try {\n            var o = beamAt(p, w[0], dir, sx, sy);\n            BF.hub = sc.StartSceneEffect(FXDIR + w[0], new V2(o[0], o[1]), new V2(dir * sx, sy), 0, 0);\n            BF.k = w[0];\n            BF.dir = dir;\n            BF.sx = sx;\n            BF.sy = sy;\n            BF.z = null;\n            beamFollow(p);\n            log(\"beam fx phase \" + w[0] + (BF.hub ? \"\" : \" (not started)\") + \" dir \" + dir + \" at \" + (o[0] - p.Position.x).toFixed(2) + \",\" + (o[1] - p.Position.y).toFixed(2));\n        } catch (x) {\n            log(\"beam fx EXC \" + x)\n        }\n    }\n\n    function enter(p, a, prev, t) {\n        /**\n         * the current action changed to a\n         * @param {Object} p: the player\n         * @param {string} a: the new action name\n         * @param {string} prev: the previous action name\n         * @param {number} t: battle time in seconds\n         */\n        if (BEAM_MP[a]) {                                  // (the data's MP test let a phase start at 0 MP in game: checked here)\n            var m2 = 0;\n            try {\n                m2 = U.FpToFloat(p.Attr.GetMP(2))\n            } catch (x) {\n            }\n            if (m2 < BEAM_MP[a] - 0.01) {\n                try {\n                    p.ActionMgr.ChangeAction(\"s_beam_end\")\n                } catch (x) {\n                }\n                log(\"beam: MP \" + m2.toFixed(1) + \", ends\");\n                return\n            }\n            try {\n                p.Attr.ChangeMPBy(fp(-BEAM_MP[a]), 2)\n            } catch (x) {\n            }\n            log(\"beam \" + a + \": MP -\" + BEAM_MP[a] + \" -> \" + (m2 - BEAM_MP[a]).toFixed(1));\n        }\n        beamFx(p, a);\n        if (BORN[a]) arrive(p, t, \"entrance \" + a);\n        if (a === \"s_counter\") {\n            add(p, BLOCKED, 1.0);\n            feed(p, C.retrib, \"Retribution block\")\n        }\n    }\n\n    /* Boss scale (design note, 2026-10-12: \"camera shakes or zoom ins\"): CameraDirector's zoom level pushed in while he draws\n       for a screen cut or seizes for the Roar, given back as the cut lands. action: [from s, to s, levels in]\n       0.1.14 (Pie Burritos: \"screen zooms and camera moves on some attacks are jarring\"): only the big moves push in, the\n       Roar, the beam's opening and its third phase, and the dagger less far; Void Charge's release and Blade of Judgement\n       (an attack and a Skill) no longer move the camera. */\n    var ZOOM = {\n        s_dagger: [0.0, 0.55, 3],\n        s_dagger_twin: [0.0, 0.55, 3],\n        s_ult_b: [0.0, 1.1, 6],\n        s_beam_intro: [0.0, 0.55, 7],\n        s_beam3: [0.0, 9, 3],\n        s_beam3b: [0.0, 9, 3]\n    };\n    var Z = {keep: null, dir: null, lv0: 0, act: \"\", t0: 0, skip: \"\"};\n\n    function zoomOff() {\n        /**\n         * gives the camera back the zoom level it had before the push-in\n         */\n        if (!Z.keep) return;\n        try {\n            var c = csharp_1.GamePlay.CameraDirector.Cur;\n            if (c && c === Z.dir) {\n                c.SetZLevel(Z.lv0);\n                c.CurZLevel.Copy(Z.keep)\n            }\n        } catch (x) {\n        }\n        Z.keep = null;\n        Z.dir = null;\n    }\n\n    // the camera is this PC's alone (testers 2026-10-22: \"Susanoo makes EVERYONE zoom in\"): only the Susanoo played here\n    // moves it, and not when two players share one screen\n    function local(p) {\n        /**\n         * the camera is this player's: he is this PC's player and the screen is not shared\n         * @param {Object} p: the player\n         * @returns {boolean} true if he may move the camera\n         */\n        try {\n            var B = csharp_1.GamePlay.BattleBase.Cur;\n            return !!B && B.PlayerSelf === p && !B.IsLocalCoopMode\n        } catch (x) {\n            return false\n        }\n    }\n\n    // the marker the boss's cam_far pull-out is gated on: no pull-out in a fight with more than one hero (read from the\n    // fight's heroes, the same in every game)\n    function coop(p) {\n        /**\n         * puts the co-op marker (MOD_sus_coop) on him with more than one hero in the fight, takes it off otherwise\n         * @param {Object} p: the player\n         */\n        var n = 1;\n        try {\n            n = csharp_1.GamePlay.BattleBase.Cur.GetAllMainPlayers().Count\n        } catch (x) {\n            return\n        }\n        var on = has(p, COOP);\n        if (n > 1 && !on) {\n            add(p, COOP, 36000);\n            log(\"co-op fight (\" + n + \" heroes): no camera pull-out\")\n        } else if (n <= 1 && on) rm(p, COOP);\n    }\n\n    function zoom(a, t, p) {\n        /**\n         * pushes the camera in during the window ZOOM gives for action a, and back out after it\n         * @param {string} a: the current action name\n         * @param {number} t: battle time in seconds\n         * @param {Object} p: the player\n         */\n        if (!local(p)) return;\n        if (a !== Z.act) {\n            Z.act = a;\n            Z.t0 = t;\n            Z.skip = \"\"\n        }\n        var z = ZOOM[a], dt = t - Z.t0;\n        if (!z || dt < z[0] || dt >= z[1]) {\n            zoomOff();\n            return\n        }\n        if (Z.keep || Z.skip === a) return;\n        try {\n            var c = csharp_1.GamePlay.CameraDirector.Cur;\n            if (!c) return;\n            var keep = new csharp_1.GamePlay.CameraZLevelParam();\n            keep.Copy(c.CurZLevel);\n            var max = c.MaxZLevel, lv0 = -1;\n            for (var i = 0; i <= max && lv0 < 0; i++) {\n                c.SetZLevel(i);\n                if (Math.abs(c.CurZLevel.ZScale - keep.ZScale) < 1e-4) lv0 = i\n            }\n            if (lv0 < 0 || lv0 >= max) {\n                if (lv0 >= 0) c.SetZLevel(lv0);\n                c.CurZLevel.Copy(keep);\n                Z.skip = a;\n                return\n            }\n            c.SetZLevel(Math.min(max, lv0 + z[2]));\n            Z.keep = keep;\n            Z.dir = c;\n            Z.lv0 = lv0;\n            log(\"zoom in on \" + a + \" from level \" + lv0 + \" of \" + max);\n        } catch (x) {\n            log(\"zoom EXC \" + x)\n        }\n    }\n\n    function hungerStone(p, v) {\n        /**\n         * Void Hunger: a stone of the void rises where the enemy fell\n         * @param {Object} p: the player\n         * @param {Object} v: the enemy that fell\n         */\n        try {\n            var sa = null;\n            try {\n                var sk = p.SkillMgr.FindSkillByActionName(\"s_earth\");\n                sa = sk ? sk.SkillActivate : null\n            } catch (x) {\n            }\n            var t = now();\n            if (t - (S.stoneT || -9) < 0.1 && t >= (S.stoneT || -9)) return;\n            S.stoneT = t;      // a crowd kill raises one stone\n            var W2 = csharp_1.UnityEngine.Vector2,\n                y = (v.Position.y - p.Position.y > 3) ? v.Position.y : Math.min(p.Position.y, v.Position.y);\n            var b = csharp_1.GamePlay.BattleBase.Cur.BulletMgr.CreateBulletByParams(p, 19330102, U.Vector2ToFp2(new W2(v.Position.x, y)),\n                U.Vector2ToFp2(new W2(1, 0)), U.FloatToFp(1), \"dropend3\", sa, null);\n            log(\"hunger stone\" + (b ? \"\" : \" (not created)\"));\n        } catch (x) {\n            log(\"hunger stone EXC \" + x)\n        }\n    }\n\n    // 0.1.8: his Skill and Ultra casts (Megalith, Towering Flame, Void Eruption, Splintering Thrust, Blade of Judgement,\n    // the beam and its phases, Liberating Dagger, Roar of the Mad King, the strikes and the storm)\n    var CAST = /^s_(earth|flame|eruption|erup_air|erup_land|thrust2?|iaido\\w*|skill_gate\\w*|beam\\w*|dagger\\w*|ult_\\w|strike\\d|storm\\d?)$/;\n    var GUARD = \"MOD_sus_castguard\";\n\n    function castGuard(p, a) {\n        /**\n         * super armour and half damage while a cast plays (MOD_sus_castguard); off as soon as another action starts\n         * @param {Object} p: the player\n         * @param {string} a: the current action name\n         */\n        var on = CAST.test(a);\n        if (on && !S.guard) {\n            add(p, GUARD, 30);\n            S.guard = 1;\n            if ((S.guardLog || 0) < 12) { S.guardLog = (S.guardLog || 0) + 1; log(\"cast guard on (\" + a + \")\") }\n        } else if (!on && S.guard) {\n            rm(p, GUARD);\n            S.guard = 0;\n            if ((S.guardLog || 0) < 12) { S.guardLog = (S.guardLog || 0) + 1; log(\"cast guard off (\" + a + \")\") }\n        } else if (on && !has(p, GUARD)) {\n            add(p, GUARD, 30)\n        }\n    }\n\n    function tick(p) {\n        /**\n         * every tick: the form, MP slots, co-op marker, camera, action changes, beam effect, stagger guard, rooms and gauge cap\n         * @param {Object} p: the player\n         */\n        fresh();\n        var t = now(), a = \"\";\n        try {\n            a = String(p.ActionMgr.CurrentActionName || \"\")\n        } catch (x) {\n            return\n        }\n        if (!S.hello) {\n            S.hello = 1;\n            log(\"runtime on \" + p.BaseID + \" (char-susanoo src/runtime.js)\")\n        }\n        keep(p, a);\n        castGuard(p, a);\n        slots(p);\n        coop(p);\n        zoom(a, t, p);\n        if (S.lastAct === null) S.lastAct = a;             // a new room: the action it starts in isn't an event\n        else if (a !== S.lastAct) {\n            enter(p, a, S.lastAct, t);\n            S.lastAct = a\n        }\n        if (BF.hub) {\n            if (BEAM_FX[a]) beamFollow(p); else beamStop(false, p)\n        }\n        stagTick(p, t);\n        room(p, t);\n        var s = sp(p);\n        if (globalThis.EXH_DEV_GAUGE || globalThis.SUS_DEV_GAUGE) {\n            if (s < 50) {\n                setSP(p, 50);\n                s = 50\n            }\n        }   // DEV ONLY: the supers stay usable\n        if (t < S.formUntil && S.formSP >= 0 && s > S.formSP + 2) {         // a room entered: the stock OnBorn refill is taken back\n            log(\"room entered: SP \" + s.toFixed(1) + \" -> \" + S.formSP.toFixed(1));\n            setSP(p, S.formSP);\n            s = S.formSP;\n            S.formUntil = -9;\n        }\n        // Try Out with \"MP / SP stay full\" on (the stock train_add_SPMP buff): the gauge is left where the game keeps it\n        if (!has(p, \"train_add_SPMP\") && s > C.formCap) {\n            setSP(p, C.formCap);\n            s = C.formCap\n        }\n        S.formSP = s;\n        snap(t);\n    }\n\n    return {\n        start: function (p) {\n            /**\n             * a room starts: the action it starts in is not an action change\n             * @param {Object} p: the player\n             */\n            fresh();\n            S.lastAct = null;\n            log(\"room start: stage \" + stage() + \", SP \" + sp(p).toFixed(1))\n        },\n        tick: tick,\n        atk: function (p, h) {\n            /**\n             * his attack hit: stagger guard, last hit on the target, +C.feedHit once per skill session\n             * @param {Object} p: the player\n             * @param {Object} h: the hit info\n             */\n            fresh();\n            stagHit(p, h.Target);\n            var s = h.Ssss;\n            if (!s || s.TriggerNode) return;\n            var act = actOf(h);\n            try {\n                if (h.Target) S.lastHit[h.Target.UniqueId] = act\n            } catch (x) {\n            }\n            if (once(\"a\" + s.SkillSessionId)) feed(p, C.feedHit, \"attack \" + act)\n        },\n        sk: function (p, h) {\n            /**\n             * his Skill hit: stagger guard, last hit on the target, +C.feedSkill once per skill session\n             * @param {Object} p: the player\n             * @param {Object} h: the hit info\n             */\n            fresh();\n            stagHit(p, h.Target);\n            var s = h.Ssss;\n            if (!s || s.TriggerNode) return;\n            var act = actOf(h);\n            try {\n                if (h.Target) S.lastHit[h.Target.UniqueId] = act\n            } catch (x) {\n            }\n            if (once(\"s\" + s.SkillSessionId)) feed(p, C.feedSkill, \"skill \" + act)\n        },\n        sup: function (p, h) {\n            /**\n             * his super hit: stagger guard and last hit on the target; the gauge is not fed\n             * @param {Object} p: the player\n             * @param {Object} h: the hit info\n             */\n            stagHit(p, h.Target);\n            try {\n                if (h.Target) S.lastHit[h.Target.UniqueId] = actOf(h)\n            } catch (x) {\n            }\n        },\n        kill: function (p, v) {\n            /**\n             * an enemy he killed, once per enemy: feeds the gauge (Void Hunger, Eternal Void, beam and orb bonuses) and\n             * raises the Void Hunger stone\n             * @param {Object} p: the player\n             * @param {Object} v: the enemy killed\n             */\n            if (!isFoe(v)) return;\n            var id = 0;\n            try {\n                id = v.UniqueId\n            } catch (x) {\n            }\n            if (S.killSeen[id]) return;\n            S.killSeen[id] = 1;\n            var by = S.lastHit[id] || \"\", hu = own(p, HUNGER), k = hu ? C.hunger : C.feedKill;\n            if (hu) hungerStone(p, v);\n            if (hu && own(p, EV)) k += C.feast;\n            if (hu && (/^s_(strike|beam)/.test(by) && own(p, BEAM) || /^TS_orb/.test(by) && own(p, ORBS))) k += C.feedKill;\n            feed(p, k, \"kill\" + (by ? \" by \" + by : \"\"))\n        },\n        hurt: function (p) {\n            /**\n             * he was hit: only checks for a new battle\n             * @param {Object} p: the player\n             */\n            fresh()\n        },\n        dodge: function (p) {\n            /**\n             * he dodged an attack: +C.vstep in Vanishing Step with cards 19348 and 19359\n             * @param {Object} p: the player\n             */\n            fresh();\n            if (/^s_vanish/.test(S.lastAct) && own(p, VSTEP) && own(p, STRIDE)) feed(p, C.vstep, \"Vanishing Step through an attack\")\n        },\n        _use: use, _ST: ST, get _S() {\n            return S\n        }, _C: C, _ID: ID\n    };\n})();\n(function () {\n    /**\n     * every call is for one player: his own state first\n     */\n    for (var k in SUSRT) {\n        if (k.charAt(0) === \"_\" || typeof SUSRT[k] !== \"function\") continue;\n        (function (fn, name) {\n            /**\n             * replaces one entry point with a wrapper that selects the player's state first\n             * @param {Function} fn: the entry point\n             * @param {string} name: its key in SUSRT\n             */\n            SUSRT[name] = function (p) {\n                /**\n                 * selects p's state, then calls the entry point with the same arguments\n                 * @param {Object} p: the player\n                 * @returns {*} what the entry point returns\n                 */\n                SUSRT._use(p);\n                return fn.apply(this, arguments)\n            }\n        })(SUSRT[k], k)\n    }\n})();\ntrigFuncs.trSUS_start = (t, e, l, a) => {\n    /**\n     * trigger function: a room starts (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.start(t)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_tick = (t, e, l, a) => {\n    /**\n     * trigger function: every tick (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.tick(t)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_atk = (t, e, l, a) => {\n    /**\n     * trigger function: his attack hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the hit info\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.atk(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_sk = (t, e, l, a) => {\n    /**\n     * trigger function: his Skill hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the hit info\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.sk(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_sup = (t, e, l, a) => {\n    /**\n     * trigger function: his super hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the hit info\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.sup(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_kill = (t, e, l, a) => {\n    /**\n     * trigger function: an enemy he killed (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {Object} a: the enemy killed\n     * @returns {boolean} always false\n     */\n    try {\n        if (a && t && t.BaseID === 193301) SUSRT.kill(t, a)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_hurt = (t, e, l, a) => {\n    /**\n     * trigger function: he was hit (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.hurt(t)\n    } catch (x) {\n    }\n    return !1\n};\ntrigFuncs.trSUS_dodge = (t, e, l, a) => {\n    /**\n     * trigger function: he dodged an attack (Susanoo only)\n     * @param {Object} t: the player the trigger runs for\n     * @param {*} e: not used\n     * @param {*} l: not used\n     * @param {*} a: not used\n     * @returns {boolean} always false\n     */\n    try {\n        if (t && t.BaseID === 193301) SUSRT.dodge(t)\n    } catch (x) {\n    }\n    return !1\n};\n"
    },
    {
     "file": "data/js/gameplay/battle/BattleTryout",
     "append": "try{globalThis.BB_TRYOUT_BACKDROP=globalThis.BB_TRYOUT_BACKDROP||{};globalThis.BB_TRYOUT_BACKDROP[193301]={movie:\"Susanoo/hsx4000\",from:101101,light:[0.31,0.9,0.51]}}catch(e){}"
+   },
+   {
+    "file": "data/js/window/battle/BattleUI",
+    "append": "/* char-susanoo 0.1.14: his SP seal on the battle HUD, his own (ETM, 2026-11-20: \"needs an SP indicator from the start\").\n   Since 0.1.5 he needs no EX Hakumen (the lead, 2026-11-12: \"susanoo never needs ex hakumen\"), but the seal that showed\n   his SP next to the health bar was EX Hakumen's (mods/ex-hakumen/hud_meter.js, the meter the lead asked for on\n   2026-10-12): without EX Hakumen, as in the Part 1 set, nothing showed his SP until a card with an SP cost was taken.\n   This is that seal for Susanoo alone (snapshot of hud_meter.js 0.5.13, 2026-11-20), its sprites copied into his mod\n   (art/meter, the same Krita drawings; the crest is his Void Feed icon): green, his mane of flames, the eight Magatama\n   light and pop as SP fills (12.5 each, the next one glowing as it charges), the seal jumps when SP is gained, the number\n   under the crest is his SP. When EX Hakumen is installed too, its own meter draws him and this one stays out.\n   Runs from globalThis.BB_HUD_TICKS (bbee-sdk: once a frame with the HUD window). Appended to\n   data/js/window/battle/BattleUI (module scope: csharp_1, Util_1, BattleJs_1, CSharpDefine_1). */\n(function () {\n  var G = globalThis, CS = csharp_1, UE = CS.UnityEngine;\n  var PU = G.puerts || require(\"puerts\");\n  function U() { return Util_1.U }\n  function IsNull(x) { return CSharpDefine_1.IsNull(x) }\n  var T = (G.BB_HUD_TICKS = G.BB_HUD_TICKS || {}); if (T[\"char-susanoo/meter\"]) return;\n  var SUSANOO = 193301, NAME = \"SusMeter\", ATLAS = \"UI/Atlas/SUS/SUS\";\n  var SIZE = 184, DX = 26, DY = 160;             // the seal's size and place from the MP badge, in the badge's own units\n  var K = SIZE / 512;\n  var GREEN = [0.302, 1.0, 0.690], HOT = [0.918, 1.0, 0.957], BLACK = [0.02, 0.05, 0.04];\n  var S = { ui: null, go: null, err: 0, fail: 0, t: 0, grow: 0, spin: 0, lit: -1, wave_t: 9, waveT: 0, beads: [], made: 0,\n            embers: [], emT: 0, slam: 1, bump: 0, sp0: -1, num: null, shown: \"\" };\n  var NE = 12;\n  G.SUS_METER = S;                               // for the test room: what the seal last drew\n\n  function player() { try { var b = BattleJs_1.default.Instance; return b && b.Battle ? b.Battle.PlayerSelf : null } catch (e) { return null } }\n  function drop() { if (S.go && !IsNull(S.go)) UE.Object.Destroy(S.go); S.go = null; S.ui = null; S.beads = []; S.lit = -1 }\n  function col(c, a) { return new UE.Color(c[0], c[1], c[2], a) }\n  function mixc(a, b, k) { return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k] }\n  function image(ui, parent, name, sprite, w, h) {\n    var go = new UE.GameObject(name); go.transform.SetParent(parent, false); go.layer = parent.gameObject.layer;\n    var im = go.AddComponent(PU.$typeof(UE.UI.Image)); im.raycastTarget = false;\n    im.sprite = ui.LoadSprite(ATLAS, sprite);\n    var rt = im.rectTransform, h2 = new UE.Vector2(0.5, 0.5); rt.anchorMin = h2; rt.anchorMax = h2; rt.pivot = h2;\n    rt.sizeDelta = new UE.Vector2(w, h); rt.anchoredPosition = new UE.Vector2(0, 0);\n    return im;\n  }\n  function make(ui) {\n    var st = ui && ui.R ? ui.R.SelfStatus : null; if (!st || IsNull(st)) return false;\n    var tr = st.transform, mp = tr.Find(\"mp\"); if (!mp || IsNull(mp)) return false;\n    var old = tr.Find(NAME); if (old && !IsNull(old)) UE.Object.Destroy(old.gameObject);\n    var root = new UE.GameObject(NAME); root.layer = mp.gameObject.layer;\n    try {\n      var rt = root.AddComponent(PU.$typeof(UE.RectTransform)); rt.SetParent(tr, false);\n      rt.anchorMin = mp.anchorMin; rt.anchorMax = mp.anchorMax; rt.pivot = new UE.Vector2(0.5, 0.5);\n      rt.sizeDelta = new UE.Vector2(SIZE, SIZE);\n      rt.anchoredPosition = new UE.Vector2(mp.anchoredPosition.x + DX, mp.anchoredPosition.y + DY);\n      S.root = rt;\n      S.halo = image(ui, rt, \"halo\", \"SUS_Meter_Halo\", SIZE * 1.5, SIZE * 1.5);\n      S.darkA = image(ui, rt, \"darkA\", \"SUS_Meter_ManeB\", SIZE, SIZE); S.darkB = image(ui, rt, \"darkB\", \"SUS_Meter_ManeA\", SIZE, SIZE);\n      S.embers = [];\n      for (var j = 0; j < NE; j++) { var em = image(ui, rt, \"ember\" + j, \"SUS_Meter_Ember\", 18, 18); em.color = col(GREEN, 0); S.embers.push({ im: em, life: 0, len: 1, x: 0, y: 0, vx: 0, vy: 0, s: 1, r: 0 }) }\n      S.maneA = image(ui, rt, \"maneA\", \"SUS_Meter_ManeA\", SIZE, SIZE); S.maneB = image(ui, rt, \"maneB\", \"SUS_Meter_ManeB\", SIZE, SIZE);\n      S.back = image(ui, rt, \"back\", \"SUS_Meter_Back\", SIZE, SIZE);\n      S.lines = image(ui, rt, \"lines\", \"SUS_Meter_Lines\", SIZE, SIZE);\n      S.ring = image(ui, rt, \"ring\", \"SUS_Meter_Ring\", SIZE, SIZE);\n      S.ring.type = UE.UI.Image.Type.Filled; S.ring.fillMethod = UE.UI.Image.FillMethod.Radial360;\n      S.ring.fillOrigin = 2; S.ring.fillClockwise = true;\n      S.wave = image(ui, rt, \"wave\", \"SUS_Meter_Wave\", SIZE, SIZE);\n      var orbit = new UE.GameObject(\"orbit\"); orbit.layer = root.layer;\n      S.orbit = orbit.AddComponent(PU.$typeof(UE.RectTransform)); S.orbit.SetParent(rt, false); S.orbit.sizeDelta = new UE.Vector2(SIZE, SIZE);\n      S.beads = [];\n      var bs = 128 * (27 / 40) * K, br = 156 * K;\n      for (var i = 0; i < 8; i++) {\n        var a = (22.5 + 45 * i) * Math.PI / 180, x = br * Math.sin(a), y = br * Math.cos(a), rot = -(22.5 + 45 * i + 90);\n        var so = image(ui, S.orbit, \"socket\" + i, \"SUS_Meter_Socket\", bs, bs), be = image(ui, S.orbit, \"bead\" + i, \"SUS_Meter_Bead\", bs, bs);\n        so.rectTransform.anchoredPosition = new UE.Vector2(x, y); be.rectTransform.anchoredPosition = new UE.Vector2(x, y);\n        so.rectTransform.localEulerAngles = new UE.Vector3(0, 0, rot); be.rectTransform.localEulerAngles = new UE.Vector3(0, 0, rot);\n        S.beads.push({ so: so, be: be, on: false, a: 0, pop: 0, wait: 0.05 * i });\n      }\n      S.spark = image(ui, rt, \"spark\", \"SUS_Meter_Spark\", 44, 44);\n      S.crest = image(ui, rt, \"crest\", \"SUS_Meter_Crest\", SIZE * 0.36, SIZE * 0.36);\n      S.crest.rectTransform.anchoredPosition = new UE.Vector2(0, SIZE * 0.035);\n      S.num = null; S.shown = \"\";\n      try {                                                                  // the number: the MP badge's own figure, copied\n        var src = mp.Find(\"textMp\");\n        if (src && !IsNull(src)) {\n          var ng = UE.Object.Instantiate(src.gameObject, rt); ng.name = \"num\"; var nr = ng.transform, h2 = new UE.Vector2(0.5, 0.5);\n          nr.anchorMin = h2; nr.anchorMax = h2; nr.pivot = h2; nr.anchoredPosition = new UE.Vector2(0, -SIZE * 0.175); nr.sizeDelta = new UE.Vector2(SIZE * 0.5, 30);\n          nr.localScale = new UE.Vector3(1, 1, 1);\n          S.num = U().GetComponent(ng, CS.TMPro.TMP_Text); S.num.alignment = CS.TMPro.TextAlignmentOptions.Center; S.num.fontSize = 21; S.num.raycastTarget = false; S.num.text = \"\";\n        }\n      } catch (e) { S.num = null }\n    } catch (e) { UE.Object.Destroy(root); throw e }                         // never leave a half-made seal\n    S.go = root; S.ui = ui; S.lit = -1; S.grow = 0; S.spin = 0; S.wave_t = 9; S.made++; S.slam = 1; S.bump = 0; S.sp0 = -1;\n    return true;\n  }\n  function burst() { S.wave_t = 0 }\n\n  T[\"char-susanoo/meter\"] = function (ui) {\n    if (S.fail >= 5) return;                    // it could not be made five times: no seal this time\n    try {\n      var p = player(), mine = false;\n      try { mine = p && Number(p.BaseID) === SUSANOO } catch (e) {}\n      if (!mine || T[\"ex-hakumen/meter\"]) { if (S.go) drop(); return }      // EX Hakumen's meter draws him when it is installed\n      if (S.ui !== ui || !S.go || IsNull(S.go)) { if (!make(ui)) { S.fail++; return } }\n      var dt = Math.min(0.05, UE.Time.unscaledDeltaTime || 0.016); S.t += dt; var t = S.t;\n      var sp = 0;\n      try { sp = U().FpToFloat(p.Attr.GetMP(3)) } catch (e) {}\n      sp = Math.max(0, Math.min(100, sp));\n      var ready = sp >= 40;                                                  // the beam can be fired\n      if (S.sp0 >= 0 && sp > S.sp0 + 0.5) S.bump = 1;                        // SP gained: the seal jumps\n      S.sp0 = sp; S.slam = Math.max(0, S.slam - dt * 2.6); S.bump = Math.max(0, S.bump - dt * 6);\n      var rs = 1 + 0.42 * S.slam * S.slam + 0.07 * S.bump * S.bump; S.root.localScale = new UE.Vector3(rs, rs, 1);\n      S.grow += (1 - S.grow) * Math.min(1, dt * 9);\n\n      // the mane: two layers that breathe against each other, swaying a little\n      var g = S.grow, over = 1 + 0.25 * Math.max(0, 1 - g) * Math.sin(g * Math.PI);\n      var sa = g * over * (1 + 0.035 * Math.sin(t * 9.1)), sb = g * over * (1 + 0.05 * Math.sin(t * 6.7 + 1.3));\n      S.maneA.rectTransform.localScale = new UE.Vector3(sa, sa, 1); S.maneB.rectTransform.localScale = new UE.Vector3(sb, sb, 1);\n      S.maneA.rectTransform.localEulerAngles = new UE.Vector3(0, 0, 2.2 * Math.sin(t * 3.3));\n      S.maneB.rectTransform.localEulerAngles = new UE.Vector3(0, 0, -2.8 * Math.sin(t * 2.6 + 0.9));\n      S.maneA.color = col(GREEN, g * (0.78 + 0.22 * Math.sin(t * 13.0)));\n      S.maneB.color = col(mixc(GREEN, HOT, 0.35), g * (0.70 + 0.30 * Math.sin(t * 10.3 + 2.1)));\n      // the black flames behind the green\n      var da = g * over * 1.16 * (1 + 0.05 * Math.sin(t * 4.3 + 0.7)), db = g * over * 1.10 * (1 + 0.06 * Math.sin(t * 5.6 + 2.4));\n      S.darkA.rectTransform.localScale = new UE.Vector3(da, da, 1); S.darkB.rectTransform.localScale = new UE.Vector3(db, db, 1);\n      S.darkA.rectTransform.localEulerAngles = new UE.Vector3(0, 0, 9 + 3.5 * Math.sin(t * 2.1)); S.darkB.rectTransform.localEulerAngles = new UE.Vector3(0, 0, -7 - 3 * Math.sin(t * 1.7 + 1.1));\n      S.darkA.color = col(BLACK, g * 0.92); S.darkB.color = col(BLACK, g * 0.8);\n      // the glow the seal sits in: brighter as SP fills, beating once the beam can be fired\n      var hk = 0.30 + 0.25 * (sp / 100) + (ready ? 0.12 * Math.max(0, Math.sin(t * 5.2)) : 0) + 0.2 * S.slam;\n      var hs = 1 + 0.06 * Math.sin(t * 2.3) + 0.3 * S.slam; S.halo.rectTransform.localScale = new UE.Vector3(hs, hs, 1);\n      S.halo.color = col(mixc(GREEN, [1, 1, 1], S.slam * 0.25), Math.min(1, hk));\n      // embers off the bezel, faster as SP fills\n      S.emT -= dt;\n      if (S.emT <= 0) {\n        S.emT = 0.30 - 0.20 * (sp / 100);\n        for (var j = 0; j < NE; j++) { var e0 = S.embers[j]; if (e0.life > 0) continue;\n          var ea = (Math.random() * 300 - 150) * Math.PI / 180, er = SIZE * 0.42;\n          e0.x = er * Math.sin(ea); e0.y = er * Math.cos(ea) * 0.9; e0.vx = (Math.random() - 0.5) * 26 + 10 * Math.sin(ea); e0.vy = 46 + Math.random() * 44;\n          e0.len = 0.55 + Math.random() * 0.5; e0.life = e0.len; e0.s = 0.6 + Math.random() * 0.8; e0.r = Math.random() * 40 - 20; break }\n      }\n      for (var j = 0; j < NE; j++) { var e1 = S.embers[j]; if (e1.life <= 0) { if (e1.im.color.a > 0) e1.im.color = col(GREEN, 0); continue }\n        e1.life -= dt; e1.x += e1.vx * dt; e1.y += e1.vy * dt; e1.vx += 18 * Math.sin(t * 5 + j) * dt; var k1 = Math.max(0, e1.life / e1.len), sz = e1.s * (0.5 + 0.5 * k1);\n        e1.im.rectTransform.anchoredPosition = new UE.Vector2(e1.x, e1.y); e1.im.rectTransform.localScale = new UE.Vector3(sz, sz, 1);\n        e1.im.rectTransform.localEulerAngles = new UE.Vector3(0, 0, e1.r + 14 * Math.sin(t * 7 + j));\n        e1.im.color = col(mixc(HOT, GREEN, 1 - k1), Math.min(1, k1 * 1.6) * 0.95) }\n\n      // the seal: the ring shows SP clockwise, a spark on its head\n      S.lines.color = col(GREEN, 0.97);\n      S.ring.fillAmount = sp / 100; S.ring.color = col(HOT, 1);\n      var ha = sp / 100 * Math.PI * 2, hr = 192 * K, fl = 0.8 + 0.25 * Math.sin(t * 31) + 0.15 * Math.sin(t * 17.3);\n      S.spark.rectTransform.anchoredPosition = new UE.Vector2(hr * Math.sin(ha), hr * Math.cos(ha));\n      S.spark.rectTransform.localScale = new UE.Vector3(fl, fl, 1); S.spark.rectTransform.localEulerAngles = new UE.Vector3(0, 0, t * 240);\n      S.spark.color = col(HOT, sp > 0.5 ? 1 : 0);\n\n      // the Magatama: whole ones only; the next one glows as it charges; they orbit slowly\n      var n = Math.floor(sp / 12.5 + 0.0001), part = sp / 12.5 - n;\n      if (S.lit !== -1 && n > S.lit) burst();\n      S.lit = n;\n      S.spin += dt * 46;\n      S.orbit.localEulerAngles = new UE.Vector3(0, 0, -S.spin);\n      for (var i = 0; i < 8; i++) {\n        var b = S.beads[i], on = i < n;\n        if (b.wait > 0) { b.wait -= dt; on = false }                         // lighting one after the other as the seal lands\n        if (on && !b.on) b.pop = 1;\n        b.on = on; b.pop = Math.max(0, b.pop - dt * 5);\n        var want = on ? 0.86 + 0.14 * Math.sin(t * 3.2 - i * 0.8) : (i === n ? part * 0.38 : 0);\n        b.a += (want - b.a) * Math.min(1, dt * (on ? 18 : 7));\n        var sc = 1 + 0.75 * b.pop * b.pop;\n        b.be.rectTransform.localScale = new UE.Vector3(sc, sc, 1);\n        b.be.color = col(b.pop > 0.3 ? [1, 1, 1] : HOT, b.a);\n        b.so.color = col(GREEN, 0.55);\n      }\n      var beat = ready ? 0.05 * Math.max(0, Math.sin(t * 5.2)) : 0.03 * Math.sin(t * 4);\n      S.crest.rectTransform.localScale = new UE.Vector3(1 + beat, 1 + beat, 1);\n      if (S.num) {\n        var txt = \"\" + Math.floor(sp + 0.001);\n        if (txt !== S.shown) { S.num.text = txt; S.shown = txt }\n        S.num.color = col(HOT, 1);\n      }\n      S.crest.color = col(GREEN, 1);\n      // the ring of light: when a Magatama lights\n      S.wave_t += dt; var w = Math.min(1, S.wave_t / 0.45), ws = 0.6 + 0.72 * (1 - (1 - w) * (1 - w));\n      S.wave.rectTransform.localScale = new UE.Vector3(ws, ws, 1); S.wave.color = col(HOT, w < 1 ? (1 - w) * 0.9 : 0);\n    } catch (e) { S.fail++; if (!S.err) { S.err = 1; try { console.error(\"char-susanoo meter: \" + e) } catch (x) {} } }\n  };\n})();\n"
    }
   ],
   "movies": [
@@ -11976,10 +11995,7 @@
   ],
   "importers": [
    {
-    "script": "fx/import_fx.py"
-   },
-   {
-    "script": "artgen/import_art.py"
+    "script": "prebuilt_replay.py"
    }
   ],
   "bundleClones": [
@@ -15671,6 +15687,186 @@
      "actor/logicdata/su",
      "actor/logicdata/subullet"
     ]
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_back",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Back"
+     ]
+    ],
+    "image": "art/meter/meter_back.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_lines",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Lines"
+     ]
+    ],
+    "image": "art/meter/meter_lines.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_ring",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Ring"
+     ]
+    ],
+    "image": "art/meter/meter_ring.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_wave",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Wave"
+     ]
+    ],
+    "image": "art/meter/meter_wave.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_manea",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_ManeA"
+     ]
+    ],
+    "image": "art/meter/meter_mane_a.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_maneb",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_ManeB"
+     ]
+    ],
+    "image": "art/meter/meter_mane_b.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_bead",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Bead"
+     ]
+    ],
+    "image": "art/meter/meter_bead.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_socket",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Socket"
+     ]
+    ],
+    "image": "art/meter/meter_socket.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_spark",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Spark"
+     ]
+    ],
+    "image": "art/meter/meter_spark.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_crest",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Crest"
+     ]
+    ],
+    "image": "art/pot_icons/p21379.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_halo",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Halo"
+     ]
+    ],
+    "image": "art/meter/meter_halo.png"
+   },
+   {
+    "from": "ui/texture/heroportraitcoatarms/heroportraitfull_103701",
+    "to": "ui/texture/heroheadicon/sus_meter_ember",
+    "rename": [
+     [
+      "HeroPortraitCoatArms",
+      "HeroHeadIcon"
+     ],
+     [
+      "HeroPortraitFull_103701",
+      "SUS_Meter_Ember"
+     ]
+    ],
+    "image": "art/meter/meter_ember.png"
    },
    {
     "from": "actor/sprite/su/02/su_attack_1_c",
@@ -53530,6 +53726,114 @@
        "path": "UI/Texture/IconPotential193301/Potential_21379",
        "width": 256,
        "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Back",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Lines",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Ring",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Wave",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_ManeA",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_ManeB",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Bead",
+       "width": 64,
+       "height": 64
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Socket",
+       "width": 64,
+       "height": 64
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Spark",
+       "width": 64,
+       "height": 64
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Crest",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Halo",
+       "width": 256,
+       "height": 256
+      }
+     },
+     {
+      "list": "_entries",
+      "key": "path",
+      "value": {
+       "path": "UI/Texture/HeroHeadIcon/SUS_Meter_Ember",
+       "width": 64,
+       "height": 64
       }
      }
     ]

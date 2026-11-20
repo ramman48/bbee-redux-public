@@ -1,5 +1,10 @@
 # Redux Menus: patch notes
 
+## 0.1.27 (2026-11-20)
+- Fixed: during a run the game's own pause numbers (Highest Combos, Perfect Clear, Battle Time, AP and the rating) showed behind the new pause menu. They are now hidden on every frame, so they never show.
+- Fixed: The Prisoner's hold-to-unlock waits a moment for the game to add him once the Prisoner Analyzer is spent, so a slow answer no longer reads as a failed unlock.
+- Fixed: the log line at start-up showed an old version number and called every PC a development PC. It shows the installed version and says player PC.
+
 ## 0.1.26 (2026-11-16, development)
 - Fixed: on the Legacy menu, choosing Legacy I moves on to Legacy II by itself. After Legacy II, or at once when no second Legacy is left to pick, the cursor goes to Start Dive.
 - Fixed: the Triple Dash & Jump switch on the Legacy menu did nothing for heroes whose dash and jump wait on their own Triple Dash and Triple Jump cards, such as Reki. It now gives them the same effect as holding those cards.

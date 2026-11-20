@@ -132,9 +132,12 @@ def main():
         del window; del engine     # the window goes before shell and controller: its bindings never read them gone
         if controller.reopen_pending:      # the updater brought this window's files: the new window opens on them
             import subprocess
-            flags = (subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP) if os.name == "nt" else 0
-            subprocess.Popen([sys.executable, os.path.abspath(__file__)] + sys.argv[1:], cwd=os.getcwd(),
-                             creationflags=flags, close_fds=True)
+            from zenith_gui.controller import _under_wine
+            wine = _under_wine()
+            flags = (subprocess.DETACHED_PROCESS | subprocess.CREATE_NEW_PROCESS_GROUP) if os.name == "nt" and not wine else 0
+            new = subprocess.Popen([sys.executable, os.path.abspath(__file__)] + sys.argv[1:], cwd=os.getcwd(),
+                                   creationflags=flags, close_fds=True)
+            if wine: new.wait()    # Steam on a Deck ends what a closed program started (2026-11-20)
         return code
 
     os.makedirs(a.capture, exist_ok=True)
@@ -169,5 +172,34 @@ def main():
     return 0
 
 
+def crashed():
+    """an error before or while the window runs: written to user/last_crash.log and shown, never silent
+    (2026-11-20: "whenever i click open terminal nothing ever shows up")"""
+    import time, traceback
+    text = traceback.format_exc()
+    path = os.path.join(HERE, "user", "last_crash.log")
+    try:
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(time.strftime("%Y-%m-%d %H:%M:%S") + "\n" + text)
+    except OSError:
+        path = "(the log could not be written)"
+    if os.name == "nt":
+        try:
+            import ctypes
+            last = (text.strip().splitlines() or ["?"])[-1][:300]
+            ctypes.windll.user32.MessageBoxW(
+                None, "The Terminal's window could not open.\n\n" + last + "\n\nThe whole error is in " + path
+                + ". Post that file in the Terminal's thread.", "The Zenith Terminal", 0x30)
+        except Exception:
+            pass
+    return 1
+
+
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except SystemExit:
+        raise
+    except BaseException:
+        sys.exit(crashed())

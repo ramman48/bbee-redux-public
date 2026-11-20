@@ -38,6 +38,7 @@ Item {
     function kindName(kind) { return kind === "CHARACTER" ? qsTr("CHARACTER") : (kind === "CORE" ? qsTr("CORE FILE") : qsTr("MOD")) }
     function where(m) {
         if (!m) return ""
+        if (m.retired) return qsTr("NOT IN THIS RELEASE: COMES BACK LATER")
         if (m.locked) return qsTr("GOES IN WITH ANY MOD")
         if (m.installed && m.enabled && m.newer) return qsTr("UPDATES FROM ") + m.installedVersion + qsTr(" WHEN YOU APPLY")
         if (m.installed) return m.enabled ? qsTr("IN YOUR GAME") : qsTr("LEAVES WHEN YOU APPLY")

@@ -1,8 +1,8 @@
 {
  "mod": "char-nine",
- "version": "1.0.9",
+ "version": "1.0.10",
  "gameBuild": "26424974",
- "made": "2026-11-15 18:34",
+ "made": "2026-11-20 07:43",
  "importers": [
   {
    "script": "import_cf.py",

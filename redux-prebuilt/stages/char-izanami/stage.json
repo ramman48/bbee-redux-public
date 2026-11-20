@@ -1,6 +1,6 @@
 {
  "mod": "char-izanami",
- "version": "0.6.10",
+ "version": "0.6.11",
  "files": {
   "actor/animation/role/mi_born2_timeline.ab": "648d059ea684934e7a2e6f014ad06926511c093b",
   "actor/animation/role/mi_born_timeline.ab": "0987571841dce1340c851eda0ecbb1805d31a795",
@@ -199,6 +199,11 @@
   "effect/prefab/monster/mi/izn/suboss_gd1_02.ab": "3e83cbf467439a7d95c116d9f738889685b36f0c",
   "effect/prefab/role/izn/izn_dash_ring.ab": "b683682fd76fc49ec36d2aee494bb8b66f09276d",
   "ui/atlas/iconpotential200301/iconpotential200301.ab": "ca1e8d83b5f3904a01cafd12e26e025a1c49df5a",
+  "ui/texture/heroheadicon/heroheadicon_200301.ab": "cc29b7475e3cbfa69ee8fcff04508b68b2d6df29",
+  "ui/texture/heroportraitcoatarms/heroportraitfull_200301.ab": "44d97d968e24c5cc92cbb8d9984926955549a358",
+  "ui/texture/heroportraitfull/heroportraitfull_200301.ab": "21c16f6d650887f740c2c816f9b41c148d06b7a5",
+  "ui/texture/heroportraitfullmb/heroportraitfull_200301.ab": "664871b02002269f52ad541fbf5d53eaeaf93eb3",
+  "ui/texture/heroportraitlmb/heroportraitfull_200301.ab": "70a2b6966b82f93cb4fad4431713e3695b599740",
   "ui/texture/iconpotential200301/potential_20301.ab": "27c3c0bcff488aee999b62d8567800a74afda0a8",
   "ui/texture/iconpotential200301/potential_20304.ab": "dfe32469c4f4851b76d1fad4bd28dda97ae455a2",
   "ui/texture/iconpotential200301/potential_20307.ab": "b202f40446b56107036049ec6ff2a19965ac9950",
@@ -411,6 +416,11 @@
   "effect/prefab/monster/mi/izn/suboss_gd1_02.ab": null,
   "effect/prefab/role/izn/izn_dash_ring.ab": null,
   "ui/atlas/iconpotential200301/iconpotential200301.ab": null,
+  "ui/texture/heroheadicon/heroheadicon_200301.ab": null,
+  "ui/texture/heroportraitcoatarms/heroportraitfull_200301.ab": null,
+  "ui/texture/heroportraitfull/heroportraitfull_200301.ab": null,
+  "ui/texture/heroportraitfullmb/heroportraitfull_200301.ab": null,
+  "ui/texture/heroportraitlmb/heroportraitfull_200301.ab": null,
   "ui/texture/iconpotential200301/potential_20301.ab": null,
   "ui/texture/iconpotential200301/potential_20304.ab": null,
   "ui/texture/iconpotential200301/potential_20307.ab": null,
@@ -637,7 +647,12 @@
    "actor/sprite/mibullet1/86/mibullet1_grab_1_c",
    "actor/sprite/mibullet1/86/mibullet1_skill_1_c",
    "actor/texturefamily/iznb1_86",
-   "actor/texturefamily/mibullet1_86"
+   "actor/texturefamily/mibullet1_86",
+   "ui/texture/heroportraitfull/heroportraitfull_200301",
+   "ui/texture/heroportraitlmb/heroportraitfull_200301",
+   "ui/texture/heroportraitfullmb/heroportraitfull_200301",
+   "ui/texture/heroportraitcoatarms/heroportraitfull_200301",
+   "ui/texture/heroheadicon/heroheadicon_200301"
   ],
   "entries": [
    [
@@ -2172,6 +2187,26 @@
    [
     "actor/texturefamily/mibullet1_86",
     []
+   ],
+   [
+    "ui/texture/heroportraitfull/heroportraitfull_200301",
+    []
+   ],
+   [
+    "ui/texture/heroportraitlmb/heroportraitfull_200301",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfullmb/heroportraitfull_200301",
+    []
+   ],
+   [
+    "ui/texture/heroportraitcoatarms/heroportraitfull_200301",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heroheadicon_200301",
+    []
    ]
   ],
   "guids": [
@@ -2686,7 +2721,7 @@
   "entries": [],
   "guids": []
  },
- "took": 0.2,
- "stamp": "fe4838bd9ca495632af8bf74837fc13395501773",
- "made": "2026-11-16 20:12:44"
+ "took": 1.1,
+ "stamp": "1acc2fd6e9368d62c351bc3cfce2d59a6d6e24c8",
+ "made": "2026-11-20 09:55:03"
 }

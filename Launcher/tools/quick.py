@@ -24,6 +24,8 @@ import os
 import shutil
 import time
 
+import safe_rm   # folders held or read-only never stop an install (2026-11-17)
+
 # importers that read another game the player may or may not have: once they ran at every install (an ownership check
 # was never kept around). Since the lead's rule of 2026-10-23 no ownership check is required, so such a mod is kept like
 # any other, with where that game is and when its folder last changed in its fingerprint (Nine's Centralfiction frames;
@@ -194,12 +196,12 @@ def mod_stages(order, mods, mdir, out, root, settings, build_id, loader_files, r
     def record(mid, store, rec_path, ca, ia, files, seeds, writes, src_before, took):
         """keep a made mod's files (already in out) and its record; returns the record"""
         work = os.path.join(store, "out.new")
-        if os.path.exists(work): shutil.rmtree(work)
+        safe_rm.rmtree(work)
         os.makedirs(work, exist_ok=True)
         with concurrent.futures.ThreadPoolExecutor(max_workers=16) as tp:
             list(tp.map(lambda rel: put(out, work, rel), list(files)))
         old = os.path.join(store, "out")
-        if os.path.exists(old): shutil.rmtree(old)
+        safe_rm.rmtree(old)
         os.replace(work, old)
         # files the mod's own build wrote into its folder are left out of its fingerprint from now on
         src_after = stat_map(mdir(mid))
@@ -243,7 +245,7 @@ def mod_stages(order, mods, mdir, out, root, settings, build_id, loader_files, r
         def one(job):
             mid, store, rec_path, writes = job
             folder = os.path.join(store, "build.tmp")
-            if os.path.exists(folder): shutil.rmtree(folder)
+            safe_rm.rmtree(folder)
             os.makedirs(folder)
             t0 = time.time(); src_before = stat_map(mdir(mid))
             ca = run_clones(mid, folder)
@@ -315,7 +317,7 @@ def mod_stages(order, mods, mdir, out, root, settings, build_id, loader_files, r
                     stt = os.stat(os.path.join(out, *rel.split("/"))); snap[rel] = (stt.st_size, stt.st_mtime_ns)
             # kept from now on by reading its files where the channel delivered them (no second copy): a channel update
             # that changes the stage changes the mod or the loader too, so the record no longer matches then
-            if os.path.exists(os.path.join(store, "out")): shutil.rmtree(os.path.join(store, "out"))
+            safe_rm.rmtree(os.path.join(store, "out"))
             os.makedirs(store, exist_ok=True)
             w2 = sd.get("writes", [])
             fps[mid] = fingerprint(mid, mods, mdir, settings, build_id, loader, hasher, fps, w2)

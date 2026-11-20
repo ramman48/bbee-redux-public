@@ -136,22 +136,9 @@ def clear_dir(path, tries=6):
     """remove a folder this tool made, with retries: antivirus, a cloud sync or Explorer may hold it for a moment
     (WinError 5 / 32). Read-only flags are cleared on the way; a folder still held at the end is renamed aside
     (<name>.old-<time>) and removed by a later run, so the caller always gets the path free (2026-11-16)."""
-    import stat
-    def unlock(func, p, exc):
-        try: os.chmod(p, stat.S_IWRITE); func(p)
-        except Exception: pass
-    for i in range(tries):
-        try: shutil.rmtree(path, onexc=unlock)
-        except Exception: pass
-        if not os.path.exists(path): break
-        time.sleep(0.5 * (i + 1))
-    if os.path.exists(path):
-        aside = "%s.old-%s" % (path.rstrip("\\/"), time.strftime("%Y%m%d%H%M%S"))
-        os.replace(path, aside)
-        print("note: %s was held by another program; it was moved aside to %s" % (path, aside))
-    parent, name = os.path.split(path.rstrip("\\/"))
-    for old in glob.glob(os.path.join(parent, name + ".old-*")):
-        shutil.rmtree(old, ignore_errors=True)
+    if os.path.join(ROOT, "tools") not in sys.path: sys.path.insert(0, os.path.join(ROOT, "tools"))
+    import safe_rm
+    safe_rm.rmtree(path, tries)
 
 
 def resolve_order(mods, enabled):
@@ -1071,7 +1058,8 @@ def export_prebuilt(dest):
     built = json.load(open(os.path.join(OUT, "_build.json"), encoding="utf-8"))
     if built.get("mods") and sorted(built["mods"]) != stamp["order"]: raise SystemExit("the build in %s is of another set of mods" % OUT)
     for sub in ("stages", "composed", "out"):
-        if os.path.exists(os.path.join(dest, sub)): shutil.rmtree(os.path.join(dest, sub))
+        import safe_rm
+        safe_rm.rmtree(os.path.join(dest, sub))
     staged = {}                                          # rel -> sha1 of the version the stages, laid in order, leave
     stamp["layOrder"] = []
     for m in order:

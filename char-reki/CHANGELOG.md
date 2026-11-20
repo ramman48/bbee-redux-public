@@ -1,5 +1,10 @@
 # Reki: patch notes
 
+## 0.5.13 (2026-11-20)
+- Fixed Split Shockwave throwing an enemy backward and then forward when both shockwaves reached it, which made follow-ups such as Raimei miss. An enemy hit by the slam's shockwave is no longer hit by the one behind her.
+- Fixed the shockwave behind her launching enemies so high that the fall dealt far more damage than the hit. It now pushes them back and only a little up. Plunge's shockwave with Split Shockwave works the same way.
+- Fixed a colour tag in the Russian text of one Potential.
+
 ## 0.5.12 (2026-11-16)
 - Fixed Rising Dragon (Up + Attack) holding her still at the top of the rise for over half a second. She now starts to fall soon after the last hit, as other uppercuts do.
 - Fixed Sword Wave in the air firing upward with Three Waves held, and your shadow's air wave firing upward. Both now fire down and ahead.

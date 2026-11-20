@@ -1,5 +1,8 @@
 # Swift Master: patch notes
 
+## 0.2.6 (2026-11-20)
+- Fixed his attacks, air attacks, Sonic Move, Storm Quaker, his whirlwinds and the Wind Orb showing no wind effects since 0.2.5. Their effects were left out of the 0.2.5 build and are back.
+
 ## 0.2.3 (2026-11-14)
 - Changed the wording of the Potential and move texts to read like the game's own. No move works differently.
 - Added descriptions to Storm Strike, Wind Upper, Headwind, Relentless Biting Wind, Wind Twist and Eye of the Storm, which had none.

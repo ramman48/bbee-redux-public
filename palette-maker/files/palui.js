@@ -598,16 +598,26 @@
   // Start (Esc) or TRY MOVES in the dressing room: hide the maker to try moves in the palette being made, and bring it
   // back. One press can reach here twice (read by the window and by Try Out's pause hook): 0.35 s apart counts once.
   W.studioToggle = function () {
-    if (W.dialog || (W.isOpen && W.picking)) return;    // a name or yes / no box is answered first
+    if (W.dialog || W.leaveBusy || M.leavingAt || (W.isOpen && W.picking)) return;    // a name or yes / no box is answered first; nothing while leaving
     if (!W.isOpen && !W.hidden && !M.studio) return;
     var t = now(); if (t - (W.toggledAt || 0) < 0.35) return; W.toggledAt = t;
     if (W.isOpen) { if (W.studio()) W.close(false, true); } else W.open();
   };
   // Try Out is over (left, or quit from anywhere): the maker goes, the worn palette comes back
-  W.leftStudio = function () { if (W.isOpen) W.close(true); W.hidden = false; M.editing = false; W.holdT = 0; unfreeze(); lightOn(false); };
+  W.leftStudio = function () {
+    if (W.isOpen) W.close(true); W.hidden = false; M.editing = false; W.holdT = 0; unfreeze(); lightOn(false);
+    try { require("Core/Util").U.SetAllActionLock(false, cs.NOAH.Input.LockFlag.SpecialLogic); } catch (e) {}
+  };
+  // 0.2.11: one leave at a time. A second press while the first waits (the question, the load) is dropped, the hero cannot
+  // run about while the way out loads, and nothing (Start, Esc, TRY MOVES, the pause hook) brings the maker back meanwhile.
   W.leave = async function () {
-    if (W.changed && W.pal && await yesNo("Save " + W.pal.name + " and wear it before you leave?")) W.save();
-    W.close(true); W.hidden = false; M.editing = false; M.leaveStudio();
+    if (W.leaveBusy) return; W.leaveBusy = true;
+    try {
+      if (W.changed && W.pal && await yesNo("Save " + W.pal.name + " and wear it before you leave?")) W.save();
+      W.close(true); W.hidden = false; M.editing = false;
+      try { require("Core/Util").U.SetAllActionLock(true, cs.NOAH.Input.LockFlag.SpecialLogic); } catch (e) {}
+      M.leaveStudio();
+    } finally { W.leaveBusy = false; }
   };
   // quick: no closing animation (going to Try Out, or a failed open). keep: hidden to try moves; the edit stays on the hero
   W.close = function (quick, keep) {
@@ -634,9 +644,10 @@
   var KEYS = { confirm: ["Return", "KeypadEnter", "J"], cancel: ["Escape", "Backspace", "K"], tabL: ["Q"], tabR: ["E"] }, BTN = { confirm: 9, cancel: 10, tabL: 16, tabR: 17 };
   function rwp() { try { return cs.Rewired.ReInput.players.GetPlayer(0); } catch (e) { return null; } }
   function held(p, a) {
-    try { if (p && p.GetButton(BTN[a])) return true; } catch (e) {}
-    var I = UE.Input, K = UE.KeyCode, ks = KEYS[a] || [];
-    if (a == "cancel" && M.studio) ks = ks.filter(function (k) { return k != "Escape"; });   // Esc is Start there
+    var I = UE.Input, K = UE.KeyCode, ks = KEYS[a] || [], esc = false;
+    // the game binds Esc to Cancel as well as to Menu, so Rewired's Cancel is Esc held: where Esc is Start, it must not count as B
+    if (a == "cancel" && M.studio) { ks = ks.filter(function (k) { return k != "Escape"; }); try { esc = I.GetKey(K.Escape); } catch (e) {} }
+    try { if (!esc && p && p.GetButton(BTN[a])) return true; } catch (e) {}
     return ks.some(function (k) { try { return I.GetKey(K[k]); } catch (e) { return false; } });
   }
   W.held = {};

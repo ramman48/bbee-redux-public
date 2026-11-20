@@ -1,5 +1,14 @@
 # Colour Maker: patch notes
 
+## 0.2.12 (2026-11-20)
+- Fixed: the effect tint now replaces an attack's own colour instead of mixing with it. The particles of your hero's effects lose their own hue before your colour goes on, and each effect layer's grayscale switch is turned on, so a blue slash under an orange tint is orange, not murky. Taking the tint off gives every effect its own colours back.
+
+## 0.2.11 (2026-11-20)
+- Fixed: leaving the Colour Maker could end in your hero standing in Try Out with the maker coming back. LEAVE (or holding B or Backspace) now leaves once, locks the hero while the way out loads, and nothing (Start, Esc, TRY MOVES) can bring the maker back until you are out. If Try Out is still up after a few seconds, the way out is asked again.
+- Fixed: pressing Esc to try your moves also counted as holding B, because the game binds Esc to both. Esc now only hides and shows the maker.
+- Fixed: after you changed one palette's glow, the glow of the hero's other palettes could turn into the first one's colour. The hero's own glow is now read again whenever its palette changes.
+- Changed: the hero is free to move again as soon as you are back in the hub.
+
 ## 0.2.9 (2026-11-14)
 - Changed the hero cards of the added characters to match the base roster's: each shows the character's portrait at
   the same size and crop, on a card in the character's own colour instead of the shared gold one.

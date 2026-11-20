@@ -1,0 +1,361 @@
+{
+ "mod": "char-susanoo",
+ "version": "0.1.14",
+ "gameBuild": "26424974",
+ "made": "2026-11-20 09:42",
+ "importers": [
+  {
+   "script": "fx/import_fx.py",
+   "args": []
+  },
+  {
+   "script": "artgen/import_art.py",
+   "args": []
+  }
+ ],
+ "adds": {
+  "names": [
+   "effect/common/material/boonsplus/glow_002_n__bpr_hsxheart",
+   "effect/common/material/boonsplus/particles_018_m__bpr_hsxember",
+   "effect/common/material/boonsplus/lightning_604_a__bpr_hsxcrackle",
+   "effect/common/material/boonsplus/particles_018_m__bpr_hsxstreak",
+   "effect/common/material/boonsplus/ring_002_a__bpr_hsxcollar",
+   "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadecore",
+   "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadeline",
+   "effect/prefab/benediction/susanoo/hsx_beam1",
+   "effect/prefab/benediction/susanoo/hsx_beam2",
+   "effect/prefab/benediction/susanoo/hsx_beam3",
+   "effect/prefab/benediction/susanoo/hsx_beam_fade",
+   "ui/texture/heroheadicon/herohead_193301",
+   "ui/texture/heroheadicon/herohead_193301_off",
+   "ui/texture/heroheadicon/iconherohead_193301",
+   "ui/texture/heroheadicon/herofinalbattle_193301",
+   "ui/texture/heroheadicon/heropvpfinish_193301",
+   "ui/texture/heroheadicon/heropda_193301",
+   "ui/texture/heroheadicon/herofesactor_193301",
+   "ui/texture/heroportraitlmb/heroportraitfull_193301",
+   "ui/texture/heroportraitfullmb/heroportraitfull_193301",
+   "ui/texture/baseactor/baseactor_193301",
+   "ui/texture/baseactor/baseactor_193301off",
+   "ui/texture/heroheadselcetmb/heroheadselect_0_193301",
+   "ui/texture/heroheadselcetmb/heroheadselect_1_193301",
+   "ui/texture/heroheadselcetmb/heroheadselect_2_193301",
+   "ui/atlas/iconpotential193301/iconpotential193301"
+  ],
+  "entries": [
+   [
+    "effect/common/material/boonsplus/glow_002_n__bpr_hsxheart",
+    [
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/boonsplus/particles_018_m__bpr_hsxember",
+    [
+     "effect/common/texture/08_particles/particles_018_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/boonsplus/lightning_604_a__bpr_hsxcrackle",
+    [
+     "effect/common/texture/03_lightning/lightning_604_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/boonsplus/particles_018_m__bpr_hsxstreak",
+    [
+     "effect/common/texture/08_particles/particles_018_4c",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/boonsplus/ring_002_a__bpr_hsxcollar",
+    [
+     "effect/common/texture/11_ring/ring_002_4c",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadecore",
+    [
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadeline",
+    [
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common"
+    ]
+   ],
+   [
+    "effect/prefab/benediction/susanoo/hsx_beam1",
+    [
+     "effect/common/fbx/plane_680",
+     "effect/common/material/13_sharp/sharp_621_d",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/13_sharp/sharp_655_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/18_turbulence/turbulence_008_m6",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_619_1r",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/13_sharp/sharp_621_c",
+     "effect/common/material/15_streak/streak_603_b",
+     "effect/common/texture/15_streak/streak_603_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/fbx/ring_601",
+     "effect/common/material/06_normal/normal_401_e",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "noah/rendering/shader/effect/refract",
+     "gameplay/map/element/fbx/plane_001",
+     "effect/common/material/13_sharp/sharp_046_c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/13_sharp/sharp_306_4c",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "rendering/shader/lightmap"
+    ]
+   ],
+   [
+    "effect/prefab/benediction/susanoo/hsx_beam2",
+    [
+     "effect/common/material/13_sharp/sharp_621_c",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/13_sharp/sharp_655_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/material/boonsplus/lightning_604_a__bpr_hsxcrackle",
+     "effect/common/texture/03_lightning/lightning_604_4c",
+     "effect/common/fbx/plane_001",
+     "effect/common/fbx/plane_680",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/13_sharp/sharp_046_c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/13_sharp/sharp_306_4c",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/material/06_normal/normal_401_e",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "noah/rendering/shader/effect/refract",
+     "gameplay/map/element/fbx/plane_001",
+     "effect/common/material/15_streak/streak_603_b",
+     "effect/common/texture/15_streak/streak_603_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "effect/common/fbx/ring_601",
+     "effect/common/material/boonsplus/particles_018_m__bpr_hsxstreak",
+     "effect/common/material/18_turbulence/turbulence_008_m6",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_619_1r",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/material/boonsplus/particles_018_m__bpr_hsxember",
+     "effect/common/material/13_sharp/sharp_621_d",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "rendering/shader/lightmap",
+     "effect/common/material/boonsplus/glow_002_n__bpr_hsxheart",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c"
+    ]
+   ],
+   [
+    "effect/prefab/benediction/susanoo/hsx_beam3",
+    [
+     "effect/common/material/15_streak/streak_603_b",
+     "effect/common/texture/15_streak/streak_603_4r",
+     "effect/common/texture/18_turbulence/turbulence_001_1r",
+     "effect/common/texture/18_turbulence/turbulence_002_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/ring_601",
+     "effect/common/material/13_sharp/sharp_621_d",
+     "effect/common/texture/04_mask/mask_008_4c",
+     "effect/common/texture/04_mask/mask_019_4c",
+     "effect/common/texture/13_sharp/sharp_655_4r",
+     "effect/common/texture/18_turbulence/turbulence_206_1r",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "effect/common/material/boonsplus/particles_018_m__bpr_hsxstreak",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/boonsplus/lightning_604_a__bpr_hsxcrackle",
+     "effect/common/texture/03_lightning/lightning_604_4c",
+     "effect/common/material/22_scene/lightmap_001_a",
+     "effect/common/texture/02_glow/glow_604_4r",
+     "rendering/shader/lightmap",
+     "effect/common/material/boonsplus/glow_002_n__bpr_hsxheart",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/material/boonsplus/particles_018_m__bpr_hsxember",
+     "effect/common/material/18_turbulence/turbulence_008_m6",
+     "effect/common/texture/04_mask/mask_006_1c",
+     "effect/common/texture/04_mask/mask_619_1r",
+     "effect/common/texture/07_other/other_021",
+     "effect/common/texture/18_turbulence/turbulence_008_4r",
+     "effect/common/texture/18_turbulence/turbulence_009_1r",
+     "effect/common/texture/18_turbulence/turbulence_038_4r",
+     "noah/rendering/shader/effect/flame",
+     "effect/common/fbx/plane_680",
+     "effect/common/material/08_particles/particles_018_m",
+     "effect/common/material/boonsplus/ring_002_a__bpr_hsxcollar",
+     "effect/common/texture/11_ring/ring_002_4c",
+     "effect/common/material/13_sharp/sharp_621_c",
+     "effect/common/material/13_sharp/sharp_046_c",
+     "effect/common/texture/04_mask/mask_009_1c",
+     "effect/common/texture/13_sharp/sharp_306_4c",
+     "effect/common/texture/18_turbulence/turbulence_015_1r",
+     "effect/common/texture/18_turbulence/turbulence_023_1r",
+     "effect/common/material/06_normal/normal_401_e",
+     "effect/common/texture/04_mask/mask_207_1c",
+     "effect/common/texture/06_normal/normal_401_4r",
+     "noah/rendering/shader/effect/refract",
+     "gameplay/map/element/fbx/plane_001"
+    ]
+   ],
+   [
+    "effect/prefab/benediction/susanoo/hsx_beam_fade",
+    [
+     "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadecore",
+     "effect/common/texture/02_glow/glow_002_4c",
+     "effect/common/texture/04_mask/mask_003_1c",
+     "effect/common/texture/04_mask/mask_010_1c",
+     "effect/common/texture/18_turbulence/turbulence_222_1r",
+     "noah/rendering/shader/effect/common",
+     "effect/common/fbx/plane_001",
+     "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadeline",
+     "effect/common/material/boonsplus/particles_018_m__bpr_hsxstreak",
+     "effect/common/texture/08_particles/particles_018_4c",
+     "effect/common/material/boonsplus/particles_018_m__bpr_hsxember"
+    ]
+   ],
+   [
+    "ui/texture/heroheadicon/herohead_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herohead_193301_off",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/iconherohead_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herofinalbattle_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropvpfinish_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/heropda_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadicon/herofesactor_193301",
+    []
+   ],
+   [
+    "ui/texture/heroportraitlmb/heroportraitfull_193301",
+    []
+   ],
+   [
+    "ui/texture/heroportraitfullmb/heroportraitfull_193301",
+    []
+   ],
+   [
+    "ui/texture/baseactor/baseactor_193301",
+    []
+   ],
+   [
+    "ui/texture/baseactor/baseactor_193301off",
+    []
+   ],
+   [
+    "ui/texture/heroheadselcetmb/heroheadselect_0_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadselcetmb/heroheadselect_1_193301",
+    []
+   ],
+   [
+    "ui/texture/heroheadselcetmb/heroheadselect_2_193301",
+    []
+   ],
+   [
+    "ui/atlas/iconpotential193301/iconpotential193301",
+    []
+   ]
+  ],
+  "guids": []
+ },
+ "sheets": [],
+ "replacedFiles": [],
+ "files": {
+  "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadecore.ab": "0ba47e058f843dbe88719f6e04b01d28fb664003dd86f9c91a0e43c4ebef75f9",
+  "effect/common/material/boonsplus/glow_002_n__bpr_hsxfadeline.ab": "6e7f94d8b3f9744197f452aee84bc1b0ba779e5ff3b17fec6f6d8df13cd9c5c8",
+  "effect/common/material/boonsplus/glow_002_n__bpr_hsxheart.ab": "15d1cc35534bcd97e9c66564466e8bab456e1c9791c3da199ba9599800802741",
+  "effect/common/material/boonsplus/lightning_604_a__bpr_hsxcrackle.ab": "9181e1491c6da511073072e7f077f3cfea8fe48f2e960a2f5ee5b0622553581b",
+  "effect/common/material/boonsplus/particles_018_m__bpr_hsxember.ab": "781e0de524dcbd466ce0961144e0f9739ffb31c1a0d2731f4b6c8290e222271c",
+  "effect/common/material/boonsplus/particles_018_m__bpr_hsxstreak.ab": "09bc789bdec2277b01dfe82751e1faf0e9affa61736123e24951250340ae137f",
+  "effect/common/material/boonsplus/ring_002_a__bpr_hsxcollar.ab": "512701d3878708ebf19da343c2a36d159ff080c690abafd559239c8046971761",
+  "effect/prefab/benediction/susanoo/hsx_beam1.ab": "a34fd696a1ce3825a43fdb745a20530c9c93118c51ed5b0adeadefc636e166f3",
+  "effect/prefab/benediction/susanoo/hsx_beam2.ab": "c290a012e1976ed4f8cb5f004da343e5d1101ebd06f96dca6961f24eb43d5c3b",
+  "effect/prefab/benediction/susanoo/hsx_beam3.ab": "341b30d21487caa98db986ba8990ccc808f660c0b79f55beb04dd4b5c4f8b20f",
+  "effect/prefab/benediction/susanoo/hsx_beam_fade.ab": "813f11c3482bb0688b620ebf89d96cec963edac09cf6aa51c0f4600423d4e524",
+  "ui/atlas/iconpotential193301/iconpotential193301.ab": "b449fb6d2f0470ffa67d89ba43f99c89347fa62ac5f7388ea94b480fafce4a06",
+  "ui/texture/baseactor/baseactor_193301.ab": "9f75cf4c16ee374c54f70bb45d50043f18261756d0c7d193831b03f192aec932",
+  "ui/texture/baseactor/baseactor_193301off.ab": "3518e5c938845f9bde1d919c3562cbcf271b7448f5cf4f0e7ed4fa7b4244b419",
+  "ui/texture/heroheadicon/herofesactor_193301.ab": "0c3ca28b9301ccfe7b670e575482b8141c2a2f918aab00fee8071f00e5f6d229",
+  "ui/texture/heroheadicon/herofinalbattle_193301.ab": "83dd1f7f9d02bb53eb4caf8419f4ec75ca423f41fa43aeec15e6b6181395df41",
+  "ui/texture/heroheadicon/herohead_193301.ab": "588bc3deb5b44f9f49e8f017d022f0bc9a5d0b181e5974aa9e6f49cd60b0dc82",
+  "ui/texture/heroheadicon/herohead_193301_off.ab": "2494177160b64b86a9b952d5d8e4fb02dd2c17a196a9b46f8e8bfc38248c5c9e",
+  "ui/texture/heroheadicon/heropda_193301.ab": "1d1df4b545d6368a299f43a5e78243673003916337745c83923b2c931f03c557",
+  "ui/texture/heroheadicon/heropvpfinish_193301.ab": "ac17e9093c3538b64ebacba69ef36c4f352742d6e49e33bd59c3b9d5706e064a",
+  "ui/texture/heroheadicon/iconherohead_193301.ab": "6e6617e0628cf3465b2271346c4caccc4d046b6f0708476060f8677b098c7fed",
+  "ui/texture/heroheadselcetmb/heroheadselect_0_193301.ab": "55e17a69dc5e0c220ab6b8758087cdd08172582ae9e4162e6bf0e64cc2466788",
+  "ui/texture/heroheadselcetmb/heroheadselect_1_193301.ab": "e8b7fb7c272467d532b9a9b09aff596483a07506547ee2b8c07ff63b3a1dfc58",
+  "ui/texture/heroheadselcetmb/heroheadselect_2_193301.ab": "16ea71b386c47ef91f628316d45f2667ca9d164a124b42c0c653cd5ea1b514df",
+  "ui/texture/heroportraitfullmb/heroportraitfull_193301.ab": "e7537e87af4a7382597fd28ea0a6ceb24a25450fdee50c324ee0db39861e55a1",
+  "ui/texture/heroportraitlmb/heroportraitfull_193301.ab": "bfb2b790524b50bcc6372bd094d2d72699543d43a3907daab0d0e47cf8184f0a"
+ }
+}
