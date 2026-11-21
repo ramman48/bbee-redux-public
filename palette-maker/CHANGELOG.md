@@ -1,5 +1,9 @@
 # Colour Maker: patch notes
 
+## 0.2.13 (2026-11-21)
+- Fixed: leaving the Colour Maker left you standing in Try Out with no maker and no controls. The way out depended on a piece of our own test tools that the released mods don't carry, so LEAVE closed the maker and went nowhere. The maker now takes you to the hub itself.
+- Changed: if the way out ever fails again, you get your controls and the HUD back after 20 seconds instead of staying locked.
+
 ## 0.2.12 (2026-11-20)
 - Fixed: the effect tint now replaces an attack's own colour instead of mixing with it. The particles of your hero's effects lose their own hue before your colour goes on, and each effect layer's grayscale switch is turned on, so a blue slash under an orange tint is orange, not murky. Taking the tint off gives every effect its own colours back.
 

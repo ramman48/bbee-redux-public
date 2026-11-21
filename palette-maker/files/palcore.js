@@ -15,7 +15,7 @@
   if (OLD && OLD.timer) { try { clearInterval(OLD.timer); } catch (e) {} }
   if (OLD && OLD.preRender) { try { cs.UnityEngine.Canvas.remove_willRenderCanvases(OLD.preRender); } catch (e) {} }
   if (OLD && OLD.releaseAll) { try { OLD.releaseAll(); } catch (e) {} }
-  var M = G.BBPAL = { VER: "0.2.12", worn: {}, remote: {}, states: [], partsCache: {}, ui: OLD ? OLD.ui : null };
+  var M = G.BBPAL = { VER: "0.2.13", worn: {}, remote: {}, states: [], partsCache: {}, ui: OLD ? OLD.ui : null };
   var MAXP = 16, TAU = 0.003, SCALE = 2, OWN_MB = 512;   // other players' pages at half size: the same memory as the stock BC7 page
 
   // the game's log (the play-session report reads it by the tag), the test room's log when it is there, and our own file
@@ -846,15 +846,28 @@
     log("leaving Try Out to the lobby");
     var T = null; try { T = require("GamePlay/BattleTryout/BattleTryoutRun").default; } catch (e) { log("leave: " + es(e)); }
     var b0 = null; try { b0 = tryoutBattle(); } catch (e) {}
-    try { T.Instance.QuitAsync(); } catch (e) { log("leave: " + es(e)); }
-    setTimeout(function () {
+    // 0.2.13: the maker walks to the lobby itself. Until now it asked Try Out to quit with return type 99, which only the
+    // dev test room teaches the game; without that mod the quit closed the run and went nowhere (Kirin, 11-20: stuck in
+    // Try Out, no maker, no input).
+    function toLobby(why) {
+      log("leave: to the lobby (" + why + ")");
+      try { T.DestroyInstance(); } catch (e) { log("leave: " + es(e)); }
       try {
-        if (!M.leavingAt) return;
-        var b = tryoutBattle();
-        if (b && b0 && (b === b0 || b.Equals(b0))) { log("leave: Try Out is still up after 6 s, asking again"); T.ReturnType = 99; T.QuitToLobby(); }
-      } catch (e) { log("leave again: " + es(e)); }
-    }, 6000);
-    setTimeout(function () { if (M.leavingAt) { M.leavingAt = 0; log("leave: the guard is lifted after 30 s"); } }, 30000);
+        var U = require("Core/Util").U, PU = require("Core/PlatformUtil").default, BJ = require("GamePlay/Battle/BattleJs").default;
+        var p = BJ.Teleport(U.LobbyName(), PU.GetPlatformVal("MapF1"), "ScreenPoint", "stand");
+        if (p && p.catch) p.catch(function (e) { log("leave: teleport: " + es(e)); });
+      } catch (e) { log("leave: teleport: " + es(e)); }
+    }
+    function stillThere() { try { var b = tryoutBattle(); return !!(b && b0 && (b === b0 || b.Equals(b0))); } catch (e) { return false; } }
+    toLobby("first");
+    setTimeout(function () { if (M.leavingAt && stillThere()) toLobby("still in Try Out after 8 s"); }, 8000);
+    // whatever happened, the player is never left without controls
+    setTimeout(function () {
+      if (!M.leavingAt) return;
+      M.leavingAt = 0; log("leave: the guard is lifted after 20 s");
+      try { require("Core/Util").U.SetAllActionLock(false, cs.NOAH.Input.LockFlag.SpecialLogic); } catch (e) {}
+      if (stillThere()) { try { M.hideHud(false); } catch (e) {} }
+    }, 20000);
   };
   function keepStageEmpty() {
     var a = M.me(), b = tryoutBattle();

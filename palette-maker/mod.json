@@ -1,7 +1,7 @@
 {
  "id": "palette-maker",
  "name": "Colour Maker",
- "version": "0.2.12",
+ "version": "0.2.13",
  "author": "BBEE Redux",
  "description": "Make your own palettes in game: talk to the lobby TV and pick Colour maker. Every colour part of the hero you stand as can be changed (lit, shadow and dark colours) with the hero repainting live, plus the hero's effect tint. Name and save palettes, wear one, share it as a code or a .bbpal file and import others. In a four-player online lobby the other players see your worn palette, and palettes you meet are kept under Seen online. Palettes are made over a palette you own and saved beside your save, never inside it; nothing is unlocked. If anything goes wrong the hero keeps its own palette. Log: PaletteMaker.log in the palettes folder. Unofficial. Development build.",
  "gameBuilds": [

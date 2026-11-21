@@ -536,7 +536,7 @@
     W.close(true);
     var from = null; try { from = require("GamePlay/Battle/BattleJs").default.Instance.Battle; } catch (e) {}
     M.pendingOpen = { hero: id, until: Date.now() + 60000, from: from };
-    // 99 is the test room's return type: Try Out's quit falls through to the lobby
+    // 99 is no return type of the game: its own quit goes nowhere, and the maker walks to the lobby itself (M.leaveStudio)
     try { require("GamePlay/BattleTryout/BattleTryoutRun").default.Start(fes, 99); log("to Try Out with hero " + id); }
     catch (e) { M.pendingOpen = null; log("Try Out: " + (e && e.stack || e)); }
   };
